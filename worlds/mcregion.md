@@ -26,6 +26,12 @@ McRegion worlds have a hierarchy of how data can be accessed.
 
 ## Reading
 Reading is the easiest part of the McRegion format.
+1. Divide the chunk coordinate by 32 (or shift right by 5 bits) to get the region coordinate the chunk is in, following the naming convention `r.x.z.mcr`, where `x` and `z` are the region coordinates.
+2. Find the offset and sector count of the desired chunk data in the header by using `4 * ((x & 31) + (z & 31) * 32)`
+3. Read the offset (3-bytes) and sector count (1-byte). These numbers should be multiplied by 4096, as each sector is 4 Kilobytes. Move to the offset.
+4. Get the length of the chunk data (4-bytes) and the compression type (1-byte). This is followed by `length - 1` bytes of compressed data.
+5. Use the compression type to decompress the compressed data.
+6. [Read the Chunks NBT Data](chunk#nbt)
 
 ## Further Reading
 - [Region file format (Minecraft Wiki)](https://minecraft.wiki/w/Region_file_format)
