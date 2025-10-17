@@ -24,5 +24,8 @@ McRegion worlds have a hierarchy of how data can be accessed.
 | Region | A region covers a 32x32 chunk area, consisting of 512x128x512 blocks in total |
 | Chunk | A 16x128x16 area, containing 32.768 blocks in total |
 
+## Reading
+Reading is the easiest part of the McRegion format.
+
 ## Further Reading
 - [Region file format (Minecraft Wiki)](https://minecraft.wiki/w/Region_file_format)
