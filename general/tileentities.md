@@ -25,6 +25,29 @@ All tile entities share a common layout that they then add their additional fiel
 
 As these are always the same, they will only be included as part of the examples
 
+## Sign
+Signs just store what lines they contain. The rest is handled by the block they attach to, namely their rotation. Their data needs to be sent to any clients via [the designated Sign Packet](../networking/packets/130-sign). Each line of a sign should only have `15` characters. 
+
+| Field    | Type     | Description             |
+| -------- | -------- | ----------------------- |
+| Text1    | String16 | First Line on the sign  |
+| Text2    | String16 | Second Line on the sign |
+| Text3    | String16 | Third Line on the sign  |
+| Text4    | String16 | Fourth Line on the sign |
+
+**Example**
+
+| Field | Value | 
+| --- | --- |
+| Text1 | `Welcome to` |
+| Text2 | `the Beta Wiki` |
+| Text3 | `Thank you` |
+| Text4 | `for helping!` |
+| id | `Sign` |
+| x | 17 |
+| y | 55 |
+| z | 60 |
+
 ## Mob Spawner
 
 | Field    | Type     | Description                           |
