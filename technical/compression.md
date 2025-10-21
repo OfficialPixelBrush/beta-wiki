@@ -83,6 +83,7 @@ unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
     return (B << 16) | A;
 }
 ```
+A more efficient implementation can be seen in the `zlib` source code or `js-adler32`. Check [Wikipedia](https://en.wikipedia.org/wiki/Adler-32#Example_implementation) for more info!
 
 # Further Reading
 - [deflate (Wikipedia)](https://en.wikipedia.org/wiki/Deflate)
@@ -91,3 +92,4 @@ unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
 - [GZIP file format specification version 4.3 (RFC)](https://www.rfc-editor.org/rfc/rfc1952)
 - [zlib (Wikipedia)](https://en.wikipedia.org/wiki/Gzip)
 - [ZLIB Compressed Data Format Specification version 3.3 (RFC)](https://www.rfc-editor.org/rfc/rfc1950)
+- [Adler-32 (Wikipedia)](https://en.wikipedia.org/wiki/Adler-32)
