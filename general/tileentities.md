@@ -23,7 +23,7 @@ All tile entities share a common layout that they then add their additional fiel
 | y           | Integer     | The Y position of the block |
 | z           | Integer     | The Z position of the block |
 
-As these are always the same, they will only be included as part of the examples
+As these are always the same, they will only be included as part of the examples.
 
 ## Sign
 Signs just store what lines they contain. The rest is handled by the block they attach to, namely their rotation. Their data needs to be sent to any clients via [the designated Sign Packet](../networking/packets/130-sign). Each line of a sign should only have `15` characters. 
