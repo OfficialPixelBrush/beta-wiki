@@ -18,7 +18,7 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 | Field     | Type    | Description                                 |
 | --------- | ------- | ------------------------------------------- |
 | Player ID | Integer | The ID of the player who did the animation |
-| Animation | Integer | The type of animation. Can be `1` or `3`   |
+| Animation | Byte | The type of animation. Can be `1` or `3`   |
 
 ## Example Packet
 
