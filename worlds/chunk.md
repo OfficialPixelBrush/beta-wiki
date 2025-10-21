@@ -28,3 +28,16 @@ Inside of an uncompressed chunk file are only a few NBT Tags
 | Data | Byte Array | The Metadata/damage values of the chunk |
 | HeightMap | Byte Array | A top-down heightmap of the chunk |
 | SkyLight | Byte Array | The sky light values of the chunk |
+
+## Block ordering
+Blocks are stored as vertical columns (Y-Axis). To iterate over a stored Byte Array from a Chunk the ordering is as follows.
+```c
+for (int x = 0; x < 16; x++) {
+    for (int z = 0; z < 16; z++) {
+        for (int y = 0; y < 128; y++) {
+            // Y is in Z which is in X
+            block[y + (z*128) + (x*128*16)];
+        }
+    }
+}
+```
