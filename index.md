@@ -4,9 +4,9 @@ layout: home
 nav_order: 1
 last_modified_date: 13-10-2025
 ---
-# Beta Wiki
+
+![Glacier (throughout different stages of World Generation) @ x:8 y:88 z:12](banner.webp)
 A wiki documenting Minecraft Beta 1.7.3's networking protocol and other technical insights.
-![](banner.jpg)
 
 {: .note }
 > This wiki is still a heavy wip. If you'd like something more complete,
