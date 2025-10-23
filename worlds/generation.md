@@ -146,9 +146,58 @@ For this the current block column is iterated over from top to bottom, from `127
 > I'm unsure if I like this format more than just pasted, commented code.
 
 ## Caves
+Caves are not noise based, but instead rely on carving the terrain out based on the world seed. It gets its own dedicated [PRNG object](../technical/random) when initialized.
+
+### Setup
+Cave generation is 
+```cpp
+int carveExtent = 8;
+// Use the world seed to init the PRNG
+rand->setSeed(world->seed);
+long xOffset = rand->nextLong() / 2 * 2 + 1;
+long zOffset = rand->nextLong() / 2 * 2 + 1;
+// Iterate beyond the current chunk by 8 chunks in every direction
+for (int cXoffset = cX - carveExtent; cXoffset <= cX + carveExtent; ++cXoffset) {
+  for (int cZoffset = cZ - carveExtent; cZoffset <= cZ + carveExtent; ++cZoffset) {
+    this->rand->setSeed(((long(cXoffset) * xOffset) + (long(cZoffset) * zOffset)) ^ world->seed);
+    this->GenerateCaves(cXoffset, cZoffset, cX, cZ, c);
+  }
+}
+```
+
+From here, a number in the range of `0 - 42` is generated, by feeding the generation result into itself 3 times and adding `1` after each result.
+```cpp
+int numberOfCaves = this->rand->nextInt(this->rand->nextInt(this->rand->nextInt(40) + 1) + 1);
+```
+This number is reset to `0` if the next random number between `0` and `15` isn't equal to `0`.
+
+### Carving
+The resulting number of caves are then iterated over.
+```cpp
+double xOffset = double(cXoffset * CHUNK_WIDTH_X + this->rand->nextInt(CHUNK_WIDTH_X));
+double yOffset = double(this->rand->nextInt(this->rand->nextInt(120) + 8));
+double zOffset = double(cZoffset * CHUNK_WIDTH_Z + this->rand->nextInt(CHUNK_WIDTH_Z));
+int numberOfNodes = 1;
+if(this->rand->nextInt(4) == 0) {
+    this->CarveCave(cX, cZ, c, xOffset, yOffset, zOffset);
+    numberOfNodes += this->rand->nextInt(4);
+}
+```
+The resulting number of nodes is then iterated over, while still inside of the cave loop.
+```cpp
+float carveYaw = this->rand->nextFloat() * float(M_PI) * 2.0F;
+float carvePitch = (this->rand->nextFloat() - 0.5F) * 2.0F / 8.0F;
+float tunnelRadius = this->rand->nextFloat() * 2.0F + this->rand->nextFloat();
+this->CarveCave(
+    cX, cZ, c,
+    xOffset, yOffset, zOffset,
+    tunnelRadius, carveYaw, carvePitch,
+    0, 0, 1.0D
+);
+```
 
 {: .missing }
-> Got it working, still need to figure out the algorithm
+> This algorithm is difficult to not express as just code, and I hate that.
 
 ## Features
 
