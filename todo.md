@@ -13,6 +13,7 @@ A rough checklist for everything that still needs to be done. Lots to do!
 - General
     - [x] Blocks
     - [x] Items
+    - [ ] Tile Entities
 - Networking
     - Packets
         - [ ] All the remaining ones
@@ -22,16 +23,20 @@ A rough checklist for everything that still needs to be done. Lots to do!
     - [x] Lighting
 - Worlds
     - [x] Parsing of NBT Data
-    - [ ] level.dat
+    - [x] level.dat
     - [ ] Player files
     - [ ] McRegion Structure
+    - [x] How to read a chunk from a region
+    - [ ] How to write a chunk to a region
     - [ ] How to best hold onto Region data
-    - [ ] How to write a region back to disk
 - Generation
     - [x] History
     - [x] Perlin Noise
     - [x] Simplex Noise
     - [x] Biome Selection
-    - [ ] Terrain Generation
-        - [ ] Interpolation
+    - [x] Terrain Generation
+        - [x] Interpolation
+    - [ ] Cave Generation + Carving
     - [ ] Surface Population
+        - [ ] Foliage Generation
+        - [ ] Ore Generation
