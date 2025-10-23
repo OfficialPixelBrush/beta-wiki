@@ -10,6 +10,10 @@ If you'd like to contribute, check the [Contributing page](https://OfficialPixel
   <img src="https://contrib.rocks/image?repo=OfficialPixelBrush/beta-wiki" />
 </a>
 
+## Discord
+We have a [Discord Server](
+https://discord.gg/JHTz2HSKrf)!
+
 ## Star History
 
 <a href="https://www.star-history.com/#OfficialPixelBrush/beta-wiki&Date">

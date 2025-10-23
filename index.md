@@ -23,6 +23,10 @@ This includes documenting the [inner workings of the World Generator](./worlds/g
 ## TODO
 Please check the [TODO Page](todo) to see what still needs to be done, or just click through the Wiki until you find something that's missing. Either open an issue on GitHub or try to solve it yourself!
 
+## Discord
+We have a [Discord Server](
+https://discord.gg/JHTz2HSKrf)!
+
 ## Contributors
 <a href="https://github.com/OfficialPixelBrush/beta-wiki/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OfficialPixelBrush/beta-wiki" />
