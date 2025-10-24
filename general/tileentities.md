@@ -1,6 +1,6 @@
 ---
 title: Tile Entities
-nav_order: 10
+nav_order: 30
 layout: home
 parent: General
 ---

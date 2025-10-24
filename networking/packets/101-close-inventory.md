@@ -1,5 +1,5 @@
 ---
-title: "0x65: Close Window"
+title: "0x65: Close Inventory"
 nav_order: 102
 layout: home
 parent: Packets
@@ -11,7 +11,7 @@ parent: Packets
 | --------- | --------- |
 | `0x65`    | Both      |
 
-This packet is sent by the client when closing an inventory window, and by the server when an inventory is forcibly closed, such as a chest being destroyed.
+This packet is sent by the client when closing an inventory/window, and by the server when an inventory is forcibly closed, such as a chest being destroyed.
 
 ## Both
 

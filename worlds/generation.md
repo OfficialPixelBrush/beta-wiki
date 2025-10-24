@@ -1,12 +1,9 @@
 ---
 title: Generation
-nav_order: 3
+nav_order: 10
 layout: home
 parent: Worlds
 ---
-
-{: .missing }
-> A huge chunk of info is still missing, mainly relating to tree, cave and ore generation.
 
 # Generation
 {: .no_toc }
@@ -199,13 +196,10 @@ this->CarveCave(
 {: .missing }
 > This algorithm is difficult to not express as just code, and I hate that.
 
-## Features
+After this, the lighting is updated and the heightmap is generated.
 
-Features are things such as trees, ores and tallgrass.
-
-{: .missing }
-> TODO
-
+## Population
+Continue onto the [population page](population) to find out more.
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {

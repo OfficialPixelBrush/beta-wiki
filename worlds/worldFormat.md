@@ -1,6 +1,6 @@
 ---
 title: World Format
-nav_order: 10
+nav_order: 20
 layout: home
 parent: Worlds
 ---

@@ -1,5 +1,5 @@
 ---
-title: "0x64: Open Window"
+title: "0x64: Open Inventory"
 nav_order: 101
 layout: home
 parent: Packets
@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x64`    | Clientbound |
 
-This packet is sent by the server when an inventory window is opened. The type of inventory can either be `0` for a chest, `1` for a crafting table, `2` for a furnace, and `3` for a dispenser.
+This packet is sent by the server when an inventory/window is opened. The type of inventory can either be `0` for a chest, `1` for a crafting table, `2` for a furnace, and `3` for a dispenser.
 
 ## Clientbound
 
