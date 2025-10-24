@@ -25,25 +25,25 @@ However, we can see that the general shape of the terrain remains the same by us
 
 | A1.1.2 | A1.2.3 |
 | --- | --- |
-| ![](images/a112.webp) | ![](images/a123.webp) |
+| ![](images/history/a112.webp) | ![](images/history/a123.webp) |
 
 This similar pre-1.2.0 generation dates all the way back to Infdev 20100624, before which the world generation looked entirely different.
 
 | Inf20100624 | A1.1.2 |
 | --- | --- |
-| ![](images/infdevPack.webp) | ![](images/a112.webp) |
+| ![](images/history/infdevPack.webp) | ![](images/history/a112.webp) |
 
 Facing the other way reveals some of the more glaring differences between the generators.
 
 | A1.1.2 | A1.2.3 |
 | --- | --- |
-| ![](images/a112_pack.webp) | ![](images/a123_pack.webp) |
+| ![](images/history/a112_pack.webp) | ![](images/history/a123_pack.webp) |
 
 Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly relating to the feature generation.
 
 | A1.2.3 | B1.7.3 |
 | --- | --- |
-| ![](images/a123_pack.webp) | ![](images/b173_pack.webp) |
+| ![](images/history/a123_pack.webp) | ![](images/history/b173_pack.webp) |
 
 ## Biomes
 To find out more about what Biomes exist and how they're defined, check out [the Biomes page](biomes).
@@ -52,7 +52,7 @@ This process utilizes 3 octaved [Simplex Noise](../technical/noise#simplex-noise
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="images/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature, humidity and variation values after being modified by this function. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -60,7 +60,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 | Foliage Colors | Map Colors |
 | :---: | :---: |
-| <img src="images/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Biomes colored as per the [biomes](biomes#biome-list) page.</sub>
 
@@ -76,6 +76,14 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 | Continentalness | `10` | `(1.121, 1.121, 0.5)` |
 | Depth Noise | `16` | `(200.0, 200.0, 0.5)` |
 | Mob Spawner Noise | `8` | |
+
+| Low | High | Selector | Continental | Depth |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="images/terrain/low.png" alt="Low noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/high.png" alt="High noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/selector.png" alt="Selector noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/continentalness.png" alt="Continentalness noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/depth.png" alt="Depth noise" style="image-rendering: pixelated; width: 100%"> |
+
+<sub>Colors adjusted be more visible.</sub>
+
+Continentalness and Depth are 2D, while Low, High and Selector noise are 3D. As a result, only the lowest slice of each is shown.
 
 ### Terrain Noise
 This function utilizes 5 of our Perlin Noise Generators, 2 in 2D and 3 in 3D.
@@ -105,7 +113,7 @@ Some of the values appear to modify themselves for the next loop.
 
 | Terrain | Terrain (water) |
 | :---: | :---: |
-| <img src="images/terrain.png" alt="Terrain map" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrainWater.png" alt="Terrain map with water level" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/terrain/terrain.png" alt="Terrain map" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/terrainWater.png" alt="Terrain map with water level" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Highest stone blocks. Color values have been tweaked to be more readable.
 Blocks at or below water level are marked in blue.</sub>
@@ -121,7 +129,7 @@ After the terrain shape has been generated, the chunk is transformed further by 
 
 | Sand | Gravel | Stone |
 | :---: | :---: | :---: |
-| <img src="images/sandNoise.png" alt="Sand noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/gravelNoise.png" alt="Gravel noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/stoneNoise.png" alt="Stone noise" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/terrain/sandNoise.png" alt="Sand noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/gravelNoise.png" alt="Gravel noise" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrain/stoneNoise.png" alt="Stone noise" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Sand, Gravel and Stone noise. Color values have been tweaked to be more readable.</sub>
 

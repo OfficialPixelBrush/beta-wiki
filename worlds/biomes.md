@@ -78,7 +78,7 @@ If mapped to an image, using the foliage/map colors, we get this.
 
 | Foliage Colors | Map Colors |
 | --- | --- |
-| <img src="images/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature is X, Humidity is Y. Range is from `0` to `64` (or `0.0` to `1.0`) on both axes. [Notch drew this graph back in 2011.](https://minecraft.wiki/w/File:NotchBiomeGraph.png)
 </sub>
@@ -100,7 +100,7 @@ Each of these return a `16x16` array of 64-Bit floating point numbers, which're 
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="images/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature, humidity and variation values from chunk `-1,-1` to `1,1`. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -134,13 +134,13 @@ The returned biome map can look something like this over a 3x3 chunk area.
 
 | Foliage Colors | Map Colors |
 | :---: | :---: |
-| <img src="images/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
 
 The temperature and humidity values are changed by this function, resulting in a different set of values, to be used in later generation stages.
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="images/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature, humidity and Variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
 
