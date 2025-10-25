@@ -72,12 +72,52 @@ Signs just store what lines they contain. The rest is handled by the block they 
 | ----- | ----- | ------------------------------ |
 | Items | List  | A list of Compound-taged items |
 
+{: .note }
+> Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry!
+
 **Example**
 
 | Field | Value | 
 | --- | --- |
 | Items | |
 | id | `Chest` |
+| x | 20 |
+| y | 55 |
+| z | 61 |
+
+## Furnace
+
+| Field | Type  | Description                    |
+| ----- | ----- | ------------------------------ |
+| Items | List  | A list of Compound-taged items |
+| BurnTime | Short | Time remaining in ticks until the fuel is used up |
+| CookTime | Short | Time remaining in ticks until the item is cooked |
+
+**Example**
+
+| Field | Value | 
+| --- | --- |
+| Items | |
+| BurnTime | `0` |
+| CookTime | `0` |
+| id | `Furnace` |
+| x | 20 |
+| y | 55 |
+| z | 61 |
+
+## Dispenser 
+The Dispenser is internally referred to as `Trap`.
+
+| Field | Type  | Description                    |
+| ----- | ----- | ------------------------------ |
+| Items | List  | A list of Compound-taged items |
+
+**Example**
+
+| Field | Value | 
+| --- | --- |
+| Items | |
+| id | `Trap` |
 | x | 20 |
 | y | 55 |
 | z | 61 |

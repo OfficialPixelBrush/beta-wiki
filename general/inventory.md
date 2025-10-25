@@ -11,11 +11,8 @@ Inventories/Windows behave quite differently to how one'd expect. On the network
 
 Each inventory/window also has a unique identifier/index.
 
-{: .missing }
-> TODO: NBT-side for blocks
-
-{: .missing }
-> TODO: Graphics for blocks
+{: .note }
+> For the NBT-side, repeated numbers do not mean that slots are shared. Separate inventories count their slots independently.
 
 1. TOC
 {:toc}
@@ -25,7 +22,7 @@ The player inventory has no index. It has a few obvious oddities between how its
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="inventoryNetwork.png" alt="Player Inventory as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="inventoryNbt.png" alt="Player Inventory as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="inventoryNetwork.png" alt="Player Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="inventoryNbt.png" alt="Player Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 {: .note }
 > The items in the crafting grid appear to not have a slot associated with them when saved or loaded to NBT.
@@ -33,39 +30,36 @@ The player inventory has no index. It has a few obvious oddities between how its
 ## Chest (0)
 Chests have an index of `0`.
 
-- First slot: 0
-- Last slot: 26
-- First inventory slot: 27
-- Last hotbar slot: 62
+| Network | NBT |
+| :---: | :---: |
+| <img src="chestNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="chestNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
-{: .note }
-> TODO: Large chests
+Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry, and as such count/store their slots separately.
+
+| Network | NBT |
+| :---: | :---: |
+| <img src="chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 ## Crafting Table (1)
 Crafting Tables have an index of `1`.
-- Result slot: 0
-- First slot: 1
-- Last slot: 9
-- First inventory slot: 10
-- Last hotbar slot: 45
 
-{: .note }
-> Crafting Tables are not tile entities and they do not keep track of what was in them when the world is saved.
+| Network | NBT |
+| :---: | :---: |
+| <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | Crafting Tables don't have NBT data |
 
 ## Furnace (2)
 Furnaces have an index of `2`.
-- Burnable slot: 0
-- Fuel slot: 1
-- Result slot: 2
-- First inventory slot: 3
-- Last hotbar slot: 38
+
+| Network | NBT |
+| :---: | :---: |
+| <img src="furnaceNetwork.png" alt="Furnace Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="furnaceNbt.png" alt="Furnace Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 ## Dispenser (3)
 Dispensers have an index of `3`.
-- First slot: 0
-- Last slot: 8
-- First inventory slot: 9
-- Last hotbar slot: 44 
+
+| Network | NBT |
+| :---: | :---: |
+| <img src="dispenserNetwork.png" alt="Dispenser Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="dispenserNbt.png" alt="Dispenser Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 ## Outside (-999)
 This is not any valid inventory. If the number `-999` is sent over the network, it means the player has clicked outside of an open inventory/window.

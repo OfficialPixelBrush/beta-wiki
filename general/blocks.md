@@ -6,7 +6,9 @@ parent: General
 ---
 
 # Blocks
-A comprehensive listing of all blocks
+Blocks are non-items things that're usually represented as a 3D Cube. Blocks only have 2 properites. An 8-Bit numberic ID and a 4-Bit metadata/damage value.
+
+Here is a comprehensive listing of all blocks.
 
 | Value | Name                    | In-game Name                                        | Metadata use                                        |
 | :---- | :---------------------- | :-------------------------------------------------- | :-------------------------------------------------- |
