@@ -50,7 +50,7 @@ Crafting Tables have an index of `1`.
 | <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
 
 {: .note }
-> Crafting Tables are not tile entities are store no NBT data!
+> Crafting Tables are not tile entities and store no NBT data!
 
 ## Furnace (2)
 Furnaces have an index of `2`.
