@@ -40,12 +40,17 @@ Large Chests are just normal chests that happen to be adjacent when opened. They
 | :---: | :---: |
 | <img src="chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
+It appears the chest that is visually to the left represents the upper half of the large chest, while the right represents the lower half.
+
 ## Crafting Table (1)
 Crafting Tables have an index of `1`.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | Crafting Tables don't have NBT data |
+| <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
+
+{: .note }
+> Crafting Tables are not tile entities are store no NBT data!
 
 ## Furnace (2)
 Furnaces have an index of `2`.
