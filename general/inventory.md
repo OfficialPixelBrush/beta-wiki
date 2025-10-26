@@ -27,6 +27,9 @@ The player inventory has no index. It has a few obvious oddities between how its
 {: .note }
 > The items in the crafting grid appear to not have a slot associated with them when saved or loaded to NBT.
 
+{: .note }
+> The result slot cannot be altered over the network, always showing up as whatever the client thinks should be there. However, the client still expects the 0th slot to be sent.
+
 ## Chest (0)
 Chests have an index of `0`.
 
