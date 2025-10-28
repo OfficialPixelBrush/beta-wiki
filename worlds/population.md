@@ -47,7 +47,7 @@ Each of them have their own unique Generator object that's responsible for placi
 {:toc}
 
 ## Lakes
-Water and Lava lakes share the same logic.
+Water and lava lakes share the same logic, the only differences between them are what blocks generate, and the fact lava lakes generate a stone border around their edge.
 
 ## Dungeon
 Generates a dungeon made of cobble and mossy cobble, alongside a spawner at the center and chests with loot in them.
