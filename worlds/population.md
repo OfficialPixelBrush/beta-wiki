@@ -52,6 +52,34 @@ Water and lava lakes share the same logic, the only differences between them are
 ## Dungeon
 Generates a dungeon made of cobble and mossy cobble, alongside a spawner at the center and chests with loot in them.
 
+### Dungeon Loot
+When a chest is generated in a dungeon, an integer with a bound of 11 is generated, resulting in the loot table below. Up to 8 items can be generated.
+
+| Item | Chance | Amount |
+| --- | --- | --- |
+| Saddle | `1/11` | `1` |
+| Iron Ingot | `1/11` | `1-5` |
+| Bread | `1/11` | `1` |
+| Wheat | `1/11` | `1-5` |
+| Gunpowder | `1/11` | `1-5` |
+| String | `1/11` | `1-5` |
+| Bucket | `1/11` | `1` |
+| Golden Apple | `1/1100` | `1` |
+| Redstone Dust | `1/22` | `1-5` |
+| Record | `1/110` | `1` |
+| Lapis Lazuli | `1/11` | `1` |
+
+Anything else results in an empty slot.
+
+### Mob Spawner mobs
+When a Mob Spawner is placed by the Dungeon generator, an integer with a bound of 4 is generated, resulting in the following table below.
+
+| Monster | Chance |
+| --- | --- |
+| `Skeleton` | `1/4` |
+| `Zombie` | `1/2` |
+| `Spider` | `1/4` |
+
 ## Clay
 Clay patches.
 
@@ -59,7 +87,45 @@ Clay patches.
 Anything you'd find underground, such as dirt/gravel blocks and coal, iron, gold, redstone, diamond and lapis lazuli veins.
 
 ## Trees
-Trees, biome dependent.
+This section will discuss how its decided if a tree should generate and how those trees generate.
+1. The tree density noise is sampled according to the current block position
+2. The initial number of trees is set to `0`
+3. It has a `1/10` chance to be incremented
+
+From here, the following values are added onto the number of trees.
+
+| Biome | Tree chance change |
+| ----- | --- |
+| Forest | `treeDensity + 5` |
+| Rainforest | `treeDensity + 5` |
+| Seasonal Forest | `treeDensity + 2` |
+| Taiga | `treeDensity + 5` |
+| Desert | `-20` |
+| Tundra | `-20` |
+| Plains | `-20` |
+
+From there, depending on the Biome, one of four kinds of trees can be generated.
+
+| Biome | Chance | Tree Type if win | Tree type if fail |
+| --- | --- | --- | --- |
+| - | `1/10` | Big Tree | Small Tree |
+| Forest | `1/5` | Big Tree | Small Tree |
+| Rainforest | `1/3` | Big Tree | Small Tree |
+| Taiga | `1/3` | Big Taiga Tree | Small Taiga Tree |
+
+This is repeated for whatever number of trees that was calculated is.
+
+### Small Tree
+TODO
+
+### Big Tree
+TODO
+
+### Small Taiga Tree
+TODO
+
+### Big Taiga Tree
+TODO
 
 ## Flowers
 Dandelions, Roses and Mushrooms rely on this generator.

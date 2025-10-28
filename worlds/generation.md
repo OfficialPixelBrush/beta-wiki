@@ -75,7 +75,7 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 | Selector Noise | `8` | `(684.412 / 80.0, 684.412 / 160.0, 684.412 / 80.0)` |
 | Continentalness | `10` | `(1.121, 1.121, 0.5)` |
 | Depth Noise | `16` | `(200.0, 200.0, 0.5)` |
-| Mob Spawner Noise | `8` | |
+| Tree Density Noise | `8` | - |
 
 | Low | High | Selector | Continental | Depth |
 | :---: | :---: | :---: | :---: | :---: |
@@ -83,7 +83,7 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 
 <sub>Colors adjusted be more visible.</sub>
 
-Continentalness and Depth are 2D, while Low, High and Selector noise are 3D. As a result, only the lowest slice of each is shown.
+Continentalness and Depth are 2D, while Low, High and Selector noise are 3D. As a result, only the lowest slice of each is shown. Tree Density is 2D as well, but only used during the [population stage](population#trees) for trees.
 
 ### Terrain Noise
 This function utilizes 5 of our Perlin Noise Generators, 2 in 2D and 3 in 3D.
