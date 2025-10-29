@@ -37,4 +37,4 @@ Sent to the client when a player entity should be spawned. All coordinates and a
 | Z      | 15 |
 | Yaw       | 22.4     |
 | Pitch     | 12.68    |
-| Held ite | `256` (Iron Shovel) |
+| Held item | `256` (Iron Shovel) |

@@ -11,7 +11,7 @@ Items are non-block things that're usually represented as a 2D Sprite, given pse
 Here is a comprehensive listing of all items.
 
 | Value | Name                 | Metadata use |
-| :---- | :------------------- | :----------- |
+| ----: | :------------------- | :----------- |
 | 256   | Iron Shovel          | Damage       |
 | 257   | Iron Pickaxe         | Damage       |
 | 258   | Iron Axe             | Damage       |

@@ -11,7 +11,7 @@ Blocks are non-items things that're usually represented as a 3D Cube. Blocks onl
 Here is a comprehensive listing of all blocks.
 
 | Value | Name                    | In-game Name                                        | Metadata use                                        |
-| :---- | :---------------------- | :-------------------------------------------------- | :-------------------------------------------------- |
+| ----: | :---------------------- | :-------------------------------------------------- | :-------------------------------------------------- |
 | 0     | Air                     |                                                     |                                                     |
 | 1     | Stone                   | Stone                                               |                                                     |
 | 2     | Grass                   | Grass                                               |                                                     |
