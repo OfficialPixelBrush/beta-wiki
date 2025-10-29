@@ -13,7 +13,7 @@ A small list of clients or servers that implement the Beta 1.7.3 protocol, which
 | --- | --- | --- |
 | [Minecraft](https://www.minecraft.net/) | Java | Mojang |
 | [mc173](https://github.com/mindstorm38/mc173) | Rust | [mindstorm38](https://github.com/mindstorm38/) |
-| (to be released) | Zig | [cody-quinn](https://codyq.dev/) |
+| [Minestalgia](https://github.com/cody-quinn/Minestalgia) | Zig | [cody-quinn](https://codyq.dev/) |
 | [TrueCraft](https://github.com/ddevault/TrueCraft) | C# | [ddevault](https://github.com/ddevault) |
 | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer) | C++ | [Pixel Brush](https://pixelbrush.dev/) |
 
