@@ -12,7 +12,7 @@ parent: Packets
 | `0x0F`    | Serverbound |
 
 ## Serverbound
-Sent to the server when the player attempts to place a block or item
+Sent to the server when the player attempts to place a block or item. If a block is placed, this must be followed up by a [block change packet](053-block-change)!
 
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |

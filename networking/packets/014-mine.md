@@ -12,7 +12,7 @@ parent: Packets
 | `0x0E`    | Serverbound |
 
 ## Serverbound
-Sent to the server when the player attempts to mine a block
+Sent to the server when the player attempts to mine a block. If a block is mined, this must be followed up by a [block change packet](053-block-change) that turns it into air!
 
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |
