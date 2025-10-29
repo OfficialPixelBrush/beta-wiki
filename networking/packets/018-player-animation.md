@@ -1,11 +1,11 @@
 ---
-title: "0x12: Animation"
+title: "0x12: Player Animation"
 nav_order: 19
 layout: home
 parent: Packets
 ---
 
-# Animation
+# Player Animation
 
 | Packet ID | Direction |
 | --------- | --------- |

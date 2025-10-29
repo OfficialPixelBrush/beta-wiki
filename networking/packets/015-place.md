@@ -24,7 +24,7 @@ Sent to the server when the player attempts to place a block or item
 | (Amount) | Byte | The amount of the item in the players hand |
 | (Damage) | Short | The Metadata of the item |
 
-The face can be one of six values, representing the face being hit.
+The face can be one of six values, representing the face the block is placed on.
 
 | Value | 0 | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- | --- |

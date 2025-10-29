@@ -1,27 +1,22 @@
 ---
-title: "0x1C: Entity Velocity"
-nav_order: 29
+title: "0x1D: Destroy Entity"
+nav_order: 30
 layout: home
 parent: Packets
 ---
-# Entity Velocity (?)
+# Destroy Entity
 
 | Packet ID | Direction |
 | --------- | --------- |
-| `0x1C`    | Clientbound      |
+| `0x1D`    | Clientbound      |
 
 
 ## Clientbound
 Sent to the client when an entity should be destroyed on the client, such as a mob despawning or a player disconnecting.
 
-Apparently maps the range `-0.9 - 0.9` to `-28800 to 28800` (max value per tick).
-
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
 | Entity ID | Integer | The ID of the entity that should be destroyed |
-| X Velocity | Short | Velocity on the X axis |
-| Y Velocity | Short | Velocity on the Y axis |
-| Z Velocity | Short | Velocity on the Z axis |
 
 ## Example Packets
 
@@ -30,6 +25,3 @@ Apparently maps the range `-0.9 - 0.9` to `-28800 to 28800` (max value per tick)
 | Field  | Value    |
 | ------ | -------- |
 | Entity ID | 1298  |
-| X Velocity | -1343 |
-| Y Velocity | 0 |
-| Z Velocity | 0 |

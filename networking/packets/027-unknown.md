@@ -1,5 +1,5 @@
 ---
-title: "0x1B: StanceUpdate"
+title: "0x1B: Unknown (Stance Update?)"
 nav_order: 28
 layout: home
 parent: Packets

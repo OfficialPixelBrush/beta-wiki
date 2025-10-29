@@ -33,3 +33,12 @@ Limited to signed 64-Bit doubles (1.7E +/- 308). This space defines the position
 Limited to signed 28.4 fixed-point* numbers (`-67,108,864` to `67,108,863.9688`) along all axes. This space defines the positions of all entities in the world. The 4 lowest bits are used for in-block precision, meaning that within each block an entity has a decimal precision of 1/32nd of a Block (0.03125 Blocks).
 
 <sup>*Sent as a signed 32-Bit Integer</sup>
+
+Additionally, rotation data is often quantized to only a single 8-Bit Byte, following this formulata.
+```python
+byte(( value / 360.0 ) * 255.0)
+```
+
+| Quanzied Angles |
+| : --- : |
+| ![](quantizedAngles.svg) |
