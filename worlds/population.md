@@ -108,15 +108,19 @@ From there, depending on the Biome, one of four kinds of trees can be generated.
 
 | Biome | Chance | Tree Type if win | Tree type if fail |
 | --- | --- | --- | --- |
-| - | `1/10` | Big Tree | Small Tree |
-| Forest | `1/5` | Big Tree | Small Tree |
-| Rainforest | `1/3` | Big Tree | Small Tree |
-| Taiga | `1/3` | Big Taiga Tree | Small Taiga Tree |
+| - | `1/10` | Big Tree | Oak Tree |
+| Forest | `1/5` | Birch Tree | (see birch fail) |
+| Forest (birch fail) | `1/3` | Big Tree | Oak Tree |
+| Rainforest | `1/3` | Big Tree | Oak Tree |
+| Taiga | `1/3` | Big Taiga Tree | Oak Taiga Tree |
 
 This is repeated for whatever number of trees that was calculated is.
 
-### Small Tree
+### Oak Tree
 TODO
+
+#### Birch Tree
+Birch trees employ the exact same generator as Oak Trees, except that their maximum height is one block more, and that their Metadata is different (`2` instead of `0`).
 
 ### Big Tree
 TODO
