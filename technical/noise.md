@@ -13,7 +13,7 @@ This page will explain how the Perlin Noise Generator up to at least Beta 1.7.3 
 {:toc}
 
 ## Perlin Noise
-The algorithm used by most of Minecraft's Terrain is "Improved Perlin Noise", first published in 2002, which is a slightly tweaked version of the original Perlin Noise Algorithm from 1985, both by Ken Perlin.
+The algorithm used by most of Minecraft's Terrain is based on "Improved Perlin Noise", first published in 2002, which is a slightly tweaked version of the original Perlin Noise Algorithm from 1985, both by Ken Perlin.
 
 The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654.566636), however a more accessible option is the [Wikipedia page on Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
 
@@ -21,7 +21,13 @@ The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654
 > [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here a 64-Bit Floating-point number being wrongfully limited to a 32-Bit Integer, capping it out at the maximum value of a 32-Bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly.
 
 ## Simplex Noise
-Minecraft utilizes Simplex Noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
+Minecraft utilizes a slightly modified implementation of Simplex Noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
+
+## Modifications made for Minecraft
+The main differences that arise in the Perlin and Simplex Noise generators comes from some slight tweaks that were made when implementing them.
+
+1. An inital pseudorandom offset is assigned to each of the coordinates of the noise generator `coordinate = nextDouble() * 256.0;`
+2. For shuffling the permutation table, once again, Javas PRNG is used
 
 ## Noise Octaves
 A common practice when using Perlin noise is to use multiple octaves/layers of it to improve fine detail, resulting in a more realistic/natural appearance.
