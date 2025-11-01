@@ -26,6 +26,9 @@ Sent to the client when a player entity should be spawned. All coordinates and a
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Held item | Short | Held item/block of the player |
 
+{: .warning }
+> Even though "Held item" can be [`-1` to represent an empty slot](103-set-inventory-slot), the client doesn't know how to render held item `-1` on other players when they spawn in. As a result, this value must never be lower than `0`!
+
 ## Example Packet
 
 | Field     | Value | 
