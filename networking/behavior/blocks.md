@@ -1,7 +1,7 @@
 ---
 title: Blocks
 layout: home
-nav_order: 5
+nav_order: 15
 parent: Behavior
 ---
 
