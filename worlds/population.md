@@ -151,3 +151,6 @@ Cacti
 
 ## Liquids
 Liquids
+
+## Snow
+Snow generates on the highest solid block, except ice, where the temperature value is  `<0.5`.

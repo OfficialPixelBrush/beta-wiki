@@ -209,6 +209,9 @@ After this, the lighting is updated and the heightmap is generated.
 ## Population
 Continue onto the [population page](population) to find out more.
 
+## Further Reading
+- [Java Edition Far Lands/Infdev 20100327 to Beta 1.7.3](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3)
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     mediumZoom('img', {
@@ -217,6 +220,3 @@ Continue onto the [population page](population) to find out more.
     });
   });
 </script>
-
-## Further Reading
-- [Java Edition Far Lands/Infdev 20100327 to Beta 1.7.3](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3)

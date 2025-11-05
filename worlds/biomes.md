@@ -148,3 +148,12 @@ This is then passed to the [World Generator](generation).
 
 ## Further reading
 Check out the page for the [World Generator](generation).
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    mediumZoom('img', {
+      margin: 10,
+      background: '#000000CC'
+    });
+  });
+</script>
