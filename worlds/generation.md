@@ -206,6 +206,9 @@ this->CarveCave(
 
 After this, the lighting is updated and the heightmap is generated.
 
+## Heightmap
+The initial heightmap generation boils down to iterating through every `xz` coordinate, from the top to the bottom, and stopping if any block with an Opacity that isn't `0` is run into. Additionally, it keeps track of the lowest block height it has encountered up to that point.
+
 ## Population
 Continue onto the [population page](population) to find out more.
 
