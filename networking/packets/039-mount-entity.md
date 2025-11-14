@@ -15,8 +15,8 @@ Sent to the client to attach an entity to another. Used for riding.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
-| Entity ID | Integer | The ID of the entity that should ride |
-| Vehicle ID | Integer | The ID of the entity that should be ridden |
+| Entity ID (Rider) | Integer | The ID of the entity that should ride |
+| Entity ID (Ridee) | Integer | The ID of the entity that should be ridden |
 
 ## Example Packets
 
@@ -24,5 +24,5 @@ Sent to the client to attach an entity to another. Used for riding.
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 2  |
-| Vehicle ID | 654 |
+| Entity ID (Rider) | 2  |
+| Entity ID (Ridee) | 654 |
