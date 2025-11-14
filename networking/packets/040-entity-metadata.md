@@ -11,7 +11,7 @@ parent: Packets
 | `0x28`    | Clientbound      |
 
 ## Clientbound
-Sent to the client to supply further data for some entities. See the [entity metadata page](../../technical/entity-metadata.md) for more info!
+Sent to the client to supply further data for some entities. See the [entity metadata page](../../technical/entity-metadata) for more info!
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |

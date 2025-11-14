@@ -7,7 +7,7 @@ parent: Technical
 
 # Entity Metadata
 {: .no_toc }
-Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata.md).
+Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata).
 
 1. TOC
 {:toc}
@@ -214,5 +214,5 @@ All entities extending the `Entity` class must support this bit field at metadat
 
 ## Further Reading
 - [Protocol (wiki.vg)](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769758#Metadata)
-- [Mobs](../general/mobs.md)
-- [Entity Metadata Packet](../networking/packets/040-entity-metadata.md)
+- [Mobs](../general/mobs)
+- [Entity Metadata Packet](../networking/packets/040-entity-metadata)
