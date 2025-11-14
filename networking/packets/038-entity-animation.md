@@ -31,7 +31,6 @@ Sent to the client to set an entity's animation state, such as if it should turn
 ## Example Packets
 
 ### Clientbound
-TODO: Provide integer example for these numbers
 
 | Field  | Value    |
 | ------ | -------- |

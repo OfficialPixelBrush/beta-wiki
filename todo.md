@@ -13,10 +13,18 @@ A rough checklist for everything that still needs to be done. Lots to do!
 - General
     - [x] Blocks
     - [x] Items
-    - [ ] Tile Entities
+    - [x] Tile Entities
 - Networking
     - Packets
-        - [ ] All the remaining ones
+        - [ ] 17: Use Bed
+        - [ ] 27: Unknown (Stance Update?)
+        - [ ] 52 Set Multiple Blocks
+        - [ ] 54: Block Action
+        - [ ] 60: Explosion
+        - [ ] 71: Lightning Bolt
+        - [ ] 106: Inventory Transaction
+        - [ ] 131: Item Data
+        - [ ] 200: Statistic
     - Behavior
 - Rendering
     - [ ] Meshing
