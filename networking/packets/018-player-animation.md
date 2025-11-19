@@ -11,7 +11,7 @@ parent: Packets
 | --------- | --------- |
 | `0x12`    | Both      |
 
-This packet is sent by both the client and the server for swinging your arm (`1`) and leaving a bed (`3`), which is serverbound only. The client instead uses the [Entity Action](019-entity-action) packet for when it leaves a bed.
+This packet is sent by both the client and the server for swinging your arm (`1`) and leaving a bed (`3`), which is clientbound only. The client sends the [Entity Action](019-entity-action) packet for when it wishes to leave a bed (aka clicking the "Leave Bed" button).
 
 ## Both
 
