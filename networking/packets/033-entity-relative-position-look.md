@@ -1,5 +1,5 @@
 ---
-title: "0x22: Entity Position and Look"
+title: "0x22: Entity Relative Position and Look"
 nav_order: 34
 layout: home
 parent: Packets
