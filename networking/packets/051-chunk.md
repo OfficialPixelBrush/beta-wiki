@@ -13,10 +13,12 @@ parent: Packets
 
 The packets is sent from the server to the client to update the blocks in the specified area.
 
-The origin coordinate (x,y,z) doesn't need to be chunk aligned.
-The to-be-updated volume is given by the width, height and length bytes which the server subtracts 1 from to allow for updating up to a 256x256 area.
+The origin coordinate (x,y,z) is in [block space](../terminology#block-space).
+The to-be-updated volume is defined by the width, height and length bytes which the server subtracts `1` from to allow updating of a 256x128x256 area\*.
 
-The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards to Negative X/Z.
+<sub>\* untested, but height values more than `127` seem to crash the client<sub>
+
+The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards Negative X/Y/Z.
 
 ## Compression
 For more info, check out the [compression page](../../technical/compression).
