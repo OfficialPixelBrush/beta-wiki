@@ -10,17 +10,17 @@ The behavior observed when a new player joins the Server is exceedingly interest
 
 ## An existing player is sent to the new Client
 
-| Direction | Packet | Data |
-|---|---|---|
-| `S->C` | [Login](../packets/001-login) | EID=7; Unknown=""; Seed=4700869286537174060; Dimension=0; |
-| `S->C` | [Spawn Point](../packets/006-spawn-point) | x=0; y=64; z=0; |
-| `S->C` | [Time](../packets/004-time) | Time=240402; |
-| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=6; Username="PixelBrushArt"; x=656; y=2272; z=-290; Yaw=79; Pitch=16; Held Item=17; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=0; Item=17; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=1; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=2; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=3; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=4; Item=-1; Damage=0; |
+| Direction | Packet | Data | Meaning |
+|---|---|---|---|
+| `S->C` | [Login](../packets/001-login) | EID=7; Unknown=""; Seed=4700869286537174060; Dimension=0; | The new player gets its EID (7), the Worlds Seed (for biome colors) and Dimension |
+| `S->C` | [Spawn Point](../packets/006-spawn-point) | x=0; y=64; z=0; | The players spawn point is sent so compass' point in the correct direction |
+| `S->C` | [Time](../packets/004-time) | Time=240402; | The current world time is sent |
+| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=6; Username="PixelBrushArt"; x=656; y=2272; z=-290; Yaw=79; Pitch=16; Held Item=17; | The other player is spawned with its EID (6). The coordinates are in [entity space](../terminology#entity-space). |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=0; Item=17; Damage=0; | The other players' held item is set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=1; Item=-1; Damage=0; | The other players' boots(?) are set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=2; Item=-1; Damage=0; | The other players' leggings(?) are set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=3; Item=-1; Damage=0; | The other players' chestplate(?) is set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=4; Item=-1; Damage=0; | The other players' helmet(?) is set |
 
 It's interesting that the held item is sent twice, despite already being sent with `SpawnPlayer`. However, that packet lacks the damage value data that is need for some blocks, such as the different kinds of saplings or wool.
 
@@ -29,15 +29,15 @@ It's interesting that the held item is sent twice, despite already being sent wi
 
 ## A new client shows up on the existing client
 
-| Direction | Packet | Data |
-| --- | --- | --- |
-| `S->C` | [Chat Message](../packets/003-chat-message)      | Message="§eCamera joined the game."; |
-| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=7; Username="Camera"; x=272; y=2355; z=272; Yaw=0; Pitch=0; Held Item=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=0; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=1; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=2; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=3; Item=-1; Damage=0; |
-| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=4; Item=-1; Damage=0; |
+| Direction | Packet | Data | Meaning |
+|---|---|---|---|
+| `S->C` | [Chat Message](../packets/003-chat-message)      | Message="§eCamera joined the game."; | Join chat message |
+| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=7; Username="Camera"; x=272; y=2355; z=272; Yaw=0; Pitch=0; Held Item=0; | This spawns the new player on the client-side. Coordiantes are in [entity space](../terminology#entity-space). |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=0; Item=-1; Damage=0; | The other players' held item is set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=1; Item=-1; Damage=0; | The other players' boots(?) are set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=2; Item=-1; Damage=0; | The other players' leggings(?) are set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=3; Item=-1; Damage=0; | The other players' chestplate(?) is set |
+| `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=4; Item=-1; Damage=0; | The other players' helmet(?) is set |
 
 # Further reading
 - [A new player joins (Github - BetrockServer Wiki - Vanilla Server Behavior)](https://github.com/OfficialPixelBrush/BetrockServer/wiki/Vanilla-Server-Behavior#a-new-player-joins)
