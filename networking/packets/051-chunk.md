@@ -12,23 +12,25 @@ parent: Packets
 | `0x33`    | Clientbound |
 
 The packets is sent from the server to the client to update the blocks in the specified area.
+
 The origin coordinate (x,y,z) doesn't need to be chunk aligned.
 The to-be-updated volume is given by the width, height and length bytes which the server subtracts 1 from to allow for updating up to a 256x256 area.
 
-## Zlib
-Minecraft seems to use the standard zlib implementation Java provides, meaning that, with some hackery, it can even take uncompressed chunk data which may be easier for embedded systems to handle.
-For more info, check out the specs of [zlib](https://www.rfc-editor.org/rfc/rfc1950) and [deflate](https://www.rfc-editor.org/rfc/rfc1951).
+The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards to Negative X/Z.
+
+## Compression
+For more info, check out the [compression page](../../technical/compression).
 
 ## Clientbound
 
 | Field           | Type       | Description                                     |
 | --------------- | ---------- | ----------------------------------------------- |
-| X               | Integer    | The X position of the chunk                     |
-| Y               | Short      | The Y position of the chunk                     |
-| Z               | Integer    | The Z position of the chunk                     |
-| width           | Byte       | The width of the updated area, `-1`             |
-| height          | Byte       | The height of the updated area, `-1`            |
-| length          | Byte       | The length of the updated area, `-1`            |
+| X               | Integer    | The X position of the chunk towards Negative X |
+| Y               | Short      | The Y position of the chunk towards Negative Y |
+| Z               | Integer    | The Z position of the chunk towards Negative Z |
+| width           | Byte       | The width of the updated area towards Positive X, `-1` |
+| height          | Byte       | The height of the updated area towards Positive Y, `-1` |
+| length          | Byte       | The length of the updated area towards Positive Z, `-1` |
 | compressed size | Integer    | The size, in bytes, of the zlib compressed data |
 | compressed data | Byte Array | The zlib compressed data                        |
 

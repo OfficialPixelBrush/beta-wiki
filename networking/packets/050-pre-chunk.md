@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x32`    | Clientbound |
 
-This is sent by the server to load or unload a chunk. When sending this packet at an already loaded chunk, the client will clear any previous blocks that were there. A chunk is a 16x128x16 spot.
+This is sent by the server to load or unload a chunk. If load is `1`, the Client readies itself to place block data there. If it's `0` the Client deletes the Chunk data.
 
 ## Clientbound
 
@@ -19,7 +19,7 @@ This is sent by the server to load or unload a chunk. When sending this packet a
 | ----- | ------- | --------------------------------------------- |
 | X     | Integer | The X position of the chunk |
 | Z     | Integer | The Z position of the chunk |
-| Load? | Boolean | Whether the client should load or unload the chunk |
+| Load  | Boolean | Whether the client should load or unload the chunk |
 
 ## Example Packet
 
