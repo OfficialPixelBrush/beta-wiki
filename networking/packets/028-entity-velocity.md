@@ -8,13 +8,13 @@ parent: Packets
 
 | Packet ID | Direction |
 | --------- | --------- |
-| `0x1C`    | Clientbound      |
+| `0x1C`    | Clientbound |
 
 
 ## Clientbound
-Sent to the client when an entity should be destroyed on the client, such as a mob despawning or a player disconnecting.
+Sent to the client to showcase an entites' velocity.
 
-Apparently maps the range `-0.9 - 0.9` to `-28800 to 28800` (max value per tick).
+The sent values are first clamped to `+/-3.9` in any direction, then multiplied by `8000` before being sent out as a short. The client undoes this multiplication.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
