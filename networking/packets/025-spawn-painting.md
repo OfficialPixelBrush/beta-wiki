@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x19`    | Clientbound |
 
-Sent to the client when a painting entity should be spawned. All coordinates are in [entity space](../terminology#entity-space).
+Sent to the client when a painting entity should be spawned. The position is in [block space](../terminology#block-space).
 
 ## Serverbound
 
@@ -19,9 +19,9 @@ Sent to the client when a painting entity should be spawned. All coordinates are
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
 | Title  | String16 | [The name of the painting](../../general/paintings) (Max 13 Characters). |
-| X      | Integer | The X position of the mob (Quantized) |
-| Y      | Integer | The Y position of the mob (Quantized) |
-| Z      | Integer | The Z position of the mob (Quantized) |
+| X      | Integer | The X block position of the player  |
+| Y      | Integer | The Y block position of the player  |
+| Z      | Integer | The Z block position of the player  |
 | Direction | Byte | Rotation on the X Axis (Quantized) |
 
 The coordinates refer to the center of the painting. Given a set width and height, the center is determined to be at

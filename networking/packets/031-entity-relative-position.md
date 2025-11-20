@@ -12,7 +12,7 @@ parent: Packets
 
 
 ## Clientbound
-Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks.
+Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks. As the position data is in [entity space](../terminology#entity-space) it is quantized.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |

@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x14`    | Clientbound |
 
-Sent to the client when a player entity should be spawned. All coordinates and angles are in [entity space](../terminology#entity-space).
+Sent to the client when a player entity should be spawned.  The position is in [block space](../terminology#block-space), while the angles are quantized.
 
 ## Serverbound
 
@@ -19,9 +19,9 @@ Sent to the client when a player entity should be spawned. All coordinates and a
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this player |
 | Username  | String16 | The username. Maximum of 16 characters! |
-| X      | Byte | The X position of the player (Quantized) |
-| Y      | Byte | The Y position of the player (Quantized) |
-| Z      | Byte | The Z position of the player (Quantized) |
+| X      | Integer | The X block position of the player  |
+| Y      | Integer | The Y block position of the player  |
+| Z      | Integer | The Z block position of the player  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Held item | Short | Held item/block of the player |

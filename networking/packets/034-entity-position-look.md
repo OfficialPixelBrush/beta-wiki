@@ -12,7 +12,7 @@ parent: Packets
 
 
 ## Clientbound
-Sent to the client to set an entity's position absolutely. Usually sent when an entity moves more than 4 blocks, as the position data is in [entity space](../terminology#entity-space). Rotation data is also quantized.
+Sent to the client to set an entity's position absolutely. Usually sent when an entity moves more than 4 blocks, as the position data is in [entity space](../terminology#entity-space). Position and rotation data is in [entity space](../terminology#entity-space) and thus quantized.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |

@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x17`    | Clientbound |
 
-Sent to the client when an [object entity](../../general/objects) should be spawned. All coordinates and angles are in [entity space](../terminology#entity-space).
+Sent to the client when an [object entity](../../general/objects) should be spawned. The position is in [block space](../terminology#block-space).
 
 ## Serverbound
 
@@ -19,9 +19,9 @@ Sent to the client when an [object entity](../../general/objects) should be spaw
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this object |
 | Object Type  | Byte | The type of object |
-| X      | Integer | The X position of the object (Quantized) |
-| Y      | Integer | The Y position of the object (Quantized) |
-| Z      | Integer | The Z position of the object (Quantized) |
+| X      | Integer | The X block position of the player  |
+| Y      | Integer | The Y block position of the player  |
+| Z      | Integer | The Z block position of the player  |
 
 ## Example Packet
 

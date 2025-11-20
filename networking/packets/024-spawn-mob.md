@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x18`    | Clientbound |
 
-Sent to the client when a mob entity should be spawned. All coordinates and angles are in [entity space](../terminology#entity-space).
+Sent to the client when a mob entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 
 ## Serverbound
 
@@ -19,9 +19,9 @@ Sent to the client when a mob entity should be spawned. All coordinates and angl
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
 | Mob Type  | Byte | The username. Maximum of 16 characters! |
-| X      | Integer | The X position of the mob (Quantized) |
-| Y      | Integer | The Y position of the mob (Quantized) |
-| Z      | Integer | The Z position of the mob (Quantized) |
+| X      | Integer | The X block position of the player  |
+| Y      | Integer | The Y block position of the player  |
+| Z      | Integer | The Z block position of the player  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Metadata | - | [Additional entity metadata](../../general/mobs#metadata) |

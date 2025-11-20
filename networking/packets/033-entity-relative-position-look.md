@@ -12,7 +12,7 @@ parent: Packets
 
 
 ## Clientbound
-Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks. Rotation data is also sent quantized.
+Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks. Position and rotation data is in [entity space](../terminology#entity-space) and thus quantized.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |

@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x15`    | Clientbound |
 
-Sent to the client when an item entity should be spawned. All coordinates and angles are in [entity space](../terminology#entity-space).
+Sent to the client when an item entity should be spawned.  The position is in [block space](../terminology#block-space), while the angles are quantized.
 
 ## Serverbound
 
@@ -21,9 +21,9 @@ Sent to the client when an item entity should be spawned. All coordinates and an
 | Item id  | Short | The item id |
 | Count  | Byte | The number of items |
 | Metadata/Damage  | Short | The metadata/damage value |
-| X      | Byte | The X position of the item (Quantized) |
-| Y      | Byte | The Y position of the item (Quantized) |
-| Z      | Byte | The Z position of the item (Quantized) |
+| X      | Integer | The X block position of the player  |
+| Y      | Integer | The Y block position of the player  |
+| Z      | Integer | The Z block position of the player  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Roll | Byte | Rotation on the Z Axis (Quantized) |

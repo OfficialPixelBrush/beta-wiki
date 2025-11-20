@@ -12,7 +12,7 @@ parent: Packets
 
 
 ## Clientbound
-Sent to the client to set an entity's view angles. As the position data is in [entity space](../terminology#entity-space), rotation data is quantized.
+Sent to the client to set an entity's view angles. As the rotation data is in [entity space](../terminology#entity-space) it is quantized.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
