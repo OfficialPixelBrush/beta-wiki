@@ -13,7 +13,7 @@ parent: Packets
 
 
 ## Clientbound
-Sent to the client when the players their view-direction must be forced in a certain direction. (Unconfirmed)
+Sent to the client when the players their view-direction must be forced in a certain direction.
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
@@ -22,7 +22,7 @@ Sent to the client when the players their view-direction must be forced in a cer
 | On Ground | Boolean   | Unused (?) |
 
 ## Serverbound
-Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.
+Sent to the server when the player hasn't moved in a while, but is changing their viewing direction.
 
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |
