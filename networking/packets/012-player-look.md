@@ -19,6 +19,7 @@ Sent to the client when the players their view-direction must be forced in a cer
 | ------ | ------ | ---------------------------- |
 | Yaw | Float | Absolute rotation on the X Axis, in degrees |
 | Pitch | Float | Absolute rotation on the Y Axis, in degrees |
+| On Ground | Boolean   | Unused (?) |
 
 ## Serverbound
 Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.

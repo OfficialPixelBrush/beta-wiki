@@ -20,6 +20,7 @@ Sent to the client when the player is teleported, but their view-direction is ir
 | Y      | Double | The Y position of the player |
 | Stance | Double | The stance of the player     |
 | Z      | Double | The Z position of the player |
+| On Ground | Boolean | Unused(?) |
 
 ## Serverbound
 Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.
