@@ -25,6 +25,7 @@ The Payload is a list which describes the items in the sent inventory.
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |
 | Id | Short | The id of the item |
+| Count | Byte | The amount of the item (only added if `Id > -1`) |
 | Damage | Short | The damage value of the item (only added if `Id > -1`) |
 
 ## Example Packet
@@ -41,6 +42,7 @@ Repeat the following 45 Times
 | Field     | Value    |
 | --------- | -------- |
 | Id | `17` |
+| Count | `42` |
 | Damage | `1` |
 
 This would show up as an inventory full of Birch Logs.
