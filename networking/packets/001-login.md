@@ -15,12 +15,12 @@ This packet is sent after [Handshake](002-handshake) to finish logging in. The s
 
 ## Clientbound
 
-| Field      | Type     | Description                            |
-| ---------- | -------- | -------------------------------------- |
-| Entity ID  | Integer  | The entity ID of the player            |
-| Unused     | String16 | This value is not sent by the server   |
-| World Seed | Long     | The random seed for terrain generation |
-| Dimension  | Byte     | The player's spawning dimension        |
+| Field      | Type     | Description                             |
+| ---------- | -------- | --------------------------------------- |
+| Entity ID  | Integer  | The entity ID of the player             |
+| Unused     | String16 | This string is always Empty (Size of 0) |
+| World Seed | Long     | The random seed for terrain generation  |
+| Dimension  | Byte     | The player's spawning dimension         |
 
 The player's dimension is specified as `0` for The Overworld and `-1` for The Nether.
 
