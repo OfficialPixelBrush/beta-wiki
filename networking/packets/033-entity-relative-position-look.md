@@ -1,5 +1,5 @@
 ---
-title: "0x22: Entity Relative Position and Look"
+title: "0x21: Entity Relative Position and Look"
 nav_order: 34
 layout: home
 parent: Packets
@@ -8,7 +8,7 @@ parent: Packets
 
 | Packet ID | Direction |
 | --------- | --------- |
-| `0x22`    | Clientbound      |
+| `0x21`    | Clientbound      |
 
 
 ## Clientbound
