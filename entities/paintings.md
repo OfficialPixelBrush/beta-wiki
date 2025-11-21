@@ -2,7 +2,7 @@
 title: Paintings
 nav_order: 40
 layout: home
-parent: General
+parent: Entities
 ---
 
 # Paintings

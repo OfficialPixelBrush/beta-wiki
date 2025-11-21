@@ -2,7 +2,7 @@
 title: Mobs
 nav_order: 25
 layout: home
-parent: General
+parent: Entities
 ---
 
 # Mobs

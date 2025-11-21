@@ -1,11 +1,10 @@
 ---
-title: Entity
+title: Entities
 nav_order: 15
 layout: home
-parent: General
 ---
 
-# Entity
+# Entities
 {: .no_toc }
 Entites are non-block creatures that don't align to the block grid.
 
