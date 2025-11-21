@@ -20,7 +20,9 @@ The to-be-updated volume is defined by the width, height and length bytes which 
 
 The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards Negative X/Y/Z.
 
-## Compression
+## Chunk Data
+How the chunk data is formatted over the network is explained on the [chunk page](../../worlds/chunk#network).
+This data is zlib compressed when sent over the network.
 For more info, check out the [compression page](../../technical/compression).
 
 ## Clientbound
@@ -34,7 +36,7 @@ For more info, check out the [compression page](../../technical/compression).
 | height          | Byte       | The height of the updated area towards Positive Y, `-1` |
 | length          | Byte       | The length of the updated area towards Positive Z, `-1` |
 | compressed size | Integer    | The size, in bytes, of the zlib compressed data |
-| compressed data | Byte Array | The zlib compressed data                        |
+| compressed data | Byte Array | The zlib compressed chunk data |
 
 ## Example Packet
 
