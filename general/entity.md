@@ -1,6 +1,6 @@
 ---
 title: Entity
-nav_order: 2
+nav_order: 15
 layout: home
 parent: General
 ---
@@ -12,7 +12,7 @@ Entites are non-block creatures that don't align to the block grid.
 1. TOC
 {:toc}
 
-### Shared Properties
+## Base Entity
 All entities have the following properties, though usually more. These are just the most important ones. In brackets you can find their respective default values.
 
 | Field     | Type   | Description                                       |

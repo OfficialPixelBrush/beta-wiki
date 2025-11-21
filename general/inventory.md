@@ -1,6 +1,6 @@
 ---
 title: Inventory
-nav_order: 20
+nav_order: 45
 layout: home
 parent: General
 ---

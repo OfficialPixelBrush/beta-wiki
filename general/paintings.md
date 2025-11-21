@@ -1,6 +1,6 @@
 ---
 title: Paintings
-nav_order: 50
+nav_order: 40
 layout: home
 parent: General
 ---
