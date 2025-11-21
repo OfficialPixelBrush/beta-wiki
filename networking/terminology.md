@@ -38,7 +38,11 @@ Additionally, rotation data is often quantized to only a single 8-Bit Byte, foll
 ```python
 byte(( value / 360.0 ) * 255.0)
 ```
+This can be reversed too.
+```python
+(( float(value) / 255.0 ) * 360.0)
+```
 
-| Quanzied Angles |
+| Quantized Angles |
 | : --- : |
 | ![](quantizedAngles.svg) |
