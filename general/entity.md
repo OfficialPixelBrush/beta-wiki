@@ -42,6 +42,7 @@ The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the ent
 
 | Entity | Y-Offset |
 | --- | --- |
+| Default | `0.0` |
 | Player | `1.62` |
 
 ### Width and Height
@@ -49,7 +50,10 @@ The Width and Height define the size of the Axis-Aligned Bounding Box that Minec
 
 | Entity | Width | Height |
 | --- | --- | --- |
-| Player | `0.6` | `1.8` |
+| Default | `0.6` | `1.8` |
+
+{: .missing }
+> TODO: Other Bounding Box sizes
 
 ## Living Entities
 Living Entities are a subset of Entities that have more properties.
@@ -64,14 +68,19 @@ Living Entities are a subset of Entities that have more properties.
 > Most mobs overwrite the health value to be `20`
 
 ### Health
+
 | Entity | Health |
 | --- | --- |
+| Default | `10` |
 | Player | `20` |
+| Mobs | `20` |
 | Wolf | `8` |
 
 ### Move Speed
+
 | Entity | Move Speed |
 | --- | --- |
+| Default | `0.7` |
 | Player | `0.6` |
 | Spider | `0.8` |
 | Wolf | `1.1` |
