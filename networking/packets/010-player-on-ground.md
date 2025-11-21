@@ -9,11 +9,21 @@ parent: Packets
 
 | Packet ID | Direction   |
 | --------- | ----------- |
-| `0x0A`    | Serverbound |
+| `0x0A`    | Both |
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 
-> **Warning**: This value is unreliable for fall damage and cheat detection as it can be spoofed by the client.
+{: .warning }
+> This value is unreliable for fall damage and cheat detection as it can be spoofed by the client.
+
+## Clientbound
+
+| Field     | Type | Description                                        |
+| --------- | ---- | -------------------------------------------------- |
+| On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling |
+
+{: .note }
+> It's currently untested what the client does when it receives an `OnGround` packet. Most likely it just resets its vertical velocity.
 
 ## Serverbound
 

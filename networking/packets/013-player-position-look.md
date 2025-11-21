@@ -18,11 +18,11 @@ Sent to the client when the player is teleported and their view direction needs 
 | ------ | ------ | ---------------------------- |
 | X      | Double | The X position of the player |
 | Y      | Double | The Y position of the player |
-| Stance | Double | The stance of the player     |
+| Camera Y | Double | The Y position of the player camera |
 | Z      | Double | The Z position of the player |
 | Yaw | Float | Absolute rotation on the X Axis, in degrees |
 | Pitch | Float | Absolute rotation on the Y Axis, in degrees |
-| On Ground | Boolean | Unused(?) |
+| On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Serverbound
 Sent to the server when the player is moving and looking around.

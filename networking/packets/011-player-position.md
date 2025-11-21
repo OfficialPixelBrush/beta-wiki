@@ -18,9 +18,9 @@ Sent to the client when the player is teleported, but their view-direction is ir
 | ------ | ------ | ---------------------------- |
 | X      | Double | The X position of the player |
 | Y      | Double | The Y position of the player |
-| Stance | Double | The stance of the player     |
+| Camera Y | Double | The Y position of the player camera |
 | Z      | Double | The Z position of the player |
-| On Ground | Boolean | Unused(?) |
+| On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Serverbound
 Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.

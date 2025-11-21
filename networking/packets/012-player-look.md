@@ -19,7 +19,7 @@ Sent to the client when the players their view-direction must be forced in a cer
 | ------ | ------ | ---------------------------- |
 | Yaw | Float | Absolute rotation on the X Axis, in degrees |
 | Pitch | Float | Absolute rotation on the Y Axis, in degrees |
-| On Ground | Boolean   | Unused (?) |
+| On Ground | Boolean   | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Serverbound
 Sent to the server when the player hasn't moved in a while, but is changing their viewing direction.
