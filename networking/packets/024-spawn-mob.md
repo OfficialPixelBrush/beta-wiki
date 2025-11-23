@@ -18,7 +18,7 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
-| Mob Type  | Byte | The username. Maximum of 16 characters! |
+| Mob Type  | Byte | [The mob id](../../entities/mobs) |
 | X      | Integer | The X block position of the player  |
 | Y      | Integer | The Y block position of the player  |
 | Z      | Integer | The Z block position of the player  |

@@ -18,7 +18,7 @@ Sent to the client when an item entity should be spawned.  The position is in [b
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this item |
-| Item id  | Short | The item id |
+| Item id  | Short | [The id of the item](../../general/items) |
 | Count  | Byte | The number of items |
 | Metadata/Damage  | Short | The metadata/damage value |
 | X      | Integer | The X block position of the player  |
