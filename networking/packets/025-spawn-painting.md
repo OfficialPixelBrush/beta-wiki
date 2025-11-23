@@ -13,7 +13,7 @@ parent: Packets
 
 Sent to the client when a painting entity should be spawned. The position is in [block space](../terminology#block-space).
 
-## Serverbound
+## Clientbound
 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
@@ -45,10 +45,8 @@ The direction can be figured out via this table.
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 1298  |
+| Entity ID | 532  |
 | X      | 5 |
 | Y      | 2     |
 | Z      | 15 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
-| Held item | `256` (Iron Shovel) |
+| Direction | `2` |

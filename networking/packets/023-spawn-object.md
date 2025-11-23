@@ -13,7 +13,7 @@ parent: Packets
 
 Sent to the client when an [object entity](../../general/objects) should be spawned. The position is in [block space](../terminology#block-space).
 
-## Serverbound
+## Clientbound
 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |

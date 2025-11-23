@@ -13,7 +13,7 @@ parent: Packets
 
 Sent to the client when a mob entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 
-## Serverbound
+## Clientbound
 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
@@ -36,4 +36,4 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Z      | 15 |
 | Yaw       | 22.4     |
 | Pitch     | 12.68    |
-| Held item | `256` (Iron Shovel) |
+| Metadata | `` |

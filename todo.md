@@ -16,8 +16,8 @@ A rough checklist for everything that still needs to be done. Lots to do!
     - [x] Tile Entities
 - Networking
     - Packets
-        - [ ] 17: Use Bed
-        - [ ] 27: Unknown (Stance Update?)
+        - [x] 17: Use Bed
+        - [x] 27: Unknown (Stance Update?)
         - [ ] 52 Set Multiple Blocks
         - [ ] 54: Block Action
         - [ ] 60: Explosion

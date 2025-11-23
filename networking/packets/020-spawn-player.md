@@ -13,7 +13,7 @@ parent: Packets
 
 Sent to the client when a player entity should be spawned.  The position is in [block space](../terminology#block-space), while the angles are quantized.
 
-## Serverbound
+## Clientbound
 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
