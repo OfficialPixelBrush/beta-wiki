@@ -19,10 +19,10 @@ Sent to the client when a painting entity should be spawned. The position is in 
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
 | Title  | String16 | [The name of the painting](../../general/paintings) (Max 13 Characters). |
-| X      | Integer | The X block position of the player  |
-| Y      | Integer | The Y block position of the player  |
-| Z      | Integer | The Z block position of the player  |
-| Direction | Byte | Rotation on the X Axis (Quantized) |
+| X      | Integer | The X block position of the painting  |
+| Y      | Integer | The Y block position of the painting  |
+| Z      | Integer | The Z block position of the painting  |
+| Direction | Byte | The direction of the painting |
 
 The coordinates refer to the center of the painting. Given a set width and height, the center is determined to be at
 ```c
@@ -31,6 +31,15 @@ int h = max(0, width / 2 - 1);
 // Vertical Center
 int v = height / 2;
 ```
+
+The direction can be figured out via this table.
+
+| Value | Direction |
+| --- | --- |
+| `0` | `-Z` |
+| `1` | `-X` |
+| `2` | `+Z` |
+| `3` | `+X` |
 
 ## Example Packet
 

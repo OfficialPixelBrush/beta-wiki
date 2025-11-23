@@ -18,10 +18,10 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
-| Mob Type  | Byte | [The mob id](../../entities/mobs) |
-| X      | Integer | The X block position of the player  |
-| Y      | Integer | The Y block position of the player  |
-| Z      | Integer | The Z block position of the player  |
+| Mob Type  | Byte | [The type of the mob](../../entities/mobs) |
+| X      | Integer | The X block position of the mob  |
+| Y      | Integer | The Y block position of the mob  |
+| Z      | Integer | The Z block position of the mob  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Metadata | - | [Additional entity metadata](../../general/mobs#metadata) |

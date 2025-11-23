@@ -21,9 +21,9 @@ Sent to the client when an item entity should be spawned.  The position is in [b
 | Item id  | Short | [The id of the item](../../general/items) |
 | Count  | Byte | The number of items |
 | Metadata/Damage  | Short | The metadata/damage value |
-| X      | Integer | The X block position of the player  |
-| Y      | Integer | The Y block position of the player  |
-| Z      | Integer | The Z block position of the player  |
+| X      | Integer | The X block position of the item  |
+| Y      | Integer | The Y block position of the item  |
+| Z      | Integer | The Z block position of the item  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Roll | Byte | Rotation on the Z Axis (Quantized) |

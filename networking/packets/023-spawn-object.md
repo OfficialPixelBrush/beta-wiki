@@ -19,9 +19,9 @@ Sent to the client when an [object entity](../../general/objects) should be spaw
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this object |
 | Object Type  | Byte | [The type of the object](../../entities/objects) |
-| X      | Integer | The X block position of the player  |
-| Y      | Integer | The Y block position of the player  |
-| Z      | Integer | The Z block position of the player  |
+| X      | Integer | The X block position of the object  |
+| Y      | Integer | The Y block position of the object  |
+| Z      | Integer | The Z block position of the object  |
 
 ## Example Packet
 
