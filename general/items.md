@@ -116,3 +116,5 @@ Here is a comprehensive listing of all items.
 | 357   | Cookie               |              |
 | 358   | Map                  |              |
 | 359   | Shears               |              |
+| 2256  | Record (13)          |              |
+| 2257  | Record (cat)         |              |
