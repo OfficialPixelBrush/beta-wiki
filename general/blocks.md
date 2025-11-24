@@ -166,16 +166,16 @@ Wool exists in 16 distinct colors.
 | Value | Color |
 | --- | --- |
 | 0 | <span class="color-swatch" style="background-color:#FFFFFF;"></span> White |
-| 1 | <span class="color-swatch" style="background-color:#2F86AC;"></span> Orange |
-| 2 | <span class="color-swatch" style="background-color:#953FE1;"></span> Magenta |
+| 1 | <span class="color-swatch" style="background-color:#FC933F;"></span> Orange |
+| 2 | <span class="color-swatch" style="background-color:#DC56E7;"></span> Magenta |
 | 3 | <span class="color-swatch" style="background-color:#77A0F2;"></span> Light Blue |
 | 4 | <span class="color-swatch" style="background-color:#DFCF21;"></span> Yellow |
 | 5 | <span class="color-swatch" style="background-color:#45D938;"></span> Lime |
 | 6 | <span class="color-swatch" style="background-color:#F697B2;"></span> Pink |
 | 7 | <span class="color-swatch" style="background-color:#4D4D4D;"></span> Gray |
 | 8 | <span class="color-swatch" style="background-color:#B6BEBE;"></span> Light Gray |
-| 9 | <span class="color-swatch" style="background-color:#DC56E7;"></span> Cyan |
-| 10 | <span class="color-swatch" style="background-color:#77A0F2;"></span> Purple |
+| 9 | <span class="color-swatch" style="background-color:#2F86AC;"></span> Cyan |
+| 10 | <span class="color-swatch" style="background-color:#953FE1;"></span> Purple |
 | 11 | <span class="color-swatch" style="background-color:#2D3CB1;"></span> Blue |
 | 12 | <span class="color-swatch" style="background-color:#633C21;"></span> Brown |
 | 13 | <span class="color-swatch" style="background-color:#41591C;"></span> Green |
