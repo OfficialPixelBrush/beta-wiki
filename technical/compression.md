@@ -19,7 +19,7 @@ Deflate is the basic algorithm that is mainly used by both Gzip and Zlib, which 
 Gzip is an abstraction of the Deflate algorithm, adding some header and trailer info. It is used for most easily visible NBT files, namely `level.dat`.
 
 # Zlib
-Zlib is an abstraction of the Deflate algorithm, adding some basic error detection and more that the default Deflate data does not have. It is mostly used for compressing Chunk data as part of the [McRegion format](../worlds/mcregion).
+Zlib is an abstraction of the Deflate algorithm, adding some basic error detection and more that the default Deflate data does not have. It is mostly used for compressing Chunk data as part of the [McRegion format](../worlds/worldFormat#mcregion).
 
 ## Compressed data
 For reading about how zlib itself works in more detail, I recommend checking out either the [zlib Wikipedia page](https://en.wikipedia.org/wiki/Gzip) or the [zlib RFC page](https://www.rfc-editor.org/rfc/rfc1950).

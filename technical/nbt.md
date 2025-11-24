@@ -24,7 +24,7 @@ In the context of Beta Minecraft, there are two relevant forms of compression th
 Tags are what NBT Data consists of. They typically start with a single byte describing their tag type/ID, followed by the value of that tag.
 
 ### Data types
-See [Data types](../networking/data-types) for more info.
+See [Data types](data-types) for more info.
 
 | Hex  | Tag     | Contains | Purpose |
 | :--- | :--- | :--- | :--- |

@@ -7,7 +7,7 @@ parent: Worlds
 
 # Generation
 {: .no_toc }
-The generation described in this section will explain how Minecraft Beta 1.7.3 does its Terrain Generation. A lot of this will be based on educated guesses and the decompilation provided by [RetroMCP](https://github.com/MCPHackers/RetroMCP-Java). Additionally, certain historical bits and pieces will be taken from the [Minecraft Wiki](https://minecraft.wiki/w/World_generation/History#Beta-era_terrain).
+The generation described in this section will explain how Minecraft Beta 1.7.3 does its Terrain Generation. A lot of this will be based on educated guesses and the decompilation provided by [RetroMCP](https://github.com/MCPHackers/RetroMCP-Java). Additionally, certain historical bits and pieces will be taken from the [Minecraft Wiki](https://minecraft.wiki/w/World_generation/History#Beta_terrain_generator).
 
 1. TOC
 {:toc}
@@ -66,7 +66,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 ## Terrain Shape
 ### Noise Octaves
-The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](../technical/random), alongside 8 [Octaved Perlin Noise Generators](../technical/noise), 7 of which are relevant for World generation.
+The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](../technical/javaFeatures#random), alongside 8 [Octaved Perlin Noise Generators](../technical/noise), 7 of which are relevant for World generation.
 
 | Generator | Octaves | Scale |
 | :--- | --- | ---: |
@@ -151,7 +151,7 @@ For this the current block column is iterated over from top to bottom, from `127
 > I'm unsure if I like this format more than just pasted, commented code.
 
 ## Caves
-Caves are not noise based, but instead rely on carving the terrain out based on the world seed. It gets its own dedicated [PRNG object](../technical/random) when initialized.
+Caves are not noise based, but instead rely on carving the terrain out based on the world seed. It gets its own dedicated [PRNG object](../technical/javaFeatures#random) when initialized.
 
 ### Setup
 Cave generation is 

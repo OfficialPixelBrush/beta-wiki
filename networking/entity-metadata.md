@@ -214,5 +214,5 @@ All entities extending the `Entity` class must support this bit field at metadat
 
 ## Further Reading
 - [Protocol (wiki.vg)](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769758#Metadata)
-- [Mobs](../general/mobs)
+- [Mobs](../entities/mobs)
 - [Entity Metadata Packet](../networking/packets/040-entity-metadata)

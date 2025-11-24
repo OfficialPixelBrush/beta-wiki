@@ -18,7 +18,7 @@ Sent to the client when a painting entity should be spawned. The position is in 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
-| Title  | String16 | [The name of the painting](../../general/paintings) (Max 13 Characters). |
+| Title  | String16 | [The name of the painting](../../entities/paintings) (Max 13 Characters). |
 | X      | Integer | The X block position of the painting  |
 | Y      | Integer | The Y block position of the painting  |
 | Z      | Integer | The Z block position of the painting  |

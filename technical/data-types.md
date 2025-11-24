@@ -21,4 +21,4 @@ This page describes the various data types that Minecraft works with.
 | String16 | >=2 and <= 240 | | UCS-2 string, big-endian. Prefixed by an unsigned short containing the length of the string in characters. UCS-2 consists of 16-bit words, each of which represent a Unicode code point between U+0000 and U+FFFF inclusive. |
 
 ## Entity Metadata
-Read more over on [Entity metadata](entity-metadata).
+Read more over on [Entity metadata](../networking/entity-metadata).

@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x17`    | Clientbound |
 
-Sent to the client when an [object entity](../../general/objects) should be spawned. The position is in [block space](../terminology#block-space).
+Sent to the client when an [object entity](../../entities/objects) should be spawned. The position is in [block space](../terminology#block-space).
 
 ## Clientbound
 
