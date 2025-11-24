@@ -24,7 +24,7 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Z      | Integer | The Z block position of the mob  |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
-| Metadata | - | [Additional entity metadata](../../entities/mobs) |
+| Metadata | - | [Additional entity metadata](../entity-metadata) |
 
 ## Example Packet
 
@@ -36,4 +36,4 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Z      | 15 |
 | Yaw       | 22.4     |
 | Pitch     | 12.68    |
-| Metadata | `` |
+| Metadata | `0x00 0x01 0x7F` |

@@ -23,8 +23,8 @@ The vanilla server will set the hash to `"-"` if online mode is disabled, which 
 
 ## Serverbound
 
-| Field    | Type     | Description                       |
-| -------- | -------- | --------------------------------- |
+| Field    | Type     | Description                      |
+| -------- | -------- | -------------------------------- |
 | Username | String16 | The name of the connecting user  |
 
 ## Example Packets

@@ -30,8 +30,8 @@ The player's dimension is specified as `0` for The Overworld and `-1` for The Ne
 | ---------------- | -------- | ------------------------------------- |
 | Protocol Version | Integer  | The current protocol version is `14` |
 | Username         | String16 | The name of the connecting user      |
-| Unused           | Long     | This value is not sent by the client |
-| Unused           | Byte     | This value is not sent by the client |
+| Unused           | Long     | This value is not used by the client but still expects it |
+| Unused           | Byte     | This value is not used by the client but still expects it |
 
 ## Example Packets
 

@@ -1,44 +1,45 @@
 ---
 title: Entity Metadata
 layout: home
-nav_order: 10
-parent: Technical
+nav_order: 3
+parent: Networking
 ---
 
 # Entity Metadata
 {: .no_toc }
-Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata).
+Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata) and [Spawn Mob Entity](../networking/packets/024-spawn-mob).
 
 1. TOC
 {:toc}
 
 ## Format
-To read entity metadata, follow these steps:
-1. Read an unsigned byte.
-1. If the byte is `127`, stop reading.
-1. The ID of the metadata value is the bottom 5 bits, equal to `byte & 31`.
-1. The data type is the top 5 bits, equal to `byte >> 5`. See below for a list of all data types.
+To read entity metadata, follow these steps in a loop until a value of `127`/`0x7F` is read
+1. Get the data type via the top 3 bytes `value >> 5`
+1. Get the metadata ID via the bottom 5 bits, equal to `value & 0x1F`
 
 ## Data Types
+These data types function the same as they're described on the [data types page](../technical/data-types), except for a few special types.
 
 | ID | Type | Note |
 | -- | ---- | ---- |
-| 0 | Byte | |
-| 1 | Short | |
-| 2 | Integer | |
-| 3 | Float | |
-| 4 | String | Uses the modified UCS-2 string format. |
-| 5 | Item | Short (item/block ID), byte (quantity), short (metadata). |
-| 6 | Coordinates | Three integers for X, Y, and Z. |
+| 0 | Byte | A signed 8-Bit value |
+| 1 | Short | A signed 16-Bit value |
+| 2 | Integer | A signed 32-Bit value |
+| 3 | Float | A signed 32-Bit IEEE 754 floating-point number |
+| 4 | String | Uses the modified UCS-2 string format |
+| 5 | Item | Short (item/block ID), byte (quantity), short (metadata) |
+| 6 | Coordinates | Three integers for X, Y, and Z |
 
-## Mobs
+## Entities
+These are the values that're sent with each entity. To get a full listing of all entities and their relevant IDs, check the [mob entities page](../entities/mobs).
+
 <table>
     <tr>
         <th>Name</th>
         <td>Metadata</td>
     </tr>
     <tr>
-        <td>Entity<sup></sup></td>
+        <td>Any<sup></sup></td>
         <td>
             <table>
                 <tr>
