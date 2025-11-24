@@ -194,7 +194,7 @@ These are the values that're sent with each entity. To get a full listing of all
 {: .note }
 > <sup>1</sup> `1` for blowing up, `-1` otherwise
 >
-> <sup>2</sup> `0x10` bit indicates shearedness, values `0x0-0xF` indicate the color
+> <sup>2</sup> `0x10` bit indicates shearedness, values `0x0-0xF` indicate the color. [All wool colors are listed on the blocks page](../general/blocks#wool).
 
 ### Flags
 All entities extending the `Entity` class must support this bit field at metadata ID 0. In later versions, this is also used for sprinting and eating/drinking. To get the flag at an ID, you can use `value & mask != 0`.
