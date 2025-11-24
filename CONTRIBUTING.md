@@ -17,7 +17,7 @@ If you [find an issue on GitHub](https://github.com/OfficialPixelBrush/beta-wiki
 Making a pull request is relatively straightforward. Just fork the repo, make the changes you want to, and then just create a pull request on GitHub. This is even easier with GitHub Desktop.
 
 # Development
-You'll need to install `ruby` and `ruby-devel`.
+You'll need to install `ruby`, `ruby-dev`/`ruby-devel` and `bundler`.
 
 After cloning the repo you need to start it with
 ```bash

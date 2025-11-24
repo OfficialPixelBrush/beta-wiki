@@ -35,4 +35,4 @@ A comprehensive list of all mobs.
 ## Metadata
 Some entities sent metadata when they are [spawned](../networking/packets/024-spawn-mob). Its sent in a format that is very much unlike NBT, but it makes use of the same [data types](../technical/data-types) as everything else.
 
-You can read more on [entity metadata](../technical/entity-metadata) on the dedicated page for it.
+You can read more on [entity metadata](../networking/entity-metadata) on the dedicated page for it.
