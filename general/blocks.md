@@ -7,7 +7,7 @@ parent: General
 
 # Blocks
 {: .no_toc }
-Blocks are non-items things that're usually represented as a 3D Cube. Blocks only have 2 properites. An 8-Bit numberic ID and a 4-Bit metadata/damage value.
+Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-Bit numeric ID and a 4-Bit metadata/damage value.
 
 1. TOC
 {:toc}
