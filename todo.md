@@ -19,7 +19,7 @@ A rough checklist for everything that still needs to be done. Lots to do!
         - [x] 17: Use Bed
         - [x] 27: Unknown (Stance Update?)
         - [ ] 52 Set Multiple Blocks
-        - [ ] 54: Block Action
+        - [x] 54: Block Action
         - [ ] 60: Explosion
         - [ ] 71: Lightning Bolt
         - [ ] 106: Inventory Transaction

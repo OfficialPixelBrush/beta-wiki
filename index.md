@@ -9,8 +9,7 @@ last_modified_date: 13-10-2025
 A wiki documenting Minecraft Beta 1.7.3's networking protocol and other technical insights.
 
 {: .note }
-> This wiki is still a heavy wip. If you'd like something more complete,
-> please check out the [links on the resources page](resources)
+> This wiki is still a heavy wip. Some things may be missing, poorly explained or even wrong. Please let us know if you find something like this!
 
 ## Objective
 The goal of this wiki is to consolidate all knowledge on Minecrafts Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.

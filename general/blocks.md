@@ -45,12 +45,12 @@ Here is a comprehensive listing of all blocks.
 | 26    | Bed                     | Bed                                                 | Top/Bottom and Direction                            |
 | 27    | Powered Rail            | Powered Rail                                        | Direction |
 | 28    | Detector Rail           | Detector Rail                                       | Direction |
-| 29    | Sticky Piston           | Sticky Piston                                       | Direction |
+| 29    | Sticky Piston           | Sticky Piston                                       | [Direction and State](#pistons) |
 | 30    | Cobweb                  | Cobweb                                              | |
 | 31    | Tallgrass               |                                                     | Shrub `0`, Grass `1`, Fern `2`                      |
 | 32    | Deadbush                |                                                     | |
-| 33    | Piston                  | Piston                                              | Direction |
-| 34    | Piston Head             |                                                     | Direction |
+| 33    | Piston                  | Piston                                              | [Direction and State](#pistons) |
+| 34    | Piston Head             |                                                     | [Direction](#piston-head) |
 | 35    | Wool                    |                                                     | [Color](#wool) |
 | 36    |                         |                                                     | |
 | 37    | Dandelion               | Flower                                              | |
@@ -184,3 +184,32 @@ Wool exists in 16 distinct colors.
 
 {: .note }
 > The color swatches were estimated by dividing the colored wool textures with the white one, then averaging the resulting images. This gets us decently close to the original colors that were used before the wool texture was applied ontop.
+
+## Pistons
+Pistons and Sticky pistons use their metadata values to indicate both their direction and state.
+The lower 3-Bits indicate the pistons direction, while the remaining bit indicates whether the piston is retracted `0` or extended `1`.
+
+| Value | Direction |
+| --- | --- |
+| 0 | Down |
+| 1 | Up |
+| 2 | East |
+| 3 | West |
+| 4 | North |
+| 5 | South |
+| 6 | All (Invalid) |
+| 7 | All (Invalid) |
+
+## Piston Head
+The piston head uses it's metadata like the pistons, though with one difference. The last bit is used to indicate whether the piston head is normal `0` or sticky `1`.
+
+| Value | Direction |
+| --- | --- |
+| 0 | Down |
+| 1 | Up |
+| 2 | East |
+| 3 | West |
+| 4 | North |
+| 5 | South |
+
+Values 6 and 7 do not render.
