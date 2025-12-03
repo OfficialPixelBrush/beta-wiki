@@ -24,4 +24,5 @@ Increment the relevant statistic.
 
 | Field | Value | 
 | --- | --- |
-| Entity ID | 2 |
+| Statistic ID | `2010` (Jumps) |
+| Amount | 1 |

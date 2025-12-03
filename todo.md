@@ -23,7 +23,7 @@ A rough checklist for everything that still needs to be done. Lots to do!
         - [x] 60: Explosion
         - [x] 71: Lightning Bolt
         - [ ] 106: Inventory Transaction
-        - [ ] 131: Item Data
+        - [x] 131: Item Data
         - [x] 200: Statistic
     - Behavior
 - Rendering

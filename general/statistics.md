@@ -6,8 +6,12 @@ parent: General
 ---
 
 # Statistics
+{: .no_toc }
 
 Statistics are not just the values that keep track of how many blocks you have mined but also your Achievements.
+
+1. TOC
+{:toc}
 
 ## Achievement Listing
 
