@@ -15,17 +15,13 @@ A rough checklist for everything that still needs to be done. Lots to do!
     - [x] Items
     - [x] Tile Entities
 - Networking
-    - Packets
-        - [x] 17: Use Bed
-        - [x] 27: Unknown (Stance Update?)
-        - [x] 52 Set Multiple Blocks
-        - [x] 54: Block Action
-        - [x] 60: Explosion
-        - [x] 71: Lightning Bolt
-        - [ ] 106: Inventory Transaction
-        - [x] 131: Item Data
-        - [x] 200: Statistic
-    - Behavior
+    - Behaviors
+        - [ ] Inventories
+        - [ ] Item dropping
+        - [ ] Item collecting
+        - [ ] Mob spawning
+        - [ ] Mob despawning
+        - [ ] Vehicles
 - Rendering
     - [ ] Meshing
     - [x] Lighting
