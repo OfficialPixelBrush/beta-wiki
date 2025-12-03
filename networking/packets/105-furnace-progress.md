@@ -1,11 +1,11 @@
 ---
-title: "0x69: Furnace"
+title: "0x69: Furnace Progress"
 nav_order: 106
 layout: home
 parent: Packets
 ---
 
-# Furnace
+# Furnace Progress
 
 | Packet ID | Direction   |
 | --------- | ----------- |

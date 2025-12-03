@@ -17,7 +17,7 @@ This packet is sent to indicate if an inventory transaction was accepted.
 
 | Field | Type    | Description |
 | ----- | ------- | --- |
-| Window | Byte | The window the inventory belongs to |
+| Window ID | Byte  | The incremental ID of the window. Ranges from 0 to 99 |
 | Action number | Short | The unique ID for this action |
 | Accepted | Boolean | If the action was accepted |
 
@@ -25,6 +25,6 @@ This packet is sent to indicate if an inventory transaction was accepted.
 
 | Field | Value | 
 | --- | --- |
-| Window | `2` |
+| Window ID | `2` |
 | Action number | `1` |
 | Accepted | `1` |
