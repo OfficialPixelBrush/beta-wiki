@@ -58,7 +58,7 @@ Statistics are not just the values that keep track of how many blocks you have m
 | 2024 | Player Kills |
 | 2025 | Fish Caught |
 
-The Block/Item placing, using and breaking stats seem a bit more arbitrarily numbered.
+The Block/Item placing, using and breaking stats use offsets for their IDs.
 
 | Statistic Type | ID |
 | --- | --- | 
