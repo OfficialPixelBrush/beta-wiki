@@ -18,9 +18,9 @@ A rough checklist for everything that still needs to be done. Lots to do!
     - Packets
         - [x] 17: Use Bed
         - [x] 27: Unknown (Stance Update?)
-        - [ ] 52 Set Multiple Blocks
+        - [x] 52 Set Multiple Blocks
         - [x] 54: Block Action
-        - [ ] 60: Explosion
+        - [x] 60: Explosion
         - [ ] 71: Lightning Bolt
         - [ ] 106: Inventory Transaction
         - [ ] 131: Item Data
