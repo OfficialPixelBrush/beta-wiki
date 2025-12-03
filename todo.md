@@ -21,10 +21,10 @@ A rough checklist for everything that still needs to be done. Lots to do!
         - [x] 52 Set Multiple Blocks
         - [x] 54: Block Action
         - [x] 60: Explosion
-        - [ ] 71: Lightning Bolt
+        - [x] 71: Lightning Bolt
         - [ ] 106: Inventory Transaction
         - [ ] 131: Item Data
-        - [ ] 200: Statistic
+        - [x] 200: Statistic
     - Behavior
 - Rendering
     - [ ] Meshing
