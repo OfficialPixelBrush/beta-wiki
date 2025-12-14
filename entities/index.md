@@ -37,7 +37,7 @@ All entities have the following properties, though usually more. These are just 
 The Entites' `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player this is on the ground between their feet.
 
 ### Y-Offset/Stance
-The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position. 
+The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position.
 
 | Entity | Y-Offset |
 | --- | --- |

@@ -31,33 +31,20 @@ Sent to the server when the player is moving and looking around.
 | --------- | ------ | ------------------------------------------------- |
 | X         | Double | The X position of the player                      |
 | Y         | Double | The Y position of the player                      |
-| Stance    | Double | The stance of the player                          |
+| Camera Y | Double | The Y position of the player camera |
 | Z         | Double | The Z position of the player                      |
 | Yaw | Float | Absolute rotation on the X Axis, in degrees |
 | Pitch | Float | Absolute rotation on the Y Axis, in degrees |
-| On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling |
+| On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 
 ## Example Packets
-
-### Clientbound
-
-| Field  | Value    |
-| ------ | -------- |
-| X      | 5669.064 |
-| Y      | 68.4     |
-| Stance | 0.62     |
-| Z      | -5325.32 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
-
-### Serverbound
 
 | Field     | Value    |
 | --------- | -------- |
 | X         | 5669.064 |
 | Y         | 68.4     |
-| Stance    | 0.62     |
+| Camera Y    | 70.02 |
 | Z         | -5325.32 |
 | Yaw       | 22.4     |
 | Pitch     | 12.68    |

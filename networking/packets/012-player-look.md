@@ -26,14 +26,12 @@ Sent to the server when the player hasn't moved in a while, but is changing thei
 
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |
-| Yaw         | Float | Absolute rotation on the X Axis, in degrees |
-| Pitch         | Float | Absolute rotation on the Y Axis, in degrees |
-| On Ground | Boolean   | `0` for walking/swimming, `1` for jumping/falling |
+| Yaw | Float | Absolute rotation on the X Axis, in degrees |
+| Pitch | Float | Absolute rotation on the Y Axis, in degrees |
+| On Ground | Boolean   | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 
 ## Example Packet
-
-### Serverbound
 
 | Field     | Value    |
 | --------- | -------- |

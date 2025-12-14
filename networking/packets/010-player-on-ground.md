@@ -22,7 +22,7 @@ This packet is sent to the server to determine if the player is on the ground or
 | --------- | ---- | -------------------------------------------------- |
 | On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling |
 
-{: .note }
+{: .missing }
 > It's currently untested what the client does when it receives an `OnGround` packet. Most likely it just resets its vertical velocity.
 
 ## Serverbound
