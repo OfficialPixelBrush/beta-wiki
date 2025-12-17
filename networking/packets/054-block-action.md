@@ -16,6 +16,7 @@ This packet is sent to inform the client when a block has perfored an action. Th
 
 ## Noteblock 
 Noteblocks use the Packet to indicate they've played a tone. They use the two bytes the packet offers for Instrument and Pitch information.
+
 | Field     | Type    | Description |
 | --------- | ------- | --- |
 | X         | Integer | The X position of where the block is. |
