@@ -21,7 +21,9 @@ Sent to the client to supply further data for some entities. See the [entity met
 ## Example Packets
 
 ### Clientbound
-TODO: Provide real example
+
+{: .missing }
+> TODO: Provide real example
 
 | Field  | Value    |
 | ------ | -------- |

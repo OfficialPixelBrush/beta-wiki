@@ -27,10 +27,10 @@ Spaces describe where and how coordinates are expressed within the world.
 Limited to signed 32-Bit Integers (`-2,147,483,648` to `2,147,483,647`) along the horizontal axes and a signed 8-Bit Integer (limited, `0` to `127`) along the vertical axis. This space defines the grid that the blocks of Minecraft adhere to.
 
 ## Player space
-Limited to signed 64-Bit doubles (1.7E +/- 308). This space defines the positions of players on the server-side and is what causes the jerky movement as one approaches the edge of the world due to a loss of floating-point precision.
+Limited to signed 64-Bit doubles (`1.7E +/- 308`). This space defines the positions of players on the server-side and is what causes the jerky movement as one approaches the edge of the world due to a loss of floating-point precision.
 
 ## Entity space
-Limited to signed 28.4 fixed-point* numbers (`-67,108,864` to `67,108,863.9688`) along all axes. This space defines the positions of all entities in the world. The 4 lowest bits are used for in-block precision, meaning that within each block an entity has a decimal precision of 1/32nd of a Block (0.03125 Blocks).
+Limited to signed 28.4 fixed-point* numbers (`-67,108,864.0` to `67,108,863.9688`) along all axes. This space defines the positions of all entities in the world. The 4 lowest bits are used for in-block precision, meaning that within each block an entity has a decimal precision of 1/32nd of a Block (0.03125 Blocks).
 
 <sup>*Sent as a signed 32-Bit Integer</sup>
 
