@@ -23,4 +23,4 @@ This is sent to the player to increase/decrease their health.
 
 | Field | Value | 
 | --- | --- |
-| Health | 20 |
+| Health | `20` |

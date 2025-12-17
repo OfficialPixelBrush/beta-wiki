@@ -30,10 +30,10 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 1298  |
-| X      | 5 |
-| Y      | 2     |
-| Z      | 15 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
+| Entity ID | `1298`  |
+| X      | `5` |
+| Y      | `2` |
+| Z      | `15` |
+| Yaw | `16` (`22.58`) |
+| Pitch | `9` (`12.70`) |
 | Metadata | `0x00 0x01 0x7F` |

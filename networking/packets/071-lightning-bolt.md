@@ -27,8 +27,8 @@ Spawns a lightning bolt at the specified position.
 
 | Field | Value | 
 | --- | --- |
-| Entity ID | 2 |
-| Spawn Lightning | 1 |
-| X | 0 |
-| Y | 76 |
-| Z | 5 |
+| Entity ID | `2` |
+| Spawn Lightning | `true` |
+| X | `0` |
+| Y | `76` |
+| Z | `5` |

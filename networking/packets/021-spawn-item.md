@@ -33,12 +33,12 @@ Sent to the client when an item entity should be spawned.  The position is in [b
 | Field     | Value | 
 | --------- | ----- |
 | Entity ID | 1298  |
-| Item id  | `17` Log |
-| Count  | 1 |
+| Item id | `17` (Log) |
+| Count | `1` |
 | Metadata/Damage  | `0` |
-| X      | 5669.064 |
-| Y      | 68.4     |
-| Z      | -5325.32 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
-| Roll     | 0.0    |
+| X | `5669` |
+| Y | `68` |
+| Z | `-5325` |
+| Yaw | `16` (`22.58`) |
+| Pitch | `9` (`12.70`) |
+| Roll | `0` (`0.0`) |

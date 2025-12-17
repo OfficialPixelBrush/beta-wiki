@@ -38,9 +38,9 @@ If a client stops breaking a block the server isn't informed of this.
 
 The face can be one of six values, representing the face being hit.
 
-| Value | 0 | 1 | 2 | 3 | 4 | 5 |
+| Value | 0 | 1  | 2    | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Face | -Y | +Y | -Z | +Z | -X | +X |
+| Face | -Y | +Y | -Z   | +Z | -X | +X |
 
 ## Example Packet
 
@@ -48,8 +48,8 @@ The face can be one of six values, representing the face being hit.
 
 | Field     | Value    |
 | --------- | -------- |
-| Status | `0` |
-| X | -6231 |
-| Y | 53 |
-| Z | 563 |
-| Face | 3 |
+| Status | `0` (Started Digging) |
+| X | `-6231` |
+| Y | `53` |
+| Z | `563` |
+| Face | `3` (+Z) |

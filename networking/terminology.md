@@ -6,10 +6,16 @@ parent: Networking
 ---
 
 # Terminology
+{: .no_toc }
 This page will explain terminology used throughout this entire section of the wiki, mainly to make describing certain concepts as easy and unambiguous as possible.
 
+1. TOC
+{:toc}
+
 {: .note }
-> A lot of this terminology is of my own creation, especially all the 'spaces'. You likely won't see them used anywhere else.
+> A lot of this terminology is unique to this wiki. You likely won't see them used in many other places, except projects that utilized this wiki.
+
+## Clarifications
 
 | Term | Meaning |
 | :--- | :--- |

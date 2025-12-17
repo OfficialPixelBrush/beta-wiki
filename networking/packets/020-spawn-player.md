@@ -33,11 +33,11 @@ Sent to the client when a player entity should be spawned.  The position is in [
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 1298  |
-| Username | `PixelBrushArt`
-| X      | 5 |
-| Y      | 2     |
-| Z      | 15 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
+| Entity ID | `1298`  |
+| Username | `PixelBrushArt` |
+| X      | `5` |
+| Y      | `2` |
+| Z      | `15` |
+| Yaw       | `16` (`22.58`) |
+| Pitch     | `9` (`12.70`) |
 | Held item | `256` (Iron Shovel) |

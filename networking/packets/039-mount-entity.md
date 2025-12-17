@@ -24,5 +24,5 @@ Sent to the client to attach an entity to another. Used for riding.
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID (Rider) | 2  |
-| Entity ID (Ridee) | 654 |
+| Entity ID (Rider) | `2`  |
+| Entity ID (Ridee) | `654` |

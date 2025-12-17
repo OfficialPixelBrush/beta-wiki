@@ -32,4 +32,4 @@ This packet is used by the server to disconnect the client with a reason, after 
 
 | Field | Value |
 | --- | --- |
-| Reason | "The server is full!" |
+| Reason | `The server is full!` |

@@ -24,4 +24,4 @@ Sent to the client when an entity should be destroyed on the client, such as a m
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
+| Entity ID | `1298` |

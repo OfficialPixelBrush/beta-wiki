@@ -23,4 +23,4 @@ This is sent by the client when they press the "respawn" button after dying or w
 
 | Field | Value | 
 | --- | --- |
-| World | 0 |
+| World | `0` |

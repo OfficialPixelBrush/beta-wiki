@@ -18,7 +18,7 @@ This packet is sent after [Handshake](002-handshake) to finish logging in. The s
 | Field      | Type     | Description                             |
 | ---------- | -------- | --------------------------------------- |
 | Entity ID  | Integer  | The entity ID of the player             |
-| Unused     | String16 | This string is always Empty (Size of 0) |
+| Unused     | String16 | This string is always Empty (Size of `0`) |
 | World Seed | Long     | The random seed for terrain generation  |
 | Dimension  | Byte     | The player's spawning dimension         |
 
@@ -39,16 +39,16 @@ The player's dimension is specified as `0` for The Overworld and `-1` for The Ne
 
 | Field | Value | 
 | --- | --- |
-| Entity ID | 1298 |
-| Unused | "" |
-| World Seed | 971768181197178410 |
-| Dimension | 0 |
+| Entity ID | `1298` |
+| Unused | ` ` |
+| World Seed | `971768181197178410` |
+| Dimension | `0` |
 
 ### Serverbound
 
 | Field | Value | 
 | --- | --- |
-| Protocol Version | 14 |
-| Username | "Notch" |
-| Unused | 0 |
-| Unused | 0 |
+| Protocol Version | `14` |
+| Username | `Notch` |
+| Unused | `0` |
+| Unused | `0` |

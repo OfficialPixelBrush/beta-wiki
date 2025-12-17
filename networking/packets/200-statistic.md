@@ -25,4 +25,4 @@ Increment the relevant statistic.
 | Field | Value | 
 | --- | --- |
 | Statistic ID | `2010` (Jumps) |
-| Amount | 1 |
+| Amount | `1` |

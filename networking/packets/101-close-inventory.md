@@ -23,4 +23,4 @@ This packet is sent by the client when closing an inventory/window, and by the s
 
 | Field | Value | 
 | --- | --- |
-| Window ID | 49 |
+| Window ID | `49` |

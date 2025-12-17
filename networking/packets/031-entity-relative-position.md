@@ -27,7 +27,7 @@ Sent to the client to set an entity's position relative to the clients previous 
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
-| X      | 5 |
-| Y      | 2     |
-| Z      | 15 |
+| Entity ID | `1298` |
+| X | `5` (`0.15`) |
+| Y | `2` (`0.06`) |
+| Z | `15` (`0.46`) |

@@ -23,10 +23,9 @@ Sent to the client to set an entity's view angles. As the rotation data is in [e
 ## Example Packets
 
 ### Clientbound
-TODO: Provide integer example for these numbers
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
+| Entity ID | `1298`  |
+| Yaw       | `16` (`22.58`) |
+| Pitch     | `9` (`12.70`) |

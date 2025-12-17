@@ -38,8 +38,8 @@ Sent to the server when the player is moving, but hasn't changed their viewing d
 
 | Field     | Value    |
 | --------- | -------- |
-| X         | 5669.064 |
-| Y         | 68.4     |
-| Camera Y    | 70.02 |
-| Z         | -5325.32 |
-| On Ground | 1        |
+| X         | `5669.064` |
+| Y         | `68.4`     |
+| Camera Y    | `70.02` |
+| Z         | `-5325.32` |
+| On Ground | `true`        |

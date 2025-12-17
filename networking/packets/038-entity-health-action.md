@@ -36,5 +36,5 @@ Unlisted values do nothing.
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
-| Action | 2 |
+| Entity ID | `1298`  |
+| Action | `2` (Hurt) |

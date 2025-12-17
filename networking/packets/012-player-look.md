@@ -35,6 +35,6 @@ Sent to the server when the player hasn't moved in a while, but is changing thei
 
 | Field     | Value    |
 | --------- | -------- |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
-| On Ground | 1        |
+| Yaw       | `22.4f`     |
+| Pitch     | `12.68f`    |
+| On Ground | `true`        |

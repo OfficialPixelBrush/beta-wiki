@@ -27,5 +27,5 @@ Sent to the client to supply further data for some entities. See the [entity met
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 6436 |
+| Entity ID | `6436` |
 | Metadata | `0x00 0x01 0x7F` |

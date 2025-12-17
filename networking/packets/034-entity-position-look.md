@@ -26,13 +26,12 @@ Sent to the client to set an entity's position absolutely. Usually sent when an 
 ## Example Packets
 
 ### Clientbound
-TODO: Provide integer example for these numbers
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
-| X      | 5669.064 |
-| Y      | 68.4     |
-| Z      | -5325.32 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
+| Entity ID | `1298`  |
+| X | `5669` (`177.15`) |
+| Y | `68` (`2.12`) |
+| Z | `-5325` (`-166.40`) |
+| Yaw | `16` (`22.58`) |
+| Pitch | `9` (`12.70`) |

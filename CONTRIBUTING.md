@@ -5,7 +5,12 @@ layout: home
 ---
 
 # Contributing
+{: .no_toc }
+
 There are many ways in which anyone can contribute to the wiki. [Look at the repository on Github](https://github.com/OfficialPixelBrush/beta-wiki/)!
+
+1. TOC
+{:toc}
 
 ## Confirming existing information
 Simply double, triple or quintupple checking that all information presented on the wiki is factully correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
@@ -28,3 +33,18 @@ You can start the site build up by typing
 ```bash
 bundle exec jekyll serve
 ```
+
+# Style Guide
+
+## Values
+1. All values are always `monospaced`
+1. Bytes, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
+1. Floats have a lower-case `f` on their end (`0.53f`)
+1. Doubles do not have a lower-case `f` (`545.42`)
+1. Booleans are either `true` or `false`. `1` or `0` may be used if space is limited
+1. Strings are also monospaced (`Test String`)
+1. There shall never be any quotes around Strings
+1. If a String is empty, a singular space may be used to designate it as such (` `)
+
+## Blocks and Items
+1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))

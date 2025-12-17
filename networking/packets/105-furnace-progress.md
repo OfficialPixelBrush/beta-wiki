@@ -25,6 +25,6 @@ This is sent by the server to update the progress of fuel burning or progress of
 
 | Field | Value | 
 | --- | --- |
-| Window ID | 49 |
-| Bar | 0 |
-| Value | 0 |
+| Window ID | `49` |
+| Bar | `0` |
+| Value | `0` |

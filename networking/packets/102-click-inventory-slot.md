@@ -26,6 +26,9 @@ This packet is sent by the client when an inventory slot is clicked. See the [in
 | Item Amount | Byte | The amount of the clicked item (only sent if id > 0) |
 | Item Meta/Damage | Short | The meta/damage of the clicked item  (only sent if id > 0) |
 
+{: .missing }
+> TOOD: Check if Shift isn't Boolean?
+
 ## Example Packet
 
 | Field | Value | 
@@ -35,6 +38,6 @@ This packet is sent by the client when an inventory slot is clicked. See the [in
 | Right Click | Byte | `0` |
 | Action number | Short | `1` |
 | Shift | Byte | `1` |
-| Item Id | Short | `50` |
+| Item Id | Short | `50` (Torch) |
 | Item Amount | Byte | `63` |
 | Item Meta/Damage | Short | `0` |

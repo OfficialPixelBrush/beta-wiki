@@ -34,7 +34,7 @@ This packet is sent by the server when an inventory/window is opened. The type o
 
 | Field | Value | 
 | --- | --- |
-| Window ID | 49 |
-| Type | 0 |
-| Title | "Chest" |
-| Size | 27 |
+| Window ID | `49` |
+| Type | `0` |
+| Title | `Chest` |
+| Size | `27` |

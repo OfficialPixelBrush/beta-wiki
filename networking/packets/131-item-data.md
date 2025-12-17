@@ -48,7 +48,7 @@ A map can, at most, have `(256 - 1) / 3 = 85` icons.
 
 | Field | Value | 
 | --- | --- |
-| Item ID | 358 (Map) |
-| Map ID | 1 |
-| Data Size | 4 |
+| Item ID | `358` (Map) |
+| Map ID | `1` |
+| Data Size | `4` |
 | Data | `1, 0, 5, 7` |

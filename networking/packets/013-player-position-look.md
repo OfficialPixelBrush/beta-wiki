@@ -42,10 +42,10 @@ Sent to the server when the player is moving and looking around.
 
 | Field     | Value    |
 | --------- | -------- |
-| X         | 5669.064 |
-| Y         | 68.4     |
-| Camera Y    | 70.02 |
-| Z         | -5325.32 |
-| Yaw       | 22.4     |
-| Pitch     | 12.68    |
-| On Ground | 1        |
+| X         | `5669.064` |
+| Y         | `68.4`     |
+| Camera Y    | `70.02` |
+| Z         | `-5325.32` |
+| Yaw       | `22.4f`     |
+| Pitch     | `12.68f`    |
+| On Ground | `true`        |

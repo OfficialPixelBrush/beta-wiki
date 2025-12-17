@@ -41,7 +41,7 @@ Pistons use it to indicate whether they're extended or not and what direction th
 | X         | Integer | The X position of where the block is |
 | Y         | Short    | The Y position of where the block is |
 | Z         | Integer | The Z position of where the block is |
-| State | Byte | `0` for extending, `1` for retracting |
+| State | Byte | `false` for extending, `true` for retracting |
 | Direction | Byte | The direction the piston extends/retracts to |
 
 The direction matches the lower 3-Bits of the metadata values that're [used for pistons as described on the Blocks page](../../general/blocks#pistons).
@@ -57,3 +57,8 @@ The direction matches the lower 3-Bits of the metadata values that're [used for 
 
 {: .missing }
 > A lot of this still needs to be tested. I'm unsure if this just plays the sound or if this is also responsible for playing the piston extend/retract animations!
+
+## Example Packet
+
+{: .missing }
+> TODO: Capture or at least write example packet data

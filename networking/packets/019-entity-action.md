@@ -27,5 +27,5 @@ This packet is sent by the client for performing certain actions, defined via a 
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 1298  |
-| Action    | 1     |
+| Entity ID | `1298`  |
+| Action    | `3` (On Fire & Crouch) |

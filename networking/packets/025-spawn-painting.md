@@ -45,8 +45,8 @@ The direction can be figured out via this table.
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 532  |
-| X      | 5 |
-| Y      | 2     |
-| Z      | 15 |
-| Direction | `2` |
+| Entity ID | `532`  |
+| X      | `5` |
+| Y      | `2` |
+| Z      | `15` |
+| Direction | `2` (+Z) |

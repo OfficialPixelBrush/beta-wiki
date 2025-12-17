@@ -27,8 +27,8 @@ This is sent by the server when it expects a client to play a sound effect or sp
 
 | Field     | Value |
 | --------- | ----- | 
-| Effect ID | 1005 (MUSIC_DISC)  |
-| X         | 105   |
-| Y         | 72    |
-| Z         | 649   |
-| Data      | 2257 (cat) |
+| Effect ID | `1005` (MUSIC_DISC)  |
+| X         | `105`   |
+| Y         | `72`    |
+| Z         | `649`   |
+| Data      | `2257` (cat) |

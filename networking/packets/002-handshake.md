@@ -33,10 +33,10 @@ The vanilla server will set the hash to `"-"` if online mode is disabled, which 
 
 | Field | Value | 
 | --- | --- |
-| Connection Hash | "2e66f1dc032ab5f0" |
+| Connection Hash | `2e66f1dc032ab5f0` |
 
 ### Serverbound
 
 | Field | Value | 
 | --- | --- |
-| Username | "Notch" |
+| Username | `Notch` |

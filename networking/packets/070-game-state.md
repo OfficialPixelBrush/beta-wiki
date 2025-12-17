@@ -23,4 +23,4 @@ This is sent by the server to control precipitation or to notify that their bed 
 
 | Field | Value | 
 | --- | --- |
-| Type | 1 |
+| Type | `1` (Start Raining) |

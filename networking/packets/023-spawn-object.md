@@ -27,8 +27,8 @@ Sent to the client when an [object entity](../../entities/objects) should be spa
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID | 1298  |
+| Entity ID | `1298`  |
 | Object Type  | `1` (Boat) |
-| X      | 5669.064 |
-| Y      | 68.4     |
-| Z      | -5325.32 |
+| X | `5669` |
+| Y | `68` |
+| Z | `-5325` |

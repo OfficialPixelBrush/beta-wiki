@@ -24,5 +24,5 @@ Sent to the client when an item entity should play the item collection animation
 
 | Field     | Value | 
 | --------- | ----- |
-| Entity ID (Item) | 1298  |
-| Entity ID (Collector) | 2  |
+| Entity ID (Item) | `1298` |
+| Entity ID (Collector) | `2` |

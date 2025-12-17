@@ -34,11 +34,11 @@ The format for the coordinates is slightly obtuse but boils down to using one 16
 
 | Field | Value | 
 | --- | --- |
-| X | -9 |
-| Z | 12 |
-| Number of Blocks | 1 |
+| X | `-9` |
+| Z | `12` |
+| Number of Blocks | `1` |
 | Block Coordinates | `0101 0111 01111111`\* (x: 5, z: 7, y: 127) |
-| Blocktypes | 1 (Stone) |
-| Metadata | 0 |
+| Blocktypes | `1` (Stone) |
+| Metadata | `0` |
 
 <sub>\* Binary value is spaced out to be more readable.</sub>

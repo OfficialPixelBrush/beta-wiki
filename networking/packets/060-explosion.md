@@ -36,9 +36,9 @@ int destroyedBlockZ = int(explosionZ) + offsetZ;
 
 | Field | Value | 
 | --- | --- |
-| X | 51.0 |
-| Y | 66.4 |
-| Z | -1642.4 |
-| Explosion Radius | 3.0 |
-| Number of Destroyed Blocks | 2 |
-| Destroyed Blocks | (4, 5, 6), (1, 2, 3) |
+| X | `51.0` |
+| Y | `66.4` |
+| Z | `-1642.4` |
+| Explosion Radius | `3.0f` |
+| Number of Destroyed Blocks | `2` |
+| Destroyed Blocks | `(4, 5, 6), (1, 2, 3)` |

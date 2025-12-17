@@ -25,4 +25,4 @@ Sent when the player changes the slot selection
 
 | Field     | Value    |
 | --------- | -------- |
-| Slot |3 |
+| Slot | `3` |

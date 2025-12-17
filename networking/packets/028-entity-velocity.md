@@ -29,7 +29,7 @@ The sent values are first clamped to `+/-3.9` in any direction, then multiplied 
 
 | Field  | Value    |
 | ------ | -------- |
-| Entity ID | 1298  |
-| X Velocity | -1343 |
-| Y Velocity | 0 |
-| Z Velocity | 0 |
+| Entity ID | `1298`  |
+| X Velocity | `-1343` (`-0.16`) |
+| Y Velocity | `0` (`0.0`) |
+| Z Velocity | `0` (`0.0`) |

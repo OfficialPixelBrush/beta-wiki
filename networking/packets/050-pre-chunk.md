@@ -25,6 +25,6 @@ This is sent by the server to load or unload a chunk. If load is `1`, the Client
 
 | Field | Value | 
 | --- | --- |
-| X | -9 |
-| Z | 12 |
-| Load? | true |
+| X | `-9` |
+| Z | `12` |
+| Load? | `true` |

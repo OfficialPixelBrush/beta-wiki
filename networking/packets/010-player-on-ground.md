@@ -20,7 +20,7 @@ This packet is sent to the server to determine if the player is on the ground or
 
 | Field     | Type | Description                                        |
 | --------- | ---- | -------------------------------------------------- |
-| On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling |
+| On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling |
 
 {: .missing }
 > It's currently untested what the client does when it receives an `OnGround` packet. Most likely it just resets its vertical velocity.
@@ -29,10 +29,10 @@ This packet is sent to the server to determine if the player is on the ground or
 
 | Field     | Type | Description                                        |
 | --------- | ---- | -------------------------------------------------- |
-| On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling |
+| On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling |
 
 ## Example Packet
 
 | Field | Value | 
 | --- | --- |
-| On Ground | 1 |
+| On Ground | `true` |

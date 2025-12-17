@@ -25,6 +25,6 @@ This is sent after the player has finished logging in to spawn them into the wor
 
 | Field | Value | 
 | --- | --- |
-| X | 117 |
-| Y | 70 |
-| Z | -46 |
+| X | `117` |
+| Y | `70` |
+| Z | `-46` |

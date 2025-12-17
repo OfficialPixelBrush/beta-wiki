@@ -27,8 +27,8 @@ This is sent by the server when a block is changed in any way.
 
 | Field     | Value |
 | --------- | ----- | 
-| X         | 32 |
-| Y         | 76 |
-| Z         | -543 |
-| Type      | 17 |
-| Meta      | 1 |
+| X         | `32` |
+| Y         | `76` |
+| Z         | `-543` |
+| Type      | `17` (Log) |
+| Meta      | `1` (Spruce) |

@@ -24,5 +24,5 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 
 | Field | Value | 
 | --- | --- |
-| Player ID | 1298 |
-| Animation | 1 |
+| Player ID | `1298` |
+| Animation | `1` (Swing Arm) |

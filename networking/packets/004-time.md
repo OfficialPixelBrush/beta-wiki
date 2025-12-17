@@ -24,4 +24,4 @@ Minecraft's time is measured in ticks, where there should be 20 ticks per second
 
 | Field | Value | 
 | --- | --- |
-| Time | 102000 (The morning of Day 4) |
+| Time | `102000` (The morning of Day 4) |

@@ -25,12 +25,11 @@ After an entity has been spawned, this packet may be sent to change the armor an
 {: .missing }
 > TODO: What armor slots specifically?
 
-
 ## Example Packet
 
 | Field | Value | 
 | --- | --- |
-| Entity ID | 1298 |
-| Inventory Slot | 0 |
-| Item ID | 276 |
-| Item Metadata | 0 |
+| Entity ID | `1298` |
+| Inventory Slot | `0` |
+| Item ID | `276` (Diamond Sword) |
+| Item Metadata | `0` |
