@@ -23,7 +23,7 @@ All entities have the following properties, though usually more. These are just 
 | Z | Double | The Z position of the entity |
 | Yaw         | Float | Absolute rotation on the X Axis, in degrees |
 | Pitch         | Float | Absolute rotation on the Y Axis, in degrees |
-| On Ground | Boolean | `0` for walking/swimming, `1` for jumping/falling (`false`) |
+| On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling (`false`) |
 | Width | Float | The width of the entities bounding box (`0.6`) |
 | Height | Float | The height of the entities bounding box (`1.8`) |
 | Air | Integer | The amount of air the entity has (`300`) |

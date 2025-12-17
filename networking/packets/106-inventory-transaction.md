@@ -27,4 +27,4 @@ This packet is sent to indicate if an inventory transaction was accepted.
 | --- | --- |
 | Window ID | `2` |
 | Action number | `1` |
-| Accepted | `1` |
+| Accepted | `true` |

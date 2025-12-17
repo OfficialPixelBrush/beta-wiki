@@ -41,10 +41,11 @@ bundle exec jekyll serve
 1. Bytes, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
 1. Floats have a lower-case `f` on their end (`0.53f`)
 1. Doubles do not have a lower-case `f` (`545.42`)
-1. Booleans are either `true` or `false`. `1` or `0` may be used if space is limited
+1. Booleans are either `true` or `false`
 1. Strings are also monospaced (`Test String`)
 1. There shall never be any quotes around Strings
 1. If a String is empty, a singular space may be used to designate it as such (` `)
+1. Unless necessary, any floating-point numbers should only be limited to 2 decimal places (`15.24`)
 
 ## Blocks and Items
 1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
