@@ -39,6 +39,7 @@ Here is a comprehensive listing of all blocks.
 | 19    | Sponge                  | Sponge                                              | |
 | 20    | Glass                   | Glass                                               | |
 | 21    | Lapis Lazuli Ore        | Lapis Lazuli Ore                                    | |
+| 22    | Lapis Lazuli Block      | Lapis Lazuli Block                                  | |
 | 23    | Dispenser               | Dispenser                                           | Direction |
 | 24    | Sandstone               | Sandstone                                           | |
 | 25    | Noteblock               | Noteblock                                           | |
