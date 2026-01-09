@@ -13,10 +13,28 @@ The population phase is done a little differently when compared to [terrain gene
 {: .missing }
 > A huge chunk of info is still missing!!
 
-Features generate in the order written here.
+1. TOC
+{:toc}
 
-1. Water lakes (still)
-2. Lava lakes (still)
+# Initialization
+Before any population is done, the Chunk Populator prepares a few things to make subsequent generation easier.
+- Get the current biome of the chunk (offset by +16 blocks on the x/z axes)
+- The PRNG seed is set to the world seed
+- This is then used to generate a random x/z offset (`rand.nextLong() / 2L * 2L + 1L`)
+- This is then used to generate a new, chunk position dependent seed
+```cpp
+rand.setSeed((
+        (int64_t(chunkPos.x) * xOffset) +
+        (int64_t(chunkPos.y) * zOffset)
+    ) ^ worldSeed
+);
+```
+
+# Generation order
+Features attempt to generate in the following order.
+
+1. Water lakes
+2. Lava lakes
 3. Dungeons
 4. Clay patches
 5. Dirt blobs
@@ -37,15 +55,71 @@ Features generate in the order written here.
 20. Reeds (Sugarcane)
 21. Pumpkins
 22. Cacti
-23. Water (flowing)
-24. Lava (flowing)
+23. Singular Fluid Source (Water)
+24. Singular Fluid Source (Lava)
 25. Snow layer
 
 Each of them have their own unique Generator object that's responsible for placing them in, though some are shared. Thus the only distinct feature generators that exist are presented here.
 
-1. TOC
-{:toc}
+# Before generation
+Before actually being placed into the world, each feature does a bit of extra stuff. This can be as simple as having its generation be attempted multiple times, or as complex as having to fulfill specific conditions before generation is even attempted.
 
+## Chances/Ranges
+
+{: .note }
+> The initial coordinates for each feature are always generated in the order `(X,Y,Z)`. It's only ordered as `(X/Z,Y)` here, as `X` and `Z` always share the same ranges.
+
+{: .note }
+> These offset coordinates are relative to the chunks block coordinate, i.e. `chunkPos / 16`.
+
+{: .note }
+> Offset coordinates marked with `~` utilize multiple PRNG passes. The depicted number is the total chance if both of those random numbers attained their lowest/highest possible value.
+
+| Feature | Chance | Attempts | X/Z | Y |
+| --- | --- | --- | --- |
+| Lakes (Water) | `1/4` | `1` |`8 - 23` | `0 - 127` |
+| Lakes (Lava) | `1/8` | `1` | `8 - 23` | `0 - ~126` |
+| Dungeons | - | `8` | `8 - 23` | `0 - 127` |
+| Clay Patches | - | `10` | `0 - 15` | `0 - 127` |
+| Dirt Blobs | - | `20` | `0 - 15` | `0 - 127` |
+| Gravel Blobs | - | `10` | `0 - 15` | `0 - 127` |
+| Coal Vein | - | `20` | `0 - 15` | `0 - 127` |
+| Iron Vein | - | `20` | `0 - 15` | `0 - 63` |
+| Gold Vein | - | `2` | `0 - 15` | `0 - 31` |
+| Redstone Vein | - | `8` | `0 - 15` | `0 - 15` |
+| Diamond Vein | - | `1` | `0 - 15` | `0 - 15` |
+| Lapis Lazuli Vein | - | `1` | `0 - 15` | `0 - ~30` |
+| Trees | - | *\*[1]* | `8 - 23` | *\*[2]* |
+| Dandelions | - | *\*[1]* | `8 - 23` | `0 - 127` |
+| Tallgrass | - | *\*[1]* | `8 - 23` | `0 - 127` |
+| Deadbushes | - | *\*[1]* | `8 - 23` | `0 - 127` |
+| Roses | `1/2` | `1` | `8 - 23` | `0 - 127` |
+| Brown Mushrooms | `1/4` | `1` | `8 - 23` | `0 - 127` |
+| Red Mushrooms | `1/8` | `1` | `8 - 23` | `0 - 127` |
+| Sugarcane | - | `10` | `8 - 23` | `0 - 127` |
+| Pumpkins | `1/32` | `1` | `8 - 23` | `0 - 127` |
+| Cacti | - | *\*[1]* | `8 - 23` | `0 - 127` |
+| SBS (Water) | - | `50` | `8 - 23` | `8 - ~127` |
+| SBS (Lava) | - | `20` | `8 - 23` | `8 - ~127` |
+
+- *[1]\* [Biome-dependent](#biome-dependent-attempts)*
+- *[2]\* Terrain Height*
+
+## Biome-dependent attempts
+Some features have the number of generation attempts tied to the chunks biome
+
+| Biome           | Trees        | Dandelions | Grass | Deadbushes | Cacti |
+| --------------- | ------------ | ---------- | ----- | ---------- | ----- |
+| Forest          | `sample + 5` | `2`        | `2`   | `0`        | `0`   |
+| Rainforest      | `sample + 5` | `0`        | `10`  | `0`        | `0`   |
+| Taiga           | `sample + 5` | `2`        | `0`   | `0`        | `0`   |
+| Seasonal Forest | `sample + 2` | `4`        | `2`   | `0`        | `0`   |
+| Desert          | `-20`        | `0`        | `0`   | `2`        | `10`  |
+| Tundra          | `-20`        | `0`        | `1`   | `0`        | `0`   |
+| Plains          | `-20`        | `3`        | `10`  | `0`        | `0`   |
+
+
+# Generation
 ## Lakes
 Water and lava lakes share the same logic, the only differences between them are what blocks generate, and the fact lava lakes generate a stone border around their edge.
 
@@ -149,8 +223,12 @@ Pumpkins
 ## Cacti
 Cacti
 
-## Liquids
-Liquids
+## Singular Fluid Source
+Singular Fluid Sources can only generate if the chosen position fulfills the following conditions:
+- The block above and below are stone (Y axis)
+- The block at the chosen position is stone or air
+- There are exactly `3` stone and `1` air blocks around it (X/Z axes)
+If all of these are met, the specified fluid can generate.
 
 ## Snow
 Snow generates on the highest solid block, except ice, where the temperature value is  `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](quirks#ice-and-snow) for more info!

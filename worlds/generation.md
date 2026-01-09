@@ -75,7 +75,7 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 | Selector Noise | `8` | `(684.412 / 80.0, 684.412 / 160.0, 684.412 / 80.0)` |
 | Continentalness | `10` | `(1.121, 1.121, 0.5)` |
 | Depth Noise | `16` | `(200.0, 200.0, 0.5)` |
-| Tree Density Noise | `8` | - |
+| Tree Density Noise | `8` | (variable) |
 
 | Low | High | Selector | Continental | Depth |
 | :---: | :---: | :---: | :---: | :---: |
@@ -142,19 +142,63 @@ The chunk is now iterated over in a nested x and z for-loop.
 
 For this the current block column is iterated over from top to bottom, from `127` down to `0`.
 
-6. If we're at `0`, place Bedrock, plus some random Bedrock up to `5` blocks away.
-7. Get the current block, if it's air go to next loop, if its stone, continue
-8. If the stone integer is `<= 0`, set the top block to air and the filler block to stone
-9. TODO
-
-{: .note }
-> I'm unsure if I like this format more than just pasted, commented code.
+```cpp
+// Place Bedrock at bottom with some randomness
+if (y <= 0 + rand.nextInt(5)) {
+  SetBlock(BLOCK_BEDROCK, position);
+  continue;
+}
+int8_t currentBlock = GetBlock(position);
+// Ignore air
+if (currentBlock == BLOCK_AIR) {
+  stoneDepth = -1;
+  continue;
+}
+// If we counter stone, start replacing it
+if (currentBlock == BLOCK_STONE) {
+  if (stoneDepth == -1) {
+    if (stoneActive <= 0) {
+      topBlock = BLOCK_AIR;
+      fillerBlock = BLOCK_STONE;
+    } else if (y >= WATER_LEVEL - 4 && y <= WATER_LEVEL + 1) {
+      // If we're close to the water level, apply gravel and sand
+      topBlock = GetTopBlock(biome);
+      fillerBlock = GetFillerBlock(biome);
+      if (gravelActive)
+        topBlock = BLOCK_AIR;
+      if (gravelActive)
+        fillerBlock = BLOCK_GRAVEL;
+      if (sandActive)
+        topBlock = BLOCK_SAND;
+      if (sandActive)
+        fillerBlock = BLOCK_SAND;
+    }
+    // Add water if we're below water level
+    if (y < WATER_LEVEL && topBlock == BLOCK_AIR) {
+      topBlock = BLOCK_WATER_STILL;
+    }
+    stoneDepth = stoneActive;
+    if (y >= WATER_LEVEL - 1) {
+      SetBlock(topBlock, position);
+    } else {
+      SetBlock(fillerBlock, position);
+    }
+  } else if (stoneDepth > 0) {
+    --stoneDepth;
+    SetBlock(fillerBlock, position);
+    if (stoneDepth == 0 && fillerBlock == BLOCK_SAND) {
+      stoneDepth = rand.nextInt(4);
+      fillerBlock = BLOCK_SANDSTONE;
+    }
+  }
+}
+```
 
 ## Caves
-Caves are not noise based, but instead rely on carving the terrain out based on the world seed. It gets its own dedicated [PRNG object](../technical/javaFeatures#random) when initialized.
+Caves are not noise based, but instead work by carving the terrain out between a random amount of nodes. It gets its own dedicated [PRNG object](../technical/javaFeatures#random) when initialized.
 
 ### Setup
-Cave generation is 
+The world seed and the relevant chunk position are used to determine the seed of the cave.
 ```cpp
 int carveExtent = 8;
 // Use the world seed to init the PRNG
@@ -164,7 +208,7 @@ long zOffset = rand->nextLong() / 2 * 2 + 1;
 // Iterate beyond the current chunk by 8 chunks in every direction
 for (int cXoffset = cX - carveExtent; cXoffset <= cX + carveExtent; ++cXoffset) {
   for (int cZoffset = cZ - carveExtent; cZoffset <= cZ + carveExtent; ++cZoffset) {
-    this->rand->setSeed(((long(cXoffset) * xOffset) + (long(cZoffset) * zOffset)) ^ world->seed);
+    rand.setSeed(((long(cXoffset) * xOffset) + (long(cZoffset) * zOffset)) ^ world->seed);
     this->GenerateCaves(cXoffset, cZoffset, cX, cZ, c);
   }
 }
@@ -172,27 +216,27 @@ for (int cXoffset = cX - carveExtent; cXoffset <= cX + carveExtent; ++cXoffset) 
 
 From here, a number in the range of `0 - 42` is generated, by feeding the generation result into itself 3 times and adding `1` after each result.
 ```cpp
-int numberOfCaves = this->rand->nextInt(this->rand->nextInt(this->rand->nextInt(40) + 1) + 1);
+int numberOfCaves = rand.nextInt(rand.nextInt(rand.nextInt(40) + 1) + 1);
 ```
 This number is reset to `0` if the next random number between `0` and `15` isn't equal to `0`.
 
 ### Carving
 The resulting number of caves are then iterated over.
 ```cpp
-double xOffset = double(cXoffset * CHUNK_WIDTH_X + this->rand->nextInt(CHUNK_WIDTH_X));
-double yOffset = double(this->rand->nextInt(this->rand->nextInt(120) + 8));
-double zOffset = double(cZoffset * CHUNK_WIDTH_Z + this->rand->nextInt(CHUNK_WIDTH_Z));
+double xOffset = double(cXoffset * CHUNK_WIDTH_X + rand.nextInt(CHUNK_WIDTH_X));
+double yOffset = double(rand.nextInt(rand.nextInt(120) + 8));
+double zOffset = double(cZoffset * CHUNK_WIDTH_Z + rand.nextInt(CHUNK_WIDTH_Z));
 int numberOfNodes = 1;
-if(this->rand->nextInt(4) == 0) {
+if(rand.nextInt(4) == 0) {
     this->CarveCave(cX, cZ, c, xOffset, yOffset, zOffset);
-    numberOfNodes += this->rand->nextInt(4);
+    numberOfNodes += rand.nextInt(4);
 }
 ```
 The resulting number of nodes is then iterated over, while still inside of the cave loop.
 ```cpp
-float carveYaw = this->rand->nextFloat() * float(M_PI) * 2.0F;
-float carvePitch = (this->rand->nextFloat() - 0.5F) * 2.0F / 8.0F;
-float tunnelRadius = this->rand->nextFloat() * 2.0F + this->rand->nextFloat();
+float carveYaw = rand.nextFloat() * float(M_PI) * 2.0F;
+float carvePitch = (rand.nextFloat() - 0.5F) * 2.0F / 8.0F;
+float tunnelRadius = rand.nextFloat() * 2.0F + rand.nextFloat();
 this->CarveCave(
     cX, cZ, c,
     xOffset, yOffset, zOffset,
