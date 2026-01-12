@@ -12,6 +12,17 @@ Java provides certain functions, classes and algorithms by default which oftenti
 1. TOC
 {:toc}
 
+## Casting
+Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../worlds/quirks). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
+
+Java clearly defines casting behavior in its specs. Casting behavior is defined in Chapter 5 of the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf).
+
+To cover the case most relevant for the Farlands (`double` to `int`):
+1. If the floating-point number is a `NaN`, return `0`.
+2. The floating-point number is rounded towards `0`.
+3. If the value is smaller than the smallest possible value, the smallest possible value is returned (e.g. `INT32_MIN`)
+4. If the value is larger than the largest possible value, the largest possible value is returned (e.g. `INT32_MAX`)
+
 ## hashCode
 HashCode is for turning a string into an integer. It's used in Minecraft to transform text-based seeds into a number.
 

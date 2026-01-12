@@ -21,7 +21,7 @@ The algorithm used by most of Minecraft's Terrain is based on "Improved Perlin N
 The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654.566636), however a more accessible option is the [Wikipedia page on Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
 
 {: .note }
-> [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here due to a signed 64-Bit Floating-point number being converted to a signed 32-Bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly.
+> [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here due to a signed 64-Bit Floating-point number being converted to a signed 32-Bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly. Please check how [Java does casting](../technical/javaFeatures#casting) to ensure accuracy.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noisePerlin.cpp).
 

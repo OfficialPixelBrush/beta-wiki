@@ -2,7 +2,7 @@
 title: Beta Wiki
 layout: home
 nav_order: 1
-last_modified_date: 13-10-2025
+last_modified_date: 12-01-2026
 ---
 
 ![Glacier (throughout different stages of World Generation) @ x:8 y:88 z:12](banner.webp)
