@@ -86,7 +86,76 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 Continentalness and Depth are 2D, while Low, High and Selector noise are 3D. As a result, only the lowest slice of each is shown. Tree Density is 2D as well, but only used during the [population stage](population#trees) for trees.
 
 ### Terrain Noise
-This function utilizes 5 of our Perlin Noise Generators, 2 in 2D and 3 in 3D.
+The exact algorithm is a bit annoying to explain and feels very vibes-based. A simplified explanation boils down to the following process.
+
+The following code is iterated over along the X,Z axes via a set of for loops. It's responsible for sampling the 2D noises.
+```cpp
+// Get temperature values
+double temp = temperature[];
+double humi = humidity[] * temp;
+humi = 1.0 - humi;
+humi *= humi;
+humi *= humi;
+humi = 1.0 - humi;
+// Sample continentalness noise
+double cn = (continentalness[xz] + 256.0) / 512.0;
+cn *= humi;
+if (cn > 1.0)
+  cn = 1.0;
+if (cn < 0.0)
+  cn = 0.0;
+cn += 0.5;
+// Sample depth noise
+double dn = depthNoise[xz] / 8000.0;
+if (dn < 0.0)
+  dn = -dn * 0.3;
+dn = dn * 3.0 - 2.0;
+if (dn < 0.0) {
+  dn /= 2.0;
+  if (dn < -1.0)
+    dn = -1.0;
+  dn /= 1.4;
+  dn /= 2.0;
+  cn = 0.0;
+} else {
+  if (dn > 1.0)
+    dn = 1.0;
+  dn /= 8.0;
+}
+dn = dn * double(max.y) / 16.0;
+double elevationOffset = double(max.y) / 2.0 + dn * 4.0;
+++xz;
+```
+
+After this follow the 3D noises. These are iterated over bottom to top.
+```cpp
+double terrainDensity = 0.0;
+double densityOffset = (double(y) - elevationOffset) * 12.0 / cn;
+if (densityOffset < 0.0)
+  densityOffset *= 4.0;
+// Sample the noises
+double ln = lowNoise[xyz] / 512.0;
+double hn = highNoise[xyz] / 512.0;
+double sn = (selectorNoise[xyz] / 10.0 + 1.0) / 2.0;
+// Lerp between low and high noise
+if (sn < 0.0)
+  terrainDensity = ln;
+else if (sn > 1.0)
+  terrainDensity = hn;
+else
+  terrainDensity = ln + (hn - ln) * sn;
+terrainDensity -= densityOffset;
+// Reduce terrain density towards the top of the world
+if (y > max.y - 4) {
+  double heightEdgeFade = double(float(y - (max.y - 4)) / 3.0f);
+  terrainDensity = (terrainDensity * (1.0 - heightEdgeFace)) + (-10.0 * heightEdgeFace);
+}
+terrainMap[xyz] = terrainDensity;
+xyz++;
+```
+
+For more details, check out the implementation used by [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer/blob/87bc5e40e99587d34d4269aceed1e6332c55efd9/src/plugins/terrain/historic/b173/generatorBeta173.cpp#L268).
+
 The result of this is placed into a `4x16x4` Double Array that describes our terrain at a reduced scale.
 
 ### Interpolation

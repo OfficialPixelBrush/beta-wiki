@@ -40,7 +40,13 @@ A rough checklist for everything that still needs to be done. Lots to do!
     - [x] Biome Selection
     - [x] Terrain Generation
         - [x] Interpolation
-    - [ ] Cave Generation + Carving
+    - [x] Cave Generation + Carving
     - [ ] Surface Population
         - [ ] Foliage Generation
+        - [ ] Tree Generation
+            - [ ] Oak/Birch Generation
+            - [ ] Big Oak Generation
+            - [ ] Spruce Generation
         - [ ] Ore Generation
+- Entities
+    - [ ] Pathfinding

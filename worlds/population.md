@@ -108,16 +108,17 @@ Before actually being placed into the world, each feature does a bit of extra st
 ## Biome-dependent attempts
 Some features have the number of generation attempts tied to the chunks biome
 
-| Biome           | Trees        | Dandelions | Grass | Deadbushes | Cacti |
-| --------------- | ------------ | ---------- | ----- | ---------- | ----- |
-| Forest          | `sample + 5` | `2`        | `2`   | `0`        | `0`   |
-| Rainforest      | `sample + 5` | `0`        | `10`  | `0`        | `0`   |
-| Taiga           | `sample + 5` | `2`        | `0`   | `0`        | `0`   |
-| Seasonal Forest | `sample + 2` | `4`        | `2`   | `0`        | `0`   |
-| Desert          | `-20`        | `0`        | `0`   | `2`        | `10`  |
-| Tundra          | `-20`        | `0`        | `1`   | `0`        | `0`   |
-| Plains          | `-20`        | `3`        | `10`  | `0`        | `0`   |
+| Biome           | Trees             | Dandelions | Grass | Deadbushes | Cacti |
+| --------------- | ----------------- | ---------- | ----- | ---------- | ----- |
+| Forest          | `treeDensity + 5` | `2`        | `2`   | `0`        | `0`   |
+| Rainforest      | `treeDensity + 5` | `0`        | `10`  | `0`        | `0`   |
+| Taiga           | `treeDensity + 5` | `2`        | `0`   | `0`        | `0`   |
+| Seasonal Forest | `treeDensity + 2` | `4`        | `2`   | `0`        | `0`   |
+| Desert          | `-20`             | `0`        | `0`   | `2`        | `10`  |
+| Tundra          | `-20`             | `0`        | `1`   | `0`        | `0`   |
+| Plains          | `-20`             | `3`        | `10`  | `0`        | `0`   |
 
+*The `treeDensity` is taken from the tree density noise, see more about this in the [Tree Generation section](#trees)*
 
 # Generation
 ## Lakes
@@ -159,6 +160,7 @@ Clay patches.
 
 ## Minable
 Anything you'd find underground, such as dirt/gravel blocks and coal, iron, gold, redstone, diamond and lapis lazuli veins.
+![Ore Generation Attempt Chart](images/population/oreAbundance.png)
 
 ## Trees
 This section will discuss how its decided if a tree should generate and how those trees generate.
