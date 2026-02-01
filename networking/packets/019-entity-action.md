@@ -21,7 +21,7 @@ This packet is sent by the client for performing certain actions, defined via a 
 | Field     | Type    | Description                                  |
 | --------- | ------- | -------------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
-| Action    | Integer | The type of action |
+| Action    | Byte | The type of action |
 
 ## Example Packet
 
