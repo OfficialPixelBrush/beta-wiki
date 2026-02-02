@@ -7,16 +7,16 @@ parent: Redstone
 
 # Components
 {: .no_toc }
-This page will document how individual redstone components operate,
-a lot of these will have significant overlap.
+This page will document how individual redstone components operate.
+
+{: .missing }
+> A lot of info and many edgecases are not yet documented here.
 
 1. TOC
 {:toc}
 
 ## Redstone Dust
-
-{: .missing }
-> TODO
+Redstone Dust propagates redstone signals via a floodfill algorithm. With each subsequent piece of dust, the power level lowers. This also ticks all surrounding blocks.
 
 ## Redstone Torch
 Redstone Torches act as boolean NOT gates. They have a response delay of `2` gameticks.
@@ -28,7 +28,7 @@ All surrounding blocks are ticked when a Redstone Torch is placed or removed, bu
 A torch uses it's 4-Bit values for it's orientation.
 
 | Metadata value | Appearance |
-| --- | --- |
+| :---: | --- |
 | `0` | - |
 | `1` | Attached to -X (Facing East) |
 | `2` | Attached to +X (Facing West) |
@@ -43,9 +43,6 @@ This, in turn, is used to determine where to check for a power source.
 Redstone Torches keep an internal list of update times. After `100` gameticks, an update entry will expire. If more than `8` updates occur within those `100` gameticks, the torch burns out.
 
 It turns itself on again after the number of queued updates drops below `8` again.
-
-{: .missing }
-> TODO
 
 ## Redstone Repeater
 Redstone Repeaters act as Diodes. Additionally, they can be configured to delay a redstone signal by `2`, `4`, `6` or `8` gameticks.
@@ -65,7 +62,7 @@ while the upper 2-bits determine the delay of the repeater.
 When the neighbor of a repeater updates, the following choice is made.
 
 | Is Powered | Receiving Power |  |
-| --- | --- | --- |
+| :---: | :---: | :--- |
 | ❌ | ❌ | - |
 | ❌ | ✅ | Schedules block update in `delay` ticks |
 | ✅ | ❌ | Schedules block update in `delay` ticks |
