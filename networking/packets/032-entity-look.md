@@ -16,7 +16,7 @@ Sent to the client to set an entity's view angles. As the rotation data is in [e
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
-| Entity ID | Integer | The ID of the entity that should be moved |
+| Entity ID | Integer | The ID of the entity that should have its rotation set |
 | Yaw | Byte | Rotation on the X Axis (Quantized) |
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 

@@ -50,3 +50,10 @@ A rough checklist for everything that still needs to be done. Lots to do!
         - [ ] Ore Generation
 - Entities
     - [ ] Pathfinding
+- Redstone
+    - [ ] Wire
+    - [x] Torch
+    - [x] Comparator
+    - [ ] Piston
+    - [ ] Sticky Piston
+    - [ ] Bugs/Quirks

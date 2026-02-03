@@ -18,7 +18,7 @@ The sent values are first clamped to `+/-3.9` in any direction, then multiplied 
 
 | Field  | Type   | Description                  |
 | ------ | ------ | ---------------------------- |
-| Entity ID | Integer | The ID of the entity to have its velocity set |
+| Entity ID | Integer | The ID of the entity that should have its velocity updated |
 | X Velocity | Short | Velocity on the X axis |
 | Y Velocity | Short | Velocity on the Y axis |
 | Z Velocity | Short | Velocity on the Z axis |
