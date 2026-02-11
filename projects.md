@@ -16,6 +16,7 @@ A small list of clients or servers that implement the Beta 1.7.3 protocol, which
 | [Minestalgia](https://github.com/cody-quinn/Minestalgia) | Zig | [cody-quinn](https://codyq.dev/) |
 | [WintyMC](https://github.com/DOh1221/WintyMC/) | Java | [DOh1221](https://github.com/DOh1221/) |
 | [TrueCraft](https://github.com/ddevault/TrueCraft) | C# | [ddevault](https://github.com/ddevault) |
+| [betasharp](https://github.com/Fazin85/betasharp) | C# | [Fazin85](https://github.com/Fazin85) |
 | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer) | C++ | [Pixel Brush](https://pixelbrush.dev/) |
 | [Custom-BetaMC-Server](https://github.com/dairycultist/Custom-BetaMC-Server) | C | [dairycultist](https://github.com/dairycultist) |
 
