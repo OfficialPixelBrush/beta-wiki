@@ -45,7 +45,7 @@ bundle exec jekyll serve
 1. Strings are also monospaced (`Test String`)
 1. There shall never be any quotes around Strings
 1. String8 and String16s are not differentiated, mainly due to how rarely String8 is used
-1. If a String is empty, a singular space may be used to designate it as such (` `)
+1. If a String is empty, a singular space may be used to designate it as such (EMPTY)
 1. Unless necessary, any floating-point numbers should only be limited to 2 decimal places (`15.24`)
 
 ## Additions

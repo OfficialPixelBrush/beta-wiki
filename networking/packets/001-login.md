@@ -40,7 +40,7 @@ The player's dimension is specified as `0` for The Overworld and `-1` for The Ne
 | Field | Value | 
 | --- | --- |
 | Entity ID | `1298` |
-| Unused | ` ` |
+| Unused | (EMPTY) |
 | World Seed | `971768181197178410` |
 | Dimension | `0` |
 
