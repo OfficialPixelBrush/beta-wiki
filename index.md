@@ -1,8 +1,8 @@
 ---
-title: Beta Wiki
+title: Home
 layout: home
 nav_order: 1
-last_modified_date: 03-02-2026
+last_modified_date: 17-02-2026
 ---
 
 ![Glacier (throughout different stages of World Generation) @ x:8 y:88 z:12](banner.webp)
@@ -41,3 +41,7 @@ https://discord.gg/JHTz2HSKrf)!
   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=OfficialPixelBrush/beta-wiki&type=Date" />
   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=OfficialPixelBrush/beta-wiki&type=Date" />
 </picture>
+
+## Legal Disclaimer
+
+Please refer to the [legal disclaimer](legal) page for more info.
