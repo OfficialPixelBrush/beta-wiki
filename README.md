@@ -23,3 +23,7 @@ https://discord.gg/JHTz2HSKrf)!
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=OfficialPixelBrush/beta-wiki&type=Date" />
  </picture>
 </a>
+
+## Legal Disclaimer
+
+Please refer to the [legal info](legal.md) page for more info.
