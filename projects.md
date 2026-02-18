@@ -28,6 +28,7 @@ Check the [wiki.vg archive for more Servers](https://minecraft.wiki/w/Minecraft_
 | --- | --- | --- |
 | [Minecraft](https://www.minecraft.net/) | Java | Mojang |
 | [TrueCraft](https://github.com/ddevault/TrueCraft) | C# | [ddevault](https://github.com/ddevault) |
+| [CavEX](https://github.com/xtreme8000/cavex) | C | [xtreme8000](https://github.com/xtreme8000) |
 | [Betrock](https://github.com/OfficialPixelBrush/Betrock) | C++ | [Pixel Brush](https://pixelbrush.dev/) |
 
 Check the [wiki.vg archive for more Clients](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations)
