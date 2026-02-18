@@ -40,7 +40,7 @@ Here is a comprehensive listing of all blocks.
 | 20    | Glass                   | Glass                                               | |
 | 21    | Lapis Lazuli Ore        | Lapis Lazuli Ore                                    | |
 | 22    | Lapis Lazuli Block      | Lapis Lazuli Block                                  | |
-| 23    | Dispenser               | Dispenser                                           | Direction |
+| 23    | Dispenser               | Dispenser                                           | [Direction](#dispenserfurnace) |
 | 24    | Sandstone               | Sandstone                                           | |
 | 25    | Noteblock               | Noteblock                                           | |
 | 26    | Bed                     | Bed                                                 | Top/Bottom and Direction                            |
@@ -67,10 +67,10 @@ Here is a comprehensive listing of all blocks.
 | 47    | Bookshelf               | Bookshelf                                           | |
 | 48    | Mossy Cobblestone       | Moss Stone                                          | |
 | 49    | Obsidian                | Obsidian                                            | |
-| 50    | Torch                   | Torch                                               | Direction |
+| 50    | Torch                   | Torch                                               | [Direction](#torcheslevers) |
 | 51    | Fire                    | Fire                                                | |
 | 52    | Monster Spawner         | Monster Spawner                                     | |
-| 53    | Wooden Stairs           | Wooden Stairs                                       | Direction |
+| 53    | Wooden Stairs           | Wooden Stairs                                       | [Direction](#stairs) |
 | 54    | Chest                   | Chest                                               | |
 | 55    | Redstone                | Redstone                                            | Power Level |
 | 56    | Diamond Ore             | Diamond Ore                                         | |
@@ -78,13 +78,13 @@ Here is a comprehensive listing of all blocks.
 | 58    | Crafting Table          | Crafting Table                                      | |
 | 59    | Wheat                   | Crops                                               | Growth Stage (0-7) |
 | 60    | Farmland                | Farmland                                            | >0 if wet |
-| 61    | Furnace                 | Furnace                                             | |
-| 62    | Furnace (Lit)           | Furnace                                             | |
-| 63    | Sign (Ground)           | Sign                                                | Direction |
+| 61    | Furnace                 | Furnace                                             | [Direction](#dispenserfurnace) |
+| 62    | Furnace (Lit)           | Furnace                                             | [Direction](#dispenserfurnace) |
+| 63    | Sign (Ground)           | Sign                                                | [Direction](#grounded) |
 | 64    | Wooden Door             | Wooden Door                                         | |
 | 65    | Ladder                  | Ladder                                              | Direction |
 | 66    | Rail                    | Rail                                                | Direction |
-| 67    | Cobblestone Stairs      | Stone Stairs                                        | Direction |
+| 67    | Cobblestone Stairs      | Stone Stairs                                        | [Direction](#stairs) |
 | 68    | Sign (Wall)             | Sign                                                | Direction |
 | 69    | Lever                   | Lever                                               | Toggled & Direction |
 | 70    | Stone Pressure Plate    | Pressure Plate                                      | Toggled |
@@ -92,8 +92,8 @@ Here is a comprehensive listing of all blocks.
 | 72    | Wooden Pressure Plate   | Pressure Plate                                      | Toggled |
 | 73    | Redstone Ore (Off)      | Redstone Ore                                        | |
 | 74    | Redstone Ore (On)       | Redstone Ore                                        | |
-| 75    | Redstone Torch (Off)    | Redstone Torch                                      | |
-| 76    | Redstone Torch (On)     | Redstone Torch                                      | |
+| 75    | Redstone Torch (Off)    | Redstone Torch                                      | [Direction](#torcheslevers) |
+| 76    | Redstone Torch (On)     | Redstone Torch                                      | [Direction](#torcheslevers) |
 | 77    | Stone Button            | Button                                              | Toggled & Direction |
 | 78    | Snow Layer              | Snow                                                | |
 | 79    | Ice                     | Ice                                                 | |
@@ -161,6 +161,17 @@ Leaves have 3/4 distinct values. Only oak is biome-colored.
 
 The values after this simply follow the same pattern.
 
+## Dispenser/Furnace
+| Value | Color |
+| --- | --- |
+| 0 | None (Invalid) |
+| 1 | None (Invalid) |
+| 2 | East |
+| 3 | West |
+| 4 | North |
+| 5 | South |
+| 6-15 | None (Invalid) |
+
 ## Wool
 Wool exists in 16 distinct colors.
 
@@ -206,7 +217,7 @@ The piston head uses it's metadata like the pistons, though with one difference.
 
 | Value | Direction |
 | --- | --- |
-| 0 | Down |
+| 0 | Down | 
 | 1 | Up |
 | 2 | East |
 | 3 | West |
@@ -214,3 +225,52 @@ The piston head uses it's metadata like the pistons, though with one difference.
 | 5 | South |
 
 Values 6 and 7 do not render.
+
+## Torches/Levers
+The "facing" direction of a torch or lever is determined by the direction it's sticking out towards.
+
+| Value | Direction |
+| --- | --- |
+| 0 | Up |
+| 1 | South |
+| 2 | North |
+| 3 | West |
+| 4 | East |
+| 5-15 | Up (Invalid) |
+
+## Stairs
+The "facing" direction is determined where the missing quarter is.
+
+| Value | Direction |
+| --- | --- |
+| 0 | North |
+| 1 | South |
+| 2 | East |
+| 3 | West |
+
+Values 4 to 15 do not render.
+
+## Signs
+
+### Grounded
+The "facing" direction is determined by which way the text would go.
+The angles are given relative to West.
+
+| Value | Direction | Angle |
+| --- | --- | --- |
+| 0 | West | 0° |
+| 1 | West-North-West| 22.5° |
+| 2 | North-West | 45° |
+| 3 | North-North-West | 67.5° |
+| 4 | North | 90° |
+| 5 | North-North-East | 112.5° |
+| 6 | North-East | 135° |
+| 7 | East-North-East | 157.5° |
+| 8 | East | 180° |
+| 8 | East-South-East | 202.5° |
+| 10 | South-East | 225° |
+| 11 | South-South-East | 247.5° |
+| 12 | South | 270° |
+| 13 | South-South-West | 292.5° |
+| 14 | South-West | 315° |
+| 15 | West-South-West | 337.5° |
