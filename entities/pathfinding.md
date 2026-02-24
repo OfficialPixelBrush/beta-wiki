@@ -18,6 +18,15 @@ To prevent the server from crashing by searching the entire map, a mob only calc
 - The algorithm assigns specific walkability values to blocks. It strictly avoids paths that lead into lava (`-2` (Lava)), but it will calculate routes through water (`-1` (Water)). Blocks where the material blocks movement evaluate to `true` (Blocks Movement) and are completely rejected.
 - Solid blocks naturally block movement. Interestingly, the algorithm understands wooden and iron doors, but it will only consider them passable if their metadata explicitly states that they are currently open.
 
+## Executing the Movement
+
+Once the algorithm successfully chains together a route from the mob to the target, it generates a list of 3D waypoints.
+
+The mob then hands this list over to its internal movement logic:
+
+1. The mob calculates the angle to the first waypoint, rotates to face it, and walks forward.
+2. As soon as the mob gets close enough to a waypoint (based on its bounding box), it discards it and targets the next one in the list.
+3. If the next waypoint is higher than the mob's current floor level, it triggers a jump. Mobs will also continuously attempt to jump if they are navigating through water or lava to keep their heads above the surface.
 
 ## Notable Beta 1.7.3 Quirks
 
@@ -31,9 +40,6 @@ Sleeping in a poorly lit or unsecure area can result in a monster rudely waking 
 
 Tamed wolves usually try to walk to their owner using the standard pathfinding algorithm. However, if the path is too complex, completely blocked, or if the owner gets more than `12.0f` blocks away, the wolf's AI abandons the pathfinder entirely. Instead, it scans a `5`x`5` grid around the owner, finds the first safe, empty block, and instantly teleports there.
 
-
-{: .no_toc }
-Pathfinding is the algorithm mobs use to determine how and where to move.
 
 {: .missing }
 > A huge chunk of info is still missing!!
