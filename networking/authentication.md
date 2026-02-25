@@ -13,10 +13,10 @@ Authentication is used to ensure a client is who they claim to be. This process 
 {:toc}
 
 ## Offline mode
-Offline mode is super simple, since it completely circumvents the authenatication system. Instead of a hash, the server just sends a `-` which the client receives and then just continues logging in with.
+Offline mode is super simple, since it completely circumvents the authentication system. Instead of a hash, the server just sends a `-` which the client receives and then just continues logging in with.
 
 ## Online mode
-Online mode depends on the Minecraft Website backend, which shut down long ago. For accuracy and historical preservation reasons we'll talk about how the system worked. After that, we'll go over the relevant sections with how they can be made to work nowadays, with services like the Betacraft Proxy.
+Online mode depends on the Minecraft website backend, which shut down long ago. For accuracy and historical preservation reasons we'll talk about how the system worked. After that, we'll go over the relevant sections with how they can be made to work nowadays, with services like the Betacraft Proxy.
 
 ### Acquire Client Session Id
 TODO
