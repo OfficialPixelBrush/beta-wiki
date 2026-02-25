@@ -7,7 +7,7 @@ parent: Entities
 
 # Pathfinding
 
-Pathfinding is the algorithm that mobs in Minecraft Beta 1.7.3 use to determine how and where to move to reach a target destination. To navigate the blocky terrain, the game relies on a 3D implementation of the A* (A-Star) search algorithm.
+In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
 ## How Mobs Evaluate the World
 
