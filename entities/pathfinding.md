@@ -9,6 +9,18 @@ parent: Entities
 
 In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
+## The A* Heuristic
+
+To determine which blocks to check first, the pathfinder calculates a "score" for each evaluated block (`PathPoint`). Beta 1.7.3 uses a 3D Euclidean distance heuristic.
+
+Each block is scored based on three values:
+
+* G-Score (`totalPathDistance`): The actual walking distance from the mob's starting position to the current block.
+* H-Score (`distanceToNext`): The heuristic. This is the estimated straight-line distance from the current block to the target. It is calculated using the Euclidean distance formula: $h = \sqrt{\Delta x^2 + \Delta y^2 + \Delta z^2}$
+* F-Score (`distanceToTarget`): The total estimated cost of the path, calculated as $f = g + h$.
+
+The algorithm uses a priority queue to always expand the block with the lowest F-Score. Because the heuristic uses true straight-line distance rather than Manhattan distance (grid-based distance), mobs naturally understand diagonal movement and will attempt to take the most direct angle toward their target when the terrain allows it.
+
 ## How Mobs Evaluate the World
 
 To prevent the server from crashing by searching the entire map, a mob only calculates paths within a restricted local area (typically a `32`-block radius). When a mob wants to reach a target, it checks the blocks immediately around it (North, South, East, West) and evaluates them based on a few strict rules:
