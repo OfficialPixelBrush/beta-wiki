@@ -8,6 +8,11 @@ logo: "/assets/images/logo.png"
 url: https://OfficialPixelBrush.github.io/beta-wiki
 # favicon_ico: "/assets/images/favicon.ico"
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
 color_scheme: custom
 color_scheme_toggle: true
 sass:

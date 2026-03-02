@@ -58,3 +58,12 @@ Tamed wolves usually try to walk to their owner using the standard pathfinding a
 
 1. TOC
 {:toc}
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
