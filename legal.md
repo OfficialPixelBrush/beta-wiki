@@ -6,9 +6,13 @@ last_modified_date: 17-02-2026
 ---
 
 # Legal Disclaimer
+{: .no_toc }
 
 {: .warning }
 > No lawyer or other kind of legal professional has touched this page. Please take anything said on it with a huge grain of salt!
+
+1. TOC
+{:toc}
 
 ## Legality of the Project
 
@@ -20,9 +24,10 @@ Some pages still contain snippets of info or pseudocode that closely resemble th
 
 Most parts of the wiki were written with no insight into the decompiled code, and are thus perfectly safe for any FOSS projects.
 
-### Partially Safe
+### Probably Safe
 The following is a list of pages that were created while directly referencing the decompiled Beta 1.7.3 code but they do not show any decompiled or pseudocode that resembles the decomp. They may contain numbers or algorithms that were taken directly from the decomp.
 
+- [Networking/Authentication](./networking/authentication)
 - [Entities/Pathfinding](./entities/pathfinding)
 - [Redstone](./redstone/components)
 - [Worlds/Population](./worlds/population)
