@@ -9,6 +9,12 @@ parent: Entities
 
 In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
+{: .missing }
+> A huge chunk of info is still missing!!
+
+1. TOC
+{:toc}
+
 ## The A* Heuristic
 
 To determine which blocks to check first, the pathfinder calculates a "score" for each evaluated block (`PathPoint`). Beta 1.7.3 uses a 3D Euclidean distance heuristic.
@@ -51,13 +57,6 @@ Sleeping in a poorly lit or unsecure area can result in a monster rudely waking 
 ### Wolf Teleportation Fallback
 
 Tamed wolves usually try to walk to their owner using the standard pathfinding algorithm. However, if the path is too complex, completely blocked, or if the owner gets more than `12.0f` blocks away, the wolf's AI abandons the pathfinder entirely. Instead, it scans a `5`x`5` grid around the owner, finds the first safe, empty block, and instantly teleports there.
-
-
-{: .missing }
-> A huge chunk of info is still missing!!
-
-1. TOC
-{:toc}
 
 <script>
 window.MathJax = {
