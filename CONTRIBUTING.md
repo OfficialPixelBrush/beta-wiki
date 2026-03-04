@@ -62,3 +62,12 @@ The following is a list of stylistic and formal considerations that should be ta
 
 1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
 1. The same applies to any numberical value with a different known meaning than the number itself (`1` (Swing Arm))
+
+## Code blocks
+
+1. Code blocks can be done in whatever language the author prefers, with some exceptions, as long as the underlying algorithm can be understood
+1. Languages that are non-typed should not be used for code where specific bitwidths or types are important
+1. Code blocks should not rely on libraries that magically handle most of the hard work or obfuscate what the code actually does. Math helper libraries are permitted
+1. Variables should be reasonably and readably named, avoid single-character names unless its for something unimportant (like an iterator)
+1. A specific case is not enforced
+1. Variables that require a specific bitwidth should use a type that confirms this bitwidth, i.e. instead of `int`, which can be 16-Bit or 32-Bit depending on ones system or compiler, it should be `int32_t` or `i32`, to ensure it's a signed 32-Bit integer

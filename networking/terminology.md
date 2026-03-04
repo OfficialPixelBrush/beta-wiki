@@ -40,9 +40,9 @@ Limited to signed 28.4 fixed-point* numbers (`-67,108,864.0` to `67,108,863.9688
 
 <sup>*Sent as a signed 32-Bit Integer</sup>
 
-Conversion from a floating-point value to a 28.4-Bit fixed-point value can be done as follows.
+Conversion from a floating-point value to a 28.4 fixed-point value can be done as follows.
 ```c
-int fixed_val = int (float_val * 32.0f);
+int32_t fixed_val = int32_t(float_val * 32.0f);
 ```
 This can be reversed too.
 ```c
