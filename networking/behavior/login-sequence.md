@@ -1,5 +1,5 @@
 ---
-title: Login
+title: Login Sequence
 layout: home
 nav_order: 5
 parent: Behavior
