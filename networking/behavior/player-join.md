@@ -32,7 +32,7 @@ It's interesting that the held item is sent twice, despite already being sent wi
 | Direction | Packet | Data | Meaning |
 |---|---|---|---|
 | `S->C` | [Chat Message](../packets/003-chat-message)      | Message="§eCamera joined the game."; | Join chat message |
-| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=7; Username="Camera"; x=272; y=2355; z=272; Yaw=0; Pitch=0; Held Item=0; | This spawns the new player on the client-side. Coordiantes are in [entity space](../terminology#entity-space). |
+| `S->C` | [Spawn Player](../packets/020-spawn-player) | EID=7; Username="Camera"; x=272; y=2355; z=272; Yaw=0; Pitch=0; Held Item=0; | This spawns the new player on the client-side. Coordinates are in [entity space](../terminology#entity-space). |
 | `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=0; Item=-1; Damage=0; | The other players' held item is set |
 | `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=1; Item=-1; Damage=0; | The other players' boots(?) are set |
 | `S->C` | [Entity Equipment](../packets/005-entity-equipment)  | EID=7; Slot=2; Item=-1; Damage=0; | The other players' leggings(?) are set |

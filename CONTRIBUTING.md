@@ -36,18 +36,29 @@ bundle exec jekyll serve
 
 # Style Guide
 
+## Considerations
+
+The following is a list of stylistic and formal considerations that should be taken into account when creating a page, going from most to least important.
+1. The page should be readable in a non-markdown text editor
+1. The page should not rely on external links, and be entirely usable without them
+1. The page should not rely on any online-only elements and be usable as a downloaded file too (either `.md` or `.html`)
+1. The page should not rely on Javascript, and be entirely usable without it
+1. The page should be readable in a text-only browser like `lynx` or similar
+
 ## Values
+
 1. All values are always `monospaced`
-1. Bytes, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
-1. Floats have a lower-case `f` on their end (`0.53f`)
-1. Doubles do not have a lower-case `f` (`545.42`)
-1. Booleans are either `true` or `false`
-1. Strings are also monospaced (`Test String`)
+1. **Bytes**, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
+1. **Floats** have a lower-case `f` on their end (`0.53f`)
+1. **Doubles** do not have a lower-case `f` (`545.42`)
+1. **Booleans** are either `true` or `false`
+1. **Strings** are also monospaced (`Test String`)
 1. There shall never be any quotes around Strings
-1. String8 and String16s are not differentiated, mainly due to how rarely String8 is used
-1. If a String is empty, a singular space may be used to designate it as such (EMPTY)
-1. Unless necessary, any floating-point numbers should only be limited to 2 decimal places (`15.24`)
+1. **String8** and **String16s** are not differentiated, mainly due to how rarely String8 is used
+1. If a **String** is empty, the exact contents between the following quoted block can be used, "(EMPTY)". It should **NOT** be monospaced, as that could be mistaken for a string with `(EMPTY)` as its contents.
+1. Unless necessary for the sake of accuracy (i.e. world generation), any floating-point numbers should only be limited to 2 decimal places (`15.24`)
 
 ## Additions
+
 1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
 1. The same applies to any numberical value with a different known meaning than the number itself (`1` (Swing Arm))
