@@ -1,4 +1,5 @@
 ---
+title: 0x14 Spawn Player Entity
 order: 21
 ---
 

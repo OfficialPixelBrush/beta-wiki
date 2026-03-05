@@ -27,6 +27,28 @@ const members = [
             }
         ]
     },
+    {
+        avatar: "https://avatars.githubusercontent.com/u/15125899",
+        name: "tomast1337",
+        title: "Contributor",
+        links: [
+            {
+                icon: "github",
+                link: "https://github.com/tomast1337"
+            }
+        ]
+    },
+    {
+        avatar: "https://avatars.githubusercontent.com/u/96804457",
+        name: "takeraparterer",
+        title: "Contributor",
+        links: [
+            {
+                icon: "github",
+                link: "https://github.com/takeraparterer"
+            }
+        ]
+    },
     // add yourself here
 ];
 </script>

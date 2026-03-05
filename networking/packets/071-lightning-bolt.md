@@ -1,4 +1,5 @@
 ---
+title: 0x47 Lightning Bolt
 order: 72
 ---
 

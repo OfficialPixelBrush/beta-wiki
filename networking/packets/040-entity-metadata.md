@@ -1,4 +1,5 @@
 ---
+title: 0x28 Entity Metadata
 order: 41
 ---
 

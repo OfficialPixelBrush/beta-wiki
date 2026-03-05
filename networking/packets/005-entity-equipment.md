@@ -1,4 +1,5 @@
 ---
+title: 0x05 Entity Equipment
 order: 6
 ---
 

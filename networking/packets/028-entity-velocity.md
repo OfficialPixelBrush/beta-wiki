@@ -1,8 +1,9 @@
 ---
+title: 0x1C Entity Velocity
 order: 29
 ---
 
-# Entity Velocity (?)
+# Entity Velocity
 
 | Packet ID | Direction |
 | --------- | --------- |

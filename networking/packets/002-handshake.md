@@ -1,4 +1,5 @@
 ---
+title: 0x02 Handshake
 order: 3
 ---
 

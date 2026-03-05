@@ -38,6 +38,10 @@ export default defineConfig(withSidebar({
             {
                 icon: "github",
                 link: "https://github.com/OfficialPixelBrush/beta-wiki"
+            },
+            {
+                icon: "discord",
+                link: "https://discord.gg/JHTz2HSKrf"
             }
         ],
         editLink: {
@@ -51,7 +55,10 @@ export default defineConfig(withSidebar({
     documentRootPath: "/",
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
+    useTitleFromFrontmatter: true,
     sortMenusByFrontmatterOrder: true,
+    rootGroupText: "Beta Wiki",
+    useFolderLinkFromIndexFile: true,
     excludeByGlobPattern: [
         "CONTRIBUTING.md",
         "credits.md",

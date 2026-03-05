@@ -1,4 +1,5 @@
 ---
+title: 0x1D Destroy Entity
 order: 30
 ---
 

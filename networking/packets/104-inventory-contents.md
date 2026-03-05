@@ -1,8 +1,9 @@
 ---
+title: 0x68 Inventory Contents
 order: 105
 ---
 
-# Window Items
+# Inventory Contents
 
 | Packet ID | Direction |
 | --------- | --------- |

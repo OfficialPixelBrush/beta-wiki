@@ -1,4 +1,5 @@
 ---
+title: 0x0E Mine
 order: 15
 ---
 

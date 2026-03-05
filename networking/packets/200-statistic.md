@@ -1,4 +1,5 @@
 ---
+title: 0xC8 Statistic
 order: 201
 ---
 

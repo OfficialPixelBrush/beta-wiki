@@ -1,4 +1,5 @@
 ---
+title: 0x36 Block Action
 order: 55
 ---
 

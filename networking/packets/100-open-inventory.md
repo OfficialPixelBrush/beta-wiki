@@ -1,8 +1,9 @@
 ---
+title: 0x64 Open Inventory
 order: 101
 ---
 
-# Open Window
+# Open Inventory
 
 | Packet ID | Direction   |
 | --------- | ----------- |

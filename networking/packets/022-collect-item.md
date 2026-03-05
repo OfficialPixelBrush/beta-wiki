@@ -1,4 +1,5 @@
 ---
+title: 0x16 Collect Item
 order: 23
 ---
 

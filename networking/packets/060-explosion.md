@@ -1,4 +1,5 @@
 ---
+title: 0x3C Explosion
 order: 61
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: 0x17 Spawn Object Entity
 order: 24
 ---
 

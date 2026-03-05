@@ -1,4 +1,5 @@
 ---
+title: 0x67 Set Inventory Slot
 order: 104
 ---
 

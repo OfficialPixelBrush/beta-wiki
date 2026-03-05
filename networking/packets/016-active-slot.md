@@ -1,8 +1,9 @@
 ---
+title: 0x10 Active Slot
 order: 17
 ---
 
-# Holding Change
+# Active Slot
 
 | Packet ID | Direction |
 | --------- | --------- |
@@ -10,7 +11,7 @@ order: 17
 
 ## Serverbound
 
-Sent when the player changes the slot selection 
+Sent when the player changes the slot selection. Other players will be informed of this via the [Entity Equipment packet](./005-entity-equipment).
 
 | Field     | Type   | Description                                       |
 | --------- | ------ | ------------------------------------------------- |

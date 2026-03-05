@@ -1,4 +1,5 @@
 ---
+title: 0x46 Game State
 order: 71
 ---
 

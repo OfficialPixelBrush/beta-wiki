@@ -1,6 +1,4 @@
 ---
-layout: home
-
 hero:
   name: "Beta Wiki"
   tagline: "A wiki documenting Minecraft Beta 1.7.3's network protocol and other technical specifications."
@@ -12,6 +10,8 @@ hero:
       text: View on GitHub
       link: https://github.com/OfficialPixelBrush/beta-wiki
 ---
+
+![Glacier (throughout different stages of World Generation) @ x:8 y:88 z:12](assets/banner.webp)
 
 > [!NOTE]
 > This wiki is mainly for technical information and documentation of how Minecraft functioned as of Beta 1.7.3. If you're looking for more general gameplay info about Beta 1.7.3, such as crafting recipes, check out the [Farlands Wiki](https://farlands.miraheze.org/wiki/Main_Page) and the [archived Minecraft Wiki](https://web.archive.org/web/20110804012308/http://www.minecraftwiki.net/wiki/Main_Page).
@@ -32,11 +32,6 @@ Please check the [TODO Page](todo) to see what still needs to be done, or just c
 
 ## Discord
 We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!
-
-## Contributors
-<a href="https://github.com/OfficialPixelBrush/beta-wiki/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=OfficialPixelBrush/beta-wiki" />
-</a>
 
 ## Star History
 

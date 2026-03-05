@@ -1,4 +1,5 @@
 ---
+title: 0x69 Furnace Progress
 order: 106
 ---
 
