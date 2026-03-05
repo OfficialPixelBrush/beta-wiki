@@ -7,7 +7,10 @@
         "preview": "vitepress preview ."
     },
     "devDependencies": {
-        "vitepress": "^1.6.3",
-        "vite-plugin-vitepress-auto-sidebar": "^1.7.1"
+        "vitepress": "^1.6.3"
+    },
+    "dependencies": {
+        "markdown-it-mathjax3": "^4",
+        "vitepress-sidebar": "^1.33.1"
     }
 }

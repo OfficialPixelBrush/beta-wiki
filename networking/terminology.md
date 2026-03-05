@@ -47,6 +47,5 @@ This can be reversed too.
 float float_val = (( float(quant_val) / 255.0 ) * 360.0)
 ```
 
-| Quantized Angles |
-| : --- : |
-| ![](quantizedAngles.svg) |
+## Quantized Angles
+![](quantizedAngles.svg)

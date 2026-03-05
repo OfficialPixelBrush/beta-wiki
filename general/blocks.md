@@ -166,22 +166,22 @@ Wool exists in 16 distinct colors.
 
 | Value | Color |
 | --- | --- |
-| 0 | <span class="color-swatch" style="background-color:#FFFFFF;"></span> White |
-| 1 | <span class="color-swatch" style="background-color:#FC933F;"></span> Orange |
-| 2 | <span class="color-swatch" style="background-color:#DC56E7;"></span> Magenta |
-| 3 | <span class="color-swatch" style="background-color:#77A0F2;"></span> Light Blue |
-| 4 | <span class="color-swatch" style="background-color:#DFCF21;"></span> Yellow |
-| 5 | <span class="color-swatch" style="background-color:#45D938;"></span> Lime |
-| 6 | <span class="color-swatch" style="background-color:#F697B2;"></span> Pink |
-| 7 | <span class="color-swatch" style="background-color:#4D4D4D;"></span> Gray |
-| 8 | <span class="color-swatch" style="background-color:#B6BEBE;"></span> Light Gray |
-| 9 | <span class="color-swatch" style="background-color:#2F86AC;"></span> Cyan |
-| 10 | <span class="color-swatch" style="background-color:#953FE1;"></span> Purple |
-| 11 | <span class="color-swatch" style="background-color:#2D3CB1;"></span> Blue |
-| 12 | <span class="color-swatch" style="background-color:#633C21;"></span> Brown |
-| 13 | <span class="color-swatch" style="background-color:#41591C;"></span> Green |
-| 14 | <span class="color-swatch" style="background-color:#BC3530;"></span> Red |
-| 15 | <span class="color-swatch" style="background-color:#201B1B;"></span> Black |
+| 0 | <ColorSwatch color="#FFFFFF" :showLabel="false" /> White |
+| 1 | <ColorSwatch color="#FC933F" :showLabel="false" /> Orange |
+| 2 | <ColorSwatch color="#DC56E7" :showLabel="false" /> Magenta |
+| 3 | <ColorSwatch color="#77A0F2" :showLabel="false" /> Light Blue |
+| 4 | <ColorSwatch color="#DFCF21" :showLabel="false" /> Yellow |
+| 5 | <ColorSwatch color="#45D938" :showLabel="false" /> Lime |
+| 6 | <ColorSwatch color="#F697B2" :showLabel="false" /> Pink |
+| 7 | <ColorSwatch color="#4D4D4D" :showLabel="false" /> Gray |
+| 8 | <ColorSwatch color="#B6BEBE" :showLabel="false" /> Light Gray |
+| 9 | <ColorSwatch color="#2F86AC" :showLabel="false" /> Cyan |
+| 10 | <ColorSwatch color="#953FE1" :showLabel="false" /> Purple |
+| 11 | <ColorSwatch color="#2D3CB1" :showLabel="false" /> Blue |
+| 12 | <ColorSwatch color="#633C21" :showLabel="false" /> Brown |
+| 13 | <ColorSwatch color="#41591C" :showLabel="false" /> Green |
+| 14 | <ColorSwatch color="#BC3530" :showLabel="false" /> Red |
+| 15 | <ColorSwatch color="#201B1B" :showLabel="false" /> Black |
 
 > [!NOTE]
 > The color swatches were estimated by dividing the colored wool textures with the white one, then averaging the resulting images. This gets us decently close to the original colors that were used before the wool texture was applied ontop.

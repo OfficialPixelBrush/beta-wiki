@@ -48,12 +48,3 @@ Sleeping in a poorly lit or unsecure area can result in a monster rudely waking 
 ### Wolf Teleportation Fallback
 
 Tamed wolves usually try to walk to their owner using the standard pathfinding algorithm. However, if the path is too complex, completely blocked, or if the owner gets more than `12.0f` blocks away, the wolf's AI abandons the pathfinder entirely. Instead, it scans a `5`x`5` grid around the owner, finds the first safe, empty block, and instantly teleports there.
-
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>

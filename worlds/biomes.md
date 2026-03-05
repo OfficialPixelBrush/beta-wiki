@@ -9,19 +9,19 @@ There exist 13 distinct Biomes in Beta 1.7.3. They each have unique properties, 
 
 | Name            | Top Block | Filler Block | Rain | Snow |                                 Foliage Color                                  |                                   Map Color                                    |
 | :-------------- | :-------: | :----------: | :--: | :--: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
-| Rainforest      |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#1FF458;"></span> `#1FF458` | <span class="color-swatch" style="background-color:#8FA360;"></span> `#8FA360` |
-| Swampland       |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#8BAF48;"></span> `#8BAF48` | <span class="color-swatch" style="background-color:#7F9B20;"></span> `#7F9B20` |
-| Seasonal Forest |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#9BE023;"></span> `#9BE023` |
-| Forest          |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#4EBA31;"></span> `#4EBA31` | <span class="color-swatch" style="background-color:#566210;"></span> `#566210` |
-| Savanna         |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#D9E023;"></span> `#D9E023` |
-| Shrubland       |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#A1AD20;"></span> `#A1AD20` |
-| Taiga           |   Grass   |     Dirt     |  ✅   |  ✅   | <span class="color-swatch" style="background-color:#7BB731;"></span> `#7BB731` | <span class="color-swatch" style="background-color:#2EB153;"></span> `#2EB153` |
-| Desert          |   Sand    |     Sand     |  ❌   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#FA9418;"></span> `#FA9418` |
-| Plains          |   Grass   |     Dirt     |  ✅   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#FFD910;"></span> `#FFD910` |
-| Ice Desert      |   Sand    |     Sand     |  ❌   |  ✅   | <span class="color-swatch" style="background-color:#C4D339;"></span> `#C4D339` | <span class="color-swatch" style="background-color:#FFED93;"></span> `#FFED93` |
-| Tundra          |   Grass   |     Dirt     |  ✅   |  ✅   | <span class="color-swatch" style="background-color:#C4D339;"></span> `#C4D339` | <span class="color-swatch" style="background-color:#57EBF9;"></span> `#57EBF9` |
-| Hell            |   Grass   |     Dirt     |  ❌   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#FF0000;"></span> `#FF0000` |
-| Sky             |   Grass   |     Dirt     |  ❌   |  ❌   | <span class="color-swatch" style="background-color:#4EE031;"></span> `#4EE031` | <span class="color-swatch" style="background-color:#8080FF;"></span> `#8080FF` |
+| Rainforest      |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#1FF458" /> | <ColorSwatch color="#8FA360" /> |
+| Swampland       |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#8BAF48" /> | <ColorSwatch color="#7F9B20" /> |
+| Seasonal Forest |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#9BE023" /> |
+| Forest          |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EBA31" /> | <ColorSwatch color="#566210" /> |
+| Savanna         |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#D9E023" /> |
+| Shrubland       |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#A1AD20" /> |
+| Taiga           |   Grass   |     Dirt     |  ✅   |  ✅   | <ColorSwatch color="#7BB731" /> | <ColorSwatch color="#2EB153" /> |
+| Desert          |   Sand    |     Sand     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FA9418" /> |
+| Plains          |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FFD910" /> |
+| Ice Desert      |   Sand    |     Sand     |  ❌   |  ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#FFED93" /> |
+| Tundra          |   Grass   |     Dirt     |  ✅   |  ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#57EBF9" /> |
+| Hell            |   Grass   |     Dirt     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FF0000" /> |
+| Sky             |   Grass   |     Dirt     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#8080FF" /> |
 
 ## Lookup table
 A `64x64` lookup table is generated to more quickly calculate the appropriate biome to use.
@@ -67,7 +67,7 @@ If mapped to an image, using the foliage/map colors, we get this.
 
 | Foliage Colors | Map Colors |
 | --- | --- |
-| <img src="images/biome/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature is X, Humidity is Y. Range is from `0` to `64` (or `0.0` to `1.0`) on both axes. [Notch drew this graph back in 2011.](https://minecraft.wiki/w/File:NotchBiomeGraph.png)
 </sub>
@@ -89,7 +89,7 @@ Each of these return a `16x16` array of 64-Bit floating point numbers, which're 
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="images/biome/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature, humidity and variation values from chunk `-1,-1` to `1,1`. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -123,13 +123,13 @@ The returned biome map can look something like this over a 3x3 chunk area.
 
 | Foliage Colors | Map Colors |
 | :---: | :---: |
-| <img src="images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
 
 The temperature and humidity values are changed by this function, resulting in a different set of values, to be used in later generation stages.
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
 
 <sub>Temperature, humidity and Variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
 

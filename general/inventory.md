@@ -11,7 +11,7 @@ The player inventory has no index. It has a few obvious oddities between how its
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="inventoryNetwork.png" alt="Player Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="inventoryNbt.png" alt="Player Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./inventoryNetwork.png" alt="Player Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./inventoryNbt.png" alt="Player Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 > [!NOTE]
 > The items in the crafting grid appear to not have a slot associated with them when saved or loaded to NBT.
@@ -24,13 +24,13 @@ Chests have an index of `0`.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="chestNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="chestNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./chestNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./chestNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry, and as such count/store their slots separately.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 It appears the chest that is visually to the left represents the upper half of the large chest, while the right represents the lower half.
 
@@ -39,7 +39,7 @@ Crafting Tables have an index of `1`.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
 
 > [!NOTE]
 > Crafting Tables are not tile entities and store no NBT data!
@@ -49,14 +49,14 @@ Furnaces have an index of `2`.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="furnaceNetwork.png" alt="Furnace Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="furnaceNbt.png" alt="Furnace Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./furnaceNetwork.png" alt="Furnace Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./furnaceNbt.png" alt="Furnace Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 ## Dispenser (3)
 Dispensers have an index of `3`.
 
 | Network | NBT |
 | :---: | :---: |
-| <img src="dispenserNetwork.png" alt="Dispenser Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="dispenserNbt.png" alt="Dispenser Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./dispenserNetwork.png" alt="Dispenser Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./dispenserNbt.png" alt="Dispenser Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
 ## Outside (-999)
 This is not any valid inventory. If the number `-999` is sent over the network, it means the player has clicked outside of an open inventory/window.
