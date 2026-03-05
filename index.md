@@ -8,9 +8,13 @@ hero:
     - theme: brand
       text: Get Started
       link: /technical/data-types
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/OfficialPixelBrush/beta-wiki
 ---
 
-This wiki is mainly for technical information and documentation of how Minecraft functioned as of Beta 1.7.3. If you're looking for more general gameplay info about Beta 1.7.3, such as crafting recipes, check out the [Farlands Wiki](https://farlands.miraheze.org/wiki/Main_Page) and the [archived Minecraft Wiki](https://web.archive.org/web/20110804012308/http://www.minecraftwiki.net/wiki/Main_Page).
+> [!NOTE]
+> This wiki is mainly for technical information and documentation of how Minecraft functioned as of Beta 1.7.3. If you're looking for more general gameplay info about Beta 1.7.3, such as crafting recipes, check out the [Farlands Wiki](https://farlands.miraheze.org/wiki/Main_Page) and the [archived Minecraft Wiki](https://web.archive.org/web/20110804012308/http://www.minecraftwiki.net/wiki/Main_Page).
 
 ## Objective
 The goal of this wiki is to consolidate all knowledge on Minecrafts Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.

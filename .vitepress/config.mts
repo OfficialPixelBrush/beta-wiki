@@ -22,6 +22,10 @@ export default defineConfig(withSidebar({
                 link: "/projects"
             },
             {
+                text: "Resources",
+                link: "/resources"
+            },
+            {
                 text: "Credits",
                 link: "/credits"
             },
