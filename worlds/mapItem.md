@@ -1,3 +1,7 @@
+---
+order: 60
+---
+
 # Map Item
 The map item has some special quirks that make it interesting enough to deserve it's own section of the Wiki.
 

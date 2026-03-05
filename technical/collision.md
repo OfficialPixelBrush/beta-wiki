@@ -1,3 +1,7 @@
+---
+order: 15
+---
+
 # Collision
 This page will be for explaining how collision is handled on the server-side.
 

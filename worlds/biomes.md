@@ -1,3 +1,7 @@
+---
+order: 5
+---
+
 # Biomes
 Biomes are regions with differing foliage, terrain etc.
 

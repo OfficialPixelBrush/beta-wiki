@@ -1,3 +1,7 @@
+---
+order: 72
+---
+
 # Lightning Bolt
 
 | Packet ID | Direction |

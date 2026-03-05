@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # Lighting
 This section will go into how lighting data is rendered, not how it is calculated.
 

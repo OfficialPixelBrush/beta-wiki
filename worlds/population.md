@@ -1,3 +1,7 @@
+---
+order: 15
+---
+
 # Population
 
 The population phase is done a little differently when compared to [terrain generation](generation), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries.

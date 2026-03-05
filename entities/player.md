@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Player
 The player is the entity the client has direct control over.
 

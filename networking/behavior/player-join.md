@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Player Joining
 The behavior observed when a new player joins the Server is exceedingly interesting, as it reveals a little bit about how the Protocol came about.
 

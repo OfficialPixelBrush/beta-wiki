@@ -1,3 +1,7 @@
+---
+order: 30
+---
+
 # Tile Entities
 Tile Entities are blocks that contain additional data, beyond the 4-Bit Metadata/Damage Value every item/block has.
 

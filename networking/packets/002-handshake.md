@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Handshake
 
 | Packet ID | Direction |

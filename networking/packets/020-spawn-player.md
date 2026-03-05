@@ -1,3 +1,7 @@
+---
+order: 21
+---
+
 # Spawn Player Entity
 
 | Packet ID | Direction   |

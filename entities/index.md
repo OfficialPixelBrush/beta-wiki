@@ -1,3 +1,7 @@
+---
+order: 35
+---
+
 # Entities
 Entites are non-block creatures that don't align to the block grid.
 

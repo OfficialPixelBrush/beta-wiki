@@ -1,3 +1,7 @@
+---
+order: 30
+---
+
 # Quirks
 Quirks are (most likely) unitentional or unintuitive behaviors that occur during terrain generation.
 

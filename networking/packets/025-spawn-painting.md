@@ -1,3 +1,7 @@
+---
+order: 26
+---
+
 # Spawn Painting
 
 | Packet ID | Direction   |

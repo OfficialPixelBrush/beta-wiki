@@ -1,3 +1,7 @@
+---
+order: 30
+---
+
 # Destroy Entity
 
 | Packet ID | Direction |

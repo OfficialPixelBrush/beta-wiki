@@ -1,3 +1,7 @@
+---
+order: 106
+---
+
 # Furnace Progress
 
 | Packet ID | Direction   |

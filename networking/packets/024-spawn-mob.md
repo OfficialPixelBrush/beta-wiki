@@ -1,3 +1,7 @@
+---
+order: 25
+---
+
 # Spawn Mob Entity
 
 | Packet ID | Direction   |

@@ -1,3 +1,7 @@
+---
+order: 103
+---
+
 # Click Inventory Slot
 
 | Packet ID | Direction |

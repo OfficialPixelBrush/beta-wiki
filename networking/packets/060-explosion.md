@@ -1,3 +1,7 @@
+---
+order: 61
+---
+
 # Explosion
 
 | Packet ID | Direction   |

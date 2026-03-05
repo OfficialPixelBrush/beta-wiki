@@ -1,3 +1,7 @@
+---
+order: 5
+---
+
 # Noise
 This page will explain how the Perlin Noise Generator up to at least Beta 1.7.3 worked.
 

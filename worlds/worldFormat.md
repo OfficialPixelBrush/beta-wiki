@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # World Format
 This page will go over how Minecraft Worlds are organized and stored.
 

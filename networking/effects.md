@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # Effects
 These are the sound/particle effects present in the vanilla client.
 

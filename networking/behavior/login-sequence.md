@@ -1,3 +1,7 @@
+---
+order: 5
+---
+
 # Minimal Login
 The bare minimum number of packets to join a Server with a Notchian Client is as follows.
 

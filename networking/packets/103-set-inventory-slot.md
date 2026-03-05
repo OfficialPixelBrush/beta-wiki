@@ -1,3 +1,7 @@
+---
+order: 104
+---
+
 # Set Inventory Slot
 
 | Packet ID | Direction |

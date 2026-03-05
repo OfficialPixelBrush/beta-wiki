@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Meshing
 This section will go into how Minecraft transforms its world geometry from some arbitrary grid of block values into cubes rendered with triangles.
 

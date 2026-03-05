@@ -1,3 +1,7 @@
+---
+order: 39
+---
+
 # Entity Health Action
 
 | Packet ID | Direction |

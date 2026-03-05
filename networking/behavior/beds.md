@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Beds
 
 ## A client tries to sleep in a bed

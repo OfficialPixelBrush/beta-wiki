@@ -1,3 +1,7 @@
+---
+order: 5
+---
+
 # Components
 This page will document how individual redstone components operate.
 

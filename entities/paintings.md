@@ -1,3 +1,7 @@
+---
+order: 40
+---
+
 # Paintings
 A comprehensive list of all paintings.
 

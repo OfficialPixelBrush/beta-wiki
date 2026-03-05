@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Authentication
 Authentication is used to ensure a client is who they claim to be. This process is done via the [Handshake Packet](./packets/002-handshake).
 

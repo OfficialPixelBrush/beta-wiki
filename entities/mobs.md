@@ -1,3 +1,7 @@
+---
+order: 25
+---
+
 # Mobs
 Mobs are entities which make use of an AI to move around the world.
 

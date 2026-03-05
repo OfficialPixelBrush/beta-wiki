@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # Terminology
 This page will explain terminology used throughout this entire section of the wiki, mainly to make describing certain concepts as easy and unambiguous as possible.
 

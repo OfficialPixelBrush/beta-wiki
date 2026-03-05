@@ -1,3 +1,7 @@
+---
+order: 24
+---
+
 # Spawn Object Entity
 
 | Packet ID | Direction   |

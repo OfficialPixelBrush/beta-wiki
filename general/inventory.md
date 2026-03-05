@@ -1,3 +1,7 @@
+---
+order: 45
+---
+
 # Inventory
 Inventories/Windows behave quite differently to how one'd expect. On the network side the slots tend to be counted from the one that's top-left down to the one that's bottom-right. Due to how the player inventory is counted and stored, some conversion is necessary, depending on which inventory is open and what slot was clicked.
 

@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Textures
 Textures are what give each rendered block their colorful, detailed appearance.
 

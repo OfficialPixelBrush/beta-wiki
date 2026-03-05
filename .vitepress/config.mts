@@ -51,12 +51,14 @@ export default defineConfig(withSidebar({
     documentRootPath: "/",
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
+    sortMenusByFrontmatterOrder: true,
     excludeByGlobPattern: [
         "CONTRIBUTING.md",
         "credits.md",
         "legal.md",
         "projects.md",
-        "resources.md"
+        "resources.md",
+        "todo.md"
     ],
     collapsed: true,
     collapseDepth: 2

@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Java Language Features
 Java provides certain functions, classes and algorithms by default which oftentimes aren't available in other languages. This page explains how they work, alongside relatively generic, language-agnostic implementations (in this case, C++).
 

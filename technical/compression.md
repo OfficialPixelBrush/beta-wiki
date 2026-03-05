@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Compression
 Compression is used throughout many parts of Minecraft. The `level.dat` file is a `Gzip` compressed NBT file, while McRegion files are `Zlib`/`deflate` compressed NBT files.
 

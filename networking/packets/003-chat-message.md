@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # Chat Message
 
 | Packet ID | Direction |

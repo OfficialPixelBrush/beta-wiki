@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # MathHelper
 MathHelper is a small collection of functions that act as small wrappers or cheaper versions of more complex operations.
 

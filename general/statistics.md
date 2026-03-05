@@ -1,3 +1,7 @@
+---
+order: 55
+---
+
 # Statistics
 
 Statistics are not just the values that keep track of how many blocks you have mined but also your Achievements.

@@ -1,3 +1,7 @@
+---
+order: 8
+---
+
 # Click Entity
 
 | Packet ID | Direction   |

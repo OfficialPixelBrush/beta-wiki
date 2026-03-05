@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Items
 Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properites. A 16-Bit numberic ID and an 8-Bit metadata/damage value.
 

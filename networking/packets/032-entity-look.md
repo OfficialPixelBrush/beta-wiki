@@ -1,3 +1,7 @@
+---
+order: 33
+---
+
 # Entity Look
 
 | Packet ID | Direction |

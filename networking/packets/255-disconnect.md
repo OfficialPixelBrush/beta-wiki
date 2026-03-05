@@ -1,3 +1,7 @@
+---
+order: 256
+---
+
 # Disconnect
 
 | Packet ID | Direction   |

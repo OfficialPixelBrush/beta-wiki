@@ -1,3 +1,7 @@
+---
+order: 19
+---
+
 # Player Animation
 
 | Packet ID | Direction |

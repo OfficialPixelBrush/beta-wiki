@@ -1,3 +1,7 @@
+---
+order: 25
+---
+
 # Chunk
 A chunk is a 16x128x16 volume of blocks. Usually these are compressed with the deflate algorithm.
 

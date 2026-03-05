@@ -1,3 +1,7 @@
+---
+order: 7
+---
+
 # Spawn Point
 
 | Packet ID | Direction   |

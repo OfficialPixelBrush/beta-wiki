@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Entity Metadata
 Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata) and [Spawn Mob Entity](../networking/packets/024-spawn-mob).
 

@@ -1,3 +1,7 @@
+---
+order: 107
+---
+
 # Inventory Transaction
 
 | Packet ID | Direction   |

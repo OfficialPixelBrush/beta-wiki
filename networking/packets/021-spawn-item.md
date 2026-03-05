@@ -1,3 +1,7 @@
+---
+order: 22
+---
+
 # Spawn Item Entity
 
 | Packet ID | Direction   |

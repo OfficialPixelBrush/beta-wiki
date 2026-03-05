@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # NBT
 NBT (Named Binary Tag) is used all over Minecraft. The [Minecraft Wiki has an extremely well put together page on the topic](https://minecraft.wiki/w/NBT_format), so only the most relevant information will be placed here for ease of access.
 
