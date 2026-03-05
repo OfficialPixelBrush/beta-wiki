@@ -33,12 +33,3 @@ To read data from the perlin-noise permutation table, the position the noise is 
 Due to how java Java converts between types (see [Casting](../technical/javaFeatures#casting)), the resulting 32-Bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
 
 Using a signed 64-Bit Integer (`long`) can fix this problem but it changes the tree and terrain generation slightly due to rounding differences.
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    mediumZoom('img', {
-      margin: 10,
-      background: '#000000CC'
-    });
-  });
-</script>

@@ -321,12 +321,3 @@ Continue onto the [population page](population) to find out more.
 
 ## Further Reading
 - [Java Edition Far Lands/Infdev 20100327 to Beta 1.7.3](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3)
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    mediumZoom('img', {
-      margin: 10,
-      background: '#000000CC'
-    });
-  });
-</script>
