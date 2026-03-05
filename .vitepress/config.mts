@@ -7,15 +7,38 @@ export default defineConfig(withSidebar({
     // MPA builds without javascript, but has to do full-page reload when you navigate between pages
     mpa: false,
     themeConfig: {
+        lang: "en",
+        logo: "/favicon.ico",
         search: {
             provider: "local"
         },
+        nav: [
+            {
+                text: "Contributing",
+                link: "/contributing"
+            },
+            {
+                text: "Projects",
+                link: "/projects"
+            },
+            {
+                text: "Credits",
+                link: "/credits"
+            },
+            {
+                text: "Legal",
+                link: "/legal"
+            }
+        ],
         socialLinks: [
             {
                 icon: "github",
-                link: "https://github.com/mudkipdev/beta-wiki"
+                link: "https://github.com/OfficialPixelBrush/beta-wiki"
             }
-        ]
+        ],
+        editLink: {
+            pattern: "https://github.com/OfficialPixelBrush/beta-wiki/edit/main/:path"
+        }
     },
     markdown: {
         math: true
@@ -24,8 +47,13 @@ export default defineConfig(withSidebar({
     documentRootPath: "/",
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    excludeByGlobPattern: ["CONTRIBUTING.md", "TODO.md"],
-    manualSortFileNameByPriority: ["legal.md"],
+    excludeByGlobPattern: [
+        "CONTRIBUTING.md",
+        "credits.md",
+        "legal.md",
+        "projects.md",
+        "resources.md"
+    ],
     collapsed: true,
     collapseDepth: 2
 }));

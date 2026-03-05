@@ -1,4 +1,4 @@
-# Legal Disclaimer
+# Legal
 
 > [!WARNING]
 > No lawyer or other kind of legal professional has touched this page. Please take anything said on it with a huge grain of salt!
