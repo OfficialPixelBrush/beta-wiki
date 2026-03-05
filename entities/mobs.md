@@ -1,16 +1,5 @@
----
-title: Mobs
-nav_order: 25
-layout: home
-parent: Entities
----
-
 # Mobs
-{: .no_toc }
 Mobs are entities which make use of an AI to move around the world.
-
-1. TOC
-{:toc}
 
 ## Listing
 A comprehensive list of all mobs.

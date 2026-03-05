@@ -1,16 +1,5 @@
----
-title: Java Language Features
-nav_order: 3
-layout: home
-parent: Technical
----
-
 # Java Language Features
-{: .no_toc }
 Java provides certain functions, classes and algorithms by default which oftentimes aren't available in other languages. This page explains how they work, alongside relatively generic, language-agnostic implementations (in this case, C++).
-
-1. TOC
-{:toc}
 
 ## Casting
 Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../worlds/quirks). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
@@ -63,8 +52,9 @@ return int(seed >> (48 - bits));
 
 Our seed, after being initialized, would now become `0x7F9FD7F08029`/`140324499390505`.
 
-{: .missing }
-> How the next function is used to generate other numers
+::: tip MISSING
+How the next function is used to generate other numers
+:::
 
 ## Further Reading
 - [Random.java (JDK8 Source Code)](https://github.com/openjdk/jdk8u-dev/blob/master/jdk/src/share/classes/java/util/Random.java)

@@ -1,19 +1,9 @@
----
-title: Map Item
-nav_order: 60
-layout: home
-parent: Worlds
----
-
 # Map Item
-{: .no_toc }
 The map item has some special quirks that make it interesting enough to deserve it's own section of the Wiki.
 
-{: .missing }
->This still requires most of its info. This is extremely barebones
-
-1. TOC
-{:toc}
+::: tip MISSING
+This still requires most of its info. This is extremely barebones
+:::
 
 ## Stored data
 The map item color data is stored as 8-Bit Byte values.

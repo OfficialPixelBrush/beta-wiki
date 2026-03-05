@@ -22,8 +22,9 @@ Sent to the client to supply further data for some entities. See the [entity met
 
 ### Clientbound
 
-{: .missing }
-> TODO: Provide real example
+::: tip MISSING
+TODO: Provide real example
+:::
 
 | Field  | Value    |
 | ------ | -------- |

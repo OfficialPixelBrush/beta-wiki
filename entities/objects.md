@@ -1,10 +1,3 @@
----
-title: Objects
-nav_order: 35
-layout: home
-parent: Entities
----
-
 # Objects
 A comprehensive list of all objects/vehicles.
 

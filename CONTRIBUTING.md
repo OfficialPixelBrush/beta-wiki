@@ -5,12 +5,8 @@ layout: home
 ---
 
 # Contributing
-{: .no_toc }
 
 There are many ways in which anyone can contribute to the wiki. [Look at the repository on Github](https://github.com/OfficialPixelBrush/beta-wiki/)!
-
-1. TOC
-{:toc}
 
 ## Confirming existing information
 Simply double, triple or quintupple checking that all information presented on the wiki is factully correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.

@@ -1,20 +1,10 @@
----
-title: Pathfinding
-nav_order: 20
-layout: home
-parent: Entities
----
-
 # Pathfinding
-{: .no_toc }
 
 In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
-{: .missing }
-> A huge chunk of info is still missing!!
-
-1. TOC
-{:toc}
+::: tip MISSING
+A huge chunk of info is still missing!!
+:::
 
 ## The A* Heuristic
 

@@ -1,16 +1,5 @@
----
-title: Player
-nav_order: 20
-layout: home
-parent: Entities
----
-
 # Player
-{: .no_toc }
 The player is the entity the client has direct control over.
-
-1. TOC
-{:toc}
 
 ## NBT
 ### Inventory Slots

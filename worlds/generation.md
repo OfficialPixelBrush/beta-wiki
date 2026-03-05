@@ -1,21 +1,10 @@
----
-title: Generation
-nav_order: 10
-layout: home
-parent: Worlds
----
-
 # Generation
-{: .no_toc }
 The generation described in this section will explain how Minecraft Beta 1.7.3 does its Terrain Generation. A lot of this will be based on educated guesses and the decompilation provided by [RetroMCP](https://github.com/MCPHackers/RetroMCP-Java). Additionally, certain historical bits and pieces will be taken from the [Minecraft Wiki](https://minecraft.wiki/w/World_generation/History#Beta_terrain_generator).
 
-1. TOC
-{:toc}
-
-{: .note }
+> [!NOTE]
 > The seed used throughout all of these comparisons is `3257840388504953787`, the seed behind [`pack.png`](https://minecraftathome.com/projects/packpng.html).
 
-{: .note }
+> [!NOTE]
 > In any visualizations, the shown chunks range from `-1,-1` to `1,1`. Additionally, up is always towards **Negative Z**, while right is always towards **Positive X**.
 
 ## History
@@ -204,8 +193,8 @@ After the terrain shape has been generated, the chunk is transformed further by 
 
 The chunk is now iterated over in a nested x and z for-loop.
 1. The biome for the specified column is read
-2. Its checked if sand is possible to be placed here 
-3. Its checked if gravel is possible to be placed here 
+2. Its checked if sand is possible to be placed here
+3. Its checked if gravel is possible to be placed here
 4. An integer is generated for if stone can be placed here
 5. The biomes appropriate top and filler block is chosen (e.g. Grass and Dirt)
 
@@ -314,8 +303,9 @@ this->CarveCave(
 );
 ```
 
-{: .missing }
-> This algorithm is difficult to not express as just code, and I hate that.
+::: tip MISSING
+This algorithm is difficult to not express as just code, and I hate that.
+:::
 
 After this, the lighting is updated and the heightmap is generated.
 

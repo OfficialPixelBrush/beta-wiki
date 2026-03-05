@@ -7,7 +7,7 @@ layout: home
 # TODO
 A rough checklist for everything that still needs to be done. Lots to do!
 
-{: .note }
+> [!NOTE]
 > Just because something is marked as complete does **not** necessarily mean its perfected or done, it just means its past an arbitrary threshold where I'd consider it passably useful.
 
 - General

@@ -1,11 +1,4 @@
----
-title: Sounds
-nav_order: 50
-layout: home
-parent: General
----
-
 # Sounds
 
-{: .note }
+> [!NOTE]
 > See [Effects](../networking/effects)

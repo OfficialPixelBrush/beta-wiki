@@ -1,16 +1,5 @@
----
-title: Chunk
-nav_order: 25
-layout: home
-parent: Worlds
----
-
 # Chunk
-{: .no_toc }
 A chunk is a 16x128x16 volume of blocks. Usually these are compressed with the deflate algorithm.
-
-1. TOC
-{:toc}
 
 ## NBT
 Inside of an uncompressed chunk file are only a few NBT Tags

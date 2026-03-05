@@ -1,10 +1,3 @@
----
-title: Beds
-layout: home
-nav_order: 10
-parent: Behavior
----
-
 # Beds
 
 ## A client tries to sleep in a bed
@@ -21,5 +14,5 @@ parent: Behavior
 ## Another player observes a player getting out of bed
 - Animation Packet with value 3 to client
 
-{: .warning }
+> [!WARNING]
 > It appears setting the player animation to `3` causes the infamous issue where players can walk under water. This remains for as long as the client remains connected. Possibly the animation needs to be reset to `0` soon after?

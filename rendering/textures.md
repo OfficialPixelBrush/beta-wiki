@@ -1,10 +1,3 @@
----
-title: Textures
-nav_order: 1
-layout: home
-parent: Rendering
----
-
 # Textures
 Textures are what give each rendered block their colorful, detailed appearance.
 

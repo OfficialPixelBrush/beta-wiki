@@ -1,16 +1,5 @@
----
-title: Blocks
-nav_order: 5
-layout: home
-parent: General
----
-
 # Blocks
-{: .no_toc }
 Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-Bit numeric ID and a 4-Bit metadata/damage value.
-
-1. TOC
-{:toc}
 
 ## Listing
 Here is a comprehensive listing of all blocks.
@@ -194,7 +183,7 @@ Wool exists in 16 distinct colors.
 | 14 | <span class="color-swatch" style="background-color:#BC3530;"></span> Red |
 | 15 | <span class="color-swatch" style="background-color:#201B1B;"></span> Black |
 
-{: .note }
+> [!NOTE]
 > The color swatches were estimated by dividing the colored wool textures with the white one, then averaging the resulting images. This gets us decently close to the original colors that were used before the wool texture was applied ontop.
 
 ## Pistons
@@ -217,7 +206,7 @@ The piston head uses it's metadata like the pistons, though with one difference.
 
 | Value | Direction |
 | --- | --- |
-| 0 | Down | 
+| 0 | Down |
 | 1 | Up |
 | 2 | East |
 | 3 | West |

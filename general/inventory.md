@@ -1,21 +1,10 @@
----
-title: Inventory
-nav_order: 45
-layout: home
-parent: General
----
-
 # Inventory
-{: .no_toc }
 Inventories/Windows behave quite differently to how one'd expect. On the network side the slots tend to be counted from the one that's top-left down to the one that's bottom-right. Due to how the player inventory is counted and stored, some conversion is necessary, depending on which inventory is open and what slot was clicked.
 
 Each inventory/window also has a unique identifier/index.
 
-{: .note }
+> [!NOTE]
 > For the NBT-side, repeated numbers do not mean that slots are shared. Separate inventories count their slots independently.
-
-1. TOC
-{:toc}
 
 ## Player
 The player inventory has no index. It has a few obvious oddities between how its sent over the network and how its stored, namely the armor slots starting at index 100 and being ordered bottom to top.
@@ -24,10 +13,10 @@ The player inventory has no index. It has a few obvious oddities between how its
 | :---: | :---: |
 | <img src="inventoryNetwork.png" alt="Player Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="inventoryNbt.png" alt="Player Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
 
-{: .note }
+> [!NOTE]
 > The items in the crafting grid appear to not have a slot associated with them when saved or loaded to NBT.
 
-{: .note }
+> [!NOTE]
 > The result slot cannot be altered over the network, always showing up as whatever the client thinks should be there. However, the client still expects the 0th slot to be sent.
 
 ## Chest (0)
@@ -52,7 +41,7 @@ Crafting Tables have an index of `1`.
 | :---: | :---: |
 | <img src="craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
 
-{: .note }
+> [!NOTE]
 > Crafting Tables are not tile entities and store no NBT data!
 
 ## Furnace (2)

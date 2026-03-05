@@ -1,16 +1,5 @@
----
-title: Quirks
-nav_order: 30
-layout: home
-parent: Worlds
----
-
 # Quirks
-{: .no_toc }
 Quirks are (most likely) unitentional or unintuitive behaviors that occur during terrain generation.
-
-1. TOC
-{:toc}
 
 ## Ice and Snow
 Ice is generated during the [terrain shape stage](generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via Random Ticking.
@@ -29,7 +18,7 @@ This becomes more apparent when the relevant values are visualized.
 
 Snow depends on the same system to determine where it can appear, though its placed later in the [population stage](population).
 
-{: .note }
+> [!NOTE]
 >Seed for this section is `-1712183887779554298`, showing the area around chunk `x: -1, z:6`
 
 ## Farlands

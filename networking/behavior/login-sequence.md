@@ -1,10 +1,3 @@
----
-title: Login Sequence
-layout: home
-nav_order: 5
-parent: Behavior
----
-
 # Minimal Login
 The bare minimum number of packets to join a Server with a Notchian Client is as follows.
 

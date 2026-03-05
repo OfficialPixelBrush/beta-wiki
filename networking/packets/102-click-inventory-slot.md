@@ -26,12 +26,13 @@ This packet is sent by the client when an inventory slot is clicked. See the [in
 | Item Amount | Byte | The amount of the clicked item (only sent if id > 0) |
 | Item Meta/Damage | Short | The meta/damage of the clicked item  (only sent if id > 0) |
 
-{: .missing }
-> TOOD: Check if Shift isn't Boolean?
+::: tip MISSING
+TOOD: Check if Shift isn't Boolean?
+:::
 
 ## Example Packet
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Window ID | `2` |
 | Slot | `22` |

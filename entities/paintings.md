@@ -1,10 +1,3 @@
----
-title: Paintings
-nav_order: 40
-layout: home
-parent: Entities
----
-
 # Paintings
 A comprehensive list of all paintings.
 

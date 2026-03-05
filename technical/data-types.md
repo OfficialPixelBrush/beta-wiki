@@ -1,10 +1,3 @@
----
-title: Data Types
-layout: home
-nav_order: 1
-parent: Technical
----
-
 # Data Types
 This page describes the various data types that Minecraft works with.
 

@@ -1,18 +1,7 @@
----
-title: Biomes
-nav_order: 5
-layout: home
-parent: Worlds
----
-
 # Biomes
-{: .no_toc }
 Biomes are regions with differing foliage, terrain etc.
 
-1. TOC
-{:toc}
-
-{: .note }
+> [!NOTE]
 > The seed used throughout all of these examples is `3257840388504953787`, the seed behind [`pack.png`](https://minecraftathome.com/projects/packpng.html).
 
 ## Biome List

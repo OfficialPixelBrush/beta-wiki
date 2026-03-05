@@ -1,16 +1,5 @@
----
-title: World Format
-nav_order: 20
-layout: home
-parent: Worlds
----
-
 # World Format
-{: .no_toc }
 This page will go over how Minecraft Worlds are organized and stored.
-
-1. TOC
-{:toc}
 
 ## Hierarchy
 Minecraft worlds have a hierarchy of how data can be accessed.

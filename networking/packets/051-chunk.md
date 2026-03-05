@@ -38,7 +38,7 @@ For more info, check out the [compression page](../../technical/compression).
 | compressed size | Integer    | The size, in bytes, of the zlib compressed data |
 | compressed data | Byte Array | The zlib compressed chunk data |
 
-{: .warning }
+> [!WARNING]
 > If a chunk that's taller than 127 blocks is sent, a vanilla client **will** softlock/crash.
 
 ## Example Packet
