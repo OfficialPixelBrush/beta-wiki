@@ -18,25 +18,25 @@ However, we can see that the general shape of the terrain remains the same by us
 
 | A1.1.2 | A1.2.3 |
 | --- | --- |
-| ![](images/history/a112.webp) | ![](images/history/a123.webp) |
+| ![](images/history/a112.webp){data-zoomable} | ![](images/history/a123.webp){data-zoomable} |
 
 This similar pre-1.2.0 generation dates all the way back to Infdev 20100624, before which the world generation looked entirely different.
 
 | Inf20100624 | A1.1.2 |
 | --- | --- |
-| ![](images/history/infdevPack.webp) | ![](images/history/a112.webp) |
+| ![](images/history/infdevPack.webp){data-zoomable} | ![](images/history/a112.webp){data-zoomable} |
 
 Facing the other way reveals some of the more glaring differences between the generators.
 
 | A1.1.2 | A1.2.3 |
 | --- | --- |
-| ![](images/history/a112_pack.webp) | ![](images/history/a123_pack.webp) |
+| ![](images/history/a112_pack.webp){data-zoomable} | ![](images/history/a123_pack.webp){data-zoomable} |
 
 Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly relating to the feature generation.
 
 | A1.2.3 | B1.7.3 |
 | --- | --- |
-| ![](images/history/a123_pack.webp) | ![](images/history/b173_pack.webp) |
+| ![](images/history/a123_pack.webp){data-zoomable} | ![](images/history/b173_pack.webp){data-zoomable} |
 
 ## Biomes
 To find out more about what Biomes exist and how they're defined, check out [the Biomes page](biomes).
@@ -45,7 +45,7 @@ This process utilizes 3 octaved [Simplex Noise](../technical/noise#simplex-noise
 
 | Temperature | Humidity | Variation |
 | :---: | :---: | :---: |
-| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 <sub>Temperature, humidity and variation values after being modified by this function. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -53,7 +53,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 | Foliage Colors | Map Colors |
 | :---: | :---: |
-| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 <sub>Biomes colored as per the [biomes](biomes#biome-list) page.</sub>
 
@@ -175,7 +175,7 @@ Some of the values appear to modify themselves for the next loop.
 
 | Terrain | Terrain (water) |
 | :---: | :---: |
-| <img src="./images/terrain/terrain.png" alt="Terrain map" style="image-rendering: pixelated; width: 100%"> | <img src="./images/terrain/terrainWater.png" alt="Terrain map with water level" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/terrain/terrain.png" alt="Terrain map" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/terrain/terrainWater.png" alt="Terrain map with water level" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 <sub>Highest stone blocks. Color values have been tweaked to be more readable.
 Blocks at or below water level are marked in blue.</sub>
@@ -191,7 +191,7 @@ After the terrain shape has been generated, the chunk is transformed further by 
 
 | Sand | Gravel | Stone |
 | :---: | :---: | :---: |
-| <img src="./images/terrain/sandNoise.png" alt="Sand noise" style="image-rendering: pixelated; width: 100%"> | <img src="./images/terrain/gravelNoise.png" alt="Gravel noise" style="image-rendering: pixelated; width: 100%"> | <img src="./images/terrain/stoneNoise.png" alt="Stone noise" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/terrain/sandNoise.png" alt="Sand noise" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/terrain/gravelNoise.png" alt="Gravel noise" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/terrain/stoneNoise.png" alt="Stone noise" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 <sub>Sand, Gravel and Stone noise. Color values have been tweaked to be more readable.</sub>
 

@@ -10,13 +10,13 @@ Ice is generated during the [terrain shape stage](generation#terrain-shape) anyw
 
 | Unticked | Ticked |
 | :---: | :---: |
-| <img src="./images/quirks/noTickIce.png" alt="Generated without random ticks" style="image-rendering: pixelated; width: 100%"> | <img src="./images/quirks/tickIce.png" alt="Generated with random ticks" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/quirks/noTickIce.png" alt="Generated without random ticks" style="image-rendering: pixelated; width: 100%" class="zoom"> | <img src="./images/quirks/tickIce.png" alt="Generated with random ticks" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 This becomes more apparent when the relevant values are visualized.
 
 | Biomes (Map Colors) + Temp < 0.5 (Red) |
 | :---: |
-| <img src="./images/quirks/biomeVStemp.png" alt="Biome map with Map colors, Red marking where temperature values are less than 0.5" style="image-rendering: pixelated; width: 100%"> |
+| <img src="./images/quirks/biomeVStemp.png" alt="Biome map with Map colors, Red marking where temperature values are less than 0.5" style="image-rendering: pixelated; width: 100%" class="zoom"> |
 
 <sub>Biome map with Map colors, Red marking where temperature values are less than 0.5</sub>
 
