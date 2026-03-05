@@ -8,7 +8,7 @@ export default defineConfig(withSidebar({
     mpa: false,
     themeConfig: {
         lang: "en",
-        logo: "/favicon.ico",
+        logo: "/assets/favicon.ico",
         search: {
             provider: "local"
         },
