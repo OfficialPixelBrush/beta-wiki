@@ -11,7 +11,7 @@ parent: Packets
 | --------- | ----------- |
 | `0x34`    | Clientbound |
 
-This is used to update multiple blocks in one go. If only a single block is bieng updated, consider using the [Block Update packet](./053-block-update).
+This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
 
 The format for the coordinates is slightly obtuse but boils down to using one 16-Bit Short to store the 4-Bit X, 4-Bit Z and 8-Bit Y value of the block coordinate within the chunk.
 
