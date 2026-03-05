@@ -1,9 +1,3 @@
----
-title: "0x0C: Player Look"
-nav_order: 13
-layout: home
-parent: Packets
----
 
 # Player Look
 

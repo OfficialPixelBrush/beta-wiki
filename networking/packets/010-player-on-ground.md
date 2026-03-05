@@ -1,9 +1,3 @@
----
-title: "0x0A: Player On Ground"
-nav_order: 11
-layout: home
-parent: Packets
----
 
 # Player On Ground
 

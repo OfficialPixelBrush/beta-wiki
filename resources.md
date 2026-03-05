@@ -1,9 +1,3 @@
----
-title: Resources
-nav_order: 50
-layout: home
----
-
 # Resources
 Further reading and sources for things. Definitely useful if you'd like to learn more about the topics laid out here, and how these infos were uncovered in the first place.
 

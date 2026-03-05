@@ -31,7 +31,7 @@ defineProps({
         width: 16px;
         height: 16px;
         border-radius: 4px;
-        /* border: 1px solid var(--vp-c-divider); */
+        border: 1px solid var(--vp-c-divider);
         vertical-align: middle;
     }
 </style>

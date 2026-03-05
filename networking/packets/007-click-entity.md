@@ -1,10 +1,3 @@
----
-title: "0x07: Click Entity"
-nav_order: 8
-layout: home
-parent: Packets
----
-
 # Click Entity
 
 | Packet ID | Direction   |

@@ -1,10 +1,3 @@
----
-title: "0x47: Lightning Bolt"
-nav_order: 72
-layout: home
-parent: Packets
----
-
 # Lightning Bolt
 
 | Packet ID | Direction |

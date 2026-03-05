@@ -1,10 +1,3 @@
----
-title: "0x0F: Place"
-nav_order: 16
-layout: home
-parent: Packets
----
-
 # Place
 
 | Packet ID | Direction |

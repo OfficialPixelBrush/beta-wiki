@@ -1,10 +1,3 @@
----
-title: "0x14: Spawn Player Entity"
-nav_order: 21
-layout: home
-parent: Packets
----
-
 # Spawn Player Entity
 
 | Packet ID | Direction   |

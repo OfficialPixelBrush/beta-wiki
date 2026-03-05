@@ -1,10 +1,3 @@
----
-title: "0x06: Spawn Point"
-nav_order: 7
-layout: home
-parent: Packets
----
-
 # Spawn Point
 
 | Packet ID | Direction   |

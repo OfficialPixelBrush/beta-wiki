@@ -1,10 +1,3 @@
----
-title: "0x10: Holding Change"
-nav_order: 17
-layout: home
-parent: Packets
----
-
 # Holding Change
 
 | Packet ID | Direction |

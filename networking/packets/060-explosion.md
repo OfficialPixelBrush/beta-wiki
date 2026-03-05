@@ -1,10 +1,3 @@
----
-title: "0x3C: Explosion"
-nav_order: 61
-layout: home
-parent: Packets
----
-
 # Explosion
 
 | Packet ID | Direction   |

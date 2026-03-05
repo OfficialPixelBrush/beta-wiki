@@ -1,10 +1,3 @@
----
-title: "0x11: Use Bed"
-nav_order: 18
-layout: home
-parent: Packets
----
-
 # Use Bed
 
 | Packet ID | Direction |

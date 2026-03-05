@@ -1,10 +1,3 @@
----
-title: "0x02: Handshake"
-nav_order: 3
-layout: home
-parent: Packets
----
-
 # Handshake
 
 | Packet ID | Direction |

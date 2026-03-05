@@ -1,10 +1,3 @@
----
-title: "0x09: Respawn"
-nav_order: 10
-layout: home
-parent: Packets
----
-
 # Respawn
 
 | Packet ID | Direction |

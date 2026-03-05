@@ -1,10 +1,3 @@
----
-title: "0x83: Item Data"
-nav_order: 132
-layout: home
-parent: Packets
----
-
 # Item Data
 
 | Packet ID | Direction   |

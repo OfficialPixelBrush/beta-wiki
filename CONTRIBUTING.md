@@ -1,9 +1,3 @@
----
-title: Contributing
-nav_order: 55
-layout: home
----
-
 # Contributing
 
 There are many ways in which anyone can contribute to the wiki. [Look at the repository on Github](https://github.com/OfficialPixelBrush/beta-wiki/)!

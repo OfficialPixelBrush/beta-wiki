@@ -1,10 +1,3 @@
----
-title: "0x34: Multi-Block Update"
-nav_order: 53
-layout: home
-parent: Packets
----
-
 # Multi-Block Update
 
 | Packet ID | Direction   |

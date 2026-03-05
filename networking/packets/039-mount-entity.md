@@ -1,9 +1,3 @@
----
-title: "0x27: Mount Entity"
-nav_order: 40
-layout: home
-parent: Packets
----
 # Mount Entity
 
 | Packet ID | Direction |

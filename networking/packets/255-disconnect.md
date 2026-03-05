@@ -1,10 +1,3 @@
----
-title: "0xFF: Disconnect"
-nav_order: 256
-layout: home
-parent: Packets
----
-
 # Disconnect
 
 | Packet ID | Direction   |

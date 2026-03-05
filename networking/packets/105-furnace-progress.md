@@ -1,10 +1,3 @@
----
-title: "0x69: Furnace Progress"
-nav_order: 106
-layout: home
-parent: Packets
----
-
 # Furnace Progress
 
 | Packet ID | Direction   |

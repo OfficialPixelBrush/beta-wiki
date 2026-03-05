@@ -1,10 +1,3 @@
----
-title: "0x04: Time"
-nav_order: 5
-layout: home
-parent: Packets
----
-
 # Time
 
 | Packet ID | Direction   |

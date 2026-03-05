@@ -1,10 +1,3 @@
----
-title: "0x00: Keep Alive"
-nav_order: 1
-layout: home
-parent: Packets
----
-
 # Keep Alive
 
 | Packet ID | Direction |

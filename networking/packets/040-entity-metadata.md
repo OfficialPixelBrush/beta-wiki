@@ -1,9 +1,3 @@
----
-title: "0x28: Entity Metadata"
-nav_order: 41
-layout: home
-parent: Packets
----
 # Entity Metadata
 
 | Packet ID | Direction |

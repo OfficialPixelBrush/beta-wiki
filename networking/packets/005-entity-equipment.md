@@ -1,10 +1,3 @@
----
-title: "0x05: Entity Equipment"
-nav_order: 6
-layout: home
-parent: Packets
----
-
 # Entity Equipment
 
 | Packet ID | Direction   |

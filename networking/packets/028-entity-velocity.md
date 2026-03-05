@@ -1,9 +1,3 @@
----
-title: "0x1C: Entity Velocity"
-nav_order: 29
-layout: home
-parent: Packets
----
 # Entity Velocity (?)
 
 | Packet ID | Direction |

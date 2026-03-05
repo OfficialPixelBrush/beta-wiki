@@ -1,10 +1,3 @@
----
-title: "0x33: Chunk"
-nav_order: 52
-layout: home
-parent: Packets
----
-
 # Chunk
 
 | Packet ID | Direction   |

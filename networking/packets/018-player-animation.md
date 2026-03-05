@@ -1,10 +1,3 @@
----
-title: "0x12: Player Animation"
-nav_order: 19
-layout: home
-parent: Packets
----
-
 # Player Animation
 
 | Packet ID | Direction |

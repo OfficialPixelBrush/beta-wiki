@@ -1,10 +1,3 @@
----
-title: "0x03: Chat Message"
-nav_order: 4
-layout: home
-parent: Packets
----
-
 # Chat Message
 
 | Packet ID | Direction |

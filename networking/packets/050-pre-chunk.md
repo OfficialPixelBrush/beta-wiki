@@ -1,10 +1,3 @@
----
-title: "0x32: Pre-Chunk"
-nav_order: 51
-layout: home
-parent: Packets
----
-
 # Pre-Chunk
 
 | Packet ID | Direction   |

@@ -1,9 +1,3 @@
----
-title: "0x1F: Entity Relative Position"
-nav_order: 32
-layout: home
-parent: Packets
----
 # Entity Relative Position
 
 | Packet ID | Direction |

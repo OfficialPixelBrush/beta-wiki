@@ -1,10 +1,3 @@
----
-title: "0x65: Close Inventory"
-nav_order: 102
-layout: home
-parent: Packets
----
-
 # Close Window
 
 | Packet ID | Direction |

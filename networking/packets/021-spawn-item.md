@@ -1,10 +1,3 @@
----
-title: "0x15: Spawn Item Entity"
-nav_order: 22
-layout: home
-parent: Packets
----
-
 # Spawn Item Entity
 
 | Packet ID | Direction   |

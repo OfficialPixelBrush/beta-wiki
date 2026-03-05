@@ -1,10 +1,3 @@
----
-title: "0x36: Block Action"
-nav_order: 55
-layout: home
-parent: Packets
----
-
 # Block Action
 
 | Packet ID | Direction   |

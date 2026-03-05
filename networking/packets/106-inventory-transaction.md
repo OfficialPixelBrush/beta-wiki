@@ -1,10 +1,3 @@
----
-title: "0x6A: Inventory Transaction"
-nav_order: 107
-layout: home
-parent: Packets
----
-
 # Inventory Transaction
 
 | Packet ID | Direction   |

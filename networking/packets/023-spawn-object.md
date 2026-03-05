@@ -1,10 +1,3 @@
----
-title: "0x17: Spawn Object Entity"
-nav_order: 24
-layout: home
-parent: Packets
----
-
 # Spawn Object Entity
 
 | Packet ID | Direction   |

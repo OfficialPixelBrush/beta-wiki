@@ -1,10 +1,3 @@
----
-title: "0x01: Login"
-nav_order: 2
-layout: home
-parent: Packets
----
-
 # Login
 
 | Packet ID | Direction |

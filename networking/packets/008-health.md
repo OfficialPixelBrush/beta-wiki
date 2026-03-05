@@ -1,10 +1,3 @@
----
-title: "0x08: Set Health"
-nav_order: 9
-layout: home
-parent: Packets
----
-
 # Set Health
 
 | Packet ID | Direction   |

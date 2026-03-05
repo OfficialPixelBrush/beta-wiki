@@ -1,10 +1,3 @@
----
-title: "0x26: Entity Health Action"
-nav_order: 39
-layout: home
-parent: Packets
----
-
 # Entity Health Action
 
 | Packet ID | Direction |

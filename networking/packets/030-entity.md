@@ -1,10 +1,3 @@
----
-title: "0x1E: Entity"
-nav_order: 31
-layout: home
-parent: Packets
----
-
 # Entity
 
 | Packet ID | Direction   |

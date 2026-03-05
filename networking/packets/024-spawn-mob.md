@@ -1,10 +1,3 @@
----
-title: "0x18: Spawn Mob Entity"
-nav_order: 25
-layout: home
-parent: Packets
----
-
 # Spawn Mob Entity
 
 | Packet ID | Direction   |

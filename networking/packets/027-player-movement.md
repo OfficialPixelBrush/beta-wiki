@@ -1,10 +1,3 @@
----
-title: "0x1B: Player Movement (Unused)"
-nav_order: 28
-layout: home
-parent: Packets
----
-
 # Player Movement (Unused)
 
 | Packet ID | Direction   |

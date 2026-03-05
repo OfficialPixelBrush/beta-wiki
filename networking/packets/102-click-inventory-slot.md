@@ -1,10 +1,3 @@
----
-title: "0x66: Click Inventory Slot"
-nav_order: 103
-layout: home
-parent: Packets
----
-
 # Click Inventory Slot
 
 | Packet ID | Direction |

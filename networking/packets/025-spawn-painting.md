@@ -1,10 +1,3 @@
----
-title: "0x19: Spawn Painting"
-nav_order: 26
-layout: home
-parent: Packets
----
-
 # Spawn Painting
 
 | Packet ID | Direction   |

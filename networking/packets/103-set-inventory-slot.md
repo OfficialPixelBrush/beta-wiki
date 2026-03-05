@@ -1,10 +1,3 @@
----
-title: "0x67: Set Inventory Slot"
-nav_order: 104
-layout: home
-parent: Packets
----
-
 # Set Inventory Slot
 
 | Packet ID | Direction |

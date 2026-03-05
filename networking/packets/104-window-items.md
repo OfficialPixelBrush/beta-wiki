@@ -1,10 +1,3 @@
----
-title: "0x68: Window Items"
-nav_order: 105
-layout: home
-parent: Packets
----
-
 # Window Items
 
 | Packet ID | Direction |
