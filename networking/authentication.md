@@ -7,7 +7,7 @@ parent: Networking
 
 # Authentication
 {: .no_toc }
-Authentication is used to ensure a client is who they claim to be. This process is done via the [Handshake Packet](./packets/002-handshake.md).
+Authentication is used to ensure a client is who they claim to be. This process is done via the [Handshake Packet](./packets/002-handshake).
 
 1. TOC
 {:toc}

@@ -1,17 +1,17 @@
 ---
-title: "0x35: Block Change"
+title: "0x35: Block Update"
 nav_order: 54
 layout: home
 parent: Packets
 ---
 
-# Block Change
+# Block Update
 
 | Packet ID | Direction   |
 | --------- | ----------- |
 | `0x35`    | Clientbound |
 
-This is sent by the server when a block is changed in any way.
+This is sent by the server when a block is changed or updated in any way. If a lot of blocks are being updated, consider using the [Multi-Block Update packet](./052-multi-block-update).
 
 ## Clientbound
 

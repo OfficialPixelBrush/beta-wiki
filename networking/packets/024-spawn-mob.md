@@ -31,6 +31,7 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | Field     | Value | 
 | --------- | ----- |
 | Entity ID | `1298`  |
+| Mob Type | `90` |
 | X | `5669` |
 | Y | `68` |
 | Z | `-5325` |

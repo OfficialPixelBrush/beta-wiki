@@ -1,23 +1,44 @@
 ---
-title: "0x34: Set Multiple Blocks"
+title: "0x34: Multi-Block Update"
 nav_order: 53
 layout: home
 parent: Packets
 ---
 
-# Set Multiple Blocks
+# Multi-Block Update
 
 | Packet ID | Direction   |
 | --------- | ----------- |
 | `0x34`    | Clientbound |
 
-This is used to update multiple blocks in one go.
+This is used to update multiple blocks in one go. If only a single block is bieng updated, consider using the [Block Update packet](./053-block-update).
 
 The format for the coordinates is slightly obtuse but boils down to using one 16-Bit Short to store the 4-Bit X, 4-Bit Z and 8-Bit Y value of the block coordinate within the chunk.
 
 | Bit 15 - 12 | Bit 11 - 8 | Bit 7 -  0 |
 | --- | --- | --- |
 | X | Z | Y |
+
+Some example code to demonstrate how to convert to and from this format.
+```c
+int16_t format_multi_block(int8_t x, int8_t y, int8_t z) {
+    return (
+        ((int16_t(x) & 0x0F) << 12) |
+        ((int16_t(z) & 0x0F) << 8 ) |
+        ((int16_t(y) & 0xFF)      )
+    );
+}
+```
+
+```c
+Int3 unformat_multi_block(int16_t value) {
+    return {
+        ((value >> 12) & 0x0F),
+        ((value >> 8 ) & 0x0F),
+        ((value      ) & 0xFF)
+    }
+}
+```
 
 ## Clientbound
 
