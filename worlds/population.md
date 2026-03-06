@@ -70,7 +70,7 @@ Before actually being placed into the world, each feature does a bit of extra st
 > Offset coordinates marked with `~` utilize multiple PRNG passes. The depicted number is the total chance if both of those random numbers attained their lowest/highest possible value.
 
 | Feature | Chance | Attempts | X/Z | Y |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | Lakes (Water) | `1/4` | `1` |`8 - 23` | `0 - 127` |
 | Lakes (Lava) | `1/8` | `1` | `8 - 23` | `0 - ~126` |
 | Dungeons | - | `8` | `8 - 23` | `0 - 127` |

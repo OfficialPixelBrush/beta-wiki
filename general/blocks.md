@@ -122,7 +122,7 @@ All wood or tree-related blocks have related values and behaviors.
 Logs have 3 distinct values.
 
 | Value | Color |
-| --- | --- |
+| ---: | :--- |
 | 0 | Oak |
 | 1 | Spruce |
 | 2 | Birch |
@@ -135,7 +135,7 @@ The upper 2-bits are used to indicate the age of the sapling.
 Logs have 3 distinct values.
 
 | Value | Color |
-| --- | --- |
+| ---: | :--- |
 | 0 | Oak |
 | 1 | Spruce |
 | 2 | Birch |
@@ -146,7 +146,7 @@ Any other value will appear as oak.
 Leaves have 3/4 distinct values. Only oak is biome-colored.
 
 | Value | Color |
-| --- | --- |
+| ---: | :--- |
 | 0 | Oak |
 | 1 | Spruce |
 | 2 | Birch |
@@ -155,8 +155,9 @@ Leaves have 3/4 distinct values. Only oak is biome-colored.
 The values after this simply follow the same pattern.
 
 ## Dispenser/Furnace
+
 | Value | Color |
-| --- | --- |
+| ---: | :--- |
 | 0 | None (Invalid) |
 | 1 | None (Invalid) |
 | 2 | East |
@@ -169,7 +170,7 @@ The values after this simply follow the same pattern.
 Wool exists in 16 distinct colors.
 
 | Value | Color |
-| --- | --- |
+| ---: | :--- |
 | 0 | <ColorSwatch color="#FFFFFF" :showLabel="false" /> White |
 | 1 | <ColorSwatch color="#FC933F" :showLabel="false" /> Orange |
 | 2 | <ColorSwatch color="#DC56E7" :showLabel="false" /> Magenta |
@@ -195,7 +196,7 @@ Pistons and Sticky pistons use their metadata values to indicate both their dire
 The lower 3-Bits indicate the pistons direction, while the remaining bit indicates whether the piston is retracted `0` or extended `1`.
 
 | Value | Direction |
-| --- | --- |
+| ---: | :--- |
 | 0 | Down |
 | 1 | Up |
 | 2 | East |
@@ -209,7 +210,7 @@ The lower 3-Bits indicate the pistons direction, while the remaining bit indicat
 The piston head uses it's metadata like the pistons, though with one difference. The last bit is used to indicate whether the piston head is normal `0` or sticky `1`.
 
 | Value | Direction |
-| --- | --- |
+| ---: | :--- |
 | 0 | Down |
 | 1 | Up |
 | 2 | East |
@@ -223,7 +224,7 @@ Values 6 and 7 do not render.
 The "facing" direction of a torch or lever is determined by the direction it's sticking out towards.
 
 | Value | Direction |
-| --- | --- |
+| ---: | :--- |
 | 0 | Up |
 | 1 | South |
 | 2 | North |
@@ -235,7 +236,7 @@ The "facing" direction of a torch or lever is determined by the direction it's s
 The "facing" direction is determined where the missing quarter is.
 
 | Value | Direction |
-| --- | --- |
+| ---: | :--- |
 | 0 | North |
 | 1 | South |
 | 2 | East |
@@ -250,7 +251,7 @@ The "facing" direction is determined by which way the text would go.
 The angles are given relative to West.
 
 | Value | Direction | Angle |
-| --- | --- | --- |
+| ---: | ---: | :--- |
 | 0 | West | 0° |
 | 1 | West-North-West| 22.5° |
 | 2 | North-West | 45° |

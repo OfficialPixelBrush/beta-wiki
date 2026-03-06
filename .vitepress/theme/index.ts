@@ -3,6 +3,7 @@ import DefaultTheme from "vitepress/theme";
 import ColorSwatch from "./components/ColorSwatch.vue";
 import { onMounted, watch, nextTick } from "vue";
 import mediumZoom from "medium-zoom";
+import "./index.css";
 
 export default {
     extends: DefaultTheme,

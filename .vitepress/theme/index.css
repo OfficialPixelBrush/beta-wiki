@@ -1,3 +1,9 @@
+.vp-doc table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
 .medium-zoom-overlay {
   z-index: 30;
 }

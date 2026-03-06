@@ -59,7 +59,10 @@ export default defineConfig(withSidebar({
         }
     },
     markdown: {
-        math: true
+        math: true,
+        image: {
+            lazyLoading: true
+        }
     }
 }, {
     documentRootPath: "/",
