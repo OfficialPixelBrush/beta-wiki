@@ -12,16 +12,21 @@ If you [find an issue on GitHub](https://github.com/OfficialPixelBrush/beta-wiki
 Making a pull request is relatively straightforward. Just fork the repo, make the changes you want to, and then just create a pull request on GitHub. This is even easier with GitHub Desktop.
 
 # Development
-You'll need to install `ruby`, `ruby-dev`/`ruby-devel` and `bundler`.
+You'll need to install `npm`
 
-After cloning the repo you need to start it with
+After cloning the repo you can test the website with
 ```bash
-bundle install
+npx vitepress dev
 ```
+It'll prompt you to install whatever dependencies you need automatically.
 
-You can start the site build up by typing
+If you want to make a static build for hosting, run
 ```bash
-bundle exec jekyll serve
+npx vitepress dev
+```
+This can be previewed with
+```bash
+npx vitepress preview
 ```
 
 # Style Guide
