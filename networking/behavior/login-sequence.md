@@ -28,6 +28,6 @@ This will place the player into an empty world at sunrise. The player will begin
 | `S->C` [Spawn Point](../packets/006-spawn-point#clientbound) | Sets the players spawn |
 | `S->C` [Time](../packets/004-time#clientbound) | Sets the current time |
 | `S->C` [Health](../packets/008-health#clientbound) | Sets the shown health |
-| `S->C` [Window Items](../packets/104-window-items) | Sets the players inventory |
+| `S->C` [Inventory Contents](../packets/104-inventory-contents) | Sets the players inventory |
 
 This is followed by a bunch of [Pre-Chunk](../packets/050-pre-chunk) packets to load the chunks, and [Chunk](../packets/051-chunk) packets which contain the actual chunk data, alongside the Server and Client exchanging position and rotation information.
