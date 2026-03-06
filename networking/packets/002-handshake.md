@@ -1,5 +1,6 @@
 ---
 title: 0x02 Handshake
+description: Initizalizes the Login process
 order: 3
 ---
 

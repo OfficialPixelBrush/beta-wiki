@@ -5,11 +5,20 @@ export default defineConfig(withSidebar({
     base: "/beta-wiki/",
     title: "Beta Wiki",
     description: "A wiki documenting Minecraft Beta 1.7.3's network protocol and other technical specifications.",
+    
+    head: [
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:image', content: 'https://officialpixelbrush.github.io/beta-wiki/assets/banner.webp' }],
+
+        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+        ['meta', { name: 'twitter:image', content: 'https://officialpixelbrush.github.io/beta-wiki/assets/banner.webp' }]
+    ],
+
     // MPA builds without javascript, but has to do full-page reload when you navigate between pages
     mpa: false,
     themeConfig: {
         lang: "en",
-        logo: "/assets/favicon.ico",
+        logo: "https://officialpixelbrush.github.io/beta-wiki/assets/favicon.ico",
         search: {
             provider: "local"
         },

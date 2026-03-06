@@ -1,5 +1,6 @@
 ---
 title: 0x01 Login
+description: Responsible for finalizing the login process
 order: 2
 ---
 

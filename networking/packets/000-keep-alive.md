@@ -1,5 +1,6 @@
 ---
 title: 0x00 Keep Alive
+description: Sent once a second by the Server and Client
 order: 1
 ---
 

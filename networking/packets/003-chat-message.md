@@ -1,5 +1,6 @@
 ---
 title: 0x03 Chat Message
+description: Used for any and all Chat Messages
 order: 4
 ---
 
