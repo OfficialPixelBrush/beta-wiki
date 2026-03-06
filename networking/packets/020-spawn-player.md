@@ -1,8 +1,6 @@
 ---
-title: "0x14: Spawn Player Entity"
-nav_order: 21
-layout: home
-parent: Packets
+title: 0x14 Spawn Player Entity
+order: 21
 ---
 
 # Spawn Player Entity
@@ -26,12 +24,12 @@ Sent to the client when a player entity should be spawned.  The position is in [
 | Pitch | Byte | Rotation on the Y Axis (Quantized) |
 | Held item | Short | Held item/block of the player |
 
-{: .warning }
+> [!WARNING]
 > Even though "Held item" can be [`-1` to represent an empty slot](103-set-inventory-slot), the client doesn't know how to render held item `-1` on other players when they spawn in. As a result, this value must never be lower than `0`! This only applies to if this packet is sent in isolation and not immediately followed up by an [entity equipment](005-entity-equipment) packet. Read up on proper usage of this packet on the [relevant behavior page](../behavior/player-join)!
 
 ## Example Packet
 
-| Field     | Value | 
+| Field     | Value |
 | --------- | ----- |
 | Entity ID | `1298`  |
 | Username | `PixelBrushArt` |

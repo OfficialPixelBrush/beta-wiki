@@ -1,8 +1,6 @@
 ---
-title: "0x08: Set Health"
-nav_order: 9
-layout: home
-parent: Packets
+title: 0x08 Set Health
+order: 9
 ---
 
 # Set Health

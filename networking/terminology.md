@@ -1,18 +1,11 @@
 ---
-title: Terminology
-layout: home
-nav_order: 2
-parent: Networking
+order: 2
 ---
 
 # Terminology
-{: .no_toc }
 This page will explain terminology used throughout this entire section of the wiki, mainly to make describing certain concepts as easy and unambiguous as possible.
 
-1. TOC
-{:toc}
-
-{: .note }
+> [!NOTE]
 > A lot of this terminology is unique to this wiki. You likely won't see them used in many other places, except projects that utilized this wiki.
 
 ## Clarifications
@@ -58,6 +51,5 @@ This can be reversed too.
 float float_val = (( float(quant_val) / 255.0 ) * 360.0)
 ```
 
-| Quantized Angles |
-| : --- : |
-| ![](quantizedAngles.svg) |
+## Quantized Angles
+![](quantizedAngles.svg)

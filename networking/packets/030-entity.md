@@ -1,11 +1,9 @@
 ---
-title: "0x1E: Entity"
-nav_order: 31
-layout: home
-parent: Packets
+title: 0x1E Entity (Unused)
+order: 31
 ---
 
-# Entity
+# Entity (Unused)
 
 | Packet ID | Direction   |
 | --------- | ----------- |

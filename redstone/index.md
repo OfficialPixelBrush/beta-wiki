@@ -1,7 +1,5 @@
 ---
-title: Redstone
-nav_order: 40
-layout: home
+order: 40
 ---
 
 # Redstone

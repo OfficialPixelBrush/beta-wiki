@@ -1,9 +1,8 @@
 ---
-title: "0x0D: Player Position and Look"
-nav_order: 14
-layout: home
-parent: Packets
+title: 0x0D Player Position and Look
+order: 14
 ---
+
 # Player Position and Look
 
 | Packet ID | Direction |

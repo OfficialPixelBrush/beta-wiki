@@ -1,8 +1,6 @@
 ---
-title: "0xC8: Statistic"
-nav_order: 201
-layout: home
-parent: Packets
+title: 0xC8 Statistic
+order: 201
 ---
 
 # Statistic

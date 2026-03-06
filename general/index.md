@@ -1,7 +1,5 @@
 ---
-title: General
-nav_order: 3
-layout: home
+order: 3
 ---
 
 # General

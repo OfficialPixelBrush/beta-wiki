@@ -1,8 +1,6 @@
 ---
-title: "0x16: Collect Item"
-nav_order: 23
-layout: home
-parent: Packets
+title: 0x16 Collect Item
+order: 23
 ---
 
 # Collect Item

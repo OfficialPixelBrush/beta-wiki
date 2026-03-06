@@ -1,8 +1,6 @@
 ---
-title: "0x11: Use Bed"
-nav_order: 18
-layout: home
-parent: Packets
+title: 0x11 Use Bed
+order: 18
 ---
 
 # Use Bed

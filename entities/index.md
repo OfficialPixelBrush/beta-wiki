@@ -1,15 +1,9 @@
 ---
-title: Entities
-nav_order: 35
-layout: home
+order: 35
 ---
 
 # Entities
-{: .no_toc }
 Entites are non-block creatures that don't align to the block grid.
-
-1. TOC
-{:toc}
 
 ## Base Entity
 All entities have the following properties, though usually more. These are just the most important ones. In brackets you can find their respective default values.
@@ -30,7 +24,7 @@ All entities have the following properties, though usually more. These are just 
 | Max Air | Integer | The maximum amount of air the entity can have (`300`) |
 | Fire | Integer | How many ticks the entity will continue to burn (`0`) |
 
-{: .note }
+> [!NOTE]
 > Some entries are left out for the sake of brevity, such as the previous position and rotation values or their chunk coordinates.
 
 ### Position
@@ -51,8 +45,9 @@ The Width and Height define the size of the Axis-Aligned Bounding Box that Minec
 | --- | --- | --- |
 | Default | `0.6` | `1.8` |
 
-{: .missing }
-> TODO: Other Bounding Box sizes
+::: tip MISSING
+TODO: Other Bounding Box sizes
+:::
 
 ## Living Entities
 Living Entities are a subset of Entities that have more properties.
@@ -63,7 +58,7 @@ Living Entities are a subset of Entities that have more properties.
 | Move Speed | Float | The movement speed of the entity (`0.7`) |
 | Age | The age of the entity (`0`) |
 
-{: .note }
+> [!NOTE]
 > Most mobs overwrite the health value to be `20`
 
 ### Health
@@ -86,5 +81,6 @@ Living Entities are a subset of Entities that have more properties.
 | Zombie | `0.5` |
 | Zombie Pigman | `0.5` |
 
-{: .missing }
-> TODO: attackStrength of most mobs is still missing
+::: tip MISSING
+TODO: attackStrength of most mobs is still missing
+:::

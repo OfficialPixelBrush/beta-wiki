@@ -1,9 +1,8 @@
 ---
-title: "0x28: Entity Metadata"
-nav_order: 41
-layout: home
-parent: Packets
+title: 0x28 Entity Metadata
+order: 41
 ---
+
 # Entity Metadata
 
 | Packet ID | Direction |
@@ -22,8 +21,9 @@ Sent to the client to supply further data for some entities. See the [entity met
 
 ### Clientbound
 
-{: .missing }
-> TODO: Provide real example
+::: tip MISSING
+TODO: Provide real example
+:::
 
 | Field  | Value    |
 | ------ | -------- |

@@ -1,7 +1,5 @@
 ---
-title: Networking
-nav_order: 15
-layout: home
+order: 15
 ---
 
 # Networking

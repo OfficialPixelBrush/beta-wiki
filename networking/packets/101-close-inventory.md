@@ -1,11 +1,9 @@
 ---
-title: "0x65: Close Inventory"
-nav_order: 102
-layout: home
-parent: Packets
+title: 0x65 Close Inventory
+order: 102
 ---
 
-# Close Window
+# Close Inventory
 
 | Packet ID | Direction |
 | --------- | --------- |

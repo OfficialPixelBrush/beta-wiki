@@ -1,11 +1,9 @@
 ---
-title: "0x68: Window Items"
-nav_order: 105
-layout: home
-parent: Packets
+title: 0x68 Inventory Contents
+order: 105
 ---
 
-# Window Items
+# Inventory Contents
 
 | Packet ID | Direction |
 | --------- | --------- |

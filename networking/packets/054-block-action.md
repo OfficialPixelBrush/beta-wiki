@@ -1,8 +1,6 @@
 ---
-title: "0x36: Block Action"
-nav_order: 55
-layout: home
-parent: Packets
+title: 0x36 Block Action
+order: 55
 ---
 
 # Block Action
@@ -14,7 +12,7 @@ parent: Packets
 ## Clientbound
 This packet is sent to inform the client when a block has perfored an action. There are only two blocks that make use this packet, Noteblocks and Pistons.
 
-## Noteblock 
+## Noteblock
 Noteblocks use the Packet to indicate they've played a tone. They use the two bytes the packet offers for Instrument and Pitch information.
 
 | Field     | Type    | Description |
@@ -55,10 +53,12 @@ The direction matches the lower 3-Bits of the metadata values that're [used for 
 | 4 | North |
 | 5 | South |
 
-{: .missing }
-> A lot of this still needs to be tested. I'm unsure if this just plays the sound or if this is also responsible for playing the piston extend/retract animations!
+::: tip MISSING
+A lot of this still needs to be tested. I'm unsure if this just plays the sound or if this is also responsible for playing the piston extend/retract animations!
+:::
 
 ## Example Packet
 
-{: .missing }
-> TODO: Capture or at least write example packet data
+::: tip MISSING
+TODO: Capture or at least write example packet data
+:::

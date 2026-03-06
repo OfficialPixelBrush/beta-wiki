@@ -1,8 +1,6 @@
 ---
-title: "0x35: Block Update"
-nav_order: 54
-layout: home
-parent: Packets
+title: 0x35 Block Update
+order: 54
 ---
 
 # Block Update

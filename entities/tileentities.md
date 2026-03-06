@@ -1,16 +1,9 @@
 ---
-title: Tile Entities
-nav_order: 30
-layout: home
-parent: Entities
+order: 30
 ---
 
 # Tile Entities
-{: .no_toc }
 Tile Entities are blocks that contain additional data, beyond the 4-Bit Metadata/Damage Value every item/block has.
-
-1. TOC
-{:toc}
 
 ## Base
 All tile entities share a common layout that they then add their additional fields onto.
@@ -26,7 +19,7 @@ All tile entities share a common layout that they then add their additional fiel
 As these are always the same, they will only be included as part of the examples.
 
 ## Sign
-Signs just store what lines they contain. The rest is handled by the block they attach to, namely their rotation. Their data needs to be sent to any clients via [the designated Sign Packet](../networking/packets/130-sign). Each line of a sign should only have `15` characters. 
+Signs just store what lines they contain. The rest is handled by the block they attach to, namely their rotation. Their data needs to be sent to any clients via [the designated Sign Packet](../networking/packets/130-sign). Each line of a sign should only have `15` characters.
 
 | Field    | Type     | Description             |
 | -------- | -------- | ----------------------- |
@@ -37,7 +30,7 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 **Example**
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Text1 | `Welcome to` |
 | Text2 | `the Beta Wiki` |
@@ -57,7 +50,7 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 **Example**
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Delay | 20 |
 | EntityId | `Zombie` |
@@ -72,12 +65,12 @@ Signs just store what lines they contain. The rest is handled by the block they 
 | ----- | ----- | ------------------------------ |
 | Items | List  | A list of Compound-taged items |
 
-{: .note }
+> [!NOTE]
 > Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry!
 
 **Example**
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Items | |
 | id | `Chest` |
@@ -95,7 +88,7 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 **Example**
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Items | |
 | BurnTime | `0` |
@@ -105,7 +98,7 @@ Signs just store what lines they contain. The rest is handled by the block they 
 | y | 55 |
 | z | 61 |
 
-## Dispenser 
+## Dispenser
 The Dispenser is internally referred to as `Trap`.
 
 | Field | Type  | Description                    |
@@ -114,7 +107,7 @@ The Dispenser is internally referred to as `Trap`.
 
 **Example**
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | Items | |
 | id | `Trap` |

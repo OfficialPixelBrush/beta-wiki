@@ -1,9 +1,8 @@
 ---
-title: "0x0B: Player Position"
-nav_order: 12
-layout: home
-parent: Packets
+title: 0x0B Player Position
+order: 12
 ---
+
 # Player Position
 
 | Packet ID | Direction |

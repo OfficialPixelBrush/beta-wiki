@@ -1,8 +1,6 @@
 ---
-title: "0x0F: Place"
-nav_order: 16
-layout: home
-parent: Packets
+title: 0x0F Place
+order: 16
 ---
 
 # Place

@@ -1,8 +1,6 @@
 ---
-title: "0x32: Pre-Chunk"
-nav_order: 51
-layout: home
-parent: Packets
+title: 0x32 Pre-Chunk
+order: 51
 ---
 
 # Pre-Chunk

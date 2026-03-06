@@ -1,19 +1,13 @@
 ---
-title: Components
-nav_order: 5
-layout: home
-parent: Redstone
+order: 5
 ---
 
 # Components
-{: .no_toc }
 This page will document how individual redstone components operate.
 
-{: .missing }
-> A lot of info and many edgecases are not yet documented here.
-
-1. TOC
-{:toc}
+::: tip MISSING
+A lot of info and many edgecases are not yet documented here.
+:::
 
 ## Redstone Dust
 Redstone Dust propagates redstone signals via a floodfill algorithm. With each subsequent piece of dust, the power level lowers. This also ticks all surrounding blocks.
@@ -87,10 +81,12 @@ if (!isPowered) {
 
 ## Piston
 
-{: .missing }
-> TODO
+::: tip MISSING
+TODO
+:::
 
 ## Sticky Piston
 
-{: .missing }
-> TODO
+::: tip MISSING
+TODO
+:::

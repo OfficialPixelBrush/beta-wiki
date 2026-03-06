@@ -1,7 +1,5 @@
 ---
-title: Rendering
-nav_order: 20
-layout: home
+order: 20
 ---
 
 # Rendering

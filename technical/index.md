@@ -1,7 +1,5 @@
 ---
-title: Technical
-nav_order: 10
-layout: home
+order: 10
 ---
 
 # Technical

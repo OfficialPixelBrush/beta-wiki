@@ -1,8 +1,6 @@
 ---
-title: "0x34: Multi-Block Update"
-nav_order: 53
-layout: home
-parent: Packets
+title: 0x34 Multi-Block Update
+order: 53
 ---
 
 # Multi-Block Update

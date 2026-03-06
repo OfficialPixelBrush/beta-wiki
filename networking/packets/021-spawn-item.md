@@ -1,8 +1,6 @@
 ---
-title: "0x15: Spawn Item Entity"
-nav_order: 22
-layout: home
-parent: Packets
+title: 0x15 Spawn Item Entity
+order: 22
 ---
 
 # Spawn Item Entity

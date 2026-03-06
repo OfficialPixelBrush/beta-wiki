@@ -1,8 +1,6 @@
 ---
-title: "0x83: Item Data"
-nav_order: 132
-layout: home
-parent: Packets
+title: 0x83 Item Data
+order: 132
 ---
 
 # Item Data

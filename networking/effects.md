@@ -1,8 +1,5 @@
 ---
-title: Effects
-layout: home
-nav_order: 4
-parent: Networking
+order: 4
 ---
 
 # Effects
@@ -21,5 +18,6 @@ Some of these effects also have additional metadata available as an integer in t
 | 2000  | Smoke             | Direction[\*]              | Particle         |
 | 2001  | Block Break       | Block ID                  | Particle + Sound |
 
-{: .missing }
-> [\*]Smoke direction still needs to be figured out
+::: tip MISSING
+[\*]Smoke direction still needs to be figured out
+:::

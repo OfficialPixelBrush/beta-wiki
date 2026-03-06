@@ -1,8 +1,6 @@
 ---
-title: "0x6A: Inventory Transaction"
-nav_order: 107
-layout: home
-parent: Packets
+title: 0x6A Inventory Transaction
+order: 107
 ---
 
 # Inventory Transaction

@@ -1,8 +1,5 @@
 ---
-title: Data Types
-layout: home
-nav_order: 1
-parent: Technical
+order: 1
 ---
 
 # Data Types

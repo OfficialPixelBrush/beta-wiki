@@ -1,11 +1,9 @@
 ---
-title: "0x19: Spawn Painting"
-nav_order: 26
-layout: home
-parent: Packets
+title: 0x19 Spawn Painting Entity
+order: 26
 ---
 
-# Spawn Painting
+# Spawn Painting Entity
 
 | Packet ID | Direction   |
 | --------- | ----------- |

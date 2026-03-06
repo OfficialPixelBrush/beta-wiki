@@ -1,8 +1,6 @@
 ---
-title: "0x46: Game State"
-nav_order: 71
-layout: home
-parent: Packets
+title: 0x46 Game State
+order: 71
 ---
 
 # Game State

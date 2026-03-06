@@ -1,8 +1,6 @@
 ---
-title: "0x18: Spawn Mob Entity"
-nav_order: 25
-layout: home
-parent: Packets
+title: 0x18 Spawn Mob Entity
+order: 25
 ---
 
 # Spawn Mob Entity

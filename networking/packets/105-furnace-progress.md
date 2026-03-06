@@ -1,8 +1,6 @@
 ---
-title: "0x69: Furnace Progress"
-nav_order: 106
-layout: home
-parent: Packets
+title: 0x69 Furnace Progress
+order: 106
 ---
 
 # Furnace Progress

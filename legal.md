@@ -1,18 +1,7 @@
----
-title: Legal Disclaimer
-layout: home
-nav_order: 65
-last_modified_date: 02-03-2026
----
+# Legal
 
-# Legal Disclaimer
-{: .no_toc }
-
-{: .warning }
+> [!WARNING]
 > No lawyer or other kind of legal professional has touched this page. Please take anything said on it with a huge grain of salt!
-
-1. TOC
-{:toc}
 
 ## Legality of the Project
 

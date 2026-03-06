@@ -1,26 +1,20 @@
 ---
-title: Noise
-nav_order: 5
-layout: home
-parent: Technical
+order: 5
 ---
 
 # Noise
-{: .no_toc }
 This page will explain how the Perlin Noise Generator up to at least Beta 1.7.3 worked.
 
-1. TOC
-{:toc}
-
-{: .missing }
-> Large parts of this are either missing or super simplified. Minecraft sometimes runs a function a certain way depending on how many inputs are provided (2D vs 3D).
+::: tip MISSING
+Large parts of this are either missing or super simplified. Minecraft sometimes runs a function a certain way depending on how many inputs are provided (2D vs 3D).
+:::
 
 ## Perlin Noise
 The algorithm used by most of Minecraft's Terrain is based on "Improved Perlin Noise", first published in 2002, which is a slightly tweaked version of the original Perlin Noise Algorithm from 1985, both by Ken Perlin.
 
 The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654.566636), however a more accessible option is the [Wikipedia page on Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
 
-{: .note }
+> [!NOTE]
 > [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here due to a signed 64-Bit Floating-point number being converted to a signed 32-Bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly. Please check how [Java does casting](../technical/javaFeatures#casting) to ensure accuracy.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noisePerlin.cpp).

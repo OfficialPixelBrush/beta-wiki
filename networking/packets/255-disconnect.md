@@ -1,8 +1,6 @@
 ---
-title: "0xFF: Disconnect"
-nav_order: 256
-layout: home
-parent: Packets
+title: 0xFF Disconnect
+order: 256
 ---
 
 # Disconnect

@@ -1,8 +1,6 @@
 ---
-title: "0x02: Handshake"
-nav_order: 3
-layout: home
-parent: Packets
+title: 0x02 Handshake
+order: 3
 ---
 
 # Handshake

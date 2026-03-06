@@ -1,8 +1,6 @@
 ---
-title: "0x1B: Player Movement (Unused)"
-nav_order: 28
-layout: home
-parent: Packets
+title: 0x1B Player Movement (Unused)
+order: 28
 ---
 
 # Player Movement (Unused)
@@ -13,7 +11,7 @@ parent: Packets
 
 This packet could be used for setting the movement values and states of whichever player receives the packet.
 
-{: .note }
+> [!NOTE]
 > This packet is completely unused in the Notchian Server, so there's no example of what it *should* look or act like but the Client does seem to handle it.
 
 ## Clientbound
@@ -29,7 +27,7 @@ This packet could be used for setting the movement values and states of whicheve
 
 ## Example Packet
 
-| Field     | Value | 
+| Field     | Value |
 | --- | --- |
 | Strafe Direction | |
 | Foward Direction  | |

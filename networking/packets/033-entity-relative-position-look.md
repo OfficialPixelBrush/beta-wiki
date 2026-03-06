@@ -1,9 +1,8 @@
 ---
-title: "0x21: Entity Relative Position and Look"
-nav_order: 34
-layout: home
-parent: Packets
+title: 0x21 Entity Relative Position and Look
+order: 34
 ---
+
 # Entity Relative Position and Look
 
 | Packet ID | Direction |

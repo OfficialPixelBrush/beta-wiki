@@ -1,8 +1,6 @@
 ---
-title: "0x3C: Explosion"
-nav_order: 61
-layout: home
-parent: Packets
+title: 0x3C Explosion
+order: 61
 ---
 
 # Explosion

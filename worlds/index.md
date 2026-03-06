@@ -1,7 +1,5 @@
 ---
-title: Worlds
-nav_order: 30
-layout: home
+order: 30
 ---
 
 # Worlds

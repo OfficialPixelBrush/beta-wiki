@@ -1,8 +1,6 @@
 ---
-title: "0x0E: Mine"
-nav_order: 15
-layout: home
-parent: Packets
+title: 0x0E Mine
+order: 15
 ---
 
 # Mine

@@ -1,11 +1,9 @@
 ---
-title: "0x12: Player Animation"
-nav_order: 19
-layout: home
-parent: Packets
+title: 0x12 Player Action
+order: 19
 ---
 
-# Player Animation
+# Player Action
 
 | Packet ID | Direction |
 | --------- | --------- |
@@ -17,12 +15,12 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 
 | Field     | Type    | Description                                 |
 | --------- | ------- | ------------------------------------------- |
-| Player ID | Integer | The ID of the player who did the animation |
-| Animation | Byte | The type of animation. Can be `1` or `3`   |
+| Player ID | Integer | The ID of the player who did the action |
+| Action | Byte | The type of action. Can be `1` or `3`   |
 
 ## Example Packet
 
 | Field | Value | 
 | --- | --- |
 | Player ID | `1298` |
-| Animation | `1` (Swing Arm) |
+| Action | `1` (Swing Arm) |

@@ -1,8 +1,6 @@
 ---
-title: "0x3D: Effect"
-nav_order: 62
-layout: home
-parent: Packets
+title: 0x3D Effect
+order: 62
 ---
 
 # Effect

@@ -3,7 +3,7 @@ A wiki documenting Minecraft Beta 1.7.3's technical specification and network pr
 
 Please go to the [GitHub Pages link](https://OfficialPixelBrush.github.io/beta-wiki) to see the actual Wiki!
 
-If you'd like to contribute, check the [Contributing page](https://OfficialPixelBrush.github.io/beta-wiki/CONTRIBUTING)
+If you'd like to contribute, check the [Contributing page](/CONTRIBUTING.md)
 
 ## Contributors
 <a href="https://github.com/OfficialPixelBrush/beta-wiki/graphs/contributors">
@@ -11,8 +11,7 @@ If you'd like to contribute, check the [Contributing page](https://OfficialPixel
 </a>
 
 ## Discord
-We have a [Discord Server](
-https://discord.gg/JHTz2HSKrf)!
+We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!
 
 ## Star History
 
@@ -26,4 +25,4 @@ https://discord.gg/JHTz2HSKrf)!
 
 ## Legal Disclaimer
 
-Please refer to the [legal info](legal.md) page for more info.
+Please refer to the [legal info](/legal.md) page for more info.

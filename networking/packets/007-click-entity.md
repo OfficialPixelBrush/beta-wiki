@@ -1,8 +1,6 @@
 ---
-title: "0x07: Click Entity"
-nav_order: 8
-layout: home
-parent: Packets
+title: 0x07 Click Entity
+order: 8
 ---
 
 # Click Entity

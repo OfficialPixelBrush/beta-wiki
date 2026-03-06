@@ -1,9 +1,8 @@
 ---
-title: "0x20: Entity Look"
-nav_order: 33
-layout: home
-parent: Packets
+title: 0x20 Entity Look
+order: 33
 ---
+
 # Entity Look
 
 | Packet ID | Direction |

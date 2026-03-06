@@ -1,16 +1,9 @@
 ---
-title: Entity Metadata
-layout: home
-nav_order: 3
-parent: Networking
+order: 3
 ---
 
 # Entity Metadata
-{: .no_toc }
 Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata) and [Spawn Mob Entity](../networking/packets/024-spawn-mob).
-
-1. TOC
-{:toc}
 
 ## Format
 To read entity metadata, follow these steps in a loop until a value of `127`/`0x7F` is read
@@ -191,7 +184,7 @@ These are the values that're sent with each entity. To get a full listing of all
     </tr>
 </table>
 
-{: .note }
+> [!NOTE]
 > <sup>1</sup> `1` for blowing up, `-1` otherwise
 >
 > <sup>2</sup> `0x10` bit indicates shearedness, values `0x0-0xF` indicate the color. [All wool colors are listed on the blocks page](../general/blocks#wool).

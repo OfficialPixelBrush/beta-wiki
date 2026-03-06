@@ -1,8 +1,6 @@
 ---
-title: "0x01: Login"
-nav_order: 2
-layout: home
-parent: Packets
+title: 0x01 Login
+order: 2
 ---
 
 # Login

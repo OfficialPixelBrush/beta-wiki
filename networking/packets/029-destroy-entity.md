@@ -1,9 +1,8 @@
 ---
-title: "0x1D: Destroy Entity"
-nav_order: 30
-layout: home
-parent: Packets
+title: 0x1D Destroy Entity
+order: 30
 ---
+
 # Destroy Entity
 
 | Packet ID | Direction |

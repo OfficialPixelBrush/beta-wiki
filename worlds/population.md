@@ -1,20 +1,14 @@
 ---
-title: Population
-nav_order: 15
-layout: home
-parent: Worlds
+order: 15
 ---
 
 # Population
-{: .no_toc }
 
 The population phase is done a little differently when compared to [terrain generation](generation), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries.
 
-{: .missing }
-> A huge chunk of info is still missing!!
-
-1. TOC
-{:toc}
+::: tip MISSING
+A huge chunk of info is still missing!!
+:::
 
 # Initialization
 Before any population is done, the Chunk Populator prepares a few things to make subsequent generation easier.
@@ -66,13 +60,13 @@ Before actually being placed into the world, each feature does a bit of extra st
 
 ## Chances/Ranges
 
-{: .note }
+> [!NOTE]
 > The initial coordinates for each feature are always generated in the order `(X,Y,Z)`. It's only ordered as `(X/Z,Y)` here, as `X` and `Z` always share the same ranges.
 
-{: .note }
+> [!NOTE]
 > These offset coordinates are relative to the chunks block coordinate, i.e. `chunkPos / 16`.
 
-{: .note }
+> [!NOTE]
 > Offset coordinates marked with `~` utilize multiple PRNG passes. The depicted number is the total chance if both of those random numbers attained their lowest/highest possible value.
 
 | Feature | Chance | Attempts | X/Z | Y |
@@ -217,7 +211,7 @@ Tallgrass
 Deadbushes
 
 ## Reeds
-Sugarcane 
+Sugarcane
 
 ## Pumpkins
 Pumpkins

@@ -1,8 +1,6 @@
 ---
-title: "0x04: Time"
-nav_order: 5
-layout: home
-parent: Packets
+title: 0x04 Time
+order: 5
 ---
 
 # Time

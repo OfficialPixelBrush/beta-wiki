@@ -1,17 +1,10 @@
 ---
-title: Statistics
-nav_order: 55
-layout: home
-parent: General
+order: 55
 ---
 
 # Statistics
-{: .no_toc }
 
 Statistics are not just the values that keep track of how many blocks you have mined but also your Achievements.
-
-1. TOC
-{:toc}
 
 ## Achievement Listing
 
@@ -65,7 +58,7 @@ Statistics are not just the values that keep track of how many blocks you have m
 The Block/Item placing, using and breaking stats use offsets for their IDs.
 
 | Statistic Type | ID |
-| --- | --- | 
+| --- | --- |
 | Block Break | Block ID + `0x1000000` |
 | Item Crafting | Block/Item ID + `0x1010000` |
 | Item Usage | Item ID + `0x1020000` |

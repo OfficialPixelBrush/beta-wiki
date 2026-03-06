@@ -1,8 +1,5 @@
 ---
-title: Objects
-nav_order: 35
-layout: home
-parent: Entities
+order: 35
 ---
 
 # Objects

@@ -1,9 +1,3 @@
----
-title: Projects
-nav_order: 40
-layout: home
----
-
 # Projects
 A small list of clients or servers that implement the Beta 1.7.3 protocol, which you can use for reference!
 

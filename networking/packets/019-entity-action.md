@@ -1,9 +1,8 @@
 ---
-title: "0x13: Entity Action"
-nav_order: 20
-layout: home
-parent: Packets
+title: 0x13 Entity Action
+order: 20
 ---
+
 
 # Entity Action
 

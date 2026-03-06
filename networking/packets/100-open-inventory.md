@@ -1,11 +1,9 @@
 ---
-title: "0x64: Open Inventory"
-nav_order: 101
-layout: home
-parent: Packets
+title: 0x64 Open Inventory
+order: 101
 ---
 
-# Open Window
+# Open Inventory
 
 | Packet ID | Direction   |
 | --------- | ----------- |

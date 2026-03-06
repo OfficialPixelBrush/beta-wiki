@@ -1,8 +1,5 @@
 ---
-title: Items
-nav_order: 10
-layout: home
-parent: General
+order: 10
 ---
 
 # Items

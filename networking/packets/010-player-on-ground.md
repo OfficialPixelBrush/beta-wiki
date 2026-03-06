@@ -1,9 +1,8 @@
 ---
-title: "0x0A: Player On Ground"
-nav_order: 11
-layout: home
-parent: Packets
+title: 0x0A Player On Ground
+order: 11
 ---
+
 
 # Player On Ground
 
@@ -13,7 +12,7 @@ parent: Packets
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 
-{: .warning }
+> [!WARNING]
 > This value is unreliable for fall damage and cheat detection as it can be spoofed by the client.
 
 ## Clientbound
@@ -22,8 +21,9 @@ This packet is sent to the server to determine if the player is on the ground or
 | --------- | ---- | -------------------------------------------------- |
 | On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling |
 
-{: .missing }
-> It's currently untested what the client does when it receives an `OnGround` packet. Most likely it just resets its vertical velocity.
+::: tip MISSING
+It's currently untested what the client does when it receives an `OnGround` packet. Most likely it just resets its vertical velocity.
+:::
 
 ## Serverbound
 
@@ -33,6 +33,6 @@ This packet is sent to the server to determine if the player is on the ground or
 
 ## Example Packet
 
-| Field | Value | 
+| Field | Value |
 | --- | --- |
 | On Ground | `true` |

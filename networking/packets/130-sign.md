@@ -1,8 +1,6 @@
 ---
-title: "0x82: Sign"
-nav_order: 131
-layout: home
-parent: Packets
+title: 0x82 Sign
+order: 131
 ---
 
 # Sign

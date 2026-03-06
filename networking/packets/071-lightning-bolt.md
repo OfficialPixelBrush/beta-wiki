@@ -1,8 +1,6 @@
 ---
-title: "0x47: Lightning Bolt"
-nav_order: 72
-layout: home
-parent: Packets
+title: 0x47 Lightning Bolt
+order: 72
 ---
 
 # Lightning Bolt

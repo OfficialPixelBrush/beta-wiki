@@ -1,22 +1,15 @@
 ---
-title: Lighting
-nav_order: 2
-layout: home
-parent: Rendering
+order: 2
 ---
 
 # Lighting
-{: .no_toc }
 This section will go into how lighting data is rendered, not how it is calculated.
-
-1. TOC
-{:toc}
 
 ## Face lighting
 Every block has constant directional lighting which is statically assigned based on
 the angles of the faces. This is the base of all lighting therafter, no matter whether its smooth or not.
 
-{: .note }
+> [!NOTE]
 > I haven't found a generalized formula to this yet but I'm sure there is one
 
 ```c
@@ -58,5 +51,4 @@ Every vertex samples and averages the light level of surrounding blocks along th
 ![](smoothlighting.png)
 
 ### Credits
-{: .no_toc }
 - [Vector image of incandescent light bulb pictogram (Public Domain)](https://publicdomainvectors.org/en/free-clipart/Vector-image-of-incandescent-light-bulb-pictogram/23310.html)

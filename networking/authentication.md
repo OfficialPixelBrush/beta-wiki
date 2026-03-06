@@ -1,16 +1,9 @@
 ---
-title: Authentication
-layout: home
-nav_order: 10
-parent: Networking
+order: 10
 ---
 
 # Authentication
-{: .no_toc }
 Authentication is used to ensure a client is who they claim to be. This process is done via the [Handshake Packet](./packets/002-handshake).
-
-1. TOC
-{:toc}
 
 ## Offline mode
 Offline mode is super simple, since it completely circumvents the authentication system. Instead of a hash, the server just sends a `-` which the client receives and then just continues logging in with.
@@ -21,8 +14,9 @@ Online mode depends on the Minecraft website backend, which shut down long ago. 
 ### Acquire Client Session Id
 This is a parameter that's passed in by the launcher.
 
-{: .missing }
-> TODO
+::: tip MISSING
+TODO
+:::
 
 ### Generate Server Hash
 First, the server generates a server id. For this it uses a random object to generate a `long`, then it turns this into a hex string. This is passed onto the client.
@@ -49,5 +43,6 @@ If this endpoint returns `YES`, the server finishes up the login sequence. Other
 
 ### Betacraft Proxy
 
-{: .missing }
-> TODO
+::: tip MISSING
+TODO
+:::

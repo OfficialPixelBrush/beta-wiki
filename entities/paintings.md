@@ -1,8 +1,5 @@
 ---
-title: Paintings
-nav_order: 40
-layout: home
-parent: Entities
+order: 40
 ---
 
 # Paintings

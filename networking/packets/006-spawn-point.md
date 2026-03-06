@@ -1,8 +1,6 @@
 ---
-title: "0x06: Spawn Point"
-nav_order: 7
-layout: home
-parent: Packets
+title: 0x06 Spawn Point
+order: 7
 ---
 
 # Spawn Point

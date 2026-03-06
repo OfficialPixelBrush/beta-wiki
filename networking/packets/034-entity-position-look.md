@@ -1,9 +1,8 @@
 ---
-title: "0x22: Entity Position and Look"
-nav_order: 35
-layout: home
-parent: Packets
+title: 0x22 Entity Position and Look
+order: 35
 ---
+
 # Entity Position and Look
 
 | Packet ID | Direction |

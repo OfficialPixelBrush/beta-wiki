@@ -1,8 +1,6 @@
 ---
-title: "0x67: Set Inventory Slot"
-nav_order: 104
-layout: home
-parent: Packets
+title: 0x67 Set Inventory Slot
+order: 104
 ---
 
 # Set Inventory Slot

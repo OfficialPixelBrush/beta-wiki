@@ -1,8 +1,6 @@
 ---
-title: "0x33: Chunk"
-nav_order: 52
-layout: home
-parent: Packets
+title: 0x33 Chunk
+order: 52
 ---
 
 # Chunk
@@ -16,7 +14,7 @@ The packets is sent from the server to the client to update the blocks in the sp
 The origin coordinate (x,y,z) is in [block space](../terminology#block-space).
 The to-be-updated volume is defined by the width, height and length bytes which the server subtracts `1` from to allow updating of a 256x128x256 area\*.
 
-<sub>\* untested, but height values more than `127` seem to crash the client<sub>
+<sub>\* untested, but height values more than `127` seem to crash the client</sub>
 
 The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards Negative X/Y/Z.
 
@@ -38,7 +36,7 @@ For more info, check out the [compression page](../../technical/compression).
 | compressed size | Integer    | The size, in bytes, of the zlib compressed data |
 | compressed data | Byte Array | The zlib compressed chunk data |
 
-{: .warning }
+> [!WARNING]
 > If a chunk that's taller than 127 blocks is sent, a vanilla client **will** softlock/crash.
 
 ## Example Packet

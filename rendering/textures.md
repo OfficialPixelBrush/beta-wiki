@@ -1,8 +1,5 @@
 ---
-title: Textures
-nav_order: 1
-layout: home
-parent: Rendering
+order: 1
 ---
 
 # Textures
