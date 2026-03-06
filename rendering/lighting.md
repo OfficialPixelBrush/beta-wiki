@@ -30,9 +30,24 @@ Lighting in Minecraft is based on a 4-Bit gradient from `0` - `15`. As of Indev,
 
 If mapped from a range of `0.0` - `1.0`, where `1.0` represents a light level of `15`, we get the following mapping.
 
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0.035 | 0.044 | 0.055 | 0.069 | 0.086 | 0.107 | 0.134 | 0.168 | 0.21 | 0.262 | 0.328 | 0.41 | 0.512 | 0.64 | 0.8 | 1.0f |
+| Value | Color                           |
+| ----: | :------------------------------ |
+|     0 | <ColorSwatch color="#080808" label="0.035"/> |
+|     1 | <ColorSwatch color="#0b0b0b" label="0.044" /> |
+|     2 | <ColorSwatch color="#0e0e0e" label="0.055" /> |
+|     3 | <ColorSwatch color="#111111" label="0.069" /> |
+|     4 | <ColorSwatch color="#151515" label="0.086" /> |
+|     5 | <ColorSwatch color="#1b1b1b" label="0.107" /> |
+|     6 | <ColorSwatch color="#222222" label="0.134" /> |
+|     7 | <ColorSwatch color="#2a2a2a" label="0.168" /> |
+|     8 | <ColorSwatch color="#353535" label="0.21" /> |
+|     9 | <ColorSwatch color="#424242" label="0.262" /> |
+|    10 | <ColorSwatch color="#535353" label="0.328" /> |
+|    11 | <ColorSwatch color="#686868" label="0.41" /> |
+|    12 | <ColorSwatch color="#828282" label="0.512" /> |
+|    13 | <ColorSwatch color="#a3a3a3" label="0.64" /> |
+|    14 | <ColorSwatch color="#cccccc" label="0.8" /> |
+|    15 | <ColorSwatch color="#ffffff" label="1.0" /> |
 
 Or in code form
 

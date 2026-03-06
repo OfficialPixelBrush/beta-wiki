@@ -1,7 +1,7 @@
 <template>
     <span class="color-swatch-wrapper">
         <span class="swatch" :style="{ backgroundColor: color }"></span>
-        <code v-if="showLabel">{{ color }}</code>
+        <code v-if="label || true">{{ label || color }}</code>
     </span>
 </template>
 
@@ -15,6 +15,11 @@ defineProps({
     showLabel: {
         type: Boolean,
         default: true
+    },
+    
+    label: {
+        type: String,
+        default: '' // empty string means no label
     }
 })
 </script>
