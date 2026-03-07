@@ -2,24 +2,25 @@ import { defineConfig } from "vitepress";
 import { withSidebar } from "vitepress-sidebar";
 
 export default defineConfig(withSidebar({
-    base: "/beta-wiki/",
-    title: "Beta Wiki",
+    base: "/beta-wiki",
+    title: "Technical Beta Wiki",
     description: "A wiki documenting Minecraft Beta 1.7.3's network protocol and other technical specifications.",
-    
-    head: [
-        ['link', { rel: 'icon', href: '/beta-wiki/assets/favicon.ico' }],
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:image', content: '/beta-wiki/assets/banner.webp' }],
 
-        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { name: 'twitter:image', content: '/beta-wiki/assets/banner.webp' }]
+    head: [
+        ["link", { rel: "icon", href: "/beta-wiki/favicon.ico" }],
+        ["meta", { property: "og:type", content: "website" }],
+        ["meta", { property: "og:image", content: "/beta-wiki/banner.webp" }],
+        ["meta", { name: "twitter:card", content: "summary_large_image" }],
+        ["meta", { name: "twitter:image", content: "/beta-wiki/banner.webp" }]
     ],
 
     // MPA builds without javascript, but has to do full-page reload when you navigate between pages
     mpa: false,
+    cleanUrls: true,
+
     themeConfig: {
         lang: "en",
-        logo: "/assets/favicon.ico",
+        logo: "/favicon.ico",
         search: {
             provider: "local"
         },
@@ -37,7 +38,7 @@ export default defineConfig(withSidebar({
                 link: "/resources"
             },
             {
-                text: "TODO",
+                text: "To-Do",
                 link: "/todo"
             },
             {

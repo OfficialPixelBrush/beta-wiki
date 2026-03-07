@@ -12,21 +12,23 @@ If you [find an issue on GitHub](https://github.com/OfficialPixelBrush/beta-wiki
 Making a pull request is relatively straightforward. Just fork the repo, make the changes you want to, and then just create a pull request on GitHub. This is even easier with GitHub Desktop.
 
 # Development
-You'll need to install `npm`
+You'll need to install [`bun`](https://bun.sh) (or another package manager if you prefer)
 
 After cloning the repo you can test the website with
 ```bash
-npx vitepress dev
+bun dev
 ```
-It'll prompt you to install whatever dependencies you need automatically.
+
+It'll install whatever dependencies you need automatically.
 
 If you want to make a static build for hosting, run
 ```bash
-npx vitepress dev
+bun build
 ```
+
 This can be previewed with
 ```bash
-npx vitepress preview
+bun preview
 ```
 
 # Style Guide
@@ -37,7 +39,7 @@ The following is a list of stylistic and formal considerations that should be ta
 1. The page should be readable in a non-markdown text editor
 1. The page should not rely on external links, and be entirely usable without them
 1. The page should not rely on any online-only elements and be usable as a downloaded file too (either `.md` or `.html`)
-1. The page should not rely on Javascript, and be entirely usable without it
+1. The page should not rely on JavaScript, and be entirely usable without it
 1. The page should be readable in a text-only browser like `lynx` or similar
 
 ## Values

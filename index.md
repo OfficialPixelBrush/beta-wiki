@@ -11,7 +11,7 @@ hero:
       link: https://github.com/OfficialPixelBrush/beta-wiki
 ---
 
-![Glacier (throughout different stages of World Generation) @ x:8 y:88 z:12](assets/banner.webp)
+![Technical Beta Wiki](banner.webp)
 
 > [!NOTE]
 > This wiki is mainly for technical information and documentation of how Minecraft functioned as of Beta 1.7.3. If you're looking for more general gameplay info about Beta 1.7.3, such as crafting recipes, check out the [Farlands Wiki](https://farlands.miraheze.org/wiki/Main_Page) and the [archived Minecraft Wiki](https://web.archive.org/web/20110804012308/http://www.minecraftwiki.net/wiki/Main_Page).
@@ -28,7 +28,7 @@ This includes documenting the [inner workings of the World Generator](./worlds/g
 [Anyone can contribute to the Wiki](CONTRIBUTING)! Either by digging through decompiled code or just trial and error. Anything goes to make this the most objective source of truth for Minecraft Beta!
 
 ## TODO
-Please check the [TODO Page](todo) to see what still needs to be done, or just click through the Wiki until you find something that's missing. Either open an issue on GitHub or try to solve it yourself!
+Please check the [To-Do Page](todo) to see what still needs to be done, or just click through the Wiki until you find something that's missing. Either open an issue on GitHub or try to solve it yourself!
 
 ## Discord
 We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!

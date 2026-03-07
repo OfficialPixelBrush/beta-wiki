@@ -1,4 +1,4 @@
-# TODO
+# To-Do
 A rough list of everything that still needs to be done. Lots to do!
 
 - Networking
