@@ -19,14 +19,14 @@ export default defineConfig(withSidebar({
     mpa: false,
     themeConfig: {
         lang: "en",
-        logo: "/beta-wiki/assets/favicon.ico",
+        logo: "/assets/favicon.ico",
         search: {
             provider: "local"
         },
         nav: [
             {
                 text: "Contributing",
-                link: "/contributing"
+                link: "/CONTRIBUTING"
             },
             {
                 text: "Projects",
@@ -35,6 +35,10 @@ export default defineConfig(withSidebar({
             {
                 text: "Resources",
                 link: "/resources"
+            },
+            {
+                text: "TODO",
+                link: "/todo"
             },
             {
                 text: "Credits",

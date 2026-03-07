@@ -16,7 +16,7 @@ A rough list of everything that still needs to be done. Lots to do!
     - McRegion Structure
     - How to write a chunk to a region
     - How to best hold onto Region data
-- Generation
+- Generation (Partial)
     - Surface Population
         - Foliage Generation
         - Tree Generation
@@ -24,9 +24,9 @@ A rough list of everything that still needs to be done. Lots to do!
             - Big Oak Generation
             - Spruce Generation
         - Ore Generation
-- Entities
+- Entities (Partial)
     - Pathfinding
-- Redstone
+- Redstone (Partial)
     - Wire
     - Piston
     - Sticky Piston
