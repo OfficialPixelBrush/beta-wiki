@@ -23,7 +23,7 @@ It'll install whatever dependencies you need automatically.
 
 If you want to make a static build for hosting, run
 ```bash
-bun build
+bun vitepress build
 ```
 
 This can be previewed with
