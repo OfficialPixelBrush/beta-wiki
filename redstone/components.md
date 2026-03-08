@@ -27,14 +27,14 @@ All surrounding blocks are ticked when a Redstone Torch is placed or removed, bu
 A torch uses it's 4-Bit values for it's orientation.
 
 | Metadata value | Appearance                    |
-| :------------: | ----------------------------- |
-|      `0`       | -                             |
-|      `1`       | Attached to -X (Facing East)  |
-|      `2`       | Attached to +X (Facing West)  |
-|      `3`       | Attached to -Z (Facing South) |
-|      `4`       | Attached to +Z (Facing North) |
-|      `5`       | Attached to -Y (Facing Up)    |
-|     `6-15`     | -                             |
+| -------------: | ----------------------------- |
+|            `0` | -                             |
+|            `1` | Attached to -X (Facing East)  |
+|            `2` | Attached to +X (Facing West)  |
+|            `3` | Attached to -Z (Facing South) |
+|            `4` | Attached to +Z (Facing North) |
+|            `5` | Attached to -Y (Facing Up)    |
+|         `6-15` | -                             |
 
 This, in turn, is used to determine where to check for a power source.
 
@@ -54,11 +54,11 @@ A repeater uses it's 4-Bit values for 2 things, the lower 2-bits determine the o
 while the upper 2-bits determine the delay of the repeater.
 
 | Value | Delay (ticks) | Metadata value |
-| :---: | :-----------: | :------------: |
-|  `0`  |      `2`      |     `00xx`     |
-|  `1`  |      `4`      |     `01xx`     |
-|  `2`  |      `6`      |     `10xx`     |
-|  `3`  |      `8`      |     `11xx`     |
+| ----: | :-----------: | :------------: |
+|   `0` |      `2`      |     `00xx`     |
+|   `1` |      `4`      |     `01xx`     |
+|   `2` |      `6`      |     `10xx`     |
+|   `3` |      `8`      |     `11xx`     |
 
 ### Ticking
 

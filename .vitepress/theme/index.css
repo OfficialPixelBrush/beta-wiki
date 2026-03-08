@@ -4,6 +4,12 @@
   table-layout: fixed;
 }
 
+.vp-doc table td,
+.vp-doc table th {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 .medium-zoom-overlay {
   z-index: 30;
 }

@@ -1,6 +1,6 @@
 ---
 order: 5
-description: Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-Bit numeric ID and a 4-Bit metadata/damage value.
+description: Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties An 8-Bit numeric ID and a 4-Bit metadata/damage value.
 ---
 
 # Blocks
