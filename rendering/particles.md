@@ -1,5 +1,6 @@
 ---
 order: 10
+description: Particles are 2D sprites that are there to spice up the look of Minecraft. They're all usually rendered as a billboard, to always face the player. Internally they're handled as entities.
 ---
 
 # Particles
