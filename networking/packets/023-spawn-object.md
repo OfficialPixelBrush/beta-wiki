@@ -13,20 +13,20 @@ Sent to the client when an [object entity](../../entities/objects) should be spa
 
 ## Clientbound
 
-| Field     | Type    | Description                                  |
-| --------- | ------- | -------------------------------------------- |
-| Entity ID | Integer | The ID of the entity that will refer to this object |
-| Object Type  | Byte | [The type of the object](../../entities/objects) |
-| X      | Integer | The X block position of the object  |
-| Y      | Integer | The Y block position of the object  |
-| Z      | Integer | The Z block position of the object  |
+| Field       | Type    | Description                                         |
+| ----------- | ------- | --------------------------------------------------- |
+| Entity ID   | Integer | The ID of the entity that will refer to this object |
+| Object Type | Byte    | [The type of the object](../../entities/objects)    |
+| X           | Integer | The X block position of the object                  |
+| Y           | Integer | The Y block position of the object                  |
+| Z           | Integer | The Z block position of the object                  |
 
 ## Example Packet
 
-| Field     | Value | 
-| --------- | ----- |
-| Entity ID | `1298`  |
-| Object Type  | `1` (Boat) |
-| X | `5669` |
-| Y | `68` |
-| Z | `-5325` |
+| Field       | Value      |
+| ----------- | ---------- |
+| Entity ID   | `1298`     |
+| Object Type | `1` (Boat) |
+| X           | `5669`     |
+| Y           | `68`       |
+| Z           | `-5325`    |

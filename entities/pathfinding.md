@@ -4,21 +4,21 @@ order: 20
 
 # Pathfinding
 
-In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A* (A-Star) search algorithm to calculate these routes across the voxel terrain.
+In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A\* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
 ::: tip MISSING
 A huge chunk of info is still missing!!
 :::
 
-## The A* Heuristic
+## The A\* Heuristic
 
 To determine which blocks to check first, the pathfinder calculates a "score" for each evaluated block (`PathPoint`). Beta 1.7.3 uses a 3D Euclidean distance heuristic.
 
 Each block is scored based on three values:
 
-* G-Score (`totalPathDistance`): The actual walking distance from the mob's starting position to the current block.
-* H-Score (`distanceToNext`): The heuristic. This is the estimated straight-line distance from the current block to the target. It is calculated using the Euclidean distance formula: $h = \sqrt{\Delta x^2 + \Delta y^2 + \Delta z^2}$
-* F-Score (`distanceToTarget`): The total estimated cost of the path, calculated as $f = g + h$.
+- G-Score (`totalPathDistance`): The actual walking distance from the mob's starting position to the current block.
+- H-Score (`distanceToNext`): The heuristic. This is the estimated straight-line distance from the current block to the target. It is calculated using the Euclidean distance formula: $h = \sqrt{\Delta x^2 + \Delta y^2 + \Delta z^2}$
+- F-Score (`distanceToTarget`): The total estimated cost of the path, calculated as $f = g + h$.
 
 The algorithm uses a priority queue to always expand the block with the lowest F-Score. Because the heuristic uses true straight-line distance rather than Manhattan distance (grid-based distance), mobs naturally understand diagonal movement and will attempt to take the most direct angle toward their target when the terrain allows it.
 

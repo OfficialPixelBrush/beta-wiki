@@ -13,14 +13,14 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 
 ## Both
 
-| Field     | Type    | Description                                 |
-| --------- | ------- | ------------------------------------------- |
+| Field     | Type    | Description                             |
+| --------- | ------- | --------------------------------------- |
 | Player ID | Integer | The ID of the player who did the action |
-| Action | Byte | The type of action. Can be `1` or `3`   |
+| Action    | Byte    | The type of action. Can be `1` or `3`   |
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Player ID | `1298` |
-| Action | `1` (Swing Arm) |
+| Field     | Value           |
+| --------- | --------------- |
+| Player ID | `1298`          |
+| Action    | `1` (Swing Arm) |

@@ -5,11 +5,12 @@ order: 131
 
 # Sign
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x82`    | Both |
+| Packet ID | Direction |
+| --------- | --------- |
+| `0x82`    | Both      |
 
 ## Both
+
 Sent by the client when "Done" is clicked in the sign writing dialog.
 
 Sent by the server when a sign is placed or loaded in.
@@ -26,12 +27,12 @@ Sent by the server when a sign is placed or loaded in.
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| X | `70` |
-| Y | `67` |
-| Z | `-6015` |
-| Line 1 | `Hello!` |
-| Line 2 | `Thank you` |
-| Line 3 | `for reading` |
+| Field  | Value          |
+| ------ | -------------- |
+| X      | `70`           |
+| Y      | `67`           |
+| Z      | `-6015`        |
+| Line 1 | `Hello!`       |
+| Line 2 | `Thank you`    |
+| Line 3 | `for reading`  |
 | Line 4 | `this sign :D` |

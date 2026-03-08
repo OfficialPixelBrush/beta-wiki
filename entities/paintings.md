@@ -3,6 +3,7 @@ order: 40
 ---
 
 # Paintings
+
 A comprehensive list of all paintings.
 
 | Value           | Width | Height | X-Offset | Y-Offset |

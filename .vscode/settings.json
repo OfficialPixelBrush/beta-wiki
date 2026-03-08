@@ -1,9 +1,9 @@
 {
-    "files.exclude": {
-        ".vitepress/cache": true,
-        ".vitepress/dist": true,
-        "node_modules": true,
-        "bun.lock": true
-    },
-    "editor.formatOnSave": true
+  "files.exclude": {
+    ".vitepress/cache": true,
+    ".vitepress/dist": true,
+    "node_modules": true,
+    "bun.lock": true
+  },
+  "editor.formatOnSave": true
 }

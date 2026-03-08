@@ -3,27 +3,32 @@ order: 3
 ---
 
 # Entity Metadata
+
 Entity metadata is a format introduced in Beta 1.2 for sending entity state over the network. This page will document the possible metadata values of mobs and how metadata is encoded in Beta 1.7.3. For the packet used to send the metadata, see [Entity Metadata](../networking/packets/040-entity-metadata) and [Spawn Mob Entity](../networking/packets/024-spawn-mob).
 
 ## Format
+
 To read entity metadata, follow these steps in a loop until a value of `127`/`0x7F` is read
+
 1. Get the data type via the top 3 bytes `value >> 5`
 1. Get the metadata ID via the bottom 5 bits, equal to `value & 0x1F`
 
 ## Data Types
+
 These data types function the same as they're described on the [data types page](../technical/data-types), except for a few special types.
 
-| ID | Type | Note |
-| -- | ---- | ---- |
-| 0 | Byte | A signed 8-Bit value |
-| 1 | Short | A signed 16-Bit value |
-| 2 | Integer | A signed 32-Bit value |
-| 3 | Float | A signed 32-Bit IEEE 754 floating-point number |
-| 4 | String | Uses the modified UCS-2 string format |
-| 5 | Item | Short (item/block ID), byte (quantity), short (metadata) |
-| 6 | Coordinates | Three integers for X, Y, and Z |
+| ID  | Type        | Note                                                     |
+| --- | ----------- | -------------------------------------------------------- |
+| 0   | Byte        | A signed 8-Bit value                                     |
+| 1   | Short       | A signed 16-Bit value                                    |
+| 2   | Integer     | A signed 32-Bit value                                    |
+| 3   | Float       | A signed 32-Bit IEEE 754 floating-point number           |
+| 4   | String      | Uses the modified UCS-2 string format                    |
+| 5   | Item        | Short (item/block ID), byte (quantity), short (metadata) |
+| 6   | Coordinates | Three integers for X, Y, and Z                           |
 
 ## Entities
+
 These are the values that're sent with each entity. To get a full listing of all entities and their relevant IDs, check the [mob entities page](../entities/mobs).
 
 <table>
@@ -190,23 +195,25 @@ These are the values that're sent with each entity. To get a full listing of all
 > <sup>2</sup> `0x10` bit indicates shearedness, values `0x0-0xF` indicate the color. [All wool colors are listed on the blocks page](../general/blocks#wool).
 
 ### Flags
+
 All entities extending the `Entity` class must support this bit field at metadata ID 0. In later versions, this is also used for sprinting and eating/drinking. To get the flag at an ID, you can use `value & mask != 0`.
 
-| ID | Bit Mask | Name |
-| --- | --- | --- |
-| 0 | 0x01 | Burning |
-| 1 | 0x02 | Sneaking |
-| 2 | 0x04 | Riding |
+| ID  | Bit Mask | Name     |
+| --- | -------- | -------- |
+| 0   | 0x01     | Burning  |
+| 1   | 0x02     | Sneaking |
+| 2   | 0x04     | Riding   |
 
 ## Relevant Classes
 
-| Name (MCP) | Name (Mojang) | Notes |
-| --- | ------ | ----- |
-| `DataWatcher` | `SynchedEntityData` | Watches metadata values for changes and sends packets. |
-| `WatchableObject` | `SynchedEntityData.DataItem` | Represents a metadata value that can be changed. |
-| `Packet40EntityMetadata` | `SetEntityDataPacket` | The packet that notifies the client of metadata changes in a mob. |
+| Name (MCP)               | Name (Mojang)                | Notes                                                             |
+| ------------------------ | ---------------------------- | ----------------------------------------------------------------- |
+| `DataWatcher`            | `SynchedEntityData`          | Watches metadata values for changes and sends packets.            |
+| `WatchableObject`        | `SynchedEntityData.DataItem` | Represents a metadata value that can be changed.                  |
+| `Packet40EntityMetadata` | `SetEntityDataPacket`        | The packet that notifies the client of metadata changes in a mob. |
 
 ## Further Reading
+
 - [Protocol (wiki.vg)](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769758#Metadata)
 - [Mobs](../entities/mobs)
 - [Entity Metadata Packet](../networking/packets/040-entity-metadata)

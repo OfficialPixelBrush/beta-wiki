@@ -1,42 +1,42 @@
 <template>
-    <span class="color-swatch-wrapper">
-        <span class="swatch" :style="{ backgroundColor: color }"></span>
-        <code v-if="label || true">{{ label || color }}</code>
-    </span>
+  <span class="color-swatch-wrapper">
+    <span class="swatch" :style="{ backgroundColor: color }"></span>
+    <code v-if="label || true">{{ label || color }}</code>
+  </span>
 </template>
 
 <script setup>
 defineProps({
-    color: {
-        type: String,
-        required: true
-    },
+  color: {
+    type: String,
+    required: true,
+  },
 
-    showLabel: {
-        type: Boolean,
-        default: true
-    },
-    
-    label: {
-        type: String,
-        default: '' // empty string means no label
-    }
-})
+  showLabel: {
+    type: Boolean,
+    default: true,
+  },
+
+  label: {
+    type: String,
+    default: "", // empty string means no label
+  },
+});
 </script>
 
 <style scoped>
-    .color-swatch-wrapper {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
+.color-swatch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-    .swatch {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        border-radius: 4px;
-        border: 1px solid var(--vp-c-divider);
-        vertical-align: middle;
-    }
+.swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--vp-c-divider);
+  vertical-align: middle;
+}
 </style>

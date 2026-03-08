@@ -5,8 +5,8 @@ order: 18
 
 # Use Bed
 
-| Packet ID | Direction |
-| --------- | --------- |
+| Packet ID | Direction   |
+| --------- | ----------- |
 | `0x11`    | Clientbound |
 
 ## Clientbound
@@ -17,22 +17,22 @@ When the Entity ID of the client and the Packet are the same, the player is put 
 
 If the Entity ID is that of another player, the relevant entity will lay down in the bed.
 
-| Field     | Type   | Description                                       |
-| --------- | ------ | ------------------------------------------------- |
+| Field     | Type    | Description                              |
+| --------- | ------- | ---------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
-| Unsued | Byte | Always `0` |
-| X      | Integer | The X position of beds headboard |
-| Y      | Byte | The Y position of beds headboard |
-| Z      | Integer | The Z position of beds headboard |
+| Unsued    | Byte    | Always `0`                               |
+| X         | Integer | The X position of beds headboard         |
+| Y         | Byte    | The Y position of beds headboard         |
+| Z         | Integer | The Z position of beds headboard         |
 
 ## Example Packet
 
 ### Clientbound
 
-| Field     | Value    |
-| --------- | -------- |
-| Entity ID | `1` |
-| Unused | `0` |
-| X | `53` |
-| Y | `75` |
-| Z | `-54` |
+| Field     | Value |
+| --------- | ----- |
+| Entity ID | `1`   |
+| Unused    | `0`   |
+| X         | `53`  |
+| Y         | `75`  |
+| Z         | `-54` |

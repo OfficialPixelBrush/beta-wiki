@@ -7,28 +7,28 @@ order: 2
 # Login
 
 | Packet ID | Direction |
-| --- | --- |
-| `0x01` | Both |
+| --------- | --------- |
+| `0x01`    | Both      |
 
 This packet is sent after [Handshake](002-handshake) to finish logging in. The server is expected to kick the client if any fields are invalid or the client's protocol version does not match the server. The unused fields are also useful for negotiating mod support.
 
 ## Clientbound
 
-| Field      | Type     | Description                             |
-| ---------- | -------- | --------------------------------------- |
-| Entity ID  | Integer  | The entity ID of the player             |
+| Field      | Type     | Description                               |
+| ---------- | -------- | ----------------------------------------- |
+| Entity ID  | Integer  | The entity ID of the player               |
 | Unused     | String16 | This string is always Empty (Size of `0`) |
-| World Seed | Long     | The random seed for terrain generation  |
-| Dimension  | Byte     | The player's spawning dimension         |
+| World Seed | Long     | The random seed for terrain generation    |
+| Dimension  | Byte     | The player's spawning dimension           |
 
 The player's dimension is specified as `0` for The Overworld and `-1` for The Nether.
 
 ## Serverbound
 
-| Field            | Type     | Description                           |
-| ---------------- | -------- | ------------------------------------- |
-| Protocol Version | Integer  | The current protocol version is `14` |
-| Username         | String16 | The name of the connecting user      |
+| Field            | Type     | Description                                               |
+| ---------------- | -------- | --------------------------------------------------------- |
+| Protocol Version | Integer  | The current protocol version is `14`                      |
+| Username         | String16 | The name of the connecting user                           |
 | Unused           | Long     | This value is not used by the client but still expects it |
 | Unused           | Byte     | This value is not used by the client but still expects it |
 
@@ -36,18 +36,18 @@ The player's dimension is specified as `0` for The Overworld and `-1` for The Ne
 
 ### Clientbound
 
-| Field | Value | 
-| --- | --- |
-| Entity ID | `1298` |
-| Unused | (EMPTY) |
+| Field      | Value                |
+| ---------- | -------------------- |
+| Entity ID  | `1298`               |
+| Unused     | (EMPTY)              |
 | World Seed | `971768181197178410` |
-| Dimension | `0` |
+| Dimension  | `0`                  |
 
 ### Serverbound
 
-| Field | Value | 
-| --- | --- |
-| Protocol Version | `14` |
-| Username | `Notch` |
-| Unused | `0` |
-| Unused | `0` |
+| Field            | Value   |
+| ---------------- | ------- |
+| Protocol Version | `14`    |
+| Username         | `Notch` |
+| Unused           | `0`     |
+| Unused           | `0`     |

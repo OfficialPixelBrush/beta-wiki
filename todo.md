@@ -1,33 +1,34 @@
 # To-Do
+
 A rough list of everything that still needs to be done. Lots to do!
 
 - Networking
-    - Behaviors
-        - Inventories
-        - Item dropping
-        - Item collecting
-        - Mob spawning
-        - Mob despawning
-        - Vehicles
+  - Behaviors
+    - Inventories
+    - Item dropping
+    - Item collecting
+    - Mob spawning
+    - Mob despawning
+    - Vehicles
 - Rendering
-    - Meshing
+  - Meshing
 - Worlds
-    - Player files
-    - McRegion Structure
-    - How to write a chunk to a region
-    - How to best hold onto Region data
+  - Player files
+  - McRegion Structure
+  - How to write a chunk to a region
+  - How to best hold onto Region data
 - Generation (Partial)
-    - Surface Population
-        - Foliage Generation
-        - Tree Generation
-            - Oak/Birch Generation
-            - Big Oak Generation
-            - Spruce Generation
-        - Ore Generation
+  - Surface Population
+    - Foliage Generation
+    - Tree Generation
+      - Oak/Birch Generation
+      - Big Oak Generation
+      - Spruce Generation
+    - Ore Generation
 - Entities (Partial)
-    - Pathfinding
+  - Pathfinding
 - Redstone (Partial)
-    - Wire
-    - Piston
-    - Sticky Piston
-    - Bugs/Quirks
+  - Wire
+  - Piston
+  - Sticky Piston
+  - Bugs/Quirks

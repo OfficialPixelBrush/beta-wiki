@@ -13,14 +13,14 @@ Sent to the client when an item entity should play the item collection animation
 
 ## Clientbound
 
-| Field     | Type    | Description                                  |
-| --------- | ------- | -------------------------------------------- |
-| Entity ID (Item) | Integer | The ID of the entity that will refer to this item |
+| Field                 | Type    | Description                                              |
+| --------------------- | ------- | -------------------------------------------------------- |
+| Entity ID (Item)      | Integer | The ID of the entity that will refer to this item        |
 | Entity ID (Collector) | Integer | The ID of the entity that the item is being collected by |
 
 ## Example Packet
 
-| Field     | Value | 
-| --------- | ----- |
-| Entity ID (Item) | `1298` |
-| Entity ID (Collector) | `2` |
+| Field                 | Value  |
+| --------------------- | ------ |
+| Entity ID (Item)      | `1298` |
+| Entity ID (Collector) | `2`    |

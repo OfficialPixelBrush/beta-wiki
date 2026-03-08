@@ -5,22 +5,22 @@ order: 201
 
 # Statistic
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0xC8`    | Clientbound      |
+| Packet ID | Direction   |
+| --------- | ----------- |
+| `0xC8`    | Clientbound |
 
 Increment the relevant statistic.
 
 ## Clientbound
 
-| Field | Type    | Description |
-| ----- | ------- | --- |
+| Field        | Type    | Description                                         |
+| ------------ | ------- | --------------------------------------------------- |
 | Statistic ID | Integer | [The ID of the statistic](../../general/statistics) |
-| Amount | Byte | Amount to increment the statistic |
+| Amount       | Byte    | Amount to increment the statistic                   |
 
 ## Example packet
 
-| Field | Value | 
-| --- | --- |
+| Field        | Value          |
+| ------------ | -------------- |
 | Statistic ID | `2010` (Jumps) |
-| Amount | `1` |
+| Amount       | `1`            |

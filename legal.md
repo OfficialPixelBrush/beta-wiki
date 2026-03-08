@@ -14,6 +14,7 @@ Some pages still contain snippets of info or pseudocode that closely resemble th
 Most parts of the wiki were written with no insight into the decompiled code, and are thus perfectly safe for any FOSS projects.
 
 ### Probably Safe
+
 The following is a list of pages that were created while directly referencing the decompiled Beta 1.7.3 code but they do not show any decompiled or pseudocode that resembles the decomp. They may contain numbers or algorithms that were taken directly from the decomp.
 
 - [Networking/Authentication](./networking/authentication)
@@ -23,6 +24,7 @@ The following is a list of pages that were created while directly referencing th
 - [Worlds/Map Item](./worlds/mapItem)
 
 ### Potentially Unsafe
+
 The following is a list of pages that were created while directly referencing the decompiled Beta 1.7.3 code, and thus may cause issues if any code on them is directly referenced and implemented as it currently directly showcases parts that're based on decompiled code.
 
 - [Worlds/Biomes](./worlds/biomes)

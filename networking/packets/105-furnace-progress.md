@@ -13,16 +13,16 @@ This is sent by the server to update the progress of fuel burning or progress of
 
 ## Clientbound
 
-| Field     | Type  | Description                                                            |
-| --------- | ----- | ---------------------------------------------------------------------- |
+| Field     | Type  | Description                                                           |
+| --------- | ----- | --------------------------------------------------------------------- |
 | Window ID | Byte  | The incremental ID of the window. Ranges from 0 to 99                 |
 | Bar       | Short | `0` for the smelting bar, `1` for the fuel bar, `2` for max burn time |
 | Value     | Short | The progress of the bar                                               |
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Window ID | `49` |
-| Bar | `0` |
-| Value | `0` |
+| Field     | Value |
+| --------- | ----- |
+| Window ID | `49`  |
+| Bar       | `0`   |
+| Value     | `0`   |

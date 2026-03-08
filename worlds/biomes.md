@@ -1,33 +1,37 @@
 ---
 order: 5
+description: Biomes are regions with differing foliage, terrain etc.
 ---
 
 # Biomes
+
 Biomes are regions with differing foliage, terrain etc.
 
 > [!NOTE]
 > The seed used throughout all of these examples is `3257840388504953787`, the seed behind [`pack.png`](https://minecraftathome.com/projects/packpng.html).
 
 ## Biome List
+
 There exist 13 distinct Biomes in Beta 1.7.3. They each have unique properties, mainly if they can show rain particles, if it can snow in them, and what their respective foliage and map colors are.
 
-| Name            | Top Block | Filler Block | Rain | Snow |                                 Foliage Color                                  |                                   Map Color                                    |
-| :-------------- | :-------: | :----------: | :--: | :--: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
-| Rainforest      |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#1FF458" /> | <ColorSwatch color="#8FA360" /> |
-| Swampland       |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#8BAF48" /> | <ColorSwatch color="#7F9B20" /> |
-| Seasonal Forest |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#9BE023" /> |
-| Forest          |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EBA31" /> | <ColorSwatch color="#566210" /> |
-| Savanna         |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#D9E023" /> |
-| Shrubland       |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#A1AD20" /> |
-| Taiga           |   Grass   |     Dirt     |  ✅   |  ✅   | <ColorSwatch color="#7BB731" /> | <ColorSwatch color="#2EB153" /> |
-| Desert          |   Sand    |     Sand     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FA9418" /> |
-| Plains          |   Grass   |     Dirt     |  ✅   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FFD910" /> |
-| Ice Desert      |   Sand    |     Sand     |  ❌   |  ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#FFED93" /> |
-| Tundra          |   Grass   |     Dirt     |  ✅   |  ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#57EBF9" /> |
-| Hell            |   Grass   |     Dirt     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FF0000" /> |
-| Sky             |   Grass   |     Dirt     |  ❌   |  ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#8080FF" /> |
+| Name            | Top Block | Filler Block | Rain | Snow |          Foliage Color          |            Map Color            |
+| :-------------- | :-------: | :----------: | :--: | :--: | :-----------------------------: | :-----------------------------: |
+| Rainforest      |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#1FF458" /> | <ColorSwatch color="#8FA360" /> |
+| Swampland       |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#8BAF48" /> | <ColorSwatch color="#7F9B20" /> |
+| Seasonal Forest |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#9BE023" /> |
+| Forest          |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EBA31" /> | <ColorSwatch color="#566210" /> |
+| Savanna         |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#D9E023" /> |
+| Shrubland       |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#A1AD20" /> |
+| Taiga           |   Grass   |     Dirt     |  ✅  |  ✅  | <ColorSwatch color="#7BB731" /> | <ColorSwatch color="#2EB153" /> |
+| Desert          |   Sand    |     Sand     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FA9418" /> |
+| Plains          |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FFD910" /> |
+| Ice Desert      |   Sand    |     Sand     |  ❌  |  ✅  | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#FFED93" /> |
+| Tundra          |   Grass   |     Dirt     |  ✅  |  ✅  | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#57EBF9" /> |
+| Hell            |   Grass   |     Dirt     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FF0000" /> |
+| Sky             |   Grass   |     Dirt     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#8080FF" /> |
 
 ## Lookup table
+
 A `64x64` lookup table is generated to more quickly calculate the appropriate biome to use.
 
 ```c
@@ -69,35 +73,38 @@ Biome GetBiome(float temperature, float humidity) {
 
 If mapped to an image, using the foliage/map colors, we get this.
 
-| Foliage Colors | Map Colors |
-| :---: | :---: |
+|                                                         Foliage Colors                                                          |                                                       Map Colors                                                        |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
 | <img src="./images/biome/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
 
 <sub>Temperature is X, Humidity is Y. Range is from `0` to `64` (or `0.0` to `1.0`) on both axes. [Notch drew this graph back in 2011.](https://minecraft.wiki/w/File:NotchBiomeGraph.png)
 </sub>
 
 ## Biome Noise
+
 The function which determines what biome is use in a chunk is relatively simple.
 It mainly uses 3 [Octave Simplex Noise Generators](../technical/noise#simplex-noise).
 
 ### Noise Octaves
+
 The current Chunk Coordinate, scaled to Block-Space (multiplied by `16`), is passed in, alongside how many values the generator should return (`16x16` for one chunk) and a scaling factor.
 
-| Generator | Octaves | Scale |
-| --- | :---: | ---: |
-| Temperature | `4` | `(0.025, 0.025, 0.25)` |
-| Humidity | `4` | `(0.05, 0.05, 1/3)` |
-| Variation | `2` | `(0.25, 0.25, 0.5882352941176471)` |
+| Generator   | Octaves |                              Scale |
+| ----------- | :-----: | ---------------------------------: |
+| Temperature |   `4`   |             `(0.025, 0.025, 0.25)` |
+| Humidity    |   `4`   |                `(0.05, 0.05, 1/3)` |
+| Variation   |   `2`   | `(0.25, 0.25, 0.5882352941176471)` |
 
 Each of these return a `16x16` array of 64-Bit floating point numbers, which're that chunks' temperature, humidity and variation values.
 
-| Temperature | Humidity | Variation |
-| :---: | :---: | :---: |
+|                                                            Temperature                                                            |                                                          Humidity                                                           |                                                            Variation                                                            |
+| :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
 | <img src="./images/biome/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values from chunk `-1,-1` to `1,1`. These values are in the `0.0 - 2.0` range.</sub>
 
 ### Biome map
+
 The final biomes for each section are determined by iterating over the `16x16` array and performing the following actions for each entry.
 
 ```c
@@ -125,14 +132,14 @@ for (int i = 0; i < 16*16; i++) {
 
 The returned biome map can look something like this over a 3x3 chunk area.
 
-| Foliage Colors | Map Colors |
-| :---: | :---: |
+|                                                                Foliage Colors                                                                |                                                              Map Colors                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
 | <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
 
 The temperature and humidity values are changed by this function, resulting in a different set of values, to be used in later generation stages.
 
-| Temperature | Humidity | Variation |
-| :---: | :---: | :---: |
+|                                                            Temperature                                                             |                                                           Humidity                                                           |                                                            Variation                                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
 | <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and Variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
@@ -140,4 +147,5 @@ The temperature and humidity values are changed by this function, resulting in a
 This is then passed to the [World Generator](generation).
 
 ## Further reading
+
 Check out the page for the [World Generator](generation).

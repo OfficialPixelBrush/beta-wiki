@@ -19,6 +19,6 @@ This is sent by the server to control precipitation or to notify that their bed 
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Type | `1` (Start Raining) |
+| Field | Value               |
+| ----- | ------------------- |
+| Type  | `1` (Start Raining) |

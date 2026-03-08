@@ -13,16 +13,16 @@ This is sent by the player when an entity is left/right-clicked. The server shou
 
 ## Clientbound
 
-| Field       | Type    | Description                                       |
-| ----------- | ------- | ------------------------------------------------- |
+| Field       | Type    | Description                                      |
+| ----------- | ------- | ------------------------------------------------ |
 | Player ID   | Integer | The ID of the player who clicked the entity      |
 | Entity ID   | Integer | The ID of the entity that was clicked            |
 | Left-Click? | Boolean | Whether the player left-clicked or right-clicked |
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Player ID | `1298` |
-| Entity ID | `1805` |
+| Field       | Value  |
+| ----------- | ------ |
+| Player ID   | `1298` |
+| Entity ID   | `1805` |
 | Left-Click? | `true` |

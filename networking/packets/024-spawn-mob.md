@@ -13,26 +13,26 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 
 ## Clientbound
 
-| Field     | Type    | Description                                  |
-| --------- | ------- | -------------------------------------------- |
+| Field     | Type    | Description                                      |
+| --------- | ------- | ------------------------------------------------ |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
-| Mob Type  | Byte | [The type of the mob](../../entities/mobs) |
-| X      | Integer | The X block position of the mob  |
-| Y      | Integer | The Y block position of the mob  |
-| Z      | Integer | The Z block position of the mob  |
-| Yaw | Byte | Rotation on the X Axis (Quantized) |
-| Pitch | Byte | Rotation on the Y Axis (Quantized) |
-| Metadata | - | [Additional entity metadata](../entity-metadata) |
+| Mob Type  | Byte    | [The type of the mob](../../entities/mobs)       |
+| X         | Integer | The X block position of the mob                  |
+| Y         | Integer | The Y block position of the mob                  |
+| Z         | Integer | The Z block position of the mob                  |
+| Yaw       | Byte    | Rotation on the X Axis (Quantized)               |
+| Pitch     | Byte    | Rotation on the Y Axis (Quantized)               |
+| Metadata  | -       | [Additional entity metadata](../entity-metadata) |
 
 ## Example Packet
 
-| Field     | Value | 
-| --------- | ----- |
-| Entity ID | `1298`  |
-| Mob Type | `90` |
-| X | `5669` |
-| Y | `68` |
-| Z | `-5325` |
-| Yaw | `16` (`22.58`) |
-| Pitch | `9` (`12.70`) |
-| Metadata | `0x00 0x01 0x7F` |
+| Field     | Value            |
+| --------- | ---------------- |
+| Entity ID | `1298`           |
+| Mob Type  | `90`             |
+| X         | `5669`           |
+| Y         | `68`             |
+| Z         | `-5325`          |
+| Yaw       | `16` (`22.58`)   |
+| Pitch     | `9` (`12.70`)    |
+| Metadata  | `0x00 0x01 0x7F` |

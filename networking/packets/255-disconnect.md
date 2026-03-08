@@ -5,9 +5,9 @@ order: 256
 
 # Disconnect
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0xFF`    | Both |
+| Packet ID | Direction |
+| --------- | --------- |
+| `0xFF`    | Both      |
 
 This packet is used by the server to disconnect the client with a reason, after which it will close the connection. Due to this, when the Server disconnects the Client, the Client often doesn't even receive the Disconnect Message\*.
 
@@ -15,19 +15,18 @@ This packet is used by the server to disconnect the client with a reason, after 
 
 ## Clientbound
 
-| Field  | Type     | Description                              |
-| ------ | -------- | ---------------------------------------- |
+| Field  | Type     | Description                             |
+| ------ | -------- | --------------------------------------- |
 | Reason | String16 | The reason for disconnecting the client |
 
-## Serverbound 
+## Serverbound
 
-| Field  | Type     | Description                              |
-| ------ | -------- | ---------------------------------------- |
+| Field  | Type     | Description                        |
+| ------ | -------- | ---------------------------------- |
 | Reason | String16 | The reason the client disconnected |
-
 
 ## Example Packet
 
-| Field | Value |
-| --- | --- |
+| Field  | Value                 |
+| ------ | --------------------- |
 | Reason | `The server is full!` |

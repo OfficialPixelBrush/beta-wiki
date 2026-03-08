@@ -5,17 +5,21 @@ order: 10
 # Beds
 
 ## A client tries to sleep in a bed
+
 - Client interacts with bed block
 - Use Bed Packet is sent to client
 
 ## Another client observes a player getting into bed
+
 - Use Bed Packet is sent to client
 
 ## A player clicks "Leave Bed"
+
 - Entity Action is received by Server
 - Animation Packet with value 3 to client
 
 ## Another player observes a player getting out of bed
+
 - Animation Packet with value 3 to client
 
 > [!WARNING]

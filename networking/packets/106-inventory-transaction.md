@@ -5,24 +5,24 @@ order: 107
 
 # Inventory Transaction
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x6A`    | Both |
+| Packet ID | Direction |
+| --------- | --------- |
+| `0x6A`    | Both      |
 
 This packet is sent to indicate if an inventory transaction was accepted.
 
 ## Both
 
-| Field | Type    | Description |
-| ----- | ------- | --- |
-| Window ID | Byte  | The incremental ID of the window. Ranges from 0 to 99 |
-| Action number | Short | The unique ID for this action |
-| Accepted | Boolean | If the action was accepted |
+| Field         | Type    | Description                                           |
+| ------------- | ------- | ----------------------------------------------------- |
+| Window ID     | Byte    | The incremental ID of the window. Ranges from 0 to 99 |
+| Action number | Short   | The unique ID for this action                         |
+| Accepted      | Boolean | If the action was accepted                            |
 
 ## Example packet
 
-| Field | Value | 
-| --- | --- |
-| Window ID | `2` |
-| Action number | `1` |
-| Accepted | `true` |
+| Field         | Value  |
+| ------------- | ------ |
+| Window ID     | `2`    |
+| Action number | `1`    |
+| Accepted      | `true` |

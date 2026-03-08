@@ -13,8 +13,8 @@ After an entity has been spawned, this packet may be sent to change the armor an
 
 ## Clientbound
 
-| Field          | Type    | Description                              |
-| -------------- | ------- | ---------------------------------------- |
+| Field          | Type    | Description                             |
+| -------------- | ------- | --------------------------------------- |
 | Entity ID      | Integer | The ID of the player/entity             |
 | Inventory Slot | Short   | `0` for held item, `1` to `4` for armor |
 | Item ID        | Short   | `-1` to reset the slot to be empty      |
@@ -26,9 +26,9 @@ TODO: What armor slots specifically?
 
 ## Example Packet
 
-| Field | Value |
-| --- | --- |
-| Entity ID | `1298` |
-| Inventory Slot | `0` |
-| Item ID | `276` (Diamond Sword) |
-| Item Metadata | `0` |
+| Field          | Value                 |
+| -------------- | --------------------- |
+| Entity ID      | `1298`                |
+| Inventory Slot | `0`                   |
+| Item ID        | `276` (Diamond Sword) |
+| Item Metadata  | `0`                   |

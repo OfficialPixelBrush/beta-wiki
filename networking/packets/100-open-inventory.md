@@ -13,8 +13,8 @@ This packet is sent by the server when an inventory/window is opened. The type o
 
 ## Clientbound
 
-| Field     | Type    | Description                                                                    |
-| --------- | ------- | ------------------------------------------------------------------------------ |
+| Field     | Type    | Description                                                                   |
+| --------- | ------- | ----------------------------------------------------------------------------- |
 | Window ID | Byte    | The incremental ID of the window. Ranges from 0 to 99                         |
 | Type      | Byte    | The type of the inventory. See above                                          |
 | Title     | String8 | The name of the window                                                        |
@@ -30,9 +30,9 @@ This packet is sent by the server when an inventory/window is opened. The type o
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Window ID | `49` |
-| Type | `0` |
-| Title | `Chest` |
-| Size | `27` |
+| Field     | Value   |
+| --------- | ------- |
+| Window ID | `49`    |
+| Type      | `0`     |
+| Title     | `Chest` |
+| Size      | `27`    |

@@ -3,18 +3,23 @@
 There are many ways in which anyone can contribute to the wiki. [Look at the repository on Github](https://github.com/OfficialPixelBrush/beta-wiki/)!
 
 ## Confirming existing information
+
 Simply double, triple or quintupple checking that all information presented on the wiki is factully correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
 
 ## Fixing issues
+
 If you [find an issue on GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) that strikes your fancy, or you think you can resolve, please do so!
 
 ## Pull Request
+
 Making a pull request is relatively straightforward. Just fork the repo, make the changes you want to, and then just create a pull request on GitHub. This is even easier with GitHub Desktop.
 
 # Development
+
 You'll need to install [`bun`](https://bun.sh) (or another package manager if you prefer)
 
 After cloning the repo you can test the website with
+
 ```bash
 bun dev
 ```
@@ -22,11 +27,13 @@ bun dev
 It'll install whatever dependencies you need automatically.
 
 If you want to make a static build for hosting, run
+
 ```bash
 bun run build
 ```
 
 This can be previewed with
+
 ```bash
 bun preview
 ```
@@ -36,6 +43,7 @@ bun preview
 ## Considerations
 
 The following is a list of stylistic and formal considerations that should be taken into account when creating a page, going from most to least important.
+
 1. The page should be readable in a non-markdown text editor
 1. The page should not rely on external links, and be entirely usable without them
 1. The page should not rely on any online-only elements and be usable as a downloaded file too (either `.md` or `.html`)

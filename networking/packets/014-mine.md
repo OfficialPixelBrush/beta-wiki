@@ -5,28 +5,29 @@ order: 15
 
 # Mine
 
-| Packet ID | Direction |
-| --------- | --------- |
+| Packet ID | Direction   |
+| --------- | ----------- |
 | `0x0E`    | Serverbound |
 
 ## Serverbound
+
 Sent to the server when the player attempts to mine a block. If a block is mined, this must be followed up by a [block update packet](053-block-update) that turns it into air!
 
-| Field     | Type   | Description                                       |
-| --------- | ------ | ------------------------------------------------- |
-| Status | Byte | The action the player is taking against the block |
-| X         | Integer | The X position of the block                      |
-| Y         | Byte | The Y position of the block                      |
-| Z         | Integer | The Z position of the block                      |
-| Face | Byte | The face of the block that's being mined |
+| Field  | Type    | Description                                       |
+| ------ | ------- | ------------------------------------------------- |
+| Status | Byte    | The action the player is taking against the block |
+| X      | Integer | The X position of the block                       |
+| Y      | Byte    | The Y position of the block                       |
+| Z      | Integer | The Z position of the block                       |
+| Face   | Byte    | The face of the block that's being mined          |
 
 The status can represent one of three values.
 
-| Status | Value |
-| --- | --- |
-| Started digging | `0` |
-| Finished digging | `2` |
-| Drop item | `4` |
+| Status           | Value |
+| ---------------- | ----- |
+| Started digging  | `0`   |
+| Finished digging | `2`   |
+| Drop item        | `4`   |
 
 `Started digging` is sent whenever a client wants to start mining a block.
 `Finished digging` is only sent when the client thinks its broken a block. as a result, it should be checked on the server-side if the amount of time the client took to break the block is appropriate.
@@ -36,18 +37,18 @@ If a client stops breaking a block the server isn't informed of this.
 
 The face can be one of six values, representing the face being hit.
 
-| Value | 0 | 1  | 2    | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Face | -Y | +Y | -Z   | +Z | -X | +X |
+| Value | 0   | 1   | 2   | 3   | 4   | 5   |
+| ----- | --- | --- | --- | --- | --- | --- |
+| Face  | -Y  | +Y  | -Z  | +Z  | -X  | +X  |
 
 ## Example Packet
 
 ### Serverbound
 
-| Field     | Value    |
-| --------- | -------- |
+| Field  | Value                 |
+| ------ | --------------------- |
 | Status | `0` (Started Digging) |
-| X | `-6231` |
-| Y | `53` |
-| Z | `563` |
-| Face | `3` (+Z) |
+| X      | `-6231`               |
+| Y      | `53`                  |
+| Z      | `563`                 |
+| Face   | `3` (+Z)              |

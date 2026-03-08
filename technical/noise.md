@@ -3,6 +3,7 @@ order: 5
 ---
 
 # Noise
+
 This page will explain how the Perlin Noise Generator up to at least Beta 1.7.3 worked.
 
 ::: tip MISSING
@@ -10,6 +11,7 @@ Large parts of this are either missing or super simplified. Minecraft sometimes 
 :::
 
 ## Perlin Noise
+
 The algorithm used by most of Minecraft's Terrain is based on "Improved Perlin Noise", first published in 2002, which is a slightly tweaked version of the original Perlin Noise Algorithm from 1985, both by Ken Perlin.
 
 The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654.566636), however a more accessible option is the [Wikipedia page on Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
@@ -20,17 +22,20 @@ The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noisePerlin.cpp).
 
 ## Simplex Noise
+
 Minecraft utilizes a slightly modified implementation of Simplex Noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noiseSimplex.cpp).
 
 ## Modifications made for Minecraft
+
 The main differences that arise in the Perlin and Simplex Noise generators comes from some slight tweaks that were made when implementing them.
 
 1. An inital pseudorandom offset is assigned to each of the coordinates of the noise generator `coordinate = nextDouble() * 256.0;`
 2. For shuffling the permutation table, once again, Javas PRNG is used
 
 ## Noise Octaves
+
 A common practice when using any noise is to use multiple octaves/layers of it to improve fine detail, resulting in a more realistic or natural appearance.
 
 It boils down to halving the size of the noise, while also halving the amount of noise each additional octave adds.
@@ -50,4 +55,5 @@ return total;
 Some of the octave generation functions work a little differently than others. Check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noiseOctaves.cpp) for more info.
 
 ## Further reading
+
 From here on out, one can read about how the rest of the world generation is done. Check out the page for the [World Generator](../worlds/generation).

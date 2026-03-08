@@ -19,13 +19,12 @@ The server can also colorize chat messages by prepending the section sign and th
 
 ## Both
 
-| Field   | Type     | Description             |
-| ------- | -------- | ----------------------- |
+| Field   | Type     | Description            |
+| ------- | -------- | ---------------------- |
 | Message | String16 | The message being sent |
-
 
 ## Example Packet
 
-| Field | Value |
-| --- | --- |
+| Field   | Value                  |
+| ------- | ---------------------- |
 | Message | `<Notch> Hello world!` |

@@ -1,13 +1,13 @@
 .vp-doc table {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
 }
 
 .medium-zoom-overlay {
-    z-index: 30;
+  z-index: 30;
 }
 
 .medium-zoom-image--opened {
-    z-index: 31;
+  z-index: 31;
 }

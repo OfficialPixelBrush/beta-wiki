@@ -6,25 +6,25 @@ import mediumZoom from "medium-zoom";
 import "./index.css";
 
 export default {
-    extends: DefaultTheme,
+  extends: DefaultTheme,
 
-    enhanceApp: ({ app }) => {
-        app.component("ColorSwatch", ColorSwatch);
-    },
+  enhanceApp: ({ app }) => {
+    app.component("ColorSwatch", ColorSwatch);
+  },
 
-    // TODO: this is deprecated
-    setup: () => {
-        const route = useRoute();
-        const initZoom = () => {
-            mediumZoom("img.zoom", { background: "var(--vp-c-bg)" });
-            mediumZoom("[data-zoomable]", { background: "var(--vp-c-bg)" });
-        };
+  // TODO: this is deprecated
+  setup: () => {
+    const route = useRoute();
+    const initZoom = () => {
+      mediumZoom("img.zoom", { background: "var(--vp-c-bg)" });
+      mediumZoom("[data-zoomable]", { background: "var(--vp-c-bg)" });
+    };
 
-        onMounted(() => initZoom());
+    onMounted(() => initZoom());
 
-        watch(
-            () => route.path,
-            () => nextTick(() => initZoom())
-        );
-    }
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom()),
+    );
+  },
 } satisfies Theme;

@@ -3,26 +3,33 @@ order: 20
 ---
 
 # Compression
+
 Compression is used throughout many parts of Minecraft. The `level.dat` file is a `Gzip` compressed NBT file, while McRegion files are `Zlib`/`deflate` compressed NBT files.
 
 # Deflate
+
 Deflate is the basic algorithm that is mainly used by both Gzip and Zlib, which essentially just act as thin wrappers around it.
 
 # Gzip
+
 Gzip is an abstraction of the Deflate algorithm, adding some header and trailer info. It is used for most easily visible NBT files, namely `level.dat`.
 
 # Zlib
+
 Zlib is an abstraction of the Deflate algorithm, adding some basic error detection and more that the default Deflate data does not have. It is mostly used for compressing Chunk data as part of the [McRegion format](../worlds/worldFormat#mcregion).
 
 ## Compressed data
+
 For reading about how zlib itself works in more detail, I recommend checking out either the [zlib Wikipedia page](https://en.wikipedia.org/wiki/Gzip) or the [zlib RFC page](https://www.rfc-editor.org/rfc/rfc1950).
 
 ## Uncompressed data
+
 Although this is a little unorthodox, it is entirely possible to store uncompressed data in a barebones zlib/deflate format. This is very useful for when you're writing everything from scratch and can't be bothered to implement an actual compression algorithm, or are running your code in a very resource constrained environment.
 
 The basic idea boils down to disabling as many features as possible and forcing deflate to not utilize compression.
 
 Here's some pseudocode, [based on the implementation from PicoCraft](https://github.com/OfficialPixelBrush/PicoCraft/blob/c2abf98c595bb47f0498e14726a26857c6382fa4/picocraft/picocraft.ino#L373), to illustrate the basic idea.
+
 ```c
 // The header adds 11 bytes onto our payload
 int payLoadWithHeader = payLoadSize + 11;
@@ -62,7 +69,9 @@ The final layout looks as follows.
 ![Uncompressed Zlib Block](uncompressedZlib.svg)
 
 ## Adler32 Checksum
+
 This is the checksum that goes at the end of a zlib header. This is based on the sample code from the [RFC page for the Zlib specification](https://www.rfc-editor.org/rfc/rfc1950#section-9), where you can find some more info on how and why it works.
+
 ```c
 unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
     unsigned int A = 1;
@@ -76,9 +85,11 @@ unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
     return (B << 16) | A;
 }
 ```
+
 A more efficient implementation can be seen in the `zlib` source code or `js-adler32`. Check [Wikipedia](https://en.wikipedia.org/wiki/Adler-32#Example_implementation) for more info!
 
 # Further Reading
+
 - [deflate (Wikipedia)](https://en.wikipedia.org/wiki/Deflate)
 - [DEFLATE Compressed Data Format Specification version 1.3 (RFC)](https://www.rfc-editor.org/rfc/rfc1951)
 - [gzip (Wikipedia)](https://en.wikipedia.org/wiki/Gzip)

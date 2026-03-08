@@ -5,32 +5,32 @@ order: 34
 
 # Entity Relative Position and Look
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x21`    | Clientbound      |
-
+| Packet ID | Direction   |
+| --------- | ----------- |
+| `0x21`    | Clientbound |
 
 ## Clientbound
+
 Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks. Position and rotation data is in [entity space](../terminology#entity-space) and thus quantized.
 
-| Field  | Type   | Description                  |
-| ------ | ------ | ---------------------------- |
+| Field     | Type    | Description                               |
+| --------- | ------- | ----------------------------------------- |
 | Entity ID | Integer | The ID of the entity that should be moved |
-| X      | Byte | The X position of the player (Quantized) |
-| Y      | Byte | The Y position of the player (Quantized) |
-| Z      | Byte | The Z position of the player (Quantized) |
-| Yaw | Byte | Rotation on the X Axis (Quantized) |
-| Pitch | Byte | Rotation on the Y Axis (Quantized) |
+| X         | Byte    | The X position of the player (Quantized)  |
+| Y         | Byte    | The Y position of the player (Quantized)  |
+| Z         | Byte    | The Z position of the player (Quantized)  |
+| Yaw       | Byte    | Rotation on the X Axis (Quantized)        |
+| Pitch     | Byte    | Rotation on the Y Axis (Quantized)        |
 
 ## Example Packets
 
 ### Clientbound
 
-| Field  | Value    |
-| ------ | -------- |
-| Entity ID | `1298`  |
-| X | `5` (`0.15`) |
-| Y | `2` (`0.06`) |
-| Z | `15` (`0.46`) |
-| Yaw | `16` (`22.58`) |
-| Pitch | `9` (`12.70`) |
+| Field     | Value          |
+| --------- | -------------- |
+| Entity ID | `1298`         |
+| X         | `5` (`0.15`)   |
+| Y         | `2` (`0.06`)   |
+| Z         | `15` (`0.46`)  |
+| Yaw       | `16` (`22.58`) |
+| Pitch     | `9` (`12.70`)  |

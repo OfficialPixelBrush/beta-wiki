@@ -13,12 +13,12 @@ This packet is sent by the client when closing an inventory/window, and by the s
 
 ## Both
 
-| Field     | Type | Description                                            |
-| --------- | ---- | ------------------------------------------------------ |
+| Field     | Type | Description                                           |
+| --------- | ---- | ----------------------------------------------------- |
 | Window ID | Byte | The incremental ID of the window. Ranges from 0 to 99 |
 
 ## Example Packet
 
-| Field | Value | 
-| --- | --- |
-| Window ID | `49` |
+| Field     | Value |
+| --------- | ----- |
+| Window ID | `49`  |
