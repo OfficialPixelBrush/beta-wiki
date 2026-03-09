@@ -1,5 +1,7 @@
 ---
 title: 0x3D Effect
+description: 
+This is sent by the server when it expects a client to play a sound effect or spawn a particle.
 order: 62
 ---
 
@@ -30,3 +32,7 @@ This is sent by the server when it expects a client to play a sound effect or sp
 | Y         | `72`                |
 | Z         | `649`               |
 | Data      | `2257` (cat)        |
+
+## Further reading
+
+- [Particles](../../rendering/particles)

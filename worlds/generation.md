@@ -343,6 +343,6 @@ The initial heightmap generation boils down to iterating through every `xz` coor
 
 Continue onto the [population page](population) to find out more.
 
-## Further Reading
+## Further reading
 
 - [Java Edition Far Lands/Infdev 20100327 to Beta 1.7.3](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3)

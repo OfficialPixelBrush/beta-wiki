@@ -69,6 +69,6 @@ Our seed, after being initialized, would now become `0x7F9FD7F08029`/`1403244993
 How the next function is used to generate other numers
 :::
 
-## Further Reading
+## Further reading
 
 - [Random.java (JDK8 Source Code)](https://github.com/openjdk/jdk8u-dev/blob/master/jdk/src/share/classes/java/util/Random.java)

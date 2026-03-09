@@ -45,3 +45,8 @@ Some particles are not spawned via a string id, though two of these are likely o
 Block Destruction particles are handled slightly differently. The game will spawn 64 particles, evenly spread out within the space the block occupied.
 
 A random face is chosen as the source for the texture of each particle.
+
+## Further reading
+
+- [Effects](../networking/effects)
+- [Effect Packet](../networking/packets/061-effect)

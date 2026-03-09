@@ -212,7 +212,7 @@ All entities extending the `Entity` class must support this bit field at metadat
 | `WatchableObject`        | `SynchedEntityData.DataItem` | Represents a metadata value that can be changed.                  |
 | `Packet40EntityMetadata` | `SetEntityDataPacket`        | The packet that notifies the client of metadata changes in a mob. |
 
-## Further Reading
+## Further reading
 
 - [Protocol (wiki.vg)](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769758#Metadata)
 - [Mobs](../entities/mobs)

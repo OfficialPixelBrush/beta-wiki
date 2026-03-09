@@ -73,7 +73,7 @@ Reading is the easiest part of the McRegion format.
 5. Use the compression type to decompress the compressed data.
 6. [Read the Chunks NBT Data](chunk#nbt)
 
-## Further Reading
+## Further reading
 
 - [Region file format (Minecraft Wiki)](https://minecraft.wiki/w/Region_file_format)
 - [Anvil file format (Minecraft Wiki)](https://minecraft.wiki/w/Anvil_file_format)

@@ -88,7 +88,7 @@ unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
 
 A more efficient implementation can be seen in the `zlib` source code or `js-adler32`. Check [Wikipedia](https://en.wikipedia.org/wiki/Adler-32#Example_implementation) for more info!
 
-# Further Reading
+# Further reading
 
 - [deflate (Wikipedia)](https://en.wikipedia.org/wiki/Deflate)
 - [DEFLATE Compressed Data Format Specification version 1.3 (RFC)](https://www.rfc-editor.org/rfc/rfc1951)
