@@ -64,13 +64,13 @@ const float lightArray[16] = { 0.035f, 0.044f, 0.055f, 0.069f, 0.086f, 0.107f, 0
 
 The illumination of a face is determined by the light level of the block its facing, i.e. the top of a grass block with a torch on it would get the full light level of `14`.
 
-![](facelighting.png)
+![](./images/facelighting.png)
 
 ## Smooth Lighting
 
 Every vertex samples and averages the light level of surrounding blocks along the direction of the face its part of. This provides ambient occlusion without any additional work, since solid blocks have a total light level of `0`.
 
-![](smoothlighting.png)
+![](./images/smoothlighting.png)
 
 ### Credits
 

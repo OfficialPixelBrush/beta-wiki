@@ -15,9 +15,9 @@ Each inventory/window also has a unique identifier/index.
 
 The player inventory has no index. It has a few obvious oddities between how its sent over the network and how its stored, namely the armor slots starting at index 100 and being ordered bottom to top.
 
-|                                                          Network                                                           |                                                           NBT                                                           |
-| :------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
-| <img src="./inventoryNetwork.png" alt="Player Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./inventoryNbt.png" alt="Player Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+|                                            Network                                             |                                             NBT                                             |
+| :--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| <img src="./inventoryNetwork.png" alt="Player Slots as sent over Network" style="width: 100%"> | <img src="./inventoryNbt.png" alt="Player Slots as stored in NBT file" style="width: 100%"> |
 
 > [!NOTE]
 > The items in the crafting grid appear to not have a slot associated with them when saved or loaded to NBT.
@@ -29,15 +29,15 @@ The player inventory has no index. It has a few obvious oddities between how its
 
 Chests have an index of `0`.
 
-|                                                        Network                                                        |                                                        NBT                                                         |
-| :-------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
-| <img src="./chestNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./chestNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+|                                          Network                                          |                                          NBT                                           |
+| :---------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| <img src="./chestNetwork.png" alt="Chest Slots as sent over Network" style="width: 100%"> | <img src="./chestNbt.png" alt="Chest Slots as stored in NBT file" style="width: 100%"> |
 
 Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry, and as such count/store their slots separately.
 
-|                                                          Network                                                           |                                                           NBT                                                           |
-| :------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
-| <img src="./chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+|                                            Network                                             |                                             NBT                                             |
+| :--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| <img src="./chestLargeNetwork.png" alt="Chest Slots as sent over Network" style="width: 100%"> | <img src="./chestLargeNbt.png" alt="Chest Slots as stored in NBT file" style="width: 100%"> |
 
 It appears the chest that is visually to the left represents the upper half of the large chest, while the right represents the lower half.
 
@@ -45,9 +45,9 @@ It appears the chest that is visually to the left represents the upper half of t
 
 Crafting Tables have an index of `1`.
 
-|                                                                Network                                                                 |                                                                NBT                                                                 |
-| :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> |
+|                                                  Network                                                   |                                                  NBT                                                   |
+| :--------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| <img src="./craftingTableNetwork.png" alt="Crafting Table Slots as sent over Network" style="width: 100%"> | <img src="./craftingTableNbt.png" alt="Crafting Table Slots as sent over Network" style="width: 100%"> |
 
 > [!NOTE]
 > Crafting Tables are not tile entities and store no NBT data!
@@ -56,17 +56,17 @@ Crafting Tables have an index of `1`.
 
 Furnaces have an index of `2`.
 
-|                                                          Network                                                          |                                                          NBT                                                           |
-| :-----------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-| <img src="./furnaceNetwork.png" alt="Furnace Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./furnaceNbt.png" alt="Furnace Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+|                                            Network                                            |                                            NBT                                             |
+| :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| <img src="./furnaceNetwork.png" alt="Furnace Slots as sent over Network" style="width: 100%"> | <img src="./furnaceNbt.png" alt="Furnace Slots as stored in NBT file" style="width: 100%"> |
 
 ## Dispenser (3)
 
 Dispensers have an index of `3`.
 
-|                                                            Network                                                            |                                                            NBT                                                             |
-| :---------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./dispenserNetwork.png" alt="Dispenser Slots as sent over Network" style="image-rendering: pixelated; width: 100%"> | <img src="./dispenserNbt.png" alt="Dispenser Slots as stored in NBT file" style="image-rendering: pixelated; width: 100%"> |
+|                                              Network                                              |                                              NBT                                               |
+| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| <img src="./dispenserNetwork.png" alt="Dispenser Slots as sent over Network" style="width: 100%"> | <img src="./dispenserNbt.png" alt="Dispenser Slots as stored in NBT file" style="width: 100%"> |
 
 ## Outside (-999)
 

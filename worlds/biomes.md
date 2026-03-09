@@ -73,9 +73,9 @@ Biome GetBiome(float temperature, float humidity) {
 
 If mapped to an image, using the foliage/map colors, we get this.
 
-|                                                         Foliage Colors                                                          |                                                       Map Colors                                                        |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/biomesFoliage.png" alt="Foliage Colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomesMap.png" alt="Map Colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                           Foliage Colors                                            |                                         Map Colors                                          |
+| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| <img src="./images/biome/biomesFoliage.png" alt="Foliage Colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomesMap.png" alt="Map Colors" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature is X, Humidity is Y. Range is from `0` to `64` (or `0.0` to `1.0`) on both axes. [Notch drew this graph back in 2011.](https://minecraft.wiki/w/File:NotchBiomeGraph.png)
 </sub>
@@ -97,9 +97,9 @@ The current Chunk Coordinate, scaled to Block-Space (multiplied by `16`), is pas
 
 Each of these return a `16x16` array of 64-Bit floating point numbers, which're that chunks' temperature, humidity and variation values.
 
-|                                                            Temperature                                                            |                                                          Humidity                                                           |                                                            Variation                                                            |
-| :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePre.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/humidityPre.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                              Temperature                                              |                                            Humidity                                             |                                              Variation                                              |
+| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| <img src="./images/biome/temperaturePre.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPre.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values from chunk `-1,-1` to `1,1`. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -132,15 +132,15 @@ for (int i = 0; i < 16*16; i++) {
 
 The returned biome map can look something like this over a 3x3 chunk area.
 
-|                                                                Foliage Colors                                                                |                                                              Map Colors                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                                  Foliage Colors                                                  |                                                Map Colors                                                |
+| :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
 
 The temperature and humidity values are changed by this function, resulting in a different set of values, to be used in later generation stages.
 
-|                                                            Temperature                                                             |                                                           Humidity                                                           |                                                            Variation                                                            |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
+| :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and Variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
 

@@ -46,17 +46,17 @@ To find out more about what Biomes exist and how they're defined, check out [the
 
 This process utilizes 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
 
-|                                                            Temperature                                                             |                                                           Humidity                                                           |                                                            Variation                                                            |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
+| :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values after being modified by this function. These values are in the `0.0 - 2.0` range.</sub>
 
 With this a `16x16` Biome Array is generated, where any block column can contain any of the 13 Biomes.
 
-|                                                                Foliage Colors                                                                |                                                              Map Colors                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                                  Foliage Colors                                                  |                                                Map Colors                                                |
+| :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
 
 <sub>Biomes colored as per the [biomes](biomes#biome-list) page.</sub>
 
@@ -75,9 +75,9 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 | Depth Noise        | `16`    |                               `(200.0, 200.0, 0.5)` |
 | Tree Density Noise | `8`     |                                          (variable) |
 
-|                                                  Low                                                  |                                                  High                                                   |                                                    Selector                                                     |                                                          Continental                                                          |                                                   Depth                                                   |
-| :---------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
-| <img src="./images/terrain/low.png" alt="Low noise" style="image-rendering: pixelated; width: 100%;"> | <img src="./images/terrain/high.png" alt="High noise" style="image-rendering: pixelated; width: 100%;"> | <img src="./images/terrain/selector.png" alt="Selector noise" style="image-rendering: pixelated; width: 100%;"> | <img src="./images/terrain/continentalness.png" alt="Continentalness noise" style="image-rendering: pixelated; width: 100%;"> | <img src="./images/terrain/depth.png" alt="Depth noise" style="image-rendering: pixelated; width: 100%;"> |
+|                                    Low                                    |                                    High                                     |                                      Selector                                       |                                            Continental                                            |                                     Depth                                     |
+| :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| <img src="./images/terrain/low.png" alt="Low noise" style="width: 100%;"> | <img src="./images/terrain/high.png" alt="High noise" style="width: 100%;"> | <img src="./images/terrain/selector.png" alt="Selector noise" style="width: 100%;"> | <img src="./images/terrain/continentalness.png" alt="Continentalness noise" style="width: 100%;"> | <img src="./images/terrain/depth.png" alt="Depth noise" style="width: 100%;"> |
 
 <sub>Colors adjusted be more visible.</sub>
 
@@ -184,9 +184,9 @@ blocks[blockIndex].type = blockType;
 
 Some of the values appear to modify themselves for the next loop.
 
-|                                                         Terrain                                                          |                                                                Terrain (water)                                                                 |
-| :----------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/terrain/terrain.png" alt="Terrain map" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/terrain/terrainWater.png" alt="Terrain map with water level" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                           Terrain                                            |                                                  Terrain (water)                                                   |
+| :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| <img src="./images/terrain/terrain.png" alt="Terrain map" style="width: 100%;" class="zoom"> | <img src="./images/terrain/terrainWater.png" alt="Terrain map with water level" style="width: 100%;" class="zoom"> |
 
 <sub>Highest stone blocks. Color values have been tweaked to be more readable.
 Blocks at or below water level are marked in blue.</sub>
@@ -201,9 +201,9 @@ After the terrain shape has been generated, the chunk is transformed further by 
 | Sand & Gravel Noise (Gravel) | `4`     |  `(1/32, 1.0, 1/32)` |
 | Stone Noise                  | `4`     | `(1/16, 1/16, 1/16)` |
 
-|                                                           Sand                                                            |                                                            Gravel                                                             |                                                            Stone                                                            |
-| :-----------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/terrain/sandNoise.png" alt="Sand noise" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/terrain/gravelNoise.png" alt="Gravel noise" style="image-rendering: pixelated; width: 100%;" class="zoom"> | <img src="./images/terrain/stoneNoise.png" alt="Stone noise" style="image-rendering: pixelated; width: 100%;" class="zoom"> |
+|                                             Sand                                              |                                              Gravel                                               |                                              Stone                                              |
+| :-------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| <img src="./images/terrain/sandNoise.png" alt="Sand noise" style="width: 100%;" class="zoom"> | <img src="./images/terrain/gravelNoise.png" alt="Gravel noise" style="width: 100%;" class="zoom"> | <img src="./images/terrain/stoneNoise.png" alt="Stone noise" style="width: 100%;" class="zoom"> |
 
 <sub>Sand, Gravel and Stone noise. Color values have been tweaked to be more readable.</sub>
 

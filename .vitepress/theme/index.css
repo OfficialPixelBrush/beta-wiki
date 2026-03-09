@@ -4,10 +4,8 @@
   table-layout: fixed;
 }
 
-.vp-doc table td,
-.vp-doc table th {
-  word-break: break-word;
-  overflow-wrap: break-word;
+img {
+  image-rendering: pixelated;
 }
 
 .medium-zoom-overlay {

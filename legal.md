@@ -9,6 +9,12 @@ The wiki, in its attempt to document Beta 1.7.3 as closely and accurately as pos
 
 Some pages still contain snippets of info or pseudocode that closely resemble the decompiled source code they're based on. These should be rewritten sooner or later to avoid any trouble for anyone who wants to make a fully FOSS reimplementation of the Beta 1.7.3 spec.
 
+Additionally, some assets that are used on the wiki are directly taken from the game, such as textures. These fully belong to Mojang, and we make no claim of ownership by presenting them on the wiki.
+
+The wiki is in no way associated with Mojang or Microsoft, and is a fan project that is not monetized in any way. As per their usage guidelines, we will include the following disclaimer here:
+
+`NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT`
+
 ## What parts are safe?
 
 Most parts of the wiki were written with no insight into the decompiled code, and are thus perfectly safe for any FOSS projects.
