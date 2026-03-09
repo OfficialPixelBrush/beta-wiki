@@ -48,5 +48,4 @@ A random face is chosen as the source for the texture of each particle.
 
 ## Further reading
 
-- [Effects](../networking/effects)
 - [Effect Packet](../networking/packets/061-effect)

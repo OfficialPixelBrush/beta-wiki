@@ -38,5 +38,4 @@ These sounds are usually played when a block is broken or walked on. Internally 
 
 ## Further reading
 
-- [Effects](../networking/effects)
 - [Effect Packet](../networking/packets/061-effect)
