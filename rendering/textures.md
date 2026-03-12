@@ -1,17 +1,19 @@
 ---
 order: 1
-description: Textures are what give each rendered block their colorful, detailed appearance.
+description: Textures are what give each rendered block and item their colorful, detailed appearance.
 ---
 
 # Textures
 
-Textures are what give each rendered block their colorful, detailed appearance.
+description: Textures are what give each rendered block and item their colorful, detailed appearance.
 
 ## Texture Atlas
 
-The texture atlas contains all possible block textures in the game, and is `256x256` in the Vanilla game, where each individual block face is `16x16` pixels. Each block shares its textures with every other block, only having a unique appearance by zooming into and showing different parts of the atlas by using differing UV-Coordinates.
+There exist two texture atlases, one for blocks and one for items. Both atlases are `256x256` with the default texture pack, where each individual block face/item is `16x16` pixels. Each block/item shares its textures with every other block, only having a unique appearance by zooming into and showing different parts of the atlas by using differing UV-Coordinates.
 
-The texture atlas is indexed from `0` to `255`.
+The texture atlases are indexed from `0` to `255`.
+
+### Block Atlas
 
 |   # | Row/Column |                       Texture                       | Label                          | Notes                                                                            |
 | --: | :--------: | :-------------------------------------------------: | :----------------------------- | :------------------------------------------------------------------------------- |
@@ -191,5 +193,7 @@ Any spaces that're not filled with a texture are usually occupied by a pink grid
 | Empty | Transparent |
 | :-------: | :-----------: |
 | ![Missing Texture](../images/blocks/missing.png) | ![Transparent Texture](../images/blocks/transparent.png) |
+
+## Item Atlas
 
 These textures fully belong to Mojang, and we make no claim of ownership by presenting them on this page or other parts of the Wiki. Please see our [legal page](/legal) for more info.

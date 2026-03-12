@@ -11,23 +11,23 @@ Particles are 2D sprites that are there to spice up the look of Minecraft. They'
 
 These particles are reused for several things, and are indexed with a string id.
 
-|        ID/Name | Appearance                                                                                         | Usage                                                                                            |
-| -------------: | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-|       `bubble` | <img src="./images/particles/bubble.png" alt="Bubbles" style="min-height: 64px;">                  | Usually spawned when entities are in water                                                       |
-|        `smoke` | Rising smoke                                                                                       | Used by torches, fireballs, furnaces, mob spawners and lava, but also primed TNT and Wolf taming |
-|         `note` | Colored musical note                                                                               | Used by Noteblocks                                                                               |
-|       `portal` | Purple smoke                                                                                       | Spawned around Nether Portal blocks                                                              |
-|      `explode` | Smoke                                                                                              | Used by explosions, but also as the smoke that appears when entities die                         |
-|        `flame` | <img src="./images/particles/flame.png" alt="Small flame" style="min-height: 64px;">               | Used by torches, furnaces and mob spawners                                                       |
-|         `lava` | <img src="./images/particles/lava.png" alt="Lava ejection" style="min-height: 64px;">              | Used by lava, usually trailed by smoke                                                           |
-|     `footstep` | <img src="./images/particles/footprint.png" alt="Small, grey square" style="min-height: 64px;">    | Unused, lingers on the ground for quite a while                                                  |
-|       `splash` | Rain particle                                                                                      | Used by boats, wet wolves shaking themselves off and for fish when fishing                       |
-|   `largesmoke` | Rising smoke plume                                                                                 | Used by fire, lava, furnace minecarts and water buckets when placed in the Nether                |
-|      `reddust` | <img src="./images/particles/reddust.gif" alt="Red smoke" style="min-height: 64px;">               | Used by powered redstone components                                                              |
-| `snowballpoof` | Snowball pieces                                                                                    | Used by snowballs                                                                                |
-|   `snowshovel` | <img src="./images/particles/generic_particle.gif" alt="Snow/Dust puff" style="min-height: 64px;"> | Unused                                                                                           |
-|        `slime` | Slimeball pieces                                                                                   | Spawned when slimes land on the ground                                                           |
-|        `heart` | <img src="./images/particles/heart.png" alt="Heart" style="min-height: 64px;">                     | Used when a wolf is tamed                                                                        |
+|        ID/Name |                                Appearance                                | Usage                                                                                            |
+| -------------: | :----------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------- |
+|       `bubble` |         <img src="./images/particles/bubble.png" alt="Bubbles">          | Usually spawned when entities are in water                                                       |
+|        `smoke` |                               Rising smoke                               | Used by torches, fireballs, furnaces, mob spawners and lava, but also primed TNT and Wolf taming |
+|         `note` |                           Colored musical note                           | Used by Noteblocks                                                                               |
+|       `portal` |                               Purple smoke                               | Spawned around Nether Portal blocks                                                              |
+|      `explode` |                                  Smoke                                   | Used by explosions, but also as the smoke that appears when entities die                         |
+|        `flame` |        <img src="./images/particles/flame.png" alt="Small flame">        | Used by torches, furnaces and mob spawners                                                       |
+|         `lava` |       <img src="./images/particles/lava.png" alt="Lava ejection">        | Used by lava, usually trailed by smoke                                                           |
+|     `footstep` |  <img src="./images/particles/footprint.png" alt="Small, grey square">   | Unused, lingers on the ground for quite a while                                                  |
+|       `splash` |                              Rain particle                               | Used by boats, wet wolves shaking themselves off and for fish when fishing                       |
+|   `largesmoke` |                            Rising smoke plume                            | Used by fire, lava, furnace minecarts and water buckets when placed in the Nether                |
+|      `reddust` |        <img src="./images/particles/reddust.gif" alt="Red smoke">        | Used by powered redstone components                                                              |
+| `snowballpoof` |                             Snowball pieces                              | Used by snowballs                                                                                |
+|   `snowshovel` | <img src="./images/particles/generic_particle.gif" alt="Snow/Dust puff"> | Unused                                                                                           |
+|        `slime` |                             Slimeball pieces                             | Spawned when slimes land on the ground                                                           |
+|        `heart` |           <img src="./images/particles/heart.png" alt="Heart">           | Used when a wolf is tamed                                                                        |
 
 > [!NOTE]
 > `snowballpoof`, `slime` and thrown eggs all use the same function under the hood. They just use different item textures.
