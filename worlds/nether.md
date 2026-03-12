@@ -1,0 +1,20 @@
+---
+order: 65
+description: The Nether, also known as Hell or the Hell World, is a Dimension filled with Lava. It allows the player to travel long distances rather quickly, as every block in the Nether maps to 8 blocks in the overworld.
+---
+
+# Nether
+
+The Nether, also known as Hell, Hell World or the Slip, is a Dimension filled with Lava. It allows the player to travel long distances rather quickly, as every block in the Nether maps to 8 blocks in the overworld.
+
+## Biomes
+
+The Nether can only generate a single Biome in this version, that being the Hell Biome, later renamed to the [Nether Wastes](https://minecraft.wiki/w/Nether_Wastes) in modern versions.
+
+## Generation
+
+TODO!
+
+## Population
+
+Please see the [nether section on the population page](./population#nether).

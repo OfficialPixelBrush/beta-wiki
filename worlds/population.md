@@ -1,10 +1,11 @@
 ---
 order: 15
+description: The population phase is done a little differently when compared to terrain generation, as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries. This page covers both overworld and nether population.
 ---
 
 # Population
 
-The population phase is done a little differently when compared to [terrain generation](generation), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries.
+The population phase is done a little differently when compared to [terrain generation](generation), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries. This page covers both overworld and [nether](#nether) population.
 
 ::: tip MISSING
 A huge chunk of info is still missing!!
@@ -257,3 +258,22 @@ Singular Fluid Sources can only generate if the chosen position fulfills the fol
 ## Snow
 
 Snow generates on the highest solid block, except ice, where the temperature value is `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](quirks#ice-and-snow) for more info!
+
+# Nether
+
+The Nether has its own population generators and steps, unique to it.
+
+## Generation order
+
+Features attempt to generate in the following order.
+
+1. Singular Lava Sources
+2. Fire
+3. Glowstone
+4. Glowstone (again?)
+5. Brown mushrooms
+6. Red mushrooms
+
+## Further reading
+
+- [Nether](./nether#generation)
