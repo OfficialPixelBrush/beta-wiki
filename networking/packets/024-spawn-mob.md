@@ -1,9 +1,9 @@
 ---
-title: "0x18: Spawn Mob Entity"
+title: "0x18: Spawn Mob"
 order: 25
 ---
 
-# Spawn Mob Entity
+# Spawn Mob
 
 | Packet ID | Direction   | Mojang Name    | MCP Name           |
 | --------- | ----------- | -------------- | ------------------ |

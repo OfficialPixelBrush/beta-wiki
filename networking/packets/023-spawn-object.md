@@ -1,9 +1,9 @@
 ---
-title: "0x17: Spawn Object Entity"
+title: "0x17: Spawn Object"
 order: 24
 ---
 
-# Spawn Object Entity
+# Spawn Object
 
 | Packet ID | Direction   | Mojang Name       | MCP Name               |
 | --------- | ----------- | ----------------- | ---------------------- |

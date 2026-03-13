@@ -1,9 +1,9 @@
 ---
-title: "0x19: Spawn Painting Entity"
+title: "0x19: Spawn Painting"
 order: 26
 ---
 
-# Spawn Painting Entity
+# Spawn Painting
 
 | Packet ID | Direction   | Mojang Name         | MCP Name                 |
 | --------- | ----------- | ------------------- | ------------------------ |

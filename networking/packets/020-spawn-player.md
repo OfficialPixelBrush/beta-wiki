@@ -1,9 +1,9 @@
 ---
-title: "0x14: Spawn Player Entity"
+title: "0x14: Spawn Player"
 order: 21
 ---
 
-# Spawn Player Entity
+# Spawn Player
 
 | Packet ID | Direction   | Mojang Name       | MCP Name                   |
 | --------- | ----------- | ----------------- | -------------------------- |
