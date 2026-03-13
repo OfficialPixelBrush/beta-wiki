@@ -13,7 +13,7 @@ These particles are reused for several things, and are indexed with a string id.
 
 |        ID/Name |                                Appearance                                 | Usage                                                                                            |
 | -------------: | :-----------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------- |
-|       `bubble` |         <img src=".../images/particles/bubble.png" alt="Bubbles">         | Usually spawned when entities are in water                                                       |
+|       `bubble` |         <img src="../images/particles/bubble.png" alt="Bubbles">         | Usually spawned when entities are in water                                                       |
 |        `smoke` |                               Rising smoke                                | Used by torches, fireballs, furnaces, mob spawners and lava, but also primed TNT and Wolf taming |
 |         `note` |                           Colored musical note                            | Used by Noteblocks                                                                               |
 |       `portal` |                               Purple smoke                                | Spawned around Nether Portal blocks                                                              |
