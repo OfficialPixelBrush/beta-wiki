@@ -38,10 +38,10 @@ The Payload is a list which describes the items in the sent inventory.
 
 Repeat the following 45 Times
 
-| Field  | Value |
-| ------ | ----- |
-| Id     | `17`  |
-| Count  | `42`  |
-| Damage | `1`   |
+| Field  | Value                                                                                             |
+| ------ | ------------------------------------------------------------------------------------------------- |
+| Id     | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)               |
+| Count  | `42`                                                                                              |
+| Damage | `1` (<TextureSwatch texture_name="../../images/blocks/spruce_log_side.png" label="Spruce Log" />) |
 
 This would show up as an inventory full of Birch Logs.

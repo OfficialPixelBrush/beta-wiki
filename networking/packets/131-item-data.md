@@ -46,9 +46,9 @@ A map can, at most, have `(256 - 1) / 3 = 85` icons.
 
 ## Example packet
 
-| Field     | Value        |
-| --------- | ------------ |
-| Item ID   | `358` (Map)  |
-| Map ID    | `1`          |
-| Data Size | `4`          |
-| Data      | `1, 0, 5, 7` |
+| Field     | Value                                                                           |
+| --------- | ------------------------------------------------------------------------------- |
+| Item ID   | `358` (<TextureSwatch texture_name="../../images/items/map.png" label="Map" />) |
+| Map ID    | `1`                                                                             |
+| Data Size | `4`                                                                             |
+| Data      | `1, 0, 5, 7`                                                                    |

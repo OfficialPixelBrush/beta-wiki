@@ -23,10 +23,10 @@ This is sent by the server when a block is changed or updated in any way. If a l
 
 ## Example Packet
 
-| Field | Value        |
-| ----- | ------------ |
-| X     | `32`         |
-| Y     | `76`         |
-| Z     | `-543`       |
-| Type  | `17` (Log)   |
-| Meta  | `1` (Spruce) |
+| Field | Value                                                                                             |
+| ----- | ------------------------------------------------------------------------------------------------- |
+| X     | `32`                                                                                              |
+| Y     | `76`                                                                                              |
+| Z     | `-543`                                                                                            |
+| Type  | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)               |
+| Meta  | `1` (<TextureSwatch texture_name="../../images/blocks/spruce_log_side.png" label="Spruce Log" />) |

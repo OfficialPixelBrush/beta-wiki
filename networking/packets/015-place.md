@@ -34,12 +34,12 @@ The face can be one of six values, representing the face the block is placed on.
 
 ### Serverbound
 
-|         Field | Value      |
-| ------------: | ---------- |
-|             X | `-6231`    |
-|             Y | `53`       |
-|             Z | `563`      |
-|          Face | `3` (+Z)   |
-| Block/Item ID | `3` (Dirt) |
-|      (Amount) | `64`       |
-|      (Damage) | `0`        |
+|         Field | Value                                                                            |
+| ------------: | -------------------------------------------------------------------------------- |
+|             X | `-6231`                                                                          |
+|             Y | `53`                                                                             |
+|             Z | `563`                                                                            |
+|          Face | `3` (+Z)                                                                         |
+| Block/Item ID | `3` (<TextureSwatch texture_name="../../images/blocks/dirt.png" label="Dirt" />) |
+|      (Amount) | `64`                                                                             |
+|      (Damage) | `0`                                                                              |

@@ -22,9 +22,9 @@ After an entity has been spawned, this packet may be sent to change the armor an
 
 ## Example Packet
 
-| Field          | Value                 |
-| -------------- | --------------------- |
-| Entity ID      | `1298`                |
-| Inventory Slot | `0`                   |
-| Item ID        | `276` (Diamond Sword) |
-| Item Metadata  | `0`                   |
+| Field          | Value                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------- |
+| Entity ID      | `1298`                                                                                              |
+| Inventory Slot | `0` (Hand)                                                                                          |
+| Item ID        | `276` (<TextureSwatch texture_name="../../images/items/diamond_sword.png" label="Diamond Sword" />) |
+| Item Metadata  | `0`                                                                                                 |

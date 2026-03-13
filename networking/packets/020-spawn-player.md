@@ -29,13 +29,13 @@ Sent to the client when a player entity should be spawned. The position is in [b
 
 ## Example Packet
 
-| Field     | Value               |
-| --------- | ------------------- |
-| Entity ID | `1298`              |
-| Username  | `PixelBrushArt`     |
-| X         | `5`                 |
-| Y         | `2`                 |
-| Z         | `15`                |
-| Yaw       | `16` (`22.58`)      |
-| Pitch     | `9` (`12.70`)       |
-| Held item | `256` (Iron Shovel) |
+| Field     | Value                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------- |
+| Entity ID | `1298`                                                                                          |
+| Username  | `PixelBrushArt`                                                                                 |
+| X         | `5`                                                                                             |
+| Y         | `2`                                                                                             |
+| Z         | `15`                                                                                            |
+| Yaw       | `16` (`22.58`)                                                                                  |
+| Pitch     | `9` (`12.70`)                                                                                   |
+| Held item | `256` (<TextureSwatch texture_name="../../images/items/iron_shovel.png" label="Iron Shovel" />) |

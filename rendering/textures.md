@@ -154,8 +154,8 @@ The texture atlases are indexed from `0` to `255`.
 | 161 |   `10,1`   |        ![](../images/blocks/brown_wool.png)         | Wool (Brown)                   |                                                                                  |
 | 162 |   `10,2`   |        ![](../images/blocks/yellow_wool.png)        | Wool (Yellow)                  |                                                                                  |
 | 163 |   `10,3`   |  ![](../images/blocks/powered_rails_inactive.png)   | Powered Rails (Inactive)       |                                                                                  |
-| 164 |   `10,4`   |      ![](../images/blocks/redstone_cross.png)       | Redstone (Cross)               |                                                                                  |
-| 165 |   `10,5`   |       ![](../images/blocks/redstone_line.png)       | Redstone (Line)                |                                                                                  |
+| 164 |   `10,4`   |      ![](../images/blocks/redstone_cross.png)       | Redstone (Cross)               | Power-level tinted                                                               |
+| 165 |   `10,5`   |       ![](../images/blocks/redstone_line.png)       | Redstone (Line)                | Power-level tinted                                                               |
 | 176 |   `11,0`   |       ![](../images/blocks/sandstone_top.png)       | Sandstone (Top)                |                                                                                  |
 | 177 |   `11,1`   |      ![](../images/blocks/dark_blue_wool.png)       | Wool (Dark Blue)               |                                                                                  |
 | 178 |   `11,2`   |      ![](../images/blocks/light_blue_wool.png)      | Wool (Light Blue)              |                                                                                  |
@@ -192,8 +192,43 @@ The texture atlases are indexed from `0` to `255`.
 Any spaces that're not filled with a texture are usually occupied by a pink grid-piece, or are entirely transparent.
 | Empty | Transparent |
 | :-------: | :-----------: |
-| ![Missing Texture](../images/blocks/missing.png) | ![Transparent Texture](../images/blocks/transparent.png) |
+| ![Missing Texture](../images/blocks/missing.png) | ![Transparent Texture](../images/transparent.png) |
 
 ## Item Atlas
+
+|   # | Row/Column |                    Texture                    | Label                |
+| --: | :--------: | :-------------------------------------------: | :------------------- |
+|   0 |   `0,0`    |    ![](../images/items/leather_helmet.png)    | Leather Helmet       |
+|   1 |   `0,1`    |   ![](../images/items/chainmail_helmet.png)   | Chainmail Helmet     |
+|   2 |   `0,2`    |     ![](../images/items/iron_helmet.png)      | Iron Helmet          |
+|   3 |   `0,3`    |    ![](../images/items/diamond_helmet.png)    | Diamond Helmet       |
+|   4 |   `0,4`    |     ![](../images/items/gold_helmet.png)      | Gold Helmet          |
+|   5 |   `0,5`    |    ![](../images/items/flint_n_steel.png)     | Flint and Steel      |
+|   6 |   `0,6`    |        ![](../images/items/flint.png)         | Flint                |
+|   7 |   `0,7`    |         ![](../images/items/coal.png)         | Coal                 |
+|   8 |   `0,8`    |        ![](../images/items/string.png)        | String               |
+|   9 |   `0,9`    |        ![](../images/items/seeds.png)         | Seeds                |
+|  10 |   `0,10`   |        ![](../images/items/apple.png)         | Apple                |
+|  11 |   `0,11`   |     ![](../images/items/golden_apple.png)     | Golden Apple         |
+|  12 |   `0,12`   |         ![](../images/items/egg.png)          | Egg                  |
+|  13 |   `0,13`   |        ![](../images/items/sugar.png)         | Sugar                |
+|  14 |   `0,14`   |       ![](../images/items/snowball.png)       | Snowball             |
+|  16 |   `1,0`    |  ![](../images/items/leather_chestplate.png)  | Leather Chestplate   |
+|  17 |   `1,1`    | ![](../images/items/chainmail_chestplate.png) | Chainmail Chestplate |
+|  18 |   `1,2`    |   ![](../images/items/iron_chestplate.png)    | Iron Chestplate      |
+|  19 |   `1,3`    |  ![](../images/items/diamond_chestplate.png)  | Diamond Chestplate   |
+|  20 |   `1,4`    |   ![](../images/items/gold_chestplate.png)    | Gold Chestplate      |
+|  21 |   `1,5`    |         ![](../images/items/bow.png)          | Bow                  |
+|  22 |   `1,6`    |        ![](../images/items/brick.png)         | Brick                |
+|  23 |   `1,7`    |      ![](../images/items/iron_ingot.png)      | Iron Ingot           |
+|  24 |   `1,8`    |       ![](../images/items/feather.png)        | Feather              |
+|  25 |   `1,9`    |        ![](../images/items/wheat.png)         | Wheat                |
+
+Any spaces that're not filled with a texture are usually transparent, though a few have a blue corner.
+| Empty | Transparent |
+| :-------: | :-----------: |
+| ![Corner Texture](../images/items/placeholder.png) | ![Transparent Texture](../images/transparent.png) |
+
+## Legal disclaimer
 
 These textures fully belong to Mojang, and we make no claim of ownership by presenting them on this page or other parts of the Wiki. Please see our [legal page](/legal) for more info.

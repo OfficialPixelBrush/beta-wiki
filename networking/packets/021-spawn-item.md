@@ -28,15 +28,15 @@ Sent to the client when an item entity should be spawned. The position is in [bl
 
 ## Example Packet
 
-|           Field | Value          |
-| --------------: | :------------- |
-|       Entity ID | 1298           |
-|         Item id | `17` (Log)     |
-|           Count | `1`            |
-| Metadata/Damage | `0`            |
-|               X | `5669`         |
-|               Y | `68`           |
-|               Z | `-5325`        |
-|             Yaw | `16` (`22.58`) |
-|           Pitch | `9` (`12.70`)  |
-|            Roll | `0` (`0.0`)    |
+|           Field | Value                                                                                       |
+| --------------: | :------------------------------------------------------------------------------------------ |
+|       Entity ID | 1298                                                                                        |
+|         Item id | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)         |
+|           Count | `1`                                                                                         |
+| Metadata/Damage | `0` (<TextureSwatch texture_name="../../images/blocks/oak_log_side.png" label="Oak Log" />) |
+|               X | `5669`                                                                                      |
+|               Y | `68`                                                                                        |
+|               Z | `-5325`                                                                                     |
+|             Yaw | `16` (`22.58`)                                                                              |
+|           Pitch | `9` (`12.70`)                                                                               |
+|            Roll | `0` (`0.0`)                                                                                 |
