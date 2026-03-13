@@ -1,14 +1,14 @@
 ---
-title: 0x02 Handshake
-description: Initizalizes the Login process
+title: 0x02: Handshake
+description: Initializes the login process
 order: 3
 ---
 
 # Handshake
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x02`    | Both      |
+| Packet ID | Direction | Mojang Name      |
+| --------- | --------- | ---------------- |
+| `0x02`    | Both      | `PreLoginPacket` |
 
 This is the first packet that is sent after the connection to the server is made.
 

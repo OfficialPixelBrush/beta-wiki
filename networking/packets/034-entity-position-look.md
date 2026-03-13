@@ -1,13 +1,13 @@
 ---
-title: 0x22 Entity Position and Look
+title: 0x22: Entity Position and Look
 order: 35
 ---
 
 # Entity Position and Look
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x22`    | Clientbound |
+| Packet ID | Direction   | Mojang Name            |
+| --------- | ----------- | ---------------------- |
+| `0x22`    | Clientbound | `TeleportEntityPacket` |
 
 ## Clientbound
 

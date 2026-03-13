@@ -1,13 +1,13 @@
 ---
-title: 0x0E Mine
+title: 0x0E: Mine
 order: 15
 ---
 
 # Mine
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x0E`    | Serverbound |
+| Packet ID | Direction   | Mojang Name          |
+| --------- | ----------- | -------------------- |
+| `0x0E`    | Serverbound | `PlayerActionPacket` |
 
 ## Serverbound
 

@@ -1,13 +1,13 @@
 ---
-title: 0x35 Block Update
+title: 0x35: Block Update
 order: 54
 ---
 
 # Block Update
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x35`    | Clientbound |
+| Packet ID | Direction   | Mojang Name        |
+| --------- | ----------- | ------------------ |
+| `0x35`    | Clientbound | `TileUpdatePacket` |
 
 This is sent by the server when a block is changed or updated in any way. If a lot of blocks are being updated, consider using the [Multi-Block Update packet](./052-multi-block-update).
 

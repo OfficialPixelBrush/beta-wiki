@@ -1,13 +1,13 @@
 ---
-title: 0x28 Entity Metadata
+title: 0x28: Entity Metadata
 order: 41
 ---
 
 # Entity Metadata
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x28`    | Clientbound |
+| Packet ID | Direction   | Mojang Name           |
+| --------- | ----------- | --------------------- |
+| `0x28`    | Clientbound | `SetEntityDataPacket` |
 
 ## Clientbound
 

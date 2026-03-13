@@ -1,13 +1,13 @@
 ---
-title: 0x0D Player Position and Look
+title: 0x0D: Player Position and Look
 order: 14
 ---
 
 # Player Position and Look
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x0D`    | Both      |
+| Packet ID | Direction | Mojang Name               |
+| --------- | --------- | ------------------------- |
+| `0x0D`    | Both      | `MovePlayerPacket$PosRot` |
 
 ## Clientbound
 

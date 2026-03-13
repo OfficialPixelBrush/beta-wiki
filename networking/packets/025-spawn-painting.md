@@ -1,13 +1,13 @@
 ---
-title: 0x19 Spawn Painting Entity
+title: 0x19: Spawn Painting Entity
 order: 26
 ---
 
 # Spawn Painting Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x19`    | Clientbound |
+| Packet ID | Direction   | Mojang Name         |
+| --------- | ----------- | ------------------- |
+| `0x19`    | Clientbound | `AddPaintingPacket` |
 
 Sent to the client when a painting entity should be spawned. The position is in [block space](../terminology#block-space).
 

@@ -1,13 +1,13 @@
 ---
-title: 0x06 Spawn Point
+title: 0x06: Spawn Point
 order: 7
 ---
 
 # Spawn Point
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x06`    | Clientbound |
+| Packet ID | Direction   | Mojang Name              |
+| --------- | ----------- | ------------------------ |
+| `0x06`    | Clientbound | `SetSpawnPositionPacket` |
 
 This is sent after the player has finished logging in to spawn them into the world. It can also be sent at any time to update where the player's compass points at.
 

@@ -1,13 +1,13 @@
 ---
-title: 0x64 Open Inventory
+title: 0x64: Open Inventory
 order: 101
 ---
 
 # Open Inventory
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x64`    | Clientbound |
+| Packet ID | Direction   | Mojang Name           |
+| --------- | ----------- | --------------------- |
+| `0x64`    | Clientbound | `ContainerOpenPacket` |
 
 This packet is sent by the server when an inventory/window is opened. The type of inventory can either be `0` for a chest, `1` for a crafting table, `2` for a furnace, and `3` for a dispenser.
 

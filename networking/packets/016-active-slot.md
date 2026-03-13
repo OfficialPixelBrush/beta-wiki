@@ -1,13 +1,13 @@
 ---
-title: 0x10 Active Slot
+title: 0x10: Active Slot
 order: 17
 ---
 
 # Active Slot
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x10`    | Serverbound |
+| Packet ID | Direction   | Mojang Name            |
+| --------- | ----------- | ---------------------- |
+| `0x10`    | Serverbound | `SetCarriedItemPacket` |
 
 ## Serverbound
 

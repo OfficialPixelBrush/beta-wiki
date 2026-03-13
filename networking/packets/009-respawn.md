@@ -1,13 +1,13 @@
 ---
-title: 0x09 Respawn
+title: 0x09: Respawn
 order: 10
 ---
 
 # Respawn
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x09`    | Both      |
+| Packet ID | Direction | Mojang Name     |
+| --------- | --------- | --------------- |
+| `0x09`    | Both      | `RespawnPacket` |
 
 This is sent by the client when they press the "respawn" button after dying or when changing dimensions. The server must teleport the user to the spawn point and return a respawn packet in response.
 

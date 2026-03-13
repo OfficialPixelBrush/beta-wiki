@@ -1,13 +1,13 @@
 ---
-title: 0x65 Close Inventory
+title: 0x65: Close Inventory
 order: 102
 ---
 
 # Close Inventory
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x65`    | Both      |
+| Packet ID | Direction | Mojang Name            |
+| --------- | --------- | ---------------------- |
+| `0x65`    | Both      | `ContainerClosePacket` |
 
 This packet is sent by the client when closing an inventory/window, and by the server when an inventory is forcibly closed, such as a chest being destroyed.
 

@@ -1,13 +1,13 @@
 ---
-title: 0x27 Mount Entity
+title: 0x27: Mount Entity
 order: 40
 ---
 
 # Mount Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x27`    | Clientbound |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0x27`    | Clientbound | `SetRidingPacket` |
 
 ## Clientbound
 

@@ -1,13 +1,13 @@
 ---
-title: 0x47 Lightning Bolt
+title: 0x47: Lightning Bolt
 order: 72
 ---
 
 # Lightning Bolt
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x47`    | Clientbound |
+| Packet ID | Direction   | Mojang Name |
+| --------- | ----------- | ----------- |
+| `0x47`    | Clientbound | Unknown     |
 
 Spawns a lightning bolt at the specified position.
 

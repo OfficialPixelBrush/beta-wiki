@@ -1,13 +1,13 @@
 ---
-title: 0x0C Player Look
+title: 0x0C: Player Look
 order: 13
 ---
 
 # Player Look
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x0C`    | Both(?)   |
+| Packet ID | Direction | Mojang Name            |
+| --------- | --------- | ---------------------- |
+| `0x0C`    | Both(?)   | `MovePlayerPacket$Rot` |
 
 ## Clientbound
 

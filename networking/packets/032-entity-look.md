@@ -1,13 +1,13 @@
 ---
-title: 0x20 Entity Look
+title: 0x20: Entity Look
 order: 33
 ---
 
 # Entity Look
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x20`    | Clientbound |
+| Packet ID | Direction   | Mojang Name            |
+| --------- | ----------- | ---------------------- |
+| `0x20`    | Clientbound | `MoveEntityPacket$Rot` |
 
 ## Clientbound
 

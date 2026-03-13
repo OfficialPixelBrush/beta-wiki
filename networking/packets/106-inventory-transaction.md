@@ -1,13 +1,13 @@
 ---
-title: 0x6A Inventory Transaction
+title: 0x6A: Inventory Transaction
 order: 107
 ---
 
 # Inventory Transaction
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x6A`    | Both      |
+| Packet ID | Direction | Mojang Name          |
+| --------- | --------- | -------------------- |
+| `0x6A`    | Both      | `ContainerAckPacket` |
 
 This packet is sent to indicate if an inventory transaction was accepted.
 

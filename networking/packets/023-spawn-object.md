@@ -1,13 +1,13 @@
 ---
-title: 0x17 Spawn Object Entity
+title: 0x17: Spawn Object Entity
 order: 24
 ---
 
 # Spawn Object Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x17`    | Clientbound |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0x17`    | Clientbound | `AddEntityPacket` |
 
 Sent to the client when an [object entity](../../entities/objects) should be spawned. The position is in [block space](../terminology#block-space).
 

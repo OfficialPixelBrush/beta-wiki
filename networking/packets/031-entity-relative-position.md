@@ -1,13 +1,13 @@
 ---
-title: 0x1F Entity Relative Position
+title: 0x1F: Entity Relative Position
 order: 32
 ---
 
 # Entity Relative Position
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x1F`    | Clientbound |
+| Packet ID | Direction   | Mojang Name            |
+| --------- | ----------- | ---------------------- |
+| `0x1F`    | Clientbound | `MoveEntityPacket$Pos` |
 
 ## Clientbound
 

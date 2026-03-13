@@ -1,13 +1,13 @@
 ---
-title: 0x36 Block Action
+title: 0x36: Block Action
 order: 55
 ---
 
 # Block Action
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x36`    | Clientbound |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0x36`    | Clientbound | `TileEventPacket` |
 
 ## Clientbound
 

@@ -1,14 +1,14 @@
 ---
-title: 0x01 Login
+title: 0x01: Login
 description: Responsible for finalizing the login process
 order: 2
 ---
 
 # Login
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x01`    | Both      |
+| Packet ID | Direction | Mojang Name   |
+| --------- | --------- | ------------- |
+| `0x01`    | Both      | `LoginPacket` |
 
 This packet is sent after [Handshake](002-handshake) to finish logging in. The server is expected to kick the client if any fields are invalid or the client's protocol version does not match the server. The unused fields are also useful for negotiating mod support.
 

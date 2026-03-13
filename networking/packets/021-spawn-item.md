@@ -1,13 +1,13 @@
 ---
-title: 0x15 Spawn Item Entity
+title: 0x15: Spawn Item Entity
 order: 22
 ---
 
 # Spawn Item Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x15`    | Clientbound |
+| Packet ID | Direction   | Mojang Name           |
+| --------- | ----------- | --------------------- |
+| `0x15`    | Clientbound | `AddItemEntityPacket` |
 
 Sent to the client when an item entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

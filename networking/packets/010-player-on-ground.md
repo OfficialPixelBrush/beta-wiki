@@ -1,13 +1,13 @@
 ---
-title: 0x0A Player On Ground
+title: 0x0A: Player On Ground
 order: 11
 ---
 
 # Player On Ground
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x0A`    | Both      |
+| Packet ID | Direction | Mojang Name        |
+| --------- | --------- | ------------------ |
+| `0x0A`    | Both      | `MovePlayerPacket` |
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 

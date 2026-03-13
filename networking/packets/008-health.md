@@ -1,13 +1,13 @@
 ---
-title: 0x08 Set Health
+title: 0x08: Set Health
 order: 9
 ---
 
 # Set Health
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x08`    | Clientbound |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0x08`    | Clientbound | `SetHealthPacket` |
 
 This is sent to the player to increase/decrease their health.
 

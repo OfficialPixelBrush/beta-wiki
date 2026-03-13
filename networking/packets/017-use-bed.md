@@ -1,13 +1,13 @@
 ---
-title: 0x11 Use Bed
+title: 0x11: Use Bed
 order: 18
 ---
 
 # Use Bed
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x11`    | Clientbound |
+| Packet ID | Direction   | Mojang Name |
+| --------- | ----------- | ----------- |
+| `0x11`    | Clientbound | Unknown     |
 
 ## Clientbound
 

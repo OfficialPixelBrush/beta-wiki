@@ -1,13 +1,13 @@
 ---
-title: 0x82 Sign
+title: 0x82: Sign
 order: 131
 ---
 
 # Sign
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x82`    | Both      |
+| Packet ID | Direction | Mojang Name        |
+| --------- | --------- | ------------------ |
+| `0x82`    | Both      | `SignUpdatePacket` |
 
 ## Both
 

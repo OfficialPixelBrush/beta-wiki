@@ -1,13 +1,13 @@
 ---
-title: 0x34 Multi-Block Update
+title: 0x34: Multi-Block Update
 order: 53
 ---
 
 # Multi-Block Update
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x34`    | Clientbound |
+| Packet ID | Direction   | Mojang Name              |
+| --------- | ----------- | ------------------------ |
+| `0x34`    | Clientbound | `ChunkTilesUpdatePacket` |
 
 This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
 

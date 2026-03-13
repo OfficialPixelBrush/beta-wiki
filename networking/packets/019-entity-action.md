@@ -1,13 +1,13 @@
 ---
-title: 0x13 Entity Action
+title: 0x13: Entity Action
 order: 20
 ---
 
 # Entity Action
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x13`    | Serverbound |
+| Packet ID | Direction   | Mojang Name           |
+| --------- | ----------- | --------------------- |
+| `0x13`    | Serverbound | `PlayerCommandPacket` |
 
 This packet is sent by the client for performing certain actions, defined via a Bitmask.
 

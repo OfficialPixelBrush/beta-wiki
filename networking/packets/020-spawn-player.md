@@ -1,13 +1,13 @@
 ---
-title: 0x14 Spawn Player Entity
+title: 0x14: Spawn Player Entity
 order: 21
 ---
 
 # Spawn Player Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x14`    | Clientbound |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0x14`    | Clientbound | `AddPlayerPacket` |
 
 Sent to the client when a player entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

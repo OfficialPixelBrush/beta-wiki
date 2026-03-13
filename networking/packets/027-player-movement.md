@@ -1,13 +1,13 @@
 ---
-title: 0x1B Player Movement (Unused)
+title: 0x1B: Player Movement (Unused)
 order: 28
 ---
 
 # Player Movement (Unused)
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x1B`    | Clientbound |
+| Packet ID | Direction   | Mojang Name |
+| --------- | ----------- | ----------- |
+| `0x1B`    | Clientbound | Unknown     |
 
 This packet could be used for setting the movement values and states of whichever player receives the packet.
 

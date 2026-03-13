@@ -1,13 +1,13 @@
 ---
-title: 0x32 Pre-Chunk
+title: 0x32: Pre-Chunk
 order: 51
 ---
 
 # Pre-Chunk
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x32`    | Clientbound |
+| Packet ID | Direction   | Mojang Name             |
+| --------- | ----------- | ----------------------- |
+| `0x32`    | Clientbound | `ChunkVisibilityPacket` |
 
 This is sent by the server to load or unload a chunk. If load is `1`, the Client readies itself to place block data there. If it's `0` the Client deletes the Chunk data.
 

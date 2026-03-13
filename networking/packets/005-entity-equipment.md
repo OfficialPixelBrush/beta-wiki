@@ -1,13 +1,13 @@
 ---
-title: 0x05 Entity Equipment
+title: 0x05: Entity Equipment
 order: 6
 ---
 
 # Entity Equipment
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x05`    | Clientbound |
+| Packet ID | Direction   | Mojang Name             |
+| --------- | ----------- | ----------------------- |
+| `0x05`    | Clientbound | `SetEquippedItemPacket` |
 
 After an entity has been spawned, this packet may be sent to change the armor and held item of the entity. It is unclear if this packet may be used to equip entities other than players and what the client will do if the inventory slot is not within 0 to 4.
 

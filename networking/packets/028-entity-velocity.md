@@ -1,13 +1,13 @@
 ---
-title: 0x1C Entity Velocity
+title: 0x1C: Entity Velocity
 order: 29
 ---
 
 # Entity Velocity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x1C`    | Clientbound |
+| Packet ID | Direction   | Mojang Name             |
+| --------- | ----------- | ----------------------- |
+| `0x1C`    | Clientbound | `SetEntityMotionPacket` |
 
 ## Clientbound
 

@@ -1,13 +1,13 @@
 ---
-title: 0x18 Spawn Mob Entity
+title: 0x18: Spawn Mob Entity
 order: 25
 ---
 
 # Spawn Mob Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x18`    | Clientbound |
+| Packet ID | Direction   | Mojang Name    |
+| --------- | ----------- | -------------- |
+| `0x18`    | Clientbound | `AddMobPacket` |
 
 Sent to the client when a mob entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

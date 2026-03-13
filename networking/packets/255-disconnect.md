@@ -1,13 +1,13 @@
 ---
-title: 0xFF Disconnect
+title: 0xFF: Disconnect
 order: 256
 ---
 
 # Disconnect
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0xFF`    | Both      |
+| Packet ID | Direction | Mojang Name |
+| --------- | --------- | ----------- |
+| `0xFF`    | Both      | `DisconnectPacket` |
 
 This packet is used by the server to disconnect the client with a reason, after which it will close the connection. Due to this, when the Server disconnects the Client, the Client often doesn't even receive the Disconnect Message\*.
 

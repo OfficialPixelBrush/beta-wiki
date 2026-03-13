@@ -1,13 +1,13 @@
 ---
-title: 0x0B Player Position
+title: 0x0B: Player Position
 order: 12
 ---
 
 # Player Position
 
-| Packet ID | Direction |
-| --------- | --------- |
-| `0x0B`    | Both      |
+| Packet ID | Direction | Mojang Name            |
+| --------- | --------- | ---------------------- |
+| `0x0B`    | Both      | `MovePlayerPacket$Pos` |
 
 ## Clientbound
 

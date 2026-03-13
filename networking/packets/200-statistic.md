@@ -1,13 +1,13 @@
 ---
-title: 0xC8 Statistic
+title: 0xC8: Statistic
 order: 201
 ---
 
 # Statistic
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0xC8`    | Clientbound |
+| Packet ID | Direction   | Mojang Name |
+| --------- | ----------- | ----------- |
+| `0xC8`    | Clientbound | Unknown     |
 
 Increment the relevant statistic.
 

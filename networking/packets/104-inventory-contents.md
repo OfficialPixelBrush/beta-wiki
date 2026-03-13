@@ -1,13 +1,13 @@
 ---
-title: 0x68 Inventory Contents
+title: 0x68: Inventory Contents
 order: 105
 ---
 
 # Inventory Contents
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x68`    | Clientbound |
+| Packet ID | Direction   | Mojang Name                 |
+| --------- | ----------- | --------------------------- |
+| `0x68`    | Clientbound | `ContainerSetContentPacket` |
 
 ## Clientbound
 

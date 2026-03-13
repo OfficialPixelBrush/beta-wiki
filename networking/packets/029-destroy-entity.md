@@ -1,13 +1,13 @@
 ---
-title: 0x1D Destroy Entity
+title: 0x1D: Destroy Entity
 order: 30
 ---
 
 # Destroy Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x1D`    | Clientbound |
+| Packet ID | Direction   | Mojang Name          |
+| --------- | ----------- | -------------------- |
+| `0x1D`    | Clientbound | `RemoveEntityPacket` |
 
 ## Clientbound
 

@@ -1,13 +1,13 @@
 ---
-title: 0x0F Place
+title: 0x0F: Place
 order: 16
 ---
 
 # Place
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x0F`    | Serverbound |
+| Packet ID | Direction   | Mojang Name     |
+| --------- | ----------- | --------------- |
+| `0x0F`    | Serverbound | `UseItemPacket` |
 
 ## Serverbound
 

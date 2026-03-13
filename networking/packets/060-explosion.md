@@ -1,14 +1,14 @@
 ---
-title: 0x3C Explosion
+title: 0x3C: Explosion
 order: 61
 description: Used to tell the client about where an explosion occured and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
 ---
 
 # Explosion
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x3C`    | Clientbound |
+| Packet ID | Direction   | Mojang Name     |
+| --------- | ----------- | --------------- |
+| `0x3C`    | Clientbound | `ExplodePacket` |
 
 Used to tell the client about where an explosion occured and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
 

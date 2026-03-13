@@ -1,13 +1,13 @@
 ---
-title: 0x04 Time
+title: 0x04: Time
 order: 5
 ---
 
 # Time
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x04`    | Clientbound |
+| Packet ID | Direction   | Mojang Name     |
+| --------- | ----------- | --------------- |
+| `0x04`    | Clientbound | `SetTimePacket` |
 
 Minecraft's time is measured in ticks, where there should be 20 ticks per second, with 24,000 ticks per day in total. `0` is sunrise, `6000` is noon, `12000` is sunset, and `18000` is midnight. <sup>[src](<https://minecraft.wiki/w/Java_Edition_protocol/Packets?oldid=2769730#Time_Update_(0x04)>)</sup>
 

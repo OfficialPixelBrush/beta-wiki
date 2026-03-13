@@ -1,13 +1,13 @@
 ---
-title: 0x07 Click Entity
+title: 0x07: Click Entity
 order: 8
 ---
 
 # Click Entity
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x07`    | Serverbound |
+| Packet ID | Direction   | Mojang Name      |
+| --------- | ----------- | ---------------- |
+| `0x07`    | Serverbound | `InteractPacket` |
 
 This is sent by the player when an entity is left/right-clicked. The server should only accept this packet if the entity is not obstructed and is within 3 blocks of the player.
 

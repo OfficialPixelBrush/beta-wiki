@@ -1,13 +1,13 @@
 ---
-title: 0x66 Click Inventory Slot
+title: 0x66: Click Inventory Slot
 order: 103
 ---
 
 # Click Inventory Slot
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x66`    | Serverbound |
+| Packet ID | Direction   | Mojang Name            |
+| --------- | ----------- | ---------------------- |
+| `0x66`    | Serverbound | `ContainerClickPacket` |
 
 This packet is sent by the client when an inventory slot is clicked. See the [inventory page](../../general/inventory) for more information.
 

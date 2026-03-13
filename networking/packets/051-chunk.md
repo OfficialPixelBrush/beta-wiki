@@ -1,13 +1,13 @@
 ---
-title: 0x33 Chunk
+title: 0x33: Chunk
 order: 52
 ---
 
 # Chunk
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x33`    | Clientbound |
+| Packet ID | Direction   | Mojang Name               |
+| --------- | ----------- | ------------------------- |
+| `0x33`    | Clientbound | `BlockRegionUpdatePacket` |
 
 The packets is sent from the server to the client to update the blocks in the specified area.
 

@@ -1,13 +1,13 @@
 ---
-title: 0x26 Entity Health Action
+title: 0x26: Entity Health Action
 order: 39
 ---
 
 # Entity Health Action
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x26`    | Clientbound |
+| Packet ID | Direction   | Mojang Name         |
+| --------- | ----------- | ------------------- |
+| `0x26`    | Clientbound | `EntityEventPacket` |
 
 ## Clientbound
 

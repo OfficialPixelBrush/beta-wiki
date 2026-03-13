@@ -1,13 +1,13 @@
 ---
-title: 0x21 Entity Relative Position and Look
+title: 0x21: Entity Relative Position and Look
 order: 34
 ---
 
 # Entity Relative Position and Look
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x21`    | Clientbound |
+| Packet ID | Direction   | Mojang Name               |
+| --------- | ----------- | ------------------------- |
+| `0x21`    | Clientbound | `MoveEntityPacket$PosRot` |
 
 ## Clientbound
 

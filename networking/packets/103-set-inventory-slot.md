@@ -1,13 +1,13 @@
 ---
-title: 0x67 Set Inventory Slot
+title: 0x67: Set Inventory Slot
 order: 104
 ---
 
 # Set Inventory Slot
 
-| Packet ID | Direction   |
-| --------- | ----------- |
-| `0x67`    | Clientbound |
+| Packet ID | Direction   | Mojang Name              |
+| --------- | ----------- | ------------------------ |
+| `0x67`    | Clientbound | `ContainerSetSlotPacket` |
 
 This packet is sent by the client when an inventory slot is updated. See the [inventory page](../../general/inventory) for more information.
 
