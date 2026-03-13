@@ -7,7 +7,7 @@ order: 32
 
 | Packet ID | Direction   | Mojang Name            | MCP Name                |
 | --------- | ----------- | ---------------------- | ----------------------- |
-| `0x1F`    | Clientbound | `MoveEntityPacket$Pos` | `Packet31RelEntityMove` |
+| `0x1F`    | Clientbound | `MoveEntityPacket.Pos` | `Packet31RelEntityMove` |
 
 ## Clientbound
 

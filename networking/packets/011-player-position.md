@@ -7,7 +7,7 @@ order: 12
 
 | Packet ID | Direction | Mojang Name            | MCP Name                 |
 | --------- | --------- | ---------------------- | ------------------------ |
-| `0x0B`    | Both      | `MovePlayerPacket$Pos` | `Packet11PlayerPosition` |
+| `0x0B`    | Both      | `MovePlayerPacket.Pos` | `Packet11PlayerPosition` |
 
 ## Clientbound
 

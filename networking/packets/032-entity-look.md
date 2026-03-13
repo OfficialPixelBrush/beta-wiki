@@ -7,7 +7,7 @@ order: 33
 
 | Packet ID | Direction   | Mojang Name            | MCP Name             |
 | --------- | ----------- | ---------------------- | -------------------- |
-| `0x20`    | Clientbound | `MoveEntityPacket$Rot` | `Packet32EntityLook` |
+| `0x20`    | Clientbound | `MoveEntityPacket.Rot` | `Packet32EntityLook` |
 
 ## Clientbound
 
