@@ -5,9 +5,9 @@ order: 132
 
 # Item Data
 
-| Packet ID | Direction   | Mojang Name |
-| --------- | ----------- | ----------- |
-| `0x83`    | Clientbound | Unknown     |
+| Packet ID | Direction   | Mojang Name             |
+| --------- | ----------- | ----------------------- |
+| `0x83`    | Clientbound | `ComplexItemDataPacket` |
 
 Used for sending custom binary data to the client. In Beta 1.7.3 this is only ever used for updating the Map Item. As a result, the following labels may only apply to it.
 

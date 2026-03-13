@@ -6,9 +6,9 @@ description: This is sent by the server when it expects a client to play a sound
 
 # Effect
 
-| Packet ID | Direction   | Mojang Name |
-| --------- | ----------- | ----------- |
-| `0x3D`    | Clientbound | Unknown     |
+| Packet ID | Direction   | Mojang Name        |
+| --------- | ----------- | ------------------ |
+| `0x3D`    | Clientbound | `LevelEventPacket` |
 
 This is sent by the server when it expects a client to play a sound effect or spawn a particle.
 

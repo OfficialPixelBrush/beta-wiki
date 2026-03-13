@@ -5,9 +5,9 @@ order: 72
 
 # Lightning Bolt
 
-| Packet ID | Direction   | Mojang Name |
-| --------- | ----------- | ----------- |
-| `0x47`    | Clientbound | Unknown     |
+| Packet ID | Direction   | Mojang Name             |
+| --------- | ----------- | ----------------------- |
+| `0x47`    | Clientbound | `AddGlobalEntityPacket` |
 
 Spawns a lightning bolt at the specified position.
 

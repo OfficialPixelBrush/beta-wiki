@@ -5,9 +5,9 @@ order: 18
 
 # Use Bed
 
-| Packet ID | Direction   | Mojang Name |
-| --------- | ----------- | ----------- |
-| `0x11`    | Clientbound | Unknown     |
+| Packet ID | Direction   | Mojang Name                    |
+| --------- | ----------- | ------------------------------ |
+| `0x11`    | Clientbound | `EntityActionAtPositionPacket` |
 
 ## Clientbound
 

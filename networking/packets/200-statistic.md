@@ -5,9 +5,9 @@ order: 201
 
 # Statistic
 
-| Packet ID | Direction   | Mojang Name |
-| --------- | ----------- | ----------- |
-| `0xC8`    | Clientbound | Unknown     |
+| Packet ID | Direction   | Mojang Name       |
+| --------- | ----------- | ----------------- |
+| `0xC8`    | Clientbound | `AwardStatPacket` |
 
 Increment the relevant statistic.
 
