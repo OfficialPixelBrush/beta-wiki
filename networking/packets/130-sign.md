@@ -5,9 +5,9 @@ order: 131
 
 # Sign
 
-| Packet ID | Direction | Mojang Name        |
-| --------- | --------- | ------------------ |
-| `0x82`    | Both      | `SignUpdatePacket` |
+| Packet ID | Direction | Mojang Name        | MCP Name              |
+| --------- | --------- | ------------------ | --------------------- |
+| `0x82`    | Both      | `SignUpdatePacket` | `Packet130UpdateSign` |
 
 ## Both
 

@@ -5,9 +5,9 @@ order: 28
 
 # Player Movement (Unused)
 
-| Packet ID | Direction   | Mojang Name         |
-| --------- | ----------- | ------------------- |
-| `0x1B`    | Clientbound | `PlayerInputPacket` |
+| Packet ID | Direction   | Mojang Name         | MCP Name           |
+| --------- | ----------- | ------------------- | ------------------ |
+| `0x1B`    | Clientbound | `PlayerInputPacket` | `Packet27Position` |
 
 This packet could be used for setting the movement values and states of whichever player receives the packet.
 

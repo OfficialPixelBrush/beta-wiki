@@ -5,9 +5,9 @@ order: 35
 
 # Entity Position and Look
 
-| Packet ID | Direction   | Mojang Name            |
-| --------- | ----------- | ---------------------- |
-| `0x22`    | Clientbound | `TeleportEntityPacket` |
+| Packet ID | Direction   | Mojang Name            | MCP Name                 |
+| --------- | ----------- | ---------------------- | ------------------------ |
+| `0x22`    | Clientbound | `TeleportEntityPacket` | `Packet34EntityTeleport` |
 
 ## Clientbound
 

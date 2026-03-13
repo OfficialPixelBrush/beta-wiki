@@ -5,9 +5,9 @@ order: 33
 
 # Entity Look
 
-| Packet ID | Direction   | Mojang Name            |
-| --------- | ----------- | ---------------------- |
-| `0x20`    | Clientbound | `MoveEntityPacket$Rot` |
+| Packet ID | Direction   | Mojang Name            | MCP Name             |
+| --------- | ----------- | ---------------------- | -------------------- |
+| `0x20`    | Clientbound | `MoveEntityPacket$Rot` | `Packet32EntityLook` |
 
 ## Clientbound
 

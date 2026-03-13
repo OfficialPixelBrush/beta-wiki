@@ -5,9 +5,9 @@ order: 39
 
 # Entity Health Action
 
-| Packet ID | Direction   | Mojang Name         |
-| --------- | ----------- | ------------------- |
-| `0x26`    | Clientbound | `EntityEventPacket` |
+| Packet ID | Direction   | Mojang Name         | MCP Name               |
+| --------- | ----------- | ------------------- | ---------------------- |
+| `0x26`    | Clientbound | `EntityEventPacket` | `Packet38EntityStatus` |
 
 ## Clientbound
 

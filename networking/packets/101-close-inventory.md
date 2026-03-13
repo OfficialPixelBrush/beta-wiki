@@ -5,9 +5,9 @@ order: 102
 
 # Close Inventory
 
-| Packet ID | Direction | Mojang Name            |
-| --------- | --------- | ---------------------- |
-| `0x65`    | Both      | `ContainerClosePacket` |
+| Packet ID | Direction | Mojang Name            | MCP Name               |
+| --------- | --------- | ---------------------- | ---------------------- |
+| `0x65`    | Both      | `ContainerClosePacket` | `Packet101CloseWindow` |
 
 This packet is sent by the client when closing an inventory/window, and by the server when an inventory is forcibly closed, such as a chest being destroyed.
 

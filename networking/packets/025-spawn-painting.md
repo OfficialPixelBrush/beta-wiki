@@ -5,9 +5,9 @@ order: 26
 
 # Spawn Painting Entity
 
-| Packet ID | Direction   | Mojang Name         |
-| --------- | ----------- | ------------------- |
-| `0x19`    | Clientbound | `AddPaintingPacket` |
+| Packet ID | Direction   | Mojang Name         | MCP Name                 |
+| --------- | ----------- | ------------------- | ------------------------ |
+| `0x19`    | Clientbound | `AddPaintingPacket` | `Packet25EntityPainting` |
 
 Sent to the client when a painting entity should be spawned. The position is in [block space](../terminology#block-space).
 

@@ -5,9 +5,9 @@ order: 22
 
 # Spawn Item Entity
 
-| Packet ID | Direction   | Mojang Name           |
-| --------- | ----------- | --------------------- |
-| `0x15`    | Clientbound | `AddItemEntityPacket` |
+| Packet ID | Direction   | Mojang Name           | MCP Name              |
+| --------- | ----------- | --------------------- | --------------------- |
+| `0x15`    | Clientbound | `AddItemEntityPacket` | `Packet21PickupSpawn` |
 
 Sent to the client when an item entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

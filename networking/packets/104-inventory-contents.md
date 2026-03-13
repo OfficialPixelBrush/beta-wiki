@@ -5,9 +5,9 @@ order: 105
 
 # Inventory Contents
 
-| Packet ID | Direction   | Mojang Name                 |
-| --------- | ----------- | --------------------------- |
-| `0x68`    | Clientbound | `ContainerSetContentPacket` |
+| Packet ID | Direction   | Mojang Name                 | MCP Name               |
+| --------- | ----------- | --------------------------- | ---------------------- |
+| `0x68`    | Clientbound | `ContainerSetContentPacket` | `Packet104WindowItems` |
 
 ## Clientbound
 

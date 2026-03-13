@@ -5,9 +5,9 @@ order: 106
 
 # Furnace Progress
 
-| Packet ID | Direction   | Mojang Name              |
-| --------- | ----------- | ------------------------ |
-| `0x69`    | Clientbound | `ContainerSetDataPacket` |
+| Packet ID | Direction   | Mojang Name              | MCP Name                     |
+| --------- | ----------- | ------------------------ | ---------------------------- |
+| `0x69`    | Clientbound | `ContainerSetDataPacket` | `Packet105UpdateProgressbar` |
 
 This is sent by the server to update the progress of fuel burning or progress of an item being smelted. The smelting bar ranges from `0` to `200`, while the max value of the fuel bar depends on the type of fuel used (`300` for any wood, `100` for sticks or a sapling, `1600` for coal, and `20000` for a lava bucket.).
 

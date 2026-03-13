@@ -5,9 +5,9 @@ order: 16
 
 # Place
 
-| Packet ID | Direction   | Mojang Name     |
-| --------- | ----------- | --------------- |
-| `0x0F`    | Serverbound | `UseItemPacket` |
+| Packet ID | Direction   | Mojang Name     | MCP Name        |
+| --------- | ----------- | --------------- | --------------- |
+| `0x0F`    | Serverbound | `UseItemPacket` | `Packet15Place` |
 
 ## Serverbound
 

@@ -6,9 +6,9 @@ order: 3
 
 # Handshake
 
-| Packet ID | Direction | Mojang Name      |
-| --------- | --------- | ---------------- |
-| `0x02`    | Both      | `PreLoginPacket` |
+| Packet ID | Direction | Mojang Name      | MCP Name           |
+| --------- | --------- | ---------------- | ------------------ |
+| `0x02`    | Both      | `PreLoginPacket` | `Packet2Handshake` |
 
 This is the first packet that is sent after the connection to the server is made.
 

@@ -5,9 +5,9 @@ order: 41
 
 # Entity Metadata
 
-| Packet ID | Direction   | Mojang Name           |
-| --------- | ----------- | --------------------- |
-| `0x28`    | Clientbound | `SetEntityDataPacket` |
+| Packet ID | Direction   | Mojang Name           | MCP Name                 |
+| --------- | ----------- | --------------------- | ------------------------ |
+| `0x28`    | Clientbound | `SetEntityDataPacket` | `Packet40EntityMetadata` |
 
 ## Clientbound
 

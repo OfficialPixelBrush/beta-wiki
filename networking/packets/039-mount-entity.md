@@ -5,9 +5,9 @@ order: 40
 
 # Mount Entity
 
-| Packet ID | Direction   | Mojang Name       |
-| --------- | ----------- | ----------------- |
-| `0x27`    | Clientbound | `SetRidingPacket` |
+| Packet ID | Direction   | Mojang Name       | MCP Name               |
+| --------- | ----------- | ----------------- | ---------------------- |
+| `0x27`    | Clientbound | `SetRidingPacket` | `Packet39AttachEntity` |
 
 ## Clientbound
 

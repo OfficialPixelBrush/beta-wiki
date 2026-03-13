@@ -5,9 +5,9 @@ order: 24
 
 # Spawn Object Entity
 
-| Packet ID | Direction   | Mojang Name       |
-| --------- | ----------- | ----------------- |
-| `0x17`    | Clientbound | `AddEntityPacket` |
+| Packet ID | Direction   | Mojang Name       | MCP Name               |
+| --------- | ----------- | ----------------- | ---------------------- |
+| `0x17`    | Clientbound | `AddEntityPacket` | `Packet23VehicleSpawn` |
 
 Sent to the client when an [object entity](../../entities/objects) should be spawned. The position is in [block space](../terminology#block-space).
 

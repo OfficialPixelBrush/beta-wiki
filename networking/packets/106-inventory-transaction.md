@@ -5,9 +5,9 @@ order: 107
 
 # Inventory Transaction
 
-| Packet ID | Direction | Mojang Name          |
-| --------- | --------- | -------------------- |
-| `0x6A`    | Both      | `ContainerAckPacket` |
+| Packet ID | Direction | Mojang Name          | MCP Name               |
+| --------- | --------- | -------------------- | ---------------------- |
+| `0x6A`    | Both      | `ContainerAckPacket` | `Packet106Transaction` |
 
 This packet is sent to indicate if an inventory transaction was accepted.
 

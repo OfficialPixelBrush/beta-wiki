@@ -5,9 +5,9 @@ order: 6
 
 # Entity Equipment
 
-| Packet ID | Direction   | Mojang Name             |
-| --------- | ----------- | ----------------------- |
-| `0x05`    | Clientbound | `SetEquippedItemPacket` |
+| Packet ID | Direction   | Mojang Name             | MCP Name                 |
+| --------- | ----------- | ----------------------- | ------------------------ |
+| `0x05`    | Clientbound | `SetEquippedItemPacket` | `Packet5PlayerInventory` |
 
 After an entity has been spawned, this packet may be sent to change the armor and held item of the entity. It is unclear if this packet may be used to equip entities other than players and what the client will do if the inventory slot is not within 0 to 4.
 

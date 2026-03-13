@@ -5,9 +5,9 @@ order: 103
 
 # Click Inventory Slot
 
-| Packet ID | Direction   | Mojang Name            |
-| --------- | ----------- | ---------------------- |
-| `0x66`    | Serverbound | `ContainerClickPacket` |
+| Packet ID | Direction   | Mojang Name            | MCP Name               |
+| --------- | ----------- | ---------------------- | ---------------------- |
+| `0x66`    | Serverbound | `ContainerClickPacket` | `Packet102WindowClick` |
 
 This packet is sent by the client when an inventory slot is clicked. See the [inventory page](../../general/inventory) for more information.
 

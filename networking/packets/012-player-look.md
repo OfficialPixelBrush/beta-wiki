@@ -5,9 +5,9 @@ order: 13
 
 # Player Look
 
-| Packet ID | Direction | Mojang Name            |
-| --------- | --------- | ---------------------- |
-| `0x0C`    | Both(?)   | `MovePlayerPacket$Rot` |
+| Packet ID | Direction | Mojang Name            | MCP Name             |
+| --------- | --------- | ---------------------- | -------------------- |
+| `0x0C`    | Both(?)   | `MovePlayerPacket$Rot` | `Packet12PlayerLook` |
 
 ## Clientbound
 

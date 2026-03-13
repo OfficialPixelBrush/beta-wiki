@@ -5,9 +5,9 @@ order: 9
 
 # Set Health
 
-| Packet ID | Direction   | Mojang Name       |
-| --------- | ----------- | ----------------- |
-| `0x08`    | Clientbound | `SetHealthPacket` |
+| Packet ID | Direction   | Mojang Name       | MCP Name              |
+| --------- | ----------- | ----------------- | --------------------- |
+| `0x08`    | Clientbound | `SetHealthPacket` | `Packet8UpdateHealth` |
 
 This is sent to the player to increase/decrease their health.
 

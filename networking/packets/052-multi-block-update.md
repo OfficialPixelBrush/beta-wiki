@@ -5,9 +5,9 @@ order: 53
 
 # Multi-Block Update
 
-| Packet ID | Direction   | Mojang Name              |
-| --------- | ----------- | ------------------------ |
-| `0x34`    | Clientbound | `ChunkTilesUpdatePacket` |
+| Packet ID | Direction   | Mojang Name              | MCP Name                   |
+| --------- | ----------- | ------------------------ | -------------------------- |
+| `0x34`    | Clientbound | `ChunkTilesUpdatePacket` | `Packet52MultiBlockChange` |
 
 This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
 

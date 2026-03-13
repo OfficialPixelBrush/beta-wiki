@@ -5,9 +5,9 @@ order: 52
 
 # Chunk
 
-| Packet ID | Direction   | Mojang Name               |
-| --------- | ----------- | ------------------------- |
-| `0x33`    | Clientbound | `BlockRegionUpdatePacket` |
+| Packet ID | Direction   | Mojang Name               | MCP Name           |
+| --------- | ----------- | ------------------------- | ------------------ |
+| `0x33`    | Clientbound | `BlockRegionUpdatePacket` | `Packet51MapChunk` |
 
 The packets is sent from the server to the client to update the blocks in the specified area.
 

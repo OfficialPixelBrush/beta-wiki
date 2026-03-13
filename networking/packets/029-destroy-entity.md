@@ -5,9 +5,9 @@ order: 30
 
 # Destroy Entity
 
-| Packet ID | Direction   | Mojang Name          |
-| --------- | ----------- | -------------------- |
-| `0x1D`    | Clientbound | `RemoveEntityPacket` |
+| Packet ID | Direction   | Mojang Name          | MCP Name                |
+| --------- | ----------- | -------------------- | ----------------------- |
+| `0x1D`    | Clientbound | `RemoveEntityPacket` | `Packet29DestroyEntity` |
 
 ## Clientbound
 

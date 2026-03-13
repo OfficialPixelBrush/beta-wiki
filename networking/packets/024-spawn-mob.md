@@ -5,9 +5,9 @@ order: 25
 
 # Spawn Mob Entity
 
-| Packet ID | Direction   | Mojang Name    |
-| --------- | ----------- | -------------- |
-| `0x18`    | Clientbound | `AddMobPacket` |
+| Packet ID | Direction   | Mojang Name    | MCP Name           |
+| --------- | ----------- | -------------- | ------------------ |
+| `0x18`    | Clientbound | `AddMobPacket` | `Packet24MobSpawn` |
 
 Sent to the client when a mob entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

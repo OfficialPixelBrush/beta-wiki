@@ -5,9 +5,9 @@ order: 104
 
 # Set Inventory Slot
 
-| Packet ID | Direction   | Mojang Name              |
-| --------- | ----------- | ------------------------ |
-| `0x67`    | Clientbound | `ContainerSetSlotPacket` |
+| Packet ID | Direction   | Mojang Name              | MCP Name           |
+| --------- | ----------- | ------------------------ | ------------------ |
+| `0x67`    | Clientbound | `ContainerSetSlotPacket` | `Packet103SetSlot` |
 
 This packet is sent by the client when an inventory slot is updated. See the [inventory page](../../general/inventory) for more information.
 

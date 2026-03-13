@@ -5,9 +5,9 @@ order: 256
 
 # Disconnect
 
-| Packet ID | Direction | Mojang Name |
-| --------- | --------- | ----------- |
-| `0xFF`    | Both      | `DisconnectPacket` |
+| Packet ID | Direction | Mojang Name        | MCP Name                  |
+| --------- | --------- | ------------------ | ------------------------- |
+| `0xFF`    | Both      | `DisconnectPacket` | `Packet255KickDisconnect` |
 
 This packet is used by the server to disconnect the client with a reason, after which it will close the connection. Due to this, when the Server disconnects the Client, the Client often doesn't even receive the Disconnect Message\*.
 

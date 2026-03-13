@@ -6,9 +6,9 @@ order: 4
 
 # Chat Message
 
-| Packet ID | Direction | Mojang Name  |
-| --------- | --------- | ------------ |
-| `0x03`    | Both      | `ChatPacket` |
+| Packet ID | Direction | Mojang Name  | MCP Name      |
+| --------- | --------- | ------------ | ------------- |
+| `0x03`    | Both      | `ChatPacket` | `Packet3Chat` |
 
 The client will send this packet when the "enter" key is pressed after typing a chat message. The vanilla server will parse this chat message to see if it starts with the character `"/"`, at which point it will assume the chat message to be a command. Otherwise, it will send it to the other players in the server.
 

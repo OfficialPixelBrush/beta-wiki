@@ -6,9 +6,9 @@ description: Used to tell the client about where an explosion occured and what b
 
 # Explosion
 
-| Packet ID | Direction   | Mojang Name     |
-| --------- | ----------- | --------------- |
-| `0x3C`    | Clientbound | `ExplodePacket` |
+| Packet ID | Direction   | Mojang Name     | MCP Name            |
+| --------- | ----------- | --------------- | ------------------- |
+| `0x3C`    | Clientbound | `ExplodePacket` | `Packet60Explosion` |
 
 Used to tell the client about where an explosion occured and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
 

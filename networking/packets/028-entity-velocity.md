@@ -5,9 +5,9 @@ order: 29
 
 # Entity Velocity
 
-| Packet ID | Direction   | Mojang Name             |
-| --------- | ----------- | ----------------------- |
-| `0x1C`    | Clientbound | `SetEntityMotionPacket` |
+| Packet ID | Direction   | Mojang Name             | MCP Name                 |
+| --------- | ----------- | ----------------------- | ------------------------ |
+| `0x1C`    | Clientbound | `SetEntityMotionPacket` | `Packet28EntityVelocity` |
 
 ## Clientbound
 

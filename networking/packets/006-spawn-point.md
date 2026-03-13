@@ -5,9 +5,9 @@ order: 7
 
 # Spawn Point
 
-| Packet ID | Direction   | Mojang Name              |
-| --------- | ----------- | ------------------------ |
-| `0x06`    | Clientbound | `SetSpawnPositionPacket` |
+| Packet ID | Direction   | Mojang Name              | MCP Name               |
+| --------- | ----------- | ------------------------ | ---------------------- |
+| `0x06`    | Clientbound | `SetSpawnPositionPacket` | `Packet6SpawnPosition` |
 
 This is sent after the player has finished logging in to spawn them into the world. It can also be sent at any time to update where the player's compass points at.
 

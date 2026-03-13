@@ -5,9 +5,9 @@ order: 21
 
 # Spawn Player Entity
 
-| Packet ID | Direction   | Mojang Name       |
-| --------- | ----------- | ----------------- |
-| `0x14`    | Clientbound | `AddPlayerPacket` |
+| Packet ID | Direction   | Mojang Name       | MCP Name                   |
+| --------- | ----------- | ----------------- | -------------------------- |
+| `0x14`    | Clientbound | `AddPlayerPacket` | `Packet20NamedEntitySpawn` |
 
 Sent to the client when a player entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 

@@ -5,9 +5,9 @@ order: 55
 
 # Block Action
 
-| Packet ID | Direction   | Mojang Name       |
-| --------- | ----------- | ----------------- |
-| `0x36`    | Clientbound | `TileEventPacket` |
+| Packet ID | Direction   | Mojang Name       | MCP Name                |
+| --------- | ----------- | ----------------- | ----------------------- |
+| `0x36`    | Clientbound | `TileEventPacket` | `Packet54PlayNoteBlock` |
 
 ## Clientbound
 

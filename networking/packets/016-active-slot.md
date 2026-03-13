@@ -5,9 +5,9 @@ order: 17
 
 # Active Slot
 
-| Packet ID | Direction   | Mojang Name            |
-| --------- | ----------- | ---------------------- |
-| `0x10`    | Serverbound | `SetCarriedItemPacket` |
+| Packet ID | Direction   | Mojang Name            | MCP Name                  |
+| --------- | ----------- | ---------------------- | ------------------------- |
+| `0x10`    | Serverbound | `SetCarriedItemPacket` | `Packet16BlockItemSwitch` |
 
 ## Serverbound
 

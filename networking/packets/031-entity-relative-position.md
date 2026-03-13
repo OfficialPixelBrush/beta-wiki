@@ -5,9 +5,9 @@ order: 32
 
 # Entity Relative Position
 
-| Packet ID | Direction   | Mojang Name            |
-| --------- | ----------- | ---------------------- |
-| `0x1F`    | Clientbound | `MoveEntityPacket$Pos` |
+| Packet ID | Direction   | Mojang Name            | MCP Name                |
+| --------- | ----------- | ---------------------- | ----------------------- |
+| `0x1F`    | Clientbound | `MoveEntityPacket$Pos` | `Packet31RelEntityMove` |
 
 ## Clientbound
 

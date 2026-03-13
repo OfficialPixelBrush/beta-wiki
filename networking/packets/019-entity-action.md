@@ -5,9 +5,9 @@ order: 20
 
 # Entity Action
 
-| Packet ID | Direction   | Mojang Name           |
-| --------- | ----------- | --------------------- |
-| `0x13`    | Serverbound | `PlayerCommandPacket` |
+| Packet ID | Direction   | Mojang Name           | MCP Name               |
+| --------- | ----------- | --------------------- | ---------------------- |
+| `0x13`    | Serverbound | `PlayerCommandPacket` | `Packet19EntityAction` |
 
 This packet is sent by the client for performing certain actions, defined via a Bitmask.
 

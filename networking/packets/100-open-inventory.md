@@ -5,9 +5,9 @@ order: 101
 
 # Open Inventory
 
-| Packet ID | Direction   | Mojang Name           |
-| --------- | ----------- | --------------------- |
-| `0x64`    | Clientbound | `ContainerOpenPacket` |
+| Packet ID | Direction   | Mojang Name           | MCP Name              |
+| --------- | ----------- | --------------------- | --------------------- |
+| `0x64`    | Clientbound | `ContainerOpenPacket` | `Packet100OpenWindow` |
 
 This packet is sent by the server when an inventory/window is opened. The type of inventory can either be `0` for a chest, `1` for a crafting table, `2` for a furnace, and `3` for a dispenser.
 

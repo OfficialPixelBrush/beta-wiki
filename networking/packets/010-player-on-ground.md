@@ -5,9 +5,9 @@ order: 11
 
 # Player On Ground
 
-| Packet ID | Direction | Mojang Name        |
-| --------- | --------- | ------------------ |
-| `0x0A`    | Both      | `MovePlayerPacket` |
+| Packet ID | Direction | Mojang Name        | MCP Name         |
+| --------- | --------- | ------------------ | ---------------- |
+| `0x0A`    | Both      | `MovePlayerPacket` | `Packet10Flying` |
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 

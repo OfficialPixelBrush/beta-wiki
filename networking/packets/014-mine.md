@@ -5,9 +5,9 @@ order: 15
 
 # Mine
 
-| Packet ID | Direction   | Mojang Name          |
-| --------- | ----------- | -------------------- |
-| `0x0E`    | Serverbound | `PlayerActionPacket` |
+| Packet ID | Direction   | Mojang Name          | MCP Name           |
+| --------- | ----------- | -------------------- | ------------------ |
+| `0x0E`    | Serverbound | `PlayerActionPacket` | `Packet14BlockDig` |
 
 ## Serverbound
 
