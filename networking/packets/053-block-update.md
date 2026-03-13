@@ -1,5 +1,5 @@
 ---
-title: 0x35: Block Update
+title: "0x35: Block Update"
 order: 54
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 0x03: Chat Message
+title: "0x03: Chat Message"
 description: Represents a chat message being sent by a player or the server.
 order: 4
 ---

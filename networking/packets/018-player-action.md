@@ -1,5 +1,5 @@
 ---
-title: 0x12: Player Action
+title: "0x12: Player Action"
 order: 19
 ---
 

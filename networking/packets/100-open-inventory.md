@@ -1,5 +1,5 @@
 ---
-title: 0x64: Open Inventory
+title: "0x64: Open Inventory"
 order: 101
 ---
 

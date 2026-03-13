@@ -1,5 +1,5 @@
 ---
-title: 0x19: Spawn Painting Entity
+title: "0x19: Spawn Painting Entity"
 order: 26
 ---
 

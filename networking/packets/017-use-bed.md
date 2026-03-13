@@ -1,5 +1,5 @@
 ---
-title: 0x11: Use Bed
+title: "0x11: Use Bed"
 order: 18
 ---
 

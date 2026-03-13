@@ -1,5 +1,5 @@
 ---
-title: 0x0B: Player Position
+title: "0x0B: Player Position"
 order: 12
 ---
 

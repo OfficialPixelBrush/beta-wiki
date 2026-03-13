@@ -1,5 +1,5 @@
 ---
-title: 0x1C: Entity Velocity
+title: "0x1C: Entity Velocity"
 order: 29
 ---
 

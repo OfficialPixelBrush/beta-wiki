@@ -1,5 +1,5 @@
 ---
-title: 0x07: Click Entity
+title: "0x07: Click Entity"
 order: 8
 ---
 

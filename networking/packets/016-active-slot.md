@@ -1,5 +1,5 @@
 ---
-title: 0x10: Active Slot
+title: "0x10: Active Slot"
 order: 17
 ---
 

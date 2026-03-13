@@ -1,5 +1,5 @@
 ---
-title: 0x09: Respawn
+title: "0x09: Respawn"
 order: 10
 ---
 

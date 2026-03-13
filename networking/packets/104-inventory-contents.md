@@ -1,5 +1,5 @@
 ---
-title: 0x68: Inventory Contents
+title: "0x68: Inventory Contents"
 order: 105
 ---
 

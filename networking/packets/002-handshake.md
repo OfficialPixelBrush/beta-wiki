@@ -1,5 +1,5 @@
 ---
-title: 0x02: Handshake
+title: "0x02: Handshake"
 description: Initializes the login process
 order: 3
 ---

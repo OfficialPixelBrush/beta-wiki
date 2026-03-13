@@ -1,5 +1,5 @@
 ---
-title: 0x05: Entity Equipment
+title: "0x05: Entity Equipment"
 order: 6
 ---
 

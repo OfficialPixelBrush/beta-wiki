@@ -1,5 +1,5 @@
 ---
-title: 0xC8: Statistic
+title: "0xC8: Statistic"
 order: 201
 ---
 

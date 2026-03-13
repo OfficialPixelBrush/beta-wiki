@@ -1,5 +1,5 @@
 ---
-title: 0x16: Collect Item
+title: "0x16: Collect Item"
 order: 23
 ---
 

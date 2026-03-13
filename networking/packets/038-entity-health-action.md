@@ -1,5 +1,5 @@
 ---
-title: 0x26: Entity Health Action
+title: "0x26: Entity Health Action"
 order: 39
 ---
 

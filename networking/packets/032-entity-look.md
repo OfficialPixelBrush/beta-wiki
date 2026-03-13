@@ -1,5 +1,5 @@
 ---
-title: 0x20: Entity Look
+title: "0x20: Entity Look"
 order: 33
 ---
 

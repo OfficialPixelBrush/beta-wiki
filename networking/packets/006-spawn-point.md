@@ -1,5 +1,5 @@
 ---
-title: 0x06: Spawn Point
+title: "0x06: Spawn Point"
 order: 7
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 0x1E: Entity (Unused)
+title: "0x1E: Entity (Unused)"
 order: 31
 ---
 

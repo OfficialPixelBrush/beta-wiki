@@ -1,5 +1,5 @@
 ---
-title: 0x18: Spawn Mob Entity
+title: "0x18: Spawn Mob Entity"
 order: 25
 ---
 

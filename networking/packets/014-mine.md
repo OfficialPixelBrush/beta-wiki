@@ -1,5 +1,5 @@
 ---
-title: 0x0E: Mine
+title: "0x0E: Mine"
 order: 15
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 0x66: Click Inventory Slot
+title: "0x66: Click Inventory Slot"
 order: 103
 ---
 

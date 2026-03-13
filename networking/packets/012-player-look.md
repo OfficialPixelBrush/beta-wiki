@@ -1,5 +1,5 @@
 ---
-title: 0x0C: Player Look
+title: "0x0C: Player Look"
 order: 13
 ---
 

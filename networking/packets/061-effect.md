@@ -1,5 +1,5 @@
 ---
-title: 0x3D: Effect
+title: "0x3D: Effect"
 order: 62
 description: This is sent by the server when it expects a client to play a sound effect or spawn a particle.
 ---

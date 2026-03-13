@@ -1,5 +1,5 @@
 ---
-title: 0x69: Furnace Progress
+title: "0x69: Furnace Progress"
 order: 106
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 0x6A: Inventory Transaction
+title: "0x6A: Inventory Transaction"
 order: 107
 ---
 

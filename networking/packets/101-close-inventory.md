@@ -1,5 +1,5 @@
 ---
-title: 0x65: Close Inventory
+title: "0x65: Close Inventory"
 order: 102
 ---
 

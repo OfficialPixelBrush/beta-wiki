@@ -1,5 +1,5 @@
 ---
-title: 0x00: Keep Alive
+title: "0x00: Keep Alive"
 description: Sent once a second by the server and client
 order: 1
 ---

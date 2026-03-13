@@ -1,5 +1,5 @@
 ---
-title: 0x0F: Place
+title: "0x0F: Place"
 order: 16
 ---
 

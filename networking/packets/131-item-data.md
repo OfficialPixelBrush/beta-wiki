@@ -1,5 +1,5 @@
 ---
-title: 0x83: Item Data
+title: "0x83: Item Data"
 order: 132
 ---
 

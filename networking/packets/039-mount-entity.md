@@ -1,5 +1,5 @@
 ---
-title: 0x27: Mount Entity
+title: "0x27: Mount Entity"
 order: 40
 ---
 

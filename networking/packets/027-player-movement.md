@@ -1,5 +1,5 @@
 ---
-title: 0x1B: Player Movement (Unused)
+title: "0x1B: Player Movement (Unused)"
 order: 28
 ---
 
