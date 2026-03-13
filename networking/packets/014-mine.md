@@ -33,7 +33,7 @@ The status can represent one of three values.
 `Finished digging` is only sent when the client thinks its broken a block. as a result, it should be checked on the server-side if the amount of time the client took to break the block is appropriate.
 If a client stops breaking a block the server isn't informed of this.
 
-`Drop item` is sent by the client whenever an item should be dropped from the player, such as when `Q` is pressed or when items are clicked outside of an inventory(?).
+`Drop item` is sent by the client whenever an item should be dropped from the player, such as when `Q` is pressed or when items are clicked outside of an inventory.
 
 The face can be one of six values, representing the face being hit.
 

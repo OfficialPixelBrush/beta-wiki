@@ -47,14 +47,15 @@ For more info, see the [chunk page](chunk).
 | ----------- | -------- | ------------------------------------------------------------------------- |
 | LastPlayed  | Long     | Timestamp for when the world was last played                              |
 | LevelName   | String16 | The name of the world                                                     |
-| raining     | Byte     | If it's raining                                                           |
+| raining     | Byte     | If it's raining (see [Weather](./weather#rain))                           |
+| rainTime    | Integer  | Time until raining is toggled (see [Weather](./weather#rain))             |
 | RandomSeed  | Long     | The seed of the world                                                     |
 | SizeOnDisk  | Long     | The size of the world in bytes                                            |
 | SpawnX      | Integer  | The X-Coordinate of the Spawn                                             |
 | SpawnY      | Integer  | The Y-Coordinate of the Spawn                                             |
 | SpawnZ      | Integer  | The Z-Coordinate of the Spawn                                             |
-| thundering  | Byte     | If it's thundering                                                        |
-| thunderTime | Integer  | ?                                                                         |
+| thundering  | Byte     | If it's thundering (see [Weather](./weather#thunder))                     |
+| thunderTime | Integer  | Time until thundering is toggled (see [Weather](./weather#thunder))       |
 | Time        | Long     | World time in ticks                                                       |
 | version     | Integer  | `level.dat` format version. Always `19132` for worlds made after Beta 1.3 |
 

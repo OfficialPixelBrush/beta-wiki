@@ -7,7 +7,7 @@ order: 13
 
 | Packet ID | Direction | Mojang Name            | MCP Name             |
 | --------- | --------- | ---------------------- | -------------------- |
-| `0x0C`    | Both(?)   | `MovePlayerPacket.Rot` | `Packet12PlayerLook` |
+| `0x0C`    | Both      | `MovePlayerPacket.Rot` | `Packet12PlayerLook` |
 
 ## Clientbound
 
