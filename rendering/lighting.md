@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 description: This section will go into how lighting data is rendered, not how it is calculated.
 ---
 
