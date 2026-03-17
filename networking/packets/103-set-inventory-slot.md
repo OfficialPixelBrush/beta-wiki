@@ -13,13 +13,13 @@ This packet is sent by the client when an inventory slot is updated. See the [in
 
 ## Clientbound
 
-| Field            | Type  | Description                                                                                     |
-| ---------------- | ----- | ----------------------------------------------------------------------------------------------- |
-| Window ID        | Byte  | The incremental ID of the window. Ranges from 0 to 99                                           |
-| Slot             | Short | The ID of the updated slot. See the [inventory page](../../general/inventory) for slot mapping. |
-| Item ID          | Short | The ID of the new item (`-1` if empty slot)                                                     |
-| Item Amount      | Byte  | The amount of the new item (only sent if ID > 0)                                                |
-| Item Meta/Damage | Short | The meta/damage of the new item (only sent if ID > 0)                                           |
+| Field         | Type  | Description                                                                                     |
+| ------------- | ----- | ----------------------------------------------------------------------------------------------- |
+| Window ID     | Byte  | The incremental ID of the window. Ranges from 0 to 99                                           |
+| Slot          | Short | The ID of the updated slot. See the [inventory page](../../general/inventory) for slot mapping. |
+| Item ID       | Short | The ID of the new item (`-1` if empty slot)                                                     |
+| Item Amount   | Byte  | The amount of the new item (only sent if ID > 0)                                                |
+| Item Metadata | Short | The meta of the new item (only sent if ID > 0)                                                  |
 
 If both the window ID and slot ID are `-1`, then the item that's currently held by the mouse is affected.
 

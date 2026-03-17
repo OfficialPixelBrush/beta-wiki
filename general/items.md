@@ -1,20 +1,20 @@
 ---
 order: 10
-description: Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit metadata/damage value.
+description: Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit data value.
 ---
 
 # Items
 
-Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit metadata/damage value.
+Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit data value.
 
 Here is a comprehensive listing of all items.
 
 | Value | Name                 | Metadata use |
 | ----: | :------------------- | :----------- |
-|   256 | Iron Shovel          | Damage       |
-|   257 | Iron Pickaxe         | Damage       |
-|   258 | Iron Axe             | Damage       |
-|   259 | Flint and Steel      | Damage       |
+|   256 | Iron Shovel          | Durability   |
+|   257 | Iron Pickaxe         | Durability   |
+|   258 | Iron Axe             | Durability   |
+|   259 | Flint and Steel      | Durability   |
 |   260 | Apple                |              |
 |   261 | Bow                  |              |
 |   262 | Arrow                |              |
@@ -22,57 +22,57 @@ Here is a comprehensive listing of all items.
 |   264 | Diamond              |              |
 |   265 | Iron                 |              |
 |   266 | Gold                 |              |
-|   267 | Iron Sword           | Damage       |
-|   268 | Wooden Sword         | Damage       |
-|   269 | Wooden Shovel        | Damage       |
-|   270 | Wooden Pickaxe       | Damage       |
-|   271 | Wooden Axe           | Damage       |
-|   272 | Stone Sword          | Damage       |
-|   273 | Stone Shovel         | Damage       |
-|   274 | Stone Pickaxe        | Damage       |
-|   275 | Stone Axe            | Damage       |
-|   276 | Diamond Sword        | Damage       |
-|   277 | Diamond Shovel       | Damage       |
-|   278 | Diamond Pickaxe      | Damage       |
-|   279 | Diamond Axe          | Damage       |
+|   267 | Iron Sword           | Durability   |
+|   268 | Wooden Sword         | Durability   |
+|   269 | Wooden Shovel        | Durability   |
+|   270 | Wooden Pickaxe       | Durability   |
+|   271 | Wooden Axe           | Durability   |
+|   272 | Stone Sword          | Durability   |
+|   273 | Stone Shovel         | Durability   |
+|   274 | Stone Pickaxe        | Durability   |
+|   275 | Stone Axe            | Durability   |
+|   276 | Diamond Sword        | Durability   |
+|   277 | Diamond Shovel       | Durability   |
+|   278 | Diamond Pickaxe      | Durability   |
+|   279 | Diamond Axe          | Durability   |
 |   280 | Stick                |              |
 |   281 | Bowl                 |              |
 |   282 | Mushroom Stew        |              |
-|   283 | Gold Sword           | Damage       |
-|   284 | Gold Shovel          | Damage       |
-|   285 | Gold Pickaxe         | Damage       |
-|   286 | Gold Axe             | Damage       |
+|   283 | Gold Sword           | Durability   |
+|   284 | Gold Shovel          | Durability   |
+|   285 | Gold Pickaxe         | Durability   |
+|   286 | Gold Axe             | Durability   |
 |   287 | String               |              |
 |   288 | Feather              |              |
 |   289 | Gunpowder            |              |
-|   290 | Wooden Hoe           | Damage       |
-|   291 | Stone Hoe            | Damage       |
-|   292 | Iron Hoe             | Damage       |
-|   293 | Diamond Hoe          | Damage       |
-|   294 | Gold Hoe             | Damage       |
+|   290 | Wooden Hoe           | Durability   |
+|   291 | Stone Hoe            | Durability   |
+|   292 | Iron Hoe             | Durability   |
+|   293 | Diamond Hoe          | Durability   |
+|   294 | Gold Hoe             | Durability   |
 |   295 | Seeds                |              |
 |   296 | Wheat                |              |
 |   297 | Bread                |              |
-|   298 | Leather Cap          | Damage       |
-|   299 | Leather Tunic        | Damage       |
-|   300 | Leather Pants        | Damage       |
-|   301 | Leather Boots        | Damage       |
-|   302 | Chainmail Helmet     | Damage       |
-|   303 | Chainmail Chestplate | Damage       |
-|   304 | Chainmail Leggings   | Damage       |
-|   305 | Chainmail Boots      | Damage       |
-|   306 | Iron Helmet          | Damage       |
-|   307 | Iron Chestplate      | Damage       |
-|   308 | Iron Leggings        | Damage       |
-|   309 | Iron Boots           | Damage       |
-|   310 | Diamond Helmet       | Damage       |
-|   311 | Diamond Chestplate   | Damage       |
-|   312 | Diamond Leggings     | Damage       |
-|   313 | Diamond Boots        | Damage       |
-|   314 | Gold Helmet          | Damage       |
-|   315 | Gold Chestplate      | Damage       |
-|   316 | Gold Leggings        | Damage       |
-|   317 | Gold Boots           | Damage       |
+|   298 | Leather Cap          | Durability   |
+|   299 | Leather Tunic        | Durability   |
+|   300 | Leather Pants        | Durability   |
+|   301 | Leather Boots        | Durability   |
+|   302 | Chainmail Helmet     | Durability   |
+|   303 | Chainmail Chestplate | Durability   |
+|   304 | Chainmail Leggings   | Durability   |
+|   305 | Chainmail Boots      | Durability   |
+|   306 | Iron Helmet          | Durability   |
+|   307 | Iron Chestplate      | Durability   |
+|   308 | Iron Leggings        | Durability   |
+|   309 | Iron Boots           | Durability   |
+|   310 | Diamond Helmet       | Durability   |
+|   311 | Diamond Chestplate   | Durability   |
+|   312 | Diamond Leggings     | Durability   |
+|   313 | Diamond Boots        | Durability   |
+|   314 | Gold Helmet          | Durability   |
+|   315 | Gold Chestplate      | Durability   |
+|   316 | Gold Leggings        | Durability   |
+|   317 | Gold Boots           | Durability   |
 |   318 | Flint                |              |
 |   319 | Porkchop             |              |
 |   320 | Cooked Porkchop      |              |

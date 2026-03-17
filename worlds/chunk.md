@@ -19,22 +19,22 @@ Inside of an uncompressed chunk file are only a few NBT Tags
 | TerrainPopulated                         | Byte       | If the chunk is populated with foliage                                                             |
 | xPos                                     | Integer    | The Chunk-Space X Coordinate of the Chunk                                                          |
 | zPos                                     | Integer    | The Chunk-Space Z Coordinate of the Chunk                                                          |
-| BlockLight                               | Byte Array | The Block light values of the chunk                                                                |
-| Blocks                                   | Byte Array | The Block values of the chunk                                                                      |
-| Data                                     | Byte Array | The Metadata/damage values of the chunk                                                            |
-| HeightMap                                | Byte Array | A top-down heightmap of the chunk                                                                  |
+| Blocks                                   | Byte Array | The block ID values of the chunk                                                                   |
+| Data                                     | Byte Array | The block data values of the chunk                                                                 |
+| BlockLight                               | Byte Array | The block light values of the chunk                                                                |
 | SkyLight                                 | Byte Array | The sky light values of the chunk                                                                  |
+| HeightMap                                | Byte Array | A top-down heightmap of the chunk                                                                  |
 
 ## Network
 
 Over the network, chunks are a lot simpler, as they only carry block information. The number of blocks that're sent is determined by the chunk packet size information, usually `(15,127,15)` which becomes a `16x128x16` area. See more on how this data is sent on the [chunk packet page](../networking/packets/051-chunk).
 
-| Field      | Unit   | Description                             |
-| ---------- | ------ | --------------------------------------- |
-| Blocks     | Byte   | The Block values of the chunk           |
-| Data       | Nibble | The Metadata/damage values of the chunk |
-| BlockLight | Nibble | The Block light values of the chunk     |
-| SkyLight   | Nibble | The sky light values of the chunk       |
+| Field      | Unit   | Description                         |
+| ---------- | ------ | ----------------------------------- |
+| Blocks     | Byte   | The block ID values of the chunk    |
+| Data       | Nibble | The block data values of the chunk  |
+| BlockLight | Nibble | The block light values of the chunk |
+| SkyLight   | Nibble | The sky light values of the chunk   |
 
 ## Bytes VS Nibbles
 

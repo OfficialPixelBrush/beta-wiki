@@ -13,16 +13,16 @@ This packet is sent by the client when an inventory slot is clicked. See the [in
 
 ## Serverbound
 
-|            Field | Type    | Description                                                                                     |
-| ---------------: | ------- | ----------------------------------------------------------------------------------------------- |
-|        Window ID | Byte    | The incremental ID of the window. Ranges from 0 to 99                                           |
-|             Slot | Short   | The ID of the clicked slot. See the [inventory page](../../general/inventory) for slot mapping. |
-|      Right Click | Boolean | If client right-clicked                                                                         |
-|    Action number | Short   | The unique ID for this action [(See transaction packet)](./106-inventory-transaction)           |
-|            Shift | Boolean | If client shift-clicked                                                                         |
-|          Item ID | Short   | The ID of the clicked item (`-1` if empty slot)                                                 |
-|      Item Amount | Byte    | The amount of the clicked item (only sent if ID > 0)                                            |
-| Item Meta/Damage | Short   | The meta/damage of the clicked item (only sent if ID > 0)                                       |
+|         Field | Type    | Description                                                                                     |
+| ------------: | ------- | ----------------------------------------------------------------------------------------------- |
+|     Window ID | Byte    | The incremental ID of the window. Ranges from 0 to 99                                           |
+|          Slot | Short   | The ID of the clicked slot. See the [inventory page](../../general/inventory) for slot mapping. |
+|   Right Click | Boolean | If client right-clicked                                                                         |
+| Action number | Short   | The unique ID for this action [(See transaction packet)](./106-inventory-transaction)           |
+|         Shift | Boolean | If client shift-clicked                                                                         |
+|       Item ID | Short   | The ID of the clicked item (`-1` if empty slot)                                                 |
+|   Item Amount | Byte    | The quantity of the clicked item (only sent if ID > 0)                                          |
+| Item Metadata | Short   | The metadata of the clicked item (only sent if ID > 0)                                          |
 
 ## Example Packet
 

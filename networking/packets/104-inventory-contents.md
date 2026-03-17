@@ -21,11 +21,11 @@ Sent to the client to show the contents of inventories
 
 The Payload is a list which describes the items in the sent inventory.
 
-| Field  | Type  | Description                                            |
-| ------ | ----- | ------------------------------------------------------ |
-| ID     | Short | The ID of the item                                     |
-| Count  | Byte  | The amount of the item (only added if `ID > -1`)       |
-| Damage | Short | The damage value of the item (only added if `ID > -1`) |
+| Field    | Type  | Description                                              |
+| -------- | ----- | -------------------------------------------------------- |
+| ID       | Short | The ID of the item                                       |
+| Amount   | Byte  | The quantity of the item (only added if `ID > -1`)       |
+| Metadata | Short | The metadata value of the item (only added if `ID > -1`) |
 
 ## Example Packet
 

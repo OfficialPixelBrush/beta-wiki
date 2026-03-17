@@ -20,7 +20,7 @@ The behavior observed when a new player joins the server is exceedingly interest
 | `S->C`    | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=3; Item=-1; Damage=0;                                                       | The other players' chestplate is set                                                                              |
 | `S->C`    | [Entity Equipment](../packets/005-entity-equipment) | EID=6; Slot=4; Item=-1; Damage=0;                                                       | The other players' helmet is set                                                                                  |
 
-It's interesting that the held item is sent twice, despite already being sent with `SpawnPlayer`. However, that packet lacks the damage value data that is need for some blocks, such as the different kinds of saplings or wool.
+It's interesting that the held item is sent twice, despite already being sent with `SpawnPlayer`. However, that packet lacks the data value that is need for some blocks, such as the different kinds of saplings or wool.
 
 > [!NOTE]
 > If the held item is less than `0` and not followed up by an `Entity Equipment` packet, the sky inverts, as the notchian client never expects to draw block `-1`, failing to acquire the correct block model and running into an `ArrayIndexOutOfBoundsException`. Due to the state of the OpenGL Context by this point in the rendering pipeline, any subsequent rendering process' are messed up, most obviously manifesting by flipping many transparent objects (water, clouds, block selector box) and players.

@@ -13,20 +13,20 @@ This is sent by the server when a block is changed or updated in any way. If a l
 
 ## Clientbound
 
-| Field | Type    | Description                                 |
-| ----- | ------- | ------------------------------------------- |
-| X     | Integer | The X position of where the block is.       |
-| Y     | Byte    | The Y position of where the block is.       |
-| Z     | Integer | The Z position of where the block is.       |
-| Type  | Byte    | The new type of the block.                  |
-| Meta  | Byte    | The new metadata/damage value of the block. |
+| Field    | Type    | Description                           |
+| -------- | ------- | ------------------------------------- |
+| X        | Integer | The X position of where the block is. |
+| Y        | Byte    | The Y position of where the block is. |
+| Z        | Integer | The Z position of where the block is. |
+| Type     | Byte    | The new type of the block.            |
+| Metadata | Byte    | The new metadata value of the block.  |
 
 ## Example Packet
 
-| Field | Value                                                                                             |
-| ----- | ------------------------------------------------------------------------------------------------- |
-| X     | `32`                                                                                              |
-| Y     | `76`                                                                                              |
-| Z     | `-543`                                                                                            |
-| Type  | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)               |
-| Meta  | `1` (<TextureSwatch texture_name="../../images/blocks/spruce_log_side.png" label="Spruce Log" />) |
+| Field    | Value                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| X        | `32`                                                                                              |
+| Y        | `76`                                                                                              |
+| Z        | `-543`                                                                                            |
+| Type     | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)               |
+| Metadata | `1` (<TextureSwatch texture_name="../../images/blocks/spruce_log_side.png" label="Spruce Log" />) |
