@@ -18,13 +18,14 @@ Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki
 
 ## Clients
 
-| Language | Project                                                                                         | Creator                                     |
-| -------: | ----------------------------------------------------------------------------------------------- | ------------------------------------------- |
-|        C | [CavEX](https://github.com/xtreme8000/cavex)                                                    | [xtreme8000](https://github.com/xtreme8000) |
-|      C++ | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                        | [Pixel Brush](https://pixelbrush.dev)       |
-|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" /> | [ddevault](https://github.com/ddevault)     |
-|       C# | [betasharp](https://github.com/Fazin85/betasharp)                                               | [Fazin85](https://github.com/Fazin85)       |
-| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                        | [Pixel Brush](https://pixelbrush.dev)       |
+| Language | Project                                                                                         | Creator                                       |
+| -------: | ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
+|        C | [CavEX](https://github.com/xtreme8000/cavex)                                                    | [xtreme8000](https://github.com/xtreme8000)   |
+|      Zig | [MainCraft](https://github.com/Guigui220D/MainCraft)                                            | [Guillaume D.](https://github.com/Guigui220D) |
+|      C++ | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                        | [Pixel Brush](https://pixelbrush.dev)         |
+|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" /> | [ddevault](https://github.com/ddevault)       |
+|       C# | [betasharp](https://github.com/Fazin85/betasharp)                                               | [Fazin85](https://github.com/Fazin85)         |
+| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                        | [Pixel Brush](https://pixelbrush.dev)         |
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
 
