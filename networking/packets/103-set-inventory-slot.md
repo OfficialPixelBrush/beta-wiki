@@ -16,12 +16,12 @@ This packet is sent by the client when an inventory slot is updated. See the [in
 | Field            | Type  | Description                                                                                     |
 | ---------------- | ----- | ----------------------------------------------------------------------------------------------- |
 | Window ID        | Byte  | The incremental ID of the window. Ranges from 0 to 99                                           |
-| Slot             | Short | The id of the updated slot. See the [inventory page](../../general/inventory) for slot mapping. |
-| Item Id          | Short | The id of the new item (`-1` if empty slot)                                                     |
-| Item Amount      | Byte  | The amount of the new item (only sent if id > 0)                                                |
-| Item Meta/Damage | Short | The meta/damage of the new item (only sent if id > 0)                                           |
+| Slot             | Short | The ID of the updated slot. See the [inventory page](../../general/inventory) for slot mapping. |
+| Item ID          | Short | The ID of the new item (`-1` if empty slot)                                                     |
+| Item Amount      | Byte  | The amount of the new item (only sent if ID > 0)                                                |
+| Item Meta/Damage | Short | The meta/damage of the new item (only sent if ID > 0)                                           |
 
-If both the window id and slot id are `-1`, then the item that's currently held by the mouse is affected.
+If both the window ID and slot ID are `-1`, then the item that's currently held by the mouse is affected.
 
 ## Example Packet
 
@@ -29,6 +29,6 @@ If both the window id and slot id are `-1`, then the item that's currently held 
 | ---------------- | ----- | ----------------------------------------------------------------------------------- |
 | Window ID        | `2`   |                                                                                     |
 | Slot             | `22`  |                                                                                     |
-| Item Id          | Short | `50` (<TextureSwatch texture_name="../../images/blocks/torch.png" label="Torch" />) |
+| Item ID          | Short | `50` (<TextureSwatch texture_name="../../images/blocks/torch.png" label="Torch" />) |
 | Item Amount      | Byte  | `63`                                                                                |
 | Item Meta/Damage | Short | `0`                                                                                 |

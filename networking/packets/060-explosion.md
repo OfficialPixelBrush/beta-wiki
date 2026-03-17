@@ -1,7 +1,7 @@
 ---
 title: "0x3C: Explosion"
 order: 61
-description: Used to tell the client about where an explosion occured and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
+description: Used to tell the client about where an explosion occurred and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
 ---
 
 # Explosion
@@ -10,7 +10,7 @@ description: Used to tell the client about where an explosion occured and what b
 | --------- | ----------- | --------------- | ------------------- |
 | `0x3C`    | Clientbound | `ExplodePacket` | `Packet60Explosion` |
 
-Used to tell the client about where an explosion occured and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
+Used to tell the client about where an explosion occurred and what blocks were destroyed due to it. This spawns the explosion particles and plays the sound as well.
 
 ## Clientbound
 

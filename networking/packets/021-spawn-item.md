@@ -16,7 +16,7 @@ Sent to the client when an item entity should be spawned. The position is in [bl
 |           Field | Type    | Description                                       |
 | --------------: | :------ | ------------------------------------------------- |
 |       Entity ID | Integer | The ID of the entity that will refer to this item |
-|         Item id | Short   | [The id of the item](../../general/items)         |
+|         Item ID | Short   | [The ID of the item](../../general/items)         |
 |           Count | Byte    | The number of items                               |
 | Metadata/Damage | Short   | The metadata/damage value                         |
 |               X | Integer | The X block position of the item                  |
@@ -31,7 +31,7 @@ Sent to the client when an item entity should be spawned. The position is in [bl
 |           Field | Value                                                                                       |
 | --------------: | :------------------------------------------------------------------------------------------ |
 |       Entity ID | 1298                                                                                        |
-|         Item id | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)         |
+|         Item ID | `17` (<TextureSwatch texture_name="../../images/blocks/log_top.png" label="Log" />)         |
 |           Count | `1`                                                                                         |
 | Metadata/Damage | `0` (<TextureSwatch texture_name="../../images/blocks/oak_log_side.png" label="Oak Log" />) |
 |               X | `5669`                                                                                      |

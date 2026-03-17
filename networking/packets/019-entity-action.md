@@ -9,7 +9,7 @@ order: 20
 | --------- | ----------- | --------------------- | ---------------------- |
 | `0x13`    | Serverbound | `PlayerCommandPacket` | `Packet19EntityAction` |
 
-This packet is sent by the client for performing certain actions, defined via a Bitmask.
+This packet is sent by the client for performing certain actions, defined via a bitmask.
 
 - Bit 0 is for Crouching
 - Bit 1 is for if the Entity is on fire

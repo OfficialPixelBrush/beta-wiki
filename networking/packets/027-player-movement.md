@@ -19,7 +19,7 @@ This packet could be used for setting the movement values and states of whicheve
 | Field            | Type    | Description                |
 | ---------------- | ------- | -------------------------- |
 | Strafe Direction | Float   | Strafing movement          |
-| Foward Direction | Float   | Foward/Backward movement   |
+| Forward Direction | Float   | Forward/Backward movement   |
 | Pitch            | Float   | Pitch rotation             |
 | Yaw              | Float   | Yaw rotation               |
 | Jumping          | Boolean | If the player should jump  |
@@ -30,7 +30,7 @@ This packet could be used for setting the movement values and states of whicheve
 | Field            | Value |
 | ---------------- | ----- |
 | Strafe Direction |       |
-| Foward Direction |       |
+| Forward Direction |       |
 | Pitch            |       |
 | Yaw              |       |
 | Jumping          |       |

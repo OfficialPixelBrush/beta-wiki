@@ -9,7 +9,7 @@ order: 23
 | --------- | ----------- | ---------------------- | ----------------- |
 | `0x16`    | Clientbound | `TakeItemEntityPacket` | `Packet22Collect` |
 
-Sent to the client when an item entity should play the item collection animation. It doesn't delete the entity from the client nor does it add it othe player inventory. See [Destroy Entity](./029-destroy-entity) and [Set Inventory Slot](./103-set-inventory-slot)/[Inventory Contents](./104-inventory-contents) for that.
+Sent to the client when an item entity should play the item collection animation. It doesn't delete the entity from the client nor does it add it to the player inventory. See [Destroy Entity](./029-destroy-entity) and [Set Inventory Slot](./103-set-inventory-slot)/[Inventory Contents](./104-inventory-contents) for that.
 
 ## Clientbound
 

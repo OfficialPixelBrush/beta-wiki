@@ -20,7 +20,7 @@ If the Entity ID is that of another player, the relevant entity will lay down in
 | Field     | Type    | Description                              |
 | --------- | ------- | ---------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
-| Unsued    | Byte    | Always `0`                               |
+| Unused    | Byte    | Always `0`                               |
 | X         | Integer | The X position of beds headboard         |
 | Y         | Byte    | The Y position of beds headboard         |
 | Z         | Integer | The Z position of beds headboard         |

@@ -12,7 +12,7 @@ Biomes are regions with differing foliage, terrain etc.
 
 ## Biome List
 
-There exist 13 distinct Biomes in Beta 1.7.3. They each have unique properties, mainly if they can show rain particles, if it can snow in them, and what their respective foliage and map colors are.
+There exist 13 distinct biomes in Beta 1.7.3. They each have unique properties, mainly if they can show rain particles, if it can snow in them, and what their respective foliage and map colors are.
 
 | Name            | Top Block | Filler Block | Rain | Snow |          Foliage Color          |            Map Color            |
 | :-------------- | :-------: | :----------: | :--: | :--: | :-----------------------------: | :-----------------------------: |
@@ -83,7 +83,7 @@ If mapped to an image, using the foliage/map colors, we get this.
 ## Biome Noise
 
 The function which determines what biome is use in a chunk is relatively simple.
-It mainly uses 3 [Octave Simplex Noise Generators](../technical/noise#simplex-noise).
+It mainly uses 3 [octave simplex noise generators](../technical/noise#simplex-noise).
 
 ### Noise Octaves
 
@@ -142,7 +142,7 @@ The temperature and humidity values are changed by this function, resulting in a
 | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
 | <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
-<sub>Temperature, humidity and Variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
+<sub>Temperature, humidity and variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
 
 This is then passed to the [World Generator](generation).
 

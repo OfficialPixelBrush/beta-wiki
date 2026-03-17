@@ -32,7 +32,7 @@ For an example that you can reference for your purposes, check out the [BetrockS
 The main differences that arise in the Perlin and Simplex Noise generators comes from some slight tweaks that were made when implementing them.
 
 1. An inital pseudorandom offset is assigned to each of the coordinates of the noise generator `coordinate = nextDouble() * 256.0;`
-2. For shuffling the permutation table, once again, Javas PRNG is used
+2. For shuffling the permutation table, once again, Java's PRNG is used
 
 ## Noise Octaves
 

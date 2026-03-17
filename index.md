@@ -18,7 +18,7 @@ hero:
 
 ## Objective
 
-The goal of this wiki is to consolidate all knowledge on Minecrafts Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.
+The goal of this wiki is to consolidate all knowledge on Minecraft's Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.
 
 This includes documenting the [inner workings of the World Generator](./worlds/generation), [the McRegion format](./worlds/), etc.
 

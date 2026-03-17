@@ -4,7 +4,7 @@ order: 60
 
 # Map Item
 
-The map item has some special quirks that make it interesting enough to deserve it's own section of the Wiki.
+The map item has some special quirks that make it interesting enough to deserve its own section of the Wiki.
 
 ::: tip MISSING
 This still requires most of its info. This is extremely barebones

@@ -47,7 +47,7 @@ This can be reversed too.
 float float_val = float(fixed_val) / 32.0f;
 ```
 
-Additionally, rotation data is often quantized to only a single 8-Bit Byte, following this formulata.
+Additionally, rotation data is often quantized to only a single 8-Bit Byte, following this formula.
 
 ```c
 int8_t quant_val = int8_t(( float_val / 360.0 ) * 255.0)

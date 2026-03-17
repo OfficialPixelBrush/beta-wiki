@@ -36,10 +36,10 @@ See [Data types](data-types) for more info.
 
 | Hex    | Tag              | Contains                                                                                                                                 | Purpose                                                                                                                                            |
 | :----- | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `0x00` | `TAG_End`        | `0`                                                                                                                                      | Used to mark the end of compound tags. This tag does not have a name, so it is always a single byte 0. It may also be the type of empty List tags. |
-| `0x07` | `TAG_Byte_Array` | Integer of array Length, followed by bytes                                                                                               | An array of bytes                                                                                                                                  |
-| `0x08` | `TAG_String`     | Unsigned Short of string length, followed by UTF-8 Characters                                                                            | A UTF-8 string                                                                                                                                     |
-| `0x09` | `TAG_List`       | Byte for the Tag ID that'll be used throughout the list, Integer of how many entries are in the List, followed by Tags without a tag ID. | A list of tags without repeating the tag ID header                                                                                                 |
+| `0x00` | `TAG_End`        | `0`                                                                                                                                      | Used to mark the end of compound tags. This tag does not have a name, so it is always a single byte 0. It may also be the type of empty list tags. |
+| `0x07` | `TAG_Byte_Array` | integer of array length, followed by bytes                                                                                               | An array of bytes                                                                                                                                  |
+| `0x08` | `TAG_String`     | unsigned short of string length, followed by UTF-8 characters                                                                            | A UTF-8 string                                                                                                                                     |
+| `0x09` | `TAG_List`       | byte for the tag ID that'll be used throughout the list, integer of how many entries are in the list, followed by tags without a tag ID. | A list of tags without repeating the tag ID header                                                                                                 |
 | `0x0A` | `TAG_Compound`   | Can contain any number of tags, is terminated by TAG_End                                                                                 | Contain full formed tags. All tags inside need to have a unique name                                                                               |
 
 ## Layout
@@ -48,7 +48,7 @@ Every NBT-formatted file starts with a `TAG_Compound`, and is terminated with a 
 
 # Libraries
 
-Check the [projects page](../projects#nbt) for libraries that implemnt NBT in the language you're working in.
+Check the [projects page](../projects#nbt) for libraries that implement NBT in the language you're working in.
 
 # Further reading and sources
 

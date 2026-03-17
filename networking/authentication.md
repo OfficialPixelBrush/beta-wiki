@@ -24,7 +24,7 @@ TODO
 
 ### Generate Server Hash
 
-First, the server generates a server id. For this it uses a random object to generate a `long`, then it turns this into a hex string. This is passed onto the client.
+First, the server generates a server ID. For this it uses a random object to generate a `long`, then it turns this into a hex string. This is passed onto the client.
 
 ### Client Attempts Login
 
@@ -34,7 +34,7 @@ On the client side, with the server-generated hash, a URL is constructed.
 http://www.minecraft.net/game/joinserver.jsp?user=USERNAME&sessionId=SESSION_ID&serverId=SERVER_ID
 ```
 
-The name of the player, the current session id and the generated server id/hash are passed in.
+The name of the player, the current session ID and the generated server ID/hash are passed in.
 
 If this endpoint returns `ok`, the client resumes the login sequence. Otherwise, `disconnect.loginFailedInfo` is emitted and the client disconnects.
 

@@ -16,7 +16,7 @@ Gzip is an abstraction of the Deflate algorithm, adding some header and trailer 
 
 # Zlib
 
-Zlib is an abstraction of the Deflate algorithm, adding some basic error detection and more that the default Deflate data does not have. It is mostly used for compressing Chunk data as part of the [McRegion format](../worlds/worldFormat#mcregion).
+Zlib is an abstraction of the Deflate algorithm, adding some basic error detection and more that the default Deflate data does not have. It is mostly used for compressing chunk data as part of the [McRegion format](../worlds/worldFormat#mcregion).
 
 ## Compressed data
 

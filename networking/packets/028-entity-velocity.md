@@ -11,7 +11,7 @@ order: 29
 
 ## Clientbound
 
-Sent to the client to showcase an entites' velocity.
+Sent to the client to showcase an entities' velocity.
 
 The sent values are first clamped to `+/-3.9` in any direction, then multiplied by `8000` before being sent out as a short. The client undoes this multiplication.
 

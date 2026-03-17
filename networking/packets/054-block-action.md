@@ -11,11 +11,11 @@ order: 55
 
 ## Clientbound
 
-This packet is sent to inform the client when a block has perfored an action. There are only two blocks that make use this packet, Noteblocks and Pistons.
+This packet is sent to inform the client when a block has performed an action. There are only two blocks that make use this packet: note blocks and pistons.
 
 ## Noteblock
 
-Noteblocks use the Packet to indicate they've played a tone. They use the two bytes the packet offers for Instrument and Pitch information.
+Note blocks use the packet to indicate they've played a tone. They use the two bytes the packet offers for Instrument and Pitch information.
 
 | Field      | Type    | Description                           |
 | ---------- | ------- | ------------------------------------- |

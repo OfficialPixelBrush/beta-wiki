@@ -14,7 +14,7 @@ This is sent by the server when it expects a client to play a sound effect or sp
 
 ## Effect IDs
 
-These are the sound/particle effect ids and what sound they map to.
+These are the sound/particle effect IDs and what sound they map to.
 
 | Value | Purpose                                                    | Metadata use                                                                                                                                                                   | Type             |
 | ----: | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------- |

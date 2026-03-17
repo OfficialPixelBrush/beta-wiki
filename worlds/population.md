@@ -13,7 +13,7 @@ A huge chunk of info is still missing!!
 
 # Initialization
 
-Before any population is done, the Chunk Populator prepares a few things to make subsequent generation easier.
+Before any population is done, the chunk populator prepares a few things to make subsequent generation easier.
 
 - Get the current biome of the chunk (offset by +16 blocks on the x/z axes)
 - The PRNG seed is set to the world seed
@@ -58,7 +58,7 @@ Features attempt to generate in the following order.
 24. Singular Fluid Source (Lava)
 25. Snow layer
 
-Each of them have their own unique Generator object that's responsible for placing them in, though some are shared. Thus the only distinct feature generators that exist are presented here.
+Each of them have their own unique generator object that's responsible for placing them in, though some are shared. Thus the only distinct feature generators that exist are presented here.
 
 # Before generation
 
@@ -190,7 +190,7 @@ From here, the following values are added onto the number of trees.
 | Tundra          | `-20`              |
 | Plains          | `-20`              |
 
-From there, depending on the Biome, one of four kinds of trees can be generated.
+From there, depending on the biome, one of four kinds of trees can be generated.
 
 | Biome               | Chance | Tree Type if win | Tree type if fail |
 | ------------------- | ------ | ---------------- | ----------------- |

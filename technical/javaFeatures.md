@@ -22,7 +22,7 @@ To cover the case most relevant for the Farlands (`double` to `int`):
 
 ## hashCode
 
-HashCode is for turning a string into an integer. It's used in Minecraft to transform text-based seeds into a number.
+hashCode is for turning a string into an integer. It's used in Minecraft to transform text-based seeds into a number.
 
 A basic implementation looks like this:
 
@@ -40,7 +40,7 @@ return h;
 
 This section will explain how the Random Number Generator for Beta Minecraft/Java 5 worked, as that is what Minecraft's old generator was largely using for its data.
 
-### Initilization
+### Initialization
 
 The Random class always starts with an initial seed, consisting of a signed 64-Bit Integer. If nothing is provided, the current timestamp is used instead. The actual seed is calculated from there via combining it with a few other numbers.
 
@@ -66,7 +66,7 @@ return int(seed >> (48 - bits));
 Our seed, after being initialized, would now become `0x7F9FD7F08029`/`140324499390505`.
 
 ::: tip MISSING
-How the next function is used to generate other numers
+How the next function is used to generate other numbers
 :::
 
 ## Further reading

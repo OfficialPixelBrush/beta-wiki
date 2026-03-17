@@ -16,7 +16,7 @@ Redstone Dust propagates redstone signals via a floodfill algorithm. With each s
 
 ## Redstone Torch
 
-Redstone Torches act as boolean NOT gates. They have a response delay of `2` gameticks.
+Redstone torches act as boolean not gates. They have a response delay of `2` gameticks.
 
 ### Placement
 
@@ -24,7 +24,7 @@ All surrounding blocks are ticked when a Redstone Torch is placed or removed, bu
 
 ### Metadata values
 
-A torch uses it's 4-Bit values for it's orientation.
+A torch uses its 4-Bit values for its orientation.
 
 | Metadata value | Appearance                    |
 | -------------: | ----------------------------- |
@@ -46,11 +46,11 @@ It turns itself on again after the number of queued updates drops below `8` agai
 
 ## Redstone Repeater
 
-Redstone Repeaters act as Diodes. Additionally, they can be configured to delay a redstone signal by `2`, `4`, `6` or `8` gameticks.
+Redstone repeaters act as diodes. Additionally, they can be configured to delay a redstone signal by `2`, `4`, `6` or `8` gameticks.
 
 ### Metadata values
 
-A repeater uses it's 4-Bit values for 2 things, the lower 2-bits determine the orientation,
+A repeater uses its 4-Bit values for 2 things, the lower 2-bits determine the orientation,
 while the upper 2-bits determine the delay of the repeater.
 
 | Value | Delay (ticks) | Metadata value |
@@ -72,7 +72,7 @@ When the neighbor of a repeater updates, the following choice is made.
 |     ✅     |       ✅        | -                                       |
 
 When the repeater is then ticked, it first checks if it's receiving power from either Redstone dust or any other powered block.
-on its input side. From there it branches off into the following.
+On its input side. From there it branches off into the following.
 
 ```cpp
 // Power off behavior

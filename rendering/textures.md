@@ -70,7 +70,7 @@ The texture atlases are indexed from `0` to `255`.
 |   51 |   `3,3`    |       ![](../images/blocks/redstone_ore.png)        | Redstone Ore                   |                                                                                  |
 |   52 |   `3,4`    |  ![](../images/blocks/oak_leaves_transparent.png)   | Oak/Birch leaves (Transparent) |                                                                                  |
 |   53 |   `3,5`    |     ![](../images/blocks/oak_leaves_opaque.png)     | Oak/Birch leaves (Opaque)      |                                                                                  |
-|   55 |   `3,7`    |      ![](../images/blocks/deadbush_shrub.png)       | Deadbush/Shrub                 | Shrubs are Biome Tinted                                                          |
+|   55 |   `3,7`    |      ![](../images/blocks/deadbush_shrub.png)       | Deadbush/Shrub                 | Shrubs are biome tinted                                                          |
 |   56 |   `3,8`    |           ![](../images/blocks/fern.png)            | Fern                           |                                                                                  |
 |   57 |   `3,9`    |  ![](../images/blocks/double_chest_back_left.png)   | Double Chest (Back Left)       |                                                                                  |
 |   58 |   `3,10`   |  ![](../images/blocks/double_chest_back_right.png)  | Double Chest (Back Right)      |                                                                                  |

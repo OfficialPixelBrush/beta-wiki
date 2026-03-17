@@ -16,9 +16,9 @@ Inside of an uncompressed chunk file are only a few NBT Tags
 | Entities                                 | List       | All entities in this chunk                                                                         |
 | [TileEntities](../entities/tileentities) | List       | All [tile entities](../entities/tileentities) in this chunk, such as Mob Spawners, Chests or Signs |
 | LastUpdate                               | Long       | The last tick value for when the chunk was updated                                                 |
-| TerrainPopulated                         | Byte       | If the chunk is populated with folliage                                                            |
-| xPos                                     | Integer    | The Chunk-Space X Coordiante of the Chunk                                                          |
-| zPos                                     | Intger     | The Chunk-Space Z Coordinate of the Chunk                                                          |
+| TerrainPopulated                         | Byte       | If the chunk is populated with foliage                                                             |
+| xPos                                     | Integer    | The Chunk-Space X Coordinate of the Chunk                                                          |
+| zPos                                     | Integer    | The Chunk-Space Z Coordinate of the Chunk                                                          |
 | BlockLight                               | Byte Array | The Block light values of the chunk                                                                |
 | Blocks                                   | Byte Array | The Block values of the chunk                                                                      |
 | Data                                     | Byte Array | The Metadata/damage values of the chunk                                                            |

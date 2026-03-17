@@ -4,7 +4,7 @@ There are many ways in which anyone can contribute to the wiki. [Look at the rep
 
 ## Confirming existing information
 
-Simply double, triple or quintupple checking that all information presented on the wiki is factully correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
+Simply double, triple or quintupple checking that all information presented on the wiki is factually correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
 
 ## Fixing issues
 
@@ -53,7 +53,7 @@ The following is a list of stylistic and formal considerations that should be ta
 ## Values
 
 1. All values are always `monospaced`
-1. **Bytes**, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
+1. **Bytes**, **Shorts** and **Integers** are not differentiated (`125`, `6723`, `66241267`)
 1. **Floats** have a lower-case `f` on their end (`0.53f`)
 1. **Doubles** do not have a lower-case `f` (`545.42`)
 1. **Booleans** are either `true` or `false`

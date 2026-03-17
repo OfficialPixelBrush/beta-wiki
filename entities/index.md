@@ -4,7 +4,7 @@ order: 35
 
 # Entities
 
-Entites are non-block creatures that don't align to the block grid.
+Entities are non-block creatures that don't align to the block grid.
 
 ## Base Entity
 
@@ -31,7 +31,7 @@ All entities have the following properties, though usually more. These are just 
 
 ### Position
 
-The Entites' `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player this is on the ground between their feet.
+The Entities' `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player this is on the ground between their feet.
 
 ### Y-Offset/Stance
 
@@ -56,7 +56,7 @@ TODO: Other Bounding Box sizes
 
 ## Living Entities
 
-Living Entities are a subset of Entities that have more properties.
+Living entities are a subset of entities that have more properties.
 
 | Field      | Type                        | Description                              |
 | ---------- | --------------------------- | ---------------------------------------- |

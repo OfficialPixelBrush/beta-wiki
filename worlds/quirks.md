@@ -1,15 +1,15 @@
 ---
 order: 30
-description: Quirks are (most likely) unitentional or unintuitive behaviors that occur during terrain generation.
+description: Quirks are (most likely) unintentional or unintuitive behaviors that occur during terrain generation.
 ---
 
 # Quirks
 
-Quirks are (most likely) unitentional or unintuitive behaviors that occur during terrain generation.
+Quirks are (most likely) unintentional or unintuitive behaviors that occur during terrain generation.
 
 ## Ice and Snow
 
-Ice is generated during the [terrain shape stage](generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via Random Ticking.
+Ice is generated during the [terrain shape stage](generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via random ticking.
 
 |                                                     Unticked                                                     |                                                   Ticked                                                    |
 | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
