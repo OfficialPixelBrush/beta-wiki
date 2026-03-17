@@ -65,8 +65,8 @@ The following is a list of stylistic and formal considerations that should be ta
 
 ## Additions
 
-1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
-1. The same applies to any numberical value with a different known meaning than the number itself (`1` (Swing Arm))
+1. If a block or item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
+1. The same applies to any numerical value with a different known meaning than the number itself (`1` (Swing Arm))
 
 ## Code blocks
 
