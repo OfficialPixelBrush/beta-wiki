@@ -9,7 +9,7 @@ order: 51
 | --------- | ----------- | ----------------------- | ------------------ |
 | `0x32`    | Clientbound | `ChunkVisibilityPacket` | `Packet50PreChunk` |
 
-This is sent by the server to load or unload a chunk. If load is `1`, the Client readies itself to place block data there. If it's `0` the Client deletes the Chunk data.
+This is sent by the server to load or unload a chunk. If load is `1`, the client readies itself to place block data there. If it's `0` the client deletes the Chunk data.
 
 ## Clientbound
 

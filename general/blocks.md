@@ -1,11 +1,11 @@
 ---
 order: 5
-description: Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-Bit numeric ID and a 4-Bit metadata/damage value.
+description: Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-bit ID and a 4-bit metadata/damage value.
 ---
 
 # Blocks
 
-Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-Bit numeric ID and a 4-Bit metadata/damage value.
+Blocks are the usually cuboid shapes that the Minecraft world is made of. Blocks only have 2 properties: An 8-bit ID and a 4-bit metadata value.
 
 ## Listing
 
@@ -113,7 +113,7 @@ Here is a comprehensive listing of all blocks.
 
 # Metadata
 
-Many blocks make use of the 4-Bit Metadata values that they have access to.
+Many blocks make use of the 4-bit metadata values that they have access to.
 Often times these are used for indicating their direction. Sometimes they're used for if they're activated, open or if they're a variety of a share base-block, such as the different wool colors or logs.
 
 ## Liquids

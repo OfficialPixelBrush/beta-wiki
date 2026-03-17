@@ -4,7 +4,7 @@ order: 10
 
 # Player Joining
 
-The behavior observed when a new player joins the Server is exceedingly interesting, as it reveals a little bit about how the Protocol came about.
+The behavior observed when a new player joins the server is exceedingly interesting, as it reveals a little bit about how the Protocol came about.
 
 ## An existing player is sent to the new Client
 
@@ -39,4 +39,4 @@ It's interesting that the held item is sent twice, despite already being sent wi
 
 # Further reading
 
-- [A new player joins (Github - BetrockServer Wiki - Vanilla Server Behavior)](https://github.com/OfficialPixelBrush/BetrockServer/wiki/Vanilla-Server-Behavior#a-new-player-joins)
+- [A new player joins (Github - BetrockServer Wiki - Vanilla server Behavior)](https://github.com/OfficialPixelBrush/BetrockServer/wiki/Vanilla-Server-Behavior#a-new-player-joins)

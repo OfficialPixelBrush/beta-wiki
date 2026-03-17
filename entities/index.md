@@ -31,11 +31,11 @@ All entities have the following properties, though usually more. These are just 
 
 ### Position
 
-The Entities' `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player this is on the ground between their feet.
+The `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player, this is on the ground between their feet.
 
 ### Y-Offset/Stance
 
-The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position.
+The Y-Offset, also called "stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position.
 
 | Entity  | Y-Offset |
 | ------- | -------- |
@@ -44,14 +44,14 @@ The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the ent
 
 ### Width and Height
 
-The Width and Height define the size of the Axis-Aligned Bounding Box that Minecraft uses for its collision.
+The width and height define the size of the bounding box that Minecraft uses for its collision.
 
 | Entity  | Width | Height |
 | ------- | ----- | ------ |
 | Default | `0.6` | `1.8`  |
 
 ::: tip MISSING
-TODO: Other Bounding Box sizes
+TODO: Other bounding box sizes
 :::
 
 ## Living Entities

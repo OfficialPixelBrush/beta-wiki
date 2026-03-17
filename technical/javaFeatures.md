@@ -32,7 +32,7 @@ int h = 0;
 for (int i = 0; i < text.size(); i++) {
     h = 31 * h + text[i];
 }
-// Returns a 32-Bit Integer
+// Returns a 32-bit Integer
 return h;
 ```
 
@@ -42,7 +42,7 @@ This section will explain how the Random Number Generator for Beta Minecraft/Jav
 
 ### Initialization
 
-The Random class always starts with an initial seed, consisting of a signed 64-Bit Integer. If nothing is provided, the current timestamp is used instead. The actual seed is calculated from there via combining it with a few other numbers.
+The Random class always starts with an initial seed, consisting of a signed 64-bit Integer. If nothing is provided, the current timestamp is used instead. The actual seed is calculated from there via combining it with a few other numbers.
 
 Our final seed value can be calculated as follows.
 
@@ -50,7 +50,7 @@ Our final seed value can be calculated as follows.
 seed = (inputSeed ^ 0x5DEECE66D) & 0xffffffffffff;
 ```
 
-In other words, our input seed, for example `3257840388504953787` is XOR'd with 0x5DEECE66D, then limited to 48-Bits.
+In other words, our input seed, for example `3257840388504953787` is XOR'd with 0x5DEECE66D, then limited to 48-bits.
 
 Our initial seed would become `0x2C974D2EC5D6`/`49028346594774`.
 

@@ -36,7 +36,7 @@ Each icon uses 3 bytes of data.
 
 | #   | Data                                                                              |
 | --- | --------------------------------------------------------------------------------- |
-| 0   | Rotation (upper 4-Bits), [Icon Sprite](../../worlds/mapItem#icons) (lower 4-Bits) |
+| 0   | Rotation (upper 4-bits), [Icon Sprite](../../worlds/mapItem#icons) (lower 4-bits) |
 | 1   | X offset                                                                          |
 | 2   | Y offset                                                                          |
 

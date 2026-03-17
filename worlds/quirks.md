@@ -34,6 +34,6 @@ The farlands are an extremely well-known terrain-generation artifact that occurs
 
 To read data from the perlin-noise permutation table, the position the noise is sampled at must be turned into an integer.
 
-Due to how java Java converts between types (see [Casting](../technical/javaFeatures#casting)), the resulting 32-Bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
+Due to how java Java converts between types (see [Casting](../technical/javaFeatures#casting)), the resulting 32-bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
 
-Using a signed 64-Bit Integer (`long`) can fix this problem but it changes the tree and terrain generation slightly due to rounding differences.
+Using a signed 64-bit Integer (`long`) can fix this problem but it changes the tree and terrain generation slightly due to rounding differences.

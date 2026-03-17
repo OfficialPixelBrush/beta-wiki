@@ -38,7 +38,7 @@ Over the network, chunks are a lot simpler, as they only carry block information
 
 ## Bytes VS Nibbles
 
-All non-block data is sent and stored as nibbles, meaning that to read a blocks metadata value, for example, one must read the top or bottom 4-Bits of the relevant Byte. As such, the Data, BlockLight and SkyLight sections are half as big as the blocks section.
+All non-block data is sent and stored as nibbles, meaning that to read a blocks metadata value, for example, one must read the top or bottom 4-bits of the relevant Byte. As such, the Data, BlockLight and SkyLight sections are half as big as the blocks section.
 
 ### Reading
 

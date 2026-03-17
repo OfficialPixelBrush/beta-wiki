@@ -56,7 +56,7 @@ WriteByte((~payloadSize >> 8) & 0xFF);
 for (int i = 0; i < payLoadSize; i++) {
     WriteByte(payload[i]);
 }
-// A 32-Bit Adler Checksum is calculated and appended
+// A 32-bit Adler Checksum is calculated and appended
 int adlerChecksum = adler32(payload, payloadSize);
 WriteByte((adlerChecksum >> 24) & 0xFF);
 WriteByte((adlerChecksum >> 16) & 0xFF);

@@ -24,7 +24,7 @@ All surrounding blocks are ticked when a Redstone Torch is placed or removed, bu
 
 ### Metadata values
 
-A torch uses its 4-Bit values for its orientation.
+A torch uses its 4-bit values for its orientation.
 
 | Metadata value | Appearance                    |
 | -------------: | ----------------------------- |
@@ -50,7 +50,7 @@ Redstone repeaters act as diodes. Additionally, they can be configured to delay 
 
 ### Metadata values
 
-A repeater uses its 4-Bit values for 2 things, the lower 2-bits determine the orientation,
+A repeater uses its 4-bit values for 2 things, the lower 2-bits determine the orientation,
 while the upper 2-bits determine the delay of the repeater.
 
 | Value | Delay (ticks) | Metadata value |
@@ -66,10 +66,10 @@ When the neighbor of a repeater updates, the following choice is made.
 
 | Is Powered | Receiving Power |                                         |
 | :--------: | :-------------: | :-------------------------------------- |
-|     ❌     |       ❌        | -                                       |
-|     ❌     |       ✅        | Schedules block update in `delay` ticks |
-|     ✅     |       ❌        | Schedules block update in `delay` ticks |
-|     ✅     |       ✅        | -                                       |
+|     ❌      |        ❌        | -                                       |
+|     ❌      |        ✅        | Schedules block update in `delay` ticks |
+|     ✅      |        ❌        | Schedules block update in `delay` ticks |
+|     ✅      |        ✅        | -                                       |
 
 When the repeater is then ticked, it first checks if it's receiving power from either Redstone dust or any other powered block.
 On its input side. From there it branches off into the following.

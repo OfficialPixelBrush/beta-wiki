@@ -12,26 +12,26 @@ order: 28
 This packet could be used for setting the movement values and states of whichever player receives the packet.
 
 > [!NOTE]
-> This packet is completely unused in the Notchian Server, so there's no example of what it _should_ look or act like but the Client does seem to handle it.
+> This packet is completely unused in the Notchian server, so there's no example of what it _should_ look or act like but the client does seem to handle it.
 
 ## Clientbound
 
-| Field            | Type    | Description                |
-| ---------------- | ------- | -------------------------- |
-| Strafe Direction | Float   | Strafing movement          |
-| Forward Direction | Float   | Forward/Backward movement   |
-| Pitch            | Float   | Pitch rotation             |
-| Yaw              | Float   | Yaw rotation               |
-| Jumping          | Boolean | If the player should jump  |
-| Sneaking         | Boolean | If the player should sneak |
+| Field             | Type    | Description                |
+| ----------------- | ------- | -------------------------- |
+| Strafe Direction  | Float   | Strafing movement          |
+| Forward Direction | Float   | Forward/Backward movement  |
+| Pitch             | Float   | Pitch rotation             |
+| Yaw               | Float   | Yaw rotation               |
+| Jumping           | Boolean | If the player should jump  |
+| Sneaking          | Boolean | If the player should sneak |
 
 ## Example Packet
 
-| Field            | Value |
-| ---------------- | ----- |
-| Strafe Direction |       |
+| Field             | Value |
+| ----------------- | ----- |
+| Strafe Direction  |       |
 | Forward Direction |       |
-| Pitch            |       |
-| Yaw              |       |
-| Jumping          |       |
-| Sneaking         |       |
+| Pitch             |       |
+| Yaw               |       |
+| Jumping           |       |
+| Sneaking          |       |

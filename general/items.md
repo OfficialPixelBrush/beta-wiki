@@ -1,11 +1,11 @@
 ---
 order: 10
-description: Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-Bit numeric ID and an 8-Bit metadata/damage value.
+description: Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit metadata/damage value.
 ---
 
 # Items
 
-Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-Bit numeric ID and an 8-Bit metadata/damage value.
+Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit metadata/damage value.
 
 Here is a comprehensive listing of all items.
 

@@ -14,21 +14,21 @@ Biomes are regions with differing foliage, terrain etc.
 
 There exist 13 distinct biomes in Beta 1.7.3. They each have unique properties, mainly if they can show rain particles, if it can snow in them, and what their respective foliage and map colors are.
 
-| Name            | Top Block | Filler Block | Rain | Snow |          Foliage Color          |            Map Color            |
-| :-------------- | :-------: | :----------: | :--: | :--: | :-----------------------------: | :-----------------------------: |
-| Rainforest      |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#1FF458" /> | <ColorSwatch color="#8FA360" /> |
-| Swampland       |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#8BAF48" /> | <ColorSwatch color="#7F9B20" /> |
-| Seasonal Forest |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#9BE023" /> |
-| Forest          |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EBA31" /> | <ColorSwatch color="#566210" /> |
-| Savanna         |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#D9E023" /> |
-| Shrubland       |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#A1AD20" /> |
-| Taiga           |   Grass   |     Dirt     |  ✅  |  ✅  | <ColorSwatch color="#7BB731" /> | <ColorSwatch color="#2EB153" /> |
-| Desert          |   Sand    |     Sand     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FA9418" /> |
-| Plains          |   Grass   |     Dirt     |  ✅  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FFD910" /> |
-| Ice Desert      |   Sand    |     Sand     |  ❌  |  ✅  | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#FFED93" /> |
-| Tundra          |   Grass   |     Dirt     |  ✅  |  ✅  | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#57EBF9" /> |
-| Hell            |   Grass   |     Dirt     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FF0000" /> |
-| Sky             |   Grass   |     Dirt     |  ❌  |  ❌  | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#8080FF" /> |
+| Name            | Top Block | Filler Block | Rain  | Snow  |          Foliage Color          |            Map Color            |
+| :-------------- | :-------: | :----------: | :---: | :---: | :-----------------------------: | :-----------------------------: |
+| Rainforest      |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#1FF458" /> | <ColorSwatch color="#8FA360" /> |
+| Swampland       |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#8BAF48" /> | <ColorSwatch color="#7F9B20" /> |
+| Seasonal Forest |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#9BE023" /> |
+| Forest          |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#4EBA31" /> | <ColorSwatch color="#566210" /> |
+| Savanna         |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#D9E023" /> |
+| Shrubland       |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#A1AD20" /> |
+| Taiga           |   Grass   |     Dirt     |   ✅   |   ✅   | <ColorSwatch color="#7BB731" /> | <ColorSwatch color="#2EB153" /> |
+| Desert          |   Sand    |     Sand     |   ❌   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FA9418" /> |
+| Plains          |   Grass   |     Dirt     |   ✅   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FFD910" /> |
+| Ice Desert      |   Sand    |     Sand     |   ❌   |   ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#FFED93" /> |
+| Tundra          |   Grass   |     Dirt     |   ✅   |   ✅   | <ColorSwatch color="#C4D339" /> | <ColorSwatch color="#57EBF9" /> |
+| Hell            |   Grass   |     Dirt     |   ❌   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#FF0000" /> |
+| Sky             |   Grass   |     Dirt     |   ❌   |   ❌   | <ColorSwatch color="#4EE031" /> | <ColorSwatch color="#8080FF" /> |
 
 ## Lookup table
 
@@ -95,7 +95,7 @@ The current Chunk Coordinate, scaled to Block-Space (multiplied by `16`), is pas
 | Humidity    |   `4`   |                `(0.05, 0.05, 1/3)` |
 | Variation   |   `2`   | `(0.25, 0.25, 0.5882352941176471)` |
 
-Each of these return a `16x16` array of 64-Bit floating point numbers, which're that chunks' temperature, humidity and variation values.
+Each of these return a `16x16` array of 64-bit floating point numbers, which're that chunks' temperature, humidity and variation values.
 
 |                                              Temperature                                              |                                            Humidity                                             |                                              Variation                                              |
 | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |

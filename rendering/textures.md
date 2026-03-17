@@ -122,7 +122,7 @@ The texture atlases are indexed from `0` to `255`.
 |  110 |   `6,14`   |    ![](../images/blocks/piston_inside_front.png)    | Piston (Inside Front)          |                                                                                  |
 |  112 |   `7,0`    |         ![](../images/blocks/rail_turn.png)         | Rail (Turn)                    |                                                                                  |
 |  113 |   `7,1`    |        ![](../images/blocks/black_wool.png)         | Wool (Black)                   |                                                                                  |
-|  114 |   `7,2`    |      ![](../images/blocks/dark_grey_wool.png)       | Wool (Dark Grey)               |                                                                                  |
+|  114 |   `7,2`    |      ![](../images/blocks/dark_grey_wool.png)       | Wool (Dark Gray)               |                                                                                  |
 |  115 |   `7,3`    |  ![](../images/blocks/redstone_torch_inactive.png)  | Redstone Torch (Inactive)      |                                                                                  |
 |  116 |   `7,4`    |      ![](../images/blocks/spruce_log_side.png)      | Spruce Log (Side)              |                                                                                  |
 |  117 |   `7,5`    |      ![](../images/blocks/birch_log_side.png)       | Birch Log (Side)               |                                                                                  |
@@ -172,7 +172,7 @@ The texture atlases are indexed from `0` to `255`.
 |  210 |   `13,2`   |        ![](../images/blocks/orange_wool.png)        | Wool (Orange)                  |                                                                                  |
 |  222 |  `13,14`   |     ![](../images/blocks/water_placeholder.png)     | Water (Placeholder)            | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |
 |  223 |  `13,15`   |     ![](../images/blocks/water_placeholder.png)     | Water (Placeholder)            | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |
-|  225 |   `14,1`   |         ![](../images/blocks/grey_wool.png)         | Wool (Grey)                    |                                                                                  |
+|  225 |   `14,1`   |         ![](../images/blocks/grey_wool.png)         | Wool (Gray)                    |                                                                                  |
 |  237 |  `14,13`   |     ![](../images/blocks/lava_placeholder.png)      | Lava (Placeholder)             | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |
 |  238 |  `14,14`   |     ![](../images/blocks/lava_placeholder.png)      | Lava (Placeholder)             | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |
 |  239 |  `14,15`   |     ![](../images/blocks/lava_placeholder.png)      | Lava (Placeholder)             | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |

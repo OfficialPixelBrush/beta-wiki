@@ -11,7 +11,7 @@ order: 53
 
 This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
 
-The format for the coordinates is slightly obtuse but boils down to using one 16-Bit Short to store the 4-Bit X, 4-Bit Z and 8-Bit Y value of the block coordinate within the chunk.
+The format for the coordinates is slightly obtuse but boils down to using one 16-bit Short to store the 4-bit X, 4-bit Z and 8-bit Y value of the block coordinate within the chunk.
 
 | Bit 15 - 12 | Bit 11 - 8 | Bit 7 - 0 |
 | ----------- | ---------- | --------- |

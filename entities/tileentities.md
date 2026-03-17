@@ -4,7 +4,7 @@ order: 30
 
 # Tile Entities
 
-Tile entities are blocks that contain additional data, beyond the 4-Bit Metadata/Damage Value every item/block has.
+Tile entities are blocks that contain additional data, beyond the 4-bit Metadata/Damage Value every item/block has.
 
 ## Base
 
@@ -63,8 +63,8 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 ## Chest
 
-| Field | Type | Description                    |
-| ----- | ---- | ------------------------------ |
+| Field | Type | Description                     |
+| ----- | ---- | ------------------------------- |
 | Items | List | A list of Compound-tagged items |
 
 > [!NOTE]
@@ -104,8 +104,8 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 The dispenser is internally referred to as `Trap`.
 
-| Field | Type | Description                    |
-| ----- | ---- | ------------------------------ |
+| Field | Type | Description                     |
+| ----- | ---- | ------------------------------- |
 | Items | List | A list of Compound-tagged items |
 
 **Example**
