@@ -26,7 +26,7 @@ For reading about how zlib itself works in more detail, I recommend checking out
 
 Although this is a little unorthodox, it is entirely possible to store uncompressed data in a barebones zlib/deflate format. This is very useful for when you're writing everything from scratch and can't be bothered to implement an actual compression algorithm, or are running your code in a very resource constrained environment.
 
-The basic idea boils down to disabling as many features as possible and forcing deflate to not utilize compression.
+The basic idea boils down to disabling as many features as possible and forcing deflate to not use compression.
 
 Here's some pseudocode, [based on the implementation from PicoCraft](https://github.com/OfficialPixelBrush/PicoCraft/blob/c2abf98c595bb47f0498e14726a26857c6382fa4/picocraft/picocraft.ino#L373), to illustrate the basic idea.
 

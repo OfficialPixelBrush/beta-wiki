@@ -23,7 +23,7 @@ For an example that you can reference for your purposes, check out the [BetrockS
 
 ## Simplex Noise
 
-Minecraft utilizes a slightly modified implementation of Simplex Noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
+Minecraft uses a slightly modified implementation of Simplex noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noiseSimplex.cpp).
 

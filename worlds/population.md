@@ -73,7 +73,7 @@ Before actually being placed into the world, each feature does a bit of extra st
 > These offset coordinates are relative to the chunks block coordinate, i.e. `chunkPos / 16`.
 
 > [!NOTE]
-> Offset coordinates marked with `~` utilize multiple PRNG passes. The depicted number is the total chance if both of those random numbers attained their lowest/highest possible value.
+> Offset coordinates marked with `~` use multiple PRNG passes. The depicted number is the total chance if both of those random numbers attained their lowest/highest possible value.
 
 | Feature           | Chance | Attempts | X/Z      | Y          |
 | ----------------- | ------ | -------- | -------- | ---------- |

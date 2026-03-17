@@ -45,7 +45,7 @@ Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly re
 
 To find out more about what Biomes exist and how they're defined, check out [the Biomes page](biomes).
 
-This process utilizes 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
+This process uses 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
 
 |                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
 | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |

@@ -6,9 +6,6 @@ order: 2
 
 This page will explain terminology used throughout this entire section of the wiki, mainly to make describing certain concepts as easy and unambiguous as possible.
 
-> [!NOTE]
-> A lot of this terminology is unique to this wiki. You likely won't see them used in many other places, except projects that utilized this wiki.
-
 ## Clarifications
 
 | Term                 | Meaning                                                                                                                                                                                      |

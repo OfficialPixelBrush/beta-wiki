@@ -38,7 +38,7 @@ return h;
 
 ## Random
 
-This section will explain how the Random Number Generator for Beta Minecraft/Java 5 worked, as that is what Minecrafts old generator was largely utilizing for its data.
+This section will explain how the Random Number Generator for Beta Minecraft/Java 5 worked, as that is what Minecraft's old generator was largely using for its data.
 
 ### Initilization
 
@@ -56,7 +56,7 @@ Our initial seed would become `0x2C974D2EC5D6`/`49028346594774`.
 
 ### Next
 
-Whenever a new random number is needed, the next functon is utilized, which generates a new random number based on the seed. It takes in the number of bits that need to be generated and limits the result to that number of bits, capping out at 32.
+Whenever a new random number is needed, the next function is used, which generates a new random number based on the seed. It takes in the number of bits that need to be generated and limits the result to that number of bits, capping out at 32.
 
 ```c
 seed = (seed * 0x5DEECE66D + 11) & 0xffffffffffff;
