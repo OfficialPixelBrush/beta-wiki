@@ -38,7 +38,7 @@ return h;
 
 ## Random
 
-This section will explain how the Random Number Generator for Beta Minecraft/Java 8 worked, as that is what Minecrafts old generator was largely utilizing for its data.
+This section will explain how the Random Number Generator for Beta Minecraft/Java 5 worked, as that is what Minecrafts old generator was largely utilizing for its data.
 
 ### Initilization
 
