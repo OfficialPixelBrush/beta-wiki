@@ -36,6 +36,6 @@ This page is rather short and could be expanded significantly
 ## Sources
 
 - [Minecraft Beta 1.4 Glitch by Mathew Alden (YouTube)](https://youtu.be/3fWY0rWI2i0)
-  > "So, apparently, all slabs are technically the same brick. It uses **damage values** to differentiate between the different types. However, Notch forgot to make the **damage values** change the material type."
+  > So, apparently, all slabs are technically the same brick. It uses **damage values** to differentiate between the different types. However, Notch forgot to make the **damage values** change the material type.
 - [Java Edition Indev 0.31 20100128-2200 (Minecraft Wiki)](https://minecraft.wiki/w/Java_Edition_Indev_0.31_20100128-2200)
 - [Hell (map theme) (Minecraft Wiki)](<https://minecraft.wiki/w/Hell_(map_theme)>)
