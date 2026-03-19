@@ -11,6 +11,10 @@ description: Textures are what give each rendered block and item their colorful,
 
 There exist two texture atlases, one for blocks and one for items. Both atlases are `256x256` with the default texture pack, where each individual block face/item is `16x16` pixels. Each block/item shares its textures with every other block, only having a unique appearance by zooming into and showing different parts of the atlas by using differing UV-Coordinates.
 
+|                     Block Textures                     |
+| :----------------------------------------------------: |
+| ![The full block texture atlas](../images/terrain.png) |
+
 The texture atlases are indexed from `0` to `255`.
 
 ### Block Atlas
@@ -196,33 +200,87 @@ Any spaces that're not filled with a texture are usually occupied by a pink grid
 
 ## Item Atlas
 
-|    # | Row/Column |                    Texture                    | Label                |
-| ---: | :--------: | :-------------------------------------------: | :------------------- |
-|    0 |   `0,0`    |    ![](../images/items/leather_helmet.png)    | Leather Helmet       |
-|    1 |   `0,1`    |   ![](../images/items/chainmail_helmet.png)   | Chainmail Helmet     |
-|    2 |   `0,2`    |     ![](../images/items/iron_helmet.png)      | Iron Helmet          |
-|    3 |   `0,3`    |    ![](../images/items/diamond_helmet.png)    | Diamond Helmet       |
-|    4 |   `0,4`    |     ![](../images/items/gold_helmet.png)      | Gold Helmet          |
-|    5 |   `0,5`    |    ![](../images/items/flint_n_steel.png)     | Flint and Steel      |
-|    6 |   `0,6`    |        ![](../images/items/flint.png)         | Flint                |
-|    7 |   `0,7`    |         ![](../images/items/coal.png)         | Coal                 |
-|    8 |   `0,8`    |        ![](../images/items/string.png)        | String               |
-|    9 |   `0,9`    |        ![](../images/items/seeds.png)         | Seeds                |
-|   10 |   `0,10`   |        ![](../images/items/apple.png)         | Apple                |
-|   11 |   `0,11`   |     ![](../images/items/golden_apple.png)     | Golden Apple         |
-|   12 |   `0,12`   |         ![](../images/items/egg.png)          | Egg                  |
-|   13 |   `0,13`   |        ![](../images/items/sugar.png)         | Sugar                |
-|   14 |   `0,14`   |       ![](../images/items/snowball.png)       | Snowball             |
-|   16 |   `1,0`    |  ![](../images/items/leather_chestplate.png)  | Leather Chestplate   |
-|   17 |   `1,1`    | ![](../images/items/chainmail_chestplate.png) | Chainmail Chestplate |
-|   18 |   `1,2`    |   ![](../images/items/iron_chestplate.png)    | Iron Chestplate      |
-|   19 |   `1,3`    |  ![](../images/items/diamond_chestplate.png)  | Diamond Chestplate   |
-|   20 |   `1,4`    |   ![](../images/items/gold_chestplate.png)    | Gold Chestplate      |
-|   21 |   `1,5`    |         ![](../images/items/bow.png)          | Bow                  |
-|   22 |   `1,6`    |        ![](../images/items/brick.png)         | Brick                |
-|   23 |   `1,7`    |      ![](../images/items/iron_ingot.png)      | Iron Ingot           |
-|   24 |   `1,8`    |       ![](../images/items/feather.png)        | Feather              |
-|   25 |   `1,9`    |        ![](../images/items/wheat.png)         | Wheat                |
+The item texture atlas is utilized similarly to the block texture atlas.
+
+|                 Item Textures                  |
+| :--------------------------------------------: |
+| ![The item texture atlas](../images/items.png) |
+
+|   # | Row/Column |                    Texture                    | Label                |
+| --: | :--------: | :-------------------------------------------: | :------------------- |
+|   0 |   `0,0`    |    ![](../images/items/leather_helmet.png)    | Leather Helmet       |
+|   1 |   `0,1`    |   ![](../images/items/chainmail_helmet.png)   | Chainmail Helmet     |
+|   2 |   `0,2`    |     ![](../images/items/iron_helmet.png)      | Iron Helmet          |
+|   3 |   `0,3`    |    ![](../images/items/diamond_helmet.png)    | Diamond Helmet       |
+|   4 |   `0,4`    |     ![](../images/items/gold_helmet.png)      | Gold Helmet          |
+|   5 |   `0,5`    |    ![](../images/items/flint_n_steel.png)     | Flint and Steel      |
+|   6 |   `0,6`    |        ![](../images/items/flint.png)         | Flint                |
+|   7 |   `0,7`    |         ![](../images/items/coal.png)         | Coal                 |
+|   8 |   `0,8`    |        ![](../images/items/string.png)        | String               |
+|   9 |   `0,9`    |        ![](../images/items/seeds.png)         | Seeds                |
+|  10 |   `0,10`   |        ![](../images/items/apple.png)         | Apple                |
+|  11 |   `0,11`   |     ![](../images/items/golden_apple.png)     | Golden Apple         |
+|  12 |   `0,12`   |         ![](../images/items/egg.png)          | Egg                  |
+|  13 |   `0,13`   |        ![](../images/items/sugar.png)         | Sugar                |
+|  14 |   `0,14`   |       ![](../images/items/snowball.png)       | Snowball             |
+|  16 |   `1,0`    |  ![](../images/items/leather_chestplate.png)  | Leather Chestplate   |
+|  17 |   `1,1`    | ![](../images/items/chainmail_chestplate.png) | Chainmail Chestplate |
+|  18 |   `1,2`    |   ![](../images/items/iron_chestplate.png)    | Iron Chestplate      |
+|  19 |   `1,3`    |  ![](../images/items/diamond_chestplate.png)  | Diamond Chestplate   |
+|  20 |   `1,4`    |   ![](../images/items/gold_chestplate.png)    | Gold Chestplate      |
+|  21 |   `1,5`    |         ![](../images/items/bow.png)          | Bow                  |
+|  22 |   `1,6`    |        ![](../images/items/brick.png)         | Brick                |
+|  23 |   `1,7`    |      ![](../images/items/iron_ingot.png)      | Iron Ingot           |
+|  24 |   `1,8`    |       ![](../images/items/feather.png)        | Feather              |
+|  25 |   `1,9`    |        ![](../images/items/wheat.png)         | Wheat                |
+|  26 |   `1,10`   |       ![](../images/items/painting.png)       | Painting             |
+|  27 |   `1,11`   |      ![](../images/items/sugarcane.png)       | Sugarcane            |
+|  28 |   `1,12`   |         ![](../images/items/bone.png)         | Bone                 |
+|  29 |   `1,13`   |         ![](../images/items/cake.png)         | Cake                 |
+|  30 |   `1,14`   |      ![](../images/items/slimeball.png)       | Slimeball            |
+|  32 |   `2,0`    |   ![](../images/items/leather_leggings.png)   | Leather Leggings     |
+|  33 |   `2,1`    |  ![](../images/items/chainmail_leggings.png)  | Chainmail Leggings   |
+|  34 |   `2,2`    |    ![](../images/items/iron_leggings.png)     | Iron Leggings        |
+|  35 |   `2,3`    |   ![](../images/items/diamond_leggings.png)   | Diamond Leggings     |
+|  36 |   `2,4`    |    ![](../images/items/gold_leggings.png)     | Gold Leggings        |
+|  37 |   `2,5`    |        ![](../images/items/arrow.png)         | Arrow                |
+|  38 |   `2,6`    |        ![](../images/items/quiver.png)        | Quiver               |
+|  39 |   `2,7`    |      ![](../images/items/gold_ingot.png)      | Gold Ingot           |
+|  40 |   `2,8`    |      ![](../images/items/gunpowder.png)       | Gunpowder            |
+|  41 |   `2,9`    |        ![](../images/items/bread.png)         | Bread                |
+|  42 |   `2,10`   |         ![](../images/items/sign.png)         | Sign                 |
+|  43 |   `2,11`   |     ![](../images/items/wooden_door.png)      | Wooden Door          |
+|  44 |   `2,12`   |      ![](../images/items/iron_door.png)       | Iron Door            |
+|  45 |   `2,13`   |         ![](../images/items/bed.png)          | Bed                  |
+|  48 |   `3,0`    |    ![](../images/items/leather_boots.png)     | Leather Boots        |
+|  49 |   `3,1`    |   ![](../images/items/chainmail_boots.png)    | Chainmail Boots      |
+|  50 |   `3,2`    |      ![](../images/items/iron_boots.png)      | Iron Boots           |
+|  51 |   `3,3`    |    ![](../images/items/diamond_boots.png)     | Diamond Boots        |
+|  52 |   `3,4`    |      ![](../images/items/gold_boots.png)      | Gold Boots           |
+|  53 |   `3,5`    |        ![](../images/items/stick.png)         | Stick                |
+|  54 |   `3,6`    |       ![](../images/items/compass.png)        | Compass              |
+|  55 |   `3,7`    |       ![](../images/items/diamond.png)        | Diamond              |
+|  56 |   `3,8`    |    ![](../images/items/redstone_dust.png)     | Redstone dust        |
+|  57 |   `3,9`    |         ![](../images/items/clay.png)         | Clay                 |
+|  58 |   `3,10`   |        ![](../images/items/paper.png)         | Paper                |
+|  59 |   `3,11`   |         ![](../images/items/book.png)         | Book                 |
+|  60 |   `3,12`   |         ![](../images/items/map.png)          | Map                  |
+|  64 |   `4,0`    |     ![](../images/items/wooden_sword.png)     | Wooden Sword         |
+|  65 |   `4,1`    |     ![](../images/items/stone_sword.png)      | Stone Sword          |
+|  66 |   `4,2`    |      ![](../images/items/iron_sword.png)      | Iron Sword           |
+|  67 |   `4,3`    |    ![](../images/items/diamond_sword.png)     | Diamond Sword        |
+|  68 |   `4,4`    |      ![](../images/items/gold_sword.png)      | Gold Sword           |
+|  69 |   `4,5`    |     ![](../images/items/fishing_rod.png)      | Fishing rod          |
+|  70 |   `4,6`    |        ![](../images/items/clock.png)         | Clock                |
+|  71 |   `4,7`    |         ![](../images/items/bowl.png)         | Bowl                 |
+|  72 |   `4,8`    |    ![](../images/items/mushroom_stew.png)     | Mushroom stew        |
+|  73 |   `4,9`    |    ![](../images/items/glowstone_dust.png)    | Glowstone dust       |
+|  74 |   `4,10`   |        ![](../images/items/bucket.png)        | Bucket               |
+|  75 |   `4,11`   |     ![](../images/items/water_bucket.png)     | Water Bucket         |
+|  76 |   `4,12`   |     ![](../images/items/lava_bucket.png)      | Lava Bucket          |
+|  77 |   `4,12`   |     ![](../images/items/milk_bucket.png)      | Milk Bucket          |
+|  78 |   `4,12`   |      ![](../images/items/black_dye.png)       | Black dye/Ink sack   |
+|  79 |   `4,12`   |       ![](../images/items/grey_dye.png)       | Gray dye             |
 
 Any spaces that're not filled with a texture are usually transparent, though a few have a blue corner.
 |                       Empty                        |                    Transparent                    |

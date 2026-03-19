@@ -28,6 +28,7 @@ A lot of these arose, either because a thing didn't have a public name, or becau
 | Yellow Flower        | Dandelion          | Historical internal name                                                                                                                           |
 | Hell, Hell world     | Nether             | Indev map type that inspired Notch to add a hell-like world ([See MC Wiki](<https://minecraft.wiki/w/Hell_(map_theme)>))                           |
 | Slip, Nexus          | Nether             | A few names Notch considered before going with "Nether"                                                                                            |
+| Sulfur/Sulphur       | Gunpowder          | Historical name. Was renamed to Gunpowder in Beta 1.3                                                                                              |
 
 ::: tip MISSING
 This page is rather short and could be expanded significantly
