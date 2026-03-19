@@ -18,7 +18,7 @@ Here is a comprehensive listing of all items.
 |   260 | Apple                |              |
 |   261 | Bow                  |              |
 |   262 | Arrow                |              |
-|   263 | Coal                 |              |
+|   263 | Coal                 |Coal `0`, Charcoal `1`|
 |   264 | Diamond              |              |
 |   265 | Iron                 |              |
 |   266 | Gold                 |              |
