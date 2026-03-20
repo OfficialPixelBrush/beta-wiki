@@ -26,13 +26,13 @@ This packet is sent by the client when an inventory slot is clicked. See the [in
 
 ## Example Packet
 
-|            Field | Value |                                                                                     |
-| ---------------: | ----- | ----------------------------------------------------------------------------------- |
-|        Window ID | `2`   |                                                                                     |
-|             Slot | `22`  |                                                                                     |
-|      Right Click | Byte  | `0`                                                                                 |
-|    Action number | Short | `1`                                                                                 |
-|            Shift | Byte  | `1`                                                                                 |
-|          Item ID | Short | `50` (<TextureSwatch texture_name="../../images/blocks/torch.png" label="Torch" />) |
-|      Item Amount | Byte  | `63`                                                                                |
-| Item Meta/Damage | Short | `0`                                                                                 |
+|            Field | Value |                                                                    |
+| ---------------: | ----- | ------------------------------------------------------------------ |
+|        Window ID | `2`   |                                                                    |
+|             Slot | `22`  |                                                                    |
+|      Right Click | Byte  | `0`                                                                |
+|    Action number | Short | `1`                                                                |
+|            Shift | Byte  | `1`                                                                |
+|          Item ID | Short | `50` (<TextureSwatch texture_name="blocks/torch" label="Torch" />) |
+|      Item Amount | Byte  | `63`                                                               |
+| Item Meta/Damage | Short | `0`                                                                |

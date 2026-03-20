@@ -52,13 +52,13 @@ Int3 unformat_multi_block(int16_t value) {
 
 ## Example Packet
 
-| Field             | Value                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| X                 | `-9`                                                                               |
-| Z                 | `12`                                                                               |
-| Number of Blocks  | `1`                                                                                |
-| Block Coordinates | `0101 0111 01111111`\* (x: 5, z: 7, y: 127)                                        |
-| Blocktypes        | `1` (<TextureSwatch texture_name="../../images/blocks/stone.png" label="Stone" />) |
-| Metadata          | `0`                                                                                |
+| Field             | Value                                                             |
+| ----------------- | ----------------------------------------------------------------- |
+| X                 | `-9`                                                              |
+| Z                 | `12`                                                              |
+| Number of Blocks  | `1`                                                               |
+| Block Coordinates | `0101 0111 01111111`\* (x: 5, z: 7, y: 127)                       |
+| Blocktypes        | `1` (<TextureSwatch texture_name="blocks/stone" label="Stone" />) |
+| Metadata          | `0`                                                               |
 
 <sub>\* Binary value is spaced out to be more readable.</sub>

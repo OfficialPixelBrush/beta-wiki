@@ -25,10 +25,10 @@ If both the window ID and slot ID are `-1`, then the item that's currently held 
 
 ## Example Packet
 
-| Field            | Value |                                                                                     |
-| ---------------- | ----- | ----------------------------------------------------------------------------------- |
-| Window ID        | `2`   |                                                                                     |
-| Slot             | `22`  |                                                                                     |
-| Item ID          | Short | `50` (<TextureSwatch texture_name="../../images/blocks/torch.png" label="Torch" />) |
-| Item Amount      | Byte  | `63`                                                                                |
-| Item Meta/Damage | Short | `0`                                                                                 |
+| Field            | Value |                                                                    |
+| ---------------- | ----- | ------------------------------------------------------------------ |
+| Window ID        | `2`   |                                                                    |
+| Slot             | `22`  |                                                                    |
+| Item ID          | Short | `50` (<TextureSwatch texture_name="blocks/torch" label="Torch" />) |
+| Item Amount      | Byte  | `63`                                                               |
+| Item Meta/Damage | Short | `0`                                                                |

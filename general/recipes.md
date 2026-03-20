@@ -1,0 +1,5 @@
+# Recipes
+
+## Crafting
+
+## Smelting

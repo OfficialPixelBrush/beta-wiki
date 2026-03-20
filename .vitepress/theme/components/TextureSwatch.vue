@@ -1,7 +1,10 @@
 <template>
   <span class="texture-swatch-wrapper">
     <span v-if="label && showLabel">{{ label }}</span>
-    <span class="swatch" :style="{ backgroundImage: `url(${texture_name})` }"></span>
+    <span 
+      class="swatch" 
+      :style="{ backgroundImage: 'url(/beta-wiki/textures/' + texture_name + '.png)' }"
+    ></span>
   </span>
 </template>
 
