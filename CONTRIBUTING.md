@@ -65,7 +65,7 @@ The following is a list of stylistic and formal considerations that should be ta
 
 ## Additions
 
-1. If a block or item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
+1. If a block or item ID is used, the designated **English (US)** name must also be included in brackets, alongside a texture swatch (e.g. `276` (<TextureSwatch texture_name="items/diamond_sword" label="Diamond Sword" />)). When there is no valid block or item texture then a lone label is acceptable as well.
 1. The same applies to any numerical value with a different known meaning than the number itself (`1` (Swing Arm))
 
 ## Code blocks
