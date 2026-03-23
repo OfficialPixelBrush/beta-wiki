@@ -1,8 +1,29 @@
+---
+description: A collection of useful projects related to Minecraft Beta 1.7.3! This is not an exhaustive list, but it should give you a good starting point if you're looking for clients, servers, libraries, or tools that can be used or referenced.
+---
+
 # Projects
 
-A small list of clients or servers that implement the Beta 1.7.3 protocol, which you can use for reference!
+A collection of useful projects related to Minecraft Beta 1.7.3! This is not an exhaustive list, but it should give you a good starting point if you're looking for clients, servers, libraries, or tools that can be used or referenced.
 
-## Servers
+# Clients
+
+Clients that can connect to Minecraft Beta 1.7.3-compatible servers.
+
+| Language | Project                                                                                         | Creator                                       |
+| -------: | ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
+|        C | [CavEX](https://github.com/xtreme8000/cavex)                                                    | [xtreme8000](https://github.com/xtreme8000)   |
+|      Zig | [MainCraft](https://github.com/Guigui220D/MainCraft)                                            | [Guillaume D.](https://github.com/Guigui220D) |
+|      C++ | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                        | [Pixel Brush](https://pixelbrush.dev)         |
+|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" /> | [ddevault](https://github.com/ddevault)       |
+|       C# | [betasharp](https://github.com/Fazin85/betasharp)                                               | [Fazin85](https://github.com/Fazin85)         |
+| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                        | [Pixel Brush](https://pixelbrush.dev)         |
+
+Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
+
+# Servers
+
+Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients.
 
 | Language | Project                                                                      | Creator                                         |
 | -------: | ---------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -16,20 +37,11 @@ A small list of clients or servers that implement the Beta 1.7.3 protocol, which
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Server_List) for more servers.
 
-## Clients
-
-| Language | Project                                                                                         | Creator                                       |
-| -------: | ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
-|        C | [CavEX](https://github.com/xtreme8000/cavex)                                                    | [xtreme8000](https://github.com/xtreme8000)   |
-|      Zig | [MainCraft](https://github.com/Guigui220D/MainCraft)                                            | [Guillaume D.](https://github.com/Guigui220D) |
-|      C++ | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                        | [Pixel Brush](https://pixelbrush.dev)         |
-|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" /> | [ddevault](https://github.com/ddevault)       |
-|       C# | [betasharp](https://github.com/Fazin85/betasharp)                                               | [Fazin85](https://github.com/Fazin85)         |
-| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                        | [Pixel Brush](https://pixelbrush.dev)         |
-
-Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
+# Libraries
 
 ## NBT
+
+Libraries for working with Minecraft's NBT format.
 
 |   Language | Name                                                                                | Creator                                              |
 | ---------: | ----------------------------------------------------------------------------------- | ---------------------------------------------------- |
@@ -49,4 +61,13 @@ Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editor
 |         Go | [go-mc](https://github.com/Tnze/go-mc) <Badge type="warning" text="Unmaintained" /> | [Tnze](https://github.com/Tnze)                      |
 |        PHP | [PocketMine-NBT](https://github.com/pmmp/NBT)                                       | [PocketMine](https://pmmp.io)                        |
 
-Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Library_List) for more NBT libraries.
+Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Library_List) for more libraries.
+
+# Tools
+
+Tools for working with Minecraft Beta 1.7.3.
+
+| Name                                                                                       | Purpose                                                                                | Creator                                              |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [RetroMCP](hthttps://github.com/MCPHackers/RetroMCP-Java)                                  | Used to decompile and deobfuscate Minecraft code                                       | [MCPHackers](https://mcphackers.org/)                |
+| [BetaPacketPlainTextifier](https://github.com/OfficialPixelBrush/BetaPacketPlainTextifier) | A python script to simplify the reading of b1.7.3 protocol data via wireshark captures | [Pixel Brush](https://github.com/OfficialPixelBrush) |
