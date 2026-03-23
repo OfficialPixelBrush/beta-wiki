@@ -1,11 +1,11 @@
 ---
 order: 30
-description: Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code.
+description: Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code. In spite of that, these are part of the Vanilla game, and a 100% accurate reimplementation should implement them as well.
 ---
 
 # Quirks
 
-Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code.
+Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code. In spite of that, these are part of the Vanilla game, and a 100% accurate reimplementation should implement them as well.
 
 ## Ice and Snow
 
@@ -44,6 +44,18 @@ Wooden slabs before 1.3.1 were retextured stone slabs. As a result, they require
 
 # Redstone
 
+## Quasi-connectivity
+
+TODO
+
 ## Double-trigger
 
 If a Dispenser is already being powered by a lever or redstone torch, a buttons can trigger Dispensers twice on both when it presses and resets. This is because the Dispenser gets a redstone-based block update, then checks if its being powered, discovering the power by the lever/redstone torch.
+
+# Entity Id overflow
+
+The id of entities is stored as a signed 32-bit integer, which has a maximum value of `2,147,483,647`. While it's unlikely for anyone to reach or suprass this number under normal circumstances, there are certain effects that potentially occur if this number ever overflows. Any situation where the game just immediately crashes will be ignored.
+
+## Spawn Object Packet
+
+The [spawn object packet](../networking/packets/023-spawn-object) determines if an entity, such as an Arrow, has an initial velocity by checking if the owner entity id is greater than `0`. If the global entity id overflows into the negatives, all arrows and fireballs would be sent without an initial velocity.
