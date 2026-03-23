@@ -1,15 +1,15 @@
 ---
 order: 30
-description: Quirks are (most likely) unintentional or unintuitive behaviors that occur during terrain generation.
+description: Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code.
 ---
 
 # Quirks
 
-Quirks are (most likely) unintentional or unintuitive behaviors that occur during terrain generation.
+Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code.
 
 ## Ice and Snow
 
-Ice is generated during the [terrain shape stage](generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via random ticking.
+Ice is generated during the [terrain shape stage](../worlds/generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via random ticking.
 
 |                                                     Unticked                                                     |                                                   Ticked                                                    |
 | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
@@ -23,7 +23,7 @@ This becomes more apparent when the relevant values are visualized.
 
 <sub>Biome map with Map colors, Red marking where temperature values are less than 0.5</sub>
 
-Snow depends on the same system to determine where it can appear, though its placed later in the [population stage](population).
+Snow depends on the same system to determine where it can appear, though its placed later in the [population stage](../worlds/population).
 
 > [!NOTE]
 > Seed for this section is `-1712183887779554298`, showing the area around chunk `x: -1, z:6`
@@ -37,3 +37,13 @@ To read data from the perlin-noise permutation table, the position the noise is 
 Due to how java Java converts between types (see [Casting](../technical/javaFeatures#casting)), the resulting 32-bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
 
 Using a signed 64-bit Integer (`long`) can fix this problem but it changes the tree and terrain generation slightly due to rounding differences.
+
+# Wooden slab
+
+Wooden slabs before 1.3.1 were retextured stone slabs. As a result, they required a Pickaxe to mine effectively, and produced stone particles when hit. The item was replaced by the modern wooden slab in 1.3.1, and renamed to "Petrified Oak Slab" in 1.13 ([See MC Wiki](https://minecraft.wiki/w/Petrified_oak_slab)).
+
+# Redstone
+
+## Double-trigger
+
+If a Dispenser is already being powered by a lever or redstone torch, a buttons can trigger Dispensers twice on both when it presses and resets. This is because the Dispenser gets a redstone-based block update, then checks if its being powered, discovering the power by the lever/redstone torch.

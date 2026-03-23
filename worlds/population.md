@@ -257,7 +257,7 @@ Singular Fluid Sources can only generate if the chosen position fulfills the fol
 
 ## Snow
 
-Snow generates on the highest solid block, except ice, where the temperature value is `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](quirks#ice-and-snow) for more info!
+Snow generates on the highest solid block, except ice, where the temperature value is `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](../misc/quirks#ice-and-snow) for more info!
 
 # Nether
 

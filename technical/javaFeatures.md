@@ -9,7 +9,7 @@ Java provides certain functions, classes and algorithms by default which oftenti
 
 ## Casting
 
-Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../worlds/quirks). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
+Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../misc/quirks#farlands). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
 
 Java clearly defines casting behavior in its specs. Casting behavior is defined in Chapter 5 of the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf).
 

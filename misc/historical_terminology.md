@@ -29,6 +29,7 @@ A lot of these arose, either because a thing didn't have a public name, or becau
 | Hell, Hell world     | Nether             | Indev map type that inspired Notch to add a hell-like world ([See MC Wiki](<https://minecraft.wiki/w/Hell_(map_theme)>))                           |
 | Slip, Nexus          | Nether             | A few names Notch considered before going with "Nether"                                                                                            |
 | Sulfur/Sulphur       | Gunpowder          | Historical name. Was renamed to Gunpowder in Beta 1.3                                                                                              |
+| Wooden Slab          | Petrified Oak Slab | Came from a quirk. ([See Quirks page](./quirks#wooden-slab))                                                                                       |
 
 ::: tip MISSING
 This page is rather short and could be expanded significantly
