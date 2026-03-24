@@ -16,7 +16,7 @@ Clients that can connect to Minecraft Beta 1.7.3-compatible servers.
 |      Zig | [MainCraft](https://github.com/Guigui220D/MainCraft)                                            | [Guillaume D.](https://github.com/Guigui220D) |
 |      C++ | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                        | [Pixel Brush](https://pixelbrush.dev)         |
 |       C# | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" /> | [ddevault](https://github.com/ddevault)       |
-|       C# | [betasharp](https://github.com/Fazin85/betasharp)                                               | [Fazin85](https://github.com/Fazin85)         |
+|       C# | [betasharp](https://github.com/Fazin85/betasharp) <Badge type="warning" text="Uses Decomp" />   | [Fazin85](https://github.com/Fazin85)         |
 | GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                        | [Pixel Brush](https://pixelbrush.dev)         |
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
@@ -25,16 +25,16 @@ Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editor
 
 Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients.
 
-| Language | Project                                                                      | Creator                                                                                 |
-| -------: | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-|       Go | [retromc](https://github.com/esora512/retromc/tree/dev) (fork)               | [esora512](https://github.com/esora512) (og by [leNicDev](https://github.com/leNicDev)) |
-|     Rust | [mc173](https://github.com/mindstorm38/mc173)                                | [mindstorm38](https://github.com/mindstorm38/)                                          |
-|      Zig | [Minestalgia](https://github.com/cody-quinn/Minestalgia)                     | [cody-quinn](https://codyq.dev/)                                                        |
-|     Java | [WintyMC](https://github.com/DOh1221/WintyMC/)                               | [DOh1221](https://github.com/DOh1221/)                                                  |
-|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft)                           | [ddevault](https://github.com/ddevault)                                                 |
-|       C# | [betasharp](https://github.com/Fazin85/betasharp)                            | [Fazin85](https://github.com/Fazin85)                                                   |
-|      C++ | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer)         | [Pixel Brush](https://pixelbrush.dev/)                                                  |
-|        C | [Custom-BetaMC-Server](https://github.com/dairycultist/Custom-BetaMC-Server) | [dairycultist](https://github.com/dairycultist)                                         |
+| Language | Project                                                                                       | Creator                                                                                 |
+| -------: | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+|       Go | [retromc](https://github.com/esora512/retromc/tree/dev) <Badge type="warning" text="Fork" />  | [esora512](https://github.com/esora512) (og by [leNicDev](https://github.com/leNicDev)) |
+|     Rust | [mc173](https://github.com/mindstorm38/mc173)                                                 | [mindstorm38](https://github.com/mindstorm38/)                                          |
+|      Zig | [Minestalgia](https://github.com/cody-quinn/Minestalgia)                                      | [cody-quinn](https://codyq.dev/)                                                        |
+|     Java | [WintyMC](https://github.com/DOh1221/WintyMC/)                                                | [DOh1221](https://github.com/DOh1221/)                                                  |
+|       C# | [TrueCraft](https://github.com/ddevault/TrueCraft)                                            | [ddevault](https://github.com/ddevault)                                                 |
+|       C# | [betasharp](https://github.com/Fazin85/betasharp) <Badge type="warning" text="Uses Decomp" /> | [Fazin85](https://github.com/Fazin85)                                                   |
+|      C++ | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer)                          | [Pixel Brush](https://pixelbrush.dev/)                                                  |
+|        C | [Custom-BetaMC-Server](https://github.com/dairycultist/Custom-BetaMC-Server)                  | [dairycultist](https://github.com/dairycultist)                                         |
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Server_List) for more servers.
 

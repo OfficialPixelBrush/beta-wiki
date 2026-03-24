@@ -66,6 +66,10 @@ export default defineConfig(
             icon: "discord",
             link: "https://discord.gg/JHTz2HSKrf",
           },
+          {
+            icon: "youtube",
+            link: "https://www.youtube.com/@techbetawiki",
+          },
         ],
         editLink: {
           pattern:

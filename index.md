@@ -36,9 +36,10 @@ For further info, check out the [introduction](./introduction) page.
 
 Please check the [To-Do Page](todo) to see what still needs to be done, or just click through the Wiki until you find something that's missing. Either open an issue on GitHub or try to solve it yourself!
 
-## Discord
+## Socials
 
-We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!
+- [Discord Server](https://discord.gg/JHTz2HSKrf)
+- [YouTube](https://www.youtube.com/@techbetawiki)
 
 ## Star History
 
