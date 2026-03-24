@@ -9,7 +9,7 @@ order: 7
 | --------: | ----------- | ------------------------ | ---------------------- |
 | `0x06`    | Clientbound | `SetSpawnPositionPacket` | `Packet6SpawnPosition` |
 
-This is sent after the player has finished logging in to spawn them into the world. It can also be sent at any time to update where the player's compass points at.
+This is sent after the player has finished logging in. It can be sent at any time to update where the player's compass points to.
 
 ## Clientbound
 
