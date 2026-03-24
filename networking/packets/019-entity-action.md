@@ -6,7 +6,7 @@ order: 20
 # Entity Action
 
 | Packet ID | Direction   | Mojang Name           | MCP Name               |
-| --------- | ----------- | --------------------- | ---------------------- |
+| --------: | ----------- | --------------------- | ---------------------- |
 | `0x13`    | Serverbound | `PlayerCommandPacket` | `Packet19EntityAction` |
 
 This packet is sent by the client for performing certain actions, defined via a bitmask.
@@ -18,13 +18,13 @@ This packet is sent by the client for performing certain actions, defined via a 
 ## Serverbound
 
 | Field     | Type    | Description                              |
-| --------- | ------- | ---------------------------------------- |
+| --------: | ------- | ---------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
 | Action    | Byte    | The type of action                       |
 
 ## Example Packet
 
 | Field     | Value                  |
-| --------- | ---------------------- |
+| --------: | ---------------------- |
 | Entity ID | `1298`                 |
 | Action    | `3` (On Fire & Crouch) |
