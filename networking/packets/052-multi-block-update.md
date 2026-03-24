@@ -6,8 +6,8 @@ order: 53
 # Multi-Block Update
 
 | Packet ID | Direction   | Mojang Name              | MCP Name                   |
-| --------- | ----------- | ------------------------ | -------------------------- |
-| `0x34`    | Clientbound | `ChunkTilesUpdatePacket` | `Packet52MultiBlockChange` |
+| --------: | ----------- | ------------------------ | -------------------------- |
+|    `0x34` | Clientbound | `ChunkTilesUpdatePacket` | `Packet52MultiBlockChange` |
 
 This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
 
@@ -41,24 +41,24 @@ Int3 unformat_multi_block(int16_t value) {
 
 ## Clientbound
 
-| Field             | Type        | Description                                              |
-| ----------------- | ----------- | -------------------------------------------------------- |
-| X                 | Integer     | The X position of the chunk                              |
-| Z                 | Integer     | The Z position of the chunk                              |
-| Number of Blocks  | Short       | The number of changed blocks                             |
+|             Field | Type        | Description                                              |
+| ----------------: | ----------- | -------------------------------------------------------- |
+|                 X | Integer     | The X position of the chunk                              |
+|                 Z | Integer     | The Z position of the chunk                              |
+|  Number of Blocks | Short       | The number of changed blocks                             |
 | Block Coordinates | Short Array | Array of Block coordinates in the format described above |
-| Blocktypes        | Byte Array  | Array of Block types those coordinates change to         |
-| Metadata          | Byte Array  | Array of Block metadata those coordinates change to      |
+|        Blocktypes | Byte Array  | Array of Block types those coordinates change to         |
+|          Metadata | Byte Array  | Array of Block metadata those coordinates change to      |
 
 ## Example Packet
 
-| Field             | Value                                                             |
-| ----------------- | ----------------------------------------------------------------- |
-| X                 | `-9`                                                              |
-| Z                 | `12`                                                              |
-| Number of Blocks  | `1`                                                               |
+|             Field | Value                                                             |
+| ----------------: | ----------------------------------------------------------------- |
+|                 X | `-9`                                                              |
+|                 Z | `12`                                                              |
+|  Number of Blocks | `1`                                                               |
 | Block Coordinates | `0101 0111 01111111`\* (x: 5, z: 7, y: 127)                       |
-| Blocktypes        | `1` (<TextureSwatch texture_name="blocks/stone" label="Stone" />) |
-| Metadata          | `0`                                                               |
+|        Blocktypes | `1` (<TextureSwatch texture_name="blocks/stone" label="Stone" />) |
+|          Metadata | `0`                                                               |
 
 <sub>\* Binary value is spaced out to be more readable.</sub>

@@ -6,8 +6,8 @@ order: 11
 # Player On Ground
 
 | Packet ID | Direction | Mojang Name        | MCP Name         |
-| --------- | --------- | ------------------ | ---------------- |
-| `0x0A`    | Both      | `MovePlayerPacket` | `Packet10Flying` |
+| --------: | --------- | ------------------ | ---------------- |
+|    `0x0A` | Both      | `MovePlayerPacket` | `Packet10Flying` |
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 
@@ -16,8 +16,8 @@ This packet is sent to the server to determine if the player is on the ground or
 
 ## Clientbound
 
-| Field     | Type    | Description                                              |
-| --------- | ------- | -------------------------------------------------------- |
+|     Field | Type    | Description                                              |
+| --------: | ------- | -------------------------------------------------------- |
 | On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling |
 
 ::: tip MISSING
@@ -26,12 +26,12 @@ It's currently untested what the client does when it receives an `OnGround` pack
 
 ## Serverbound
 
-| Field     | Type    | Description                                              |
-| --------- | ------- | -------------------------------------------------------- |
+|     Field | Type    | Description                                              |
+| --------: | ------- | -------------------------------------------------------- |
 | On Ground | Boolean | `false` for walking/swimming, `true` for jumping/falling |
 
 ## Example Packet
 
-| Field     | Value  |
-| --------- | ------ |
+|     Field | Value  |
+| --------: | ------ |
 | On Ground | `true` |

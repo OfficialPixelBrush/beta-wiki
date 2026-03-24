@@ -7,8 +7,8 @@ description: Sent to the server when the player attempts to place or interact wi
 # Place
 
 | Packet ID | Direction   | Mojang Name     | MCP Name        |
-| --------- | ----------- | --------------- | --------------- |
-| `0x0F`    | Serverbound | `UseItemPacket` | `Packet15Place` |
+| --------: | ----------- | --------------- | --------------- |
+|    `0x0F` | Serverbound | `UseItemPacket` | `Packet15Place` |
 
 ## Serverbound
 

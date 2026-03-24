@@ -7,3 +7,15 @@ order: 0
 A packet can be defined as messages that go between the client and Server.
 
 These typically consists of two parts: The ID and the data the specified packet holds.
+
+## Serverbound (C->S)
+
+TODO
+
+## Clientbound (S->C)
+
+TODO
+
+## Both (C<->S)
+
+TODO
