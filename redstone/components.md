@@ -66,10 +66,10 @@ When the neighbor of a repeater updates, the following choice is made.
 
 | Is Powered | Receiving Power |                                         |
 | :--------: | :-------------: | :-------------------------------------- |
-|     ❌      |        ❌        | -                                       |
-|     ❌      |        ✅        | Schedules block update in `delay` ticks |
-|     ✅      |        ❌        | Schedules block update in `delay` ticks |
-|     ✅      |        ✅        | -                                       |
+|     ❌     |       ❌        | -                                       |
+|     ❌     |       ✅        | Schedules block update in `delay` ticks |
+|     ✅     |       ❌        | Schedules block update in `delay` ticks |
+|     ✅     |       ✅        | -                                       |
 
 When the repeater is then ticked, it first checks if it's receiving power from either Redstone dust or any other powered block.
 On its input side. From there it branches off into the following.

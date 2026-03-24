@@ -4,6 +4,7 @@ description: Documents how entity movement and physics are implemented.
 ---
 
 # Movement
+
 This page documents how entity movement and physics are implemented.
 
 > [!WARNING]
@@ -174,6 +175,7 @@ void applyKnockback(Vector3f direction) {
 | `SNEAK_SPEED_MODIFIER`       | `0.3`        | `moveForward` and `moveStrafe` are multiplied by this while sneaking, reducing ground speed                                                               |
 
 ### Fluids
+
 | Name                 | Value  | Description                                                        |
 | -------------------- | ------ | ------------------------------------------------------------------ |
 | `WATER_DRAG`         | `0.8`  | Per-tick velocity multiplier in water                              |
@@ -183,6 +185,7 @@ void applyKnockback(Vector3f direction) {
 | `FLUID_WALL_BOOST`   | `0.3`  | `velocity.y` set to this when pressing into a wall while submerged |
 
 ### Ladders
+
 | Name                    | Value  | Description                                               |
 | ----------------------- | ------ | --------------------------------------------------------- |
 | `LADDER_MAX_HORIZONTAL` | `0.15` | `velocity.x`/`velocity.z` clamped to ± this on a ladder   |
@@ -191,12 +194,14 @@ void applyKnockback(Vector3f direction) {
 | `LADDER_WALL_BOOST`     | `0.2`  | `velocity.y` set to this when pressing into a ladder wall |
 
 ### Cobwebs
+
 | Name                     | Value  | Description                                           |
 | ------------------------ | ------ | ----------------------------------------------------- |
 | `COBWEB_HORIZONTAL_DRAG` | `0.25` | Horizontal movement is multiplied by this in a cobweb |
 | `COBWEB_VERTICAL_DRAG`   | `0.05` | Vertical movement is multiplied by this in a cobweb   |
 
 ### Knockback
+
 | Name                           | Value | Description                                                        |
 | ------------------------------ | ----- | ------------------------------------------------------------------ |
 | `KNOCKBACK_VELOCITY_DAMPENING` | `0.5` | All velocity is halved before the knockback impulse is applied     |
