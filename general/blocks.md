@@ -167,7 +167,7 @@ Leaves have 3/4 distinct values. Only oak is biome-colored.
 
 The values after this simply follow the same pattern.
 
-## Dispenser/Furnace
+## Dispenser/Furnace/Chest
 
 | Value | Color          |
 | ----: | :------------- |
