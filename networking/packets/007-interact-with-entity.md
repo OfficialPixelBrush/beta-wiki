@@ -3,7 +3,7 @@ title: "0x07: Interact with Entity"
 order: 8
 ---
 
-# Click Entity
+# Interact with Entity
 
 | Packet ID | Direction   | Mojang Name      | MCP Name           |
 | --------- | ----------- | ---------------- | ------------------ |

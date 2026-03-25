@@ -4,7 +4,7 @@ description: Initializes the login process
 order: 3
 ---
 
-# Handshake
+# Pre-Login
 
 | Packet ID | Direction | Mojang Name      | MCP Name           |
 | --------- | --------- | ---------------- | ------------------ |
