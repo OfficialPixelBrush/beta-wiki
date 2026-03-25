@@ -7,14 +7,14 @@ order: 28
 
 | Packet ID | Direction   | Mojang Name         | MCP Name           |
 | --------- | ----------- | ------------------- | ------------------ |
-| `0x1B`    | Clientbound | `PlayerInputPacket` | `Packet27Position` |
+| `0x1B`    | Serverbound | `PlayerInputPacket` | `Packet27Position` |
 
-This packet could be used for setting the movement values and states of whichever player receives the packet.
+This packet could be used for sending player input and movement states from the client to the server.
 
 > [!WARNING]
-> This packet is completely unused in the Notchian server, so there's no example of what it _should_ look or act like but the client does seem to handle it.
+> This packet is completely unused in the Notchian server, so there's no example of what it _should_ look or act like.
 
-## Clientbound
+## Serverbound
 
 | Field             | Type    | Description                |
 | ----------------- | ------- | -------------------------- |
