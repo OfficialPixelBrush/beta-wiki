@@ -6,7 +6,7 @@ order: 14
 # Player Position and Rotation
 
 | Packet ID | Direction | Mojang Name               | MCP Name                 |
-| --------: | --------- | ------------------------- | ------------------------ |
+| --------- | --------- | ------------------------- | ------------------------ |
 | `0x0D`    | Both      | `MovePlayerPacket.PosRot` | `Packet13PlayerLookMove` |
 
 ## Clientbound
@@ -14,7 +14,7 @@ order: 14
 Sent to the client when the player is teleported and their view direction needs to be defined.
 
 | Field     | Type    | Description                                                             |
-| --------: | ------- | ----------------------------------------------------------------------- |
+| --------- | ------- | ----------------------------------------------------------------------- |
 | X         | Double  | The X position of the player                                            |
 | Y         | Double  | The Y position of the player                                            |
 | Camera Y  | Double  | The Y position of the player camera                                     |
@@ -28,7 +28,7 @@ Sent to the client when the player is teleported and their view direction needs 
 Sent to the server when the player is moving and looking around.
 
 | Field     | Type    | Description                                                             |
-| --------: | ------- | ----------------------------------------------------------------------- |
+| --------- | ------- | ----------------------------------------------------------------------- |
 | X         | Double  | The X position of the player                                            |
 | Y         | Double  | The Y position of the player                                            |
 | Camera Y  | Double  | The Y position of the player camera                                     |
@@ -40,7 +40,7 @@ Sent to the server when the player is moving and looking around.
 ## Example Packets
 
 | Field     | Value      |
-| --------: | ---------- |
+| --------- | ---------- |
 | X         | `5669.06`  |
 | Y         | `68.4`     |
 | Camera Y  | `70.02`    |

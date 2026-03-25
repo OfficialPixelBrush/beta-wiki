@@ -6,39 +6,39 @@ order: 12
 # Player Position
 
 | Packet ID | Direction | Mojang Name            | MCP Name                 |
-| --------: | --------- | ---------------------- | ------------------------ |
-|    `0x0B` | Both      | `MovePlayerPacket.Pos` | `Packet11PlayerPosition` |
+| --------- | --------- | ---------------------- | ------------------------ |
+| `0x0B`    | Both      | `MovePlayerPacket.Pos` | `Packet11PlayerPosition` |
 
 ## Clientbound
 
 Sent to the client when the player is teleported, but their view-direction is irrelevant.
 
-|     Field | Type    | Description                                                             |
-| --------: | ------- | ----------------------------------------------------------------------- |
-|         X | Double  | The X position of the player                                            |
-|         Y | Double  | The Y position of the player                                            |
-|  Camera Y | Double  | The Y position of the player camera                                     |
-|         Z | Double  | The Z position of the player                                            |
+| Field     | Type    | Description                                                             |
+| --------- | ------- | ----------------------------------------------------------------------- |
+| X         | Double  | The X position of the player                                            |
+| Y         | Double  | The Y position of the player                                            |
+| Camera Y  | Double  | The Y position of the player camera                                     |
+| Z         | Double  | The Z position of the player                                            |
 | On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Serverbound
 
 Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.
 
-|     Field | Type    | Description                                                             |
-| --------: | ------- | ----------------------------------------------------------------------- |
-|         X | Double  | The X position of the player                                            |
-|         Y | Double  | The Y position of the player                                            |
-|  Camera Y | Double  | The Y position of the player camera                                     |
-|         Z | Double  | The Z position of the player                                            |
+| Field     | Type    | Description                                                             |
+| --------- | ------- | ----------------------------------------------------------------------- |
+| X         | Double  | The X position of the player                                            |
+| Y         | Double  | The Y position of the player                                            |
+| Camera Y  | Double  | The Y position of the player camera                                     |
+| Z         | Double  | The Z position of the player                                            |
 | On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Example Packets
 
-|     Field | Value      |
-| --------: | ---------- |
-|         X | `5669.06`  |
-|         Y | `68.4`     |
-|  Camera Y | `70.02`    |
-|         Z | `-5325.32` |
+| Field     | Value      |
+| --------- | ---------- |
+| X         | `5669.06`  |
+| Y         | `68.4`     |
+| Camera Y  | `70.02`    |
+| Z         | `-5325.32` |
 | On Ground | `true`     |

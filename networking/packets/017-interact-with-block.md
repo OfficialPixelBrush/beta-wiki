@@ -6,7 +6,7 @@ order: 18
 # Interact with Block
 
 | Packet ID | Direction   | Mojang Name                    | MCP Name        |
-| --------: | ----------- | ------------------------------ | --------------- |
+| --------- | ----------- | ------------------------------ | --------------- |
 | `0x11`    | Clientbound | `EntityActionAtPositionPacket` | `Packet17Sleep` |
 
 ## Clientbound
@@ -18,7 +18,7 @@ When the Entity ID of the client and the Packet are the same, the player is put 
 If the Entity ID is that of another player, the relevant entity will lay down in the bed.
 
 | Field     | Type    | Description                              |
-| --------: | ------- | ---------------------------------------- |
+| --------- | ------- | ---------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
 | Unused    | Byte    | Always `0`                               |
 | X         | Integer | The X position of beds headboard         |
@@ -30,7 +30,7 @@ If the Entity ID is that of another player, the relevant entity will lay down in
 ### Clientbound
 
 | Field     | Value |
-| --------: | ----- |
+| --------- | ----- |
 | Entity ID | `1`   |
 | Unused    | `0`   |
 | X         | `53`  |

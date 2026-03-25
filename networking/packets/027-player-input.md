@@ -6,8 +6,8 @@ order: 28
 # Player Input (unused)
 
 | Packet ID | Direction   | Mojang Name         | MCP Name           |
-| --------: | ----------- | ------------------- | ------------------ |
-|    `0x1B` | Clientbound | `PlayerInputPacket` | `Packet27Position` |
+| --------- | ----------- | ------------------- | ------------------ |
+| `0x1B`    | Clientbound | `PlayerInputPacket` | `Packet27Position` |
 
 This packet could be used for setting the movement values and states of whichever player receives the packet.
 
@@ -16,22 +16,22 @@ This packet could be used for setting the movement values and states of whicheve
 
 ## Clientbound
 
-|             Field | Type    | Description                |
-| ----------------: | ------- | -------------------------- |
-|  Strafe Direction | Float   | Strafing movement          |
+| Field             | Type    | Description                |
+| ----------------- | ------- | -------------------------- |
+| Strafe Direction  | Float   | Strafing movement          |
 | Forward Direction | Float   | Forward/Backward movement  |
-|             Pitch | Float   | Pitch rotation             |
-|               Yaw | Float   | Yaw rotation               |
-|           Jumping | Boolean | If the player should jump  |
-|          Sneaking | Boolean | If the player should sneak |
+| Pitch             | Float   | Pitch rotation             |
+| Yaw               | Float   | Yaw rotation               |
+| Jumping           | Boolean | If the player should jump  |
+| Sneaking          | Boolean | If the player should sneak |
 
 ## Example Packet
 
-|             Field | Value |
-| ----------------: | ----- |
-|  Strafe Direction |       |
+| Field             | Value |
+| ----------------- | ----- |
+| Strafe Direction  |       |
 | Forward Direction |       |
-|             Pitch |       |
-|               Yaw |       |
-|           Jumping |       |
-|          Sneaking |       |
+| Pitch             |       |
+| Yaw               |       |
+| Jumping           |       |
+| Sneaking          |       |

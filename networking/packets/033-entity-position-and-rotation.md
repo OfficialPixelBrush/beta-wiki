@@ -6,7 +6,7 @@ order: 34
 # Entity Position and Rotation
 
 | Packet ID | Direction   | Mojang Name               | MCP Name                    |
-| --------: | ----------- | ------------------------- | --------------------------- |
+| --------- | ----------- | ------------------------- | --------------------------- |
 | `0x21`    | Clientbound | `MoveEntityPacket.PosRot` | `Packet33RelEntityMoveLook` |
 
 ## Clientbound
@@ -14,7 +14,7 @@ order: 34
 Sent to the client to set an entity's position relative to the clients previous position. Usually sent when an entity has moved less than 4 blocks. Position and rotation data is in [entity space](../terminology#entity-space) and thus quantized.
 
 | Field     | Type    | Description                               |
-| --------: | ------- | ----------------------------------------- |
+| --------- | ------- | ----------------------------------------- |
 | Entity ID | Integer | The ID of the entity that should be moved |
 | X         | Byte    | The X position of the player (Quantized)  |
 | Y         | Byte    | The Y position of the player (Quantized)  |
@@ -27,7 +27,7 @@ Sent to the client to set an entity's position relative to the clients previous 
 ### Clientbound
 
 | Field     | Value          |
-| --------: | -------------- |
+| --------- | -------------- |
 | Entity ID | `1298`         |
 | X         | `5` (`0.15`)   |
 | Y         | `2` (`0.06`)   |
