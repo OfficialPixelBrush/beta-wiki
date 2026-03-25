@@ -43,9 +43,9 @@ Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly re
 
 ## Biomes
 
-To find out more about what Biomes exist and how they're defined, check out [the Biomes page](biomes).
+To find out more about what biomes exist and how they're defined, check out [the biomes page](biomes).
 
-This process utilizes 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
+This process uses 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
 
 |                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
 | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
@@ -65,7 +65,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 ### Noise Octaves
 
-The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](../technical/javaFeatures#random), alongside 8 [Octaved Perlin Noise Generators](../technical/noise), 7 of which are relevant for World generation.
+The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](../technical/javaFeatures#random), alongside 8 [Octaved Perlin Noise Generators](../technical/noise), 7 of which are relevant for world generation.
 
 | Generator          | Octaves |                                               Scale |
 | :----------------- | ------- | --------------------------------------------------: |
@@ -82,7 +82,7 @@ The Beta 1.7.3 Terrain Generator has a shared [Pseudorandom Number Generator](..
 
 <sub>Colors adjusted be more visible.</sub>
 
-Continentalness and Depth are 2D, while Low, High and Selector noise are 3D. As a result, only the lowest slice of each is shown. Tree Density is 2D as well, but only used during the [population stage](population#trees) for trees.
+Continentalness and depth are 2D, while low, high and selector noise are 3D. As a result, only the lowest slice of each is shown. Tree density is 2D as well, but only used during the [population stage](population#trees) for trees.
 
 ### Terrain Noise
 
@@ -150,7 +150,7 @@ terrainDensity -= densityOffset;
 // Reduce terrain density towards the top of the world
 if (y > max.y - 4) {
   double heightEdgeFade = double(float(y - (max.y - 4)) / 3.0f);
-  terrainDensity = (terrainDensity * (1.0 - heightEdgeFace)) + (-10.0 * heightEdgeFace);
+  terrainDensity = (terrainDensity * (1.0 - heightEdgeFade)) + (-10.0 * heightEdgeFade);
 }
 terrainMap[xyz] = terrainDensity;
 xyz++;

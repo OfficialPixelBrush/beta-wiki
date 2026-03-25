@@ -18,4 +18,4 @@ A comprehensive list of all objects/vehicles.
 |    62 | Thrown Egg       |
 |    70 | Falling Sand     |
 |    71 | Falling Gravel   |
-|    90 | Fishing bobber   |
+|    90 | Fishing Bobber   |

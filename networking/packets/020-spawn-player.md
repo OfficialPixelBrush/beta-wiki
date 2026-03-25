@@ -6,22 +6,22 @@ order: 21
 # Spawn Player
 
 | Packet ID | Direction   | Mojang Name       | MCP Name                   |
-| --------- | ----------- | ----------------- | -------------------------- |
-| `0x14`    | Clientbound | `AddPlayerPacket` | `Packet20NamedEntitySpawn` |
+| --------: | ----------- | ----------------- | -------------------------- |
+|    `0x14` | Clientbound | `AddPlayerPacket` | `Packet20NamedEntitySpawn` |
 
 Sent to the client when a player entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
 
 ## Clientbound
 
-| Field     | Type     | Description                                         |
-| --------- | -------- | --------------------------------------------------- |
+|     Field | Type     | Description                                         |
+| --------: | -------- | --------------------------------------------------- |
 | Entity ID | Integer  | The ID of the entity that will refer to this player |
-| Username  | String16 | The username. Maximum of 16 characters!             |
-| X         | Integer  | The X block position of the player                  |
-| Y         | Integer  | The Y block position of the player                  |
-| Z         | Integer  | The Z block position of the player                  |
-| Yaw       | Byte     | Rotation on the X Axis (Quantized)                  |
-| Pitch     | Byte     | Rotation on the Y Axis (Quantized)                  |
+|  Username | String16 | The username. Maximum of 16 characters!             |
+|         X | Integer  | The X block position of the player                  |
+|         Y | Integer  | The Y block position of the player                  |
+|         Z | Integer  | The Z block position of the player                  |
+|       Yaw | Byte     | Rotation on the X Axis (Quantized)                  |
+|     Pitch | Byte     | Rotation on the Y Axis (Quantized)                  |
 | Held item | Short    | Held item/block of the player                       |
 
 > [!WARNING]
@@ -29,13 +29,13 @@ Sent to the client when a player entity should be spawned. The position is in [b
 
 ## Example Packet
 
-| Field     | Value               |
-| --------- | ------------------- |
-| Entity ID | `1298`              |
-| Username  | `PixelBrushArt`     |
-| X         | `5`                 |
-| Y         | `2`                 |
-| Z         | `15`                |
-| Yaw       | `16` (`22.58`)      |
-| Pitch     | `9` (`12.70`)       |
-| Held item | `256` (Iron Shovel) |
+|     Field | Value                                                                          |
+| --------: | ------------------------------------------------------------------------------ |
+| Entity ID | `1298`                                                                         |
+|  Username | `PixelBrushArt`                                                                |
+|         X | `5`                                                                            |
+|         Y | `2`                                                                            |
+|         Z | `15`                                                                           |
+|       Yaw | `16` (`22.58`)                                                                 |
+|     Pitch | `9` (`12.70`)                                                                  |
+| Held item | `256` (<TextureSwatch texture_name="items/iron_shovel" label="Iron Shovel" />) |

@@ -4,7 +4,7 @@ There are many ways in which anyone can contribute to the wiki. [Look at the rep
 
 ## Confirming existing information
 
-Simply double, triple or quintupple checking that all information presented on the wiki is factully correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
+Simply double, triple or quintupple checking that all information presented on the wiki is factually correct is a huge help. Small oversights and errors can slip through easily, so people just making sure everything's right is a huge help! If you find anything that's wrong, either fix it yourself by making a [Pull Request](#pull-request) or filing an [issue on the GitHub](https://github.com/OfficialPixelBrush/beta-wiki/issues) so someone else can fix it.
 
 ## Fixing issues
 
@@ -53,7 +53,7 @@ The following is a list of stylistic and formal considerations that should be ta
 ## Values
 
 1. All values are always `monospaced`
-1. **Bytes**, Shorts and Integers are not differentiated (`125`, `6723`, `66241267`)
+1. **Bytes**, **Shorts** and **Integers** are not differentiated (`125`, `6723`, `66241267`)
 1. **Floats** have a lower-case `f` on their end (`0.53f`)
 1. **Doubles** do not have a lower-case `f` (`545.42`)
 1. **Booleans** are either `true` or `false`
@@ -65,8 +65,8 @@ The following is a list of stylistic and formal considerations that should be ta
 
 ## Additions
 
-1. If a Block or Item ID is used, the designated **English (US)** name must also be included in brackets (`276` (Diamond Sword))
-1. The same applies to any numberical value with a different known meaning than the number itself (`1` (Swing Arm))
+1. If a block or item ID is used, the designated **English (US)** name must also be included in brackets, alongside a texture swatch (e.g. `276` (<TextureSwatch texture_name="items/diamond_sword" label="Diamond Sword" />)). When there is no valid block or item texture then a lone label is acceptable as well.
+1. The same applies to any numerical value with a different known meaning than the number itself (`1` (Swing Arm))
 
 ## Code blocks
 
@@ -75,4 +75,4 @@ The following is a list of stylistic and formal considerations that should be ta
 1. Code blocks should not rely on libraries that magically handle most of the hard work or obfuscate what the code actually does. Math helper libraries are permitted
 1. Variables should be reasonably and readably named, avoid single-character names unless its for something unimportant (like an iterator)
 1. A specific case is not enforced
-1. Variables that require a specific bitwidth should use a type that confirms this bitwidth, i.e. instead of `int`, which can be 16-Bit or 32-Bit depending on ones system or compiler, it should be `int32_t` or `i32`, to ensure it's a signed 32-Bit integer
+1. Variables that require a specific bitwidth should use a type that confirms this bitwidth, i.e. instead of `int`, which can be 16-bit or 32-bit depending on ones system or compiler, it should be `int32_t` or `i32`, to ensure it's a signed 32-bit integer

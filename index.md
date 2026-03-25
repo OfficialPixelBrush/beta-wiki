@@ -11,14 +11,15 @@ hero:
       link: https://github.com/OfficialPixelBrush/beta-wiki
 ---
 
-![Technical Beta Wiki](/banner.webp)
+![Technical Beta Wiki](/banner_light.webp){.light-only}
+![Technical Beta Wiki](/banner_dark.webp){.dark-only}
 
 > [!NOTE]
 > This wiki is mainly for technical information and documentation of how Minecraft functioned as of Beta 1.7.3. If you're looking for more general gameplay info about Beta 1.7.3, such as crafting recipes, check out the [Farlands Wiki](https://farlands.miraheze.org/wiki/Main_Page) and the [archived Minecraft Wiki](https://web.archive.org/web/20110804012308/http://www.minecraftwiki.net/wiki/Main_Page).
 
 ## Objective
 
-The goal of this wiki is to consolidate all knowledge on Minecrafts Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.
+The goal of this wiki is to consolidate all knowledge on Minecraft's Legacy Protocols, specifically the way they were by Beta 1.7.3. This includes documenting both client and server behavior and communications, all while explaining it in such a way that anyone can make their own client or server with relative ease.
 
 This includes documenting the [inner workings of the World Generator](./worlds/generation), [the McRegion format](./worlds/), etc.
 
@@ -35,9 +36,10 @@ For further info, check out the [introduction](./introduction) page.
 
 Please check the [To-Do Page](todo) to see what still needs to be done, or just click through the Wiki until you find something that's missing. Either open an issue on GitHub or try to solve it yourself!
 
-## Discord
+## Socials
 
-We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!
+- [Discord Server](https://discord.gg/JHTz2HSKrf)
+- [YouTube](https://www.youtube.com/@techbetawiki)
 
 ## Star History
 

@@ -29,7 +29,7 @@ A world is a folder that contains everything that describes it, such as the over
 
 ### Level
 
-`Level` is what worlds were called in early Indev. As Minecraft shifted over to infinite terrain, the term `World` started to become more widely used, but for historical reasons the term `Level` stuck around. More specifically, due to how multiple dimensions are literally just separate worlds in separate folders (`DIM-1` for the Nether), each Dimension is technically its own separate `Level`.
+`Level` is what worlds were called in early Indev. As Minecraft shifted over to infinite terrain, the term `World` started to become more widely used, but for historical reasons the term `Level` stuck around. More specifically, due to how multiple dimensions are literally just separate worlds in separate folders (`DIM-1` for the Nether), each dimension is technically its own separate `Level`.
 
 ### Region
 
@@ -47,20 +47,21 @@ For more info, see the [chunk page](chunk).
 | ----------- | -------- | ------------------------------------------------------------------------- |
 | LastPlayed  | Long     | Timestamp for when the world was last played                              |
 | LevelName   | String16 | The name of the world                                                     |
-| raining     | Byte     | If it's raining                                                           |
+| raining     | Byte     | If it's raining (see [Weather](./weather#rain))                           |
+| rainTime    | Integer  | Time until raining is toggled (see [Weather](./weather#rain))             |
 | RandomSeed  | Long     | The seed of the world                                                     |
 | SizeOnDisk  | Long     | The size of the world in bytes                                            |
 | SpawnX      | Integer  | The X-Coordinate of the Spawn                                             |
 | SpawnY      | Integer  | The Y-Coordinate of the Spawn                                             |
 | SpawnZ      | Integer  | The Z-Coordinate of the Spawn                                             |
-| thundering  | Byte     | If it's thundering                                                        |
-| thunderTime | Integer  | ?                                                                         |
+| thundering  | Byte     | If it's thundering (see [Weather](./weather#thunder))                     |
+| thunderTime | Integer  | Time until thundering is toggled (see [Weather](./weather#thunder))       |
 | Time        | Long     | World time in ticks                                                       |
 | version     | Integer  | `level.dat` format version. Always `19132` for worlds made after Beta 1.3 |
 
 ## McRegion
 
-McRegion is the format in which Minecraft Worlds were stored, starting with Beta 1.3 and ending with Release 1.1. This page will largely go into how exactly reading and writing of these files cane be done, instead of going into many details such as alternative compression formats, as [the article on the Minecraft Wiki](https://minecraft.wiki/w/Region_file_format) already covers this quite thoroughly.
+McRegion is the format in which Minecraft Worlds were stored, starting with Beta 1.3 and ending with Release 1.1. This page will largely go into how exactly reading and writing of these files can be done, instead of going into many details such as alternative compression formats, as [the article on the Minecraft Wiki](https://minecraft.wiki/w/Region_file_format) already covers this quite thoroughly.
 
 ### Reading
 

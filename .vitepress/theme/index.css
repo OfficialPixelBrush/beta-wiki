@@ -4,7 +4,7 @@
 }
 
 img {
-    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 td > img {
@@ -19,4 +19,12 @@ td > img {
 
 .medium-zoom-image--opened {
     z-index: 31;
+}
+
+html.dark .light-only {
+    display: none !important;
+}
+
+html:not(.dark) .dark-only {
+    display: none !important;
 }

@@ -4,7 +4,7 @@ order: 35
 
 # Entities
 
-Entites are non-block creatures that don't align to the block grid.
+Entities are non-block creatures that don't align to the block grid.
 
 ## Base Entity
 
@@ -31,11 +31,11 @@ All entities have the following properties, though usually more. These are just 
 
 ### Position
 
-The Entites' `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player this is on the ground between their feet.
+The `(X,Y,Z)` coordinate defines where its lowest, center-most point is. For the player, this is on the ground between their feet.
 
 ### Y-Offset/Stance
 
-The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position.
+The Y-Offset, also called "stance" on wiki.vg, defines the eye-height of the entity. It is relative to the Y-Position.
 
 | Entity  | Y-Offset |
 | ------- | -------- |
@@ -44,19 +44,19 @@ The Y-Offset, also called "Stance" on wiki.vg, defines the eye-height of the ent
 
 ### Width and Height
 
-The Width and Height define the size of the Axis-Aligned Bounding Box that Minecraft uses for its collision.
+The width and height define the size of the bounding box that Minecraft uses for its collision.
 
 | Entity  | Width | Height |
 | ------- | ----- | ------ |
 | Default | `0.6` | `1.8`  |
 
 ::: tip MISSING
-TODO: Other Bounding Box sizes
+TODO: Other bounding box sizes
 :::
 
 ## Living Entities
 
-Living Entities are a subset of Entities that have more properties.
+Living entities are a subset of entities that have more properties.
 
 | Field      | Type                        | Description                              |
 | ---------- | --------------------------- | ---------------------------------------- |

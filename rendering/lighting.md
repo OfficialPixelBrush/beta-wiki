@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 description: This section will go into how lighting data is rendered, not how it is calculated.
 ---
 
@@ -10,7 +10,7 @@ This section will go into how lighting data is rendered, not how it is calculate
 ## Face lighting
 
 Every block has constant directional lighting which is statically assigned based on
-the angles of the faces. This is the base of all lighting therafter, no matter whether its smooth or not.
+the angles of the faces. This is the base of all lighting thereafter, no matter whether it's smooth or not.
 
 > [!NOTE]
 > I haven't found a generalized formula to this yet but I'm sure there is one
@@ -31,7 +31,7 @@ The resulting value is then multiplied with the underlying color.
 
 ## Light levels
 
-Lighting in Minecraft is based on a 4-Bit gradient from `0` - `15`. As of Indev, this relationship is no longer linear.
+Lighting in Minecraft is based on a 4-bit gradient from `0` - `15`. As of Indev, this relationship is no longer linear.
 
 If mapped from a range of `0.0` - `1.0`, where `1.0` represents a light level of `15`, we get the following mapping.
 

@@ -4,7 +4,7 @@ order: 20
 
 # Pathfinding
 
-In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game utilizes a 3D implementation of the A\* (A-Star) search algorithm to calculate these routes across the voxel terrain.
+In Minecraft Beta 1.7.3, pathfinding is the system used by mobs to navigate the world and reach a specific target, coordinates, or other entities. The game uses a 3D implementation of the A\* (A-Star) search algorithm to calculate these routes across the voxel terrain.
 
 ::: tip MISSING
 A huge chunk of info is still missing!!
@@ -24,11 +24,11 @@ The algorithm uses a priority queue to always expand the block with the lowest F
 
 ## How Mobs Evaluate the World
 
-To prevent the server from crashing by searching the entire map, a mob only calculates paths within a restricted local area (typically a `32`-block radius). When a mob wants to reach a target, it checks the blocks immediately around it (North, South, East, West) and evaluates them based on a few strict rules:
+To prevent the server from crashing by searching the entire map, a mob only calculates paths within a restricted local area (typically a `32`-block radius). When a mob wants to reach a target, it checks the blocks immediately around it (north, south, east, west) and evaluates them based on a few strict rules:
 
 - The pathfinder checks the entity's specific bounding box. A spider needs wider clearance than a zombie, so a path that is valid for a zombie might be flagged as blocked for a spider.
 - Mobs can step up `1` block. If an adjacent block is solid, the pathfinder checks if the space above it is empty. It also checks downwards, allowing mobs to safely drop down terrain.
-- The algorithm assigns specific walkability values to blocks. It strictly avoids paths that lead into lava (`-2` (Lava)), but it will calculate routes through water (`-1` (Water)). Blocks where the material blocks movement evaluate to `true` (Blocks Movement) and are completely rejected.
+- The algorithm assigns specific walkability values to blocks. It strictly avoids paths that lead into lava (`-2` (lava)), but it will calculate routes through water (`-1` (water)). Blocks where the material blocks movement evaluate to `true` (blocks movement) and are completely rejected.
 - Solid blocks naturally block movement. Interestingly, the algorithm understands wooden and iron doors, but it will only consider them passable if their metadata explicitly states that they are currently open.
 
 ## Executing the Movement

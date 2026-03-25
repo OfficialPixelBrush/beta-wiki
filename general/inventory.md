@@ -6,14 +6,14 @@ order: 45
 
 Inventories/Windows behave quite differently to how one'd expect. On the network side the slots tend to be counted from the one that's top-left down to the one that's bottom-right. Due to how the player inventory is counted and stored, some conversion is necessary, depending on which inventory is open and what slot was clicked.
 
-Each inventory/window also has a unique identifier/index.
+Each inventory/window also has a unique identifier/type id.
 
 > [!NOTE]
 > For the NBT-side, repeated numbers do not mean that slots are shared. Separate inventories count their slots independently.
 
 ## Player
 
-The player inventory has no index. It has a few obvious oddities between how its sent over the network and how its stored, namely the armor slots starting at index 100 and being ordered bottom to top.
+The player inventory has no type id. It has a few obvious oddities between how its sent over the network and how its stored, namely the armor slots starting at type id 100 and being ordered bottom to top.
 
 |                                            Network                                             |                                             NBT                                             |
 | :--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
@@ -27,7 +27,7 @@ The player inventory has no index. It has a few obvious oddities between how its
 
 ## Chest (0)
 
-Chests have an index of `0`.
+Chests have an type id of `0`.
 
 |                                          Network                                          |                                          NBT                                           |
 | :---------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
@@ -43,7 +43,7 @@ It appears the chest that is visually to the left represents the upper half of t
 
 ## Crafting Table (1)
 
-Crafting Tables have an index of `1`.
+Crafting Tables have an type id of `1`.
 
 |                                                  Network                                                   |                                                  NBT                                                   |
 | :--------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
@@ -54,7 +54,7 @@ Crafting Tables have an index of `1`.
 
 ## Furnace (2)
 
-Furnaces have an index of `2`.
+Furnaces have an type id of `2`.
 
 |                                            Network                                            |                                            NBT                                             |
 | :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
@@ -62,7 +62,7 @@ Furnaces have an index of `2`.
 
 ## Dispenser (3)
 
-Dispensers have an index of `3`.
+Dispensers have an type id of `3`.
 
 |                                              Network                                              |                                              NBT                                               |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |

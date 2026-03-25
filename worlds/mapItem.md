@@ -4,7 +4,7 @@ order: 60
 
 # Map Item
 
-The map item has some special quirks that make it interesting enough to deserve it's own section of the Wiki.
+The map item has some special quirks that make it interesting enough to deserve its own section of the Wiki.
 
 ::: tip MISSING
 This still requires most of its info. This is extremely barebones
@@ -12,7 +12,7 @@ This still requires most of its info. This is extremely barebones
 
 ## Stored data
 
-The map item color data is stored as 8-Bit Byte values.
+The map item color data is stored as 8-bit Byte values.
 
 The upper 6 Bits are used as an index into an internal color array that maps the index to a color.
 

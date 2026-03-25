@@ -4,7 +4,7 @@ order: 5
 
 # Minimal Login
 
-The bare minimum number of packets to join a Server with a Notchian Client is as follows.
+The bare minimum number of packets to join a server with a Notchian client is as follows.
 
 | Packet                                                                             | Contents                                                    |
 | :--------------------------------------------------------------------------------- | :---------------------------------------------------------- |
@@ -31,4 +31,4 @@ This will place the player into an empty world at sunrise. The player will begin
 | `S->C` [Health](../packets/008-health#clientbound)             | Sets the shown health                                       |
 | `S->C` [Inventory Contents](../packets/104-inventory-contents) | Sets the players inventory                                  |
 
-This is followed by a bunch of [Pre-Chunk](../packets/050-pre-chunk) packets to load the chunks, and [Chunk](../packets/051-chunk) packets which contain the actual chunk data, alongside the Server and Client exchanging position and rotation information.
+This is followed by a bunch of [Pre-Chunk](../packets/050-pre-chunk) packets to load the chunks, and [Chunk](../packets/051-chunk) packets which contain the actual chunk data, alongside the server and Client exchanging position and rotation information.

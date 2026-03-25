@@ -4,7 +4,7 @@ order: 30
 
 # Tile Entities
 
-Tile Entities are blocks that contain additional data, beyond the 4-Bit Metadata/Damage Value every item/block has.
+Tile entities are blocks that contain additional data, beyond the 4-bit Metadata/Damage Value every item/block has.
 
 ## Base
 
@@ -63,12 +63,12 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 ## Chest
 
-| Field | Type | Description                    |
-| ----- | ---- | ------------------------------ |
-| Items | List | A list of Compound-taged items |
+| Field | Type | Description                     |
+| ----- | ---- | ------------------------------- |
+| Items | List | A list of Compound-tagged items |
 
 > [!NOTE]
-> Large Chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry!
+> Large chests are just normal chests that happen to be adjacent when opened. They do not share a tile entity entry!
 
 **Example**
 
@@ -102,11 +102,11 @@ Signs just store what lines they contain. The rest is handled by the block they 
 
 ## Dispenser
 
-The Dispenser is internally referred to as `Trap`.
+The dispenser is internally referred to as `Trap`.
 
-| Field | Type | Description                    |
-| ----- | ---- | ------------------------------ |
-| Items | List | A list of Compound-taged items |
+| Field | Type | Description                     |
+| ----- | ---- | ------------------------------- |
+| Items | List | A list of Compound-tagged items |
 
 **Example**
 

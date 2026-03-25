@@ -9,7 +9,7 @@ Java provides certain functions, classes and algorithms by default which oftenti
 
 ## Casting
 
-Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../worlds/quirks). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
+Java's casting is vital to properly replicate certain mathematical edge cases, such as the [Farlands](../misc/quirks#farlands). Many languages do not have a defined behavior for casting values that're larger than the casted-to value such as [C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf), which says that performing a narrowing cast is undefined behavior.
 
 Java clearly defines casting behavior in its specs. Casting behavior is defined in Chapter 5 of the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf).
 
@@ -22,7 +22,7 @@ To cover the case most relevant for the Farlands (`double` to `int`):
 
 ## hashCode
 
-HashCode is for turning a string into an integer. It's used in Minecraft to transform text-based seeds into a number.
+hashCode is for turning a string into an integer. It's used in Minecraft to transform text-based seeds into a number.
 
 A basic implementation looks like this:
 
@@ -32,17 +32,17 @@ int h = 0;
 for (int i = 0; i < text.size(); i++) {
     h = 31 * h + text[i];
 }
-// Returns a 32-Bit Integer
+// Returns a 32-bit Integer
 return h;
 ```
 
 ## Random
 
-This section will explain how the Random Number Generator for Beta Minecraft/Java 8 worked, as that is what Minecrafts old generator was largely utilizing for its data.
+This section will explain how the Random Number Generator for Beta Minecraft/Java 5 worked, as that is what Minecraft's old generator was largely using for its data.
 
-### Initilization
+### Initialization
 
-The Random class always starts with an initial seed, consisting of a signed 64-Bit Integer. If nothing is provided, the current timestamp is used instead. The actual seed is calculated from there via combining it with a few other numbers.
+The Random class always starts with an initial seed, consisting of a signed 64-bit Integer. If nothing is provided, the current timestamp is used instead. The actual seed is calculated from there via combining it with a few other numbers.
 
 Our final seed value can be calculated as follows.
 
@@ -50,13 +50,13 @@ Our final seed value can be calculated as follows.
 seed = (inputSeed ^ 0x5DEECE66D) & 0xffffffffffff;
 ```
 
-In other words, our input seed, for example `3257840388504953787` is XOR'd with 0x5DEECE66D, then limited to 48-Bits.
+In other words, our input seed, for example `3257840388504953787` is XOR'd with 0x5DEECE66D, then limited to 48-bits.
 
 Our initial seed would become `0x2C974D2EC5D6`/`49028346594774`.
 
 ### Next
 
-Whenever a new random number is needed, the next functon is utilized, which generates a new random number based on the seed. It takes in the number of bits that need to be generated and limits the result to that number of bits, capping out at 32.
+Whenever a new random number is needed, the next function is used, which generates a new random number based on the seed. It takes in the number of bits that need to be generated and limits the result to that number of bits, capping out at 32.
 
 ```c
 seed = (seed * 0x5DEECE66D + 11) & 0xffffffffffff;
@@ -66,7 +66,7 @@ return int(seed >> (48 - bits));
 Our seed, after being initialized, would now become `0x7F9FD7F08029`/`140324499390505`.
 
 ::: tip MISSING
-How the next function is used to generate other numers
+How the next function is used to generate other numbers
 :::
 
 ## Further reading

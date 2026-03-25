@@ -21,27 +21,27 @@ Sent to the client to show the contents of inventories
 
 The Payload is a list which describes the items in the sent inventory.
 
-| Field  | Type  | Description                                            |
-| ------ | ----- | ------------------------------------------------------ |
-| Id     | Short | The id of the item                                     |
-| Count  | Byte  | The amount of the item (only added if `Id > -1`)       |
-| Damage | Short | The damage value of the item (only added if `Id > -1`) |
+| Field    | Type  | Description                                              |
+| -------- | ----- | -------------------------------------------------------- |
+| ID       | Short | The ID of the item                                       |
+| Amount   | Byte  | The quantity of the item (only added if `ID > -1`)       |
+| Metadata | Short | The metadata value of the item (only added if `ID > -1`) |
 
 ## Example Packet
 
 ### Clientbound
 
-| Field        | Value |
-| ------------ | ----- |
-| Window ID    | `0`   |
+|        Field | Value |
+| -----------: | ----- |
+|    Window ID | `0`   |
 | Payload Size | `45`  |
 
 Repeat the following 45 Times
 
-| Field  | Value |
-| ------ | ----- |
-| Id     | `17`  |
-| Count  | `42`  |
-| Damage | `1`   |
+|  Field | Value                                                                            |
+| -----: | -------------------------------------------------------------------------------- |
+|     ID | `17` (<TextureSwatch texture_name="blocks/log_top" label="Log" />)               |
+|  Count | `42`                                                                             |
+| Damage | `1` (<TextureSwatch texture_name="blocks/spruce_log_side" label="Spruce Log" />) |
 
 This would show up as an inventory full of Birch Logs.
