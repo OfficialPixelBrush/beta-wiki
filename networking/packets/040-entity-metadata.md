@@ -6,17 +6,17 @@ order: 41
 # Entity Metadata
 
 | Packet ID | Direction   | Mojang Name           | MCP Name                 |
-| --------: | ----------- | --------------------- | ------------------------ |
-|    `0x28` | Clientbound | `SetEntityDataPacket` | `Packet40EntityMetadata` |
+| --------- | ----------- | --------------------- | ------------------------ |
+| `0x28`    | Clientbound | `SetEntityDataPacket` | `Packet40EntityMetadata` |
 
 ## Clientbound
 
 Sent to the client to supply further data for some entities. See the [entity metadata page](../entity-metadata) for more info!
 
-|     Field | Type     | Description                                 |
-| --------: | -------- | ------------------------------------------- |
+| Field     | Type     | Description                                 |
+| --------- | -------- | ------------------------------------------- |
 | Entity ID | Integer  | The ID of the entity that has this metadata |
-|  Metadata | Metadata | The mob metadata                            |
+| Metadata  | Metadata | The mob metadata                            |
 
 ## Example Packets
 
@@ -26,7 +26,7 @@ Sent to the client to supply further data for some entities. See the [entity met
 TODO: Provide real example
 :::
 
-|     Field | Value            |
-| --------: | ---------------- |
+| Field     | Value            |
+| --------- | ---------------- |
 | Entity ID | `6436`           |
-|  Metadata | `0x00 0x01 0x7F` |
+| Metadata  | `0x00 0x01 0x7F` |

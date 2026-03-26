@@ -1,17 +1,17 @@
 ---
-title: "0x0B: Player Position"
-order: 12
+title: "0x0D: Player Position and Rotation"
+order: 14
 ---
 
-# Player Position
+# Player Position and Rotation
 
-| Packet ID | Direction | Mojang Name            | MCP Name                 |
-| --------- | --------- | ---------------------- | ------------------------ |
-| `0x0B`    | Both      | `MovePlayerPacket.Pos` | `Packet11PlayerPosition` |
+| Packet ID | Direction | Mojang Name               | MCP Name                 |
+| --------- | --------- | ------------------------- | ------------------------ |
+| `0x0D`    | Both      | `MovePlayerPacket.PosRot` | `Packet13PlayerLookMove` |
 
 ## Clientbound
 
-Sent to the client when the player is teleported, but their view-direction is irrelevant.
+Sent to the client when the player is teleported and their view direction needs to be defined.
 
 | Field     | Type    | Description                                                             |
 | --------- | ------- | ----------------------------------------------------------------------- |
@@ -19,11 +19,13 @@ Sent to the client when the player is teleported, but their view-direction is ir
 | Y         | Double  | The Y position of the player                                            |
 | Camera Y  | Double  | The Y position of the player camera                                     |
 | Z         | Double  | The Z position of the player                                            |
+| Yaw       | Float   | Absolute rotation on the X Axis, in degrees                             |
+| Pitch     | Float   | Absolute rotation on the Y Axis, in degrees                             |
 | On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Serverbound
 
-Sent to the server when the player is moving, but hasn't changed their viewing direction in a while.
+Sent to the server when the player is moving and looking around.
 
 | Field     | Type    | Description                                                             |
 | --------- | ------- | ----------------------------------------------------------------------- |
@@ -31,6 +33,8 @@ Sent to the server when the player is moving, but hasn't changed their viewing d
 | Y         | Double  | The Y position of the player                                            |
 | Camera Y  | Double  | The Y position of the player camera                                     |
 | Z         | Double  | The Z position of the player                                            |
+| Yaw       | Float   | Absolute rotation on the X Axis, in degrees                             |
+| Pitch     | Float   | Absolute rotation on the Y Axis, in degrees                             |
 | On Ground | Boolean | [See note on On Ground Packet page](./010-player-on-ground#clientbound) |
 
 ## Example Packets
@@ -41,4 +45,6 @@ Sent to the server when the player is moving, but hasn't changed their viewing d
 | Y         | `68.4`     |
 | Camera Y  | `70.02`    |
 | Z         | `-5325.32` |
+| Yaw       | `22.4f`    |
+| Pitch     | `12.68f`   |
 | On Ground | `true`     |
