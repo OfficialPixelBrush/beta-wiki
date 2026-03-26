@@ -4,7 +4,7 @@ order: 10
 
 # Authentication
 
-Authentication is used to ensure a client is who they claim to be. This process is done via the [Handshake Packet](./packets/002-handshake).
+Authentication is used to ensure a client is who they claim to be. This process is done via the [Pre-Login Packet](./packets/002-pre-login).
 
 ## Offline mode
 

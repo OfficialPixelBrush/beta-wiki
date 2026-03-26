@@ -12,7 +12,7 @@ description: Sent to the server when the player attempts to place or interact wi
 
 ## Serverbound
 
-Sent to the server when the player attempts to place or interact with a block, or use an item. If a block is changed, this must be followed up by a [block update packet](053-block-update)!
+Sent to the server when the player attempts to place or interact with a block, or use an item. If a block is changed, this must be followed up by a [set block packet](./053-set-block)!
 
 | Field         | Type    | Description                                       |
 | ------------- | ------- | ------------------------------------------------- |

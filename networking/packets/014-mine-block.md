@@ -11,7 +11,7 @@ order: 15
 
 ## Serverbound
 
-Sent to the server when the player attempts to mine a block. If a block is mined, this must be followed up by a [block update packet](053-block-update) that turns it into air!
+Sent to the server when the player attempts to mine a block. If a block is mined, this must be followed up by a [set block packet](./053-set-block) that turns it into air!
 
 | Field  | Type    | Description                                       |
 | ------ | ------- | ------------------------------------------------- |

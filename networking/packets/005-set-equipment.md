@@ -1,9 +1,9 @@
 ---
-title: "0x05: Set Armor"
+title: "0x05: Set Equipment"
 order: 6
 ---
 
-# Set Armor
+# Set Equipment
 
 | Packet ID | Direction   | Mojang Name             | MCP Name                 |
 | --------- | ----------- | ----------------------- | ------------------------ |

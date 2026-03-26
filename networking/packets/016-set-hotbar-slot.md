@@ -11,7 +11,7 @@ order: 17
 
 ## Serverbound
 
-Sent when the player changes the slot selection. Other players will be informed of this via the [Entity Equipment packet](./005-entity-equipment).
+Sent when the player changes the slot selection. Other players will be informed of this via the [Set Equipment packet](./005-set-equipment).
 
 | Field | Type  | Description                                  |
 | ----- | ----- | -------------------------------------------- |

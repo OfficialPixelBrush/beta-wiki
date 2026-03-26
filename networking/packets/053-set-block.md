@@ -9,7 +9,7 @@ order: 54
 | --------- | ----------- | ------------------ | --------------------- |
 | `0x35`    | Clientbound | `TileUpdatePacket` | `Packet53BlockChange` |
 
-This is sent by the server when a block is changed or updated in any way. If a lot of blocks are being updated, consider using the [Multi-Block Update packet](./052-multi-block-update).
+This is sent by the server when a block is changed or updated in any way. If a lot of blocks are being updated, consider using the [Set Multiple Blocks packet](./052-set-multiple-blocks).
 
 ## Clientbound
 

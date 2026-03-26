@@ -20,6 +20,6 @@ This is sent by the client when they press the "respawn" button after dying or w
 ## Example Packet
 
 | Field | Value |
-| ----: |
+| ----: | ----- |
 | ----- |
-| World | `0` |
+| World | `0`   |

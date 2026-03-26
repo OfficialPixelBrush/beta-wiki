@@ -21,5 +21,5 @@ Both rain and thunder are linearly interpolated when starting and stopping, with
 
 ## Further reading
 
-- [Game State Packet](../networking/packets/070-game-state)
+- [Game Event Packet](../networking/packets/070-game-event)
 - [Lightning Bolt Packet](../networking/packets/071-lightning-bolt)

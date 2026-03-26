@@ -9,7 +9,7 @@ order: 53
 | --------- | ----------- | ------------------------ | -------------------------- |
 | `0x34`    | Clientbound | `ChunkTilesUpdatePacket` | `Packet52MultiBlockChange` |
 
-This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Block Update packet](./053-block-update).
+This is used to update multiple blocks in one go. If only a single block is being updated, consider using the [Set Block packet](./053-set-block).
 
 The format for the coordinates is slightly obtuse but boils down to using one 16-bit Short to store the 4-bit X, 4-bit Z and 8-bit Y value of the block coordinate within the chunk.
 

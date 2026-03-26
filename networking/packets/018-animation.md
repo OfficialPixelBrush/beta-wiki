@@ -9,7 +9,7 @@ order: 19
 | --------- | --------- | --------------- | ------------------- |
 | `0x12`    | Both      | `AnimatePacket` | `Packet18Animation` |
 
-This packet is sent by both the client and the server for swinging your arm (`1`) and leaving a bed (`3`), which is clientbound only. The client sends the [Entity Action](019-entity-action) packet for when it wishes to leave a bed (aka clicking the "Leave Bed" button).
+This packet is sent by both the client and the server for swinging your arm (`1`) and leaving a bed (`3`), which is clientbound only. The client sends the [Player Action](./019-player-action) packet for when it wishes to leave a bed (aka clicking the "Leave Bed" button).
 
 ## Both
 

@@ -47,4 +47,4 @@ These sounds are usually played when a block is placed, broken or walked on. Int
 
 ## Further reading
 
-- [Effect Packet](../networking/packets/061-effect)
+- [World Event](../networking/packets/061-world-event)
