@@ -71,5 +71,5 @@ Tools for working with Minecraft Beta 1.7.3.
 
 | Name                                                                                       | Purpose                                                                                | Creator                                              |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| [RetroMCP](https://github.com/MCPHackers/RetroMCP-Java)                                    | Used to decompile and deobfuscate Minecraft code                                       | [MCPHackers](https://mcphackers.org/)                |
-| [BetaPacketPlainTextifier](https://github.com/OfficialPixelBrush/BetaPacketPlainTextifier) | A python script to simplify the reading of b1.7.3 protocol data via wireshark captures | [Pixel Brush](https://github.com/OfficialPixelBrush) |
+| [RetroMCP-Java](https://github.com/MCPHackers/RetroMCP-Java)                               | Used to decompile and deobfuscate Minecraft code                                       | [MCPHackers](https://mcphackers.org)                 |
+| [BetaPacketPlainTextifier](https://github.com/OfficialPixelBrush/BetaPacketPlainTextifier) | A python script to simplify the reading of b1.7.3 protocol data via Wireshark captures | [Pixel Brush](https://github.com/OfficialPixelBrush) |
