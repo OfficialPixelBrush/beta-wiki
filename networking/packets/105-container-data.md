@@ -13,11 +13,11 @@ This is sent by the server to update the furnace GUI's progress bars.
 
 ## Clientbound
 
-| Field     | Type                                                | Description                                           |
-| --------- | --------------------------------------------------- | ----------------------------------------------------- |
-| Window ID | Byte                                                | The incremental ID of the window. Ranges from 0 to 99 |
-| Type      | Short [(Container Data Type)](#container-data-type) | The type of data.                                     |
-| Value     | Short                                               | The value of the data.                                |
+| Field     | Type                                 | Description                                           |
+| --------- | ------------------------------------ | ----------------------------------------------------- |
+| Window ID | Byte                                 | The incremental ID of the window. Ranges from 0 to 99 |
+| Type      | Short [(Type)](#container-data-type) | The type of data.                                     |
+| Value     | Short                                | The value of the data.                                |
 
 ## Type
 

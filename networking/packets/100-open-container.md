@@ -13,12 +13,12 @@ This packet is sent by the server when a block with an inventory is opened.
 
 ## Clientbound
 
-| Field     | Type          | Description                                                            |
-| --------- | ------------- | ---------------------------------------------------------------------- |
-| Window ID | Byte          | The incremental ID of the window. Ranges from 0 to 99                  |
-| Type      | [Type](#type) | The type of the inventory.                                             |
-| Title     | String8       | The name of the window. Ignored for anything other than chests.        |
-| Size      | Byte          | The amount of inventory slots. Must be positive or the client crashes. |
+| Field     | Type                 | Description                                                            |
+| --------- | -------------------- | ---------------------------------------------------------------------- |
+| Window ID | Byte                 | The incremental ID of the window. Ranges from 0 to 99                  |
+| Type      | Byte [(Type)](#type) | The type of the inventory.                                             |
+| Title     | String8              | The name of the window. Ignored for anything other than chests.        |
+| Size      | Byte                 | The amount of inventory slots. Must be positive or the client crashes. |
 
 
 ## Type
