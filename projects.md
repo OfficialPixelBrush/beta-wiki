@@ -6,7 +6,7 @@ description: A collection of useful projects related to Minecraft Beta 1.7.3! Th
 
 A collection of useful projects related to Minecraft Beta 1.7.3! This is not an exhaustive list, but it should give you a good starting point if you're looking for clients, servers, libraries, or tools that can be used or referenced.
 
-# Clients
+## Clients
 
 Clients that can connect to Minecraft Beta 1.7.3-compatible servers.
 
@@ -21,7 +21,7 @@ Clients that can connect to Minecraft Beta 1.7.3-compatible servers.
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
 
-# Servers
+## Servers
 
 Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients.
 
@@ -39,9 +39,9 @@ Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Server_List) for more servers.
 
-# Libraries
+## Libraries
 
-## NBT
+### NBT
 
 Libraries for working with Minecraft's NBT format.
 
@@ -65,7 +65,7 @@ Libraries for working with Minecraft's NBT format.
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Library_List) for more libraries.
 
-# Tools
+## Tools
 
 Tools for working with Minecraft Beta 1.7.3.
 
