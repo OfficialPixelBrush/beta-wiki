@@ -9,20 +9,52 @@ order: 106
 | --------- | ----------- | ------------------------ | ---------------------------- |
 | `0x69`    | Clientbound | `ContainerSetDataPacket` | `Packet105UpdateProgressbar` |
 
-This is sent by the server to update the progress of fuel burning or progress of an item being smelted. The smelting bar ranges from `0` to `200`, while the max value of the fuel bar depends on the type of fuel used (`300` for any wood, `100` for sticks or a sapling, `1600` for coal, and `20000` for a lava bucket.).
+This is sent by the server to update the furnace GUI's progress bars.
 
 ## Clientbound
 
-| Field     | Type  | Description                                                           |
-| --------- | ----- | --------------------------------------------------------------------- |
-| Window ID | Byte  | The incremental ID of the window. Ranges from 0 to 99                 |
-| Bar       | Short | `0` for the smelting bar, `1` for the fuel bar, `2` for max burn time |
-| Value     | Short | The progress of the bar                                               |
+| Field     | Type                                        | Description                                           |
+| --------- | ------------------------------------------- | ----------------------------------------------------- |
+| Window ID | Byte                                        | The incremental ID of the window. Ranges from 0 to 99 |
+| Type      | [Container Data Type](#container-data-type) | The type of data.                                     |
+| Value     | Short                                       | The value of the data.                                |
+
+## Type
+
+| ID  | Name              | Range                  | Description                                                               |
+| --- | ----------------- | ---------------------- | ------------------------------------------------------------------------- |
+| `0` | Smelting Progress | `0` to `200`           | The progress of the current item being smelted.                           |
+| `1` | Fuel Remaining    | `0` to (fuel duration) | A higher value means more fuel remaining.                                 |
+| `2` | Fuel Duration     | `0` to `20000`         | The burning time of the current fuel item (defaults to `200` if not sent) |
+
+## Fuel
+
+| Name                  | Duration |
+| --------------------- | -------- |
+| Planks                | `300`    |
+| Log                   | `300`    |
+| Note Block            | `300`    |
+| Chest                 | `300`    |
+| Locked Chest          | `300`    |
+| Crafting Table        | `300`    |
+| Bookshelf             | `300`    |
+| Jukebox               | `300`    |
+| Wooden Door           | `300`    |
+| Wooden Pressure Plate | `300`    |
+| Trapdoor              | `300`    |
+| Fence                 | `300`    |
+| Sign                  | `300`    |
+| Stick                 | `100`    |
+| Sapling               | `100`    |
+| Coal                  | `1600`   |
+| Lava Bucket           | `20000`  |
+
+Any block or item not mentioned above cannot be placed into the fuel slot.
 
 ## Example Packet
 
 | Field     | Value |
 | --------- | ----- |
 | Window ID | `49`  |
-| Bar       | `0`   |
-| Value     | `0`   |
+| Type      | `0`   |
+| Value     | `50`  |
