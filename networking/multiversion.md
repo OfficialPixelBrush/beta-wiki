@@ -51,12 +51,18 @@ init(from buffer: inout ByteBuffer) throws {
 }
 ```
 
-## Minecraft Wiki pages
-| Version      | Link                                                                                  |
-| ------------ | ------------------------------------------------------------------------------------- |
-| Alpha v1.2.6 | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659 |
-| Beta 1.1_01  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769678 |
-| Beta 1.2_02  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769711 |
-| Beta 1.3_01  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769723 |
-| Beta 1.7.3   | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763 |
-| Beta 1.8.1   | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858 |
+<!-- TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be minecraft.wiki mistake -->
+## Versions
+| Version Name | Protocol Version | Minecraft Wiki Page                                                                   |
+| ------------ | ---------------- | ------------------------------------------------------------------------------------- |
+| Alpha v1.2.6 | `6`              | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659 |
+| Beta 1.1_01  | `7`?             | TODO                                                                                  |
+| Beta 1.1_02  | `8`?             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769678 |
+| Beta 1.2_02  | `8`?             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769711 |
+| Beta 1.3_01  | `9`              | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769723 |
+| Beta 1.4_01  | `10`             | TODO                                                                                  |
+| Beta 1.5_02  | `11`             | TODO                                                                                  |
+| Beta 1.6.6   | `13`             | TODO                                                                                  |
+| Beta 1.7.3   | `14`             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763 |
+| Beta 1.8.1   | `17`             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858 |
+| 1.0.0        | `22`             | TODO                                                                                  |
