@@ -50,3 +50,13 @@ init(from buffer: inout ByteBuffer) throws {
     }
 }
 ```
+
+## Minecraft Wiki pages
+| Version      | Link                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------- |
+| Alpha v1.2.6 | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659 |
+| Beta 1.1_01  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769678 |
+| Beta 1.2_02  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769711 |
+| Beta 1.3_01  | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769723 |
+| Beta 1.7.3   | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763 |
+| Beta 1.8.1   | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858 |
