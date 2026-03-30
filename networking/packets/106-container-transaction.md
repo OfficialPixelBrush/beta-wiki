@@ -3,7 +3,7 @@ title: "0x6A: Container Transaction"
 order: 107
 ---
 
-# Inventory Transaction
+# Container Transaction
 
 | Packet ID | Direction | Mojang Name          | MCP Name               |
 | --------- | --------- | -------------------- | ---------------------- |
