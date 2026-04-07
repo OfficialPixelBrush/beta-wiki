@@ -1,5 +1,6 @@
 ---
 order: 5
+description: The actions that describe how a client and server negotiate to connect.
 ---
 
 # Minimal Login

@@ -1,5 +1,6 @@
 ---
 order: 15
+description: Blocks do a lot in Minecraft, given that it's a voxel-based world. In most cases, when a block is placed or mined, the server needs to reply with a block update packet.
 ---
 
 # Blocks

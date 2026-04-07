@@ -1,5 +1,6 @@
 ---
 order: 10
+description: Bed-related behaviors.
 ---
 
 # Beds

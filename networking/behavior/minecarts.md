@@ -1,10 +1,18 @@
 ---
 order: 15
+description: The behaviors observed when a player enters or moves with a Minecart.
 ---
 
-# Minecarts
+# Minecarts and Rails
 
 The behaviors observed when a player enters or moves with a Minecart.
+
+::: tip MISSING
+- All of the Minecart behavior from a secondary perspective
+- Minecart pushing behavior
+- Furnace & Chest Minecarts
+- Powered & Activator Rails
+:::
 
 ## A player places a Minecart
 
@@ -26,7 +34,7 @@ In this situation, the player is looking at a rail block.
 
 ## Player in a Minecart
 
-As long as a client is inside of a Minecart, their vertical position and camera-Y/stance will be reported as `-999.00`.
+As long as a player is inside of a Minecart, their vertical position and camera-Y/stance will be reported as `-999.00`.
 
 | Direction | Packet | Data |
 | --- | --- | --- |
@@ -34,13 +42,15 @@ As long as a client is inside of a Minecart, their vertical position and camera-
 
 This applies to all packets that transmit the players position. Rotation is transmitted as normal. This continues until the Minecart is exited.
 
+::: tip MISSING
+Other clients presumably do not receive the superfluous position data,
+as they *probably* update the position of passenger players automatically.
+Please verify!
+:::
+
 ## A player exits a Minecart
 
 | Direction | Packet | Data |
 | --- | --- | --- |
 | `C->S` | InteractWithEntity (0x07) | EID (Sender)=46 (Player); EID (Target)=100 (Minecart); Left-Click=0;  |
 | `S->C` | AddPassenger (0x27) | EID (passenger)=46 (Player); EID (vehicle)=-1;  |
-
-# Further reading
-
-- [A new player joins (Github - BetrockServer Wiki - Vanilla server Behavior)](https://github.com/OfficialPixelBrush/BetrockServer/wiki/Vanilla-Server-Behavior#a-new-player-joins)
