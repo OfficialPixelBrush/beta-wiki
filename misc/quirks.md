@@ -1,5 +1,4 @@
 ---
-order: 30
 description: Quirks are often unintentional or unintuitive behaviors that occur due to poorly written or erroneous code. In spite of that, these are part of the Vanilla game, and a 100% accurate reimplementation should implement them as well.
 ---
 

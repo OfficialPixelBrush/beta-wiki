@@ -1,11 +1,13 @@
 ---
-exclude: true
+description: This page serves as a quick-reference/guide on differences that came up as the Beta-era protocol was developed, including some info on Beta 1.8 and beyond.
 ---
 
 # Multi-Version
 
+This page serves as a quick-reference/guide on differences that came up as the Beta-era protocol was developed, including some info on Beta 1.8 and beyond.
+
 > [!WARNING]
-> This is not an official page and just for taking notes (hence why it's hidden from the sidebar), so it will be less structured and less formal than other pages. It may be removed at any time.
+> This is not a proper page and just for taking notes/as a reference (hence why it's hidden from the sidebar), so it will be less structured and less formal than other pages. It may be removed at any time.
 
 ## Beta 1.8
 
@@ -14,6 +16,7 @@ Beta 1.8.x is a version often disliked by legacy Minecraft players, due to its a
 To implement basic support, make the following changes to the [login](/networking/packets/001-login.md) packet:
 
 ### Clientbound
+
 ```swift
 func write(to buffer: inout ByteBuffer) throws {
     buffer.writeInteger(entityId)
@@ -33,6 +36,7 @@ func write(to buffer: inout ByteBuffer) throws {
 ```
 
 ### Serverbound
+
 ```swift
 init(from buffer: inout ByteBuffer) throws {
     protocolVersion = try buffer.readInteger()
@@ -51,8 +55,12 @@ init(from buffer: inout ByteBuffer) throws {
 }
 ```
 
-<!-- TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be minecraft.wiki mistake -->
+::: tip MISSING
+TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be minecraft.wiki mistake
+:::
+
 ## Versions
+
 | Version Name | Protocol Version | Minecraft Wiki Page                                                                   |
 | ------------ | ---------------- | ------------------------------------------------------------------------------------- |
 | Alpha v1.2.6 | `6`              | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659 |

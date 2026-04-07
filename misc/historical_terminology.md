@@ -1,5 +1,4 @@
 ---
-order: 1
 description: The words used to describe things in- and outside of Minecraft have changed quite a bit as both the game and the community around it have evolved. This page will serve as both a guide and a reference to terms that were commonly used back in the day, that were later changed to something else. A lot of these arose, either because a thing didn't have a public name, or because the name was changed later. A popular example is that Crafting tables were once known as Workbenches.
 ---
 
