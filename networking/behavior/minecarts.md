@@ -30,7 +30,10 @@ In this situation, the player is looking at a rail block.
 | Direction | Packet | Data |
 | --- | --- | --- |
 | `C->S` | InteractWithEntity (0x07) | EID (Sender)=46 (Player); EID (Target)=100 (Minecart); Left-Click=0; |
+| `C->S` | PlayerPositionAndRotation (0x0D) | x=0.0; y=-999.00; cameraY=-999.0; z=0.0; yaw=183.90; pitch=0.60; onGround=false; |
 | `S->C` |  AddPassenger (0x27) | EID (passenger)=46 (Player); EID (vehicle)=100 (Minecart); |
+| `S->C` | EntityPositionAndRotation (0x21) | EID=46 (Player); x=-1.00; y=65.00; z=3.00 (Minecart position); yaw=183.90; pitch=0.60 (Player rotation from 0x0D packet); |
+* Important: As soon as the player sits inside the minecart, the PlayerPositionAndRotation packet is streamed. The x,y,z coordinates must be ignored but yaw and pitch is still used to indicate where the player looking. It is recommended to only forward yaw and pitch if they change, as the EntityPositionAndRotation triggers a walking animation.
 
 ## Player in a Minecart
 
