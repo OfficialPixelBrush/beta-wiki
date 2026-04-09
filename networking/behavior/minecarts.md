@@ -30,9 +30,7 @@ In this situation, the player is looking at a rail block.
 | Direction | Packet | Data |
 | --- | --- | --- |
 | `C->S` | InteractWithEntity (0x07) | EID (Sender)=46 (Player); EID (Target)=100 (Minecart); Left-Click=0; |
-| `C->S` | PlayerPositionAndRotation (0x0D) | x=0.0; y=-999.00; cameraY=-999.0; z=0.0; yaw=183.90; pitch=0.60; onGround=false; |
 | `S->C` |  AddPassenger (0x27) | EID (passenger)=46 (Player); EID (vehicle)=100 (Minecart); |
-
 
 ## Player in a Minecart
 
