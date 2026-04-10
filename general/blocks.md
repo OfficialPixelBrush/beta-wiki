@@ -44,8 +44,8 @@ Here is a comprehensive listing of all blocks.
 |    24 | Sandstone             | Sandstone                                           |                                                     |
 |    25 | Note Block            | Note Block                                          |                                                     |
 |    26 | Bed                   | Bed                                                 | Top/Bottom and Direction                            |
-|    27 | Powered Rail          | Powered Rail                                        | Direction                                           |
-|    28 | Detector Rail         | Detector Rail                                       | Direction                                           |
+|    27 | Powered Rail          | Powered Rail                                        | [Direction](#rails)                                              |
+|    28 | Detector Rail         | Detector Rail                                       | [Direction](#rails)                                              |
 |    29 | Sticky Piston         | Sticky Piston                                       | [Direction and State](#pistons)                     |
 |    30 | Cobweb                | Cobweb                                              |                                                     |
 |    31 | Tall Grass            |                                                     | Shrub `0`, Grass `1`, Fern `2`                      |
@@ -83,7 +83,7 @@ Here is a comprehensive listing of all blocks.
 |    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                              |
 |    64 | Wooden Door           | Wooden Door                                         |                                                     |
 |    65 | Ladder                | Ladder                                              | Direction                                           |
-|    66 | Rail                  | Rail                                                | Direction                                           |
+|    66 | Rail                  | Rail                                                | [Direction](#rails)                                           |
 |    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                                |
 |    68 | Sign (wall)           | Sign                                                | Direction                                           |
 |    69 | Lever                 | Lever                                               | Toggled & Direction                                 |
@@ -287,3 +287,17 @@ The angles are given relative to West.
 |    13 | South-South-West | 292.5° |
 |    14 |       South-West | 315°   |
 |    15 |  West-South-West | 337.5° |
+
+### Rails
+| Value | Direction       |
+| ----: | :--------       |
+|     0 | North/South     |
+|     1 | East/West       |
+|     2 | East/Up         |
+|     3 | West/Up         |
+|     4 | North/Up        |
+|     5 | South/Up        |
+|     6 | East/South      |
+|     7 | West/South      |
+|     8 | West/North      |
+|     9 | East/West       |
