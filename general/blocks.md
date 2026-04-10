@@ -287,3 +287,17 @@ The angles are given relative to West.
 |    13 | South-South-West | 292.5° |
 |    14 |       South-West | 315°   |
 |    15 |  West-South-West | 337.5° |
+
+### Rails
+| Value | Direction       |
+| ----: | :--------       |
+|     0 | North/South     |
+|     1 | East/West       |
+|     2 | East/Up         |
+|     3 | West/Up         |
+|     4 | North/Up        |
+|     5 | South/Up        |
+|     6 | East/South      |
+|     7 | West/South      |
+|     8 | West/North      |
+|     9 | East/West       |
