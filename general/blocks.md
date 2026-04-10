@@ -83,7 +83,7 @@ Here is a comprehensive listing of all blocks.
 |    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                              |
 |    64 | Wooden Door           | Wooden Door                                         |                                                     |
 |    65 | Ladder                | Ladder                                              | Direction                                           |
-|    66 | Rail                  | Rail                                                | Direction                                           |
+|    66 | Rail                  | Rail                                                | [Direction](#rail)                                           |
 |    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                                |
 |    68 | Sign (wall)           | Sign                                                | Direction                                           |
 |    69 | Lever                 | Lever                                               | Toggled & Direction                                 |
