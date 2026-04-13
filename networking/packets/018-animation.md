@@ -15,9 +15,13 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 | --- | -------------------- |
 | `0` | -                    |
 | `1` | Swing Arm            |
-| `2` | Hurt                 |
+| `2` | Hurt \*              |
 | `3` | Wake Player from Bed |
 | `4` | Unused               |
+
+> [!NOTE]
+>
+> \* While this is still functional, in practice [Entity Event](./038-entity-event) is used instead.
 
 ## Both
 
