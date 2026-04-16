@@ -29,27 +29,7 @@ This is sent by the server to update the furnace GUI's progress bars.
 
 ## Fuel
 
-| Name                  | Duration |
-| --------------------- | -------- |
-| Planks                | `300`    |
-| Log                   | `300`    |
-| Note Block            | `300`    |
-| Chest                 | `300`    |
-| Locked Chest          | `300`    |
-| Crafting Table        | `300`    |
-| Bookshelf             | `300`    |
-| Jukebox               | `300`    |
-| Wooden Door           | `300`    |
-| Wooden Pressure Plate | `300`    |
-| Trapdoor              | `300`    |
-| Fence                 | `300`    |
-| Sign                  | `300`    |
-| Stick                 | `100`    |
-| Sapling               | `100`    |
-| Coal                  | `1600`   |
-| Lava Bucket           | `20000`  |
-
-Any block or item not mentioned above cannot be placed into the fuel slot.
+See the [smelting page](/general/recipes/smelting#valid-fuel) for more info on what counts as valid fuel and for how long said fuel burns.
 
 ## Example Packet
 
