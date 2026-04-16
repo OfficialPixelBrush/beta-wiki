@@ -20,14 +20,14 @@ This packet is sent by the server when a block with an inventory is opened.
 | Title     | String8              | The name of the window. Ignored for anything other than chests.        |
 | Size      | Byte                 | The amount of inventory slots. Must be positive or the client crashes. |
 
-
 ## Type
-| ID  | Name          | Size                                                                                                                                   |
-| --- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `0` | Chest         | `27` for a normal chest, `54` for a large chest. Other sizes are rounded down to a multiple of `9` and work fine, but appear glitched. |
-| `1` | Crafing Table | `9` (other sizes are ignored)                                                                                                          |
-| `2` | Furnace       | `3` (other sizes are ignored)                                                                                                          |
-| `3` | Dispenser     | `9` (other sizes are ignored)                                                                                                          |
+
+| ID  | Name           | Size                                                                                                                                   |
+| --- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `0` | Chest          | `27` for a normal chest, `54` for a large chest. Other sizes are rounded down to a multiple of `9` and work fine, but appear glitched. |
+| `1` | Crafting Table | `9` (other sizes are ignored)                                                                                                          |
+| `2` | Furnace        | `3` (other sizes are ignored)                                                                                                          |
+| `3` | Dispenser      | `9` (other sizes are ignored)                                                                                                          |
 
 ## Example Packet
 
