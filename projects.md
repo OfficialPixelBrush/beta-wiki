@@ -10,14 +10,15 @@ A collection of useful projects related to Minecraft Beta 1.7.3! This is not an 
 
 Clients that can connect to Minecraft Beta 1.7.3-compatible servers.
 
-| Language | Project                                                                                              | Creator                                       |
-| -------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| C        | [CavEX](https://github.com/xtreme8000/cavex)                                                         | [xtreme8000](https://github.com/xtreme8000)   |
-| Zig      | [MainCraft](https://github.com/Guigui220D/MainCraft)                                                 | [Guillaume D.](https://github.com/Guigui220D) |
-| C++      | [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                             | [Pixel Brush](https://pixelbrush.dev)         |
-| C#       | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" />      | [ddevault](https://github.com/ddevault)       |
-| C#       | [betasharp](https://github.com/Fazin85/betasharp) <Badge type="danger" text="Directly Translated" /> | [Fazin85](https://github.com/Fazin85)         |
-| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                             | [Pixel Brush](https://pixelbrush.dev)         |
+| Language | Project                                                                                              | Creator                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| C        | [CavEX](https://github.com/xtreme8000/cavex)                                                         | [xtreme8000](https://github.com/xtreme8000)                                             |
+| Hare     | [betamine](https://git.sr.ht/~sircmpwn/betamine/)                                                    | [~sircmpwn](https://git.sr.ht/~sircmpwn/)                                               |
+| C++      | [Betrock++](https://github.com/OfficialPixelBrush/BetrockPlusPlus)                                   | [Pixel Brush](https://pixelbrush.dev) & [JcbbcEnjoyer](https://github.com/JcbbcEnjoyer) |
+| Zig      | [MainCraft](https://github.com/Guigui220D/MainCraft)                                                 | [Guillaume D.](https://github.com/Guigui220D)                                           |
+| C#       | [TrueCraft](https://github.com/ddevault/TrueCraft) <Badge type="warning" text="Unmaintained" />      | [ddevault](https://github.com/ddevault)                                                 |
+| C#       | [betasharp](https://github.com/Fazin85/betasharp) <Badge type="danger" text="Directly Translated" /> | [Fazin85](https://github.com/Fazin85)                                                   |
+| GDScript | [Betadot](https://github.com/OfficialPixelBrush/Betadot)                                             | [Pixel Brush](https://pixelbrush.dev)                                                   |
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Programs_and_editors/Client_reimplementations) for more clients.
 
@@ -27,8 +28,8 @@ Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients
 
 | Language | Project                                                                                              | Creator                                                                                         |
 | -------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| C++      | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer)                                 | [Pixel Brush](https://pixelbrush.dev/)                                                          |
 | Go       | [retromc](https://github.com/esora512/retromc/tree/dev) <Badge type="info" text="Fork" />            | [esora512](https://github.com/esora512) (originally by [leNicDev](https://github.com/leNicDev)) |
+| C++      | [Betrock++](https://github.com/OfficialPixelBrush/BetrockPlusPlus)                                   | [Pixel Brush](https://pixelbrush.dev) & [JcbbcEnjoyer](https://github.com/JcbbcEnjoyer)         |
 | Rust     | [mc173](https://github.com/mindstorm38/mc173)                                                        | [mindstorm38](https://github.com/mindstorm38/)                                                  |
 | Zig      | [Minestalgia](https://github.com/cody-quinn/Minestalgia)                                             | [cody-quinn](https://codyq.dev/)                                                                |
 | Java     | [WintyMC](https://github.com/DOh1221/WintyMC/)                                                       | [DOh1221](https://github.com/DOh1221/)                                                          |
@@ -36,6 +37,7 @@ Servers that can accept connections from Minecraft Beta 1.7.3-compatible clients
 | C#       | [betasharp](https://github.com/Fazin85/betasharp) <Badge type="danger" text="Directly Translated" /> | [Fazin85](https://github.com/Fazin85)                                                           |
 | C        | [Custom-BetaMC-Server](https://github.com/dairycultist/Custom-BetaMC-Server)                         | [dairycultist](https://github.com/dairycultist)                                                 |
 | Swift    | [comet](https://github.com/mudkipdev/comet)                                                          | [mudkip](https://github.com/mudkipdev)                                                          |
+| C++      | [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer)                                 | [Pixel Brush](https://pixelbrush.dev/)                                                          |
 
 Check the [Minecraft Wiki](https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Server_List) for more servers.
 
@@ -74,3 +76,4 @@ Tools for working with Minecraft Beta 1.7.3.
 | [RetroMCP-Java](https://github.com/MCPHackers/RetroMCP-Java)                               | Used to decompile and deobfuscate Minecraft code                                       | [MCPHackers](https://mcphackers.org)                 |
 | [BetaPacketPlainTextifier](https://github.com/OfficialPixelBrush/BetaPacketPlainTextifier) | A python script to simplify the reading of b1.7.3 protocol data via Wireshark captures | [Pixel Brush](https://github.com/OfficialPixelBrush) |
 | [GoldenBase](https://github.com/OfficialPixelBrush/GoldenBase)                             | A ChunkBase-like website for pre-Release Minecraft terrain generation                  | [Pixel Brush](https://github.com/OfficialPixelBrush) |
+| [Betrock](https://github.com/OfficialPixelBrush/Betrock)                                   | C++ Application for exploring Minecraft Beta 1.7.3 Worlds                              | [Pixel Brush](https://pixelbrush.dev)                |
