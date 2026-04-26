@@ -76,3 +76,10 @@ The following is a list of stylistic and formal considerations that should be ta
 1. Variables should be reasonably and readably named, avoid single-character names unless its for something unimportant (like an iterator)
 1. A specific case is not enforced
 1. Variables that require a specific bitwidth should use a type that confirms this bitwidth, i.e. instead of `int`, which can be 16-bit or 32-bit depending on ones system or compiler, it should be `int32_t` or `i32`, to ensure it's a signed 32-bit integer
+
+
+---
+
+## Auto-generated contribution
+
+Added by bounty bot.
