@@ -40,6 +40,17 @@ const members = [
         ]
     },
     {
+        avatar: "https://avatars.githubusercontent.com/u/265255269",
+        name: "esora512",
+        title: "Contributor",
+        links: [
+            {
+                icon: "github",
+                link: "https://github.com/esora512"
+            }
+        ]
+    },
+    {
         avatar: "https://avatars.githubusercontent.com/u/96804457",
         name: "takeraparterer",
         title: "Contributor",

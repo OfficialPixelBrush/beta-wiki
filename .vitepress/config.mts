@@ -67,6 +67,10 @@ export default defineConfig(
             link: "https://discord.gg/JHTz2HSKrf",
           },
           {
+            icon: "matrix",
+            link: "https://matrix.to/#/#beta-wiki:matrix.org",
+          },
+          {
             icon: "youtube",
             link: "https://www.youtube.com/@techbetawiki",
           },

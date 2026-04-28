@@ -38,7 +38,8 @@ Please check the [To-Do Page](todo) to see what still needs to be done, or just 
 
 ## Socials
 
-- [Discord Server](https://discord.gg/JHTz2HSKrf)
+- [Discord Server](https://discord.gg/JHTz2HSKrf) (linked to Matrix)
+- [Matrix Server](https://matrix.to/#/#beta-wiki:matrix.org) (linked to Discord)
 - [YouTube](https://www.youtube.com/@techbetawiki)
 
 ## Star History
