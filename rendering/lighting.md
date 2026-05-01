@@ -5,7 +5,30 @@ description: This section will go into how lighting data is rendered, not how it
 
 # Lighting
 
-This section will go into how lighting data is rendered, not how it is calculated.
+This section will go into how lighting data is rendered and calculated.
+
+## Light-spread
+Lighting in Minecraft is calculated via a [Four-way flood fill algorithm](https://en.wikipedia.org/wiki/Flood_fill).
+The idea is simple, propogate a value out from a central point until you're done.
+In Minecrafts case, the limit of the flood fill is when the light-level reaches `0`.
+
+The fact its a Four-way flood fill is apparent due to the characteristic diamond shape this results in.
+
+### Sky light
+Sky light is always at a level of `15` when the sky is unobstructed. If any semi-transparent blocks are passed through as the lighting propagates, it'll lose some light\*.
+
+Then lighting is spread horizontally, seeping into caves and similar.
+
+If a greater light-value is encountered, it'll win out. Darkness can become brighter, but lightness can never become darker.
+
+::: tip MISSING
+\* How much?
+:::
+
+### Block light
+Block lights work similarly, though they spread out from the lightsource instead of the sky. Additionally their light has a falloff applied in all 6 directions\*, reducing the light level by `1` with every block away from the lightsource.
+
+> \* North, East, South, West, Up, Down
 
 ## Face lighting
 
@@ -32,6 +55,9 @@ The resulting value is then multiplied with the underlying color.
 ## Light levels
 
 Lighting in Minecraft is based on a 4-bit gradient from `0` - `15`. As of Indev, this relationship is no longer linear.
+
+Each brightness value below `15` is `80%` as bright as the one above it. For example, `14` is `80%` as bright as `15`, and `13` is `64%` as bright as `15`.
+(Taken from the [Minecraft Wiki](https://minecraft.wiki/w/Light#Java_Edition))
 
 If mapped from a range of `0.0` - `1.0`, where `1.0` represents a light level of `15`, we get the following mapping.
 
@@ -75,3 +101,8 @@ Every vertex samples and averages the light level of surrounding blocks along th
 ### Credits
 
 - [Vector image of incandescent light bulb pictogram (Public Domain)](https://publicdomainvectors.org/en/free-clipart/Vector-image-of-incandescent-light-bulb-pictogram/23310.html)
+
+## Further reading
+- [Lighting (Networking behavior)](/networking/behavior/lighting)
+- [Four-way flood fill algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Flood_fill)
+- [Light (Minecraft Wiki)](https://minecraft.wiki/w/Light#Java_Edition)
