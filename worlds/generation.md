@@ -180,7 +180,7 @@ if(y < WATER_LEVEL) {
 // Decide which blocks are solid or not
 if(noiseValue > 0.0) blockType = BLOCK_STONE;
 // Write to chunk
-blocks[blockIndex].type = blockType;
+SetBlock(blockType, position);
 ```
 
 Some of the values appear to modify themselves for the next loop.
