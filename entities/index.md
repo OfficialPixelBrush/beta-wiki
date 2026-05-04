@@ -15,7 +15,7 @@ All entities have the following properties, though usually more. These are just 
 | Entity ID | Integer | The ID of the entity (`0`)                                         |
 | X         | Double  | The X position of the entity                                       |
 | Y         | Double  | The Y position of the entity                                       |
-| Y-Offset  | Float   | The height of the entities bounding box (`0.0`)                    |
+| Y-Offset  | Float   | The eye height of the entity (`0.0`)                               |
 | Z         | Double  | The Z position of the entity                                       |
 | Yaw       | Float   | Absolute rotation on the X Axis, in degrees                        |
 | Pitch     | Float   | Absolute rotation on the Y Axis, in degrees                        |
