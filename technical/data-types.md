@@ -6,6 +6,12 @@ order: 1
 
 This page describes the various data types that Minecraft works with.
 
+All numbers are stored as **big endian**, so the number `12345` (`0x3039`) would be stored as
+
+| Address |    `n` | `n+1`  |
+| ------: | -----: | :----- |
+|    Data | `0x30` | `0x39` |
+
 | Type     | Size (Bytes)   | Range                                                   | Comment                                                                                                                                                                                                                      |
 | -------- | -------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Boolean  | 1              | 0 to 1                                                  | Written as a byte. Can either be `0x00` or `0x01`.                                                                                                                                                                           |
@@ -21,3 +27,13 @@ This page describes the various data types that Minecraft works with.
 ## Entity Metadata
 
 Read more over on [Entity metadata](../networking/entity-metadata).
+
+## Further reading
+
+- [Endianness (Wikipedia)](https://en.wikipedia.org/wiki/Endianness)
+- [Integer (computer science) (Wikipedia)](<https://en.wikipedia.org/wiki/Integer_(computer_science)>)
+- [Two's complement (Wikipedia)](https://en.wikipedia.org/wiki/Two%27s_complement)
+- [Single-precision floating-point format (Wikipedia)](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
+- [Double-precision floating-point format (Wikipedia)](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+- [UTF-8 (Wikipedia)](https://en.wikipedia.org/wiki/UTF-8)
+- [Universal Coded Character Set (UCS) (Wikipedia)](https://en.wikipedia.org/wiki/Universal_Coded_Character_Set)

@@ -1,9 +1,11 @@
 <template>
   <span class="texture-swatch-wrapper">
     <span v-if="label && showLabel">{{ label }}</span>
-    <span 
-      class="swatch" 
-      :style="{ backgroundImage: 'url(/beta-wiki/textures/' + texture_name + '.png)' }"
+    <span
+      class="swatch"
+      :style="{
+        backgroundImage: 'url(/beta-wiki/textures/' + texture_name + '.png)',
+      }"
     ></span>
   </span>
 </template>
@@ -21,7 +23,7 @@ defineProps({
   showLabel: {
     type: Boolean,
     default: true,
-  }
+  },
 });
 </script>
 

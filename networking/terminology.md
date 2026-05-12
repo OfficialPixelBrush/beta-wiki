@@ -27,11 +27,12 @@ Limited to signed 32-bit Integers (`-2,147,483,648` to `2,147,483,647`) along th
 
 ## Player space
 
-Limited to signed 64-bit doubles (`1.7E +/- 308`). This space defines the positions of players on the server-side and is what causes the jerky movement as one approaches the edge of the world due to a loss of floating-point precision.
+Limited to signed 64-bit doubles (`1.7E +/- 308`). This space defines the positions of players on the client and server.
+Why the player movement seems to be stuttery is explained on the [distance effects page](../misc/distance_effects).
 
 ## Entity space
 
-Limited to signed 28.4 fixed-point\* numbers (`-67,108,864.0` to `67,108,863.9688`) along all axes. This space defines the positions of all entities in the world. The 4 lowest bits are used for in-block precision, meaning that within each block an entity has a decimal precision of 1/32nd of a Block (0.03125 Blocks).
+Limited to signed 28.4 fixed-point\* numbers (`−134,217,728.0` to `134,217,727.9375`) along all axes. This space defines the positions of all entities in the world. The `4` lowest bits are used for in-block precision, meaning that within each block an entity has a decimal precision of `1/16`th of a Block (`0.0625` Blocks / `1` Pixel).
 
 <sup>\*Sent as a signed 32-bit Integer</sup>
 

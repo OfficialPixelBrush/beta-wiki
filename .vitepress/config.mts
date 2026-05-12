@@ -101,7 +101,7 @@ export default defineConfig(
         "legal.md",
         "projects.md",
         "resources.md",
-        "todo.md"
+        "todo.md",
       ],
       excludeFilesByFrontmatterFieldName: "exclude",
       collapsed: true,
