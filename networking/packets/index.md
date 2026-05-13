@@ -128,6 +128,7 @@ Packets relating to the player.
 
 #### Player Action
 
+- [0x07: Interact with Entity](./007-interact-with-entity)
 - [0x09: Respawn](./009-respawn)
 - [0x0E: Mine Block](./014-mine-block)
 - [0x0F: Place Block](./015-place-block)
@@ -138,8 +139,6 @@ Packets relating to the player.
 ### Entity
 
 Packets relating to entities.
-
-- [0x07: Interact with Entity](./007-interact-with-entity)
 
 #### Entity Spawning
 
