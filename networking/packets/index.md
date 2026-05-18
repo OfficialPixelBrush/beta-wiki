@@ -8,6 +8,7 @@ description: Packets can be described as messages that go between the client and
 Packets can be described as messages that go between the client and server. These typically consist of the packet id and the data the specified packet holds.
 
 In total there are `57` packets.
+
 - `36` Clientbound (S->C)
 - `7` Serverbound (C->S)
 - `14` Bidirectional (C<->S)

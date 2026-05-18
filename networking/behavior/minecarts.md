@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 20
 description: The behaviors observed when a player enters or moves with a Minecart.
 ---
 
