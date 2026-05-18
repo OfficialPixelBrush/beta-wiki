@@ -1,13 +1,11 @@
 ---
-order: 5
-description: This page describes the base packet-handling behavior, aka how data is sent, received and parsed.
+order: 1
+description: This page describes  packet-handling behavior, aka how data is sent, received and parsed.
 ---
 
-# Packets
+# Packet handling
 
-This page describes the base packet-handling behavior, aka how data is sent, received and parsed.
-
-## Packet handling
+This page describes packet-handling behavior, aka how data is sent, received and parsed.
 
 Generally, unless a packet is too large, such as a poorly compressed [Chunk packet](../packets/051-chunk), one TCP Packet only contains one Minecraft Packet of data. So for a server/client that only ever interacts with a Vanilla server/client, this approach is sufficient.
 
