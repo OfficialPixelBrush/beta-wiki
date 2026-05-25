@@ -72,8 +72,8 @@ The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](..
 | Low Noise          | `16`    |                       `(684.412, 684.412, 684.412)` |
 | High Noise         | `16`    |                       `(684.412, 684.412, 684.412)` |
 | Selector Noise     | `8`     | `(684.412 / 80.0, 684.412 / 160.0, 684.412 / 80.0)` |
-| Continentalness    | `10`    |                               `(1.121, 1.121, 0.5)` |
-| Depth Noise        | `16`    |                               `(200.0, 200.0, 0.5)` |
+| Continentalness    | `10`    |                                    `(1.121, 1.121)` |
+| Depth Noise        | `16`    |                                    `(200.0, 200.0)` |
 | Tree Density Noise | `8`     |                                          (variable) |
 
 |                                    Low                                    |                                    High                                     |                                      Selector                                       |                                            Continental                                            |                                     Depth                                     |
