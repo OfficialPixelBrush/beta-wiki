@@ -5,7 +5,7 @@ description: Items are non-block things that're usually represented as a 2D Spri
 
 # Items
 
-Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and an 8-bit data value.
+Items are non-block things that're usually represented as a 2D Sprite, given pseudo-3D depth. Most items only have 2 properties. A 16-bit numeric ID and a 16-bit data value.
 
 ## Listing
 
@@ -75,7 +75,7 @@ Here is a comprehensive listing of all items.
 |   315 | Gold Chestplate      | [Remaining uses](#tools)       |
 |   316 | Gold Leggings        | [Remaining uses](#tools)       |
 |   317 | Gold Boots           | [Remaining uses](#tools)       |
-|   318 | Flint                | [Remaining uses](#other-tools) |
+|   318 | Flint                |                                |
 |   319 | Porkchop             |                                |
 |   320 | Cooked Porkchop      |                                |
 |   321 | Painting             |                                |
