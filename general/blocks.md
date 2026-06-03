@@ -95,7 +95,7 @@ Here is a comprehensive listing of all blocks.
 |    75 | Redstone Torch        | Redstone Torch                                      | [Direction](#torcheslevers)                         |
 |    76 | Lit Redstone Torch    | Redstone Torch                                      | [Direction](#torcheslevers)                         |
 |    77 | Stone Button          | Button                                              | Toggled & Direction                                 |
-|    78 | Snow                  | Snow                                                |                                                     |
+|    78 | Snow (Layer)          | Snow                                                |                                                     |
 |    79 | Ice                   | Ice                                                 |                                                     |
 |    80 | Snow Block            | Snow                                                |                                                     |
 |    81 | Cactus                | Cactus                                              |                                                     |
