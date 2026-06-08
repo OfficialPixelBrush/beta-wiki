@@ -30,6 +30,9 @@ The face can be one of six values, representing the face the block is placed on.
 | ----- | --- | --- | --- | --- | --- | --- |
 | Face  | -Y  | +Y  | -Z  | +Z  | -X  | +X  |
 
+> [!NOTE]
+> If the face value is `0xFF`, the client either failed to place the block, like trying to place it in mid-air without a block to place against, or is trying to use an item, such as a Hoe.
+
 ## Example Packet
 
 ### Serverbound
