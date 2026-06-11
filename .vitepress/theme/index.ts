@@ -2,6 +2,7 @@ import { type Theme, useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import ColorSwatch from "./components/ColorSwatch.vue";
 import TextureSwatch from "./components/TextureSwatch.vue";
+import CraftingSwatch from "./components/CraftingSwatch.vue";
 import { onMounted, watch, nextTick } from "vue";
 import mediumZoom from "medium-zoom";
 import "./index.css";
@@ -12,6 +13,7 @@ export default {
   enhanceApp: ({ app }) => {
     app.component("ColorSwatch", ColorSwatch);
     app.component("TextureSwatch", TextureSwatch);
+    app.component("CraftingSwatch", CraftingSwatch);
   },
 
   // TODO: this is deprecated
