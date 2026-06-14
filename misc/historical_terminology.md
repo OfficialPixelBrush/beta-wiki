@@ -29,6 +29,8 @@ A lot of these arose, either because a thing didn't have a public name, or becau
 | Slip, Nexus          | Nether             | A few names Notch considered before going with "Nether"                                                                                            |
 | Sulfur/Sulphur       | Gunpowder          | Historical name. Was renamed to Gunpowder in Beta 1.3                                                                                              |
 | Wooden Slab          | Petrified Oak Slab | Came from a quirk. ([See Quirks page](./quirks#wooden-slab))                                                                                       |
+| Bamboo, Papyrus      | Sugar Cane         | Community name. The correct name was introduced via Tooltips in Beta 1.0                                                                           |
+| Reeds                | Sugar Cane         | Sugar Cane was called Reeds until Beta 1.2                                                                                                         |
 
 ::: tip MISSING
 This page is rather short and could be expanded significantly
