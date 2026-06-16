@@ -1,5 +1,6 @@
 ---
 order: 1
+description: This page describes the various data types that Minecraft works with.
 ---
 
 # Data Types
