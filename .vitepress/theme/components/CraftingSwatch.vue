@@ -7,22 +7,14 @@
 
       <table class="crafting-grid">
         <tr v-for="(row, rowIndex) in grid" :key="rowIndex">
-          <td
-            v-for="(cell, colIndex) in row"
-            :key="colIndex"
-            class="cell"
-          >
+          <td v-for="(cell, colIndex) in row" :key="colIndex" class="cell">
             <TextureSwatch
               v-if="getTexture(cell)"
               :texture_name="getTexture(cell)"
             />
           </td>
 
-          <td
-            v-if="rowIndex === 0"
-            class="result"
-            :rowspan="3"
-          >
+          <td v-if="rowIndex === 0" class="result" :rowspan="3">
             <div class="result-wrapper">
               <TextureSwatch :texture_name="getTexture(resultTexture)" />
 

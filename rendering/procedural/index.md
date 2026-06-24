@@ -4,9 +4,11 @@ description: While most textures in the game are just parts of a texture atlas, 
 ---
 
 # Procedural Textures
+
 While most textures in the game are just parts of a texture atlas, other textures are generated on the fly by the game.
 
 This includes:
+
 - [Water](#water)
 - [Lava](#lava)
 - [Fire](#fire)
@@ -15,19 +17,25 @@ This includes:
 - [Clocks](#clocks)
 
 ## Water
+
 TODO
 
 ## Lava
+
 TODO
 
 ## Fire
+
 TODO
 
 ## Nether Portals
+
 TODO
 
 ## Compasses
+
 TODO
 
 ## Clocks
+
 TODO

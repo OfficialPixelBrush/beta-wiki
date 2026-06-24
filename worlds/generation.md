@@ -348,3 +348,7 @@ Continue onto the [population page](population) to find out more.
 
 - [Java Edition Far Lands/Infdev 20100327 to Beta 1.7.3](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3)
 - [Nether](./nether#generation)
+- [Beta 1.8 Generation](https://github.com/PhoenixVX/golden-age-wiki/blob/main/minecraft/genlayer/sequence/b18.md)
+- [Release 1.0 Generation](https://github.com/PhoenixVX/golden-age-wiki/blob/main/minecraft/genlayer/sequence/r100.md)
+- [Release 1.1 Generation](https://github.com/PhoenixVX/golden-age-wiki/blob/main/minecraft/genlayer/sequence/r11.md)
+- [Release 1.2 Generation](https://github.com/PhoenixVX/golden-age-wiki/blob/main/minecraft/genlayer/sequence/r12.md)
