@@ -21,11 +21,13 @@ This is sent by the server to update the furnace GUI's progress bars.
 
 ## Type
 
-| ID  | Name              | Range                  | Description                                                               |
-| --- | ----------------- | ---------------------- | ------------------------------------------------------------------------- |
-| `0` | Smelting Progress | `0` to `200`           | The progress of the current item being smelted.                           |
-| `1` | Fuel Remaining    | `0` to (fuel duration) | A higher value means more fuel remaining.                                 |
-| `2` | Fuel Duration     | `0` to `20000`         | The burning time of the current fuel item (defaults to `200` if not sent) |
+| ID  | Name              | Range                  | Description                                                                                               |
+| --- | ----------------- | ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| `0` | Smelting Progress | `0` to `200`           | The progress of the current item being smelted. This counts up from `0`                                   |
+| `1` | Burn Time         | `0` to (fuel duration) | The progress of how much fuel remains. Starts at the burn time of the used fuel, then counts down to `0`. |
+| `2` | Maximum Burn Time | `0` to `20000`         | Sets the max burn time of the current fuel (defaults to `200` if not sent)                                |
+
+All of these are sent only if they've changed, which means `0` and `1` can be sent every tick while looking inside of the Furnace Interface.
 
 ## Fuel
 
@@ -38,3 +40,7 @@ See the [smelting page](/general/recipes/smelting#valid-fuel) for more info on w
 | Window ID | `49`  |
 | Type      | `0`   |
 | Value     | `50`  |
+
+## Further reading
+
+- [Furnace Behavior](../behavior/furnaces.md)
