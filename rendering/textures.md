@@ -5,7 +5,7 @@ description: Textures are what give each rendered block and item their colorful,
 
 # Textures
 
-description: Textures are what give each rendered block and item their colorful, detailed appearance.
+Textures are what give each rendered block and item their colorful, detailed appearance.
 
 ## Texture Atlas
 

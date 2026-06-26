@@ -1,7 +1,8 @@
 # Legal
 
-> [!WARNING]
-> No lawyer or other kind of legal professional has touched this page. Please take anything said on it with a huge grain of salt!
+::: warning
+No lawyer or other kind of legal professional has touched this page. Please take anything said on it with a huge grain of salt!
+:::
 
 ## Legality of the Project
 
@@ -26,7 +27,7 @@ The following is a list of pages that were created while directly referencing th
 - [Networking/Authentication](./networking/authentication)
 - [Entities/Pathfinding](./entities/pathfinding)
 - [Redstone](./redstone/components)
-- [Worlds/Population](./worlds/population)
+- [Worlds/Generation/Population](./worlds/generation/population)
 - [Worlds/Map Item](./worlds/mapItem)
 - [Worlds/Weather](./worlds/weather)
 
@@ -34,7 +35,8 @@ The following is a list of pages that were created while directly referencing th
 
 The following is a list of pages that were created while directly referencing the decompiled Beta 1.7.3 code, and thus may cause issues if any code on them is directly referenced and implemented as it currently directly showcases parts that're based on decompiled code.
 
-- [Worlds/Biomes](./worlds/biomes)
-- [Worlds/Generation](./worlds/generation)
+- [Worlds/Generation/Biomes](./worlds/generation/biomes)
+- [Worlds/Generation/Overworld](./worlds/generation/overworld)
+- [Worlds/Generation/Nether](./worlds/generation/nether)
 
 All other pages were either based on already public knowledge, i.e. things that were documented on the Minecraft Wiki or the wiki.vg Archive, done through Black box reverse engineering or simply explaining it in a way that seems obvious.

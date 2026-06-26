@@ -5,7 +5,7 @@ description: The population phase is done a little differently when compared to 
 
 # Population
 
-The population phase is done a little differently when compared to [terrain generation](generation), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries. This page covers both overworld and [nether](#nether) population.
+The population phase is done a little differently when compared to [terrain generation](./overworld), as it relies on adjacent chunks already existing, due to the generated features being capable of generating across chunk boundaries. This page covers both overworld and [nether](#nether) population.
 
 ::: tip MISSING
 A huge chunk of info is still missing!!
@@ -168,7 +168,7 @@ Clay patches.
 ## Minable
 
 Anything you'd find underground, such as dirt/gravel blocks and coal, iron, gold, redstone, diamond and lapis lazuli veins.
-![Ore Generation Attempt Chart](images/population/oreAbundance.png)
+![Ore Generation Attempt Chart](../images/population/oreAbundance.png)
 
 ## Trees
 
@@ -257,7 +257,7 @@ Singular Fluid Sources can only generate if the chosen position fulfills the fol
 
 ## Snow
 
-Snow generates on the highest solid block, except ice, where the temperature value is `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](../misc/quirks#ice-and-snow) for more info!
+Snow generates on the highest solid block, except ice, where the temperature value is `<0.5`. The placement of these may look different if you're implementing your own system, due to snow and ice placed by random ticks. See the [quirks page](/misc/quirks#ice-and-snow) for more info!
 
 # Nether
 
@@ -276,4 +276,4 @@ Features attempt to generate in the following order.
 
 ## Further reading
 
-- [Nether](./nether#generation)
+- [Nether](./nether)

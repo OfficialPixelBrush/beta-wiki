@@ -3,7 +3,7 @@ order: 10
 description: The generation described in this section will explain how Minecraft Beta 1.7.3 does its Overworld Terrain Generation. A lot of this will be based on educated guesses and the decompilation provided by RetroMCP. Additionally, certain historical bits and pieces will be taken from the Minecraft Wiki.
 ---
 
-# Generation
+# Overworld Terrain
 
 The generation described in this section will explain how Minecraft Beta 1.7.3 does its Overworld Terrain Generation. A lot of this will be based on educated guesses and the decompilation provided by [RetroMCP](https://github.com/MCPHackers/RetroMCP-Java). Additionally, certain historical bits and pieces will be taken from the [Minecraft Wiki](https://minecraft.wiki/w/World_generation/History#Beta_terrain_generator).
 
@@ -21,35 +21,35 @@ However, we can see that the general shape of the terrain remains the same by us
 
 | A1.1.2                                       | A1.2.3                                       |
 | -------------------------------------------- | -------------------------------------------- |
-| ![](images/history/a112.webp){data-zoomable} | ![](images/history/a123.webp){data-zoomable} |
+| ![](../images/history/a112.webp){data-zoomable} | ![](../images/history/a123.webp){data-zoomable} |
 
 This similar pre-1.2.0 generation dates all the way back to Infdev 20100624, before which the world generation looked entirely different.
 
 | Inf20100624                                        | A1.1.2                                       |
 | -------------------------------------------------- | -------------------------------------------- |
-| ![](images/history/infdevPack.webp){data-zoomable} | ![](images/history/a112.webp){data-zoomable} |
+| ![](../images/history/infdevPack.webp){data-zoomable} | ![](../images/history/a112.webp){data-zoomable} |
 
 Facing the other way reveals some of the more glaring differences between the generators.
 
 | A1.1.2                                            | A1.2.3                                            |
 | ------------------------------------------------- | ------------------------------------------------- |
-| ![](images/history/a112_pack.webp){data-zoomable} | ![](images/history/a123_pack.webp){data-zoomable} |
+| ![](../images/history/a112_pack.webp){data-zoomable} | ![](../images/history/a123_pack.webp){data-zoomable} |
 
 Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly relating to the feature generation.
 
 | A1.2.3                                            | B1.7.3                                            |
 | ------------------------------------------------- | ------------------------------------------------- |
-| ![](images/history/a123_pack.webp){data-zoomable} | ![](images/history/b173_pack.webp){data-zoomable} |
+| ![](../images/history/a123_pack.webp){data-zoomable} | ![](../images/history/b173_pack.webp){data-zoomable} |
 
 ## Biomes
 
-To find out more about what biomes exist and how they're defined, check out [the biomes page](biomes).
+To find out more about what biomes exist and how they're defined, check out [the biomes page](biomes)./
 
-This process uses 3 octaved [Simplex Noise](../technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
+This process uses 3 octaved [Simplex Noise](/technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
 
 |                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
 | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="../images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="../images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values after being modified by this function. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -57,7 +57,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 |                                                  Foliage Colors                                                  |                                                Map Colors                                                |
 | :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="../images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
 
 <sub>Biomes colored as per the [biomes](biomes#biome-list) page.</sub>
 
@@ -65,7 +65,7 @@ With this a `16x16` Biome Array is generated, where any block column can contain
 
 ### Noise Octaves
 
-The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](../technical/javaFeatures#random), alongside 8 [Octaved Perlin Noise Generators](../technical/noise), 7 of which are relevant for world generation.
+The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](/technical/javaFeatures#random), alongside 8 [Octaved Perlin Noise Generators](/technical/noise), 7 of which are relevant for world generation.
 
 | Generator          | Octaves |                                               Scale |
 | :----------------- | ------- | --------------------------------------------------: |
@@ -78,7 +78,7 @@ The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](..
 
 |                                    Low                                    |                                    High                                     |                                      Selector                                       |                                            Continental                                            |                                     Depth                                     |
 | :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| <img src="./images/terrain/low.png" alt="Low noise" style="width: 100%;"> | <img src="./images/terrain/high.png" alt="High noise" style="width: 100%;"> | <img src="./images/terrain/selector.png" alt="Selector noise" style="width: 100%;"> | <img src="./images/terrain/continentalness.png" alt="Continentalness noise" style="width: 100%;"> | <img src="./images/terrain/depth.png" alt="Depth noise" style="width: 100%;"> |
+| <img src="../images/terrain/low.png" alt="Low noise" style="width: 100%;"> | <img src="../images/terrain/high.png" alt="High noise" style="width: 100%;"> | <img src="../images/terrain/selector.png" alt="Selector noise" style="width: 100%;"> | <img src="../images/terrain/continentalness.png" alt="Continentalness noise" style="width: 100%;"> | <img src="../images/terrain/depth.png" alt="Depth noise" style="width: 100%;"> |
 
 <sub>Colors adjusted be more visible.</sub>
 
@@ -187,7 +187,7 @@ Some of the values appear to modify themselves for the next loop.
 
 |                                           Terrain                                            |                                                  Terrain (water)                                                   |
 | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
-| <img src="./images/terrain/terrain.png" alt="Terrain map" style="width: 100%;" class="zoom"> | <img src="./images/terrain/terrainWater.png" alt="Terrain map with water level" style="width: 100%;" class="zoom"> |
+| <img src="../images/terrain/terrain.png" alt="Terrain map" style="width: 100%;" class="zoom"> | <img src="../images/terrain/terrainWater.png" alt="Terrain map with water level" style="width: 100%;" class="zoom"> |
 
 <sub>Highest stone blocks. Color values have been tweaked to be more readable.
 Blocks at or below water level are marked in blue.</sub>
@@ -204,7 +204,7 @@ After the terrain shape has been generated, the chunk is transformed further by 
 
 |                                             Sand                                              |                                              Gravel                                               |                                              Stone                                              |
 | :-------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| <img src="./images/terrain/sandNoise.png" alt="Sand noise" style="width: 100%;" class="zoom"> | <img src="./images/terrain/gravelNoise.png" alt="Gravel noise" style="width: 100%;" class="zoom"> | <img src="./images/terrain/stoneNoise.png" alt="Stone noise" style="width: 100%;" class="zoom"> |
+| <img src="../images/terrain/sandNoise.png" alt="Sand noise" style="width: 100%;" class="zoom"> | <img src="../images/terrain/gravelNoise.png" alt="Gravel noise" style="width: 100%;" class="zoom"> | <img src="../images/terrain/stoneNoise.png" alt="Stone noise" style="width: 100%;" class="zoom"> |
 
 <sub>Sand, Gravel and Stone noise. Color values have been tweaked to be more readable.</sub>
 
@@ -272,67 +272,7 @@ if (currentBlock == BLOCK_STONE) {
 
 ## Caves
 
-Caves are not noise based, but instead work by carving the terrain out between a random amount of nodes. It gets its own dedicated [PRNG object](../technical/javaFeatures#random) when initialized.
-
-### Setup
-
-The world seed and the relevant chunk position are used to determine the seed of the cave.
-
-```cpp
-int carveExtent = 8;
-// Use the world seed to init the PRNG
-rand->setSeed(world->seed);
-long xOffset = rand->nextLong() / 2 * 2 + 1;
-long zOffset = rand->nextLong() / 2 * 2 + 1;
-// Iterate beyond the current chunk by 8 chunks in every direction
-for (int cXoffset = cX - carveExtent; cXoffset <= cX + carveExtent; ++cXoffset) {
-  for (int cZoffset = cZ - carveExtent; cZoffset <= cZ + carveExtent; ++cZoffset) {
-    rand.setSeed(((long(cXoffset) * xOffset) + (long(cZoffset) * zOffset)) ^ world->seed);
-    this->GenerateCaves(cXoffset, cZoffset, cX, cZ, c);
-  }
-}
-```
-
-From here, a number in the range of `0 - 42` is generated, by feeding the generation result into itself 3 times and adding `1` after each result.
-
-```cpp
-int numberOfCaves = rand.nextInt(rand.nextInt(rand.nextInt(40) + 1) + 1);
-```
-
-This number is reset to `0` if the next random number between `0` and `15` isn't equal to `0`.
-
-### Carving
-
-The resulting number of caves are then iterated over.
-
-```cpp
-double xOffset = double(cXoffset * CHUNK_WIDTH_X + rand.nextInt(CHUNK_WIDTH_X));
-double yOffset = double(rand.nextInt(rand.nextInt(120) + 8));
-double zOffset = double(cZoffset * CHUNK_WIDTH_Z + rand.nextInt(CHUNK_WIDTH_Z));
-int numberOfNodes = 1;
-if(rand.nextInt(4) == 0) {
-    this->CarveCave(cX, cZ, c, xOffset, yOffset, zOffset);
-    numberOfNodes += rand.nextInt(4);
-}
-```
-
-The resulting number of nodes is then iterated over, while still inside of the cave loop.
-
-```cpp
-float carveYaw = rand.nextFloat() * float(M_PI) * 2.0F;
-float carvePitch = (rand.nextFloat() - 0.5F) * 2.0F / 8.0F;
-float tunnelRadius = rand.nextFloat() * 2.0F + rand.nextFloat();
-this->CarveCave(
-    cX, cZ, c,
-    xOffset, yOffset, zOffset,
-    tunnelRadius, carveYaw, carvePitch,
-    0, 0, 1.0D
-);
-```
-
-::: tip MISSING
-This algorithm is difficult to not express as just code, and I hate that.
-:::
+See the [cave generation wiki page](./caves)
 
 After this, the lighting is updated and the heightmap is generated.
 

@@ -7,8 +7,9 @@ description: Documents how entity movement and physics are implemented.
 
 This page documents how entity movement and physics are implemented.
 
-> [!WARNING]
-> This page is a work-in-progress and may not be fully accurate.
+::: warning
+This page is a work-in-progress and may not be fully accurate.
+:::
 
 ## Tick Logic
 

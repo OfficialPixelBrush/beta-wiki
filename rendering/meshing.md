@@ -11,8 +11,9 @@ This section will go into how Minecraft transforms its world geometry from some 
 This page is hugely incomplete! All I can really say is that by this point custom block models weren't a thing, up until Release 1.8, so all models were generated on the fly and statically defined in the code!
 :::
 
-> [!WARNING]
-> Some of this info is just me guessing! I haven't double-checked most of this!
+::: warning
+Some of this info is just me guessing! I haven't double-checked most of this!
+:::
 
 ## Opaque mesh
 

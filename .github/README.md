@@ -4,7 +4,7 @@ A wiki documenting Minecraft Beta 1.7.3's technical specification and network pr
 
 Please go to the [GitHub Pages link](https://OfficialPixelBrush.github.io/beta-wiki) to see the actual Wiki!
 
-If you'd like to contribute, check the [Contributing page](/CONTRIBUTING.md)
+If you'd like to contribute, check the [Contributing page](/CONTRIBUTING)
 
 ## Contributors
 
@@ -28,4 +28,4 @@ We have a [Discord Server](https://discord.gg/JHTz2HSKrf)!
 
 ## Legal Disclaimer
 
-Please refer to the [legal info](/legal.md) page for more info.
+Please refer to the [legal info](/legal) page for more info.

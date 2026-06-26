@@ -24,8 +24,9 @@ Sent to the client when a player entity should be spawned. The position is in [b
 | Pitch     | Byte     | Rotation on the Y Axis (Quantized)                  |
 | Held item | Short    | Held item/block of the player                       |
 
-> [!WARNING]
-> Even though "Held item" can be [`-1` to represent an empty slot](./103-set-slot), the client doesn't know how to render held item `-1` on other players when they spawn in. As a result, this value must never be lower than `0`! This only applies to if this packet is sent in isolation and not immediately followed up by a [set equipment](./005-set-equipment) packet. Read up on proper usage of this packet on the [relevant behavior page](../behavior/player-join)!
+::: warning
+Even though "Held item" can be [`-1` to represent an empty slot](./103-set-slot), the client doesn't know how to render held item `-1` on other players when they spawn in. As a result, this value must never be lower than `0`! This only applies to if this packet is sent in isolation and not immediately followed up by a [set equipment](./005-set-equipment) packet. Read up on proper usage of this packet on the [relevant behavior page](../behavior/player-join)!
+:::
 
 ## Example Packet
 

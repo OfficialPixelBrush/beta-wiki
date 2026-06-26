@@ -11,8 +11,9 @@ order: 28
 
 This packet could be used for sending player input and movement states from the client to the server.
 
-> [!WARNING]
-> This packet is completely unused in the Notchian server, so there's no example of what it _should_ look or act like.
+::: warning
+This packet is completely unused in the Notchian server, so there's no example of what it _should_ look or act like.
+:::
 
 ## Serverbound
 

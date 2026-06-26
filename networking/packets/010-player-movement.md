@@ -11,8 +11,9 @@ order: 11
 
 This packet is sent to the server to determine if the player is on the ground or airborne.
 
-> [!WARNING]
-> This value is unreliable for fall damage and cheat detection as it can be spoofed by the client.
+::: warning
+This value is unreliable for fall damage and cheat detection as it can be spoofed by the client.
+:::
 
 ## Clientbound
 

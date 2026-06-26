@@ -6,14 +6,15 @@ description: This page serves as a quick-reference/guide on differences that cam
 
 This page serves as a quick-reference/guide on differences that came up as the Beta-era protocol was developed, including some info on Beta 1.8 and beyond.
 
-> [!WARNING]
-> This is not a proper page and just for taking notes/as a reference (hence why it's hidden from the sidebar), so it will be less structured and less formal than other pages. It may be removed at any time.
+::: warning
+This is not a proper page and just for taking notes/as a reference (hence why it's hidden from the sidebar), so it will be less structured and less formal than other pages. It may be removed at any time.
+:::
 
 ## Beta 1.8
 
 Beta 1.8.x is a version often disliked by legacy Minecraft players, due to its addition of the hunger bar and less nostalgic world generation. However, it has interesting features for server admins like creative mode and flying, and the protocol still resembles Beta 1.7.3 closely.
 
-To implement basic support, make the following changes to the [login](/networking/packets/001-login.md) packet:
+To implement basic support, make the following changes to the [login](/networking/packets/001-login) packet:
 
 ### Clientbound
 

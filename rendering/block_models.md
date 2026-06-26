@@ -1,8 +1,11 @@
 ---
 order: 1
+description: A page describing all possible internal block model IDs
 ---
 
 # Block Models
+
+A page describing all possible internal block model IDs.
 
 | ID  | Used By                      |
 | --- | ---------------------------- |

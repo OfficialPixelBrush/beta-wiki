@@ -23,5 +23,6 @@ description: Bed-related behaviors.
 
 - Animation Packet with value 3 to the client
 
-> [!WARNING]
-> It appears setting the player animation to `3` causes the infamous issue where players can walk under water. This remains for as long as the client remains connected. Possibly the animation needs to be reset to `0` soon after?
+::: warning
+It appears setting the player animation to `3` causes the infamous issue where players can walk under water. This remains for as long as the client remains connected. Possibly the animation needs to be reset to `0` soon after?
+:::

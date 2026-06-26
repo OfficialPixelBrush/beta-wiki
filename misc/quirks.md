@@ -20,7 +20,7 @@ TODO
 
 ### Ice and Snow
 
-Ice is generated during the [terrain shape stage](../worlds/generation#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via random ticking.
+Ice is generated during the [terrain shape stage](/worlds/generation/overworld#terrain-shape) anywhere the temperature is less than `0.5`. **However** this does not line up completely with the later determined biomes, which then determine where ice and snow can form via random ticking.
 
 |                                                     Unticked                                                     |                                                   Ticked                                                    |
 | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
@@ -34,7 +34,7 @@ This becomes more apparent when the relevant values are visualized.
 
 <sub>Biome map with Map colors, Red marking where temperature values are less than 0.5</sub>
 
-Snow depends on the same system to determine where it can appear, though its placed later in the [population stage](../worlds/population).
+Snow depends on the same system to determine where it can appear, though its placed later in the [population stage](/worlds/generation/population).
 
 > [!NOTE]
 > Seed for this section is `-1712183887779554298`, showing the area around chunk `x: -1, z:6`
@@ -45,7 +45,7 @@ The farlands are an extremely well-known terrain-generation artifact that occurs
 
 To read data from the perlin-noise permutation table, the position the noise is sampled at must be turned into an integer.
 
-Due to how java Java converts between types (see [Casting](../technical/javaFeatures#casting)), the resulting 32-bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
+Due to how java Java converts between types (see [Casting](/technical/javaFeatures#casting)), the resulting 32-bit Integer (`int`) always lands on the same permutation table entry, giving us the familiar, infinitely stretching tunnels.
 
 Using a signed 64-bit Integer (`long`) can fix this problem but it changes the tree and terrain generation slightly due to rounding differences.
 

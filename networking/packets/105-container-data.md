@@ -43,4 +43,4 @@ See the [smelting page](/general/recipes/smelting#valid-fuel) for more info on w
 
 ## Further reading
 
-- [Furnace Behavior](../behavior/furnaces.md)
+- [Furnace Behavior](../behavior/furnaces)

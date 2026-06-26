@@ -13,7 +13,7 @@ The Nether can only generate a single "biome" in this version, that being the He
 
 ## Generation
 
-The nether generator is very closely related to the [overworld generator](./generation), sometimes even erroneously so (See the [quirks page](../misc/quirks#nether) for more info).
+The nether generator is very closely related to the [overworld generator](./overworld), sometimes even erroneously so (See the [quirks page](../../misc/quirks#nether) for more info).
 
 Here's a brief list of all the most important things.
 
@@ -49,15 +49,9 @@ Here's a brief list of all the most important things.
 
 ## Caves
 
-The nether caver is [identical to the one used for the overworld](./generation#caves), with the only exception being that is checks for different blocks.
+The nether caver is [identical to the one used for the overworld](./caves), with the only exception being that is checks for different blocks.
 
-|                                                                         Overworld | Nether                                                                          |
-| --------------------------------------------------------------------------------: | :------------------------------------------------------------------------------ |
-|                       <TextureSwatch texture_name="blocks/stone" label="Stone" /> | <TextureSwatch texture_name="blocks/netherrack" label="Netherrack" />           |
-| <TextureSwatch texture_name="blocks/water_placeholder" label="Water (Flowing)" /> | <TextureSwatch texture_name="blocks/lava_placeholder" label="Lava (Flowing)" /> |
-|   <TextureSwatch texture_name="blocks/water_placeholder" label="Water (Still)" /> | <TextureSwatch texture_name="blocks/lava_placeholder" label="Lava (Still)" />   |
-
-The checks for <TextureSwatch texture_name="blocks/dirt" label="Dirt"/> and <TextureSwatch texture_name="blocks/grass_side" label="Grass"/> still exist, though neither are replenished, and <TextureSwatch texture_name="blocks/lava_placeholder" label="Lava" /> isn't placed at the bottom of the world.
+See the [nether cave generation secton](./caves#nether-generation) for more info.
 
 ## Population
 

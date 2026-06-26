@@ -17,13 +17,13 @@ More specifically:
 
 $$ \Delta p = (p*{new} - p*{old}) \cdot 32 $$
 
-where $p_{new}$ and $p_{old}$ refer to the `X`, `Y` and `Z` positions received by [Player Position](./011-player-position.md) and [Player Position and Rotation](./013-player-position-and-rotation.md) packets. You should set $\Delta p$ in Entity Position and Rotation as well as [Entity Position](./031-entity-position.md) packets.
+where $p_{new}$ and $p_{old}$ refer to the `X`, `Y` and `Z` positions received by [Player Position](./011-player-position) and [Player Position and Rotation](./013-player-position-and-rotation) packets. You should set $\Delta p$ in Entity Position and Rotation as well as [Entity Position](./031-entity-position) packets.
 
 For `Yaw` and `Pitch`:
 
 $$ r' = r \cdot 256 / 360 $$
 
-Where $r$ refers to `Yaw` or `Pitch` received by [Player Rotation](./012-player-rotation.md) and [Player Position and Rotation](./013-player-position-and-rotation.md) packets. $r'$ should be set in Entity Position and Rotation as well as [Entity Rotation](./032-entity-rotation.md) packets.
+Where $r$ refers to `Yaw` or `Pitch` received by [Player Rotation](./012-player-rotation) and [Player Position and Rotation](./013-player-position-and-rotation) packets. $r'$ should be set in Entity Position and Rotation as well as [Entity Rotation](./032-entity-rotation) packets.
 
 | Field     | Type    | Description                               |
 | --------- | ------- | ----------------------------------------- |

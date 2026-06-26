@@ -75,7 +75,7 @@ If mapped to an image, using the foliage/map colors, we get this.
 
 |                                           Foliage Colors                                            |                                         Map Colors                                          |
 | :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| <img src="./images/biome/biomesFoliage.png" alt="Foliage Colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomesMap.png" alt="Map Colors" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/biomesFoliage.png" alt="Foliage Colors" style="width: 100%;" class="zoom"> | <img src="../images/biome/biomesMap.png" alt="Map Colors" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature is X, Humidity is Y. Range is from `0` to `64` (or `0.0` to `1.0`) on both axes. [Notch drew this graph back in 2011.](https://minecraft.wiki/w/File:NotchBiomeGraph.png)
 </sub>
@@ -83,7 +83,7 @@ If mapped to an image, using the foliage/map colors, we get this.
 ## Biome Noise
 
 The function which determines what biome is use in a chunk is relatively simple.
-It mainly uses 3 [octave simplex noise generators](../technical/noise#simplex-noise).
+It mainly uses 3 [octave simplex noise generators](/technical/noise#simplex-noise).
 
 ### Noise Octaves
 
@@ -99,7 +99,7 @@ Each of these return a `16x16` array of 64-bit floating point numbers, which're 
 
 |                                              Temperature                                              |                                            Humidity                                             |                                              Variation                                              |
 | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePre.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPre.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/temperaturePre.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="../images/biome/humidityPre.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="../images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values from chunk `-1,-1` to `1,1`. These values are in the `0.0 - 2.0` range.</sub>
 
@@ -134,18 +134,18 @@ The returned biome map can look something like this over a 3x3 chunk area.
 
 |                                                  Foliage Colors                                                  |                                                Map Colors                                                |
 | :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="./images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="../images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
 
 The temperature and humidity values are changed by this function, resulting in a different set of values, to be used in later generation stages.
 
 |                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
 | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-| <img src="./images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="./images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="./images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
+| <img src="../images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="../images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="../images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values from chunks `-1,-1` to `1,1` after being modified by this function. These values are in the `0.0 - 2.0` range. Variation is not affected.</sub>
 
-This is then passed to the [World Generator](generation).
+This is then passed to the [Overworld Generator](./overworld).
 
 ## Further reading
 
-Check out the page for the [World Generator](generation).
+Check out the page for the [Overworld Generator](./overworld).

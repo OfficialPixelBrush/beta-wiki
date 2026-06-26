@@ -17,13 +17,13 @@ The algorithm used by most of Minecraft's Terrain is based on "Improved Perlin N
 The official paper can be found [here](https://dl.acm.org/doi/abs/10.1145/566654.566636), however a more accessible option is the [Wikipedia page on Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
 
 > [!NOTE]
-> [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here due to a signed 64-bit Floating-point number being converted to a signed 32-bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly. Please check how [Java does casting](../technical/javaFeatures#casting) to ensure accuracy.
+> [The Farlands](https://minecraft.wiki/w/Java_Edition_Far_Lands/Infdev_20100327_to_Beta_1.7.3) occur here due to a signed 64-bit Floating-point number being converted to a signed 32-bit Integer, resulting in the same permutation from the permutation table being chosen repeatedly. Please check how [Java does casting](/technical/javaFeatures#casting) to ensure accuracy.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noisePerlin.cpp).
 
 ## Simplex Noise
 
-Minecraft uses a slightly modified implementation of Simplex noise for its [Biome values (Temperature & Humidity)](../worlds/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
+Minecraft uses a slightly modified implementation of Simplex noise for its [Biome values (Temperature & Humidity)](/worlds/generation/biomes). As with Perlin noise, [more can be found about this algorithm on Wikipedia](https://en.wikipedia.org/wiki/Simplex_noise). It was also developed by Ken Perlin.
 
 For an example that you can reference for your purposes, check out the [BetrockServer Source Code](https://github.com/OfficialPixelBrush/BetrockServer/blob/main/src/plugins/terrain/historic/noise/noiseSimplex.cpp).
 
@@ -56,4 +56,4 @@ Some of the octave generation functions work a little differently than others. C
 
 ## Further reading
 
-From here on out, one can read about how the rest of the world generation is done. Check out the page for the [World Generator](../worlds/generation).
+From here on out, one can read about how the rest of the world generation is done. Check out the pages for the [Overworld](/worlds/generation/overworld) and the [Nether](/worlds/generation/nether) Generators.
