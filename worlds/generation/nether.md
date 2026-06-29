@@ -22,13 +22,13 @@ Here's a brief list of all the most important things.
 - All the same noises with the same octave values exist, with the exception of Tree Density Noise, which is removed.
 - The vertical noise scale was changed from `684.412` to `2053.236`
 - Continentalness and Depth noise are sampled as 3D Perlin noise with a height of `1`, ignoring the 2D fastpath introduced in Alpha 1.2.0
-  | Generator | Octaves | Scale |
-  | :----------------- | ------- | --------------------------------------------------: |
-  | Low Noise | `16` | `(684.412, 2053.236, 684.412)` |
-  | High Noise | `16` | `(684.412, 2053.236, 684.412)` |
-  | Selector Noise | `8` | `(684.412 / 80.0, 2053.236 / 160.0, 684.412 / 80.0)` |
-  | Continentalness | `10` | `(1.0, 0.0, 1.0)` |
-  | Depth Noise | `16` | `(100.0, 0.0, 100.0)` |
+  | Generator       | Octaves |                                                Scale |
+  | :-------------- | ------- | ---------------------------------------------------: |
+  | Low Noise       | `16`    |                       `(684.412, 2053.236, 684.412)` |
+  | High Noise      | `16`    |                       `(684.412, 2053.236, 684.412)` |
+  | Selector Noise  | `8`     | `(684.412 / 80.0, 2053.236 / 160.0, 684.412 / 80.0)` |
+  | Continentalness | `10`    |                                    `(1.0, 0.0, 1.0)` |
+  | Depth Noise     | `16`    |                                `(100.0, 0.0, 100.0)` |
 - The sand, gravel and stone noise maps are unchanged
 - Biomes, Temperature or Humidity are not present
 

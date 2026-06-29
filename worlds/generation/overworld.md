@@ -19,26 +19,26 @@ The first version to have the Beta-era generator was Alpha 1.2.0, and it was use
 
 However, we can see that the general shape of the terrain remains the same by using the same seed and spawn location in Alpha 1.1.2 (pre-rework), Alpha 1.2.3 (post-rework) and Beta 1.7.3.
 
-| A1.1.2                                       | A1.2.3                                       |
-| -------------------------------------------- | -------------------------------------------- |
+| A1.1.2                                          | A1.2.3                                          |
+| ----------------------------------------------- | ----------------------------------------------- |
 | ![](../images/history/a112.webp){data-zoomable} | ![](../images/history/a123.webp){data-zoomable} |
 
 This similar pre-1.2.0 generation dates all the way back to Infdev 20100624, before which the world generation looked entirely different.
 
-| Inf20100624                                        | A1.1.2                                       |
-| -------------------------------------------------- | -------------------------------------------- |
+| Inf20100624                                           | A1.1.2                                          |
+| ----------------------------------------------------- | ----------------------------------------------- |
 | ![](../images/history/infdevPack.webp){data-zoomable} | ![](../images/history/a112.webp){data-zoomable} |
 
 Facing the other way reveals some of the more glaring differences between the generators.
 
-| A1.1.2                                            | A1.2.3                                            |
-| ------------------------------------------------- | ------------------------------------------------- |
+| A1.1.2                                               | A1.2.3                                               |
+| ---------------------------------------------------- | ---------------------------------------------------- |
 | ![](../images/history/a112_pack.webp){data-zoomable} | ![](../images/history/a123_pack.webp){data-zoomable} |
 
 Between Alpha 1.2.3 and Beta 1.7.3 there only exist minor differences, mainly relating to the feature generation.
 
-| A1.2.3                                            | B1.7.3                                            |
-| ------------------------------------------------- | ------------------------------------------------- |
+| A1.2.3                                               | B1.7.3                                               |
+| ---------------------------------------------------- | ---------------------------------------------------- |
 | ![](../images/history/a123_pack.webp){data-zoomable} | ![](../images/history/b173_pack.webp){data-zoomable} |
 
 ## Biomes
@@ -47,16 +47,16 @@ To find out more about what biomes exist and how they're defined, check out [the
 
 This process uses 3 octaved [Simplex Noise](/technical/noise#simplex-noise) generators called Temperature, Humidity and Variation. This process is described [here](biomes#biome-noise).
 
-|                                              Temperature                                               |                                             Humidity                                             |                                              Variation                                              |
-| :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+|                                               Temperature                                               |                                             Humidity                                              |                                              Variation                                               |
+| :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
 | <img src="../images/biome/temperaturePost.png" alt="Temperature map" style="width: 100%;" class="zoom"> | <img src="../images/biome/humidityPost.png" alt="Humidity map" style="width: 100%;" class="zoom"> | <img src="../images/biome/biomeVariation.png" alt="Variation map" style="width: 100%;" class="zoom"> |
 
 <sub>Temperature, humidity and variation values after being modified by this function. These values are in the `0.0 - 2.0` range.</sub>
 
 With this a `16x16` Biome Array is generated, where any block column can contain any of the 13 Biomes.
 
-|                                                  Foliage Colors                                                  |                                                Map Colors                                                |
-| :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+|                                                  Foliage Colors                                                   |                                                Map Colors                                                 |
+| :---------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
 | <img src="../images/biome/terrainFoliage.png" alt="Biomes with foliage colors" style="width: 100%;" class="zoom"> | <img src="../images/biome/terrainMap.png" alt="Biomes with map colors" style="width: 100%;" class="zoom"> |
 
 <sub>Biomes colored as per the [biomes](biomes#biome-list) page.</sub>
@@ -76,8 +76,8 @@ The Beta 1.7.3 terrain generator has a shared [Pseudorandom Number Generator](/t
 | Depth Noise        | `16`    |                                    `(200.0, 200.0)` |
 | Tree Density Noise | `8`     |                                          (variable) |
 
-|                                    Low                                    |                                    High                                     |                                      Selector                                       |                                            Continental                                            |                                     Depth                                     |
-| :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+|                                    Low                                     |                                     High                                     |                                       Selector                                       |                                            Continental                                             |                                     Depth                                      |
+| :------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
 | <img src="../images/terrain/low.png" alt="Low noise" style="width: 100%;"> | <img src="../images/terrain/high.png" alt="High noise" style="width: 100%;"> | <img src="../images/terrain/selector.png" alt="Selector noise" style="width: 100%;"> | <img src="../images/terrain/continentalness.png" alt="Continentalness noise" style="width: 100%;"> | <img src="../images/terrain/depth.png" alt="Depth noise" style="width: 100%;"> |
 
 <sub>Colors adjusted be more visible.</sub>
@@ -156,7 +156,7 @@ terrainMap[xyz] = terrainDensity;
 xyz++;
 ```
 
-For more details, check out the implementation used by [BetrockServer](https://github.com/OfficialPixelBrush/BetrockServer/blob/87bc5e40e99587d34d4269aceed1e6332c55efd9/src/plugins/terrain/historic/b173/generatorBeta173.cpp#L268).
+For more details, check out the implementation used by [Betrock++](https://github.com/OfficialPixelBrush/BetrockPlusPlus/blob/main/src/bpp_shared/world/generator/overworld/chunk_gen.cpp).
 
 The result of this is placed into a `4x16x4` Double Array that describes our terrain at a reduced scale.
 
@@ -185,8 +185,8 @@ SetBlock(blockType, position);
 
 Some of the values appear to modify themselves for the next loop.
 
-|                                           Terrain                                            |                                                  Terrain (water)                                                   |
-| :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+|                                            Terrain                                            |                                                   Terrain (water)                                                   |
+| :-------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | <img src="../images/terrain/terrain.png" alt="Terrain map" style="width: 100%;" class="zoom"> | <img src="../images/terrain/terrainWater.png" alt="Terrain map with water level" style="width: 100%;" class="zoom"> |
 
 <sub>Highest stone blocks. Color values have been tweaked to be more readable.
@@ -202,8 +202,8 @@ After the terrain shape has been generated, the chunk is transformed further by 
 | Sand & Gravel Noise (Gravel) | `4`     |  `(1/32, 1.0, 1/32)` |
 | Stone Noise                  | `4`     | `(1/16, 1/16, 1/16)` |
 
-|                                             Sand                                              |                                              Gravel                                               |                                              Stone                                              |
-| :-------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+|                                              Sand                                              |                                               Gravel                                               |                                              Stone                                               |
+| :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | <img src="../images/terrain/sandNoise.png" alt="Sand noise" style="width: 100%;" class="zoom"> | <img src="../images/terrain/gravelNoise.png" alt="Gravel noise" style="width: 100%;" class="zoom"> | <img src="../images/terrain/stoneNoise.png" alt="Stone noise" style="width: 100%;" class="zoom"> |
 
 <sub>Sand, Gravel and Stone noise. Color values have been tweaked to be more readable.</sub>

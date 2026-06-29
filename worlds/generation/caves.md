@@ -4,9 +4,11 @@ description: Caves are used to make the underground more interesting
 ---
 
 # Caves
+
 Caves are used to make the underground more interesting.
 
 ## Overworld Generation
+
 Caves are not noise based, but instead work by carving the terrain out between a random amount of nodes. It gets its own dedicated [PRNG object](/technical/javaFeatures#random) when initialized.
 
 ### Setup
@@ -79,7 +81,7 @@ This algorithm is difficult to not express as just code, and I hate that.
 
 The checks for <TextureSwatch texture_name="blocks/dirt" label="Dirt"/> and <TextureSwatch texture_name="blocks/grass_side" label="Grass"/> still exist, though neither are replenished, and <TextureSwatch texture_name="blocks/lava_placeholder" label="Lava" /> isn't placed at the bottom of the world.
 
-
 ## Further reading
+
 - [Overworld Terrain Generation](./overworld)
 - [Nether Generation](./nether)

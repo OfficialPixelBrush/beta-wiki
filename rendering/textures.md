@@ -194,7 +194,8 @@ The texture atlases are indexed from `0` to `255`.
 | 255 |  `15,15`   |     ![](/textures/blocks/lava_placeholder.png)      | Lava (Placeholder)             | Was replaced in [0.0.19a](https://minecraft.wiki/w/Java_Edition_Classic_0.0.19a) |
 
 Any spaces that're not filled with a texture are usually occupied by a pink grid-piece, or are entirely transparent.
-| Empty | Transparent |
+
+|                      Empty                       |                    Transparent                    |
 | :----------------------------------------------: | :-----------------------------------------------: |
 | ![Missing Texture](/textures/blocks/missing.png) | ![Transparent Texture](/textures/transparent.png) |
 
@@ -283,7 +284,8 @@ The item texture atlas is utilized similarly to the block texture atlas.
 |  79 |   `4,12`   |       ![](/textures/items/grey_dye.png)       | Gray dye             |
 
 Any spaces that're not filled with a texture are usually transparent, though a few have a blue corner.
-| Empty | Transparent |
+
+|                       Empty                        |                    Transparent                    |
 | :------------------------------------------------: | :-----------------------------------------------: |
 | ![Corner Texture](/textures/items/placeholder.png) | ![Transparent Texture](/textures/transparent.png) |
 
