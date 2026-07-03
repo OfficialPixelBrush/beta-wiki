@@ -70,7 +70,7 @@ There are four types of blocks in this regard. Those that drop themselves, those
 |    86 | Pumpkin               | Resets orientation                                    |
 |    87 | Netherrack            |                                                       |
 |    88 | Soul Sand             |                                                       |
-|    86 | Jack 'o' Lantern      | Resets orientation                                    |
+|    91 | Jack 'o' Lantern      | Resets orientation                                    |
 |    95 | Locked Chest          |
 |    96 | Trapdoor              | Resets orientation and state                          |
 
