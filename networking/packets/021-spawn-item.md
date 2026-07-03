@@ -19,9 +19,9 @@ Sent to the client when an item entity should be spawned. The position is in [bl
 | Item ID       | Short   | [The ID of the item](../../general/items)         |
 | Item Amount   | Byte    | The quantity of items                             |
 | Item Metadata | Short   | The metadata value                                |
-| X             | Integer | The X block position of the item                  |
-| Y             | Integer | The Y block position of the item                  |
-| Z             | Integer | The Z block position of the item                  |
+| X             | Integer | The X position of the item entity (Quantized)     |
+| Y             | Integer | The Y position of the item entity (Quantized)     |
+| Z             | Integer | The Z position of the item entity (Quantized)     |
 | Yaw           | Byte    | Rotation on the X Axis (Quantized)                |
 | Pitch         | Byte    | Rotation on the Y Axis (Quantized)                |
 | Roll          | Byte    | Rotation on the Z Axis (Quantized)                |
