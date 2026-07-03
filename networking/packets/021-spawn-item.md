@@ -9,7 +9,7 @@ order: 22
 | --------- | ----------- | --------------------- | --------------------- |
 | `0x15`    | Clientbound | `AddItemEntityPacket` | `Packet21PickupSpawn` |
 
-Sent to the client when an item entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
+Sent to the client when an item entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
 
 ## Clientbound
 
