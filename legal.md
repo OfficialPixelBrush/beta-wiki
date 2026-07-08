@@ -43,4 +43,4 @@ All other pages were either based on already public knowledge, i.e. things that 
 
 ## License
 
-See our License [here](./LICENSE).
+See our License [here](./LICENSE.txt).
