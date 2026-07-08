@@ -40,3 +40,7 @@ The following is a list of pages that were created while directly referencing th
 - [Worlds/Generation/Nether](./worlds/generation/nether)
 
 All other pages were either based on already public knowledge, i.e. things that were documented on the Minecraft Wiki or the wiki.vg Archive, done through Black box reverse engineering or simply explaining it in a way that seems obvious.
+
+## License
+
+See our License [here](./LICENSE).
