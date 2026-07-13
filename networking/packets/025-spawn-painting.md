@@ -9,7 +9,7 @@ order: 26
 | --------- | ----------- | ------------------- | ------------------------ |
 | `0x19`    | Clientbound | `AddPaintingPacket` | `Packet25EntityPainting` |
 
-Sent to the client when a painting entity should be spawned. The position is in [block space](../terminology#block-space).
+Sent to the client when a painting entity should be spawned. The position is (probably) in [entity space](../terminology#entity-space).
 
 ## Clientbound
 
@@ -42,10 +42,10 @@ The direction can be figured out via this table.
 
 ## Example Packet
 
-| Field     | Value    |
-| --------- | -------- |
-| Entity ID | `532`    |
-| X         | `5669`   |
-| Y         | `68`     |
-| Z         | `-5325`  |
-| Direction | `2` (+Z) |
+| Field     | Value               |
+| --------- | ------------------- |
+| Entity ID | `532`               |
+| X         | `5669` (`177.15`)   |
+| Y         | `2176` (`68.0`)     |
+| Z         | `-5325` (`-166.40`) |
+| Direction | `2` (+Z)            |

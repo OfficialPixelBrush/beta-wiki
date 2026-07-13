@@ -9,7 +9,7 @@ order: 25
 | --------- | ----------- | -------------- | ------------------ |
 | `0x18`    | Clientbound | `AddMobPacket` | `Packet24MobSpawn` |
 
-Sent to the client when a mob entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
+Sent to the client when a mob entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
 
 ## Clientbound
 
@@ -26,13 +26,13 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 
 ## Example Packet
 
-| Field     | Value            |
-| --------- | ---------------- |
-| Entity ID | `1298`           |
-| Mob Type  | `90`             |
-| X         | `5669`           |
-| Y         | `68`             |
-| Z         | `-5325`          |
-| Yaw       | `16` (`22.58`)   |
-| Pitch     | `9` (`12.70`)    |
-| Metadata  | `0x00 0x01 0x7F` |
+| Field     | Value               |
+| --------- | ------------------- |
+| Entity ID | `1298`              |
+| Mob Type  | `90`                |
+| X         | `5669` (`177.15`)   |
+| Y         | `2176` (`68.0`)     |
+| Z         | `-5325` (`-166.40`) |
+| Yaw       | `16` (`22.58`)      |
+| Pitch     | `9` (`12.70`)       |
+| Metadata  | `0x00 0x01 0x7F`    |

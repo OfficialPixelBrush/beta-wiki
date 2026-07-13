@@ -34,9 +34,9 @@ Sent to the client when an item entity should be spawned. The position and rotat
 | Item ID       | `17` (<TextureSwatch texture_name="blocks/log_top" label="Log" />)         |
 | Item Quantity | `1`                                                                        |
 | Item Metadata | `0` (<TextureSwatch texture_name="blocks/oak_log_side" label="Oak Log" />) |
-| X             | `5669`                                                                     |
-| Y             | `68`                                                                       |
-| Z             | `-5325`                                                                    |
+| X             | `5669` (`177.15`)                                                          |
+| Y             | `2176` (`68.0`)                                                            |
+| Z             | `-5325` (`-166.40`)                                                        |
 | Yaw           | `16` (`22.58`)                                                             |
 | Pitch         | `9` (`12.70`)                                                              |
 | Roll          | `0` (`0.0`)                                                                |

@@ -9,7 +9,7 @@ order: 21
 | --------- | ----------- | ----------------- | -------------------------- |
 | `0x14`    | Clientbound | `AddPlayerPacket` | `Packet20NamedEntitySpawn` |
 
-Sent to the client when a player entity should be spawned. The position is in [block space](../terminology#block-space), while the angles are quantized.
+Sent to the client when a player entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
 
 ## Clientbound
 
@@ -34,9 +34,9 @@ Even though "Held item" can be [`-1` to represent an empty slot](./103-set-slot)
 | --------- | ------------------------------------------------------------------------------ |
 | Entity ID | `1298`                                                                         |
 | Username  | `PixelBrushArt`                                                                |
-| X         | `5`                                                                            |
-| Y         | `2`                                                                            |
-| Z         | `15`                                                                           |
+| X         | `5669` (`177.15`)                                                              |
+| Y         | `2176` (`68.0`)                                                                |
+| Z         | `-5325` (`-166.40`)                                                            |
 | Yaw       | `16` (`22.58`)                                                                 |
 | Pitch     | `9` (`12.70`)                                                                  |
 | Held item | `256` (<TextureSwatch texture_name="items/iron_shovel" label="Iron Shovel" />) |
