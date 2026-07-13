@@ -17,9 +17,9 @@ Sent to the client when an [object entity](../../entities/objects) should be spa
 | --------------- | ------- | ------------------------------------------------------------------------- |
 | Entity Id       | Integer | The ID of the entity that will refer to this object                       |
 | Object Type     | Byte    | [The type of the object](../../entities/objects)                          |
-| X               | Integer | The X block position of the object                                        |
-| Y               | Integer | The Y block position of the object                                        |
-| Z               | Integer | The Z block position of the object                                        |
+| X               | Integer | The X position of the item entity (Quantized)                             |
+| Y               | Integer | The Y position of the item entity (Quantized)                             |
+| Z               | Integer | The Z position of the item entity (Quantized)                             |
 | Owner Entity Id | Integer | Entity Id of object owner (Defaults is `0`)                               |
 | Velocity X      | Short   | The initial velocity in the X direction (if **Owner Entity Id** is > `0`) |
 | Velocity Y      | Short   | The initial velocity in the Y direction (if **Owner Entity Id** is > `0`) |

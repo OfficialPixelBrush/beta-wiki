@@ -17,9 +17,9 @@ Sent to the client when a mob entity should be spawned. The position is in [bloc
 | --------- | ------- | ------------------------------------------------ |
 | Entity ID | Integer | The ID of the entity that will refer to this mob |
 | Mob Type  | Byte    | [The type of the mob](../../entities/mobs)       |
-| X         | Integer | The X block position of the mob                  |
-| Y         | Integer | The Y block position of the mob                  |
-| Z         | Integer | The Z block position of the mob                  |
+| X         | Integer | The X position of the item entity (Quantized)    |
+| Y         | Integer | The Y position of the item entity (Quantized)    |
+| Z         | Integer | The Z position of the item entity (Quantized)    |
 | Yaw       | Byte    | Rotation on the X Axis (Quantized)               |
 | Pitch     | Byte    | Rotation on the Y Axis (Quantized)               |
 | Metadata  | -       | [Additional entity metadata](../entity-metadata) |

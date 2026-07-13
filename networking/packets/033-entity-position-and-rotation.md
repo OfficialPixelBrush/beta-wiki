@@ -28,9 +28,9 @@ Where $r$ refers to `Yaw` or `Pitch` received by [Player Rotation](./012-player-
 | Field     | Type    | Description                               |
 | --------- | ------- | ----------------------------------------- |
 | Entity ID | Integer | The ID of the entity that should be moved |
-| X         | Byte    | The X offset of the entity (Quantized)  |
-| Y         | Byte    | The Y offset of the entity (Quantized)  |
-| Z         | Byte    | The Z offset of the entity (Quantized)  |
+| X         | Byte    | The X offset of the entity (Quantized)    |
+| Y         | Byte    | The Y offset of the entity (Quantized)    |
+| Z         | Byte    | The Z offset of the entity (Quantized)    |
 | Yaw       | Byte    | Rotation on the X Axis (Quantized)        |
 | Pitch     | Byte    | Rotation on the Y Axis (Quantized)        |
 

@@ -16,9 +16,9 @@ Sent to the client to set an entity's position relative to the clients previous 
 | Field     | Type    | Description                               |
 | --------- | ------- | ----------------------------------------- |
 | Entity ID | Integer | The ID of the entity that should be moved |
-| X         | Byte    | The X position of the entity (Quantized)  |
-| Y         | Byte    | The Y position of the entity (Quantized)  |
-| Z         | Byte    | The Z position of the entity (Quantized)  |
+| X         | Byte    | The X offset of the entity (Quantized)    |
+| Y         | Byte    | The Y offset of the entity (Quantized)    |
+| Z         | Byte    | The Z offset of the entity (Quantized)    |
 
 ## Example Packets
 

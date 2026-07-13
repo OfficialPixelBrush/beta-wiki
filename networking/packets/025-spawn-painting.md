@@ -17,9 +17,9 @@ Sent to the client when a painting entity should be spawned. The position is in 
 | --------- | -------- | ------------------------------------------------------------------------- |
 | Entity ID | Integer  | The ID of the entity that will refer to this mob                          |
 | Title     | String16 | [The name of the painting](../../entities/paintings) (Max 13 Characters). |
-| X         | Integer  | The X block position of the painting                                      |
-| Y         | Integer  | The Y block position of the painting                                      |
-| Z         | Integer  | The Z block position of the painting                                      |
+| X         | Integer  | The X position of the item entity (Quantized)                             |
+| Y         | Integer  | The Y position of the item entity (Quantized)                             |
+| Z         | Integer  | The Z position of the item entity (Quantized)                             |
 | Direction | Byte     | The direction of the painting                                             |
 
 The coordinates refer to the center of the painting. Given a set width and height, the center is determined to be at
