@@ -28,10 +28,16 @@ Sent to the server when the player is moving, but hasn't changed their viewing d
 | Field     | Type    | Description                                                                  |
 | --------- | ------- | ---------------------------------------------------------------------------- |
 | X         | Double  | The X position of the player                                                 |
-| Y         | Double  | The Y position of the player                                                 |
 | Camera Y  | Double  | The Y position of the player camera                                          |
+| Y         | Double  | The Y position of the player                                                 |
 | Z         | Double  | The Z position of the player                                                 |
 | On Ground | Boolean | [See note on Player Movement Packet page](./010-player-movement#clientbound) |
+
+::: warning
+The ordering between server- and clientbound is different! This is not some copy-paste accident on the Wikis part but a client-side bug.
+
+This error(?) is also present in the standalone [Player Position and Rotation packet](./013-player-position-and-rotation).
+:::
 
 ## Example Packets
 

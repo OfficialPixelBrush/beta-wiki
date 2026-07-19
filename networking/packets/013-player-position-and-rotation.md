@@ -30,12 +30,18 @@ Sent to the server when the player is moving and looking around.
 | Field     | Type    | Description                                                                  |
 | --------- | ------- | ---------------------------------------------------------------------------- |
 | X         | Double  | The X position of the player                                                 |
-| Y         | Double  | The Y position of the player                                                 |
 | Camera Y  | Double  | The Y position of the player camera                                          |
+| Y         | Double  | The Y position of the player                                                 |
 | Z         | Double  | The Z position of the player                                                 |
 | Yaw       | Float   | Absolute rotation on the X Axis, in degrees                                  |
 | Pitch     | Float   | Absolute rotation on the Y Axis, in degrees                                  |
 | On Ground | Boolean | [See note on Player Movement Packet page](./010-player-movement#clientbound) |
+
+::: warning
+The ordering between server- and clientbound is different! This is not some copy-paste accident on the Wikis part but a client-side bug.
+
+This error(?) is also present in the standalone [Player Position packet](./011-player-position).
+:::
 
 ## Example Packets
 
