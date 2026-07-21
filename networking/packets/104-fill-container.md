@@ -44,4 +44,4 @@ Repeat the following 45 Times
 | Count  | `42`                                                                             |
 | Damage | `1` (<TextureSwatch texture_name="blocks/spruce_log_side" label="Spruce Log" />) |
 
-This would show up as an inventory full of Birch Logs.
+This would show up as an inventory full of Spruce Logs.
