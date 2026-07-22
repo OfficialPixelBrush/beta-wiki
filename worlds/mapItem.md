@@ -56,3 +56,7 @@ A map can choose from one of 16 possible icon values, though only 5 are textured
 | 4   | White Cross |
 
 All other icons are filled with blue.
+
+## Further reading
+
+- [Item Data Packet](/networking/packets/131-item-data)
