@@ -40,7 +40,7 @@ Each icon uses 3 bytes of data.
 | 1   | X offset                                                                          |
 | 2   | Y offset                                                                          |
 
-Valid icon rotation values range from `0 - 15` and maps to `0.0 - 360.0`.
+Valid icon rotation values range from `0 - 15` and maps to `0.0° - 337.5°` (`22.5°` increments).
 
 A map can, at most, have `(256 - 1) / 3 = 85` icons.
 
