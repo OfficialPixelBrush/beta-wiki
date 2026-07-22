@@ -58,7 +58,7 @@ The texture atlases are indexed from `0` to `255`.
 |  35 |   `2,3`    |         ![](/textures/blocks/bookshelf.png)         | Bookshelf                      |                                                                                  |
 |  36 |   `2,4`    |     ![](/textures/blocks/mossy_cobblestone.png)     | Mossy Cobblestone              |                                                                                  |
 |  37 |   `2,5`    |         ![](/textures/blocks/obsidian.png)          | Obsidian                       |
-|  38 |   `2,6`    |        ![](/textures/blocks/grass_side.png)         | Grass-side (Overlay)           | Biome Tinted                                                                     |
+|  38 |   `2,6`    |    ![](/textures/blocks/grass_side_overlay.png)     | Grass-side (Overlay)           | Biome Tinted                                                                     |
 |  39 |   `2,7`    |         ![](/textures/blocks/tallgrass.png)         | Tallgrass                      | Biome Tinted                                                                     |
 |  40 |   `2,8`    |         ![](/textures/blocks/grass_top.png)         | Grass Top (Overlay)            | Biome Tinted                                                                     |
 |  41 |   `2,9`    |  ![](/textures/blocks/double_chest_front_left.png)  | Double Chest (Front Left)      |                                                                                  |
