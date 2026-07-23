@@ -72,10 +72,10 @@ The texture atlases are indexed from `0` to `255`.
 |  49 |   `3,1`    |           ![](/textures/blocks/glass.png)           | Glass                          |                                                                                  |
 |  50 |   `3,2`    |        ![](/textures/blocks/diamond_ore.png)        | Diamond Ore                    |                                                                                  |
 |  51 |   `3,3`    |       ![](/textures/blocks/redstone_ore.png)        | Redstone Ore                   |                                                                                  |
-|  52 |   `3,4`    |  ![](/textures/blocks/oak_leaves_transparent.png)   | Oak/Birch leaves (Transparent) |                                                                                  |
-|  53 |   `3,5`    |     ![](/textures/blocks/oak_leaves_opaque.png)     | Oak/Birch leaves (Opaque)      |                                                                                  |
+|  52 |   `3,4`    |  ![](/textures/blocks/oak_leaves_transparent.png)   | Oak/Birch leaves (Transparent) | Oak is Biome Tinted, Birch is <ColorSwatch color="#80A755" :showLabel="true" />  |
+|  53 |   `3,5`    |     ![](/textures/blocks/oak_leaves_opaque.png)     | Oak/Birch leaves (Opaque)      | Oak is Biome Tinted, Birch is <ColorSwatch color="#80A755" :showLabel="true" />  |
 |  55 |   `3,7`    |      ![](/textures/blocks/deadbush_shrub.png)       | Deadbush/Shrub                 | Shrubs are biome tinted                                                          |
-|  56 |   `3,8`    |           ![](/textures/blocks/fern.png)            | Fern                           |                                                                                  |
+|  56 |   `3,8`    |           ![](/textures/blocks/fern.png)            | Fern                           | Biome Tinted                                                                     |
 |  57 |   `3,9`    |  ![](/textures/blocks/double_chest_back_left.png)   | Double Chest (Back Left)       |                                                                                  |
 |  58 |   `3,10`   |  ![](/textures/blocks/double_chest_back_right.png)  | Double Chest (Back Right)      |                                                                                  |
 |  59 |   `3,11`   |   ![](/textures/blocks/crafting_table_side_1.png)   | Crafting Table (Side)          |                                                                                  |
@@ -141,8 +141,8 @@ The texture atlases are indexed from `0` to `255`.
 | 129 |   `8,1`    |         ![](/textures/blocks/red_wool.png)          | Wool (Red)                     |                                                                                  |
 | 130 |   `8,2`    |         ![](/textures/blocks/pink_wool.png)         | Wool (Pink)                    |                                                                                  |
 | 131 |   `8,3`    |     ![](/textures/blocks/repeater_inactive.png)     | Repeater (Inactive)            |                                                                                  |
-| 132 |   `8,4`    | ![](/textures/blocks/spruce_leaves_transparent.png) | Spruce leaves (Transparent)    |                                                                                  |
-| 133 |   `8,5`    |   ![](/textures/blocks/spruce_leaves_opaque.png)    | Spruce leaves (Opaque)         |                                                                                  |
+| 132 |   `8,4`    | ![](/textures/blocks/spruce_leaves_transparent.png) | Spruce leaves (Transparent)    | Tinted with <ColorSwatch color="#619961" :showLabel="true" />                    |
+| 133 |   `8,5`    |   ![](/textures/blocks/spruce_leaves_opaque.png)    | Spruce leaves (Opaque)         | Tinted with <ColorSwatch color="#619961" :showLabel="true" /> Tinted             |
 | 134 |   `8,6`    |        ![](/textures/blocks/bed_top_end.png)        | Bed (Top End)                  |                                                                                  |
 | 135 |   `8,7`    |       ![](/textures/blocks/bed_top_head.png)        | Bed (Top Head)                 |                                                                                  |
 | 140 |   `8,12`   |         ![](/textures/blocks/cake_item.png)         | Cake (Item)                    |                                                                                  |
