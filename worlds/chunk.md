@@ -29,18 +29,20 @@ Inside of an uncompressed chunk file are only a few NBT Tags
 
 Over the network, chunks are a lot simpler, as they only carry block information. The number of blocks that're sent is determined by the chunk packet size information, usually `(15,127,15)` which becomes a `16x128x16` area. See more on how this data is sent on the [chunk packet page](../networking/packets/051-chunk).
 
-| Field      | Unit   | Description                         |
-| ---------- | ------ | ----------------------------------- |
-| Blocks     | Byte   | The block ID values of the chunk    |
-| Data       | Nibble | The block data values of the chunk  |
-| BlockLight | Nibble | The block light values of the chunk |
-| SkyLight   | Nibble | The sky light values of the chunk   |
+| Field      | Unit   | Description                         | Typical Size (Bytes) |
+| ---------- | ------ | ----------------------------------- | -------------------- |
+| Blocks     | Byte   | The block ID values of the chunk    | `32768`              |
+| Data       | Nibble | The block data values of the chunk  | `16384`              |
+| BlockLight | Nibble | The block light values of the chunk | `16384`              |
+| SkyLight   | Nibble | The sky light values of the chunk   | `16384`              |
+
+As a result, a typical chunk packet usually contains `81920` Bytes worth of uncompressed data. Obviously this increases if an area bigger than `16x128x16` is sent.
 
 ## Bytes VS Nibbles
 
 All non-block data is sent and stored as nibbles, meaning that to read a blocks metadata value, for example, one must read the top or bottom 4-bits of the relevant Byte. As such, the Data, BlockLight and SkyLight sections are half as big as the blocks section.
 
-### Reading
+### Writing
 
 ```c
 unsigned char lower = GetBlockLight(x, y  , z);
@@ -48,7 +50,7 @@ unsigned char upper = GetBlockLight(x, y+1, z);
 data[index] = (upper << 4 | lower);
 ```
 
-### Writing
+### Reading
 
 ```c
 unsigned char lower = data[index] & 0xF
