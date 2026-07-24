@@ -19,11 +19,12 @@ Sent to the client to show the contents of inventories
 | Payload Size | Short | The number of slots in the inventory                  |
 | Payload      | \*    | The inventory data                                    |
 
-The Payload is a list which describes the items in the sent inventory.
+The Payload is a list of elements with the format below which describes the
+items in the sent inventory. The number of elements is equal to the Payload Size.
 
 | Field    | Type  | Description                                              |
 | -------- | ----- | -------------------------------------------------------- |
-| ID       | Short | The ID of the item                                       |
+| ID       | Short | The ID of the item (`-1` if empty)                       |
 | Amount   | Byte  | The quantity of the item (only added if `ID > -1`)       |
 | Metadata | Short | The metadata value of the item (only added if `ID > -1`) |
 
