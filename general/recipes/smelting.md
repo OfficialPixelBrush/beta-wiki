@@ -18,7 +18,7 @@ Smelting is done in the furnace. It's how ores are processed into ingots, and fo
 | <TextureSwatch texture_name="items/raw_porkchop" label="Raw porkchop" /> | <TextureSwatch texture_name="items/cooked_porkchop" label="Cooked porkchop" />      |
 |         <TextureSwatch texture_name="items/raw_fish" label="Raw fish" /> | <TextureSwatch texture_name="items/cooked_fish" label="Cooked fish" />              |
 |  <TextureSwatch texture_name="blocks/cobblestone" label="Cobblestone" /> | <TextureSwatch texture_name="blocks/stone" label="Stone" />                         |
-|                <TextureSwatch texture_name="blocks/clay" label="Clay" /> | <TextureSwatch texture_name="items/brick" label="Brick" />                          |
+|                <TextureSwatch texture_name="items/clay" label="Clay" /> | <TextureSwatch texture_name="items/brick" label="Brick" />                          |
 |       <TextureSwatch texture_name="blocks/cactus_side" label="Cactus" /> | <TextureSwatch texture_name="items/green_dye" label="Green dye" /> (Dye, Meta: `2`) |
 |                                                          Wood (Material) | <TextureSwatch texture_name="items/coal" label="Charcoal" /> (Coal, Meta: `1`)      |
 
