@@ -32,7 +32,7 @@ The face can be one of six values, representing the face the block is placed on.
 
 > [!NOTE]
 > If the face value is `0xFF`, the client either failed to place the block, like trying to place it in mid-air without a block to place against, or is trying to use an item, such as a Hoe.
-> For certain items, such as boats, the client will send this packet even if the no reachable block was right-clicked, sending X=-1, Y=255, Z=-1. In those cases, [Player Rotation](https://pixelbrush.dev/beta-wiki/networking/packets/012-player-rotation) and [Player Position and Rotation](https://pixelbrush.dev/beta-wiki/networking/packets/013-player-position-and-rotation) should be used to determine the correct place to spawn the object. 
+> For certain items, such as boats, the client will send this packet even if the no reachable block was right-clicked, sending X=-1, Y=255, Z=-1. In those cases, [Player Rotation](https://pixelbrush.dev/beta-wiki/networking/packets/012-player-rotation) and [Player Position and Rotation](https://pixelbrush.dev/beta-wiki/networking/packets/013-player-position-and-rotation) should be used to determine the correct place to spawn the object.
 
 ## Example Packet
 

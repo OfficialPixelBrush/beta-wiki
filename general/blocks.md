@@ -169,6 +169,9 @@ The values after this simply follow the same pattern.
 
 ## Dispenser/Furnace/Ladder
 
+For furnaces and dispensers, the "outward" face is used as the direction they're facing.
+Meanwhile, for ladders, the wall it's attached to/the direction a player faces as they climb it is used for it's direction.
+
 | Value | Color          |
 | ----: | :------------- |
 |     0 | None (Invalid) |
