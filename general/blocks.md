@@ -40,7 +40,7 @@ Here is a comprehensive listing of all blocks.
 |    20 | Glass                 | Glass                                               |                                                     |
 |    21 | Lapis Lazuli Ore      | Lapis Lazuli Ore                                    |                                                     |
 |    22 | Lapis Lazuli Block    | Lapis Lazuli Block                                  |                                                     |
-|    23 | Dispenser             | Dispenser                                           | [Direction](#dispenserfurnace)                      |
+|    23 | Dispenser             | Dispenser                                           | [Direction](#dispenser-furnace-ladder)              |
 |    24 | Sandstone             | Sandstone                                           |                                                     |
 |    25 | Note Block            | Note Block                                          |                                                     |
 |    26 | Bed                   | Bed                                                 | Top/Bottom and Direction                            |
@@ -78,11 +78,11 @@ Here is a comprehensive listing of all blocks.
 |    58 | Crafting Table        | Crafting Table                                      |                                                     |
 |    59 | Wheat                 | Crops                                               | Growth Stage (0-7)                                  |
 |    60 | Farmland              | Farmland                                            | >0 if wet                                           |
-|    61 | Furnace               | Furnace                                             | [Direction](#dispenserfurnace)                      |
-|    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenserfurnace)                      |
+|    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
+|    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
 |    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                              |
 |    64 | Wooden Door           | Wooden Door                                         |                                                     |
-|    65 | Ladder                | Ladder                                              | Direction                                           |
+|    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder)              |
 |    66 | Rail                  | Rail                                                | [Direction](#rails)                                 |
 |    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                                |
 |    68 | Sign (wall)           | Sign                                                | Direction                                           |
@@ -109,7 +109,7 @@ Here is a comprehensive listing of all blocks.
 |    89 | Glowstone             | Glowstone                                           |                                                     |
 |    90 | Nether Portal         | Portal                                              |                                                     |
 |    91 | Jack'o'Lantern        | Jack 'o' Lantern                                    | Direction                                           |
-|    92 | Cake                  | Cake                                                |                                                     |
+|    92 | Cake                  | Cake                                                | Eatness                                             |
 |    93 | Redstone Repeater     |                                                     | Direction                                           |
 |    94 | Lit Redstone Repeater |                                                     | Direction                                           |
 |    95 | Locked Chest          | Locked chest                                        |                                                     |
@@ -167,7 +167,7 @@ Leaves have 3/4 distinct values. Only oak is biome-colored.
 
 The values after this simply follow the same pattern.
 
-## Dispenser/Furnace
+## Dispenser/Furnace/Ladder
 
 | Value | Color          |
 | ----: | :------------- |
