@@ -31,12 +31,9 @@ The basic idea boils down to disabling as many features as possible and forcing 
 Here's some pseudocode, [based on the implementation from PicoCraft](https://github.com/OfficialPixelBrush/PicoCraft/blob/c2abf98c595bb47f0498e14726a26857c6382fa4/picocraft/picocraft.ino#L373), to illustrate the basic idea.
 
 ```c
+// All numbers that're bigger than a byte are written in little endian ordering
 // The header adds 11 bytes onto our payload
-int payLoadWithHeader = payLoadSize + 11;
-WriteByte((payLoadWithHeader >> 24) & 0xFF);
-WriteByte((payLoadWithHeader >> 16) & 0xFF);
-WriteByte((payLoadWithHeader >> 8) & 0xFF);
-WriteByte(payLoadWithHeader & 0xFF);
+WriteU32(payloadSize + 11);
 // DEFLATE Compression format
 // 32K Window size (this doesn't matter,
 // since we aren't compressing)
@@ -47,21 +44,14 @@ WriteByte(0x01)
 // Type 0 is an uncompressed block
 // This should be 0x00 if you're sending more data
 WriteByte(0x01);
-// Length of our data, little endian
-WriteByte(payloadSize & 0xFF);
-WriteByte((payloadSize >> 8) & 0xFF);
-// One's Complement of our datas length, little endian
-WriteByte((~payloadSize) & 0xFF);
-WriteByte((~payloadSize >> 8) & 0xFF);
-for (int i = 0; i < payLoadSize; i++) {
-    WriteByte(payload[i]);
-}
+// Size of our data
+WriteU16(payloadSize)
+// One's Complement of our datas size
+WriteU16(~payloadSize)
+// The actual data
+WriteBytes(payload, payloadSize);
 // A 32-bit Adler Checksum is calculated and appended
-int adlerChecksum = adler32(payload, payloadSize);
-WriteByte((adlerChecksum >> 24) & 0xFF);
-WriteByte((adlerChecksum >> 16) & 0xFF);
-WriteByte((adlerChecksum >> 8) & 0xFF);
-WriteByte(adlerChecksum & 0xFF);
+WriteU32(Adler32(payload, payloadSize))
 ```
 
 The final layout looks as follows.
@@ -73,10 +63,10 @@ The final layout looks as follows.
 This is the checksum that goes at the end of a zlib header. This is based on the sample code from the [RFC page for the Zlib specification](https://www.rfc-editor.org/rfc/rfc1950#section-9), where you can find some more info on how and why it works.
 
 ```c
-unsigned int adler32(uint8_t* payload, int32_t payloadSize) {
-    unsigned int A = 1;
-    unsigned int B = 0;
-    for (unsigned int i = 0; i < payloadSize; i++) {
+uint32_t adler32(uint8_t* payload, int32_t payloadSize) {
+    uint32_t A = 1;
+    uint32_t B = 0;
+    for (uint32_t i = 0; i < payloadSize; i++) {
         A += payload[i];
         A = A % 65521;
         B += A;
