@@ -24,6 +24,8 @@ While the point of this Wiki is to focus on Beta 1.7.3 or thereabouts, we're hap
 
 The [Golden Age Wiki](https://github.com/PhoenixVX/golden-age-wiki) has some useful info, especially regarding how Terrain generation works in Beta 1.8 and onward, [as seen here](https://github.com/PhoenixVX/golden-age-wiki/tree/main/minecraft/genlayer).
 
+We also have a section on some of the changes the Protocol went through after Beta 1.7.3, via our [Multi-Version page](./misc/multiversion).
+
 ## Misc
 
 Some remaining stuff can be found on the [BetrockServer Wiki](https://github.com/OfficialPixelBrush/BetrockServer/wiki), though a lot of it has been transferred over to the Beta Wiki since. It also features an alternative [Block ID Listing](https://github.com/OfficialPixelBrush/BetrockServer/wiki/Full-ID-Listing). The one hosted on [grahamedgecombe.com](https://minecraft-ids.grahamedgecombe.com/) is a great alternative for general usage, especially if you don't care about Metadata, though it may contain blocks that did not exist until a future version. The one currently on the Beta Wiki is generally considered to be better than either though.
