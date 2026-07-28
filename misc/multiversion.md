@@ -6,7 +6,7 @@ description: This page serves as a quick-reference/guide on differences that cam
 
 This page serves as a quick-reference/guide on differences that came up as the Beta-era protocol was developed, including some info on Beta 1.8 and beyond.
 
-The pre-netty Protocol was first created around [Alpha v1.0.17](https://minecraft.wiki/w/Java_Edition_Alpha_v1.0.17) as it marked the reset of the Protocol version from `14` to `1`. The protocol created was tweaked and changed, but left mostly similar until [Snapshot 13w39b](https://minecraft.wiki/w/Java_Edition_13w39b) (Release 1.7.2, Protocol version `80`), where it was finally replaced by the moderm Netty-based Protocol.
+The pre-netty Protocol was first created around [Alpha v1.0.17](https://minecraft.wiki/w/Java_Edition_Alpha_v1.0.17) as it marked the reset of the Protocol version from `14` to `1`. The protocol created was tweaked and changed, but left mostly similar until [Snapshot 13w39b](https://minecraft.wiki/w/Java_Edition_13w39b) (Release 1.7.2, Protocol version `80`), where it was finally replaced by the modern Netty-based Protocol.
 
 ::: warning
 This page features incomplete and possibly erroneous information. Please double and triple check EVERYTHING said here.
