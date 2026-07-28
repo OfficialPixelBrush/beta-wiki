@@ -7,9 +7,9 @@ description: This page describes  packet-handling behavior, aka how data is sent
 
 This page describes packet-handling behavior, aka how data is sent, received and parsed.
 
-Generally, unless a packet is too large, such as a poorly compressed [Chunk packet](../packets/051-chunk), one TCP Packet only contains one Minecraft Packet. So for a server/client that only ever interacts with a Vanilla server/client, this approach is sufficient.
+Generally, unless a packet is too large, such as a poorly compressed [Chunk packet](../packets/051-chunk-block-region), one TCP Packet only contains one Minecraft Packet. So for a server/client that only ever interacts with a Vanilla server/client, this approach is sufficient.
 
-However, in practice, it's fully supported for Minecraft packets to be split across multiple TCP packets. While this is normally reserved to the aforementioned [Chunk packet](../packets/051-chunk), it can theoretically be done to any packet and still be understood by a vanilla server/client. As such a true vanilla-compliant server/client should be able to handle this as well.
+However, in practice, it's fully supported for Minecraft packets to be split across multiple TCP packets. While this is normally reserved to the aforementioned [Chunk packet](../packets/051-chunk-block-region), it can theoretically be done to any packet and still be understood by a vanilla server/client. As such a true vanilla-compliant server/client should be able to handle this as well.
 
 ### An example
 

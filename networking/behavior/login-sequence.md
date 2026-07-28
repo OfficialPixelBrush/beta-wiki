@@ -32,4 +32,4 @@ This will place the player into an empty world at sunrise. The player will begin
 | `S->C` [Set Health](../packets/008-set-health#clientbound)                 | Sets the shown health                                       |
 | `S->C` [Fill Container](../packets/104-fill-container)                     | Sets the players inventory                                  |
 
-This is followed by a bunch of [Set Chunk Visibility](../packets/050-set-chunk-visibility) packets to load the chunks, and [Chunk](../packets/051-chunk) packets which contain the actual chunk data, alongside the server and Client exchanging position and rotation information.
+This is followed by a bunch of [Set Chunk Visibility](../packets/050-set-chunk-visibility) packets to load the chunks, and [Chunk](../packets/051-chunk-block-region) packets which contain the actual chunk data, alongside the server and Client exchanging position and rotation information.

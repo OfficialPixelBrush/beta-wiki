@@ -27,7 +27,7 @@ Inside of an uncompressed chunk file are only a few NBT Tags
 
 ## Network
 
-Over the network, chunks are a lot simpler, as they only carry block information. The number of blocks that're sent is determined by the chunk packet size information, usually `(15,127,15)` which becomes a `16x128x16` area. See more on how this data is sent on the [chunk packet page](../networking/packets/051-chunk).
+Over the network, chunks (or block regions) are a lot simpler, as they only carry block information. The number of blocks that're sent is determined by the chunk packet size information, usually `(15,127,15)` which becomes a `16x128x16` area, though any size is possible. See more on how this data is sent on the [chunk packet page](../networking/packets/051-chunk-block-region).
 
 | Field      | Unit   | Description                         | Typical Size (Bytes) |
 | ---------- | ------ | ----------------------------------- | -------------------- |

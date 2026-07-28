@@ -14,7 +14,7 @@ This is done for two reasons.
 1. Sending multiple block updates just to update lighting data would be incredible wasteful from a bandwidth usage perspective
 2. Since the client uses the exact same lighting engine, the resulting lighting should be the exact same
 
-The only exception to the "no lighting data" rule is the [chunk](../packets/051-chunk) packet,
+The only exception to the "no lighting data" rule is the [chunk](../packets/051-chunk-block-region) packet,
 which comes with the full chunk data, including lighting.
 
 ## Further reading

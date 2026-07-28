@@ -15,8 +15,8 @@ This is sent by the server to load or unload a chunk. If load is `1`, the client
 
 | Field | Type    | Description                                        |
 | ----- | ------- | -------------------------------------------------- |
-| X     | Integer | The X chunk position of the chunk                        |
-| Z     | Integer | The Z chunk position of the chunk                        |
+| X     | Integer | The X chunk position of the chunk                  |
+| Z     | Integer | The Z chunk position of the chunk                  |
 | Load  | Boolean | Whether the client should load or unload the chunk |
 
 ## Example Packet
