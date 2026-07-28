@@ -1,9 +1,9 @@
 ---
-title: "0x33: Chunk"
+title: "0x33: Chunk / Block Region"
 order: 52
 ---
 
-# Chunk
+# Chunk / Block Region
 
 | Packet ID | Direction   | Mojang Name               | MCP Name           |
 | --------- | ----------- | ------------------------- | ------------------ |
@@ -11,31 +11,31 @@ order: 52
 
 The packets is sent from the server to the client to update the blocks in the specified area.
 
-The origin coordinate (x,y,z) is in [block space](../terminology#block-space).
+The origin coordinate (x,y,z) is in [block space](../terminology#block-space). It describes the bottom, most-negative block.
 The to-be-updated volume is defined by the width, height and length bytes which the server subtracts `1` from to allow updating of a 256x128x256 area\*.
 
 <sub>\* untested, but height values more than `127` seem to crash the client</sub>
 
-The chunk size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards Negative X/Y/Z.
+The region size can only be positive, so the origin coordinate must always indicate the lowest value of the changed area, towards Negative X/Y/Z.
 
-## Chunk Data
+## Block Data
 
-How the chunk data is formatted over the network is explained on the [chunk page](../../worlds/chunk#network).
+How the block data is formatted over the network is explained on the [chunk page](../../worlds/chunk#network).
 This data is zlib compressed when sent over the network.
 For more info, check out the [compression page](../../technical/compression).
 
 ## Clientbound
 
-| Field           | Type       | Description                                             |
-| --------------- | ---------- | ------------------------------------------------------- |
-| X               | Integer    | The X position of the chunk towards Negative X          |
-| Y               | Short      | The Y position of the chunk towards Negative Y          |
-| Z               | Integer    | The Z position of the chunk towards Negative Z          |
-| width           | Byte       | The width of the updated area towards Positive X, `-1`  |
-| height          | Byte       | The height of the updated area towards Positive Y, `-1` |
-| length          | Byte       | The length of the updated area towards Positive Z, `-1` |
-| compressed size | Integer    | The size, in bytes, of the zlib compressed data         |
-| compressed data | Byte Array | The zlib compressed chunk data                          |
+| Field           | Type       | Description                                                     |
+| --------------- | ---------- | --------------------------------------------------------------- |
+| X               | Integer    | The X block position of the region towards Negative X           |
+| Y               | Short      | The Y block position of the region towards Negative Y           |
+| Z               | Integer    | The Z block position of the region towards Negative Z           |
+| width           | Byte       | The block width of the updated region towards Positive X, `-1`  |
+| height          | Byte       | The block height of the updated region towards Positive Y, `-1` |
+| length          | Byte       | The block length of the updated region towards Positive Z, `-1` |
+| compressed size | Integer    | The size, in bytes, of the zlib compressed data                 |
+| compressed data | Byte Array | The zlib compressed chunk data                                  |
 
 ::: warning
 If a chunk that's taller than 127 blocks is sent, a vanilla client **will** softlock/crash.

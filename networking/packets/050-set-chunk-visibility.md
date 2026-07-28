@@ -9,14 +9,14 @@ order: 51
 | --------- | ----------- | ----------------------- | ------------------ |
 | `0x32`    | Clientbound | `ChunkVisibilityPacket` | `Packet50PreChunk` |
 
-This is sent by the server to load or unload a chunk. If load is `1`, the client readies itself to place block data there. If it's `0` the client deletes the Chunk data.
+This is sent by the server to load or unload a chunk. If load is `1`, the client readies itself to place block data there. If it's `0` the client deletes the Chunk data. The position is sent in [chunk space](../terminology#chunk-space).
 
 ## Clientbound
 
 | Field | Type    | Description                                        |
 | ----- | ------- | -------------------------------------------------- |
-| X     | Integer | The X position of the chunk                        |
-| Z     | Integer | The Z position of the chunk                        |
+| X     | Integer | The X chunk position of the chunk                        |
+| Z     | Integer | The Z chunk position of the chunk                        |
 | Load  | Boolean | Whether the client should load or unload the chunk |
 
 ## Example Packet

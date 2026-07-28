@@ -82,7 +82,7 @@ Packets that are only sent by the server.
 - [0x27: Add Passenger](./039-add-passenger)
 - [0x28: Entity Metadata](./040-entity-metadata)
 - [0x32: Set Chunk Visibility](./050-set-chunk-visibility)
-- [0x33: Chunk](./051-chunk)
+- [0x33: Chunk / Block Region](./051-chunk-block-region)
 - [0x34: Set Multiple Blocks](./052-set-multiple-blocks)
 - [0x35: Set Block](./053-set-block)
 - [0x36: Block Event](./054-block-event)
@@ -196,7 +196,7 @@ Packets that provide info on the world.
 #### World Blocks
 
 - [0x32: Set Chunk Visibility](./050-set-chunk-visibility)
-- [0x33: Chunk](./051-chunk)
+- [0x33: Chunk / Block Region](./051-chunk-block-region)
 - [0x34: Set Multiple Blocks](./052-set-multiple-blocks)
 - [0x35: Set Block](./053-set-block)
 - [0x82: Update Sign](./130-update-sign)
@@ -251,7 +251,7 @@ All the packets, listed in numerical order.
 - [0x27: Add Passenger](./039-add-passenger)
 - [0x28: Entity Metadata](./040-entity-metadata)
 - [0x32: Set Chunk Visibility](./050-set-chunk-visibility)
-- [0x33: Chunk](./051-chunk)
+- [0x33: Chunk / Block Region](./051-chunk-block-region)
 - [0x34: Set Multiple Blocks](./052-set-multiple-blocks)
 - [0x35: Set Block](./053-set-block)
 - [0x36: Block Event](./054-block-event)

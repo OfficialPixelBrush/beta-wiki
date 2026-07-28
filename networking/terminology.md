@@ -17,6 +17,19 @@ This page will explain terminology used throughout this entire section of the wi
 | Player               | The entity that acts on the inputs of the user                                                                                                                                               |
 | Entity               | A pickup, mob, painting or clientbound player                                                                                                                                                |
 
+# Directions
+
+Minecraft describes positions and directions using signed X,Y,Z coordinates.
+
+| Minecraft | Cardinal Direction |
+| --------- | ------------------ |
+| -X        | North              |
+| +X        | South              |
+| +Z        | East               |
+| -Z        | West               |
+| +Y        | Up                 |
+| -Y        | Down               |
+
 # Spaces
 
 Spaces describe where and how coordinates are expressed within the world.
@@ -24,6 +37,10 @@ Spaces describe where and how coordinates are expressed within the world.
 ## Block space
 
 Limited to signed 32-bit Integers (`-2,147,483,648` to `2,147,483,647`) along the horizontal axes and a signed 8-bit Integer (limited, `0` to `127`) along the vertical axis. This space defines the grid that the blocks of Minecraft adhere to.
+
+## Chunk space
+
+Limited to signed 32-bit Integers (`-2,147,483,648` to `2,147,483,647`) along the horizontal axes. This space defines the grid that chunks are placed within. `1` unit in chunk space covers `16` units in block space.
 
 ## Player space
 
