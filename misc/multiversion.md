@@ -6,8 +6,10 @@ description: This page serves as a quick-reference/guide on differences that cam
 
 This page serves as a quick-reference/guide on differences that came up as the Beta-era protocol was developed, including some info on Beta 1.8 and beyond.
 
+The pre-netty Protocol was first created around [Alpha v1.0.17](https://minecraft.wiki/w/Java_Edition_Alpha_v1.0.17) as it marked the reset of the Protocol version from `14` to `1`. The protocol created was tweaked and changed, but left mostly similar until [Snapshot 13w39b](https://minecraft.wiki/w/Java_Edition_13w39b) (Release 1.7.2, Protocol version `80`), where it was finally replaced by the moderm Netty-based Protocol.
+
 ::: warning
-This is not a proper page and just for taking notes/as a reference (hence why it's hidden from the sidebar), so it will be less structured and less formal than other pages. It may be removed at any time.
+This page features incomplete and possibly erroneous information. Please double and triple check EVERYTHING said here.
 :::
 
 ## Beta 1.8
@@ -267,16 +269,27 @@ TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be
 
 ## Versions
 
-| Version Name | Protocol Version | Minecraft Wiki Page                                                                   |
-| ------------ | ---------------- | ------------------------------------------------------------------------------------- |
-| Alpha v1.2.6 | `6`              | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659 |
-| Beta 1.1_01  | `7`?             | TODO                                                                                  |
-| Beta 1.1_02  | `8`?             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769678 |
-| Beta 1.2_02  | `8`?             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769711 |
-| Beta 1.3_01  | `9`              | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769723 |
-| Beta 1.4_01  | `10`             | TODO                                                                                  |
-| Beta 1.5_02  | `11`             | TODO                                                                                  |
-| Beta 1.6.6   | `13`             | TODO                                                                                  |
-| Beta 1.7.3   | `14`             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763 |
-| Beta 1.8.1   | `17`             | https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858 |
-| 1.0.0        | `22`             | TODO                                                                                  |
+| First Version         | Last Version          | Protocol Version | Minecraft Wiki Page                                                                     |
+| --------------------- | --------------------- | ---------------- | --------------------------------------------------------------------------------------- |
+| Alpha v1.0.17         | Alpha v1.0.17_04      | `1`              | (undocumented)                                                                          |
+| Alpha v1.1.0          | Alpha v1.1.2_01       | `2`              | (undocumented)                                                                          |
+| Alpha v1.2.0          | Alpha v1.2.1_01       | `3`              | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=prev&oldid=2769656>   |
+| Alpha v1.2.2          | Alpha v1.2.2          | `4`              | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2769656>   |
+| Alpha v1.2.3          | Alpha v1.2.3_04       | `5`              | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2769656>   |
+| Alpha v1.2.3_05       | Alpha v1.2.6          | `6`              | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769659> |
+| Beta 1.0              | Beta 1.1_01           | `7`?             | TODO                                                                                    |
+| Beta 1.1_02           | Beta 1.2_02           | `8`              | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769711> |
+| Beta 1.3              | Beta 1.3_01           | `9`              | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769723> |
+| Beta 1.4              | Beta 1.4_01           | `10`             | (not undocumented standalone, see `11`)                                                 |
+| Beta 1.5              | Beta 1.5_02           | `11`             | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2769730>   |
+| Beta 1.6 Test Build 3 | Beta 1.6 Test Build 3 | `12`             | (undocumented)                                                                          |
+| Beta 1.6              | Beta 1.6.6            | `13`             | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2769745>   |
+| Beta 1.7              | Beta 1.7.3            | `14`             | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763> |
+| Beta 1.8              | Beta 1.8.1            | `17`             | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858> |
+| Beta 1.9 Pre-6        | Release 1.0.1         | `22`             | TODO                                                                                    |
+| Release 1.6.4         | Release 1.6.4         | `78`             | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2771078>   |
+| Snapshot 13w38a       | Snapshot 13w38c       | `79`             | (undocumented)                                                                          |
+| Snapshot 13w39a       | Snapshot 13w39b       | `80`             | (undocumented)                                                                          |
+
+From Snapshot 13w41a (Release 1.7) onward, the protocol was rewritten to use Netty, which goes about describing packet data entirely differently.
+Here's the first edit on the old Protocol docs to describe this change: <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2771080>
