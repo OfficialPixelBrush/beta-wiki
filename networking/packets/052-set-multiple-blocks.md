@@ -43,8 +43,8 @@ Int3 unformat_multi_block(int16_t value) {
 
 | Field             | Type        | Description                                              |
 | ----------------- | ----------- | -------------------------------------------------------- |
-| X                 | Integer     | The X position of the chunk                              |
-| Z                 | Integer     | The Z position of the chunk                              |
+| X                 | Integer     | The X chunk position of the chunk                        |
+| Z                 | Integer     | The Z chunk position of the chunk                        |
 | Number of Blocks  | Short       | The number of changed blocks                             |
 | Block Coordinates | Short Array | Array of Block coordinates in the format described above |
 | Blocktypes        | Byte Array  | Array of Block types those coordinates change to         |
