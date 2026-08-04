@@ -177,21 +177,25 @@ $$ \text{MaxUses} = (\text{BaseUses}\times3) \times 2^\text{Level} $$
 
 ## Dye
 
+::: warning
+These are sorted backwards compared to [the colors that wool offers](./blocks#wool)
+:::
+
 | Value | Color                                                                          |
 | ----: | :----------------------------------------------------------------------------- |
-|     0 | <TextureSwatch texture_name="items/bonemeal" label="Bonemeal/White dye" />     |
-|     1 | <TextureSwatch texture_name="items/orange_dye" label="Orange dye" />           |
-|     2 | <TextureSwatch texture_name="items/magenta_dye" label="Magenta dye" />         |
-|     3 | <TextureSwatch texture_name="items/light_blue_dye" label="Light-blue dye" />   |
-|     4 | <TextureSwatch texture_name="items/yellow_dye" label="Yellow dye" />           |
-|     5 | <TextureSwatch texture_name="items/lime_dye" label="Lime dye" />               |
-|     6 | <TextureSwatch texture_name="items/pink_dye" label="Pink dye" />               |
-|     7 | <TextureSwatch texture_name="items/grey_dye" label="Gray dye" />               |
-|     8 | <TextureSwatch texture_name="items/light_grey_dye" label="Light-gray dye" />   |
-|     9 | <TextureSwatch texture_name="items/cyan_dye" label="Cyan dye" />               |
-|    10 | <TextureSwatch texture_name="items/purple_dye" label="Purple dye" />           |
-|    11 | <TextureSwatch texture_name="items/blue_dye" label="Blue dye" />               |
-|    12 | <TextureSwatch texture_name="items/brown_dye" label="Coco beans/ Brown dye" /> |
-|    13 | <TextureSwatch texture_name="items/green_dye" label="Green dye" />             |
-|    14 | <TextureSwatch texture_name="items/red_dye" label="Red dye" />                 |
-|    15 | <TextureSwatch texture_name="items/black_dye" label="Ink sac/Black dye" />     |
+|     0 | <TextureSwatch texture_name="items/black_dye" label="Ink sac/Black dye" />     |
+|     1 | <TextureSwatch texture_name="items/red_dye" label="Red dye" />                 |
+|     2 | <TextureSwatch texture_name="items/green_dye" label="Green dye" />             |
+|     3 | <TextureSwatch texture_name="items/brown_dye" label="Coco beans/ Brown dye" /> |
+|     4 | <TextureSwatch texture_name="items/blue_dye" label="Blue dye" />               |
+|     5 | <TextureSwatch texture_name="items/purple_dye" label="Purple dye" />           |
+|     6 | <TextureSwatch texture_name="items/cyan_dye" label="Cyan dye" />               |
+|     7 | <TextureSwatch texture_name="items/light_grey_dye" label="Light-gray dye" />   |
+|     8 | <TextureSwatch texture_name="items/grey_dye" label="Gray dye" />               |
+|     9 | <TextureSwatch texture_name="items/pink_dye" label="Pink dye" />               |
+|    10 | <TextureSwatch texture_name="items/lime_dye" label="Lime dye" />               |
+|    11 | <TextureSwatch texture_name="items/yellow_dye" label="Yellow dye" />           |
+|    12 | <TextureSwatch texture_name="items/light_blue_dye" label="Light-blue dye" />   |
+|    13 | <TextureSwatch texture_name="items/magenta_dye" label="Magenta dye" />         |
+|    14 | <TextureSwatch texture_name="items/orange_dye" label="Orange dye" />           |
+|    15 | <TextureSwatch texture_name="items/bonemeal" label="Bonemeal/White dye" />     |
