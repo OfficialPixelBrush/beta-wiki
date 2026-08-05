@@ -9,7 +9,7 @@ order: 104
 | --------- | ----------- | ------------------------ | ------------------ |
 | `0x67`    | Clientbound | `ContainerSetSlotPacket` | `Packet103SetSlot` |
 
-This packet is sent by the client when an inventory slot is updated. See the [inventory page](../../general/inventory) for more information.
+This packet is sent by the server when an inventory slot is updated. See the [inventory page](../../general/inventory) for more information.
 
 ## Clientbound
 
