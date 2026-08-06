@@ -13,13 +13,13 @@ This is sent by the server when a block is changed or updated in any way. If a l
 
 ## Clientbound
 
-| Field    | Type    | Description                           |
-| -------- | ------- | ------------------------------------- |
-| X        | Integer | The X position of where the block is. |
-| Y        | Byte    | The Y position of where the block is. |
-| Z        | Integer | The Z position of where the block is. |
-| Type     | Byte    | The new type of the block.            |
-| Metadata | Byte    | The new metadata value of the block.  |
+| Field    | Type    | Description                                |
+| -------- | ------- | ------------------------------------------ |
+| X        | Integer | The X block position of where the block is |
+| Y        | Byte    | The Y block position of where the block is |
+| Z        | Integer | The Z block position of where the block is |
+| Type     | Byte    | The new type of the block                  |
+| Metadata | Byte    | The new metadata value of the block        |
 
 ## Example Packet
 

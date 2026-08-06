@@ -20,9 +20,7 @@ $$ \Delta p = (p_{new} - p_{old}) \cdot 32 $$
 where $p_{new}$ and $p_{old}$ refer to the `X`, `Y` and `Z` positions received by [Player Position](./011-player-position) and [Player Position and Rotation](./013-player-position-and-rotation) packets. You should set $\Delta p$ in Entity Position and Rotation as well as [Entity Position](./031-entity-position) packets.
 
 > [!NOTE]
->$\Delta p$ can overflow 127, which is the limit in the [entity space](../terminology#entity-space). Hence make sure to check if it overflows and if it does, send $p_{new}$ directly via [Teleport Entity](./034-teleport-entity).
-
-
+> $\Delta p$ can overflow 127, which is the limit in the [entity space](../terminology#entity-space). Hence make sure to check if it overflows and if it does, send $p_{new}$ directly via [Teleport Entity](./034-teleport-entity).
 
 For `Yaw` and `Pitch`:
 

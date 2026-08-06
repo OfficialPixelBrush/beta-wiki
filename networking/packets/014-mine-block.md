@@ -16,9 +16,9 @@ Sent to the server when the player attempts to mine a block. If a block is mined
 | Field  | Type    | Description                                       |
 | ------ | ------- | ------------------------------------------------- |
 | Status | Byte    | The action the player is taking against the block |
-| X      | Integer | The X position of the block                       |
-| Y      | Byte    | The Y position of the block                       |
-| Z      | Integer | The Z position of the block                       |
+| X      | Integer | The X block position of the block                 |
+| Y      | Byte    | The Y block position of the block                 |
+| Z      | Integer | The Z block position of the block                 |
 | Face   | Byte    | The face of the block that's being mined          |
 
 The status can represent one of three values.

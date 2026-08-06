@@ -10,12 +10,12 @@ Tile entities are blocks that contain additional data, beyond the 4-bit Metadata
 
 All tile entities share a common layout that they then add their additional fields onto.
 
-| Field | Type     | Description                  |
-| ----- | -------- | ---------------------------- |
-| id    | String16 | The label of the tile entity |
-| x     | Integer  | The X position of the block  |
-| y     | Integer  | The Y position of the block  |
-| z     | Integer  | The Z position of the block  |
+| Field | Type     | Description                       |
+| ----- | -------- | --------------------------------- |
+| id    | String16 | The label of the tile entity      |
+| x     | Integer  | The X block position of the block |
+| y     | Integer  | The Y block position of the block |
+| z     | Integer  | The Z block position of the block |
 
 As these are always the same, they will only be included as part of the examples.
 

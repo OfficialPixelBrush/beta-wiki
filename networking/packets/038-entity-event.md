@@ -20,11 +20,11 @@ Sent to the client to showcase an entity's health state, such as if it should tu
 
 | Value | Action          | Entity |
 | ----- | --------------- | ------ |
-| 2     | Hurt            | Any    |
-| 3     | Death           | Any    |
-| 6     | Smoke Particles | Wolf   |
-| 7     | Heart Particles | Wolf   |
-| 8     | Start Shaking   | Wolf   |
+| `2`   | Hurt            | Any    |
+| `3`   | Death           | Any    |
+| `6`   | Smoke Particles | Wolf   |
+| `7`   | Heart Particles | Wolf   |
+| `8`   | Start Shaking   | Wolf   |
 
 Unlisted values do nothing.
 

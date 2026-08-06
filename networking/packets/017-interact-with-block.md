@@ -20,10 +20,10 @@ If the Entity ID is that of another player, the relevant entity will lay down in
 | Field     | Type    | Description                              |
 | --------- | ------- | ---------------------------------------- |
 | Entity ID | Integer | The ID of the entity that did the action |
-| Type      | Byte    | `0` for sleeping                         |
-| X         | Integer | The X position of bed's headboard        |
-| Y         | Byte    | The Y position of bed's headboard        |
-| Z         | Integer | The Z position of bed's headboard        |
+| Type      | Byte    | Always `0` (for sleeping)                |
+| X         | Integer | The X block position of bed's headboard  |
+| Y         | Byte    | The Y block position of bed's headboard  |
+| Z         | Integer | The Z block position of bed's headboard  |
 
 ## Example Packet
 

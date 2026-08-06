@@ -17,9 +17,9 @@ Sent to the client when a player entity should be spawned. The position and rota
 | --------- | -------- | --------------------------------------------------- |
 | Entity ID | Integer  | The ID of the entity that will refer to this player |
 | Username  | String16 | The username. Maximum of 16 characters!             |
-| X         | Integer  | The X block position of the player                  |
-| Y         | Integer  | The Y block position of the player                  |
-| Z         | Integer  | The Z block position of the player                  |
+| X         | Integer  | The X position of the player (Quantized)            |
+| Y         | Integer  | The Y position of the player (Quantized)            |
+| Z         | Integer  | The Z position of the player (Quantized)            |
 | Yaw       | Byte     | Rotation on the X Axis (Quantized)                  |
 | Pitch     | Byte     | Rotation on the Y Axis (Quantized)                  |
 | Held item | Short    | Held item/block of the player                       |

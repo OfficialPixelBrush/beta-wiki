@@ -25,14 +25,14 @@ This packet is sent by both the client and the server for swinging your arm (`1`
 
 ## Both
 
-| Field     | Type    | Description                             |
-| --------- | ------- | --------------------------------------- |
-| Player ID | Integer | The ID of the player who did the action |
-| Animation | Byte    | The type of action. Can be `1` or `3`   |
+| Field     | Type    | Description                                                 |
+| --------- | ------- | ----------------------------------------------------------- |
+| Entity ID | Integer | The entity ID of the player who did/should do the animation |
+| Animation | Byte    | The id of the animation                                     |
 
 ## Example Packet
 
 | Field     | Value           |
 | --------- | --------------- |
-| Player ID | `1298`          |
+| Entity ID | `1298`          |
 | Animation | `1` (Swing Arm) |

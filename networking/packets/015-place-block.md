@@ -16,9 +16,9 @@ Sent to the server when the player attempts to place or interact with a block, o
 
 | Field         | Type    | Description                                       |
 | ------------- | ------- | ------------------------------------------------- |
-| X             | Integer | The X position of the block                       |
-| Y             | Byte    | The Y position of the block                       |
-| Z             | Integer | The Z position of the block                       |
+| X             | Integer | The X block position of the block                 |
+| Y             | Byte    | The Y block position of the block                 |
+| Z             | Integer | The Z block position of the block                 |
 | Face          | Byte    | The face of the block that's being placed against |
 | Block/Item ID | Short   | The block or item to be placed                    |
 | (Amount)      | Byte    | The amount of the item in the players hand        |

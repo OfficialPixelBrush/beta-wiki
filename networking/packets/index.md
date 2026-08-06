@@ -62,7 +62,7 @@ Packets that are only sent by the server.
 
 - [0x04: Set Time](./004-set-time)
 - [0x05: Set Equipment](./005-set-equipment)
-- [0x06: Set Spawn Position](./006-set-spawn-position)
+- [0x06: Set Compass Target Position](./006-set-compass-target-position)
 - [0x08: Set Health](./008-set-health)
 - [0x11: Interact with Block](./017-interact-with-block)
 - [0x14: Spawn Player](./020-spawn-player)
@@ -117,7 +117,7 @@ Packets relating to the player.
 
 #### Player State
 
-- [0x06: Set Spawn Position](./006-set-spawn-position)
+- [0x06: Set Compass Target Position](./006-set-compass-target-position)
 - [0x08: Set Health](./008-set-health)
 
 #### Player Movement
@@ -219,7 +219,7 @@ All the packets, listed in numerical order.
 - [0x03: Chat Message](./003-chat-message)
 - [0x04: Set Time](./004-set-time)
 - [0x05: Set Equipment](./005-set-equipment)
-- [0x06: Set Spawn Position](./006-set-spawn-position)
+- [0x06: Set Compass Target Position](./006-set-compass-target-position)
 - [0x07: Interact with Entity](./007-interact-with-entity)
 - [0x08: Set Health](./008-set-health)
 - [0x09: Respawn](./009-respawn)
