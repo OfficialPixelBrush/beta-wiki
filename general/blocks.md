@@ -81,14 +81,14 @@ Here is a comprehensive listing of all blocks.
 |    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
 |    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
 |    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                              |
-|    64 | Wooden Door           | Wooden Door                                         |                                                     |
+|    64 | Wooden Door           | Wooden Door                                         | [Direction](#doors)                                                    |
 |    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder)              |
 |    66 | Rail                  | Rail                                                | [Direction](#rails)                                 |
 |    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                                |
 |    68 | Sign (wall)           | Sign                                                | Direction                                           |
 |    69 | Lever                 | Lever                                               | Toggled & Direction                                 |
 |    70 | Stone Pressure Plate  | Pressure Plate                                      | Toggled                                             |
-|    71 | Iron Door             | Iron Door                                           |                                                     |
+|    71 | Iron Door             | Iron Door                                           | [Direction](#doors)                                            |
 |    72 | Wooden Pressure Plate | Pressure Plate                                      | Toggled                                             |
 |    73 | Redstone Ore          | Redstone Ore                                        |                                                     |
 |    74 | Lit Redstone Ore      | Redstone Ore                                        |                                                     |
@@ -305,3 +305,23 @@ The angles are given relative to West.
 |     7 | West/South  |
 |     8 | West/North  |
 |     9 | East/West   |
+
+### Doors
+| Value | Direction              |
+| ----: | :--------------------- |
+|     0 | North (Bottom, Closed) |
+|     1 | East (Bottom, Closed)  |
+|     2 | South (Bottom, Closed) |
+|     3 | West (Bottom, Closed)  |
+|     4 | North (Bottom, Open)   |
+|     5 | East (Bottom, Open)    |
+|     6 | South (Bottom, Open)   |
+|     7 | West (Bottom, Open)    |
+|     8 | North (Top, Closed)    |
+|     9 | East (Top, Closed)     |
+|    10 | South (Top, Closed)    |
+|    11 | West (Top, Closed)     |
+|    12 | North (Top, Open)      |
+|    13 | East (Top, Open)       |
+|    14 | South (Top, Open)      |
+|    15 | West (Top, Open)       |
