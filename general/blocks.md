@@ -113,7 +113,7 @@ Here is a comprehensive listing of all blocks.
 |    93 | Redstone Repeater     |                                                     | Direction                                           |
 |    94 | Lit Redstone Repeater |                                                     | Direction                                           |
 |    95 | Locked Chest          | Locked chest                                        |                                                     |
-|    96 | Trapdoor              | Trapdoor                                            | Toggled & Direction                                 |
+|    96 | Trapdoor              | Trapdoor                                            | [Toggled & Direction](#trapdoors)                   |
 
 # Metadata
 
@@ -325,3 +325,16 @@ The angles are given relative to West.
 |    13 | East (Top, Open)       |
 |    14 | South (Top, Open)      |
 |    15 | West (Top, Open)       |
+
+### Trapdoors
+| Value | Direction              |
+| ----: | :--------------------- |
+|     0 | East (Closed)  |
+|     1 | West (Closed)  |
+|     2 | North (Closed) |
+|     3 | South (Closed) |
+|     4 | East  (Open)   |
+|     5 | West (Open)    |
+|     6 | North (Open)   |
+|     7 | South (Open)    |
+
