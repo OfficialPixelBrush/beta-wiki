@@ -14,11 +14,11 @@ This is the first packet that is sent after the connection to the server is made
 
 ## Clientbound
 
-| Field           | Type     | Description                            |
-| --------------- | -------- | -------------------------------------- |
-| Connection Hash | String16 | A unique per-connection hash, or `"-"` |
+| Field     | Type     | Description                                        |
+| --------- | -------- | -------------------------------------------------- |
+| Server Id | String16 | A unique per-connection 64-bit hex integer, or `-` |
 
-The vanilla server will set the hash to `"-"` if online mode is disabled, which will prevent the client from doing name authentication.
+The vanilla server will set the hash to `-` if online mode is disabled, which will prevent the client from doing name authentication.
 
 ## Serverbound
 
@@ -30,9 +30,9 @@ The vanilla server will set the hash to `"-"` if online mode is disabled, which 
 
 ### Clientbound
 
-| Field           | Value              |
-| --------------- | ------------------ |
-| Connection Hash | `2e66f1dc032ab5f0` |
+| Field     | Value              |
+| --------- | ------------------ |
+| Server Id | `2e66f1dc032ab5f0` |
 
 ### Serverbound
 
