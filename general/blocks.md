@@ -310,7 +310,7 @@ The angles are given relative to West.
 |    14 |       South-West | 315°   |
 |    15 |  West-South-West | 337.5° |
 
-### Rails
+## Rails
 
 | Value | Direction   |
 | ----: | :---------- |
@@ -326,7 +326,7 @@ The angles are given relative to West.
 |     9 | East/West   |
 | 10-15 | (Invalid)   |
 
-### Doors
+## Doors
 
 The state of a door can be figured out via a bitmask.
 
@@ -355,7 +355,7 @@ The state of a door can be figured out via a bitmask.
 |    14 | South (Top, Open)      |
 |    15 | West (Top, Open)       |
 
-### Trapdoors
+## Trapdoors
 
 The state of a trapdoor can be figured out via a bitmask.
 
