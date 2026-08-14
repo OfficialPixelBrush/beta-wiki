@@ -15,105 +15,105 @@ TODO: Add material type and what block belongs to what material category!
 
 Here is a comprehensive listing of all blocks.
 
-| Value | Name                  | In-game Name                                        | Metadata use                                        |
-| ----: | :-------------------- | :-------------------------------------------------- | :-------------------------------------------------- |
-|     0 | Air                   |                                                     |                                                     |
-|     1 | Stone                 | Stone                                               |                                                     |
-|     2 | Grass                 | Grass                                               |                                                     |
-|     3 | Dirt                  | Dirt                                                |                                                     |
-|     4 | Cobblestone           | Cobblestone                                         |                                                     |
-|     5 | Planks                | Wooden Planks                                       |                                                     |
-|     6 | Sapling               | Sapling                                             | [Wood Type](#saplings)                              |
-|     7 | Bedrock               | Bedrock                                             |                                                     |
-|     8 | Water (Flowing)       | Water                                               | [Liquid height](#liquids)                           |
-|     9 | Water (Still)         | Water                                               | [Liquid height](#liquids)                           |
-|    10 | Lava (Flowing)        | Lava                                                | [Liquid height](#liquids)                           |
-|    11 | Lava (Still)          | Lava                                                | [Liquid height](#liquids)                           |
-|    12 | Sand                  | Sand                                                |                                                     |
-|    13 | Gravel                | Gravel                                              |                                                     |
-|    14 | Gold Ore              | Gold Ore                                            |                                                     |
-|    15 | Iron Ore              | Iron Ore                                            |                                                     |
-|    16 | Coal Ore              | Coal Ore                                            |                                                     |
-|    17 | Log                   | Wood                                                | [Wood Type](#logs)                                  |
-|    18 | Leaves                | Leaves                                              | [Leaf Type](#leaves)                                |
-|    19 | Sponge                | Sponge                                              |                                                     |
-|    20 | Glass                 | Glass                                               |                                                     |
-|    21 | Lapis Lazuli Ore      | Lapis Lazuli Ore                                    |                                                     |
-|    22 | Lapis Lazuli Block    | Lapis Lazuli Block                                  |                                                     |
-|    23 | Dispenser             | Dispenser                                           | [Direction](#dispenser-furnace-ladder)              |
-|    24 | Sandstone             | Sandstone                                           |                                                     |
-|    25 | Note Block            | Note Block                                          |                                                     |
-|    26 | Bed                   | Bed                                                 | Top/Bottom and Direction                            |
-|    27 | Powered Rail          | Powered Rail                                        | [Direction](#rails)                                 |
-|    28 | Detector Rail         | Detector Rail                                       | [Direction](#rails)                                 |
-|    29 | Sticky Piston         | Sticky Piston                                       | [Direction and State](#pistons)                     |
-|    30 | Cobweb                | Cobweb                                              |                                                     |
-|    31 | Tall Grass            |                                                     | Shrub `0`, Grass `1`, Fern `2`                      |
-|    32 | Dead Bush             |                                                     |                                                     |
-|    33 | Piston                | Piston                                              | [Direction and State](#pistons)                     |
-|    34 | Piston Head           |                                                     | [Direction](#piston-head)                           |
-|    35 | Wool                  |                                                     | [Color](#wool)                                      |
-|    36 | Moving Block          |                                                     |                                                     |
-|    37 | Dandelion             | Flower                                              |                                                     |
-|    38 | Rose                  | Rose                                                |                                                     |
-|    39 | Brown Mushroom        | Mushroom                                            |                                                     |
-|    40 | Red Mushroom          | Mushroom                                            |                                                     |
-|    41 | Gold Block            | Block of Gold                                       |                                                     |
-|    42 | Iron Block            | Block of Iron                                       |                                                     |
-|    43 | Double Slab           |                                                     | Stone `0`, Sandstone `1`, Wood `2`, Cobblestone `3` |
-|    44 | Slab                  | Stone Slab, Sandstone Slab, Wooden Slab, Stone Slab | Stone `0`, Sandstone `1`, Wood `2`, Cobblestone `3` |
-|    45 | Bricks                | Bricks                                              |                                                     |
-|    46 | TNT                   | TNT                                                 |                                                     |
-|    47 | Bookshelf             | Bookshelf                                           |                                                     |
-|    48 | Mossy Cobblestone     | Moss Stone                                          |                                                     |
-|    49 | Obsidian              | Obsidian                                            |                                                     |
-|    50 | Torch                 | Torch                                               | [Direction](#torcheslevers)                         |
-|    51 | Fire                  | Fire                                                |                                                     |
-|    52 | Monster Spawner       | Monster Spawner                                     |                                                     |
-|    53 | Wooden Stairs         | Wooden Stairs                                       | [Direction](#stairs)                                |
-|    54 | Chest                 | Chest                                               |                                                     |
-|    55 | Redstone              | Redstone                                            | Power Level                                         |
-|    56 | Diamond Ore           | Diamond Ore                                         |                                                     |
-|    57 | Diamond Block         | Block of Diamond                                    |                                                     |
-|    58 | Crafting Table        | Crafting Table                                      |                                                     |
-|    59 | Wheat                 | Crops                                               | Growth Stage (0-7)                                  |
-|    60 | Farmland              | Farmland                                            | >0 if wet                                           |
-|    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
-|    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder)              |
-|    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                              |
-|    64 | Wooden Door           | Wooden Door                                         | [Direction](#doors)                                                    |
-|    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder)              |
-|    66 | Rail                  | Rail                                                | [Direction](#rails)                                 |
-|    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                                |
-|    68 | Sign (wall)           | Sign                                                | Direction                                           |
-|    69 | Lever                 | Lever                                               | Toggled & Direction                                 |
-|    70 | Stone Pressure Plate  | Pressure Plate                                      | Toggled                                             |
-|    71 | Iron Door             | Iron Door                                           | [Direction](#doors)                                            |
-|    72 | Wooden Pressure Plate | Pressure Plate                                      | Toggled                                             |
-|    73 | Redstone Ore          | Redstone Ore                                        |                                                     |
-|    74 | Lit Redstone Ore      | Redstone Ore                                        |                                                     |
-|    75 | Redstone Torch        | Redstone Torch                                      | [Direction](#torcheslevers)                         |
-|    76 | Lit Redstone Torch    | Redstone Torch                                      | [Direction](#torcheslevers)                         |
-|    77 | Stone Button          | Button                                              | Toggled & Direction                                 |
-|    78 | Snow (Layer)          | Snow                                                |                                                     |
-|    79 | Ice                   | Ice                                                 |                                                     |
-|    80 | Snow Block            | Snow                                                |                                                     |
-|    81 | Cactus                | Cactus                                              |                                                     |
-|    82 | Clay                  | Clay                                                |                                                     |
-|    83 | Sugar Cane            | Sugar Canes                                         |                                                     |
-|    84 | Jukebox               | Jukebox                                             |                                                     |
-|    85 | Fence                 | Fence                                               |                                                     |
-|    86 | Pumpkin               | Pumpkin                                             | Direction                                           |
-|    87 | Netherrack            | Netherrack                                          |                                                     |
-|    88 | Soul Sand             | Soul Sand                                           |                                                     |
-|    89 | Glowstone             | Glowstone                                           |                                                     |
-|    90 | Nether Portal         | Portal                                              |                                                     |
-|    91 | Jack'o'Lantern        | Jack 'o' Lantern                                    | Direction                                           |
-|    92 | Cake                  | Cake                                                | Eatness                                             |
-|    93 | Redstone Repeater     |                                                     | Direction                                           |
-|    94 | Lit Redstone Repeater |                                                     | Direction                                           |
-|    95 | Locked Chest          | Locked chest                                        |                                                     |
-|    96 | Trapdoor              | Trapdoor                                            | [Toggled & Direction](#trapdoors)                   |
+| Value | Name                  | In-game Name                                        | Metadata use                                   |
+| ----: | :-------------------- | :-------------------------------------------------- | :--------------------------------------------- |
+|     0 | Air                   |                                                     |                                                |
+|     1 | Stone                 | Stone                                               |                                                |
+|     2 | Grass                 | Grass                                               |                                                |
+|     3 | Dirt                  | Dirt                                                |                                                |
+|     4 | Cobblestone           | Cobblestone                                         |                                                |
+|     5 | Planks                | Wooden Planks                                       |                                                |
+|     6 | Sapling               | Sapling                                             | [Wood Type](#saplings)                         |
+|     7 | Bedrock               | Bedrock                                             |                                                |
+|     8 | Water (Flowing)       | Water                                               | [Liquid height](#liquids)                      |
+|     9 | Water (Still)         | Water                                               | [Liquid height](#liquids)                      |
+|    10 | Lava (Flowing)        | Lava                                                | [Liquid height](#liquids)                      |
+|    11 | Lava (Still)          | Lava                                                | [Liquid height](#liquids)                      |
+|    12 | Sand                  | Sand                                                |                                                |
+|    13 | Gravel                | Gravel                                              |                                                |
+|    14 | Gold Ore              | Gold Ore                                            |                                                |
+|    15 | Iron Ore              | Iron Ore                                            |                                                |
+|    16 | Coal Ore              | Coal Ore                                            |                                                |
+|    17 | Log                   | Wood                                                | [Wood Type](#logs)                             |
+|    18 | Leaves                | Leaves                                              | [Leaf Type](#leaves)                           |
+|    19 | Sponge                | Sponge                                              |                                                |
+|    20 | Glass                 | Glass                                               |                                                |
+|    21 | Lapis Lazuli Ore      | Lapis Lazuli Ore                                    |                                                |
+|    22 | Lapis Lazuli Block    | Lapis Lazuli Block                                  |                                                |
+|    23 | Dispenser             | Dispenser                                           | [Direction](#dispenser-furnace-ladder)         |
+|    24 | Sandstone             | Sandstone                                           |                                                |
+|    25 | Note Block            | Note Block                                          |                                                |
+|    26 | Bed                   | Bed                                                 | Top/Bottom and Direction                       |
+|    27 | Powered Rail          | Powered Rail                                        | [Direction](#rails)                            |
+|    28 | Detector Rail         | Detector Rail                                       | [Direction](#rails)                            |
+|    29 | Sticky Piston         | Sticky Piston                                       | [Direction and State](#pistons)                |
+|    30 | Cobweb                | Cobweb                                              |                                                |
+|    31 | Tall Grass            |                                                     | Shrub `0`, Grass `1`, Fern `2`                 |
+|    32 | Dead Bush             |                                                     |                                                |
+|    33 | Piston                | Piston                                              | [Direction and State](#pistons)                |
+|    34 | Piston Head           |                                                     | [Direction](#piston-head)                      |
+|    35 | Wool                  |                                                     | [Color](#wool)                                 |
+|    36 | Moving Block          |                                                     |                                                |
+|    37 | Dandelion             | Flower                                              |                                                |
+|    38 | Rose                  | Rose                                                |                                                |
+|    39 | Brown Mushroom        | Mushroom                                            |                                                |
+|    40 | Red Mushroom          | Mushroom                                            |                                                |
+|    41 | Gold Block            | Block of Gold                                       |                                                |
+|    42 | Iron Block            | Block of Iron                                       |                                                |
+|    43 | Double Slab           |                                                     | [Block Type](#double-slabs)                    |
+|    44 | Slab                  | Stone Slab, Sandstone Slab, Wooden Slab, Stone Slab | [Block Type](#double-slabs)                    |
+|    45 | Bricks                | Bricks                                              |                                                |
+|    46 | TNT                   | TNT                                                 |                                                |
+|    47 | Bookshelf             | Bookshelf                                           |                                                |
+|    48 | Mossy Cobblestone     | Moss Stone                                          |                                                |
+|    49 | Obsidian              | Obsidian                                            |                                                |
+|    50 | Torch                 | Torch                                               | [Direction](#torcheslevers)                    |
+|    51 | Fire                  | Fire                                                |                                                |
+|    52 | Monster Spawner       | Monster Spawner                                     |                                                |
+|    53 | Wooden Stairs         | Wooden Stairs                                       | [Direction](#stairs)                           |
+|    54 | Chest                 | Chest                                               |                                                |
+|    55 | Redstone              | Redstone                                            | Power Level                                    |
+|    56 | Diamond Ore           | Diamond Ore                                         |                                                |
+|    57 | Diamond Block         | Block of Diamond                                    |                                                |
+|    58 | Crafting Table        | Crafting Table                                      |                                                |
+|    59 | Wheat                 | Crops                                               | Growth Stage (0-7)                             |
+|    60 | Farmland              | Farmland                                            | >0 if wet                                      |
+|    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder)         |
+|    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder)         |
+|    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                         |
+|    64 | Wooden Door           | Wooden Door                                         | [Direction + Open/Closed + Top/Bottom](#doors) |
+|    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder)         |
+|    66 | Rail                  | Rail                                                | [Direction](#rails)                            |
+|    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                           |
+|    68 | Sign (wall)           | Sign                                                | Direction                                      |
+|    69 | Lever                 | Lever                                               | Toggled & Direction                            |
+|    70 | Stone Pressure Plate  | Pressure Plate                                      | Toggled                                        |
+|    71 | Iron Door             | Iron Door                                           | [Direction + Open/Closed + Top/Bottom](#doors) |
+|    72 | Wooden Pressure Plate | Pressure Plate                                      | Toggled                                        |
+|    73 | Redstone Ore          | Redstone Ore                                        |                                                |
+|    74 | Lit Redstone Ore      | Redstone Ore                                        |                                                |
+|    75 | Redstone Torch        | Redstone Torch                                      | [Direction](#torcheslevers)                    |
+|    76 | Lit Redstone Torch    | Redstone Torch                                      | [Direction](#torcheslevers)                    |
+|    77 | Stone Button          | Button                                              | Toggled & Direction                            |
+|    78 | Snow (Layer)          | Snow                                                |                                                |
+|    79 | Ice                   | Ice                                                 |                                                |
+|    80 | Snow Block            | Snow                                                |                                                |
+|    81 | Cactus                | Cactus                                              |                                                |
+|    82 | Clay                  | Clay                                                |                                                |
+|    83 | Sugar Cane            | Sugar Canes                                         |                                                |
+|    84 | Jukebox               | Jukebox                                             |                                                |
+|    85 | Fence                 | Fence                                               |                                                |
+|    86 | Pumpkin               | Pumpkin                                             | Direction                                      |
+|    87 | Netherrack            | Netherrack                                          |                                                |
+|    88 | Soul Sand             | Soul Sand                                           |                                                |
+|    89 | Glowstone             | Glowstone                                           |                                                |
+|    90 | Nether Portal         | Portal                                              |                                                |
+|    91 | Jack'o'Lantern        | Jack 'o' Lantern                                    | Direction                                      |
+|    92 | Cake                  | Cake                                                | Eatness                                        |
+|    93 | Redstone Repeater     |                                                     | Direction                                      |
+|    94 | Lit Redstone Repeater |                                                     | Direction                                      |
+|    95 | Locked Chest          | Locked chest                                        |                                                |
+|    96 | Trapdoor              | Trapdoor                                            | [Direction + Open/Closed](#trapdoors)          |
 
 # Metadata
 
@@ -158,12 +158,12 @@ Any other value will appear as oak.
 
 Leaves have 3/4 distinct values. Only oak is biome-colored.
 
-| Value | Color               |
-| ----: | :------------------ |
-|     0 | Oak                 |
-|     1 | Spruce              |
-|     2 | Birch               |
-|     4 | Oak (spruce colors) |
+| Value | Color                        |
+| ----: | :--------------------------- |
+|     0 | Oak                          |
+|     1 | Spruce                       |
+|     2 | Birch                        |
+|     4 | Oak (spruce colors, Invalid) |
 
 The values after this simply follow the same pattern.
 
@@ -181,6 +181,45 @@ Meanwhile, for ladders, the wall it's attached to/the direction a player faces a
 |     4 | North          |
 |     5 | South          |
 |  6-15 | None (Invalid) |
+
+## Pistons
+
+Pistons and Sticky pistons use their metadata values to indicate both their direction and state.
+The lower 3-Bits indicate the pistons direction, while the remaining bit indicates whether the piston is retracted `0` or extended `1`.
+
+| Value | Direction     |
+| ----: | :------------ |
+|     0 | Down          |
+|     1 | Up            |
+|     2 | East          |
+|     3 | West          |
+|     4 | North         |
+|     5 | South         |
+|     6 | All (Invalid) |
+|     7 | All (Invalid) |
+
+## Piston Head
+
+The piston head uses it's metadata like the pistons, though with one difference. The last bit is used to indicate whether the piston head is normal `0` or sticky `1`.
+
+| Value | Direction      |
+| ----: | :------------- |
+|     0 | Down (Normal)  |
+|     1 | Up (Normal)    |
+|     2 | East (Normal)  |
+|     3 | West (Normal)  |
+|     4 | North (Normal) |
+|     5 | South (Normal) |
+|   6-7 | (Invalid)      |
+|     8 | Down (Sticky)  |
+|     9 | Up (Sticky)    |
+|    10 | East (Sticky)  |
+|    11 | West (Sticky)  |
+|    12 | North (Sticky) |
+|    13 | South (Sticky) |
+| 14-15 | (Invalid)      |
+
+Values 6, 7, 14 and 15 do not render.
 
 ## Wool
 
@@ -208,36 +247,15 @@ Wool exists in 16 distinct colors.
 > [!NOTE]
 > The color swatches were estimated by dividing the colored wool textures with the white one, then averaging the resulting images. This gets us decently close to the original colors that were used before the wool texture was applied ontop.
 
-## Pistons
+## (Double) Slabs
 
-Pistons and Sticky pistons use their metadata values to indicate both their direction and state.
-The lower 3-Bits indicate the pistons direction, while the remaining bit indicates whether the piston is retracted `0` or extended `1`.
-
-| Value | Direction     |
-| ----: | :------------ |
-|     0 | Down          |
-|     1 | Up            |
-|     2 | East          |
-|     3 | West          |
-|     4 | North         |
-|     5 | South         |
-|     6 | All (Invalid) |
-|     7 | All (Invalid) |
-
-## Piston Head
-
-The piston head uses it's metadata like the pistons, though with one difference. The last bit is used to indicate whether the piston head is normal `0` or sticky `1`.
-
-| Value | Direction |
-| ----: | :-------- |
-|     0 | Down      |
-|     1 | Up        |
-|     2 | East      |
-|     3 | West      |
-|     4 | North     |
-|     5 | South     |
-
-Values 6 and 7 do not render.
+| Value | Direction    |
+| ----: | :----------- |
+|     0 | Stone        |
+|     1 | Sandstone    |
+|     2 | Planks/Wood  |
+|     3 | Cobblestone  |
+|  4-15 | Up (Invalid) |
 
 ## Torches/Levers
 
@@ -262,6 +280,7 @@ The "facing" direction is determined where the missing quarter is.
 |     1 | South     |
 |     2 | East      |
 |     3 | West      |
+|  4-15 | (Invalid) |
 
 Values 4 to 15 do not render.
 
@@ -305,8 +324,18 @@ The angles are given relative to West.
 |     7 | West/South  |
 |     8 | West/North  |
 |     9 | East/West   |
+| 10-15 | (Invalid)   |
 
 ### Doors
+
+The state of a door can be figured out via a bitmask.
+
+| Bit   | Meaning                                      |
+| ----- | -------------------------------------------- |
+| 3     | `0` Bottom, `1` Top                          |
+| 2     | `0` Closed, `1` Open                         |
+| 1 - 0 | `00` North, `01` East, `10` South, `11` West |
+
 | Value | Direction              |
 | ----: | :--------------------- |
 |     0 | North (Bottom, Closed) |
@@ -327,14 +356,25 @@ The angles are given relative to West.
 |    15 | West (Top, Open)       |
 
 ### Trapdoors
-| Value | Direction              |
-| ----: | :--------------------- |
-|     0 | East (Closed)  |
-|     1 | West (Closed)  |
-|     2 | North (Closed) |
-|     3 | South (Closed) |
-|     4 | East  (Open)   |
-|     5 | West (Open)    |
-|     6 | North (Open)   |
-|     7 | South (Open)    |
 
+The state of a trapdoor can be figured out via a bitmask.
+
+| Bit   | Meaning                                      |
+| ----- | -------------------------------------------- |
+| 3     | (Ignored)                                    |
+| 2     | `0` Closed, `1` Open                         |
+| 1 - 0 | `00` East, `01` West, `10` North, `11` South |
+
+|  Value | Direction           |
+| -----: | :------------------ |
+|      0 | East (Closed)       |
+|      1 | West (Closed)       |
+|      2 | North (Closed)      |
+|      3 | South (Closed)      |
+|      4 | East (Open)         |
+|      5 | West (Open)         |
+|      6 | North (Open)        |
+|      7 | South (Open)        |
+| 8 - 15 | (Repeats, Invalid ) |
+
+The top-most bit is filtered out, meaning that
