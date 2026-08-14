@@ -19,13 +19,13 @@ These data types function the same as they're described on the [data types page]
 
 | ID  | Type        | Note                                                     |
 | --- | ----------- | -------------------------------------------------------- |
-| 0   | Byte        | A signed 8-bit value                                     |
-| 1   | Short       | A signed 16-bit value                                    |
-| 2   | Integer     | A signed 32-bit value                                    |
-| 3   | Float       | A signed 32-bit IEEE 754 floating-point number           |
-| 4   | String      | Uses the modified UCS-2 string format                    |
-| 5   | Item        | Short (item/block ID), byte (quantity), short (metadata) |
-| 6   | Coordinates | Three integers for X, Y, and Z                           |
+| `0`   | Byte        | A signed 8-bit value                                     |
+| `1`   | Short       | A signed 16-bit value                                    |
+| `2`   | Integer     | A signed 32-bit value                                    |
+| `3`   | Float       | A signed 32-bit IEEE 754 floating-point number           |
+| `4`   | String      | Uses the modified UCS-2 string format                    |
+| `5`   | Item        | Short (item/block ID), byte (quantity), short (metadata) |
+| `6`   | Coordinates | Three integers for X, Y, and Z                           |
 
 ## Entities
 
