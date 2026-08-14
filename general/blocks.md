@@ -376,5 +376,3 @@ The state of a trapdoor can be figured out via a bitmask.
 |      6 | North (Open)        |
 |      7 | South (Open)        |
 | 8 - 15 | (Repeats, Invalid ) |
-
-The top-most bit is filtered out, meaning that
