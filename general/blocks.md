@@ -376,3 +376,19 @@ The state of a trapdoor can be figured out via a bitmask.
 |      6 | North (Open)        |
 |      7 | South (Open)        |
 | 8 - 15 | (Repeats, Invalid ) |
+
+## Button
+
+| Value | Direction         |
+| ----: | :---------------- |
+|     0 | (Invalid)         |
+|     1 | South (Unpressed) |
+|     2 | North (Unpressed) |
+|     3 | East (Unpressed)  |
+|     4 | West (Unpressed)  |
+|   5-8 | (Invalid)         |
+|     9 | South (Pressed)   |
+|    10 | North (Pressed)   |
+|    11 | East (Pressed)    |
+|    12 | West (Pressed)    |
+| 13-15 | (Invalid)         |
