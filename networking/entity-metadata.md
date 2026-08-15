@@ -8,24 +8,24 @@ Entity metadata is a format introduced in Beta 1.2 for sending entity state over
 
 ## Format
 
-To read entity metadata, follow these steps in a loop until a value of `127`/`0x7F` is read
+To read entity metadata, follow these steps in a loop until a value of `127`/`0x7F` is read:
 
-1. Get the data type via the top 3 bytes `value >> 5`
-1. Get the metadata ID via the bottom 5 bits, equal to `value & 0x1F`
+1. Get the data type via the top 3 bits, equal to `(value & 224) >> 5`
+2. Get the metadata ID via the bottom 5 bits, equal to `value & 0x1F`
 
 ## Data Types
 
 These data types function the same as they're described on the [data types page](../technical/data-types), except for a few special types.
 
-| ID  | Type        | Note                                                     |
-| --- | ----------- | -------------------------------------------------------- |
-| `0` | Byte        | A signed 8-bit value                                     |
-| `1` | Short       | A signed 16-bit value                                    |
-| `2` | Integer     | A signed 32-bit value                                    |
-| `3` | Float       | A signed 32-bit IEEE 754 floating-point number           |
-| `4` | String      | Uses the modified UCS-2 string format                    |
-| `5` | Item        | Short (item/block ID), byte (quantity), short (metadata) |
-| `6` | Coordinates | Three integers for X, Y, and Z                           |
+| ID  | Type        | Note                                                      |
+| --- | ----------- | --------------------------------------------------------- |
+| `0` | Byte        | A signed 8-bit value                                      |
+| `1` | Short       | A signed 16-bit value                                     |
+| `2` | Integer     | A signed 32-bit value                                     |
+| `3` | Float       | A signed 32-bit IEEE 754 floating-point number            |
+| `4` | String      | Uses the modified UCS-2 string format (max 64 characters) |
+| `5` | Item        | Short (item/block ID), byte (quantity), short (metadata)  |
+| `6` | Coordinates | Three integers for X, Y, and Z                            |
 
 ## Entities
 
@@ -172,7 +172,7 @@ These are the values that're sent with each entity. To get a full listing of all
                 <tr>
                     <td>16</td>
                     <td>Byte</td>
-                    <td>Sitting?</td>
+                    <td><a href="#wolf-flags">Flags</a></td>
                 </tr>
                 <tr>
                     <td>17</td>
@@ -203,6 +203,16 @@ All entities extending the `Entity` class must support this bit field at metadat
 | 0   | 0x01     | Burning  |
 | 1   | 0x02     | Sneaking |
 | 2   | 0x04     | Riding   |
+
+### Wolf Flags
+
+Wolves have additional flags that affect client rendering. To get the flag at an ID, you can use `value & mask != 0`.
+
+| ID  | Bit Mask | Name    |
+| --- | -------- | ------- |
+| 0   | 0x01     | Sitting |
+| 1   | 0x02     | Angry   |
+| 2   | 0x04     | Tamed   |
 
 ## Relevant Classes
 
