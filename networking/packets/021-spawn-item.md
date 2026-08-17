@@ -22,9 +22,12 @@ Sent to the client when an item entity should be spawned. The position and rotat
 | X             | Integer | The X position of the item entity (Quantized)     |
 | Y             | Integer | The Y position of the item entity (Quantized)     |
 | Z             | Integer | The Z position of the item entity (Quantized)     |
-| Yaw           | Byte    | Rotation on the X Axis (Quantized)                |
-| Pitch         | Byte    | Rotation on the Y Axis (Quantized)                |
-| Roll          | Byte    | Rotation on the Z Axis (Quantized)                |
+| Pitch         | Byte    | Quantized Velocity in the X axis                  |
+| Yaw           | Byte    | Quantized Velocity in the Y axis                  |
+| Roll          | Byte    | Quantized Velocity in the Z axis                  |
+
+> [!NOTE]
+> This is not a typo. Notch indeed used the Pitch, Yaw and Roll fields of the SpawnItem packet to carry the initial velocity. For quantization, multiply the velocity by 128, cast to int8 and then cast to byte.
 
 ## Example Packet
 
