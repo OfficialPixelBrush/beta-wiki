@@ -287,9 +287,20 @@ TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be
 | Beta 1.7              | Beta 1.7.3            | `14`             | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769763> |
 | Beta 1.8              | Beta 1.8.1            | `17`             | <https://minecraft.wiki/w/Minecraft_Wiki:Projects/wiki.vg_merge/Protocol?oldid=2769858> |
 | Beta 1.9 Pre-6        | Release 1.0.1         | `22`             | TODO                                                                                    |
+| 12w01a                | Release 1.1           | `23`             |                                                                                         |
+| 12w03a                | 12w05b                | `24`             |                                                                                         |
+| 12w06a                | 12w06a                | `25`             |                                                                                         |
+| 12w07a                | Release 1.1           | `26`             |                                                                                         |
+| 12w01a                | 12w07b                | `27`             |                                                                                         |
+| 12w08a                | Release 1.2.3         | `28`             | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?oldid=2770632>                  |
+| Release 1.2.4         | 12w15a                | `29`             |                                                                                         |
+| 12w16a                | 12w16a                | `30`             |                                                                                         |
+| 12w17a                | 12w17a                | `31`             |                                                                                         |
 | Release 1.6.4         | Release 1.6.4         | `78`             | <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2771078>   |
-| Snapshot 13w38a       | Snapshot 13w38c       | `79`             | (undocumented)                                                                          |
-| Snapshot 13w39a       | Snapshot 13w39b       | `80`             | (undocumented)                                                                          |
+| 13w38a                | 13w38c                | `79`             | (undocumented)                                                                          |
+| 13w39a                | 13w39b                | `80`             | (undocumented)                                                                          |
 
 From Snapshot 13w41a (Release 1.7) onward, the protocol was rewritten to use Netty, which goes about describing packet data entirely differently.
 Here's the first edit on the old Protocol docs to describe this change: <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2771080>
+
+The [Minecraft Wiki pre-netty rewrite protocol version list](https://minecraft.wiki/w/Protocol_version#Java_Edition_(pre-netty_rewrite)) was used as a reference.

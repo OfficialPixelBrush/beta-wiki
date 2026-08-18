@@ -60,13 +60,13 @@ The integer that's passed in is turned into a coordinate for a flat `3x3` grid, 
 
 ## Example Packet
 
-| Field     | Value                                                                      |
-| --------- | -------------------------------------------------------------------------- |
-| Effect ID | `1005` (MUSIC_DISC)                                                        |
-| X         | `105`                                                                      |
-| Y         | `72`                                                                       |
-| Z         | `649`                                                                      |
-| Data      | `2257` (<TextureSwatch texture_name="items/record_cat.png" label="cat" />) |
+| Field     | Value                                                                  |
+| --------- | ---------------------------------------------------------------------- |
+| Effect ID | `1005` (MUSIC_DISC)                                                    |
+| X         | `105`                                                                  |
+| Y         | `72`                                                                   |
+| Z         | `649`                                                                  |
+| Data      | `2257` (<TextureSwatch texture_name="items/record_cat" label="cat" />) |
 
 ## Further reading
 
