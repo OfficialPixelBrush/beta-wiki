@@ -26,6 +26,9 @@ The vanilla server will set the hash to `-` if online mode is disabled, which wi
 | -------- | -------- | ------------------------------- |
 | Username | String16 | The name of the connecting user |
 
+> [!NOTE]
+> The username sent here is not used by the Notchian Server whatsoever, as in, it doesn't get checked for special characters or used for authentication later during the login packet. It sometimes gets hijacked by mods like OrnitheMC to tell the server which mods the client is using. As a result it's best to either ignore the username or to reject any Clients that send it with a proper disconnect message.
+
 ## Example Packets
 
 ### Clientbound
