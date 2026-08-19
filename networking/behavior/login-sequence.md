@@ -11,8 +11,8 @@ The bare minimum number of packets to join a server with a Notchian client is as
 
 | Packet                                                                                         | Contents                                                    |
 | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-| `C->S` [Pre-Login](../packets/002-pre-login#serverbound)                                       | Giving the server the client name                           |
-| `S->C` [Pre-Login](../packets/002-pre-login#clientbound)                                       | Gives the client a connection hash                          |
+| `C->S` [Pre-Login](../packets/002-pre-login#serverbound)                                       | Telling the server a client would like to connect           |
+| `S->C` [Pre-Login](../packets/002-pre-login#clientbound)                                       | Gives the client the server id                              |
 | `C->S` [Login](../packets/001-login#serverbound)                                               | Gives the server info about the client                      |
 | `S->C` [Login](../packets/001-login#clientbound)                                               | Gives the client info about the to-be-used player and world |
 | `S->C` [Player Position and Rotation](../packets/013-player-position-and-rotation#clientbound) | Sets the players position in the world                      |
@@ -25,8 +25,8 @@ This will place the player into an empty world at sunrise. The player will begin
 
 | Packet                                                                                       | Contents                                                    |
 | :------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-| `C->S` [Pre-Login](../packets/002-pre-login#serverbound)                                     | Giving the server the client name                           |
-| `S->C` [Pre-Login](../packets/002-pre-login#clientbound)                                     | Gives the client a connection hash                          |
+| `C->S` [Pre-Login](../packets/002-pre-login#serverbound)                                     | Telling the server a client would like to connect           |
+| `S->C` [Pre-Login](../packets/002-pre-login#clientbound)                                     | Gives the client the server id                              |
 | `C->S` [Login](../packets/001-login#serverbound)                                             | Gives the server info about the client                      |
 | `S->C` [Login](../packets/001-login#clientbound)                                             | Gives the client info about the to-be-used player and world |
 | `S->C` [Set Compass Target Position](../packets/006-set-compass-target-position#clientbound) | Makes the players compass point at their spawn              |
@@ -35,3 +35,5 @@ This will place the player into an empty world at sunrise. The player will begin
 | `S->C` [Fill Container](../packets/104-fill-container)                                       | Sets the players inventory                                  |
 
 This is followed by a bunch of [Set Chunk Visibility](../packets/050-set-chunk-visibility) packets to load the chunks, and [Chunk](../packets/051-chunk-block-region) packets which contain the actual chunk data, alongside the server and Client exchanging position and rotation information.
+
+For info on how Authencation/Online Mode comes into play, check the [Authentication page](../authentication).
