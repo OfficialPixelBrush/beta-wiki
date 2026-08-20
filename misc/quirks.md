@@ -83,6 +83,10 @@ The id of entities is stored as a signed 32-bit integer, which has a maximum val
 
 ## Networking
 
+### Client Packet Processing Limit
+
+The Notchian Beta 1.7.3 Client can only process ~100 Packets per Tick. Any subsequent packets are thrown onto a buffer to be processed in subsequent ticks. It's trivial to overstep this limit with lots of entities sending their positions. While this doesn't result in a crash or frame drops, it does result in very nasty rubberbanding if the buffer isn't given a chance to clear out.
+
 ### Spawn Object Packet
 
 The [spawn object packet](../networking/packets/023-spawn-object) determines if an entity, such as an Arrow, has an initial velocity by checking if the owner entity id is greater than `0`. If the global entity id overflows into the negatives, all arrows and fireballs would be sent without an initial velocity.
