@@ -25,5 +25,5 @@ Velocity is also sent to help the client smooth out the motion.
 
 ## Further Reading
 
-- [Entities](/entities)
+- [Entities](/entities/index)
 - [Entity Packets](../packets/index#entity)
