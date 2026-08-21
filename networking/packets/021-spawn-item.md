@@ -11,6 +11,10 @@ order: 22
 
 Sent to the client when an item entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
 
+The sent velocity values are multiplied by `128` before being sent out. The client undoes this multiplication.
+
+The velocity values are capped between `-1.00` (`-128/128`) and `+0.99` (`+127/128`), as they're sent as signed bytes.
+
 ## Clientbound
 
 | Field         | Type    | Description                                       |
@@ -22,12 +26,9 @@ Sent to the client when an item entity should be spawned. The position and rotat
 | X             | Integer | The X position of the item entity (Quantized)     |
 | Y             | Integer | The Y position of the item entity (Quantized)     |
 | Z             | Integer | The Z position of the item entity (Quantized)     |
-| Pitch         | Byte    | Quantized Velocity in the X axis                  |
-| Yaw           | Byte    | Quantized Velocity in the Y axis                  |
-| Roll          | Byte    | Quantized Velocity in the Z axis                  |
-
-> [!NOTE]
-> This is not a typo. Notch indeed used the Pitch, Yaw and Roll fields of the SpawnItem packet to carry the initial velocity. For quantization, multiply the velocity by 128, cast to int8 and then cast to byte.
+| X Velocity    | Byte    | Velocity on the X axis (Quantized)                |
+| Y Velocity    | Byte    | Velocity on the Y axis (Quantized)                |
+| Z Velocity    | Byte    | Velocity on the Z axis (Quantized)                |
 
 ## Example Packet
 
@@ -40,6 +41,6 @@ Sent to the client when an item entity should be spawned. The position and rotat
 | X             | `5669` (`177.15`)                                                          |
 | Y             | `2176` (`68.0`)                                                            |
 | Z             | `-5325` (`-166.40`)                                                        |
-| Yaw           | `16` (`22.58`)                                                             |
-| Pitch         | `9` (`12.70`)                                                              |
-| Roll          | `0` (`0.0`)                                                                |
+| X Velocity    | `-9` (`-0.07`)                                                             |
+| Y Velocity    | `25` (`0.19`)                                                              |
+| Z Velocity    | `-1` (`-0.00`)                                                             |
