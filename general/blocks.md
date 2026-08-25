@@ -134,7 +134,7 @@ Here's a one-stop look-up to determine the appropriate value for a given directi
 |                                                           [Doors](#doors) |     3      |     1      |     0     |     2     |    -    |     -     |
 | [Dispenser/Furnace/Ladder/Wall Sign](#dispenser-furnace-ladder-wall-sign) |     2      |     3      |     5     |     4     |    -    |     -     |
 |                                                       [Pistons](#pistons) |     2      |     3      |     4     |     5     |    1    |     0     |
-|                                                               [Bed](#bed) |     2      |     0      |     1     |     3     |    -    |     -     |
+|                                                               [Bed](#bed) |     2      |     0      |     3     |     1     |    -    |     -     |
 |                         [Pumpkin/Jack'o'Lantern](#pumpkin-jack-o-lantern) |     2      |     0      |     3     |     1     |    -    |     -     |
 |                                                    [Trapdoor](#trapdoors) |     1      |     0      |     2     |     3     |    -    |     -     |
 |                                   [Redstone Repeater](#redstone-repeater) |     0      |     2      |     1     |     3     |    -    |     -     |
@@ -221,9 +221,9 @@ Their direction will be determined based on which way the player needs to stand 
 | Value | Direction     |
 | ----: | :------------ |
 |     0 | South         |
-|     1 | East          |
+|     3 | East          |
 |     2 | North         |
-|     3 | West          |
+|     1 | West          |
 |   4-7 | (Same as 0-3) |
 
 ## Wool
