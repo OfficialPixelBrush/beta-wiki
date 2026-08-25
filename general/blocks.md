@@ -120,6 +120,25 @@ Here is a comprehensive listing of all blocks.
 Many blocks make use of the 4-bit metadata values that they have access to.
 Often times these are used for indicating their direction. Sometimes they're used for if they're activated, open or if they're a variety of a share base-block, such as the different wool colors or logs.
 
+## Direction Look-up
+
+A lot of blocks just use the metadata for directionality information, but in different ways.
+Here's a one-stop look-up to determine the appropriate value for a given direction of a group of blocks.
+
+|                                                               Block Group | North (-Z) | South (+Z) | East (+X) | West (-X) | Up (+Y) | Down (-Y) |
+| ------------------------------------------------------------------------: | :--------: | :--------: | :-------: | :-------: | :-----: | :-------: |
+|                                                           [Torch](#torch) |     4      |     3      |     2     |     1     |    5    |     -     |
+|                                                           [Lever](#lever) |     4      |     3      |     2     |     1     |   5/6   |     -     |
+|                                                         [Button](#button) |     4      |     3      |     2     |     1     |    -    |     -     |
+|                                                         [Stairs](#stairs) |     3      |     2      |     0     |     1     |    -    |     -     |
+|                                                           [Doors](#doors) |     3      |     1      |     0     |     2     |    -    |     -     |
+| [Dispenser/Furnace/Ladder/Wall Sign](#dispenser-furnace-ladder-wall-sign) |     2      |     3      |     5     |     4     |    -    |     -     |
+|                                                       [Pistons](#pistons) |     2      |     3      |     4     |     5     |    1    |     0     |
+|                                                               [Bed](#bed) |     2      |     0      |     1     |     3     |    -    |     -     |
+|                         [Pumpkin/Jack'o'Lantern](#pumpkin-jack-o-lantern) |     2      |     0      |     3     |     1     |    -    |     -     |
+|                                                    [Trapdoor](#trapdoors) |     1      |     0      |     2     |     3     |    -    |     -     |
+|                                   [Redstone Repeater](#redstone-repeater) |     0      |     2      |     1     |     3     |    -    |     -     |
+
 ## Liquids
 
 Liquids indicate their level with their metadata. Generally, the further away they are from a water source, the lower their level gets.
