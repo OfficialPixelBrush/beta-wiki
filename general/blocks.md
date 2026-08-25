@@ -139,6 +139,9 @@ Here's a one-stop look-up to determine the appropriate value for a given directi
 |                                                    [Trapdoor](#trapdoors) |     1      |     0      |     2     |     3     |    -    |     -     |
 |                                   [Redstone Repeater](#redstone-repeater) |     0      |     2      |     1     |     3     |    -    |     -     |
 
+> [!NOTE]
+> These values may not represent the full state of a block. [Doors](#doors) for example still use some other bits to determine whether they're the top/bottom half or if they're open/closed. This table ignores that and just goes with the numbers that determine the direction, and nothing else.
+
 ## Liquids
 
 Liquids indicate their level with their metadata. Generally, the further away they are from a water source, the lower their level gets.
