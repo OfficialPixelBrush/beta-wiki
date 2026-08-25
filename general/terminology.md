@@ -11,15 +11,6 @@ This page will explain terminology used throughout this entire section of the wi
 
 Minecraft describes positions and directions using signed X,Y,Z coordinates. For more info on how these directions are determined, check the [directions page](./directions).
 
-| Minecraft | Cardinal Direction |
-| --------- | ------------------ |
-| -X        | North              |
-| +X        | South              |
-| +Z        | East               |
-| -Z        | West               |
-| +Y        | Up                 |
-| -Y        | Down               |
-
 # Spaces
 
 Spaces describe where and how coordinates are expressed within the world.
