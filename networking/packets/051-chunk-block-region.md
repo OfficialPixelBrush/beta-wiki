@@ -11,7 +11,7 @@ order: 52
 
 The packets is sent from the server to the client to update the blocks in the specified area.
 
-The origin coordinate (x,y,z) is in [block space](../terminology#block-space). It describes the bottom, most-negative block.
+The origin coordinate (x,y,z) is in [block space](/general/terminology#block-space). It describes the bottom, most-negative block.
 The to-be-updated volume is defined by the width, height and length bytes which the server subtracts `1` from to allow updating of a 256x128x256 area\*.
 
 <sub>\* untested, but height values more than `127` seem to crash the client</sub>

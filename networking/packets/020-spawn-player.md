@@ -9,7 +9,7 @@ order: 21
 | --------- | ----------- | ----------------- | -------------------------- |
 | `0x14`    | Clientbound | `AddPlayerPacket` | `Packet20NamedEntitySpawn` |
 
-Sent to the client when a player entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
+Sent to the client when a player entity should be spawned. The position and rotation are in [entity space](/general/terminology#entity-space).
 
 ## Clientbound
 

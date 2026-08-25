@@ -11,7 +11,7 @@ order: 33
 
 ## Clientbound
 
-Sent to the client to set an entity's view angles. As the rotation data is in [entity space](../terminology#entity-space) it is quantized.
+Sent to the client to set an entity's view angles. As the rotation data is in [entity space](/general/terminology#entity-space) it is quantized.
 
 | Field     | Type    | Description                                            |
 | --------- | ------- | ------------------------------------------------------ |

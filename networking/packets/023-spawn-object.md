@@ -9,7 +9,7 @@ order: 24
 | --------- | ----------- | ----------------- | ---------------------- |
 | `0x17`    | Clientbound | `AddEntityPacket` | `Packet23VehicleSpawn` |
 
-Sent to the client when an [object entity](../../entities/objects) should be spawned. The position is in [entity space](../terminology#entity-space). See the [Entity Velocity packet](./028-entity-velocity) for more info on how velocity is sent.
+Sent to the client when an [object entity](../../entities/objects) should be spawned. The position is in [entity space](/general/terminology#entity-space). See the [Entity Velocity packet](./028-entity-velocity) for more info on how velocity is sent.
 
 ## Clientbound
 

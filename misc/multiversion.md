@@ -109,7 +109,7 @@ The Title field's type changed from `String8` to `String16`.
 | --------- | ----------- | ----------- | ---------------------- |
 | `0x1A`    | Clientbound | TODO        | `Packet26EntityExpOrb` |
 
-Position is in [block space](/networking/terminology#block-space).
+Position is in [block space](/general/terminology#block-space).
 
 | Field     | Type    | Description                       |
 | --------- | ------- | --------------------------------- |

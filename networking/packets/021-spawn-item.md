@@ -9,7 +9,7 @@ order: 22
 | --------- | ----------- | --------------------- | --------------------- |
 | `0x15`    | Clientbound | `AddItemEntityPacket` | `Packet21PickupSpawn` |
 
-Sent to the client when an item entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
+Sent to the client when an item entity should be spawned. The position and rotation are in [entity space](/general/terminology#entity-space).
 
 The sent velocity values are multiplied by `128` before being sent out. The client undoes this multiplication.
 

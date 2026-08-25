@@ -9,7 +9,7 @@ order: 26
 | --------- | ----------- | ------------------- | ------------------------ |
 | `0x19`    | Clientbound | `AddPaintingPacket` | `Packet25EntityPainting` |
 
-Sent to the client when a painting entity should be spawned. The position is (probably) in [entity space](../terminology#entity-space).
+Sent to the client when a painting entity should be spawned. The position is (probably) in [entity space](/general/terminology#entity-space).
 
 ## Clientbound
 

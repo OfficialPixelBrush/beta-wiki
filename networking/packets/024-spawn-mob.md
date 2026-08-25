@@ -9,7 +9,7 @@ order: 25
 | --------- | ----------- | -------------- | ------------------ |
 | `0x18`    | Clientbound | `AddMobPacket` | `Packet24MobSpawn` |
 
-Sent to the client when a mob entity should be spawned. The position and rotation are in [entity space](../terminology#entity-space).
+Sent to the client when a mob entity should be spawned. The position and rotation are in [entity space](/general/terminology#entity-space).
 
 ## Clientbound
 
