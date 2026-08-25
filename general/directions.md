@@ -29,4 +29,4 @@ Chests automatically orient themselves when placed against another block, to ens
 ## Further Reading
 
 The directions found here line up with what they've been determined as in modern versions
- as proven by [the Navigation page on the Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Navigation).
+as proven by [the Navigation page on the Minecraft Wiki](https://minecraft.wiki/w/Tutorial:Navigation).

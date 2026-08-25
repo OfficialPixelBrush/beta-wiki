@@ -303,4 +303,4 @@ TODO: beta 1.2 and 1.1 sharing the same protocol version is suspicious, could be
 From Snapshot 13w41a (Release 1.7) onward, the protocol was rewritten to use Netty, which goes about describing packet data entirely differently.
 Here's the first edit on the old Protocol docs to describe this change: <https://minecraft.wiki/w/Java_Edition_protocol/Packets?direction=next&oldid=2771080>
 
-The [Minecraft Wiki pre-netty rewrite protocol version list](https://minecraft.wiki/w/Protocol_version#Java_Edition_(pre-netty_rewrite)) was used as a reference.
+The [Minecraft Wiki pre-netty rewrite protocol version list](<https://minecraft.wiki/w/Protocol_version#Java_Edition_(pre-netty_rewrite)>) was used as a reference.

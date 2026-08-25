@@ -246,12 +246,13 @@ The "facing" direction of a torch is determined by the direction it's sticking o
 
 | Value | Direction    |
 | ----: | :----------- |
-|     0 | Up           |
+|     0 | Up (Invalid) |
 |     1 | West         |
 |     2 | East         |
 |     3 | South        |
 |     4 | North        |
-|  5-15 | Up (Invalid) |
+|     5 | Up           |
+|  6-15 | Up (Invalid) |
 
 ## Stairs
 
@@ -415,12 +416,12 @@ the upper 2 bits indicate their delay.
 | `xx10` | South     |
 | `xx11` | West      |
 
-|  Value | Delay |
-| -----: | :---- |
-| `00xx` | 1     |
-| `01xx` | 2     |
-| `10xx` | 3     |
-| `11xx` | 4     |
+|  Value | Delay (ticks) |
+| -----: | :------------ |
+| `00xx` | `2`           |
+| `01xx` | `4`           |
+| `10xx` | `6`           |
+| `11xx` | `8`           |
 
 ## Pistons
 

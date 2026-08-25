@@ -29,8 +29,8 @@ A torch uses its 4-bit values for its orientation.
 | Metadata value | Appearance                    |
 | -------------: | ----------------------------- |
 |            `0` | -                             |
-|            `1` | Attached to -X (Facing East)  |
-|            `2` | Attached to +X (Facing West)  |
+|            `1` | Attached to -X (Facing West)  |
+|            `2` | Attached to +X (Facing East)  |
 |            `3` | Attached to -Z (Facing South) |
 |            `4` | Attached to +Z (Facing North) |
 |            `5` | Attached to -Y (Facing Up)    |
