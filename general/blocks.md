@@ -127,9 +127,9 @@ Here's a one-stop look-up to determine the appropriate value for a given directi
 
 |                                                               Block Group | North (-Z) | South (+Z) | East (+X) | West (-X) | Up (+Y) | Down (-Y) |
 | ------------------------------------------------------------------------: | :--------: | :--------: | :-------: | :-------: | :-----: | :-------: |
-|                                                           [Torch](#torch) |     4      |     3      |     2     |     1     |    5    |     -     |
-|                                                           [Lever](#lever) |     4      |     3      |     2     |     1     |   5/6   |     -     |
-|                                                         [Button](#button) |     4      |     3      |     2     |     1     |    -    |     -     |
+|                                                           [Torch](#torch) |     4      |     3      |     1     |     2     |    5    |     -     |
+|                                                           [Lever](#lever) |     4      |     3      |     1     |     2     |   5/6   |     -     |
+|                                                         [Button](#button) |     4      |     3      |     1     |     2     |    -    |     -     |
 |                                                         [Stairs](#stairs) |     3      |     2      |     0     |     1     |    -    |     -     |
 |                                                           [Doors](#doors) |     3      |     1      |     0     |     2     |    -    |     -     |
 | [Dispenser/Furnace/Ladder/Wall Sign](#dispenser-furnace-ladder-wall-sign) |     2      |     3      |     5     |     4     |    -    |     -     |
@@ -269,8 +269,8 @@ The "facing" direction of a torch is determined by the direction it's sticking o
 | Value | Direction    |
 | ----: | :----------- |
 |     0 | Up (Invalid) |
-|     1 | West         |
-|     2 | East         |
+|     1 | East         |
+|     2 | West         |
 |     3 | South        |
 |     4 | North        |
 |     5 | Up           |
@@ -404,8 +404,8 @@ The lower 3 bits are used for the direction, the highest bit is used for whether
 | Value | Direction        |
 | ----: | :--------------- |
 |     0 | (Invalid)        |
-|     1 | West             |
-|     2 | East             |
+|     1 | East             |
+|     2 | West             |
 |     3 | South            |
 |     4 | North            |
 |     5 | Up (North-South) |
@@ -420,8 +420,8 @@ The lower 3 bits are used for the direction, the highest bit is used for whether
 | Value | Direction |
 | ----: | :-------- |
 |     0 | (Invalid) |
-|     1 | West      |
-|     2 | East      |
+|     1 | East      |
+|     2 | West      |
 |     3 | South     |
 |     4 | North     |
 |   5-7 | (Invalid) |
