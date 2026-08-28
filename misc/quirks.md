@@ -90,3 +90,78 @@ The Notchian Beta 1.7.3 Client can only process ~100 Packets per Tick. Any subse
 ### Spawn Object Packet
 
 The [spawn object packet](../networking/packets/023-spawn-object) determines if an entity, such as an Arrow, has an initial velocity by checking if the owner entity id is greater than `0`. If the global entity id overflows into the negatives, all arrows and fireballs would be sent without an initial velocity.
+
+## Misc
+
+### Username limits
+
+Usernames must adhere to the following rules:
+
+- Can only be >=3 or <=16 characters long
+- Can contain upper/lowercase letters belonging to the latin alphabet
+- Can contain numbers
+- Can contain underscores
+
+The following is every valid character for a username (ignoring the line breaks)
+
+::: code-group
+
+```text [Text]
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+_
+```
+```c [C/C++]
+char[] legal_characters = {
+    'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+    '0','1','2','3','4','5','6','7','8','9',
+    '_'
+};
+```
+:::
+
+In the early days (around classic) these restrictions weren't as tough,
+so some early players were able to snatch usernames with illegal characters.
+
+### Renderable characters
+
+Since the font rendering system of Beta 1.7.3 predates the inclusion of the [GNU Unifont](https://www.unifoundry.com/unifont/index.html) font to render any characters that the Minecraft font does not contain, the then available Minecraft font is all that's available. In addition to that, the actually usable range is further limited by what's inside of the `font.txt` file.
+
+The following contains every legally printable character (ignoring the line breaks)
+
+::: code-group
+
+```text [Text]
+ !"#$%&'()*+,-./
+0123456789:;<=>?
+@ABCDEFGHIJKLMNO
+PQRSTUVWXYZ[\]^_
+'abcdefghijklmno
+pqrstuvwxyz{|}~⌂
+ÇüéâäàåçêëèïîìÄÅ
+ÉæÆôöòûùÿÖÜø£Ø×ƒ
+áíóúñÑªº¿®¬½¼¡«»
+```
+
+```c [C/C++]
+char[] valid_characters = {
+    ' ','!','\"','#','$','%','&','\'','(',')','*','+',',','-','.','/',
+    '0','1','2','3','4','5','6','7','8','9',':',';','<','=','>','?',
+    '@','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
+    'P','Q','R','S','T','U','V','W','X','Y','Z','[','\\',']','^','_',
+    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
+    'p','q','r','s','t','u','v','w','x','y','z','{','|','}','~','⌂',
+    'Ç','ü','é','â','ä','à','å','ç','ê','ë','è','ï','î','ì','Ä','Å',
+    'É','æ','Æ','ô','ö','ò','û','ù','ÿ','Ö','Ü','ø','£','Ø','×','ƒ',
+    'á','í','ó','ú','ñ','Ñ','ª','º','¿','®','¬','½','¼','¡','«','»'
+};
+```
+
+:::
+
+Values outside of this range cannot be rendered without mods.
+
+> [!NOTE]
+> The font is closely based on the IBM EGA 8x8 font, even using the exact same code-page layout and adopting the appearance of most non-character glyphs (Source: https://minecraft.wiki/w/Mojangles#Trivia)
