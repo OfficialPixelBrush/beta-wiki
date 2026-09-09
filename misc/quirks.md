@@ -112,6 +112,7 @@ abcdefghijklmnopqrstuvwxyz
 0123456789
 _
 ```
+
 ```c [C/C++]
 char[] legal_characters = {
     'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
@@ -120,6 +121,7 @@ char[] legal_characters = {
     '_'
 };
 ```
+
 :::
 
 In the early days (around classic) these restrictions weren't as tough,

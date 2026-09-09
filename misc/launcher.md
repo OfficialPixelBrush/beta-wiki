@@ -12,7 +12,6 @@ TODO: Most of this has yet to be researched!
 
 ## Username limitations
 
-
 ## Login Process
 
 ## Session Id acquisition

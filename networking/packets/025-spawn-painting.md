@@ -9,7 +9,7 @@ order: 26
 | --------- | ----------- | ------------------- | ------------------------ |
 | `0x19`    | Clientbound | `AddPaintingPacket` | `Packet25EntityPainting` |
 
-Sent to the client when a painting entity should be spawned. The position is (probably) in [entity space](/general/terminology#entity-space).
+Sent to the client when a painting entity should be spawned. The position is in [block space](/general/terminology#block-space).
 
 ## Clientbound
 
@@ -17,9 +17,9 @@ Sent to the client when a painting entity should be spawned. The position is (pr
 | --------- | -------- | ------------------------------------------------------------------------- |
 | Entity ID | Integer  | The ID of the entity that will refer to this mob                          |
 | Title     | String16 | [The name of the painting](../../entities/paintings) (Max 13 Characters). |
-| X         | Integer  | The X position of the item entity (Quantized)                             |
-| Y         | Integer  | The Y position of the item entity (Quantized)                             |
-| Z         | Integer  | The Z position of the item entity (Quantized)                             |
+| X         | Integer  | The X block position of the item entity                                   |
+| Y         | Integer  | The Y block position of the item entity                                   |
+| Z         | Integer  | The Z block position of the item entity                                   |
 | Direction | Byte     | The direction of the painting                                             |
 
 The coordinates refer to the center of the painting. Given a set width and height, the center is determined to be at
@@ -42,10 +42,10 @@ The direction can be figured out via this table.
 
 ## Example Packet
 
-| Field     | Value               |
-| --------- | ------------------- |
-| Entity ID | `532`               |
-| X         | `5669` (`177.15`)   |
-| Y         | `2176` (`68.0`)     |
-| Z         | `-5325` (`-166.40`) |
-| Direction | `2` (+Z)            |
+| Field     | Value    |
+| --------- | -------- |
+| Entity ID | `532`    |
+| X         | `177`    |
+| Y         | `68`     |
+| Z         | `-166`   |
+| Direction | `2` (+Z) |
