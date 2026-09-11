@@ -77,7 +77,7 @@ Here is a comprehensive listing of all blocks.
 |    57 | Diamond Block         | Block of Diamond                                    |                                                  |
 |    58 | Crafting Table        | Crafting Table                                      |                                                  |
 |    59 | Wheat                 | Crops                                               | Growth Stage (0-7)                               |
-|    60 | Farmland              | Farmland                                            | >0 if wet                                        |
+|    60 | Farmland              | Farmland                                            | Hydration level (0 = dry, 7 = max wetness)       |
 |    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
 |    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
 |    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                           |
@@ -98,9 +98,9 @@ Here is a comprehensive listing of all blocks.
 |    78 | Snow (Layer)          | Snow                                                |                                                  |
 |    79 | Ice                   | Ice                                                 |                                                  |
 |    80 | Snow Block            | Snow                                                |                                                  |
-|    81 | Cactus                | Cactus                                              |                                                  |
+|    81 | Cactus                | Cactus                                              | Growth progress (0-15)                           |
 |    82 | Clay                  | Clay                                                |                                                  |
-|    83 | Sugar Cane            | Sugar Canes                                         |                                                  |
+|    83 | Sugar Cane            | Sugar Canes                                         | Growth progress (0-15)                           |
 |    84 | Jukebox               | Jukebox                                             |                                                  |
 |    85 | Fence                 | Fence                                               |                                                  |
 |    86 | Pumpkin               | Pumpkin                                             | [Direction](#pumpkin-jack-o-lantern)             |
@@ -179,6 +179,8 @@ Any other value will appear as oak.
 ### Leaves
 
 Leaves have 3/4 distinct values. Only oak is biome-colored.
+
+The top-most bit indicates that the block was placed by a player, meaning it won't experience leaf decay.
 
 | Value | Color                        |
 | ----: | :--------------------------- |
