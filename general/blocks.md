@@ -80,7 +80,7 @@ Here is a comprehensive listing of all blocks.
 |    60 | Farmland              | Farmland                                            | Hydration level (0 = dry, 7 = max wetness)       |
 |    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
 |    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    63 | Sign (standing)       | Sign                                                | [Direction](#grounded)                           |
+|    63 | Sign (standing)       | Sign                                                | [Direction](#standing-signs)                     |
 |    64 | Wooden Door           | Wooden Door                                         | [Direction + Open/Closed + Top/Bottom](#doors)   |
 |    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder-wall-sign) |
 |    66 | Rail                  | Rail                                                | [Direction](#rails)                              |
@@ -217,15 +217,15 @@ The "outward" face is used as the direction they're facing.
 ## Bed
 
 Beds use the highest bit to say whether they're the foot or the head block.
-The lower 2-Bits indicate the beds direction, while the highest bit indicates whether the bed is the foot `0` or head `1`.
+The lower 2-Bits indicate the beds direction. The 3rd bit indicates whether the bed is already occupied by another player. The highest bit indicates whether the bed is the foot `0` or head `1`.
 Their direction will be determined based on which way the player needs to stand to place it.
 
 | Value | Direction     |
 | ----: | :------------ |
 |     0 | South         |
-|     3 | East          |
-|     2 | North         |
 |     1 | West          |
+|     2 | North         |
+|     3 | East          |
 |   4-7 | (Same as 0-3) |
 
 ## Wool
@@ -292,12 +292,10 @@ The "facing" direction is determined by which way the player needs to stand to p
 
 Values 4 to 15 do not render.
 
-## Signs
-
-### Grounded
+## Standing Signs
 
 The "facing" direction is determined by which way the text would go.
-The angles are given relative to West.
+The angles are given relative to North.
 
 | Value |        Direction | Angle  |
 | ----: | ---------------: | :----- |
