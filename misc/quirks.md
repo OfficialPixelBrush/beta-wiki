@@ -167,3 +167,30 @@ Values outside of this range cannot be rendered without mods.
 
 > [!NOTE]
 > The font is closely based on the IBM EGA 8x8 font, even using the exact same code-page layout and adopting the appearance of most non-character glyphs (Source: https://minecraft.wiki/w/Mojangles#Trivia)
+
+## Multiplayer-specific
+
+Some quirks are only noticable in multiplayer, as in Beta 1.7.3 that part of the codebase was still very work-in-progress, and wasn't really fully finished until Release 1.3.1, when Singleplayer started using the internal server (though even then a lot of issues remained).
+
+### Entities get teleported to the top of any bounding box
+
+The client will always teleport any entities to the top of any bounding box they encounter. This is most obvious with arrows, which visually get teleported to the top of whichever block they hit.
+
+### Always Pig spawners
+
+All spawners in multiplayer show up as pig spawners. This is because there is no packet that tells a client what mob a spawner spawns until Release
+
+### Missing multiplayer soundeffects
+
+The number of networked soundeffects is very low, so lots of blocks that make sound in singleplayer and/or future versions are just silent in Beta 1.7.3.
+
+- Buttons
+- Pressure plates
+- Bows being shot by other entities
+
+## Only added in future versions
+
+Some things that got added in future versions seem very obvious to add, and yet they were not a thing yet in Beta 1.7.3.
+
+- Wooden tools cannot be used as fuel (Added in Release 1.3.1)
+- Water-bucket clutch/Water negating fall damage (Added in Release 1.3.1)
