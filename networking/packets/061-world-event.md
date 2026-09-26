@@ -16,23 +16,23 @@ This is sent by the server when it expects a client to play a sound effect or sp
 
 These are the sound/particle effect IDs and what sound they map to.
 
-| Value  | Purpose                                                    | Metadata use                                                                                                                                 | Type             |
-| ------ | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :--------------- |
-| `1000` | Button Click                                               |                                                                                                                                              | Sound            |
-| `1001` | Button Click 2                                             |                                                                                                                                              | Sound            |
-| `1002` | Bow shot                                                   |                                                                                                                                              | Sound            |
-| `1003` | Door open/close                                            |                                                                                                                                              | Sound            |
-| `1004` | Fire Extinguisted                                          |                                                                                                                                              | Sound            |
-| `1005` | Music Disk                                                 | `2256` (<TextureSwatch texture_name="items/record_13" label="13" />), `2257` (<TextureSwatch texture_name="items/record_cat" label="cat" />) | Sound            |
-| `2000` | [Smoke](../../rendering/particles#named-particles)         | [Position](#smoke-position)                                                                                                                  | Particle         |
-| `2001` | [Block Break](../../rendering/particles#block-destruction) | [Block ID](../../general/blocks#listing)                                                                                                     | Particle + Sound |
+| Value  | Purpose                                                     | Metadata use                                                                                                                                 | Type             |
+| ------ | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :--------------- |
+| `1000` | Dispenser Click (Empty)                                     |                                                                                                                                              | Sound            |
+| `1001` | Dispenser Click                                             |                                                                                                                                              | Sound            |
+| `1002` | Dispenser Bow shot                                          |                                                                                                                                              | Sound            |
+| `1003` | Door/Trapdoor open/close                                    |                                                                                                                                              | Sound            |
+| `1004` | Fire Extinguisted                                           |                                                                                                                                              | Sound            |
+| `1005` | Music Disk                                                  | `2256` (<TextureSwatch texture_name="items/record_13" label="13" />), `2257` (<TextureSwatch texture_name="items/record_cat" label="cat" />) | Sound            |
+| `2000` | [Dispenser Puff](../../rendering/particles#named-particles) | [Position](#dispenser-puff-position)                                                                                                         | Particle         |
+| `2001` | [Block Break](../../rendering/particles#block-destruction)  | [Block ID](../../general/blocks#listing)                                                                                                     | Particle + Sound |
 
 For more info on what effects the client itself has, check the [sounds](../../general/sounds) and [particles](../../rendering/particles) pages respectively.
 
 > [!NOTE]
 > Any sound that's started will only be heard by players that're nearby and currently connected. If a sound is started while a player isn't present, it will not be heard by that player. The most obvious example of this behavior are music disks.
 
-### Smoke Position
+### Dispenser Puff Position
 
 The integer that's passed in is turned into a coordinate for a flat `3x3` grid, centered at the vertical middle of a block.
 
