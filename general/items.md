@@ -11,114 +11,114 @@ Items are non-block things that're usually represented as a 2D Sprite, given pse
 
 Here is a comprehensive listing of all items.
 
-| Value | Name                 | Metadata use                   |
-| ----: | :------------------- | :----------------------------- |
-|   256 | Iron Shovel          | [Remaining uses](#tools)       |
-|   257 | Iron Pickaxe         | [Remaining uses](#tools)       |
-|   258 | Iron Axe             | [Remaining uses](#tools)       |
-|   259 | Flint and Steel      | [Remaining uses](#tools)       |
-|   260 | Apple                |                                |
-|   261 | Bow                  |                                |
-|   262 | Arrow                |                                |
-|   263 | Coal                 | Coal `0`, Charcoal `1`         |
-|   264 | Diamond              |                                |
-|   265 | Iron                 |                                |
-|   266 | Gold                 |                                |
-|   267 | Iron Sword           | [Remaining uses](#tools)       |
-|   268 | Wooden Sword         | [Remaining uses](#tools)       |
-|   269 | Wooden Shovel        | [Remaining uses](#tools)       |
-|   270 | Wooden Pickaxe       | [Remaining uses](#tools)       |
-|   271 | Wooden Axe           | [Remaining uses](#tools)       |
-|   272 | Stone Sword          | [Remaining uses](#tools)       |
-|   273 | Stone Shovel         | [Remaining uses](#tools)       |
-|   274 | Stone Pickaxe        | [Remaining uses](#tools)       |
-|   275 | Stone Axe            | [Remaining uses](#tools)       |
-|   276 | Diamond Sword        | [Remaining uses](#tools)       |
-|   277 | Diamond Shovel       | [Remaining uses](#tools)       |
-|   278 | Diamond Pickaxe      | [Remaining uses](#tools)       |
-|   279 | Diamond Axe          | [Remaining uses](#tools)       |
-|   280 | Stick                |                                |
-|   281 | Bowl                 |                                |
-|   282 | Mushroom Stew        |                                |
-|   283 | Gold Sword           | [Remaining uses](#tools)       |
-|   284 | Gold Shovel          | [Remaining uses](#tools)       |
-|   285 | Gold Pickaxe         | [Remaining uses](#tools)       |
-|   286 | Gold Axe             | [Remaining uses](#tools)       |
-|   287 | String               |                                |
-|   288 | Feather              |                                |
-|   289 | Gunpowder            |                                |
-|   290 | Wooden Hoe           | [Remaining uses](#tools)       |
-|   291 | Stone Hoe            | [Remaining uses](#tools)       |
-|   292 | Iron Hoe             | [Remaining uses](#tools)       |
-|   293 | Diamond Hoe          | [Remaining uses](#tools)       |
-|   294 | Gold Hoe             | [Remaining uses](#tools)       |
-|   295 | Seeds                |                                |
-|   296 | Wheat                |                                |
-|   297 | Bread                |                                |
-|   298 | Leather Cap          | [Remaining uses](#tools)       |
-|   299 | Leather Tunic        | [Remaining uses](#tools)       |
-|   300 | Leather Pants        | [Remaining uses](#tools)       |
-|   301 | Leather Boots        | [Remaining uses](#tools)       |
-|   302 | Chainmail Helmet     | [Remaining uses](#tools)       |
-|   303 | Chainmail Chestplate | [Remaining uses](#tools)       |
-|   304 | Chainmail Leggings   | [Remaining uses](#tools)       |
-|   305 | Chainmail Boots      | [Remaining uses](#tools)       |
-|   306 | Iron Helmet          | [Remaining uses](#tools)       |
-|   307 | Iron Chestplate      | [Remaining uses](#tools)       |
-|   308 | Iron Leggings        | [Remaining uses](#tools)       |
-|   309 | Iron Boots           | [Remaining uses](#tools)       |
-|   310 | Diamond Helmet       | [Remaining uses](#tools)       |
-|   311 | Diamond Chestplate   | [Remaining uses](#tools)       |
-|   312 | Diamond Leggings     | [Remaining uses](#tools)       |
-|   313 | Diamond Boots        | [Remaining uses](#tools)       |
-|   314 | Gold Helmet          | [Remaining uses](#tools)       |
-|   315 | Gold Chestplate      | [Remaining uses](#tools)       |
-|   316 | Gold Leggings        | [Remaining uses](#tools)       |
-|   317 | Gold Boots           | [Remaining uses](#tools)       |
-|   318 | Flint                |                                |
-|   319 | Porkchop             |                                |
-|   320 | Cooked Porkchop      |                                |
-|   321 | Painting             |                                |
-|   322 | Golden Apple         |                                |
-|   323 | Sign                 |                                |
-|   324 | Wooden Door          |                                |
-|   325 | Bucket               |                                |
-|   326 | Water Bucket         |                                |
-|   327 | Lava Bucket          |                                |
-|   328 | Minecart             |                                |
-|   329 | Saddle               |                                |
-|   330 | Iron Door            |                                |
-|   331 | Redstone             |                                |
-|   332 | Snowball             |                                |
-|   333 | Boat                 |                                |
-|   334 | Leather              |                                |
-|   335 | Milk Bucket          |                                |
-|   336 | Brick                |                                |
-|   337 | Clay                 |                                |
-|   338 | Sugarcane            |                                |
-|   339 | Paper                |                                |
-|   340 | Book                 |                                |
-|   341 | Slime                |                                |
-|   342 | Chest Minecart       |                                |
-|   343 | Furnace Minecart     |                                |
-|   344 | Egg                  |                                |
-|   345 | Compass              |                                |
-|   346 | Fishing Rod          |                                |
-|   347 | Clock                |                                |
-|   348 | Glowstone Dust       |                                |
-|   349 | Fish                 |                                |
-|   350 | Cooked Fish          |                                |
-|   351 | Dye                  | [Color](#dye)                  |
-|   352 | Bone                 |                                |
-|   353 | Sugar                |                                |
-|   354 | Cake                 |                                |
-|   355 | Bed                  |                                |
-|   356 | Redstone Repeater    |                                |
-|   357 | Cookie               |                                |
-|   358 | Map                  |                                |
-|   359 | Shears               | [Remaining uses](#other-tools) |
-|  2256 | Record (13)          |                                |
-|  2257 | Record (cat)         |                                |
+| Value | Icon                                                        | Name                 | Metadata use                   |
+| ----: | :---------------------------------------------------------- | :------------------- | :----------------------------- |
+|   256 | <TextureSwatch texture_name="items/iron_shovel" />          | Iron Shovel          | [Remaining uses](#tools)       |
+|   257 | <TextureSwatch texture_name="items/iron_pickaxe" />         | Iron Pickaxe         | [Remaining uses](#tools)       |
+|   258 | <TextureSwatch texture_name="items/iron_axe" />             | Iron Axe             | [Remaining uses](#tools)       |
+|   259 | <TextureSwatch texture_name="items/flint_and_steel" />      | Flint and Steel      | [Remaining uses](#tools)       |
+|   260 | <TextureSwatch texture_name="items/apple" />                | Apple                |                                |
+|   261 | <TextureSwatch texture_name="items/bow" />                  | Bow                  |                                |
+|   262 | <TextureSwatch texture_name="items/arrow" />                | Arrow                |                                |
+|   263 | <TextureSwatch texture_name="items/coal" />                 | Coal                 | Coal `0`, Charcoal `1`         |
+|   264 | <TextureSwatch texture_name="items/diamond" />              | Diamond              |                                |
+|   265 | <TextureSwatch texture_name="items/iron_ingot" />           | Iron                 |                                |
+|   266 | <TextureSwatch texture_name="items/gold_ingot" />           | Gold                 |                                |
+|   267 | <TextureSwatch texture_name="items/iron_sword" />           | Iron Sword           | [Remaining uses](#tools)       |
+|   268 | <TextureSwatch texture_name="items/wooden_sword" />         | Wooden Sword         | [Remaining uses](#tools)       |
+|   269 | <TextureSwatch texture_name="items/wooden_shovel" />        | Wooden Shovel        | [Remaining uses](#tools)       |
+|   270 | <TextureSwatch texture_name="items/wooden_pickaxe" />       | Wooden Pickaxe       | [Remaining uses](#tools)       |
+|   271 | <TextureSwatch texture_name="items/wooden_axe" />           | Wooden Axe           | [Remaining uses](#tools)       |
+|   272 | <TextureSwatch texture_name="items/stone_sword" />          | Stone Sword          | [Remaining uses](#tools)       |
+|   273 | <TextureSwatch texture_name="items/stone_shovel" />         | Stone Shovel         | [Remaining uses](#tools)       |
+|   274 | <TextureSwatch texture_name="items/stone_pickaxe" />        | Stone Pickaxe        | [Remaining uses](#tools)       |
+|   275 | <TextureSwatch texture_name="items/stone_axe" />            | Stone Axe            | [Remaining uses](#tools)       |
+|   276 | <TextureSwatch texture_name="items/diamond_sword" />        | Diamond Sword        | [Remaining uses](#tools)       |
+|   277 | <TextureSwatch texture_name="items/diamond_shovel" />       | Diamond Shovel       | [Remaining uses](#tools)       |
+|   278 | <TextureSwatch texture_name="items/diamond_pickaxe" />      | Diamond Pickaxe      | [Remaining uses](#tools)       |
+|   279 | <TextureSwatch texture_name="items/diamond_axe" />          | Diamond Axe          | [Remaining uses](#tools)       |
+|   280 | <TextureSwatch texture_name="items/stick" />                | Stick                |                                |
+|   281 | <TextureSwatch texture_name="items/bowl" />                 | Bowl                 |                                |
+|   282 | <TextureSwatch texture_name="items/mushroom_stew" />        | Mushroom Stew        |                                |
+|   283 | <TextureSwatch texture_name="items/gold_sword" />           | Gold Sword           | [Remaining uses](#tools)       |
+|   284 | <TextureSwatch texture_name="items/gold_shovel" />          | Gold Shovel          | [Remaining uses](#tools)       |
+|   285 | <TextureSwatch texture_name="items/gold_pickaxe" />         | Gold Pickaxe         | [Remaining uses](#tools)       |
+|   286 | <TextureSwatch texture_name="items/gold_axe" />             | Gold Axe             | [Remaining uses](#tools)       |
+|   287 | <TextureSwatch texture_name="items/string" />               | String               |                                |
+|   288 | <TextureSwatch texture_name="items/feather" />              | Feather              |                                |
+|   289 | <TextureSwatch texture_name="items/gunpowder" />            | Gunpowder            |                                |
+|   290 | <TextureSwatch texture_name="items/wooden_hoe" />           | Wooden Hoe           | [Remaining uses](#tools)       |
+|   291 | <TextureSwatch texture_name="items/stone_hoe" />            | Stone Hoe            | [Remaining uses](#tools)       |
+|   292 | <TextureSwatch texture_name="items/iron_hoe" />             | Iron Hoe             | [Remaining uses](#tools)       |
+|   293 | <TextureSwatch texture_name="items/diamond_hoe" />          | Diamond Hoe          | [Remaining uses](#tools)       |
+|   294 | <TextureSwatch texture_name="items/gold_hoe" />             | Gold Hoe             | [Remaining uses](#tools)       |
+|   295 | <TextureSwatch texture_name="items/seeds" />                | Seeds                |                                |
+|   296 | <TextureSwatch texture_name="items/wheat" />                | Wheat                |                                |
+|   297 | <TextureSwatch texture_name="items/bread" />                | Bread                |                                |
+|   298 | <TextureSwatch texture_name="items/leather_helmet" />       | Leather Cap          | [Remaining uses](#tools)       |
+|   299 | <TextureSwatch texture_name="items/leather_chestplate" />   | Leather Tunic        | [Remaining uses](#tools)       |
+|   300 | <TextureSwatch texture_name="items/leather_leggings" />     | Leather Pants        | [Remaining uses](#tools)       |
+|   301 | <TextureSwatch texture_name="items/leather_boots" />        | Leather Boots        | [Remaining uses](#tools)       |
+|   302 | <TextureSwatch texture_name="items/chainmail_helmet" />     | Chainmail Helmet     | [Remaining uses](#tools)       |
+|   303 | <TextureSwatch texture_name="items/chainmail_chestplate" /> | Chainmail Chestplate | [Remaining uses](#tools)       |
+|   304 | <TextureSwatch texture_name="items/chainmail_leggings" />   | Chainmail Leggings   | [Remaining uses](#tools)       |
+|   305 | <TextureSwatch texture_name="items/chainmail_boots" />      | Chainmail Boots      | [Remaining uses](#tools)       |
+|   306 | <TextureSwatch texture_name="items/iron_helmet" />          | Iron Helmet          | [Remaining uses](#tools)       |
+|   307 | <TextureSwatch texture_name="items/iron_chestplate" />      | Iron Chestplate      | [Remaining uses](#tools)       |
+|   308 | <TextureSwatch texture_name="items/iron_leggings" />        | Iron Leggings        | [Remaining uses](#tools)       |
+|   309 | <TextureSwatch texture_name="items/iron_boots" />           | Iron Boots           | [Remaining uses](#tools)       |
+|   310 | <TextureSwatch texture_name="items/diamond_helmet" />       | Diamond Helmet       | [Remaining uses](#tools)       |
+|   311 | <TextureSwatch texture_name="items/diamond_chestplate" />   | Diamond Chestplate   | [Remaining uses](#tools)       |
+|   312 | <TextureSwatch texture_name="items/diamond_leggings" />     | Diamond Leggings     | [Remaining uses](#tools)       |
+|   313 | <TextureSwatch texture_name="items/diamond_boots" />        | Diamond Boots        | [Remaining uses](#tools)       |
+|   314 | <TextureSwatch texture_name="items/gold_helmet" />          | Gold Helmet          | [Remaining uses](#tools)       |
+|   315 | <TextureSwatch texture_name="items/gold_chestplate" />      | Gold Chestplate      | [Remaining uses](#tools)       |
+|   316 | <TextureSwatch texture_name="items/gold_leggings" />        | Gold Leggings        | [Remaining uses](#tools)       |
+|   317 | <TextureSwatch texture_name="items/gold_boots" />           | Gold Boots           | [Remaining uses](#tools)       |
+|   318 | <TextureSwatch texture_name="items/flint" />                | Flint                |                                |
+|   319 | <TextureSwatch texture_name="items/raw_porkchop" />         | Porkchop             |                                |
+|   320 | <TextureSwatch texture_name="items/cooked_porkchop" />      | Cooked Porkchop      |                                |
+|   321 | <TextureSwatch texture_name="items/painting" />             | Painting             |                                |
+|   322 | <TextureSwatch texture_name="items/golden_apple" />         | Golden Apple         |                                |
+|   323 | <TextureSwatch texture_name="items/sign" />                 | Sign                 |                                |
+|   324 | <TextureSwatch texture_name="items/wooden_door" />          | Wooden Door          |                                |
+|   325 | <TextureSwatch texture_name="items/bucket" />               | Bucket               |                                |
+|   326 | <TextureSwatch texture_name="items/water_bucket" />         | Water Bucket         |                                |
+|   327 | <TextureSwatch texture_name="items/lava_bucket" />          | Lava Bucket          |                                |
+|   328 | <TextureSwatch texture_name="items/minecart" />             | Minecart             |                                |
+|   329 | <TextureSwatch texture_name="items/saddle" />               | Saddle               |                                |
+|   330 | <TextureSwatch texture_name="items/iron_door" />            | Iron Door            |                                |
+|   331 | <TextureSwatch texture_name="items/redstone_dust" />        | Redstone             |                                |
+|   332 | <TextureSwatch texture_name="items/snowball" />             | Snowball             |                                |
+|   333 | <TextureSwatch texture_name="items/boat" />                 | Boat                 |                                |
+|   334 | <TextureSwatch texture_name="items/leather" />              | Leather              |                                |
+|   335 | <TextureSwatch texture_name="items/milk_bucket" />          | Milk Bucket          |                                |
+|   336 | <TextureSwatch texture_name="items/brick" />                | Brick                |                                |
+|   337 | <TextureSwatch texture_name="items/clay" />                 | Clay                 |                                |
+|   338 | <TextureSwatch texture_name="items/sugarcane" />            | Sugarcane            |                                |
+|   339 | <TextureSwatch texture_name="items/paper" />                | Paper                |                                |
+|   340 | <TextureSwatch texture_name="items/book" />                 | Book                 |                                |
+|   341 | <TextureSwatch texture_name="items/slimeball" />            | Slime                |                                |
+|   342 | <TextureSwatch texture_name="items/chest_minecart" />       | Chest Minecart       |                                |
+|   343 | <TextureSwatch texture_name="items/furnace_minecart" />     | Furnace Minecart     |                                |
+|   344 | <TextureSwatch texture_name="items/egg" />                  | Egg                  |                                |
+|   345 | <TextureSwatch texture_name="items/compass" />              | Compass              |                                |
+|   346 | <TextureSwatch texture_name="items/fishing_rod" />          | Fishing Rod          |                                |
+|   347 | <TextureSwatch texture_name="items/clock" />                | Clock                |                                |
+|   348 | <TextureSwatch texture_name="items/glowstone_dust" />       | Glowstone Dust       |                                |
+|   349 | <TextureSwatch texture_name="items/raw_fish" />             | Fish                 |                                |
+|   350 | <TextureSwatch texture_name="items/cooked_fish" />          | Cooked Fish          |                                |
+|   351 | <TextureSwatch texture_name="items/black_dye" />            | Dye                  | [Color](#dye)                  |
+|   352 | <TextureSwatch texture_name="items/bone" />                 | Bone                 |                                |
+|   353 | <TextureSwatch texture_name="items/sugar" />                | Sugar                |                                |
+|   354 | <TextureSwatch texture_name="items/cake" />                 | Cake                 |                                |
+|   355 | <TextureSwatch texture_name="items/bed" />                  | Bed                  |                                |
+|   356 | <TextureSwatch texture_name="items/repeater" />             | Redstone Repeater    |                                |
+|   357 | <TextureSwatch texture_name="items/cookie" />               | Cookie               |                                |
+|   358 | <TextureSwatch texture_name="items/map" />                  | Map                  |                                |
+|   359 | <TextureSwatch texture_name="items/shears" />               | Shears               | [Remaining uses](#other-tools) |
+|  2256 | <TextureSwatch texture_name="items/record_13" />            | Record (13)          |                                |
+|  2257 | <TextureSwatch texture_name="items/record_cat" />           | Record (cat)         |                                |
 
 # Metadata
 

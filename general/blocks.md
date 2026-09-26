@@ -15,105 +15,105 @@ TODO: Add material type and what block belongs to what material category!
 
 Here is a comprehensive listing of all blocks.
 
-| Value | Name                  | In-game Name                                        | Metadata use                                     |
-| ----: | :-------------------- | :-------------------------------------------------- | :----------------------------------------------- |
-|     0 | Air                   |                                                     |                                                  |
-|     1 | Stone                 | Stone                                               |                                                  |
-|     2 | Grass                 | Grass                                               |                                                  |
-|     3 | Dirt                  | Dirt                                                |                                                  |
-|     4 | Cobblestone           | Cobblestone                                         |                                                  |
-|     5 | Planks                | Wooden Planks                                       |                                                  |
-|     6 | Sapling               | Sapling                                             | [Wood Type](#saplings)                           |
-|     7 | Bedrock               | Bedrock                                             |                                                  |
-|     8 | Water (Flowing)       | Water                                               | [Liquid height](#liquids)                        |
-|     9 | Water (Still)         | Water                                               | [Liquid height](#liquids)                        |
-|    10 | Lava (Flowing)        | Lava                                                | [Liquid height](#liquids)                        |
-|    11 | Lava (Still)          | Lava                                                | [Liquid height](#liquids)                        |
-|    12 | Sand                  | Sand                                                |                                                  |
-|    13 | Gravel                | Gravel                                              |                                                  |
-|    14 | Gold Ore              | Gold Ore                                            |                                                  |
-|    15 | Iron Ore              | Iron Ore                                            |                                                  |
-|    16 | Coal Ore              | Coal Ore                                            |                                                  |
-|    17 | Log                   | Wood                                                | [Wood Type](#logs)                               |
-|    18 | Leaves                | Leaves                                              | [Leaf Type](#leaves)                             |
-|    19 | Sponge                | Sponge                                              |                                                  |
-|    20 | Glass                 | Glass                                               |                                                  |
-|    21 | Lapis Lazuli Ore      | Lapis Lazuli Ore                                    |                                                  |
-|    22 | Lapis Lazuli Block    | Lapis Lazuli Block                                  |                                                  |
-|    23 | Dispenser             | Dispenser                                           | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    24 | Sandstone             | Sandstone                                           |                                                  |
-|    25 | Note Block            | Note Block                                          |                                                  |
-|    26 | Bed                   | Bed                                                 | [Direction + Head/Foot](#bed)                    |
-|    27 | Powered Rail          | Powered Rail                                        | [Direction](#rails)                              |
-|    28 | Detector Rail         | Detector Rail                                       | [Direction](#rails)                              |
-|    29 | Sticky Piston         | Sticky Piston                                       | [Direction + State](#pistons)                    |
-|    30 | Cobweb                | Cobweb                                              |                                                  |
-|    31 | Tall Grass            |                                                     | [Block Type](#tallgrass)                         |
-|    32 | Dead Bush             |                                                     |                                                  |
-|    33 | Piston                | Piston                                              | [Direction + State](#pistons)                    |
-|    34 | Piston Head           |                                                     | [Direction](#piston-head)                        |
-|    35 | Wool                  |                                                     | [Color](#wool)                                   |
-|    36 | Moving Block          |                                                     |                                                  |
-|    37 | Dandelion             | Flower                                              |                                                  |
-|    38 | Rose                  | Rose                                                |                                                  |
-|    39 | Brown Mushroom        | Mushroom                                            |                                                  |
-|    40 | Red Mushroom          | Mushroom                                            |                                                  |
-|    41 | Gold Block            | Block of Gold                                       |                                                  |
-|    42 | Iron Block            | Block of Iron                                       |                                                  |
-|    43 | Double Slab           |                                                     | [Block Type](#double-slabs)                      |
-|    44 | Slab                  | Stone Slab, Sandstone Slab, Wooden Slab, Stone Slab | [Block Type](#double-slabs)                      |
-|    45 | Bricks                | Bricks                                              |                                                  |
-|    46 | TNT                   | TNT                                                 |                                                  |
-|    47 | Bookshelf             | Bookshelf                                           |                                                  |
-|    48 | Mossy Cobblestone     | Moss Stone                                          |                                                  |
-|    49 | Obsidian              | Obsidian                                            |                                                  |
-|    50 | Torch                 | Torch                                               | [Direction](#torches)                            |
-|    51 | Fire                  | Fire                                                |                                                  |
-|    52 | Monster Spawner       | Monster Spawner                                     |                                                  |
-|    53 | Wooden Stairs         | Wooden Stairs                                       | [Direction](#stairs)                             |
-|    54 | Chest                 | Chest                                               |                                                  |
-|    55 | Redstone              | Redstone                                            | Power Level                                      |
-|    56 | Diamond Ore           | Diamond Ore                                         |                                                  |
-|    57 | Diamond Block         | Block of Diamond                                    |                                                  |
-|    58 | Crafting Table        | Crafting Table                                      |                                                  |
-|    59 | Wheat                 | Crops                                               | Growth Stage (0-7)                               |
-|    60 | Farmland              | Farmland                                            | Hydration level (0 = dry, 7 = max wetness)       |
-|    61 | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    62 | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    63 | Sign (standing)       | Sign                                                | [Direction](#standing-signs)                     |
-|    64 | Wooden Door           | Wooden Door                                         | [Direction + Open/Closed + Top/Bottom](#doors)   |
-|    65 | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    66 | Rail                  | Rail                                                | [Direction](#rails)                              |
-|    67 | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                             |
-|    68 | Sign (wall)           | Sign                                                | [Direction](#dispenser-furnace-ladder-wall-sign) |
-|    69 | Lever                 | Lever                                               | [Direction + Toggled](#lever)                    |
-|    70 | Stone Pressure Plate  | Pressure Plate                                      | Toggled                                          |
-|    71 | Iron Door             | Iron Door                                           | [Direction + Open/Closed + Top/Bottom](#doors)   |
-|    72 | Wooden Pressure Plate | Pressure Plate                                      | Toggled                                          |
-|    73 | Redstone Ore          | Redstone Ore                                        |                                                  |
-|    74 | Lit Redstone Ore      | Redstone Ore                                        |                                                  |
-|    75 | Redstone Torch        | Redstone Torch                                      | [Direction](#torch)                              |
-|    76 | Lit Redstone Torch    | Redstone Torch                                      | [Direction](#torch)                              |
-|    77 | Stone Button          | Button                                              | [Direction + Toggled](#button)                   |
-|    78 | Snow (Layer)          | Snow                                                |                                                  |
-|    79 | Ice                   | Ice                                                 |                                                  |
-|    80 | Snow Block            | Snow                                                |                                                  |
-|    81 | Cactus                | Cactus                                              | Growth progress (0-15)                           |
-|    82 | Clay                  | Clay                                                |                                                  |
-|    83 | Sugar Cane            | Sugar Canes                                         | Growth progress (0-15)                           |
-|    84 | Jukebox               | Jukebox                                             |                                                  |
-|    85 | Fence                 | Fence                                               |                                                  |
-|    86 | Pumpkin               | Pumpkin                                             | [Direction](#pumpkin-jack-o-lantern)             |
-|    87 | Netherrack            | Netherrack                                          |                                                  |
-|    88 | Soul Sand             | Soul Sand                                           |                                                  |
-|    89 | Glowstone             | Glowstone                                           |                                                  |
-|    90 | Nether Portal         | Portal                                              |                                                  |
-|    91 | Jack'o'Lantern        | Jack 'o' Lantern                                    | [Direction](#pumpkin-jack-o-lantern)             |
-|    92 | Cake                  | Cake                                                | Eatness                                          |
-|    93 | Redstone Repeater     |                                                     | [Direction + Delay](#redstone-repeater)          |
-|    94 | Lit Redstone Repeater |                                                     | [Direction + Delay](#redstone-repeater)          |
-|    95 | Locked Chest          | Locked chest                                        |                                                  |
-|    96 | Trapdoor              | Trapdoor                                            | [Direction + Open/Closed](#trapdoors)            |
+| Value | Icon                                                            | Name                  | In-game Name                                        | Metadata use                                     |
+| ----: | :-------------------------------------------------------------- | :-------------------- | :-------------------------------------------------- | :----------------------------------------------- |
+|     0 |                                                                 | Air                   |                                                     |                                                  |
+|     1 | <TextureSwatch texture_name="blocks/stone" />                   | Stone                 | Stone                                               |                                                  |
+|     2 | <TextureSwatch texture_name="blocks/grass_side" />              | Grass                 | Grass                                               |                                                  |
+|     3 | <TextureSwatch texture_name="blocks/dirt" />                    | Dirt                  | Dirt                                                |                                                  |
+|     4 | <TextureSwatch texture_name="blocks/cobblestone" />             | Cobblestone           | Cobblestone                                         |                                                  |
+|     5 | <TextureSwatch texture_name="blocks/planks" />                  | Planks                | Wooden Planks                                       |                                                  |
+|     6 | <TextureSwatch texture_name="blocks/oak_sapling" />             | Sapling               | Sapling                                             | [Wood Type](#saplings)                           |
+|     7 | <TextureSwatch texture_name="blocks/bedrock" />                 | Bedrock               | Bedrock                                             |                                                  |
+|     8 | <TextureSwatch texture_name="blocks/water_placeholder" />       | Water (Flowing)       | Water                                               | [Liquid height](#liquids)                        |
+|     9 | <TextureSwatch texture_name="blocks/water_placeholder" />       | Water (Still)         | Water                                               | [Liquid height](#liquids)                        |
+|    10 | <TextureSwatch texture_name="blocks/lava_placeholder" />        | Lava (Flowing)        | Lava                                                | [Liquid height](#liquids)                        |
+|    11 | <TextureSwatch texture_name="blocks/lava_placeholder" />        | Lava (Still)          | Lava                                                | [Liquid height](#liquids)                        |
+|    12 | <TextureSwatch texture_name="blocks/sand" />                    | Sand                  | Sand                                                |                                                  |
+|    13 | <TextureSwatch texture_name="blocks/gravel" />                  | Gravel                | Gravel                                              |                                                  |
+|    14 | <TextureSwatch texture_name="blocks/gold_ore" />                | Gold Ore              | Gold Ore                                            |                                                  |
+|    15 | <TextureSwatch texture_name="blocks/iron_ore" />                | Iron Ore              | Iron Ore                                            |                                                  |
+|    16 | <TextureSwatch texture_name="blocks/coal_ore" />                | Coal Ore              | Coal Ore                                            |                                                  |
+|    17 | <TextureSwatch texture_name="blocks/log_top" />                 | Log                   | Wood                                                | [Wood Type](#logs)                               |
+|    18 | <TextureSwatch texture_name="blocks/oak_leaves_transparent" />  | Leaves                | Leaves                                              | [Leaf Type](#leaves)                             |
+|    19 | <TextureSwatch texture_name="blocks/sponge" />                  | Sponge                | Sponge                                              |                                                  |
+|    20 | <TextureSwatch texture_name="blocks/glass" />                   | Glass                 | Glass                                               |                                                  |
+|    21 | <TextureSwatch texture_name="blocks/lapis_lazuli_ore" />        | Lapis Lazuli Ore      | Lapis Lazuli Ore                                    |                                                  |
+|    22 | <TextureSwatch texture_name="blocks/lapis_lazuli_block" />      | Lapis Lazuli Block    | Lapis Lazuli Block                                  |                                                  |
+|    23 | <TextureSwatch texture_name="blocks/dispenser_front" />         | Dispenser             | Dispenser                                           | [Direction](#dispenser-furnace-ladder-wall-sign) |
+|    24 | <TextureSwatch texture_name="blocks/sandstone_side" />          | Sandstone             | Sandstone                                           |                                                  |
+|    25 | <TextureSwatch texture_name="blocks/noteblock_jukebox" />       | Note Block            | Note Block                                          |                                                  |
+|    26 | <TextureSwatch texture_name="blocks/bed_top_head" />            | Bed                   | Bed                                                 | [Direction + Head/Foot](#bed)                    |
+|    27 | <TextureSwatch texture_name="blocks/powered_rails_inactive" />  | Powered Rail          | Powered Rail                                        | [Direction](#rails)                              |
+|    28 | <TextureSwatch texture_name="blocks/activator_rail" />          | Detector Rail         | Detector Rail                                       | [Direction](#rails)                              |
+|    29 | <TextureSwatch texture_name="blocks/sticky_piston_front" />     | Sticky Piston         | Sticky Piston                                       | [Direction + State](#pistons)                    |
+|    30 | <TextureSwatch texture_name="blocks/cobweb" />                  | Cobweb                | Cobweb                                              |                                                  |
+|    31 | <TextureSwatch texture_name="blocks/tallgrass" />               | Tall Grass            |                                                     | [Block Type](#tallgrass)                         |
+|    32 | <TextureSwatch texture_name="blocks/deadbush_shrub" />          | Dead Bush             |                                                     |                                                  |
+|    33 | <TextureSwatch texture_name="blocks/piston_front" />            | Piston                | Piston                                              | [Direction + State](#pistons)                    |
+|    34 | <TextureSwatch texture_name="blocks/piston_side" />             | Piston Head           |                                                     | [Direction](#piston-head)                        |
+|    35 | <TextureSwatch texture_name="blocks/white_wool" />              | Wool                  |                                                     | [Color](#wool)                                   |
+|    36 |                                                                 | Moving Block          |                                                     |                                                  |
+|    37 | <TextureSwatch texture_name="blocks/dandelion" />               | Dandelion             | Flower                                              |                                                  |
+|    38 | <TextureSwatch texture_name="blocks/rose" />                    | Rose                  | Rose                                                |                                                  |
+|    39 | <TextureSwatch texture_name="blocks/brown_mushroom" />          | Brown Mushroom        | Mushroom                                            |                                                  |
+|    40 | <TextureSwatch texture_name="blocks/red_mushroom" />            | Red Mushroom          | Mushroom                                            |                                                  |
+|    41 | <TextureSwatch texture_name="blocks/gold_block" />              | Gold Block            | Block of Gold                                       |                                                  |
+|    42 | <TextureSwatch texture_name="blocks/iron_block" />              | Iron Block            | Block of Iron                                       |                                                  |
+|    43 | <TextureSwatch texture_name="blocks/stone_slab_side" />         | Double Slab           |                                                     | [Block Type](#double-slabs)                      |
+|    44 | <TextureSwatch texture_name="blocks/stone_slab_side" />         | Slab                  | Stone Slab, Sandstone Slab, Wooden Slab, Stone Slab | [Block Type](#double-slabs)                      |
+|    45 | <TextureSwatch texture_name="blocks/bricks" />                  | Bricks                | Bricks                                              |                                                  |
+|    46 | <TextureSwatch texture_name="blocks/tnt_side" />                | TNT                   | TNT                                                 |                                                  |
+|    47 | <TextureSwatch texture_name="blocks/bookshelf" />               | Bookshelf             | Bookshelf                                           |                                                  |
+|    48 | <TextureSwatch texture_name="blocks/mossy_cobblestone" />       | Mossy Cobblestone     | Moss Stone                                          |                                                  |
+|    49 | <TextureSwatch texture_name="blocks/obsidian" />                | Obsidian              | Obsidian                                            |                                                  |
+|    50 | <TextureSwatch texture_name="blocks/torch" />                   | Torch                 | Torch                                               | [Direction](#torches)                            |
+|    51 | <TextureSwatch texture_name="blocks/fire" />                    | Fire                  | Fire                                                |                                                  |
+|    52 | <TextureSwatch texture_name="blocks/mob_spawner" />             | Monster Spawner       | Monster Spawner                                     |                                                  |
+|    53 | <TextureSwatch texture_name="blocks/planks" />                  | Wooden Stairs         | Wooden Stairs                                       | [Direction](#stairs)                             |
+|    54 | <TextureSwatch texture_name="blocks/chest_front" />             | Chest                 | Chest                                               |                                                  |
+|    55 | <TextureSwatch texture_name="blocks/redstone_dust" />           | Redstone              | Redstone                                            | Power Level                                      |
+|    56 | <TextureSwatch texture_name="blocks/diamond_ore" />             | Diamond Ore           | Diamond Ore                                         |                                                  |
+|    57 | <TextureSwatch texture_name="blocks/diamond_block" />           | Diamond Block         | Block of Diamond                                    |                                                  |
+|    58 | <TextureSwatch texture_name="blocks/crafting_table_side_1" />   | Crafting Table        | Crafting Table                                      |                                                  |
+|    59 | <TextureSwatch texture_name="blocks/wheat_level_7" />           | Wheat                 | Crops                                               | Growth Stage (0-7)                               |
+|    60 | <TextureSwatch texture_name="blocks/farmland_dry" />            | Farmland              | Farmland                                            | Hydration level (0 = dry, 7 = max wetness)       |
+|    61 | <TextureSwatch texture_name="blocks/furnace_front" />           | Furnace               | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
+|    62 | <TextureSwatch texture_name="blocks/lit_furnace_front" />       | Lit Furnace           | Furnace                                             | [Direction](#dispenser-furnace-ladder-wall-sign) |
+|    63 | <TextureSwatch texture_name="blocks/planks" />                  | Sign (standing)       | Sign                                                | [Direction](#standing-signs)                     |
+|    64 | <TextureSwatch texture_name="blocks/wooden_door_top" />         | Wooden Door           | Wooden Door                                         | [Direction + Open/Closed + Top/Bottom](#doors)   |
+|    65 | <TextureSwatch texture_name="blocks/ladder" />                  | Ladder                | Ladder                                              | [Direction](#dispenser-furnace-ladder-wall-sign) |
+|    66 | <TextureSwatch texture_name="blocks/rail_straight" />           | Rail                  | Rail                                                | [Direction](#rails)                              |
+|    67 | <TextureSwatch texture_name="blocks/cobblestone" />             | Cobblestone Stairs    | Stone Stairs                                        | [Direction](#stairs)                             |
+|    68 | <TextureSwatch texture_name="blocks/planks" />                  | Sign (wall)           | Sign                                                | [Direction](#dispenser-furnace-ladder-wall-sign) |
+|    69 | <TextureSwatch texture_name="blocks/lever" />                   | Lever                 | Lever                                               | [Direction + Toggled](#lever)                    |
+|    70 | <TextureSwatch texture_name="blocks/stone" />                   | Stone Pressure Plate  | Pressure Plate                                      | Toggled                                          |
+|    71 | <TextureSwatch texture_name="blocks/iron_door_top" />           | Iron Door             | Iron Door                                           | [Direction + Open/Closed + Top/Bottom](#doors)   |
+|    72 | <TextureSwatch texture_name="blocks/planks" />                  | Wooden Pressure Plate | Pressure Plate                                      | Toggled                                          |
+|    73 | <TextureSwatch texture_name="blocks/redstone_ore" />            | Redstone Ore          | Redstone Ore                                        |                                                  |
+|    74 | <TextureSwatch texture_name="blocks/redstone_ore" />            | Lit Redstone Ore      | Redstone Ore                                        |                                                  |
+|    75 | <TextureSwatch texture_name="blocks/redstone_torch_inactive" /> | Redstone Torch        | Redstone Torch                                      | [Direction](#torch)                              |
+|    76 | <TextureSwatch texture_name="blocks/redstone_torch_active" />   | Lit Redstone Torch    | Redstone Torch                                      | [Direction](#torch)                              |
+|    77 | <TextureSwatch texture_name="blocks/stone" />                   | Stone Button          | Button                                              | [Direction + Toggled](#button)                   |
+|    78 | <TextureSwatch texture_name="blocks/snow" />                    | Snow (Layer)          | Snow                                                |                                                  |
+|    79 | <TextureSwatch texture_name="blocks/ice" />                     | Ice                   | Ice                                                 |                                                  |
+|    80 | <TextureSwatch texture_name="blocks/snow" />                    | Snow Block            | Snow                                                |                                                  |
+|    81 | <TextureSwatch texture_name="blocks/cactus_side" />             | Cactus                | Cactus                                              | Growth progress (0-15)                           |
+|    82 | <TextureSwatch texture_name="blocks/clay" />                    | Clay                  | Clay                                                |                                                  |
+|    83 | <TextureSwatch texture_name="blocks/sugarcane" />               | Sugar Cane            | Sugar Canes                                         | Growth progress (0-15)                           |
+|    84 | <TextureSwatch texture_name="blocks/noteblock_jukebox" />       | Jukebox               | Jukebox                                             |                                                  |
+|    85 | <TextureSwatch texture_name="blocks/planks" />                  | Fence                 | Fence                                               |                                                  |
+|    86 | <TextureSwatch texture_name="blocks/pumpkin_side" />            | Pumpkin               | Pumpkin                                             | [Direction](#pumpkin-jack-o-lantern)             |
+|    87 | <TextureSwatch texture_name="blocks/netherrack" />              | Netherrack            | Netherrack                                          |                                                  |
+|    88 | <TextureSwatch texture_name="blocks/soul_sand" />               | Soul Sand             | Soul Sand                                           |                                                  |
+|    89 | <TextureSwatch texture_name="blocks/glowstone" />               | Glowstone             | Glowstone                                           |                                                  |
+|    90 | <TextureSwatch texture_name="blocks/nether_portal" />           | Nether Portal         | Portal                                              |                                                  |
+|    91 | <TextureSwatch texture_name="blocks/jack_o_lantern_front" />    | Jack'o'Lantern        | Jack 'o' Lantern                                    | [Direction](#pumpkin-jack-o-lantern)             |
+|    92 | <TextureSwatch texture_name="blocks/cake_top" />                | Cake                  | Cake                                                | Eatness                                          |
+|    93 | <TextureSwatch texture_name="blocks/repeater_inactive" />       | Redstone Repeater     |                                                     | [Direction + Delay](#redstone-repeater)          |
+|    94 | <TextureSwatch texture_name="blocks/repeater_active" />         | Lit Redstone Repeater |                                                     | [Direction + Delay](#redstone-repeater)          |
+|    95 | <TextureSwatch texture_name="blocks/chest_front" />             | Locked Chest          | Locked chest                                        |                                                  |
+|    96 | <TextureSwatch texture_name="blocks/trapdoor" />                | Trapdoor              | Trapdoor                                            | [Direction + Open/Closed](#trapdoors)            |
 
 # Metadata
 
