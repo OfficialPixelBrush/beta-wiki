@@ -18,14 +18,14 @@ These are the sound/particle effect IDs and what sound they map to.
 
 | Value  | Purpose                                                     | Metadata use                                                                                                                                 | Type             |
 | ------ | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :--------------- |
-| `1000` | Dispenser Click (Empty)                                     |                                                                                                                                              | Sound            |
-| `1001` | Dispenser Click                                             |                                                                                                                                              | Sound            |
-| `1002` | Dispenser Bow shot                                          |                                                                                                                                              | Sound            |
+| `1000` | Dispenser click (empty)                                     |                                                                                                                                              | Sound            |
+| `1001` | Dispenser click                                             |                                                                                                                                              | Sound            |
+| `1002` | Dispenser arrow shot                                        |                                                                                                                                              | Sound            |
 | `1003` | Door/Trapdoor open/close                                    |                                                                                                                                              | Sound            |
-| `1004` | Fire Extinguisted                                           |                                                                                                                                              | Sound            |
-| `1005` | Music Disk                                                  | `2256` (<TextureSwatch texture_name="items/record_13" label="13" />), `2257` (<TextureSwatch texture_name="items/record_cat" label="cat" />) | Sound            |
-| `2000` | [Dispenser Puff](../../rendering/particles#named-particles) | [Position](#dispenser-puff-position)                                                                                                         | Particle         |
-| `2001` | [Block Break](../../rendering/particles#block-destruction)  | [Block ID](../../general/blocks#listing)                                                                                                     | Particle + Sound |
+| `1004` | Fire extinguisted                                           |                                                                                                                                              | Sound            |
+| `1005` | Music disk                                                  | `2256` (<TextureSwatch texture_name="items/record_13" label="13" />), `2257` (<TextureSwatch texture_name="items/record_cat" label="cat" />) | Sound            |
+| `2000` | [Dispenser puff](../../rendering/particles#named-particles) | [Position](#dispenser-puff-position)                                                                                                         | Particle         |
+| `2001` | [Block break](../../rendering/particles#block-destruction)  | [Block ID](../../general/blocks#listing)                                                                                                     | Particle + Sound |
 
 For more info on what effects the client itself has, check the [sounds](../../general/sounds) and [particles](../../rendering/particles) pages respectively.
 
