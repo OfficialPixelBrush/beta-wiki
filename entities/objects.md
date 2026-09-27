@@ -16,6 +16,7 @@ A comprehensive list of all objects/vehicles.
 |    60 | Arrow            |
 |    61 | Thrown Snowball  |
 |    62 | Thrown Egg       |
+|    63 | Fireball         |
 |    70 | Falling Sand     |
 |    71 | Falling Gravel   |
 |    90 | Fishing Bobber   |
