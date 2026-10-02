@@ -24,7 +24,7 @@ const members = [
         links: [
             {
                 icon: "github",
-                link: "https://github.com/mudkipdev"
+                link: "https://github.com/mudkjp"
             }
         ]
     },
