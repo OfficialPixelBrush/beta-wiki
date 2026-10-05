@@ -133,7 +133,7 @@ Here's a one-stop look-up to determine the appropriate value for a given directi
 |                                                         [Stairs](#stairs) |     3      |     2      |     0     |     1     |    -    |     -     |
 |                                                           [Doors](#doors) |     3      |     1      |     0     |     2     |    -    |     -     |
 | [Dispenser/Furnace/Ladder/Wall Sign](#dispenser-furnace-ladder-wall-sign) |     2      |     3      |     5     |     4     |    -    |     -     |
-|                                                       [Pistons](#pistons) |     2      |     3      |     4     |     5     |    1    |     0     |
+|                                                       [Pistons](#pistons) |     2      |     3      |     5     |     4     |    1    |     0     |
 |                                                               [Bed](#bed) |     2      |     0      |     3     |     1     |    -    |     -     |
 |                         [Pumpkin/Jack'o'Lantern](#pumpkin-jack-o-lantern) |     2      |     0      |     3     |     1     |    -    |     -     |
 |                                                    [Trapdoor](#trapdoors) |     1      |     0      |     2     |     3     |    -    |     -     |
