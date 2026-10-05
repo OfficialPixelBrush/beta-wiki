@@ -456,8 +456,8 @@ The lower 3-Bits indicate the pistons direction, while the remaining bit indicat
 |     1 | Up            |
 |     2 | North         |
 |     3 | South         |
-|     4 | East          |
-|     5 | West          |
+|     4 | West          |
+|     5 | East          |
 |     6 | All (Invalid) |
 |     7 | All (Invalid) |
 
