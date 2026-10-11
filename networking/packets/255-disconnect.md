@@ -9,9 +9,11 @@ order: 256
 | --------- | --------- | ------------------ | ------------------------- |
 | `0xFF`    | Both      | `DisconnectPacket` | `Packet255KickDisconnect` |
 
-This packet is used by the server to disconnect the client with a reason, after which it will close the connection. Due to this, when the server disconnects the client, the client often doesn't even receive the Disconnect Message\*.
+This packet is used by the server to disconnect the client with a reason, after which it will close the connection.
 
-<sub>\* please verify this</sub>
+::: warning
+After a disconnect packet has been issued, no further data may be sent, otherwise the client will freeze up due to a `NullPointerException`.
+:::
 
 ## Clientbound
 
